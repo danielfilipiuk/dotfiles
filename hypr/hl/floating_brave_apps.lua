@@ -41,9 +41,35 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	 name = "brave - photos",
-	 match = {class = "brave-ncmjhecbjeaamljdfahankockkkdmedg-Default"},
+	 name = "brave - chatgpt",
+	 match = {class = "brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default"},
 	 opacity = 1,
 	 float = true,
 	 size = "1069 825",
 })
+
+
+hl.window_rule({
+	 name = "brave - youtube",
+	 match = {class = "brave-agimnkijcaahngcdmfeangaknmldooml-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - gemini",
+	 match = {class = "brave-pmkjpbkdpoakgmgmpmcdhjbbognnjboh-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - gemini",
+	 match = {class = "brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})
+
