@@ -66,7 +66,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	 name = "brave - gemini",
+	 name = "brave - claude",
 	 match = {class = "brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default"},
 	 opacity = 1,
 	 float = true,
