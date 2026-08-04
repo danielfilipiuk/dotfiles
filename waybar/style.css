@@ -73,9 +73,10 @@ window#waybar.toplevel-active {
 #clock {
     padding: 0px 10px;   
     border-radius: 16px; 
-        background-color: rgba(0, 0, 0, .25);
-            color: rgba(255, 255, 255, 1);
-            border: 1px solid rgba(0,0,0,0.20);
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(0,0,0,0.10);
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 
@@ -92,12 +93,11 @@ window#waybar.toplevel-active {
 tooltip {
 	background: rgba(0, 0, 0, 0.50);
 	border: 3px solid #d492d8;
-
 	border-radius: 16px;
 }
 tooltip label {
   	color: white;
-  		padding: 3px 3px;
+  	padding: 3px 3px;
 	border-radius: 16px;
 }
 
@@ -119,15 +119,15 @@ tooltip label {
 }*/
 
 
+ /* MENUS */
+
 menu {
-	border-radius: 16px;
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+	background: rgba(248,246,242,.75);
+	color: rgba(30,30,30,.90);
 }
 menuitem {
 	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.20);
-
 }
 
 
@@ -137,38 +137,33 @@ menuitem {
 #workspaces {
     background-color: rgba(0, 0, 0, .25);
     color: rgba(255, 255, 255, 1);
-       border-radius: 10px;
-       padding: 0 0px;  
-       
+    border-radius: 10px;
+    padding: 0 0px;  
 }
 #workspaces button {
     background-color: transparent;
     color: #ffffff;
-    border-radius: 10px;
-           
+    border-radius: 10px;        
 }
 #workspaces button.empty {
 	background-color: transparent;
 	background: transparent;
-
 }
 #workspaces button:hover {
     background: rgba(0, 0, 0, .35);
 }
-
 #workspaces button.focused, #workspaces button.active {
     background: #60406c;
     border-radius: 10px;
-
 }
 #workspaces button.urgent {
     background-color: #ca9ee6;
     color: #2d3436;
 }
 #workspaces.taskbar-window.active {
-	    background: #60406c;
-	    border-radius: 10px;
-	    }
+    background: #60406c;
+    border-radius: 10px;
+}
 
 
 
@@ -186,39 +181,29 @@ menuitem {
 /* WLR / TASKBAR */
 
 #taskbar {
-   border: 0px solid rgba(0,0,0,0.20);
-	 padding:  0 0px;     
-    border-radius: 16px; 
-	    }
-#taskbar.empty {
-   
 	background-color: transparent;
-	}
+   	border: 0px solid rgba(0,0,0,0.20);
+	padding:  0 0px;     
+}
+#taskbar.empty {
+	background-color: transparent;
+}
 #taskbar button{
- 
-	color: white;
-		    padding: 0px 10px;  
-		        border-radius: 16px;      
-	/*background-color: rgba(0, 0, 0, .25);*/
+	background: rgba(0, 0, 0, .25);
+	border: 1px solid rgba(0,0,0,0.10);
+	padding: 0px 10px;  
+	border-radius: 16px;      
 }
 #taskbar button:hover {
-
-	/*background: #60406c;*/
-background: rgba(248,246,242,.85);
-	/*background: #de0a96;*/
-	    /*opacity: 0.5;*/
+	border: 1px solid rgba(248,246,242,0.10);
+	background: rgba(248,246,242,.85);
 }
-
-
 #taskbar button.active {
-	/*background: #60406c;*/
-	
-	   
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
-	/*background: #de0a96;*/
-	    /*opacity: 0.5;*/
+	border: 1px solid rgba(248,246,242,0.10);
+	background: rgba(248,246,242,.85);
 }
+
+
 
 /* WINDOWS  */
 
@@ -246,33 +231,33 @@ color: rgba(30,30,30,.90);
 border: 1px solid rgba(0,0,0,0.20);
 }
 #mpd.playing {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #mpd.paused {
-      border: 1px solid rgba(255,255,255,0.05);
-background: rgba(248,246,242,.45);
-color: rgba(30,30,30,.75);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.45);
+	color: rgba(30,30,30,.55);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #mpd.stopped {
-border: 1px solid rgba(0,0,0,0.20);
-    color: rgba(255, 255, 255, .35);
+	border: 1px solid rgba(0,0,0,0.20);
+    	color: rgba(255, 255, 255, .35);
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #mpd.disconnected {
-border: 1px solid rgba(0,0,0,0.20);
-    background-color: rgba(0, 0, 0, .50);
+	border: 1px solid rgba(0,0,0,0.20);
+    	background-color: rgba(0, 0, 0, .50);
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-    color: #f03a17;
+    	color: #f03a17;
 }
 #mpd:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-color: rgba(30,30,30,.90);
+	color: rgba(30,30,30,.90);
 }
 
 
@@ -281,54 +266,19 @@ color: rgba(30,30,30,.90);
 
 #pulseaudio {
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-    }
+}
 #pulseaudio:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-	
 }
 #pulseaudio.muted {
-      border: 1px solid rgba(255,255,255,0.10);
+      	border: 1px solid rgba(248,246,242,0.05);
       	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-/*    background-color: rgba(0, 0, 0, .35); */
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
-	
-
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
-
-
-/* PULSEAUDIO SLIDER  */
-
-
-#pulseaudio-slider slider {
-    min-height: 0px;
-    min-width: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-}
-
-#pulseaudio-slider trough {
-    min-height: 80px;
-    min-width: 10px;
-    border-radius: 5px;
-    background: black;
-}
-
-#pulseaudio-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background: green;
-}
-
-#pulseaudio-slider.muted highlight {
-    background-color: orange;
-}
-
 
 
 /* WIREPLUMBER  */
@@ -349,53 +299,54 @@ color: rgba(30,30,30,.90);
 
 
 #keyboard-state {
+	background: transparent;
         padding:  0 0px;
-        	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-border: 0px solid rgba(0,0,0,0.20);
-    color: rgba(255, 255, 255, .50);
+        text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	border: 0px solid rgba(0,0,0,0.20);
+    	color: rgba(255, 255, 255, .50);
 }
 #keyboard-state > label {
-        	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+        background: rgba(0, 0, 0, .25);
+        border-radius: 16px;
+        text-shadow: 0 1px 2px rgba(0,0,0,.15);
         padding:  0 10px;
 }
 #keyboard-state > label.locked {
-      border: 1px solid rgba(255,255,255,0.10);
-	 border-radius: 16px;
-	                 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-
-/*    background-color: rgba(0, 0, 0, .35);*/
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	border-radius: 16px;
+	padding:  0 10px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
+
+
+ /* SUBMAP */
 
 
 #submap {
-   background: #60406c;
+  	background: #60406c;
 	color: rgba(255, 255, 255, 1);
-
 }
-
-
 
 
 /* NETWORK  */
 
 
 #network {
-           	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #network:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #network.disconnected {
-      border: 1px solid rgba(255,255,255,0.10);
-    background: #ffb300;   
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+    	background: #ffb300;   
+	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-
 }
 
 
@@ -403,28 +354,25 @@ color: rgba(30,30,30,.90);
 
 
 #tray {
-border: 1px solid rgba(0,0,0,0.20);
+	border: 1px solid rgba(0,0,0,0.20);
  	border-radius: 16px;
- 	     padding:  0 12px;    
- 	     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+ 	padding:  0 12px;    
+ 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #tray > .passive {
-      border: 1px solid rgba(255,255,255,0.10);
-    -gtk-icon-effect: dim;
+      	border: 1px solid rgba(248,246,242,0.05);
+    	-gtk-icon-effect: dim;
    	border-radius: 16px;
 }
 #tray:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-
-
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
 }
 #tray > .needs-attention {
-      border: 1px solid rgba(255,255,255,0.10);
-      -gtk-icon-effect: highlight;
-      border-radius: 16px;
-background: rgba(248,246,242,.85);
-
+      	border: 1px solid rgba(248,246,242,0.05);
+      	-gtk-icon-effect: highlight;
+      	border-radius: 16px;
+	background: rgba(248,246,242,.85);
 }
 
 
@@ -432,19 +380,18 @@ background: rgba(248,246,242,.85);
 
 
 #idle_inhibitor {
-border: 1px solid rgba(0,0,0,0.20);
-     padding:  0 5px;    
+	border: 1px solid rgba(0,0,0,0.20);
+     	padding:  0 5px;    
      	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #idle_inhibitor.activated {
- /*   background-color: rgba(0, 0, 0, .35);*/
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
 #idle_inhibitor:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
 }
 
 
@@ -453,20 +400,19 @@ background: rgba(248,246,242,.85);
 
 #inhibitor {
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-border: 1px solid rgba(0,0,0,0.20);
-     padding:  0 5px;   
-      color: rgba(255, 255, 255, .50); 
+	border: 1px solid rgba(0,0,0,0.20);
+     	padding:  0 5px;   
+      	color: rgba(255, 255, 255, .50); 
 }
 #inhibitor.activated {
-      border: 1px solid rgba(255,255,255,0.10);
- /*   background-color: rgba(0, 0, 0, .35);*/
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
 #inhibitor:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
 
 /*
@@ -485,53 +431,53 @@ menuitem {
 
 
 #clock {
-border: 1px solid rgba(0,0,0,0.20);
-text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	border: 1px solid rgba(0,0,0,0.20);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #clock:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
+
 
 /* CPU  */
 
 
 #cpu {
-        min-width: 100px;
-        text-shadow: 0 1px 2px rgba(0,0,0,.25);
-    }
-   #cpu:hover {
-   text-shadow: 0 1px 2px rgba(0,0,0,.25);
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
-      } 
+	min-width: 100px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+#cpu:hover {
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
+} 
     
     
 #memory {
-text-shadow: 0 1px 2px rgba(0,0,0,.25);
-border: 1px solid rgba(0,0,0,0.05);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	border: 1px solid rgba(0,0,0,0.05);
         background: rgba(0, 0, 0, .25);
 }
-   #memory:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
-      } 
-
+#memory:hover {
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
+} 
 
     
 #custom-gpu-usage {
-text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
         background: rgba(0, 0, 0, .25);
         border: 1px solid rgba(0,0,0,0.05);
 }
-   #custom-gpu-usage:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
-      } 
+#custom-gpu-usage:hover {
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
+} 
 
 
 #cpu_graph {
@@ -557,26 +503,25 @@ color: rgba(30,30,30,.90);
 
 
 #temperature {
-text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	border: 1px solid rgba(0,0,0,0.20);
 }
 #temperature:hover {
-      border: 1px solid rgba(255,255,255,0.10);
-background: rgba(248,246,242,.85);
-color: rgba(30,30,30,.90);
+      	border: 1px solid rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
 }
 #temperature.warning {
-      border: 1px solid rgba(255,255,255,0.10);
-    background-color: #f0932b;
-    color: rgba(30,30,30,.90);
-    text-shadow: 0 1px 2px rgba(0,0,0,.25);
-
+      	border: 1px solid rgba(248,246,242,0.05);
+    	background-color: #f0932b;
+    	color: rgba(30,30,30,.90);
+    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #temperature.critical {
-      border: 1px solid rgba(255,255,255,0.10);
-    background-color: #eb4d4b;
-    color: rgba(30,30,30,.90);
-    text-shadow: 0 1px 2px rgba(0,0,0,.25);
-
+      	border: 1px solid rgba(248,246,242,0.05);
+    	background-color: #eb4d4b;
+    	color: rgba(30,30,30,.90);
+    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 

@@ -53,7 +53,7 @@ hl.bind(mainMod .. " + CTRL + I",  hl.dsp.exec_cmd("pidof hyprpicker || app2unit
 hl.bind(mainMod .. " + period",  hl.dsp.exec_cmd("efck-chat-keyboard"), {description = "efck emojis"})
 ---------------------------------------------------------------
 -- WLCLOCK 
-hl.bind(mainMod .. " + T",  hl.dsp.exec_cmd("wlclock-hypr"), {description = "wlclock"})
+hl.bind(mainMod .. " + K",  hl.dsp.exec_cmd("app2unit -- wlclock-hypr"), {description = "wlclock"})
 ---------------------------------------------------------------
 
 

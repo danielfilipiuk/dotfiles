@@ -23,7 +23,7 @@ hl.layer_rule({
 	match = { namespace = "logout_dialog" }, 
 	blur = true,
     	blur_popups = true,
-    	animation = "popin",
+    	animation = "slide",
     	dim_around = true,
 })
 

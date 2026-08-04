@@ -7,7 +7,7 @@
 #watch -n 1 'sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|TSI0_TEMP|vddgfx|edge|PPT|sclk' && cpupower --cpu all frequency-info -f --human | grep current'
 #watch -n 1 "sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|SYSTIN|SMBUSMASTER|TSI0_TEMP|vddgfx|edge|PPT|sclk' && cpupower --cpu all frequency-info -f --human | grep current"
 
-watch -n 1 "sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|SYSTIN|SMBUSMASTER|TSI0_TEMP|vddgfx|edge|PPT|sclk' && grep 'cpu MHz' /proc/cpuinfo && free -h --mega"
+watch -n 1 "sensors -A nct6795-isa-0a20 k10temp-pci-00c3 amdgpu-pci-3000  | grep -E 'Vcore|fan2|fan3|fan4|SYSTIN|SMBUSMASTER|TSI0_TEMP|Tctl|vddgfx|edge|PPT|sclk' && grep 'cpu MHz' /proc/cpuinfo && free -h --mega"
 
 
 

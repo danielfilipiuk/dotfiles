@@ -283,15 +283,6 @@ hl.window_rule({
 
 
 hl.window_rule({
-	 name = "btop",
-	 match = {title = "btop"},
-	 size = "825 600",
-	 center = true,
-	 float = true,	 
-})
-
-
-hl.window_rule({
 	 name = "vkmark",
 	 match = {title = ".*vkmark.*"},
 	 center = true,
@@ -302,6 +293,15 @@ hl.window_rule({
 hl.window_rule({
 	 name = "glmark",
 	 match = {title = ".*glmark.*"},
+	 center = true,
+	 float = true,	
+	 monitor = 1,  
+})
+
+hl.window_rule({
+	 name = "tomboy",
+	 match = {class = "tomboy-ng"},
+	 size = "570 700",
 	 center = true,
 	 float = true,	
 	 monitor = 1,  
