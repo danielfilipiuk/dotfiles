@@ -1,0 +1,5 @@
+[Thumbnailer Entry]
+TryExec=ffmpeg
+Exec=ffmpeg -y -i %i %o -fs %s
+MimeType=audio/ogg;audio/opus;audio/x-opus+ogg;
+

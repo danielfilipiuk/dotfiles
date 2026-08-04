@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Free:ac
+GenericName=Free Audio Format Converter
+Comment=Converts audio files into other formats
+Icon=freac
+MimeType=application/x-ogg;application/ogg;audio/x-mp3;audio/x-scpls;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;application/x-flac;audio/x-wav;audio/flac;audio/x-opus+ogg;
+Exec=/opt/freac-1.1.7-linux-x86_64.AppImage
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Audio;AudioEditing;AudioConverter;flac;mp3;opus
+

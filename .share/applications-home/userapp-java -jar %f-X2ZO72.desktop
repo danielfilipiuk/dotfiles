@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec=java -jar %f %f
+Name=java -jar %f
+Icon=java
+Comment=Custom definition for java -jar %f

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Print Settings
+GenericName=Print Settings
+Comment=Configure printers
+Icon=printer
+Exec=system-config-printer
+Actions=
+Categories=GNOME;GTK;HardwareSettings;Printing;Settings;X-GNOME-Settings-Panel;X-Unity-Settings-Panel;X-XFCE;X-XFCE-HardwareSettings;X-XFCE-SettingsDialog;
+Keywords=Printer;Queue;Print;Paper;Ink;Toner;
+StartupNotify=true

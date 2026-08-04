@@ -1,0 +1,6 @@
+[Thumbnailer Entry]
+Type=X-Thumbnailer
+Name=f3d Thumbnailer (assimp plugin)
+TryExec=f3d
+Exec=f3d --config=thumbnail --load-plugins=assimp --verbose=quiet --output=%o --resolution=%s,%s %i
+MimeType=application/vnd.fbx;application/vnd.dae;image/vnd.dxf;application/vnd.off;application/vnd.x;model/3mf

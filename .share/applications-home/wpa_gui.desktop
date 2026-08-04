@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=wpa_gui
+GenericName=wpa_supplicant user interface
+Comment=Graphical user interface for wpa_supplicant
+Icon=wpa_gui
+Exec=wpa_gui
+Actions=
+Categories=Network;Qt;Settings;X-XFCE-HardwareSettings;X-XFCE-SettingsDialog;

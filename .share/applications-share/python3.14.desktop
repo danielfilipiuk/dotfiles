@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Python (v3.14)
+Comment=Python Interpreter (v3.14)
+Exec=/usr/bin/python3.14
+Icon=/usr/share/pixmaps/python3.14.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true

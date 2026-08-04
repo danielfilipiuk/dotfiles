@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Xfont selector
+Comment=font selector for X
+Icon=font-x-generic-symbolic
+Exec=xfontsel
+Actions=
+Categories=DesktopSettings;Utility;

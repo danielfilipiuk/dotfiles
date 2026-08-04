@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Winamp
+Comment=It really whips the llama's ass
+Icon=2FF5_winamp.0
+Exec=/usr/local/bin/winamp
+Actions=
+Categories=Audio;AudioVideo;Player;

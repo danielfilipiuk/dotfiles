@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Users and Groups
+Comment=Add or remove users and groups
+Icon=config-users
+Exec=users-admin
+Actions=
+Categories=GNOME;GTK;Settings;X-XFCE;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true

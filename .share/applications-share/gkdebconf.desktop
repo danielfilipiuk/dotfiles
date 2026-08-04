@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GkDebconf
+Type=Application
+Categories=System;
+Comment=Helper to reconfigure packages
+Comment[pt_BR]=Interface para reconfigurar pacotes
+Icon=/usr/share/pixmaps/gkdebconf-icon.png
+Exec=gkdebconf
+Terminal=false
+Keywords=debconf;reconfiguration

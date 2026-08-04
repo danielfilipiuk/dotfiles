@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Gtk-ChTheme
+GenericName=GTK+ 2.0 theme changer and previewer utility
+Comment=GTK+2.0 Theme Changer
+Icon=gtk3-demo
+Exec=/usr/bin/gtk-chtheme
+Actions=
+Categories=DesktopSettings;Settings;X-XFCE-PersonalSettings;X-XFCE-SettingsDialog;
+Keywords=gtk;change theme;theme;changer;utility;

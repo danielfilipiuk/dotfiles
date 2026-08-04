@@ -1,0 +1,11 @@
+[Desktop Entry]
+Exec=/usr/bin/pixmap -f %f
+InitialPreference=2
+MimeType=image/x-xpixmap;
+Name=pixmap
+Comment=Pixmap has functionality similar to that of Bitmap, a bitmap editor, which comes as standard with the X Window System.
+Terminal=false
+Type=Application
+Categories=Graphics;
+Keywords=bitmap;graphics;editor;
+

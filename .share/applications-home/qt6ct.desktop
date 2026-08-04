@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Qt6 Settings
+Comment=Qt6 Configuration Tool
+Icon=preferences-desktop-theme
+Exec=qt6ct
+Actions=
+Categories=DesktopSettings;Qt;Settings;X-XFCE;X-XFCE-PersonalSettings;X-XFCE-SettingsDialog;
+Keywords=settings;desktop;qt;qtsettings;qt6;

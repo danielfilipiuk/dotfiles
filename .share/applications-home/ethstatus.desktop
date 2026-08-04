@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=EthStatus
+Comment=Console-based ethernet statistics monitor
+Icon=etherape
+Exec=xterm -e ethstatus -i wlp38s0
+Actions=
+Categories=Network;

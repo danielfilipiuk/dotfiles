@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Dolphin Emulator
+GenericName=Wii/GameCube Emulator
+Comment=A Wii/GameCube Emulator
+Icon=dolphin-emu
+Exec=env QT_QPA_PLATFORM=xcb dolphin-emu
+Actions=
+Categories=Game;System;

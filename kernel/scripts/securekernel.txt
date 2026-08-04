@@ -1,0 +1,48 @@
+# Paste at the end of Makefile.
+# run "make securekernel"
+
+SECUREBOOT_KEY=/etc/sb/keys/MOK.key
+SECUREBOOT_CRT=/etc/sb/keys/MOK.crt
+SECUREBOOT_MOD_KEY=/etc/sb/keys/signing_key.pem
+
+CEXTRA=-march=znver2
+
+.PHONY: securekernel
+securekernel:
+	@echo "═══════════════════════════════════════════════"
+	@echo "  🔧 Preparing Secure Boot Zen2 Kernel Build"
+	@echo "═══════════════════════════════════════════════"
+
+	scripts/config --enable CONFIG_MODULE_SIG
+	scripts/config --enable CONFIG_MODULE_SIG_ALL
+	scripts/config --set-str CONFIG_MODULE_SIG_KEY "$(SECUREBOOT_MOD_KEY)"
+
+	scripts/config --disable DEBUG_INFO
+	scripts/config --disable DEBUG_INFO_DWARF_TOOLCHAIN_DEFAULT
+
+	scripts/config --enable CONFIG_MZEN2
+	scripts/config --disable CONFIG_GENERIC_CPU
+
+	@echo "⚙️  Updating configuration..."
+	make oldconfig
+	make nconfig
+
+	@echo "🏗️  Compiling kernel and modules (max performance)…"
+	make KCFLAGS="$(CEXTRA)" KCPPFLAGS="$(CEXTRA)" -j$$(nproc) bzImage modules
+
+	@echo "🔍 Detecting kernel version..."
+	$(eval KVER := $(shell make -s kernelrelease))
+	@echo "➡️ Version: $(KVER)"
+
+	@echo "🔏 Signing kernel image for Secure Boot..."
+	sbsign --key $(SECUREBOOT_KEY) --cert $(SECUREBOOT_CRT) \
+		--output arch/x86/boot/vmlinuz-$(KVER) arch/x86/boot/bzImage
+
+	@echo "📦 Packaging signed .deb files..."
+	fakeroot make KCFLAGS="$(CEXTRA)" KCPPFLAGS="$(CEXTRA)" bindeb-pkg -j$$(nproc)
+
+	@echo "✅ Done!"
+	@echo "💾 Packages are located in: ../"
+	@echo "➡️ linux-image-$(KVER)_*.deb"
+	@echo "➡️ linux-headers-$(KVER)_*.deb"
+	@echo "═══════════════════════════════════════════════"

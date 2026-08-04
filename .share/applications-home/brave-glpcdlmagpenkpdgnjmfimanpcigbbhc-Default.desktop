@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Pinterest
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=glpcdlmagpenkpdgnjmfimanpcigbbhc
+Icon=brave-glpcdlmagpenkpdgnjmfimanpcigbbhc-Default
+StartupWMClass=crx_glpcdlmagpenkpdgnjmfimanpcigbbhc

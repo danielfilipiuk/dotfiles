@@ -1,0 +1,11 @@
+[Desktop Entry]
+# Created by desktopfilecreator.com
+Type=Application
+Version=1.0
+Name=Krita
+Comment=Created by desktopfilecreator.com
+Path=
+Exec=/usr/local/bin/krita
+Icon=krita
+Terminal=false
+

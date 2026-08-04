@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Photos
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=ncmjhecbjeaamljdfahankockkkdmedg
+Icon=brave-ncmjhecbjeaamljdfahankockkkdmedg-Default
+StartupWMClass=crx_ncmjhecbjeaamljdfahankockkkdmedg

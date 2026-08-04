@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TeamViewer
+Exec=/opt/teamviewer/tv_bin/script/teamviewer --url "%u"
+NoDisplay=true
+StartupNotify=false
+MimeType=x-scheme-handler/teamviewer8;x-scheme-handler/teamviewer10;x-scheme-handler/teamviewerapi;x-scheme-handler/tvoneweblogin;

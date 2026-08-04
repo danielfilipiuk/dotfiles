@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Vulkan Caps Viewer for Wayland
+Comment=Vulkan Hardware Capability Viewer
+Exec=vulkanCapsViewer-wayland
+Icon=vulkanCapsViewer-wayland
+Terminal=false
+StartupNotify=false
+Categories=Application;Graphics;Development;

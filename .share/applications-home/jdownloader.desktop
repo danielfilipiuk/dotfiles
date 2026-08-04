@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=JDownloader
+Comment=A small descriptive blurb about this application.
+Icon=jdownloader
+Exec=app2unit -S both -- env GDK_BACKEND=x11 java -jar /opt/jdownloader/JDownloader.jar
+Actions=
+Categories=Network;

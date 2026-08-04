@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=tomboy-ng
+Name[de]=tomboy-ng
+Name[es]=tomboy-ng
+Name[fr]=tomboy-ng
+Name[nl]=tomboy-ng
+Comment=Cross Platform Notes
+Comment[de]=Notizen Plattformübergreifend
+Comment[es]=Notas Multiplatforma
+Comment[fr]=Notes Multiplateforme
+Comment[nl]=Platformoverschrijdend notities
+GenericName=Note Taker
+GenericName[de]=Notizanwendung
+GenericName[es]=Tomador de apuntes
+GenericName[fr]=Application de prise de notes
+GenericName[nl]=Notities maken
+Exec=env QT_QPA_PLATFORM=xcb tomboy-ng %f
+Icon=tomboy-ng
+Terminal=false
+Type=Application
+Categories=GNOME;Utility
+Keywords=notes;

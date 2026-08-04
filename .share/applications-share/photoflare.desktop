@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name=PhotoFlare
+Name[pt]=PhotoFlare
+Name[pt_BR]=PhotoFlare
+Name[ru_RU]=PhotoFlare
+Name[id]=PhotoFlare
+Comment=A simple but featureful image editor.
+Comment[pt]=Um editor de imagens simples, mas cheio de funcionalidades.
+Comment[pt_BR]=Um editor de imagens simples, mas cheio de recursos.
+Comment[ru_RU]=Простой, но самодостаточный редактор.
+Comment[id]=Penyunting gambar yang sederhana namun kaya fitur.
+GenericName=Image Editor
+GenericName[pt]=Editor de Imagem
+GenericName[pt_BR]=Editor de Imagem
+GenericName[ru_RU]=Графический редактор
+GenericName[id]=Penyunting Gambar
+X-GNOME-FullName=PhotoFlare
+Exec=photoflare %f
+Icon=photoflare
+Terminal=false
+Type=Application
+Categories=Graphics;2DGraphics;
+Keywords=photo;image;picture;photography;paint;graphics;editor;
+StartupNotify=false
+StartupWMClass=io.photoflare.photoflare
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/svg+xml;image/tiff;image/x-bmp;image/x-gray;image/x-icb;image/x-ico;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/x-pcx;image/x-targa;image/x-tga;image/openraster;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=DOSBox-X
+GenericName=DOS Emulator
+Comment=An enhanced x86/DOS emulator with sound/graphics
+Icon=dosbox-x
+Exec=dosbox-x
+Actions=
+Categories=Game;System;
+Keywords=PCjr;Tandy;PC98;PC-98;
+StartupWMClass=dosbox-x 

@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/usr/bin/glycin-thumbnailer
+Exec=/usr/bin/glycin-thumbnailer --input %u --output %o --size %s
+MimeType=image/avif;image/heif;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Xcolors
+Comment=Shows colors used in X
+Icon=gcolor3
+Exec=xcolors
+Actions=
+Categories=Graphics;

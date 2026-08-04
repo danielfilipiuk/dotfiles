@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=CoreCtrl
+GenericName=Core control
+Comment=Control your computer with ease using application profiles
+Icon=corectrl
+Exec=corectrl
+Actions=
+Categories=Settings;Utility;X-XFCE;X-XFCE-HardwareSettings;X-XFCE-SettingsDialog;
+Keywords=core;control;system;hardware;
+StartupNotify=true
+StartupWMClass=corectrl

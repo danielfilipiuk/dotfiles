@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=A Wine application
+MimeType=application/x-wine-extension-cdaz;
+Exec=env "WINEPREFIX=/mnt/data/wine/base" wine start /ProgIDOpen "PsxMC.cdazFile" %f
+NoDisplay=true
+StartupNotify=true

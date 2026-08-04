@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Time and Date
+Comment=Change system time, date, and timezone
+Icon=time-admin
+Exec=time-admin
+Actions=
+Categories=GNOME;GTK;Settings;X-XFCE;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true

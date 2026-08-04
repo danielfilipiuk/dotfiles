@@ -1,0 +1,26 @@
+[Desktop Entry]
+Version=1.0
+Name=Brave Web Browser
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
+GenericName=Web Browser
+# Gnome and KDE 3 uses Comment.
+Comment=Access the Internet
+Exec=brave-browser-stable --ozone-platform-hint=wayland --use-webgpu-adapter=opengles --disable-features=VulkanH %U
+StartupNotify=true
+Terminal=false
+Icon=brave-browser
+Type=Application
+Categories=Network;WebBrowser;
+Actions=new-window;new-private-window;
+Path=
+
+
+[Desktop Action new-window]
+Name=New Window
+Exec=brave-browser-stable --ozone-platform-hint=wayland --use-webgpu-adapter=opengles --disable-features=VulkanH
+
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Exec=brave-browser-stable --ozone-platform-hint=wayland --use-webgpu-adapter=opengles --disable-features=VulkanH --incognito
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/chromium;

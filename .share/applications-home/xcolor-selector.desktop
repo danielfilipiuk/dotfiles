@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Xcolor selector
+Comment=Shows colors used in X
+Icon=gtk-color-picker
+Exec=xcolorsel
+Actions=
+Categories=Graphics;

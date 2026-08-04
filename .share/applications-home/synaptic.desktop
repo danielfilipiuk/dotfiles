@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Synaptic Package Manager
+GenericName=Package Manager
+Comment=Install, remove and upgrade software packages
+Icon=synaptic
+Exec=synaptic-pkexec
+Actions=
+Categories=GTK;PackageManager;Settings;System;X-XFCE;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true
+StartupWMClass=synaptic

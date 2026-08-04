@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=System Journal Follow
+Comment=Follow the current boot journal
+Exec=kitty -e %h/.local/bin/system-journal-follow
+Icon=utilities-terminal
+Terminal=false
+Categories=System;Monitor;

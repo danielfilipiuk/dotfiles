@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.5
+Type=Application
+
+TryExec=waycheck
+Exec=waycheck
+
+Name=Waycheck
+Comment=Displays the protocols implemented by a Wayland compositor
+Categories=Utility;System;Development
+Icon=dev.serebit.Waycheck
+Terminal=false
+Keywords=Wayland

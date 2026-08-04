@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1.2
+Name=Gamepad config tool
+Comment=Simple GUI tool to create/modify gamepad mappings.
+Exec=gamepad-tool
+Icon=/usr/share/icons/hicolor/256x256/apps/gamepad-tool.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+

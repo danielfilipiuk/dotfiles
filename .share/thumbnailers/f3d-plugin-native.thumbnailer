@@ -1,0 +1,6 @@
+[Thumbnailer Entry]
+Type=X-Thumbnailer
+Name=f3d Thumbnailer (native plugin)
+TryExec=f3d
+Exec=f3d --config=thumbnail --load-plugins=native --verbose=quiet --output=%o --resolution=%s,%s %i
+MimeType=application/vnd.3ds;application/gml+xml;application/dicom;model/gltf-binary;model/gltf+json;application/vnd.mhd;application/vnd.nrrd;model/obj;application/vnd.pts;model/stl;model/vrml;application/vnd.vtk;application/vnd.vtu;application/vnd.vtp;application/vnd.vti;application/vnd.vtr;application/vnd.vts;application/vnd.vtm;application/vnd.mdl;application/vnd.spz;application/vnd.splat;application/vnd.ply

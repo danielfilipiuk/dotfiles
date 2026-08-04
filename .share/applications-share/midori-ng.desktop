@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Midori Next Generation
+Exec=midori %U
+Terminal=false
+Type=Application
+Icon=/usr/share/icons/hicolor/scalable/midori-ng.svg
+StartupWMClass=Midori Next Generation
+X-AppImage-Version=10.0.2
+Comment=Midori a lightweight, fast and free web browser for Windows, Linux MacOS and Android.
+Categories=Browser;Network;X-Internet-browser;
+
+[Desktop Action NewTab]
+Name=Open new tab
+Exec=midori -new-tab %U
+
+[Desktop Action NewWindow]
+Name=Open new window
+Exec=midori -new-window %U
+
+[Desktop Action NewPrivateWindow]
+Name=New private window
+Exec=midori -private-window %U

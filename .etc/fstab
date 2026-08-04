@@ -1,0 +1,53 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme0n1p2 during installation
+UUID=bd5b707d-7c57-432c-bfc3-dbaa7114bd4a /               ext4    noatime,nodiratime,errors=remount-ro 0       1
+
+# /boot/efi was on /dev/nvme0n1p1 during installation
+#UUID=DFF2-BCB4  /boot/efi       vfat    umask=0077      0       1
+/dev/nvme0n1p1  /boot/efi       vfat    umask=0077      0       1
+
+# swap was on /dev/nvme0n1p3 during installation
+
+UUID=a1efde2d-1662-42a5-acac-7419fc08c322 none            swap    sw              0       0
+
+# sda ext4 500g
+
+#UUID=bf3b5b6e-618c-40a0-b7d3-bd45aeb895a8 /mnt/500G ext4 user,defaults,exec,noatime,nodiratime,lazytime,commit=60  0 2
+UUID=fd8fae61-8296-4a4f-b2e3-cc6cb8d9678a /mnt/500G ext4 user,defaults,exec,noatime,nodiratime,lazytime,commit=60  0 2
+
+# sdb ext4 1TB on 1TB
+
+UUID=52e3ec30-fe45-4771-9060-5fcf811ec6b2 /mnt/1TB ext4 noauto,user,defaults,exec,nodiratime,noatime  0 2
+
+# sdc xfs 3TB
+
+UUID=a7e2cd7f-3b95-4982-8de5-06077ffccbca /mnt/3TB xfs noauto,user,defaults,exec,nodiratime,noatime,logbufs=8 0 0
+
+# sdd ext4 2TB on data
+
+UUID=e8dc31e6-74f7-4ea5-81b6-664784e7f3cc /mnt/data ext4 noauto,user,defaults,exec,nodiratime,noatime  0 2
+
+# UNO usb ext4 
+
+UUID=82b753e4-49b5-413f-86e4-741dc73e62f0 /mnt/UNO ext4 noauto,user,defaults,exec,nodiratime,noatime  0 2
+
+# DOS usb xfs
+
+UUID=74ec442c-7f9a-4961-8dbd-6bf7712f67d8 /mnt/DOS xfs noauto,user,defaults,exec,nodiratime,noatime,logbufs=8 0 0
+
+# dieter usb xfs
+
+UUID=ca504102-fe29-407d-9e8b-2b8c4fea26d1 /mnt/dieter xfs noauto,user,defaults,exec,nodiratime,noatime,logbufs=8 0 0
+
+# Share on SIRIUS
+#192.168.0.10:/mnt/data /mnt/SIRIUS/data nfs user,noauto,noatime,nodiratime,proto=tcp,vers=4.2,rsize=1048576,wsize=1048576,defaults 0 0 
+#192.168.0.10:/home/daniel /mnt/SIRIUS/profile nfs user,noauto,noatime,nodiratime,proto=tcp,vers=4.2,rsize=1048576,wsize=1048576,defaults 0 0 

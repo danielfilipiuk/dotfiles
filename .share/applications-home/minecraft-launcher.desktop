@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=/mnt/data/minecraft/minecraft-launcher
+Name=Minecraft Launcher
+Comment=Launcher for Minecraft
+Type=Application
+Terminal=false
+Categories=Game;
+Icon=minecraft-launcher
+Keywords=Minecraft;

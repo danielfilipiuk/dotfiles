@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ncmpcpp
+GenericName=NCurses Music Player Client
+Exec=ncmpcpp
+Terminal=true
+Icon=mpd
+Categories=AudioVideo;Audio;Player;ConsoleOnly;

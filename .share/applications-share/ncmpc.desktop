@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ncmpc
+Comment=NCurses Music Player Client
+Keywords=Terminal;Audio;Player
+Terminal=true
+TryExec=ncmpc
+Exec=ncmpc
+Icon=mpd
+Type=Application
+StartupNotify=false
+Categories=Audio;Player;ConsoleOnly;
+

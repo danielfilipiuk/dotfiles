@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Power Mode Selector
+Comment=Cpu governor selector
+Icon=speedometer-symbolic
+Exec=powermodeselector.sh
+Actions=
+Categories=Settings;X-XFCE-HardwareSettings;X-XFCE-SettingsDialog;

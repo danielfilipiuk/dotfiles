@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Hyprland (uwsm-managed)
+Comment=Dynamic tiling Wayland compositor
+Keywords=tiling;wayland;compositor;
+DesktopNames=Hyprland
+Type=Application
+Icon=hyprland
+Exec=uwsm start -U run -- start-hyprland
+TryExec=uwsm

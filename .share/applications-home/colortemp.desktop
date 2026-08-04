@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=brightness and temperature 
+Comment=changes screen brightness and temperature according to day or night time
+Icon=brightnesssettings
+Exec=/usr/local/bin/colortemp.sh
+Actions=
+Categories=HardwareSettings;Settings;X-XFCE;X-XFCE-HardwareSettings;X-XFCE-SettingsDialog;XFCE;

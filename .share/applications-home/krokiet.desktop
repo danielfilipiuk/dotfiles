@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Krokiet
+Comment=storage cleaner
+Icon=/home/daniel/.local/share/icons/krokiet.png
+Exec=krokiet
+Actions=
+Categories=Utility;

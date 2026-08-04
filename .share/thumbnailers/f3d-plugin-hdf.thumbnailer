@@ -1,0 +1,6 @@
+[Thumbnailer Entry]
+Type=X-Thumbnailer
+Name=f3d Thumbnailer (hdf plugin)
+TryExec=f3d
+Exec=f3d --config=thumbnail --load-plugins=hdf --verbose=quiet --output=%o --resolution=%s,%s %i
+MimeType=application/vnd.vtkhdf;application/vnd.exodus;application/netcdf;application/x-netcdf

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Ultimaker Cura
+Comment=3D slicer
+Icon=com.ultimaker.cura
+Exec=/usr/local/bin/cura
+Actions=
+Categories=Graphics;

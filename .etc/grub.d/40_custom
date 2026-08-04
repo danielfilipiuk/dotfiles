@@ -1,0 +1,86 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+#		loglevel=5 \
+
+menuentry 'Debian 7.1.6-polaris-v1' --class hypr --class linux --class gnu-linux --class gnu --class os --unrestricted {
+        load_video
+        insmod gzio
+        insmod part_gpt
+        insmod ext2
+        search --no-floppy --fs-uuid --set=root bd5b707d-7c57-432c-bfc3-dbaa7114bd4a
+        linux /boot/vmlinuz-7.1.6-polaris-v1 \
+		root=/dev/nvme0n1p2 ro \
+		rootfstype=ext4 \
+		module.sig_enforce=0 \
+		console=tty0 \
+		fbcon=font:TER10x18 \
+		hostname=POLARIS \
+		security=none \
+		cpuidle.governor=teo \
+		mitigations=off \
+		hibernate=no \
+		transparent_hugepage=madvise \
+		iommu=pt \
+		vt.cur_default=0x8 \
+		consoleblank=300 \
+		amd_iommu=on \
+		amd_pstate=active \
+		amd_pstate.shared_mem=1 \
+		amdgpu.ppfeaturemask=0xffffffff \
+		amdgpu.hw_i2c=1 \
+		amdgpu.msi=1 \
+		amdgpu.dc=1 \
+		amdgpu.discovery=1 \
+		amdgpu.freesync_video=1 \
+		amdgpu.rebar=1 \
+		amdgpu.ras_enable=1 \
+		amdgpu.deep_color=1 \
+		amdgpu.disp_priority=2 \
+		amdgpu.seamless=1 \
+		video=DP-1:1280x1024@60 \
+		video=DVI-D-1:1024x768@60 \
+}
+
+menuentry "Clonezilla" --class linux {
+    set isofile="/opt/clonezilla-live-3.3.2-31-amd64.iso"
+#    set root=(hd0,1)
+    loopback loop $isofile
+    linux (loop)/live/vmlinuz boot=live findiso=$isofile components config edd=on toram=filesystem.squashfs
+    initrd (loop)/live/initrd.img
+}
+
+menuentry "UEFI Firmware Settings"  --class efi --unrestricted {
+        fwsetup
+}
+
+menuentry "Restart" --class restart --unrestricted {
+	reboot
+}
+
+menuentry "Power Off" --class shutdown --unrestricted {
+	halt
+}
+
+############
+# Password #
+############
+
+set superusers="daniel"
+password_pbkdf2 daniel grub.pbkdf2.sha512.10000.AEC686B710123E43828ABB30E95F7A479666D8EBC754D653138CB6BABE69118D56E36F3DA32A5F42DCF4C54231477A455D07C56453D6E8E41D03AE6A3BF10F22.ECA9883FFCB7C507F3CFB79EAB2A769F3B5D66A0426CFED14B37C62C9F6990D4C3F753BCCE8A9D7C6AA704BAF43E4D7261E769EF39964583A8E648847A4E57A3
+
+
+######################
+# windows 10 example #
+######################
+
+#
+#menuentry 'Windows 10' --class windows --class os $menuentry_id_option 'osprober-efi-DFF2-BCB4' {
+#        insmod part_gpt
+#        insmod fat
+#        search --no-floppy --fs-uuid --set=root DFF2-BCB4
+#        chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+#}

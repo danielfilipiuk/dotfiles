@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Keep
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=eilembjdkfgodjkcjnpgpaenohkicgjd
+Icon=brave-eilembjdkfgodjkcjnpgpaenohkicgjd-Default
+StartupWMClass=crx_eilembjdkfgodjkcjnpgpaenohkicgjd
