@@ -647,7 +647,7 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="1" />
+       page="2" />
     <group
        id="filtereffects" />
     <group
@@ -679,7 +679,7 @@
     <group
        id="preferences"
        state="1"
-       page="30" />
+       page="48" />
     <group
        id="gradienteditor" />
     <group
@@ -1361,8 +1361,8 @@
      id="desktop"
      style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Medium';font-family:'JetBrainsMono Nerd Font';font-size:15.87466667px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:none;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:4.53543347;stroke-linejoin:round;stroke-linecap:round;font-weight:500;stroke:#ff0000">
     <group
-       width="1280"
-       height="990"
+       width="902"
+       height="728"
        x="0"
        y="0"
        maximized="1"
@@ -1508,7 +1508,7 @@
      narrowSpinButton="1"
      preferDarkTheme="0"
      darkTheme="0"
-     symbolicIcons="0"
+     symbolicIcons="1"
      symbolicDefaultBaseColors="1"
      symbolicDefaultHighColors="1"
      syntax-color-theme="inkscape-light"

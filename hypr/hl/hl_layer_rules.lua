@@ -42,3 +42,13 @@ hl.layer_rule({
     	animation = "popin",
     	dim_around = true,
 })
+
+
+hl.layer_rule({ 
+	match = { namespace = "wlclock" }, 
+	blur = true,
+    	blur_popups = true,
+    	animation = "popin",
+    	ignore_alpha = 0.5,
+    	dim_around = true,
+})

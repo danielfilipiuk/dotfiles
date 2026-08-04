@@ -64,7 +64,7 @@ image/avif=org.xfce.ristretto.desktop;
 image/bmp=org.xfce.ristretto.desktop;photoflare.desktop;imv.desktop;
 image/gif=photoflare.desktop;org.gnome.Loupe.desktop;imv.desktop;brave-browser.desktop;org.xfce.ristretto.desktop;
 image/heif=org.xfce.ristretto.desktop;org.gnome.Loupe.desktop;
-image/jpeg=gimp.desktop;gpicview.desktop;org.geeqie.Geeqie.desktop;gnome-paint.desktop;org.xfce.ristretto.desktop;org.gnome.Loupe.desktop;imv.desktop;
+image/jpeg=imv-dir.desktop;gimp.desktop;gpicview.desktop;org.geeqie.Geeqie.desktop;gnome-paint.desktop;org.xfce.ristretto.desktop;org.gnome.Loupe.desktop;imv.desktop;
 image/png=photoflare.desktop;imv.desktop;com.github.maoschanz.drawing.desktop;org.gnome.Loupe.desktop;gimp.desktop;org.xfce.ristretto.desktop;org.geeqie.Geeqie.desktop;
 image/svg+xml=org.xfce.ristretto.desktop;imv.desktop;org.xfce.mousepad.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;
 image/svg+xml-compressed=org.inkscape.Inkscape.desktop;org.xfce.ristretto.desktop;org.xfce.mousepad.desktop;
@@ -93,7 +93,7 @@ text/x-ms-regedit=org.xfce.mousepad.desktop;
 text/x-nfo=org.xfce.mousepad.desktop;
 text/x-python3=org.xfce.mousepad.desktop;
 text/x.gcode=PrusaGcodeviewer.desktop;org.xfce.mousepad.desktop;
-video/mp4=mediainfo-gui.desktop;mpv.desktop;vlc.desktop;fr.handbrake.ghb.desktop;
+video/mp4=mpv.desktop;mediainfo-gui.desktop;vlc.desktop;fr.handbrake.ghb.desktop;
 video/mpeg=vlc.desktop;
 video/ogg=vlc.desktop;
 video/quicktime=vlc.desktop;
@@ -108,6 +108,7 @@ video/x-ogm+ogg=mediainfo-gui.desktop;vlc.desktop;
 x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
 text/x-dsrc=org.xfce.mousepad.desktop;
+text/x-python=org.xfce.mousepad.desktop;
 
 [Default Applications]
 application/java-archive=userapp-java -jar %f-X2ZO72.desktop;

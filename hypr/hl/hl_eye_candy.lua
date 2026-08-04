@@ -62,7 +62,7 @@ hl.config({
             contrast = 0.8916,  -- contrast modulation for blur. [0.0 - 2.0]
             vibrancy  = 0.1696, -- Increase saturation of blurred colors. [0.0 - 1.0]
             brightness = 1, 	-- brightness modulation for blur. [0.0 - 2.0]
-            vibrancy_darkness = 0, -- How strong the effect of vibrancy is on dark areas . [0.0 - 1.0]
+            vibrancy_darkness = 0.1696, -- How strong the effect of vibrancy is on dark areas . [0.0 - 1.0]
             popups = true, -- whether to blur popups (e.g. right-click menus)
             special = true, -- whether to blur behind the special workspace (note: expensive)
         },

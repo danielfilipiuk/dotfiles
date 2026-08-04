@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if pgrep -f "wlclock" then
+    pkill -SIGINT -f "wlclock"
+fi
+
+wlclock --namespace=wlclock --layer=top --corner-radius 1000 --background-colour=#231a31bb --border-colour=#ca9ee6 --border-size 3 3 3 3 --clock-colour=#dddcd8cc --hand-width=5 --marking-width=3 --margin 3 3 3 3 --size=500 -v
