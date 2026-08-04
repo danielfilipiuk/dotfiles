@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="au">
+				<property name="label">  audio-detective™ - Audio Pipeline Inspector</property>
+			</object>
+    		</child> 
+		<child>
+			<object class="GtkMenuItem" id="qpwgraph">
+				<property name="label">  qpwgraph - PipeWire Graph Interface</property>
+			</object>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="pw-top">
+				<property name="label">  pw-top - PipeWire process viewer</property>
+			</object>
+    		</child>  
+  </object>
+</interface>

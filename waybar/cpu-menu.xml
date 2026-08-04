@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="btop">
+				<property name="label">  btop</property>
+			</object>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="htop">
+				<property name="label">  htop</property>
+			</object>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="sens">
+				<property name="label">󰈐  sens</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="cpux">
+				<property name="label">  Cpu-X</property>
+			</object>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="corectrl">
+				<property name="label">  CoreCtrl</property>
+			</object>
+    		</child>
+		
+  </object>
+</interface>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="stop">
+				<property name="label">  stop playing</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="repeat">
+				<property name="label">  repeat</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="random">
+				<property name="label">  random</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="single">
+				<property name="label">  single</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="singleonce">
+				<property name="label">󰑎  single once</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="consume">
+				<property name="label">  consume</property>
+			</object>
+		</child>
+		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="update">
+				<property name="label">  update MPD database</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="ncmpcpp">
+				<property name="label">  ncmpcpp - TTY MPD client</property>
+			</object>
+		</child>
+    		<child>
+			<object class="GtkMenuItem" id="cava">
+				<property name="label">󰺢  cava - Audio Visualizer</property>
+			</object>
+    		</child>  
+    		          
+  </object>
+</interface>

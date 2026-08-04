@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="mount1tb">
+				<property name="label">mount 1tb</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="unmount1tb">
+				<property name="label">unmount 1tb</property>
+			</object>
+		</child>
+	<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    	</child>
+    		<child>
+			<object class="GtkMenuItem" id="mountdata">
+				<property name="label">mount data</property>
+			</object>
+   		 </child>
+   		 <child>
+			<object class="GtkMenuItem" id="unmountdata">
+				<property name="label">unmount data</property>
+			</object>
+   		 </child>
+   	 <child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    	</child>
+    		<child>
+			<object class="GtkMenuItem" id="mount3tb">
+				<property name="label">mount 3tb</property>
+			</object>
+   		 </child>
+   		 <child>
+			<object class="GtkMenuItem" id="unmount3tb">
+				<property name="label">unmount 3tb</property>
+			</object>
+   		 </child>
+   /object>
+</interface>

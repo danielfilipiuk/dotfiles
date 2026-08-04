@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="gputopcli">
+				<property name="label">󰝪  AmdgpuTop TUI</property>
+			</object>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="gputopgui">
+				<property name="label">  AmdgpuTop GUI</property>
+			</object>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="lact">
+				<property name="label">  Linux GPU Control App</property>
+			</object>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="radeontop">
+				<property name="label">  RadeonTop</property>
+			</object>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="nvtop">
+				<property name="label">  NVtop</property>
+			</object>
+    		</child>
+  </object>
+</interface>
