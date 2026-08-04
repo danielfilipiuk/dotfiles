@@ -1,0 +1,22 @@
+# mime-tui configuration
+# Auto-created on first run; safe to edit or delete.
+#
+# Every field is optional. Pick a preset for a colour scheme in one line;
+# the [theme] section then overrides individual fields on top.
+#
+# Shipped presets:
+#   default-dark     — built-in defaults (green focus, gold highlight)
+#   default-light    — for light-background terminals
+#   gruvbox-dark     — warm earthy palette
+#   solarized-light  — cream background, blue accents
+#   dracula          — signature purple focus
+#   nord             — cool polar / frost palette
+#   monokai          — vivid neon (★ in pink)
+#
+# Full theme reference: see the project README.
+
+preset = "default-dark"
+
+# Example override — uncomment and edit:
+# [theme]
+# highlight = "#ffaa00"

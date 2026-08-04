@@ -1,0 +1,201 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+	"source": "$HOME/pictures/hyprland/debian+hyprland.png",
+	"width": 25,
+      //"source": "debian",
+      "color": {
+        "1": "0",
+        "2": "31"
+      },
+      "padding": {
+        "top": 1,
+	"left": 3,
+	"right": 2
+      }
+    },
+    "display": {
+      "separator": "",
+      "constants": [
+        // CONSTANT {$1} - COLOR BACKGROUND FOR KEY
+        "\u001b[48;2;43;43;69m",
+        // CONSTANT {$2} - COLOR BACKGROUND FOR OUTPUT
+        "\u001b[48;2;56;59;78m",
+        // CONSTANT {$3} - VERTICAL BARS AT START AND 75th CHARACTERS FORWARD AND BACKWARD
+        "\u001b[90m│                                                  │\u001b[50D\u001b[39m",
+      ]
+    },
+    "modules": [
+      "break",
+      // CUSTOM - Top UI bar
+      {
+        "type": "custom",
+        "key": "{#90}{$1}╭─────────────╮",
+        "format": "{#90}{$2}╭──────────────────────────────────────────────────╮",
+      },
+      {
+        "type": "title",
+        "key": "{#90}{$1}│ {#92}User        {#90}│",
+        "format": "{$2}{$3}{user-name}  {#2}{home-dir}"
+      },
+      {
+        "type": "datetime",
+        "key": "{#90}{$1}│ {#92}Date/time   {#90}│",
+        "format": "{$2}{$3}{month-name}.{day-in-month}.{year} / {hour-pretty}:{minute-pretty}:{second-pretty} {#2}[{weekday}]"
+      },
+      {
+        "type": "title",
+        "key": "{#90}{$1}│ {#92}Hostname    {#90}│",
+        "format": "{$2}{$3}{host-name}"
+      },
+      {
+        "type": "custom",
+        "key": "{#90}{$1}├─────────────┤",
+        "format": "{#90}{$2}├──────────────────────────────────────────────────┤",
+      },
+      {
+        "type": "board",
+        "key": "{#90}{$1}│ {#91}Motherboard {#90}│",
+        "format": "{$2}{$3}{vendor}"
+      },
+      {
+        "type": "board",
+        "key": "{#90}{$1}│ {#91} → Model    {#90}│",
+        "format": "{$2}{$3}{name} v.{version}"
+      },
+      {
+        "type": "bios",
+        "key": "{#90}{$1}│ {#91}Bios / UEFI {#90}│",
+        "format": "{$2}{$3}{vendor}"
+      },
+      {
+        "type": "bios",
+        "key": "{#90}{$1}│ {#91} → Version  {#90}│",
+        "format": "{$2}{$3}[v.{version}] {type} [v.{2}] date: {date}"
+      },
+      {
+        "type": "cpu",
+        "key": "{#90}{$1}│ {#91}CPU         {#90}│",
+        "tempSensor": "/sys/class/hwmon/hwmon6/temp1_input",
+        "showPeCoreCount": true,
+		"temp":true,
+        "format": "{$2}{$3}{name}  {#2}[C:{cores-logical}] [{freq-base}] {temperature}"
+      },
+      {
+        "type": "physicalmemory",
+        "key": "{#90}{$1}│ {#91}RAM         {#90}│",
+        "format": "{$2}{$3}{type} {max-speed} {locator} {vendor}"
+      },
+      {
+        "type": "memory",
+        "key": "{#90}{$1}│ {#91}RAM         {#90}│",
+        "format": "{$2}{$3}{used} / {total} ({percentage}{$2} used)"
+      },
+      {
+        "type": "gpu",
+        "key": "{#90}{$1}│ {#91}GPU         {#90}│",
+        "detectionMethod": "auto",
+        "driverSpecific": true,
+	"temp": true,
+	"format": "{$2}{$3}{name}  {#2}[C:{core-count}]{?frequency} [{frequency}]{?} {temperature}"
+      },
+      {
+        "type": "display",
+        "key": "{#90}{$1}│ {#91} → Monitor  {#90}│",
+        "format": "{$2}{$3}{name} {width}x{height} {inch} in., {#2}{refresh-rate}Hz"
+      },
+      {
+        "type": "custom",
+        "key": "{#90}{$1}├─────────────┤",
+        "format": "{#90}{$2}├──────────────────────────────────────────────────┤",
+      },
+      {
+        "type": "os",
+        "key": "{#90}{$1}│ {#93}OS          {#90}│",
+        "format": "{$2}{$3}{pretty-name}"
+      },
+      {
+        "type": "kernel",
+        "key": "{#90}{$1}│ {#93} → Kernel   {#90}│",
+        "format": "{$2}{$3}{} {release}  {#2}[{arch}]"
+      },
+      {
+        "type": "uptime",
+        "key": "{#90}{$1}│ {#93}Uptime      {#90}│",
+        "format": "{$2}{$3}{1} days, {2} hours : {3} minutes : {4} seconds"
+//        "format": "{$2}{$3}{?days}{days} Days + {?}{hours}:{minutes}:{seconds}"
+      },
+      {
+        "type": "packages",
+        "key": "{#90}{$1}│ {#93}Packages    {#90}│",
+        "format": "{$2}{$3}{all} dpkg"
+      },
+      {
+        "type": "custom",
+        "key": "{#90}{$1}├─────────────┤",
+        "format": "{#90}{$2}├──────────────────────────────────────────────────┤",
+      },
+      {
+        "type": "terminal",
+        "key": "{#90}{$1}│ {#95}Terminal    {#90}│",
+        "format": "{$2}{$3}{pretty-name}  {#2}[{version}] {#37}█{#97}█ {#36}█{#96}█ {#35}█{#95}█ {#34}█{#94}█ {#33}█{#93}█ {#32}█{#92}█ {#31}█{#91}█ {#30}█{#90}█"
+      },
+      {
+        "type": "shell",
+        "key": "{#90}{$1}│ {#95} → Shell    {#90}│",
+        "format": "{$2}{$3}{pretty-name}  {#2}[{version}]"
+      },
+      {
+        "type": "terminalfont",
+        "key": "{#90}{$1}│ {#95}   → Font   {#90}│",
+        "format": "{$2}{$3}{}"
+      },
+      {
+        "type": "custom",
+        "key": "{#90}{$1}├─────────────┤",
+        "format": "{#90}{$2}├──────────────────────────────────────────────────┤",
+      },
+      {
+        "type": "lm",
+        "key": "{#90}{$1}│ {#94}Session     {#90}│",
+        "format": "{$2}{$3}{service} -> {type} {#2}{version}"
+      },
+      {
+        "type": "wm",
+        "key": "{#90}{$1}│ {#94}Compositor  {#90}│",
+        "format": "{$2}{$3}{pretty-name}  {#2}[{version}]"
+      },
+      {
+        "type": "de",
+        "key": "{#90}{$1}│ {#94}  → Desktop {#90}│",
+        "format": "{$2}{$3}{pretty-name}  {#2}[{version}]" 
+      },
+      {
+        "type": "wmtheme",
+        "key": "{#90}{$1}│ {#94}Theme       {#90}│",
+        "format": "{$2}{$3}{}"
+      },
+      {
+        "type": "icons",
+        "key": "{#90}{$1}│ {#94}Icons       {#90}│",
+        "format": "{$2}{$3}{2}"
+      },
+      {
+        "type": "font",
+        "key": "{#90}{$1}│ {#94}Font        {#90}│",
+        "format": "{$2}{$3}{5}"
+      },
+      {
+        "type": "cursor",
+        "key": "{#90}{$1}│ {#94}Cursors     {#90}│",
+        "format": "{$2}{$3}{1}"
+      },
+      // CUSTOM - Button UI bar
+      {
+        "type": "custom",
+        "key": "{#90}{$1}╰─────────────╯",
+        "format": "{#90}{$2}╰──────────────────────────────────────────────────╯",
+      },
+     "break"
+    ]
+  }

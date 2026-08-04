@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hyprland
+GenericName=Dynamic tiling Wayland compositor
+Comment=intelligent dynamic tiling Wayland compositor
+Keywords=tiling;wayland;compositor;
+Exec=uwsm start -U run -- start-hyprland
+Icon=hyprland
+DesktopNames=Hyprland
+

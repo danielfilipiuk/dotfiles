@@ -1,0 +1,11 @@
+
+# wofi config
+
+mode=drun
+allow_images=true
+width=300
+lines=12
+location=center
+columns=1
+prompt=   type to search...
+

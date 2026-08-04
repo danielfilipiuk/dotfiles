@@ -1,0 +1,21 @@
+[Unit]
+Description=Snappy Switcher ALT+TAB Window Switcher for Wayland
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/home/daniel/.local/bin/snappy-switcher --daemon
+Restart=on-failure
+RestartSec=3s
+#LogLevelMax=3
+# keep trying till session is ready
+StartLimitInterval=60
+StartLimitBurst=30
+
+
+# inherit env from graphical session
+#Environment=WAYLAND_DISPLAY=%t/wayland-0
+
+
+[Install]
+WantedBy=graphical-session.target

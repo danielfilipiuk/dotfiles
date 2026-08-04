@@ -1,0 +1,18 @@
+[Unit]
+Description=Clipboard history “manager” powered with Fuzzel for Wayland
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/cliphist-daemon
+StandardOutput=null
+Restart=on-failure
+
+
+[Install]
+WantedBy=graphical-session.target
+
+
+

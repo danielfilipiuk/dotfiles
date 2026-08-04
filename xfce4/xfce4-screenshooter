@@ -1,0 +1,14 @@
+app=gimp-3.2
+custom_action_command=/usr/libexec/xfce4/screenshooter/scripts/imgur-upload.sh %f %imgur_client_id
+last_user=
+last_extension=png
+show_in_folder=false
+screenshot_dir=file:/home/daniel/downloads
+action=2
+delay=2
+region=3
+show_mouse=0
+show_border=1
+title=screen
+timestamp=true
+

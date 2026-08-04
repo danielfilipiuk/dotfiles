@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConfigFile>
+ <configuration name="default">
+  <section name="Settings">
+   <value name="LastOutputDirectory1">/home/daniel/music/</value>
+   <value name="Language">internal</value>
+   <value name="StartCount">16</value>
+   <value name="WindowPosX">516</value>
+   <value name="WindowPosY">37</value>
+   <value name="WindowSizeX">454</value>
+   <value name="WindowSizeY">671</value>
+   <value name="Encoder">opus-enc</value>
+   <value name="WindowMaximized">0</value>
+   <value name="ShowTips">0</value>
+   <value name="NextTip">5</value>
+   <value name="NotificationAvailable">1</value>
+   <value name="EncodeToSingleFile">0</value>
+   <value name="ShowTitleInfo">1</value>
+   <value name="WriteToInputDirectory">1</value>
+   <value name="AllowOverwriteSource">0</value>
+   <value name="ActiveConfiguration">default</value>
+   <value name="EncodeOnTheFly">1</value>
+   <value name="KeepWaveFiles">0</value>
+   <value name="RemoveTracks">1</value>
+   <value name="AddEncodedTracks">0</value>
+   <value name="EncoderOutDir">/home/daniel/music/</value>
+   <value name="LastFilePattern5"/>
+   <value name="LastFilePattern4"/>
+   <value name="LastFilePattern3">&lt;albumartist&gt; - &lt;album&gt;/&lt;track&gt; - &lt;artist&gt; - &lt;title&gt;</value>
+   <value name="LastFilePattern2">&lt;year&gt; - &lt;album&gt;/&lt;track&gt; - &lt;title&gt;</value>
+   <value name="LastFilePattern1">&lt;artist&gt; - &lt;year&gt; - &lt;album&gt;/&lt;track&gt; - &lt;title&gt;</value>
+   <value name="EncoderFilenamePattern">&lt;artist&gt; - &lt;year&gt; - &lt;album&gt;/&lt;track&gt; - &lt;title&gt;</value>
+   <value name="UseFilenameFallback">1</value>
+   <value name="FilenamesAddSequentialNumbers">0</value>
+   <value name="UseUnicodeFilenames">1</value>
+   <value name="FilenamesReplaceSpaces">0</value>
+   <value name="FilenamesKeepTimeStamps">1</value>
+   <value name="ShowJobsTab">0</value>
+   <value name="LastOutputDirectory5">/mnt/data/music/222/Megadeth/</value>
+   <value name="LastOutputDirectory4">/mnt/data/music/222/bs/</value>
+   <value name="LastOutputDirectory3">/mnt/data/music/pmc/</value>
+   <value name="LastOutputDirectory2">/</value>
+   <value name="LastAddedDir">/mnt/500G/torrents/The Rolling Stones - Foreign Tongues [2026] [Hi-Res] [FLAC-24Bit]-Sc4r3cr0w (copy 1)/</value>
+  </section>
+  <section name="Tags">
+   <value name="DefaultComment">fre:ac - free audio converter &lt;https://www.freac.org/&gt;</value>
+   <value name="EnableAPEv2">1</value>
+   <value name="APEv2Encoding">UTF-8</value>
+   <value name="TrackPrependZeroAPEv2">1</value>
+   <value name="EnableRIFFCartTag">0</value>
+   <value name="RIFFCartTagEncoding">ISO-8859-1</value>
+   <value name="EnableFLACMetadata">1</value>
+   <value name="FLACMetadataEncoding">UTF-8</value>
+   <value name="TrackPrependZeroFLACMetadata">1</value>
+   <value name="EnableID3v1">0</value>
+   <value name="ID3v1Encoding">ISO-8859-1</value>
+   <value name="EnableID3v2">1</value>
+   <value name="ID3v2Encoding">UTF-16LE</value>
+   <value name="TrackPrependZeroID3v2">0</value>
+   <value name="EnableMP4Metadata">1</value>
+   <value name="MP4MetadataEncoding">UTF-8</value>
+   <value name="EnableRIFFINFOTag">1</value>
+   <value name="RIFFINFOTagEncoding">ISO-8859-1</value>
+   <value name="TrackPrependZeroRIFFINFOTag">1</value>
+   <value name="EnableVorbisComment">1</value>
+   <value name="VorbisCommentEncoding">UTF-8</value>
+   <value name="TrackPrependZeroVorbisComment">1</value>
+   <value name="ReadChapters">1</value>
+   <value name="WriteChapters">1</value>
+   <value name="WriteMCDI">1</value>
+   <value name="PreserveReplayGain">1</value>
+   <value name="ExtractFromFileNames">1</value>
+   <value name="ReplaceExistingComments">0</value>
+   <value name="CoverArtWriteToAPEv2">1</value>
+   <value name="CoverArtWriteToFLACMetadata">1</value>
+   <value name="CoverArtWriteToID3v2">1</value>
+   <value name="CoverArtWriteToMP4Metadata">1</value>
+   <value name="CoverArtWriteToVorbisComment">1</value>
+   <value name="CoverArtReadFromTags">1</value>
+   <value name="CoverArtWriteToTags">1</value>
+   <value name="CoverArtReadFromFiles">1</value>
+   <value name="CoverArtWriteToFiles">1</value>
+   <value name="CoverArtRestrictFilenames">0</value>
+   <value name="CoverArtFilenames">folder;*cover*;*albumart*;*front*;*back*;*inside*;*cd*;*disc*;*booklet*</value>
+   <value name="CoverArtMaxFileSize">0</value>
+   <value name="CoverArtFilenamePattern">&lt;type&gt;</value>
+   <value name="CoverArtWriteToFilesWithReference">1</value>
+   <value name="ReadEmbeddedCueSheets">1</value>
+   <value name="PreferCueSheetsToChapters">1</value>
+  </section>
+  <section name="Ripper">
+   <value name="ActiveDrive">0</value>
+  </section>
+  <section name="Donate">
+   <value name="StartCount">16</value>
+   <value name="ShowAgain">1</value>
+  </section>
+  <section name="Playlist">
+   <value name="CreatePlaylist">0</value>
+   <value name="CreateCueSheet">0</value>
+   <value name="OutputDir">/home/daniel/music/</value>
+   <value name="FilenamePattern">&lt;albumartist&gt; - &lt;album&gt;/&lt;albumartist&gt; - &lt;album&gt;</value>
+   <value name="UseEncoderOutputDir">1</value>
+   <value name="SinglePlaylistFile">0</value>
+   <value name="PlaylistFormat">m3u-playlist-m3u8</value>
+  </section>
+  <section name="freedb">
+   <value name="EnableCDDBCache">0</value>
+   <value name="AutoCDDBQueries">1</value>
+   <value name="AutoSelectFirstEntry">0</value>
+   <value name="OverwriteCDText">1</value>
+   <value name="EnableLocalCDDB">0</value>
+   <value name="EnableRemoteCDDB">1</value>
+   <value name="Directory">freedb/</value>
+   <value name="Server">gnudb.gnudb.org</value>
+   <value name="eMail">cddb@freac.org</value>
+   <value name="Mode">1</value>
+   <value name="HTTPPort">80</value>
+   <value name="QueryPath">/~cddb/cddb.cgi</value>
+   <value name="SubmitPath">/~cddb/submit.cgi</value>
+   <value name="ProxyMode">0</value>
+   <value name="Proxy">localhost</value>
+   <value name="ProxyPort">1080</value>
+   <value name="ProxyUserName"/>
+   <value name="ProxyPassword"/>
+  </section>
+  <section name="Processing">
+   <value name="EnableProcessing">0</value>
+   <value name="ProcessPlayback">1</value>
+   <value name="ProcessingComponents"/>
+   <value name="SingleFileMode">1</value>
+  </section>
+  <section name="Joblist">
+   <value name="FieldSizes">267,9,50,80,1</value>
+   <value name="Fields">&lt;artist&gt;,&lt;title&gt;,&lt;track&gt;,&lt;time&gt;,&lt;bytes&gt;</value>
+  </section>
+  <section name="LAME">
+   <value name="Preset">3</value>
+   <value name="SetBitrate">1</value>
+   <value name="Bitrate">192</value>
+   <value name="Ratio">1100</value>
+   <value name="SetQuality">1</value>
+   <value name="Quality">0</value>
+   <value name="StereoMode">0</value>
+   <value name="ForceJS">0</value>
+   <value name="VBRMode">4</value>
+   <value name="VBRQuality">0</value>
+   <value name="ABRBitrate">320</value>
+   <value name="SetMinVBRBitrate">0</value>
+   <value name="MinVBRBitrate">128</value>
+   <value name="SetMaxVBRBitrate">0</value>
+   <value name="MaxVBRBitrate">256</value>
+   <value name="CRC">0</value>
+   <value name="Copyright">0</value>
+   <value name="Original">1</value>
+   <value name="Private">0</value>
+   <value name="StrictISO">0</value>
+   <value name="DisableFiltering">0</value>
+   <value name="SetLowpass">0</value>
+   <value name="Lowpass">0</value>
+   <value name="SetLowpassWidth">0</value>
+   <value name="LowpassWidth">0</value>
+   <value name="SetHighpass">0</value>
+   <value name="Highpass">0</value>
+   <value name="SetHighpassWidth">0</value>
+   <value name="HighpassWidth">0</value>
+   <value name="EnableATH">1</value>
+   <value name="ATHType">-1</value>
+   <value name="UseTNS">1</value>
+   <value name="TNSMode">-1</value>
+  </section>
+  <section name="FLAC">
+   <value name="Preset">8</value>
+   <value name="FileFormat">0</value>
+   <value name="StreamableSubset">1</value>
+   <value name="DoMidSideStereo">1</value>
+   <value name="LooseMidSideStereo">0</value>
+   <value name="Blocksize">4096</value>
+   <value name="Apodization">tukey(0.5)</value>
+   <value name="MaxLPCOrder">8</value>
+   <value name="QLPCoeffPrecision">0</value>
+   <value name="DoQLPCoeffPrecSearch">0</value>
+   <value name="DoExhaustiveModelSearch">0</value>
+   <value name="MinResidualPartitionOrder">0</value>
+   <value name="MaxResidualPartitionOrder">5</value>
+  </section>
+  <section name="Vorbis">
+   <value name="Mode">0</value>
+   <value name="FileExtension">0</value>
+   <value name="Quality">100</value>
+   <value name="SetMinBitrate">0</value>
+   <value name="MinBitrate">32</value>
+   <value name="SetBitrate">1</value>
+   <value name="Bitrate">192</value>
+   <value name="SetMaxBitrate">0</value>
+   <value name="MaxBitrate">320</value>
+  </section>
+  <section name="Opus">
+   <value name="Mode">0</value>
+   <value name="Bandwidth">0</value>
+   <value name="FileExtension">0</value>
+   <value name="Bitrate">256</value>
+   <value name="Complexity">10</value>
+   <value name="FrameSize">20000</value>
+   <value name="PacketLoss">0</value>
+   <value name="EnableVBR">1</value>
+   <value name="EnableConstrainedVBR">0</value>
+   <value name="EnableDTX">0</value>
+   <value name="DisablePhaseInversion">0</value>
+  </section>
+  <section name="FDKAAC">
+   <value name="MPEGVersion">0</value>
+   <value name="AACType">39</value>
+   <value name="Mode">1</value>
+   <value name="Bitrate">256</value>
+   <value name="Quality">5</value>
+   <value name="Bandwidth">0</value>
+   <value name="AllowID3v2">0</value>
+   <value name="MP4Container">1</value>
+   <value name="MP4FileExtension">0</value>
+  </section>
+  <section name="Verification">
+   <value name="VerifyInput">1</value>
+   <value name="VerifyOutput">1</value>
+  </section>
+  <section name="Resources">
+   <value name="EnableParallelConversions">1</value>
+   <value name="EnableSuperFastMode">1</value>
+   <value name="NumberOfConversionThreads">16</value>
+   <value name="Priority">0</value>
+  </section>
+  <section name="CueSheet">
+   <value name="ReadInformationTags">1</value>
+   <value name="PreferCueSheets">1</value>
+   <value name="LookForAlternativeFiles">0</value>
+   <value name="IgnoreErrors">0</value>
+  </section>
+  <section name="mpg123">
+   <value name="Decoder"/>
+  </section>
+  <section name="Channels">
+   <value name="Channels">2</value>
+   <value name="SwapChannels">0</value>
+  </section>
+  <section name="Format">
+   <value name="Float">1</value>
+   <value name="Signed">1</value>
+   <value name="Bits">32</value>
+   <value name="ApplyDither">1</value>
+   <value name="DitherType">1</value>
+  </section>
+  <section name="Resample">
+   <value name="Converter">0</value>
+   <value name="Samplerate">192000</value>
+  </section>
+  <section name="rnnoise">
+   <value name="SignalType">2</value>
+   <value name="NoiseType">0</value>
+  </section>
+  <section name="RubberBand">
+   <value name="Stretch">1000</value>
+   <value name="Pitch">1000</value>
+   <value name="Detector">0</value>
+   <value name="Transients">0</value>
+   <value name="Window">0</value>
+   <value name="Phase">0</value>
+   <value name="Formant">0</value>
+   <value name="PitchMode">0</value>
+   <value name="Channels">0</value>
+   <value name="Smoothing">0</value>
+  </section>
+  <section name="Surround">
+   <value name="ChannelSetup">6</value>
+   <value name="RedirectBass">1</value>
+  </section>
+  <section name="Volume">
+   <value name="qdB">0</value>
+  </section>
+  <section name="meh!">
+   <value name="SeparateFolders">0</value>
+   <value name="Encoders">flac-enc,lame-enc</value>
+  </section>
+  <section name="MAC">
+   <value name="CompressionMode">2</value>
+  </section>
+  <section name="mpc-enc">
+   <value name="Set Quality">0</value>
+   <value name="Quality">5</value>
+   <value name="Set Mid/Side stereo mode">0</value>
+   <value name="Mid/Side stereo mode">11</value>
+   <value name="Set Adaptive noise shaping order">0</value>
+   <value name="Adaptive noise shaping order">6</value>
+   <value name="Set Clear Voice Detection">0</value>
+   <value name="Clear Voice Detection">2</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="SndFile">
+   <value name="Format">65536</value>
+   <value name="SubFormat">0</value>
+  </section>
+  <section name="Speex">
+   <value name="Mode">-1</value>
+   <value name="VBR">0</value>
+   <value name="VBRQuality">80</value>
+   <value name="VBRMaxBitrate">-48</value>
+   <value name="ABR">-16</value>
+   <value name="Quality">8</value>
+   <value name="Bitrate">-16</value>
+   <value name="Complexity">3</value>
+   <value name="VAD">0</value>
+   <value name="DTX">0</value>
+  </section>
+  <section name="wv-enc">
+   <value name="Set Enable lossy compression">0</value>
+   <value name="Enable lossy compression">32</value>
+   <value name="Create correction file">0</value>
+   <value name="Set Compression mode">0</value>
+   <value name="Compression mode">-h</value>
+   <value name="Set Extra encode processing">0</value>
+   <value name="Extra encode processing">1</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="ffmpeg-wma-enc">
+   <value name="Set Bitrate">1</value>
+   <value name="Bitrate">48</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="SndFileWave">
+   <value name="SubFormat">0</value>
+  </section>
+  <section name="MP4">
+   <value name="ChapterType">2</value>
+  </section>
+  <section name="ffmpeg-ac3-dec">
+   <value name="Downmix multi-channel audio to stereo">0</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="ffmpeg-dsd-dec">
+   <value name="Downmix multi-channel audio to stereo">0</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="ffmpeg-dts-dec">
+   <value name="Downmix multi-channel audio to stereo">0</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="ffmpeg-mlp-dec">
+   <value name="Downmix multi-channel audio to stereo">0</value>
+   <value name="Set Additional arguments">0</value>
+   <value name="Additional arguments"/>
+  </section>
+  <section name="Notifier">
+   <value name="EnableNotifications">1</value>
+   <value name="PlaySound">0</value>
+   <value name="DisplayMessage">1</value>
+   <value name="MinimumDuration">0</value>
+   <value name="SoundFile">&lt;sounds&gt;/finished.flac</value>
+   <value name="Message">Conversion process finished!</value>
+   <value name="Seconds">30</value>
+  </section>
+  <section name="TagEdit">
+   <value name="ClearAlbumArtist">0</value>
+   <value name="LastSelectedCoverDir">/mnt/500G/torrents/Paul McCartney discography/2013. New/Covers</value>
+  </section>
+  <section name="Logging">
+   <value name="ShowLogsTab">1</value>
+   <value name="ArchiveLogs">1</value>
+   <value name="LogsFolder">/home/daniel/.cache/freac/logs/</value>
+   <value name="DeleteLogs">1</value>
+   <value name="DeleteLogsDays">30</value>
+   <value name="LogCompletePaths">0</value>
+   <value name="SaveConversionLogsWithFiles">0</value>
+   <value name="SaveRippingLogsOnly">1</value>
+   <value name="ConversionLogPattern">&lt;albumartist&gt; - &lt;album&gt;/&lt;albumartist&gt; - &lt;album&gt;</value>
+  </section>
+  <section name="Dialogs">
+   <value name="CDDBMultiMatchSizeX">355</value>
+   <value name="CDDBMultiMatchSizeY">345</value>
+   <value name="CDDBManageCacheSizeX">549</value>
+   <value name="CDDBManageCacheSizeY">312</value>
+  </section>
+ </configuration>
+</ConfigFile>

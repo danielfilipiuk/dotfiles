@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "pidof hyprlock || app2unit -- hyprlock -q",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "uwsm stop",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "pidof hyprlock || app2unit -- hyprlock -q && sleep 2 && systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl soft-reboot",
+    "text" : "SoftReboot",
+    "keybind" : "m"
+}

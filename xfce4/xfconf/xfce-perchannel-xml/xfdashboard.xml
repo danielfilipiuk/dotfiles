@@ -1,0 +1,26 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfdashboard" version="1.0">
+  <property name="always-launch-new-instance" type="bool" value="false"/>
+  <property name="enable-animations" type="bool" value="false"/>
+  <property name="theme" type="string" value="xfdashboard-wine"/>
+  <property name="components" type="empty">
+    <property name="applications-view" type="empty">
+      <property name="show-all-apps" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="enable-unmapped-window-workaround" type="bool" value="false"/>
+  <property name="switch-to-view-on-resume" type="string" value="builtin.windows"/>
+  <property name="plugins" type="empty">
+    <property name="clock-view" type="empty">
+      <property name="hour-color" type="string" value="#99c1f1ff"/>
+      <property name="minute-color" type="string" value="#62a0eaff"/>
+      <property name="second-color" type="string" value="#1c71d8ff"/>
+      <property name="background-color" type="string" value="#9a9996ff"/>
+    </property>
+    <property name="hot-corner" type="empty">
+      <property name="activation-radius" type="int" value="10"/>
+    </property>
+  </property>
+  <property name="reset-search-on-resume" type="bool" value="true"/>
+</channel>

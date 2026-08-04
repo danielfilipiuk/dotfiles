@@ -1,0 +1,10 @@
+[Unit]
+Description=		Clean MEGAsync logs 
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/megasync-log-clean.sh
+RemainAfterExit=no
+
+[Install]
+WantedBy=default.target

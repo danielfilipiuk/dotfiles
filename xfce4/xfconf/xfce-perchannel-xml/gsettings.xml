@@ -1,0 +1,402 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="gsettings" version="1.0">
+  <property name="org" type="empty">
+    <property name="gnome" type="empty">
+      <property name="desktop" type="empty">
+        <property name="sound" type="empty">
+          <property name="event-sounds" type="bool" value="false"/>
+          <property name="input-feedback-sounds" type="bool" value="false"/>
+          <property name="theme-name" type="string" value=""/>
+        </property>
+        <property name="peripherals" type="empty">
+          <property name="mouse" type="empty">
+            <property name="double-click" type="int" value="400"/>
+            <property name="drag-threshold" type="int" value="8"/>
+          </property>
+        </property>
+        <property name="wm" type="empty">
+          <property name="preferences" type="empty">
+            <property name="button-layout" type="string" value=":menu,icon,minimize,maximize,close"/>
+            <property name="action-middle-click-titlebar" type="string" value="lower"/>
+          </property>
+        </property>
+        <property name="interface" type="empty">
+          <property name="gtk-theme" type="string" value="Orchis-Light-Compact-Nord"/>
+          <property name="icon-theme" type="string" value="Papirus-Light"/>
+          <property name="gtk-key-theme" type="string" value=""/>
+          <property name="cursor-blink" type="bool" value="true"/>
+          <property name="cursor-blink-time" type="int" value="1200"/>
+          <property name="cursor-size" type="int" value="22"/>
+          <property name="cursor-theme" type="string" value="Bibata-Modern-Ice"/>
+          <property name="font-name" type="string" value="Noto Sans 9"/>
+          <property name="monospace-font-name" type="string" value="JetBrains Mono 8"/>
+        </property>
+      </property>
+      <property name="nm-applet" type="empty">
+        <property name="eap" type="empty">
+          <property name="02a5c3d2-8679-434d-b42b-e52d5b96ab8e" type="empty">
+            <property name="ignore-ca-cert" type="bool" value="false"/>
+            <property name="ignore-phase2-ca-cert" type="bool" value="false"/>
+          </property>
+        </property>
+      </property>
+      <property name="easytag" type="empty">
+        <property name="default-path" type="string" value="b&apos;/home/daniel/music&apos;"/>
+        <property name="id3v2-unicode-charset" type="string" value="UTF-8"/>
+        <property name="preferences-page" type="uint" value="6"/>
+        <property name="rename-replace-illegal-chars" type="bool" value="false"/>
+        <property name="id3v2-version-4" type="bool" value="true"/>
+        <property name="process-uppercase-all" type="bool" value="false"/>
+        <property name="process-remove-spaces" type="bool" value="false"/>
+        <property name="scan-mode" type="string" value="fill-tag"/>
+        <property name="scan-mask-editor-show" type="bool" value="false"/>
+        <property name="file-changed-bold" type="bool" value="false"/>
+        <property name="sort-mode" type="string" value="ascending-filename"/>
+        <property name="scan-tag-default-mask" type="string" value="%n-%a - %t"/>
+        <property name="process-fields" type="array">
+          <value type="string" value="title"/>
+          <value type="string" value="artist"/>
+          <value type="string" value="album-artist"/>
+          <value type="string" value="album"/>
+          <value type="string" value="genre"/>
+          <value type="string" value="comment"/>
+          <value type="string" value="composer"/>
+          <value type="string" value="original-artist"/>
+          <value type="string" value="copyright"/>
+          <value type="string" value="url"/>
+          <value type="string" value="encoded-by"/>
+        </property>
+        <property name="ogg-split-title" type="bool" value="false"/>
+        <property name="ogg-split-artist" type="bool" value="false"/>
+        <property name="ogg-split-album" type="bool" value="false"/>
+        <property name="ogg-split-genre" type="bool" value="false"/>
+        <property name="ogg-split-comment" type="bool" value="false"/>
+        <property name="ogg-split-composer" type="bool" value="false"/>
+        <property name="ogg-split-original-artist" type="bool" value="false"/>
+        <property name="process-uppercase-first-letters" type="bool" value="false"/>
+        <property name="process-lowercase-all" type="bool" value="false"/>
+        <property name="process-uppercase-first-letter" type="bool" value="true"/>
+        <property name="process-remove-duplicate-spaces" type="bool" value="false"/>
+        <property name="process-insert-capital-spaces" type="bool" value="false"/>
+        <property name="process-convert" type="string" value="spaces"/>
+        <property name="confirm-when-unsaved-files" type="bool" value="false"/>
+        <property name="rename-directory-default-mask" type="string" value="%a"/>
+        <property name="sort-case-sensitive" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="xfce" type="empty">
+      <property name="mousepad" type="empty">
+        <property name="state" type="empty">
+          <property name="application" type="empty">
+            <property name="enabled-plugins" type="array">
+              <value type="string" value="mousepad-plugin-gspell"/>
+            </property>
+          </property>
+          <property name="window" type="empty">
+            <property name="width" type="uint" value="636"/>
+            <property name="height" type="uint" value="988"/>
+            <property name="maximized" type="bool" value="true"/>
+            <property name="fullscreen" type="bool" value="false"/>
+          </property>
+          <property name="search" type="empty">
+            <property name="search-history" type="array">
+              <value type="string" value="By"/>
+            </property>
+            <property name="replace-history" type="array">
+              <value type="string" value="by"/>
+            </property>
+            <property name="replace-all" type="bool" value="true"/>
+            <property name="highlight-all" type="bool" value="false"/>
+          </property>
+        </property>
+        <property name="preferences" type="empty">
+          <property name="view" type="empty">
+            <property name="font-name" type="string" value="Intel One Mono 10"/>
+            <property name="use-default-monospace-font" type="bool" value="false"/>
+            <property name="show-line-numbers" type="bool" value="true"/>
+            <property name="show-whitespace" type="bool" value="true"/>
+            <property name="show-line-endings" type="bool" value="false"/>
+            <property name="word-wrap" type="bool" value="false"/>
+            <property name="color-scheme" type="string" value="kate"/>
+            <property name="auto-indent" type="bool" value="false"/>
+            <property name="match-braces" type="bool" value="true"/>
+            <property name="highlight-current-line" type="bool" value="true"/>
+            <property name="show-right-margin" type="bool" value="false"/>
+            <property name="tab-width" type="uint" value="8"/>
+            <property name="insert-spaces" type="bool" value="true"/>
+          </property>
+          <property name="file" type="empty">
+            <property name="session-restore" type="string" value="never"/>
+            <property name="autosave-timer" type="uint" value="0"/>
+            <property name="add-last-end-of-line" type="bool" value="true"/>
+          </property>
+          <property name="window" type="empty">
+            <property name="toolbar-visible" type="bool" value="true"/>
+            <property name="statusbar-visible" type="bool" value="true"/>
+            <property name="client-side-decorations" type="bool" value="false"/>
+            <property name="always-show-tabs" type="bool" value="false"/>
+            <property name="toolbar-icon-size" type="string" value="small-toolbar"/>
+            <property name="menubar-visible" type="bool" value="true"/>
+          </property>
+        </property>
+        <property name="plugins" type="empty">
+          <property name="gspell" type="empty">
+            <property name="preferences" type="empty">
+              <property name="default-language" type="string" value="es_US"/>
+            </property>
+          </property>
+        </property>
+      </property>
+    </property>
+    <property name="gtk" type="empty">
+      <property name="gtk4" type="empty">
+        <property name="settings" type="empty">
+          <property name="file-chooser" type="empty">
+            <property name="window-size" type="string" value="(781, 340)"/>
+            <property name="date-format" type="string" value="regular"/>
+            <property name="location-mode" type="string" value="path-bar"/>
+            <property name="show-hidden" type="bool" value="false"/>
+            <property name="sidebar-width" type="int" value="140"/>
+            <property name="sort-column" type="string" value="name"/>
+            <property name="sort-directories-first" type="bool" value="true"/>
+            <property name="sort-order" type="string" value="ascending"/>
+            <property name="type-format" type="string" value="category"/>
+            <property name="view-type" type="string" value="list"/>
+          </property>
+        </property>
+      </property>
+      <property name="settings" type="empty">
+        <property name="file-chooser" type="empty">
+          <property name="window-position" type="string" value="(1132, 267)"/>
+          <property name="window-size" type="string" value="(1064, 518)"/>
+          <property name="date-format" type="string" value="with-time"/>
+          <property name="location-mode" type="string" value="path-bar"/>
+          <property name="show-hidden" type="bool" value="true"/>
+          <property name="show-size-column" type="bool" value="true"/>
+          <property name="show-type-column" type="bool" value="true"/>
+          <property name="sidebar-width" type="int" value="142"/>
+          <property name="sort-column" type="string" value="modified"/>
+          <property name="sort-directories-first" type="bool" value="true"/>
+          <property name="sort-order" type="string" value="descending"/>
+          <property name="type-format" type="string" value="category"/>
+          <property name="startup-mode" type="string" value="cwd"/>
+        </property>
+        <property name="color-chooser" type="empty">
+          <property name="selected-color" type="string" value="(true, 1.0, 1.0, 1.0, 1.0)"/>
+          <property name="custom-colors" type="string" value="[(0.057046979865771924, 0.85000000000000009, 0.0, 1.0), (0.14901961386203766, 0.63529413938522339, 0.4117647111415863, 1.0), (0.30588235294117649, 0.60392156862745094, 0.023529411764705882, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.89803921568627454, 0.89803921568627454, 0.89803921568627454, 1.0), (1.0, 1.0, 0.0, 1.0), (0.80392156862745101, 0.80392156862745101, 0.0, 1.0)]"/>
+        </property>
+      </property>
+    </property>
+    <property name="blueman" type="empty">
+      <property name="general" type="empty">
+        <property name="window-properties" type="string" value="[565, 426, 1113, 302]"/>
+        <property name="services-last-item" type="int" value="1"/>
+        <property name="plugin-list" type="array">
+          <value type="string" value="!NMPANSupport"/>
+          <value type="string" value="!PPPSupport"/>
+          <value type="string" value="!NetUsage"/>
+          <value type="string" value="!Networking"/>
+        </property>
+        <property name="symbolic-status-icons" type="bool" value="true"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="nap-enable" type="bool" value="false"/>
+      </property>
+      <property name="transfer" type="empty">
+        <property name="shared-path" type="string" value="/home/daniel/bluetooth"/>
+        <property name="opp-accept" type="bool" value="true"/>
+      </property>
+      <property name="plugins" type="empty">
+        <property name="recentconns" type="empty">
+          <property name="recent-connections" type="string" value="[{&apos;adapter&apos;: &apos;18:93:41:60:16:5B&apos;, &apos;address&apos;: &apos;BC:32:B2:4C:AA:86&apos;, &apos;alias&apos;: &quot;Daniel&apos;s A14&quot;, &apos;icon&apos;: &apos;phone&apos;, &apos;name&apos;: &apos;Audio and input profiles&apos;, &apos;uuid&apos;: &apos;00000000-0000-0000-0000-000000000000&apos;, &apos;time&apos;: &apos;1764429684.9221888&apos;, &apos;device&apos;: &apos;/org/bluez/hci0/dev_BC_32_B2_4C_AA_86&apos;}, {&apos;adapter&apos;: &apos;18:93:41:60:16:5B&apos;, &apos;address&apos;: &apos;41:42:00:7C:63:C0&apos;, &apos;alias&apos;: &apos;TWS&apos;, &apos;icon&apos;: &apos;audio-headset&apos;, &apos;name&apos;: &apos;Audio and input profiles&apos;, &apos;uuid&apos;: &apos;00000000-0000-0000-0000-000000000000&apos;, &apos;time&apos;: &apos;1764431295.9507108&apos;, &apos;device&apos;: &apos;/org/bluez/hci0/dev_41_42_00_7C_63_C0&apos;}]"/>
+        </property>
+        <property name="autoconnect" type="empty">
+          <property name="services" type="string" value="[(&apos;41:42:00:7C:63:C0&apos;, &apos;00000000-0000-0000-0000-000000000000&apos;)]"/>
+        </property>
+        <property name="standarditems" type="empty">
+          <property name="toggle-manager-onclick" type="bool" value="true"/>
+        </property>
+      </property>
+    </property>
+    <property name="soundconverter" type="empty">
+      <property name="output-mime-type" type="string" value="audio/ogg; codecs=opus"/>
+      <property name="replace-messy-chars" type="bool" value="false"/>
+      <property name="resample-rate" type="int" value="48000"/>
+      <property name="mp3-mode" type="string" value="vbr"/>
+      <property name="mp3-cbr-quality" type="int" value="320"/>
+      <property name="same-folder-as-input" type="bool" value="true"/>
+      <property name="mp3-vbr-quality" type="int" value="0"/>
+      <property name="delete-original" type="bool" value="false"/>
+      <property name="force-mono" type="bool" value="false"/>
+      <property name="vorbis-quality" type="double" value="1"/>
+      <property name="opus-bitrate" type="int" value="192"/>
+      <property name="output-resample" type="bool" value="false"/>
+    </property>
+    <property name="debian" type="empty">
+      <property name="gkdebconf" type="empty">
+        <property name="last-frontend" type="string" value="gnome"/>
+      </property>
+    </property>
+    <property name="bluesabre" type="empty">
+      <property name="mugshot" type="empty">
+        <property name="initials" type="string" value="DF"/>
+        <property name="email" type="string" value="danielfilipiuk@gmail.com"/>
+        <property name="fax" type="string" value=""/>
+      </property>
+    </property>
+    <property name="jwz" type="empty">
+      <property name="xdaliclock" type="empty">
+        <property name="geometry" type="string" value="1680x1050+1024+0"/>
+        <property name="timemode" type="string" value="HHMMSS"/>
+        <property name="hourmode" type="string" value="24"/>
+        <property name="datemode" type="string" value="DDMMYY"/>
+        <property name="foreground" type="string" value="#F6F5F4FF"/>
+        <property name="background" type="string" value="#000000FF"/>
+        <property name="cyclespeed" type="int" value="0"/>
+        <property name="windowopacity" type="double" value="1"/>
+        <property name="hidetitlebar" type="bool" value="true"/>
+        <property name="countdownmode" type="bool" value="false"/>
+        <property name="countdownseconds" type="bool" value="true"/>
+      </property>
+    </property>
+  </property>
+  <property name="io" type="empty">
+    <property name="bassi" type="empty">
+      <property name="Amberol" type="empty">
+        <property name="background-play" type="bool" value="false"/>
+        <property name="window-width" type="int" value="1024"/>
+        <property name="window-height" type="int" value="768"/>
+        <property name="enable-recoloring" type="bool" value="true"/>
+      </property>
+    </property>
+  </property>
+  <property name="apps" type="empty">
+    <property name="seahorse" type="empty">
+      <property name="listing" type="empty">
+        <property name="keyrings-selected" type="array">
+          <value type="string" value="secret-service:///org/freedesktop/secrets/collection/login"/>
+        </property>
+      </property>
+      <property name="windows" type="empty">
+        <property name="key-manager" type="empty">
+          <property name="width" type="int" value="600"/>
+          <property name="height" type="int" value="476"/>
+        </property>
+      </property>
+    </property>
+    <property name="psensor" type="empty">
+      <property name="graph-alpha-channel-enabled" type="bool" value="false"/>
+      <property name="graph-background-color" type="string" value="#e8f4e8f4a8f5"/>
+      <property name="graph-foreground-color" type="string" value="#000000000000"/>
+      <property name="graph-background-alpha" type="double" value="1"/>
+      <property name="slog-enabled" type="bool" value="false"/>
+      <property name="slog-interval" type="int" value="300"/>
+      <property name="graph-update-interval" type="int" value="1"/>
+      <property name="graph-monitoring-duration" type="int" value="10"/>
+      <property name="sensor-update-interval" type="int" value="1"/>
+      <property name="interface-hide-on-startup" type="bool" value="false"/>
+      <property name="interface-window-restore-enabled" type="bool" value="true"/>
+      <property name="interface-window-x" type="int" value="544"/>
+      <property name="interface-window-y" type="int" value="232"/>
+      <property name="interface-window-w" type="int" value="837"/>
+      <property name="interface-window-h" type="int" value="594"/>
+      <property name="interface-window-divider-pos" type="int" value="414"/>
+      <property name="notif-script" type="string" value=""/>
+      <property name="graph-smooth-curves-enabled" type="bool" value="true"/>
+      <property name="provider-lmsensors-enabled" type="bool" value="true"/>
+      <property name="provider-nvctrl-enabled" type="bool" value="true"/>
+      <property name="provider-atiadlsdk-enabled" type="bool" value="true"/>
+      <property name="provider-gtop2-enabled" type="bool" value="true"/>
+      <property name="provider-hddtemp-enabled" type="bool" value="false"/>
+      <property name="provider-libatasmart-enabled" type="bool" value="true"/>
+      <property name="provider-udisks2-enabled" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="com" type="empty">
+    <property name="github" type="empty">
+      <property name="FontManager" type="empty">
+        <property name="FontManager" type="empty">
+          <property name="mode" type="string" value="browse"/>
+          <property name="browse-pane-position" type="double" value="54.940476190476197"/>
+          <property name="content-size" type="double" value="39.702602230483272"/>
+          <property name="sidebar-size" type="double" value="32.976190476190474"/>
+          <property name="hor-content-size" type="double" value="44.455445544554458"/>
+          <property name="is-maximized" type="bool" value="true"/>
+          <property name="window-size" type="string" value="(932, 676)"/>
+          <property name="preview-page" type="int" value="1"/>
+          <property name="hor-sidebar-size" type="double" value="19.88095238095238"/>
+          <property name="preview-text" type="string" value="🥡👯🍷🚘💜🥫🧪🌊😞🚚🍉🍻🇳👝🕰🗜🧬🧗🚣🎃🚧⛔🌫🚕"/>
+          <property name="browse-preview-visible" type="bool" value="true"/>
+          <property name="browse-mode" type="string" value="grid"/>
+          <property name="charmap-font-size" type="double" value="19.584905660377359"/>
+        </property>
+        <property name="FontViewer" type="empty">
+          <property name="waterfall-show-line-size" type="bool" value="false"/>
+          <property name="preview-page" type="int" value="1"/>
+          <property name="window-size" type="string" value="(932, 676)"/>
+          <property name="preview-text" type="string" value="&#xA;    The wizard quickly jinxed the gnomes before they vaporized.&#xA;&#xA;    ABCDEFGHIJKLMNOPQRSTUVWXYZ&#xA;    abcdefghijklmnopqrstuvwxyz&#xA;    1234567890.:,;(*!?&apos;)&#xA;&#xA;    "/>
+          <property name="is-maximized" type="bool" value="false"/>
+          <property name="charmap-font-size" type="double" value="18.183673469387756"/>
+          <property name="preview-mode" type="string" value="preview"/>
+          <property name="preview-font-size" type="double" value="41.510204081632651"/>
+        </property>
+      </property>
+      <property name="maoschanz" type="empty">
+        <property name="drawing" type="empty">
+          <property name="last-version" type="string" value="1.0.2"/>
+          <property name="tools-options" type="empty">
+            <property name="last-size" type="int" value="5"/>
+            <property name="last-left-rgba" type="array">
+              <value type="string" value="0.8"/>
+              <value type="string" value="0.0"/>
+              <value type="string" value="0.0"/>
+              <value type="string" value="1.0"/>
+            </property>
+            <property name="last-right-rgba" type="array">
+              <value type="string" value="1.0"/>
+              <value type="string" value="1.0"/>
+              <value type="string" value="0.0"/>
+              <value type="string" value="0.5"/>
+            </property>
+            <property name="use-antialiasing" type="bool" value="true"/>
+            <property name="last-delete-replace" type="string" value="alpha"/>
+            <property name="last-text-background" type="string" value="thin-outline"/>
+            <property name="last-font-name" type="string" value="Sans"/>
+            <property name="last-active-shape" type="string" value="polygon"/>
+            <property name="last-shape-filling" type="string" value="empty"/>
+          </property>
+          <property name="last-active-tool" type="string" value="crop"/>
+          <property name="maximized" type="bool" value="true"/>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="net" type="empty">
+    <property name="launchpad" type="empty">
+      <property name="plank" type="empty">
+        <property name="docks" type="empty">
+          <property name="dock1" type="empty">
+            <property name="dock-items" type="array">
+              <value type="string" value="clippy.dockitem"/>
+            </property>
+            <property name="theme" type="string" value="Transparent"/>
+            <property name="position" type="string" value="bottom"/>
+            <property name="monitor" type="string" value=""/>
+            <property name="alignment" type="string" value="center"/>
+            <property name="icon-size" type="int" value="48"/>
+            <property name="zoom-enabled" type="bool" value="true"/>
+            <property name="hide-mode" type="string" value="intelligent"/>
+            <property name="pinned-only" type="bool" value="false"/>
+            <property name="current-workspace-only" type="bool" value="false"/>
+            <property name="pressure-reveal" type="bool" value="false"/>
+            <property name="lock-items" type="bool" value="false"/>
+          </property>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="io.github.thetumultuousunicornofdarkness.cpu-x" type="empty">
+    <property name="gui-theme" type="string" value="auto"/>
+  </property>
+</channel>

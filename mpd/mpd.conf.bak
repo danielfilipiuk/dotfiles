@@ -1,0 +1,175 @@
+}#####################  GLOBAL    ###########################
+#error  warning notice info verbose
+log_level			"warning"
+log_file			"$XDG_CACHE_HOME/mpd/mpd_log"
+zeroconf_enabled		"no"
+#####################  DATABASE    ###########################
+database        {
+                                plugin "simple"
+                                path "$XDG_CONFIG_HOME/mpd/mpd_database"
+                }
+#####################  FILES    ###########################
+music_directory		        "~/music"
+playlist_directory		"$XDG_CONFIG_HOME/mpd/playlists"
+state_file			"$XDG_CACHE_HOME/mpd/mpd_state"
+sticker_file			"$XDG_CONFIG_HOME/mpd/sticker.sql"
+auto_update	                "yes"
+#auto_update_depth              "3"
+#follow_outside_symlinks	"yes"
+#follow_inside_symlinks		"yes"
+##################### PLAYER ###########################
+restore_paused                  "yes"
+##################### AUDIO OUTPUT ###########################
+audio_output    {
+                        	type		"pulse"
+                        	name		"PulseAudio"
+                }
+
+audio_output 	{
+    						type "fifo"
+    						name "my_fifo"
+    						path "/tmp/mpd.fifo"
+    						format "44100:16:1"
+				}
+ 
+
+audio_output    {
+                        	type		"alsa"
+                        	name		"ALC897 Analog"
+                        	device		"hw:CARD=Generic_1,DEV=0"
+#                        	mixer_type      "none"
+#                        	mixer_device	"hw:CARD=Generic_1"
+#                       	mixer_control	"Master"
+#                        	mixer_index	"0"
+                }
+##################### RESAMPLER ###########################
+resampler       {
+                                plugin "soxr"
+                                quality "very high"
+                }
+##################### CACHE & BUFFER ###########################
+max_playlist_length             "60960"   
+max_output_buffer_size          "44768"
+max_command_list_size           "16384"  
+input_cache     {
+                        	size "64 MB"
+                }
+##################### STORAGE PLUGINS ###########################
+input           {
+                                plugin "curl"
+                                enabled "no"
+                }
+input           {
+                                plugin "nfs"
+                                enabled "no"
+                }
+input           {
+                                plugin "smbclient"
+                                enabled "no"
+                }
+input           {
+                                plugin "udisks"
+                                enabled "no"
+                }
+##################### INPUT PLUGINS ###########################
+input           {
+                                plugin "alsa"
+                                enabled "no"
+                }
+input           {
+                                plugin "cdio_paranoia"
+                                enabled "no"
+                }
+input           {
+                                plugin "ffmpeg"
+                                enabled "no"
+                }
+input           {
+                                plugin "mms"
+                                enabled "no"
+                }
+input           {
+                                plugin "nfs"
+                                enabled "no"
+                }
+input           {
+                                plugin "smbclient"
+                                enabled "no"
+                }
+input           {
+                                plugin "qobuz"
+                                enabled "no"
+                }
+##################### DECODERS ###########################
+#  flac mpg123 opus  vorbis pcm ffmpeg
+decoder         {
+                                plugin "mad"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "wavpack"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "sndfile"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "mpcdec"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "faad"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "audiofile"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "adplug"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "dsdiff"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "dsf"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "fluidsynth"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "gme"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "mikmod"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "modplug"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "openmpt"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "sidplay"
+                                enabled "no"
+                }
+decoder         {
+                                plugin "wildmidi"
+                                enabled "no"
+                }
+
+decoder         {
+                                plugin "ffmpeg"
+                                analyzeduration "30000000"
+                                probesize "30000000"
+                }
+

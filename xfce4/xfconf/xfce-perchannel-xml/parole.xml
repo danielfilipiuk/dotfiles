@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="parole" version="1.0">
+  <property name="subtitles" type="empty">
+    <property name="font" type="string" value="Noto Sans 12"/>
+  </property>
+  <property name="folders" type="empty">
+    <property name="last-used-media" type="string" value="/mnt/3TB/animacion/Dominion Tank Police/New Dominion Tank Police (1993 - DUAL Audio)"/>
+  </property>
+  <property name="window" type="empty">
+    <property name="maximized" type="bool" value="true"/>
+    <property name="width" type="int" value="1680"/>
+    <property name="height" type="int" value="1022"/>
+  </property>
+  <property name="audio" type="empty">
+    <property name="volume" type="int" value="100"/>
+    <property name="visualization-enabled" type="bool" value="false"/>
+  </property>
+  <property name="parole" type="empty">
+    <property name="plugins" type="string" value="parole-notify.so"/>
+  </property>
+</channel>

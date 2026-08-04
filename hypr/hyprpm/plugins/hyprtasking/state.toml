@@ -1,0 +1,11 @@
+[hyprtasking]
+enabled = true
+failed = false
+filename = 'hyprtasking.so'
+
+[repository]
+author = 'raybbian'
+hash = 'a3efa15ada7318daa6fcf55c361dd7bdef15df3e'
+name = 'hyprtasking'
+rev = ''
+url = 'https://github.com/raybbian/hyprtasking'

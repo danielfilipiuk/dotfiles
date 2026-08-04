@@ -1,0 +1,49 @@
+
+hl.window_rule({
+	 name = "brave - whatsapp",
+	 match = {class = "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default"},
+	 float = true,
+	 opacity = 1,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - Pinterest",
+	 match = {class = "brave-glpcdlmagpenkpdgnjmfimanpcigbbhc-Default"},
+	 float = true,
+ 	 opacity = 1,
+	 size = "1069 825",
+})
+
+
+hl.window_rule({
+	 name = "brave - Instagram",
+	 match = {class = "brave-akpamiohjfcnimfljfndmaldlcfphjmp-Default"},
+	 float = true,
+	 opacity = 1,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - Maps",
+	 match = {class = "brave-mnhkaebcjjhencmpkapnbdaogjamfbcj-Default"},
+	 float = true,
+	 opacity = 1,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - Keep",
+	 match = {class = "brave-eilembjdkfgodjkcjnpgpaenohkicgjd-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - photos",
+	 match = {class = "brave-ncmjhecbjeaamljdfahankockkkdmedg-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})

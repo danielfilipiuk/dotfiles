@@ -1,0 +1,8 @@
+[Unit]
+Description=Monthly cleanup of application caches
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rm -rf \
+  /home/daniel/.cache/BraveSoftware/Brave-Browser/Default/Cache/* \
+  /home/daniel/.cache/spotify/Data/*

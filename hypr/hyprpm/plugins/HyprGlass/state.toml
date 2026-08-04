@@ -1,0 +1,11 @@
+[hyprglass]
+enabled = false
+failed = false
+filename = 'hyprglass.so'
+
+[repository]
+author = 'hyprnux'
+hash = '5bc835dcc909cef6980291688143048cf16942b5'
+name = 'HyprGlass'
+rev = ''
+url = 'https://github.com/hyprnux/hyprglass'

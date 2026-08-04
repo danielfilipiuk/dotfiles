@@ -1,0 +1,11 @@
+[dynamic-cursors]
+enabled = true
+failed = false
+filename = 'dynamic-cursors.so'
+
+[repository]
+author = 'virtcode'
+hash = 'f5ba36c7622098b53bf62ddb8ddf03b914abbdf8'
+name = 'dynamic-cursors'
+rev = ''
+url = 'https://github.com/virtcode/hypr-dynamic-cursors'

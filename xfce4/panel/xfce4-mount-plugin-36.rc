@@ -1,0 +1,13 @@
+on_mount_cmd=
+mount_command=mount %m
+umount_command=umount %m
+excluded_filesystems=/boot/efi /proc/fs/nfsd /run/user/1000/gvfs /run/user/1000/doc
+icon=/usr/share/icons/Papirus-Dark/64x64/devices/media-removable.svg
+show_message_dialog=true
+include_networked_filesystems=true
+trim_devicenames=true
+td_count=14
+exclude_selected_filesystems=true
+exclude_devicenames_in_menu=true
+eject_cddrives=false
+

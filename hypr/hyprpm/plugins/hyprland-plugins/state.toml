@@ -1,0 +1,26 @@
+[borders-plus-plus]
+enabled = false
+failed = false
+filename = 'borders-plus-plus.so'
+
+[csgo-vulkan-fix]
+enabled = false
+failed = false
+filename = 'csgo-vulkan-fix.so'
+
+[hyprbars]
+enabled = false
+failed = false
+filename = 'hyprbars.so'
+
+[hyprfocus]
+enabled = false
+failed = false
+filename = 'hyprfocus.so'
+
+[repository]
+author = 'hyprwm'
+hash = '7644cecdb947060682891a0db2a0cdc5c0b9e704'
+name = 'hyprland-plugins'
+rev = ''
+url = 'https://github.com/hyprwm/hyprland-plugins'

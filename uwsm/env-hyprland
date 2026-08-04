@@ -1,0 +1,14 @@
+export HYPRCURSOR_SIZE=22
+export HYPRCURSOR_THEME=hypr_Bibata-Modern-Ice
+export HYPRLAND_TRACE=0
+export HYPRLAND_NO_RT=0
+export AQ_TRACE=0
+export WAYLANDDRV_PRIMARY_MONITOR=DP-1
+export GDK_SCALE=1
+# GTK: Use wayland if available. If not: try x11, then any other GDK backend.
+# export GDK_BACKEND=wayland,x11,*       
+# Run SDL2 applications on Wayland. Remove or set to x11 if games that provide older SDL cause compatibility issues
+# export SDL_VIDEODRIVER=wayland 
+# Clutter already has wayland enabled, this variable will force Clutter applications to try and use the Wayland backend
+# export CLUTTER_BACKEND=wayland
+

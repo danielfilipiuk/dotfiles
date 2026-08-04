@@ -1,0 +1,405 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-screensaver" version="1.0">
+  <property name="lock" type="empty">
+    <property name="sleep-activation" type="bool" value="true"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="saver-activation" type="empty">
+      <property name="delay" type="int" value="10"/>
+    </property>
+    <property name="logout" type="empty">
+      <property name="enabled" type="bool" value="false"/>
+    </property>
+    <property name="user-switching" type="empty">
+      <property name="enabled" type="bool" value="false"/>
+    </property>
+    <property name="embedded-keyboard" type="empty">
+      <property name="enabled" type="bool" value="false"/>
+    </property>
+    <property name="status-messages" type="empty">
+      <property name="enabled" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="saver" type="empty">
+    <property name="mode" type="int" value="2"/>
+    <property name="idle-activation" type="empty">
+      <property name="enabled" type="bool" value="true"/>
+      <property name="delay" type="int" value="5"/>
+    </property>
+    <property name="fullscreen-inhibit" type="bool" value="true"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="themes" type="empty">
+      <property name="list" type="array">
+        <value type="string" value="screensavers-glmatrix"/>
+      </property>
+    </property>
+  </property>
+  <property name="screensavers" type="empty">
+    <property name="xfce-floaters" type="empty">
+      <property name="show-paths" type="bool" value="false"/>
+      <property name="arguments" type="string" value="-n &apos;25&apos; -r"/>
+      <property name="do-rotations" type="bool" value="true"/>
+      <property name="print-stats" type="bool" value="false"/>
+      <property name="number-of-images" type="int" value="25"/>
+    </property>
+    <property name="xfce-personal-slideshow" type="empty">
+      <property name="location" type="string" value="/home/daniel"/>
+      <property name="arguments" type="string" value="--location=/home/daniel --background-color=#000000 --no-crop"/>
+    </property>
+    <property name="fluidballs" type="empty">
+      <property name="random" type="bool" value="true"/>
+      <property name="arguments" type="string" value="--delay 13889 --count 300 --size 25 --elasticity 0 --no-random --no-shake"/>
+      <property name="delay" type="double" value="13889"/>
+      <property name="gravity" type="double" value="0"/>
+      <property name="shake" type="bool" value="true"/>
+    </property>
+    <property name="flurry" type="empty">
+      <property name="preset" type="string" value="random"/>
+      <property name="arguments" type="string" value=""/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="flyingtoasters" type="empty">
+      <property name="ntoasters" type="double" value="50"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --ntoasters 50 --nslices 50"/>
+      <property name="nslices" type="double" value="50"/>
+      <property name="tex" type="bool" value="false"/>
+    </property>
+    <property name="fuzzyflakes" type="empty">
+      <property name="speed" type="double" value="14"/>
+      <property name="arguments" type="string" value="--delay 10000 --speed 14 --layers 10 --random-colors --arms 6 --thickness 9 --bthickness 2 --radius 18"/>
+      <property name="layers" type="double" value="10"/>
+      <property name="rc" type="bool" value="true"/>
+      <property name="showfps" type="bool" value="false"/>
+      <property name="arms" type="double" value="6"/>
+      <property name="thickness" type="double" value="9"/>
+      <property name="bthickness" type="double" value="2"/>
+      <property name="radius" type="double" value="18"/>
+    </property>
+    <property name="gears" type="empty">
+      <property name="speed" type="double" value="1"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --count 20"/>
+      <property name="count" type="double" value="20"/>
+      <property name="wander" type="bool" value="false"/>
+      <property name="spin" type="bool" value="false"/>
+    </property>
+    <property name="geodesic" type="empty">
+      <property name="object" type="string" value="random"/>
+      <property name="arguments" type="string" value="--mode random --delay 30000 --speed 1 --count 4"/>
+    </property>
+    <property name="geodesicgears" type="empty">
+      <property name="numbers" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 30000 --timeout 20"/>
+      <property name="labels" type="bool" value="false"/>
+    </property>
+    <property name="gflux" type="empty">
+      <property name="waves" type="double" value="6"/>
+      <property name="arguments" type="string" value="--delay 20000 --speed 0 --squares 19 --waves 6 --mode checker"/>
+      <property name="mode" type="string" value="checker"/>
+    </property>
+    <property name="gibson" type="empty">
+      <property name="grid-height" type="int" value="15"/>
+      <property name="arguments" type="string" value="--grid-width &apos;15&apos; --grid-depth &apos;15&apos; --grid-height &apos;15&apos; --spacing &apos;2&apos; --columns &apos;10&apos; --fps"/>
+      <property name="grid-depth" type="int" value="15"/>
+      <property name="grid-width" type="int" value="15"/>
+      <property name="spacing" type="int" value="2"/>
+      <property name="columns" type="int" value="10"/>
+      <property name="speed" type="double" value="1"/>
+      <property name="tex" type="bool" value="false"/>
+      <property name="showfps" type="bool" value="true"/>
+      <property name="delay" type="double" value="0"/>
+    </property>
+    <property name="glblur" type="empty">
+      <property name="blursize" type="double" value="62"/>
+      <property name="arguments" type="string" value="--delay 10000 --blursize 62"/>
+    </property>
+    <property name="gleidescope" type="empty">
+      <property name="zoom" type="bool" value="true"/>
+      <property name="arguments" type="string" value="--delay 20000 --duration 30 --zoom"/>
+    </property>
+    <property name="glhanoi" type="empty">
+      <property name="fog" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 15000 --count 30 --poles 30 --speed 9 --trails 5"/>
+      <property name="trails" type="double" value="5"/>
+      <property name="poles" type="double" value="30"/>
+      <property name="count" type="double" value="30"/>
+      <property name="speed" type="double" value="9"/>
+    </property>
+    <property name="glmatrix" type="empty">
+      <property name="mode" type="string" value="matrix"/>
+      <property name="arguments" type="string" value="--delay &apos;29470&apos; --density &apos;75&apos; --speed &apos;8&apos;  --no-rotate"/>
+      <property name="speed" type="double" value="8"/>
+      <property name="density" type="double" value="75"/>
+      <property name="fog" type="bool" value="false"/>
+      <property name="waves" type="bool" value="false"/>
+      <property name="tex" type="bool" value="false"/>
+      <property name="rotate" type="bool" value="true"/>
+      <property name="wire" type="bool" value="false"/>
+      <property name="delay" type="double" value="29470"/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="glplanet" type="empty">
+      <property name="mode" type="string" value="globe"/>
+      <property name="arguments" type="string" value="--delay 20000 --mode globe"/>
+      <property name="image" type="bool" value="false"/>
+      <property name="image2" type="bool" value="false"/>
+      <property name="rotate" type="bool" value="false"/>
+      <property name="roll" type="bool" value="false"/>
+      <property name="stars" type="bool" value="false"/>
+    </property>
+    <property name="glschool" type="empty">
+      <property name="NFish" type="double" value="249"/>
+      <property name="arguments" type="string" value="--delay 20000 --nfish 249 --avoidfact 4 --matchfact 1 --centerfact 0 --targetfact 244"/>
+      <property name="AvoidFact" type="double" value="4.9000000000000004"/>
+      <property name="MatchFact" type="double" value="1.48"/>
+      <property name="CenterFact" type="double" value="0.40000000000000002"/>
+      <property name="TargetFact" type="double" value="244"/>
+    </property>
+    <property name="headroom" type="empty">
+      <property name="mask" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 20000 --speed 1"/>
+    </property>
+    <property name="juggler3d" type="empty">
+      <property name="tail" type="double" value="66"/>
+      <property name="arguments" type="string" value="--delay 10000 --count 200 --cycles 1000 --tail 66"/>
+      <property name="rings" type="bool" value="false"/>
+      <property name="knives" type="bool" value="false"/>
+    </property>
+    <property name="kumppa" type="empty">
+      <property name="random" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 10000 --speed 0"/>
+    </property>
+    <property name="lament" type="empty">
+      <property name="tex" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 20000"/>
+    </property>
+    <property name="m6502" type="empty">
+      <property name="file" type="string" value=""/>
+      <property name="arguments" type="string" value="--file &apos;None&apos; --displaytime &apos;30&apos; --tv-color &apos;70&apos; --tv-tint &apos;5&apos; --ips &apos;15000&apos; --tv-brightness &apos;3&apos; --tv-contrast &apos;150&apos;"/>
+    </property>
+    <property name="mountain" type="empty">
+      <property name="ncolors" type="double" value="255"/>
+      <property name="arguments" type="string" value="--delay 20000 --count 30 --ncolors 255"/>
+    </property>
+    <property name="peepers" type="empty">
+      <property name="count" type="double" value="50"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --count 50 --mode beholder"/>
+      <property name="mode" type="string" value="beholder"/>
+    </property>
+    <property name="phosphor" type="empty">
+      <property name="scale" type="int" value="4"/>
+      <property name="arguments" type="string" value="--delay 50000 --scale 4 --ticks 20 "/>
+    </property>
+    <property name="pong" type="empty">
+      <property name="clock" type="bool" value="true"/>
+      <property name="arguments" type="string" value="--speed 6 --noise 0 --clock --tv-brightness 3 --tv-contrast 150"/>
+    </property>
+    <property name="romanboy" type="empty">
+      <property name="display-mode" type="string" value="random"/>
+      <property name="arguments" type="string" value="--view-mode walk --surface-order 3 --deformation-speed 10 --initial-deformation 1000  --appearance solid  --projection perspective --speed-x 1 --speed-y 1 --speed-z 1 --walk-direction 83 --walk-speed 20 --delay 25000"/>
+      <property name="view-mode" type="string" value="walk"/>
+      <property name="appearance" type="string" value="solid"/>
+      <property name="colors" type="string" value="random"/>
+      <property name="projection" type="string" value="perspective"/>
+    </property>
+    <property name="skulloop" type="empty">
+      <property name="wire" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1"/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="speedmine" type="empty">
+      <property name="mode" type="string" value="speedmine"/>
+      <property name="arguments" type="string" value="--delay 30000 --maxspeed 700 --thrust 1 --gravity 9 "/>
+    </property>
+    <property name="squiral" type="empty">
+      <property name="scale" type="double" value="6"/>
+      <property name="arguments" type="string" value="--delay 10000 --disorder 0 --scale 6 --handedness 0 --fill 100 --ncolors 185"/>
+      <property name="fill" type="double" value="100"/>
+      <property name="ncolors" type="double" value="185"/>
+    </property>
+    <property name="squirtorus" type="empty">
+      <property name="count" type="double" value="50"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 8 --count 50"/>
+      <property name="speed" type="double" value="8"/>
+    </property>
+    <property name="starwars" type="empty">
+      <property name="smooth" type="bool" value="true"/>
+      <property name="arguments" type="string" value="--delay 40000 --steps 35 --spin 0 --alignment left --no-smooth --no-fade --lines 125 --size -1 --columns -1"/>
+      <property name="fade" type="bool" value="true"/>
+    </property>
+    <property name="surfaces" type="empty">
+      <property name="surface" type="string" value="random"/>
+      <property name="arguments" type="string" value="--delay 20000 --speed 300  "/>
+      <property name="mode" type="string" value="random"/>
+    </property>
+    <property name="timetunnel" type="empty">
+      <property name="logo" type="bool" value="true"/>
+      <property name="arguments" type="string" value="--end &apos;27&apos; --no-logo"/>
+      <property name="reverse" type="bool" value="false"/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="topblock" type="empty">
+      <property name="resolution" type="double" value="20"/>
+      <property name="arguments" type="string" value="--delay 10000 --dropSpeed 9 --size 3 --spawn 4 --resolution 20 --maxColors 32 --rotateSpeed 18"/>
+      <property name="spawn" type="double" value="4"/>
+      <property name="size" type="double" value="3"/>
+      <property name="dropspeed" type="double" value="9"/>
+      <property name="maxColors" type="double" value="32"/>
+      <property name="blob" type="bool" value="false"/>
+      <property name="override" type="bool" value="false"/>
+      <property name="carpet" type="bool" value="false"/>
+      <property name="nipples" type="bool" value="false"/>
+      <property name="rotatespeed" type="double" value="18"/>
+      <property name="wire" type="bool" value="false"/>
+      <property name="follow" type="bool" value="false"/>
+    </property>
+    <property name="vigilance" type="empty">
+      <property name="count" type="double" value="30"/>
+      <property name="arguments" type="string" value="--delay 20000 --speed 1 --count 30"/>
+    </property>
+    <property name="atlantis" type="empty">
+      <property name="sharkcount" type="double" value="20"/>
+      <property name="arguments" type="string" value="--delay 25000 --whalespeed 250 --size 10000 --count 20  "/>
+      <property name="sharkproximity" type="double" value="10000"/>
+      <property name="water" type="string" value="shimmer"/>
+      <property name="bg" type="string" value="gradient"/>
+    </property>
+    <property name="atunnel" type="empty">
+      <property name="tex" type="bool" value="false"/>
+      <property name="arguments" type="string" value="--delay 10000 --light"/>
+      <property name="light" type="bool" value="true"/>
+    </property>
+    <property name="blocktube" type="empty">
+      <property name="holdtime" type="double" value="10"/>
+      <property name="arguments" type="string" value="--delay 40000 --holdtime 10 --changetime 38"/>
+      <property name="changetime" type="double" value="38"/>
+      <property name="tex" type="bool" value="false"/>
+    </property>
+    <property name="bouncingcow" type="empty">
+      <property name="count" type="double" value="9"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --count 9"/>
+      <property name="mathematical" type="bool" value="false"/>
+      <property name="speed" type="double" value="1"/>
+    </property>
+    <property name="chompytower" type="empty">
+      <property name="speed" type="double" value="2.5800000000000001"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 2 --resolution 1"/>
+      <property name="spin" type="bool" value="false"/>
+      <property name="tilt" type="bool" value="false"/>
+      <property name="smooth" type="bool" value="false"/>
+    </property>
+    <property name="circuit" type="empty">
+      <property name="count" type="double" value="30"/>
+      <property name="arguments" type="string" value="--delay 20000 --parts 30 --rotate-speed 1 "/>
+      <property name="render" type="string" value="light"/>
+    </property>
+    <property name="cityflow" type="empty">
+      <property name="waves" type="double" value="20"/>
+      <property name="arguments" type="string" value="--delay &apos;20000&apos; --count &apos;3809&apos; --skew &apos;10&apos; --wave-speed &apos;25&apos; --wave-radius &apos;256&apos; --waves &apos;20&apos;"/>
+      <property name="count" type="double" value="3809"/>
+      <property name="skew" type="double" value="10"/>
+      <property name="wire" type="bool" value="false"/>
+    </property>
+    <property name="crumbler" type="empty">
+      <property name="speed" type="double" value="1.6399999999999999"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --density 5 --fracture 20"/>
+      <property name="density" type="double" value="5"/>
+      <property name="fracture" type="double" value="20"/>
+    </property>
+    <property name="cubicgrid" type="empty">
+      <property name="speed" type="double" value="4.4000000000000004"/>
+      <property name="arguments" type="string" value="--delay 20000 --speed 4 --zoom 20 "/>
+      <property name="bigdots" type="bool" value="false"/>
+      <property name="symmetry" type="string" value="random"/>
+    </property>
+    <property name="deepstars" type="empty">
+      <property name="speed" type="double" value="4.7999999999999998"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 4 --smear 4"/>
+      <property name="smear" type="double" value="4.7999999999999998"/>
+    </property>
+    <property name="discoball" type="empty">
+      <property name="count" type="double" value="95"/>
+      <property name="arguments" type="string" value="--delay 30000 --speed 1 --count 95"/>
+    </property>
+    <property name="energystream" type="empty">
+      <property name="speed" type="double" value="2.6099999999999999"/>
+      <property name="arguments" type="string" value="--speed 2"/>
+    </property>
+    <property name="engine" type="empty">
+      <property name="engine" type="string" value="random"/>
+      <property name="arguments" type="string" value="--delay 30000  --titles"/>
+      <property name="titles" type="bool" value="true"/>
+    </property>
+    <property name="bsod" type="empty">
+      <property name="delay" type="double" value="60"/>
+      <property name="arguments" type="string" value="--delay &apos;60&apos;"/>
+    </property>
+    <property name="pacman" type="empty">
+      <property name="delay" type="double" value="0"/>
+      <property name="arguments" type="string" value=""/>
+      <property name="size" type="int" value="0"/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="sproingies" type="empty">
+      <property name="count" type="double" value="30"/>
+      <property name="arguments" type="string" value="--delay &apos;30000&apos; --count &apos;30&apos;"/>
+    </property>
+    <property name="winduprobot" type="empty">
+      <property name="count" type="double" value="100"/>
+      <property name="arguments" type="string" value="--delay &apos;20000&apos; --speed &apos;1&apos; --count &apos;100&apos; --size &apos;1&apos; --opacity &apos;1&apos; --talk &apos;1&apos; --no-texture --no-fade"/>
+      <property name="size" type="double" value="1"/>
+      <property name="opacity" type="double" value="1"/>
+      <property name="talk" type="double" value="1"/>
+      <property name="texture" type="bool" value="true"/>
+      <property name="fade" type="bool" value="true"/>
+    </property>
+    <property name="wormhole" type="empty">
+      <property name="stars" type="double" value="100"/>
+      <property name="arguments" type="string" value="--delay &apos;10000&apos; --zspeed &apos;5&apos; --stars &apos;100&apos;"/>
+      <property name="zspeed" type="double" value="5"/>
+    </property>
+    <property name="pinion" type="empty">
+      <property name="delay" type="double" value="0"/>
+      <property name="arguments" type="string" value="--spin &apos;1&apos; --scroll &apos;1&apos; --size &apos;1&apos; --max-rpm &apos;900&apos;"/>
+      <property name="size" type="double" value="1.8"/>
+    </property>
+    <property name="nakagin" type="empty">
+      <property name="delay" type="double" value="9241"/>
+      <property name="arguments" type="string" value="--delay &apos;9241&apos; --speed &apos;1&apos;"/>
+    </property>
+    <property name="klein" type="empty">
+      <property name="kleinbottle" type="string" value="random"/>
+      <property name="arguments" type="string" value=" --view-mode walk-turn      --speed-wx &apos;1&apos; --speed-wy &apos;1&apos; --speed-wz &apos;1&apos; --speed-xy &apos;1&apos; --speed-xz &apos;1&apos; --speed-yz &apos;2&apos; --walk-direction &apos;7&apos; --walk-speed &apos;20&apos; --delay &apos;25000&apos;"/>
+      <property name="view-mode" type="string" value="walk-turn"/>
+      <property name="display-mode" type="string" value="random"/>
+      <property name="appearance" type="string" value="random"/>
+      <property name="colors" type="string" value="random"/>
+      <property name="projection3d" type="string" value="random"/>
+      <property name="projection4d" type="string" value="random"/>
+    </property>
+    <property name="gltext" type="empty">
+      <property name="text" type="string" value="clock"/>
+      <property name="arguments" type="string" value="--delay &apos;20000&apos; --text &apos;%A%n%d %b %Y%n%r&apos; --no-wander --spin Y"/>
+      <property name="wander" type="bool" value="true"/>
+      <property name="rotation" type="string" value="y"/>
+      <property name="wire" type="bool" value="false"/>
+      <property name="showfps" type="bool" value="false"/>
+    </property>
+    <property name="gluqlo" type="empty">
+      <property name="Mode" type="string" value="12h"/>
+      <property name="arguments" type="string" value="-ampm"/>
+      <property name="scale" type="double" value="1"/>
+    </property>
+    <property name="apple2" type="empty">
+      <property name="duration" type="double" value="600"/>
+      <property name="arguments" type="string" value=" --tv-color &apos;70&apos; --tv-tint &apos;105&apos; --tv-brightness &apos;-16&apos; --tv-contrast &apos;196&apos; --duration &apos;600&apos;"/>
+      <property name="tvbrightness" type="double" value="-16"/>
+      <property name="tvcontrast" type="double" value="196"/>
+      <property name="tvtint" type="double" value="105"/>
+      <property name="tvcolor" type="double" value="70"/>
+    </property>
+    <property name="xmatrix" type="empty">
+      <property name="density" type="double" value="25"/>
+      <property name="arguments" type="string" value="--small   --delay &apos;10000&apos; --density &apos;25&apos;"/>
+    </property>
+  </property>
+</channel>

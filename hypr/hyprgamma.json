@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "brightness": 1.0,
+    "contrast": 1.0,
+    "enabled": false,
+    "gamma_b": 1.0,
+    "gamma_g": 1.0,
+    "gamma_r": 1.0
+  },
+  "monitors": {
+    "DP-1": {
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "enabled": false,
+      "gamma_b": 1.0,
+      "gamma_g": 1.0,
+      "gamma_r": 1.0
+    },
+    "DVI-D-1": {
+      "brightness": 1.0,
+      "contrast": 1.0,
+      "enabled": false,
+      "gamma_b": 1.0,
+      "gamma_g": 1.0,
+      "gamma_r": 1.0
+    }
+  },
+  "version": 1
+}

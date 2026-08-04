@@ -1,0 +1,64 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-terminal" version="1.0">
+  <property name="font-name" type="string" value="JetBrains Mono NL 8"/>
+  <property name="font-use-system" type="bool" value="true"/>
+  <property name="misc-always-show-tabs" type="bool" value="false"/>
+  <property name="misc-bell" type="bool" value="true"/>
+  <property name="misc-bell-urgent" type="bool" value="true"/>
+  <property name="misc-borders-default" type="bool" value="true"/>
+  <property name="misc-cursor-blinks" type="bool" value="false"/>
+  <property name="misc-cursor-shape" type="string" value="TERMINAL_CURSOR_SHAPE_BLOCK"/>
+  <property name="misc-default-geometry" type="string" value="120x40"/>
+  <property name="misc-inherit-geometry" type="bool" value="false"/>
+  <property name="misc-menubar-default" type="bool" value="false"/>
+  <property name="misc-mouse-autohide" type="bool" value="true"/>
+  <property name="misc-mouse-wheel-zoom" type="bool" value="true"/>
+  <property name="misc-toolbar-default" type="bool" value="false"/>
+  <property name="misc-confirm-close" type="bool" value="false"/>
+  <property name="misc-cycle-tabs" type="bool" value="true"/>
+  <property name="misc-tab-close-buttons" type="bool" value="true"/>
+  <property name="misc-tab-close-middle-click" type="bool" value="true"/>
+  <property name="misc-tab-position" type="string" value="GTK_POS_TOP"/>
+  <property name="misc-highlight-urls" type="bool" value="true"/>
+  <property name="misc-middle-click-opens-uri" type="bool" value="true"/>
+  <property name="misc-copy-on-select" type="bool" value="true"/>
+  <property name="misc-show-relaunch-dialog" type="bool" value="true"/>
+  <property name="misc-rewrap-on-resize" type="bool" value="true"/>
+  <property name="misc-slim-tabs" type="bool" value="true"/>
+  <property name="misc-new-tab-adjacent" type="bool" value="true"/>
+  <property name="misc-search-dialog-opacity" type="uint" value="100"/>
+  <property name="misc-show-unsafe-paste-dialog" type="bool" value="true"/>
+  <property name="misc-right-click-action" type="string" value="TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU"/>
+  <property name="scrolling-unlimited" type="bool" value="true"/>
+  <property name="shortcuts-no-menukey" type="bool" value="true"/>
+  <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
+  <property name="background-darkness" type="double" value="0.80000000000000004"/>
+  <property name="text-blink-mode" type="string" value="TERMINAL_TEXT_BLINK_MODE_ALWAYS"/>
+  <property name="color-background-vary" type="bool" value="false"/>
+  <property name="color-use-theme" type="bool" value="false"/>
+  <property name="color-background" type="string" value="#24241f1f3131"/>
+  <property name="color-cursor-use-default" type="bool" value="true"/>
+  <property name="color-selection-use-default" type="bool" value="true"/>
+  <property name="color-bold-use-default" type="bool" value="true"/>
+  <property name="cell-width-scale" type="double" value="1"/>
+  <property name="cell-height-scale" type="double" value="1"/>
+  <property name="font-allow-bold" type="bool" value="true"/>
+  <property name="shortcuts-no-mnemonics" type="bool" value="true"/>
+  <property name="title-initial" type="string" value="Terminal"/>
+  <property name="title-mode" type="string" value="TERMINAL_TITLE_REPLACE"/>
+  <property name="overlay-scrolling" type="bool" value="true"/>
+  <property name="color-bold-is-bright" type="bool" value="true"/>
+  <property name="color-foreground" type="string" value="#ffffff"/>
+  <property name="color-cursor-foreground" type="string" value=""/>
+  <property name="color-cursor" type="string" value=""/>
+  <property name="color-selection" type="string" value=""/>
+  <property name="color-selection-background" type="string" value=""/>
+  <property name="color-bold" type="string" value=""/>
+  <property name="color-palette" type="string" value="rgb(0,0,0);rgb(204,0,0);rgb(0,205,0);rgb(196,160,0);rgb(52,101,164);rgb(117,80,123);rgb(6,152,154);rgb(211,215,207);rgb(85,87,83);rgb(239,41,41);rgb(138,226,52);rgb(252,233,79);rgb(115,159,207);rgb(173,127,168);rgb(52,226,226);rgb(238,238,236)"/>
+  <property name="tab-activity-color" type="string" value="#aa0000"/>
+  <property name="misc-hyperlinks-enabled" type="bool" value="true"/>
+  <property name="background-image-shading" type="double" value="0.94999999999999996"/>
+  <property name="background-image-style" type="string" value="TERMINAL_BACKGROUND_STYLE_TILED"/>
+  <property name="run-custom-command" type="bool" value="false"/>
+</channel>

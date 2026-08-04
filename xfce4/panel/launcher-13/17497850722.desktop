@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=day / night mode
+Comment=Simple day / night color temperature selector
+Exec=/usr/local/bin/colortemp.sh
+Icon=notification-display-brightness-low
+Path=
+Terminal=false
+StartupNotify=false

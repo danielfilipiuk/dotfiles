@@ -1,0 +1,9 @@
+[Unit]
+Description=Awww wallpaper rotator
+PartOf=graphical-session.target
+After=graphical-session.target awww-daemon.service
+Requires=awww-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/awww-random

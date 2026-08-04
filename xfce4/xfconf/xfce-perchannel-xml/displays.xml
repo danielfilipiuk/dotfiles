@@ -1,0 +1,187 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="displays" version="1.0">
+  <property name="ActiveProfile" type="string" value="18990fb1-5496-4cc9-8619-cb668a33c615"/>
+  <property name="Fallback" type="empty">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="69a17ef4c9bf408facca0a526715b636fffbdf11"/>
+      <property name="Resolution" type="string" value="1680x1050"/>
+      <property name="RefreshRate" type="double" value="59.88325281803543"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="Notify" type="int" value="3"/>
+  <property name="AutoEnableProfiles" type="int" value="3"/>
+  <property name="IdentityPopups" type="bool" value="false"/>
+  <property name="8a0c3e7e-d6d6-47bf-91c9-c778ebac5de5" type="empty">
+    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1.3333282470703125"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="26"/>
+      </property>
+    </property>
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="69a17ef4c9bf408facca0a526715b636fffbdf11"/>
+      <property name="Resolution" type="string" value="1680x1050"/>
+      <property name="RefreshRate" type="double" value="59.88325281803543"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1365"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="1c7ec001-eb24-4119-ae93-46e51347c5f3" type="empty">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="69a17ef4c9bf408facca0a526715b636fffbdf11"/>
+      <property name="Resolution" type="string" value="1680x1050"/>
+      <property name="RefreshRate" type="double" value="59.88325281803543"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="162"/>
+      </property>
+    </property>
+  </property>
+  <property name="e1646931-ee4b-4ace-8e04-b219e4c91f48" type="empty">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="69a17ef4c9bf408facca0a526715b636fffbdf11"/>
+      <property name="Resolution" type="string" value="1680x1050"/>
+      <property name="RefreshRate" type="double" value="59.88325281803543"/>
+      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="ModeFlags" type="uint64" value="10"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="153"/>
+      </property>
+    </property>
+  </property>
+  <property name="Default" type="empty">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 15&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="61bbf577952a4126090810c02496785ce3f0fd25"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.019739825542622"/>
+      <property name="ModeFlags" type="uint64" value="5"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="ModeFlags" type="uint64" value="10"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="146"/>
+      </property>
+    </property>
+  </property>
+  <property name="18990fb1-5496-4cc9-8619-cb668a33c615" type="string" value="1024">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 15&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="61bbf577952a4126090810c02496785ce3f0fd25"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.019739825542622"/>
+      <property name="ModeFlags" type="uint64" value="5"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1024x768"/>
+      <property name="RefreshRate" type="double" value="60.003840245775727"/>
+      <property name="ModeFlags" type="uint64" value="10"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="146"/>
+      </property>
+    </property>
+  </property>
+</channel>

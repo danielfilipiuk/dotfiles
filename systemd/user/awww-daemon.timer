@@ -1,0 +1,17 @@
+[Unit]
+Description=Timer to start awww wallpaper
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Timer]
+# Run 45s aftter the user session starts ON TTY!!!
+#OnStartupSec=15s
+# Wait 15 seconds after this timer is activated by graphical-session.target
+OnActiveSec=15s
+# Ensure it runs accurately
+#AccuracySec=1s
+Unit=awww-daemon.service
+
+[Install]
+WantedBy=graphical-session.target

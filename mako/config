@@ -1,0 +1,55 @@
+# mako config
+
+###########global options
+
+max-history=10
+sort=-time
+
+########### actions #dismiss [--no-history] 
+
+# Dismiss the current notification. If --no-history is passed, the notification won't be added to history.
+		#dismiss-all
+		#dismiss-group
+
+#invoke-action <action> 
+# Invoke the named action on the notification. 	An xdg-activation token will be sent to the client, allowing the client to request focus from the compositor. The compositor must support the xdg_activation_v1 protocol and allow the focus request for the following example to work correctly: 	[app-name="some-app-id" actionable] 	on-button-left=invoke-action mail-reply-sender
+		#invoke-default-action
+		#exec 
+		#example :on-button-middle=exec makoctl menu -n "$id" -- wmenu -p 'Select action: '
+#		 :on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+					
+
+#on-button-left=invoke-default-action
+#on-button-middle=none
+on-button-right=exec makoctl menu -n "$id" -- wmenu -p 'Select action: '
+#on-touch=dismiss
+#on-notify=none
+
+##########style options
+
+font=JetBrainsMonoNerdFont 9
+background-color=#322a3fbb
+#background-color=#4d2d58bb
+text-color=#ffffff
+border-color=#ca9ee6cc
+progress-color=#5588AAdd
+border-size=4
+border-radius=7
+icons=1
+icon-path=/usr/share/icons/Papirus
+
+markup=1
+
+text-alignment=left
+
+max-visible=-1
+sort=-time
+default-timeout=5000
+ignore-timeout=0
+
+anchor=top-right
+width=300
+height=300
+layer=top
+outer-margin=10
+margin=10  

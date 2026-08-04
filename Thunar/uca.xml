@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-x-terminal</icon>
+	<name>Open Kitty Here</name>
+	<submenu></submenu>
+	<unique-id>1675394633817706-1</unique-id>
+	<command>app2unit -- kitty %f</command>
+	<description>Open Kitty Here</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>com.gitlab.newsflash</icon>
+	<name>Open Yazi here</name>
+	<submenu></submenu>
+	<unique-id>1784752964764466-1</unique-id>
+	<command>app2unit -T -- yazi %f</command>
+	<description>Open Yazi here</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>mc</icon>
+	<name>Open MC here</name>
+	<submenu></submenu>
+	<unique-id>1723360883004445-1</unique-id>
+	<command>app2unit -T mc %f</command>
+	<description>Open Midnight Commander here</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>code-context</icon>
+	<name>Edit in nano</name>
+	<submenu></submenu>
+	<unique-id>1676071702095720-4</unique-id>
+	<command>app2unit -T nano %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>micro</icon>
+	<name>Edit in Micro</name>
+	<submenu></submenu>
+	<unique-id>1784706814468603-1</unique-id>
+	<command>app2unit -T micro %f</command>
+	<description>Edit in Micro</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Create symbolic link</name>
+	<submenu></submenu>
+	<unique-id>1676071597978341-3</unique-id>
+	<command>ln -Ts %f %n&quot; (symlink)&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>libreoffice-writer</icon>
+	<name>Convert to ODT</name>
+	<submenu>document</submenu>
+	<unique-id>1676072074486442-6</unique-id>
+	<command>unoconv -f odt %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.doc;*.docx</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>application-pdf</icon>
+	<name>Export to PDF</name>
+	<submenu>document</submenu>
+	<unique-id>1676072165568253-7</unique-id>
+	<command>unoconv -f pdf %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.doc;*.docx;*.odt;*.odp;*.pps;*.ppt;*.xls;*.xlsx;*.ods;*.pptx</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>qdirstat</icon>
+	<name>QdirStat here</name>
+	<submenu></submenu>
+	<unique-id>1686957403187183-1</unique-id>
+	<command>app2unit -- qdirstat %f</command>
+	<description>QdirStat here</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>convert to PNG</name>
+	<submenu>image</submenu>
+	<unique-id>1687826478730203-1</unique-id>
+	<command>convert %F %F-1.png</command>
+	<description>convert file to PNG</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>object-rotate-right</icon>
+	<name>rotate 90° right</name>
+	<submenu>image</submenu>
+	<unique-id>1691986887821845-1</unique-id>
+	<command>convert -rotate 90 %F %F-rotated</command>
+	<description>rotate 90° right</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>object-rotate-left</icon>
+	<name>rotate 90° left</name>
+	<submenu>image</submenu>
+	<unique-id>1691987045697725-2</unique-id>
+	<command>convert -rotate 90 %F %F-rotated</command>
+	<description>rotate 90° left</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>object-rotate-right</icon>
+	<name>rotate 90° -&gt; JPG</name>
+	<submenu>image</submenu>
+	<unique-id>1695871301666538-1</unique-id>
+	<command>convert -rotate 90 %F %F-1.jpg</command>
+	<description>rotate 90° -&gt; JPG</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>object-rotate-left</icon>
+	<name>rotate 90° &lt;- JPG</name>
+	<submenu>image</submenu>
+	<unique-id>1695871498286972-2</unique-id>
+	<command>convert -rotate -90 %F %F-1.jpg</command>
+	<description>rotate 90° &lt;- JPG</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>kt-upnp</icon>
+	<name>mirror horizontally</name>
+	<submenu>image</submenu>
+	<unique-id>1724208429018938-1</unique-id>
+	<command>convert -flop %F %F-mirror</command>
+	<description>mirror horizontally</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-gif</icon>
+	<name>Resize to FHD size</name>
+	<submenu>image</submenu>
+	<unique-id>1774735011494997-1</unique-id>
+	<command>convert %F -resize 1920 %F-1920.jpg</command>
+	<description>Resize to FHD size</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-svg+xml</icon>
+	<name>Convert to SVGZ</name>
+	<submenu>image</submenu>
+	<unique-id>1726239558299147-1</unique-id>
+	<command>inkscape %N --export-type=svgz</command>
+	<description>Convert to SVGZ</description>
+	<range>*</range>
+	<patterns>*.eps;*.svg;*.EPS;*.SVG;*.ai;*.AI</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>group-new</icon>
+	<name>Move into a new folder</name>
+	<submenu></submenu>
+	<unique-id>1676072283074129-8</unique-id>
+	<command>NEW_FOLDER=$(LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/yad --entry --title &apos;Move into new folder&apos; --text &apos;Please enter a name for the new folder&apos;) &amp;&amp; mkdir &quot;$NEW_FOLDER&quot; &amp;&amp; mv %F &quot;$NEW_FOLDER&quot;</command>
+	<description>Move selected items into a new folder</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>folder-copy</icon>
+	<name>Copy Path(s)</name>
+	<submenu></submenu>
+	<unique-id>1719283360544806-2</unique-id>
+	<command>echo -n &quot;%F&quot; | sed &quot;s/&apos;$//; s/^&apos;//&quot; | sed &quot;s/&apos; &apos;/\n/g&quot; | xclip -selection &quot;clipboard&quot;</command>
+	<description>Copy the path(s) of a file/directory.</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>debug-run</icon>
+	<name>Make executable</name>
+	<submenu></submenu>
+	<unique-id>1719288025611819-6</unique-id>
+	<command>chmod +x %f</command>
+	<description>Make a file executable</description>
+	<range>*</range>
+	<patterns>*.sh;*.AppImage</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>text-x-systemd-unit</icon>
+	<name>Execute as Service</name>
+	<submenu></submenu>
+	<unique-id>1784793843451313-1</unique-id>
+	<command>app2unit -- %f</command>
+	<description>use app2unit to execute program as Systemd service unit.</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+</actions>
