@@ -1,0 +1,3 @@
+fastfetch --config ~/hypr/fastfetch/fastfetch2.jsonc
+fastfetch --version
+echo

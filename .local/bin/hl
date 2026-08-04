@@ -1,0 +1,34 @@
+
+clear
+cat ~/pictures/hyprland/hypr_tty.txt
+echo
+
+if [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; then
+    printf "Already inside Hyprland.\n"
+    exit 1
+fi
+
+if uwsm check may-start; then
+    exec uwsm start \
+        -U run \
+        -N "Hyprland" \
+        -D "Hyprland" \
+        -C "Intelligent dynamic tiling Wayland compositor" \
+        -- start-hyprland
+
+else
+    printf '\nUWSM: session cannot be started.\n'
+    exit 1
+fi
+
+#clear
+#cat pictures/hyprland/hypr_tty.txt
+#echo
+#if uwsm check may-start; then
+#	exec uwsm start -U run -N "Hyprland" -D Hyprland -C "Intelligent dynamic tiling Wayland compositor" -- start-hyprland
+#	#systemd-run -q uwsm start -U run -N "Hyprland" -D Hyprland -C "Intelligent dynamic tiling Wayland compositor" start-hyprland
+#else
+#	 echo "UWSM refused to start a session."
+#fi
+#echo
+

@@ -1,0 +1,99 @@
+#!/usr/bin/env bash
+
+thumbnail_dir="${XDG_CACHE_HOME:-$HOME/.cache}/cliphist/thumbnails"
+
+cliphist_list=$(cliphist list)
+if [ -z "$cliphist_list" ]; then
+  fuzzel -d --prompt-only "cliphist: please store something first "
+  rm -rf "$thumbnail_dir"
+  exit 0
+fi
+
+[ -d "$thumbnail_dir" ] || mkdir -p "$thumbnail_dir"
+
+# Export thumbnail_dir so AWK/system calls can read it cleanly
+export THUMB_DIR="$thumbnail_dir"
+
+# Detect installed SVG renderer for rasterizing thumbs (resvg -> rsvg-convert -> magick)
+if command -v resvg >/dev/null 2>&1; then
+  export SVG_RENDERER="resvg -w 128 -h 128"
+elif command -v rsvg-convert >/dev/null 2>&1; then
+  export SVG_RENDERER="rsvg-convert -w 128 -h 128"
+elif command -v magick >/dev/null 2>&1; then
+  export SVG_RENDERER="magick - -resize 128x128 png:"
+else
+  export SVG_RENDERER=""
+fi
+
+read -r -d '' thumbnail_awk <<'EOF'
+BEGIN {
+  thumb_dir = ENVIRON["THUMB_DIR"]
+  svg_cmd   = ENVIRON["SVG_RENDERER"]
+}
+
+/^[0-9]+\s<meta http-equiv=/ { next }
+
+# 1. Standard Binary Images (jpg, jpeg, png, bmp)
+match($0, /^([0-9]+)\s(\[\[\s)?binary.*(jpg|jpeg|png|bmp)/, grp) {
+  id = grp[1]
+  ext = grp[3]
+  thumb_file = thumb_dir "/" id "." ext
+  
+  cmd = sprintf("[ -f '%s' ] || echo '%s' | cliphist decode > '%s'", thumb_file, id, thumb_file)
+  system(cmd)
+  
+  print $0 "\0icon\x1f" thumb_file
+  next
+}
+
+# 2. SVGs (Either binary svg/xml OR text starting with <svg / <?xml)
+match($0, /^([0-9]+)\s.*(<svg|<\?xml|\[\[\s?binary.*svg)/, grp) {
+  id = grp[1]
+  thumb_file = thumb_dir "/" id ".png"
+  
+  if (svg_cmd != "") {
+    # Decode SVG from cliphist, pass through renderer, and cache as PNG
+    cmd = sprintf("[ -f '%s' ] || echo '%s' | cliphist decode | %s '%s' 2>/dev/null", thumb_file, id, svg_cmd, thumb_file)
+    system(cmd)
+    
+    # If the PNG thumbnail was generated successfully, assign icon to Fuzzel entry
+    if (system("[ -f '" thumb_file "' ]") == 0) {
+      print $0 "\0icon\x1f" thumb_file
+      next
+    }
+  }
+}
+
+# Default printing for all other entries
+1
+EOF
+
+item=$(echo "$cliphist_list" | gawk "$thumbnail_awk" | fuzzel -d --placeholder "Search clipboard..." --counter --no-sort --with-nth 2 -w 70 -l 20)
+exit_code=$?
+
+# ALT+0 to clear history
+if [ "$exit_code" -eq 19 ]; then
+  confirmation=$(echo -e "No\nYes" | fuzzel -d --placeholder "Delete history?" --lines 2)
+  [ "$confirmation" == "Yes" ] && rm -f ~/.cache/cliphist/db && rm -rf "$thumbnail_dir"
+
+# ALT+1 to delete selected item
+elif [ "$exit_code" -eq 10 ]; then
+  if [ -n "$item" ]; then
+    item_id=$(echo "$item" | cut -f1)
+    echo "$item_id" | cliphist delete
+    find "$thumbnail_dir" -name "${item_id}.*" -delete
+  fi
+else
+  if [ -n "$item" ]; then
+    # Decode directly back into the clipboard
+    echo "$item" | cliphist decode | wl-copy
+  fi
+fi
+
+# Cleanup orphaned thumbnails
+find "$thumbnail_dir" -type f | while IFS= read -r thumbnail_file; do
+  cliphist_item_id=$(basename "${thumbnail_file%.*}")
+  if ! grep -q "^${cliphist_item_id}\s" <<<"$cliphist_list"; then
+    rm -f "$thumbnail_file"
+  fi
+done

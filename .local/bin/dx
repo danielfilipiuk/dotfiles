@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+sudo dmesg --level 2 && sudo dmesg --level 3 && sudo dmesg --level 4

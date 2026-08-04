@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+#watch -n 1 "sensors -A nct6795-isa-0a20 k10temp-pci-00c3 amdgpu-pci-3000 && cpupower monitor && free -h"
+#watch -n 1 'sensors -A nct6795-isa-0a20 k10temp-pci-00c3 amdgpu-pci-3000 && grep "cpu MHz" /proc/cpuinfo | sed -n "1,16p"'
+
+#watch -n 1 'sensors -A nct6795-isa-0a20 amdgpu-pci-3000 && cpupower --cpu all frequency-info -f --human'
+
+#watch -n 1 'sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|TSI0_TEMP|vddgfx|edge|PPT|sclk' && cpupower --cpu all frequency-info -f --human | grep current'
+#watch -n 1 "sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|SYSTIN|SMBUSMASTER|TSI0_TEMP|vddgfx|edge|PPT|sclk' && cpupower --cpu all frequency-info -f --human | grep current"
+
+watch -n 1 "sensors -A nct6795-isa-0a20 amdgpu-pci-3000 | grep -E 'Vcore|fan2|fan3|fan4|SYSTIN|SMBUSMASTER|TSI0_TEMP|vddgfx|edge|PPT|sclk' && grep 'cpu MHz' /proc/cpuinfo && free -h --mega"
+
+
+
+# nct6795-isa-0a20 -> sensores 
+# amdgpu-pci-3000 -> GPU
+# k10temp-pci-00c -> CPU

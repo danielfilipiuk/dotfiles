@@ -1,0 +1,2 @@
+#!/bin/sh
+exec sudo journalctl -b -W --no-tail -f

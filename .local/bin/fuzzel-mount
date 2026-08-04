@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Step 1: Choose the drive
+DRIVE_CHOICE=$(echo -e "1TB (/dev/sdb1)\nData (/dev/sdd1)\n3TB (/dev/sdc1)" | fuzzel --dmenu -w 20 -l 5 --prompt="Select Drive: ")
+
+case "$DRIVE_CHOICE" in
+    *"sdb1"*) DEV="/dev/sdb1" ;;
+    *"sdd1"*) DEV="/dev/sdd1" ;;
+    *"sdc1"*) DEV="/dev/sdc1" ;;
+    *) exit 0 ;;
+esac
+
+# Step 2: Choose action
+ACTION_CHOICE=$(echo -e "Mount\nUnmount" | fuzzel --dmenu -w 20 -l 5 --prompt="Action for $DEV: ")
+
+case "$ACTION_CHOICE" in
+    "Mount")
+        ~/.local/bin/udmounts mount "$DEV"
+        ;;
+    "Unmount")
+        ~/.local/bin/udmounts unmount "$DEV"
+        ;;
+    *)
+        exit 0
+        ;;
+esac

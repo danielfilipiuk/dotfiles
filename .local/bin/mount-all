@@ -1,0 +1,1 @@
+mount /mnt/data -v && mount /mnt/1TB -v && mount /mnt/3TB -v

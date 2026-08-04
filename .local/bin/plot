@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+systemd-analyze plot > ~/plot.svg && ristretto ~/plot.svg

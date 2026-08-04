@@ -1,0 +1,2 @@
+#!/bin/sh
+app2unit -S both -- /usr/libexec/xscreensaver/glmatrix --speed 10 --density 100 --no-rotate --fog --waves

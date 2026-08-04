@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+ACTION="$1"     # mount or unmount
+DEVICE="$2"     # e.g., /dev/sdc1
+
+# Run the command and capture both stdout and stderr, and the exit code
+OUTPUT=$(udisksctl "$ACTION" --block-device "$DEVICE" 2>&1)
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -eq 0 ]; then
+    # Success message
+    MSG="$OUTPUT"
+    TITLE="Success"
+else
+    # Failure message: strip out the long D-Bus error paths using sed
+    MSG=$(echo "$OUTPUT" | sed -E 's/Error (mount|unmounting) [^:]+: GDBus\.Error:[^:]+: *//')
+    TITLE="Error ($ACTION)"
+fi
+
+# Send notification via mako (using libnotify's notify-send)
+notify-send -a "udisksctl" "$TITLE" "$MSG"
