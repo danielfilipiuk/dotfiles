@@ -44223,3 +44223,181 @@ exit
 ./hw-probe-1.6.5-189-x86_64.AppImage --help
 ./hw-probe-1.6.5-189-x86_64.AppImage -all -upload -verbose
 sudo ./hw-probe-1.6.5-189-x86_64.AppImage -all -upload -verbose
+hstr 
+cargo clean
+make clean
+cargo clean
+cd ..
+make clean
+cargo clean
+make clean
+cargo clean
+cargo clean
+make clean
+make clean
+cargo clean
+make clean
+cargo clean
+cmake clean
+make clean
+make mrproper
+cargo clean
+make clean
+make clean
+cargo clean
+make mrproper
+cargo clean
+make clean
+cargo mrproper
+cargo remove
+make clean
+cargo clean
+make clean
+cargo clean
+meson clean
+gamescope -- start_furmark_benchmark_fullscreen_1680x1050.sh 
+gamescope -W 1280 -H 1024 -- start_furmark_benchmark_fullscreen_1680x1050.sh 
+gamescope -W 1280 -H 1024 -f -- start_furmark_benchmark_fullscreen_1680x1050.sh 
+gamescope -W 1280 -H 1024 -f --output=DP-1 -- start_furmark_benchmark_fullscreen_1680x1050.sh 
+hstr 
+gamescope -W 1280 -H 1024 -f --output=DP-1 -- GpuTest test=fur
+gamescope -W 1280 -H 1024 -f --output=DP-1 -- GpuTest /test=fur
+gamescope -W 1280 -H 1024 -f -- GpuTest /test=fur
+gamescope -W 1280 -H 1024 -f -- ./GpuTest /test=fur
+gamescope -W 1280 -H 1024 -f -- ./GpuTest /test=fur /fullscreen /benchmark /width=1280 /height=1024
+gamescope -- ./GpuTest /test=fur /fullscreen /benchmark /width=1280 /height=1024
+gamescope -f -- ./GpuTest /test=fur /fullscreen /benchmark /width=1280 /height=1024
+gamescope -W 1280 -H 1024 -f -- ./GpuTest /test=fur /fullscreen /benchmark
+gamescope -W 1280 -H 1024 -f -F linear -- ./GpuTest /test=fur /fullscreen /benchmark
+gamescope -mangoapp -W 1280 -H 1024 -f -F linear -- ./GpuTest /test=fur /fullscreen /benchmark
+gamescope --mangoapp -W 1280 -H 1024 -f -F linear -- ./GpuTest /test=fur /fullscreen /benchmark
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=fur /fullscreen /benchmark
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=all /fullscreen /benchmark
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=all /fullscreen /benchmark /width=1280 /height=1024
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=glmark /fullscreen /benchmark /width=1280 /height=1024
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=pixmark_piano /fullscreen /benchmark /width=1280 /height=1024
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=pixmark_volplosion /fullscreen /benchmark /width=1280 /height=1024
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./GpuTest /test=plot3d /fullscreen /benchmark /width=1280 /height=1024
+./valley 
+gamescope --mangoapp -W 1280 -H 1024 -f -- ./valley 
+gamescope --mangoapp -W 1280 -H 1024 -- ./valley 
+gamescope --mangoapp -- ./valley 
+gamescope -- ./valley 
+gamescope -- ./valley --help
+./valley --help
+./valley 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+cd dotfiles
+git stat
+git status
+git add .
+git commit -m "refined style for waybar and repaired wlclock binding
+git commit -m "refined style for waybar and repaired wlclock binding"
+git status
+git push
+git status
+fff
+whereis fff
+fff
+fastfetch_266 
+git status
+git add .
+git status
+git add .
+git status
+git commit -m "added several configs, kernel, .desktops, /etc configs"
+git push
+git status
+man ln
+man symlink
+gamepad-tool 
+apt show gamepadtool 
+socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock
+sudo apt install socat
+socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock
+socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock
+tomboy-ng --help
+tomboy-ng 
+tomboy-ng --help
+tomboy-ng --help
+tomboy-ng --no-splash --allow-leftclick
+tomboy-ng --no-splash -platformtheme gtk2
+tomboy-ng --no-splash -platformtheme gnome
+tomboy-ng --no-splash -platformtheme qt6ct
+tomboy-ng --no-splash --dark-theme
+tomboy-ng --no-splash --debug-sync
+tomboy-ng --no-splash --debug-sync
+tomboy-ng --help
+tomboy-newnote 
+tomboy-newnote 
+tomboy-newnote 
+cd dotfiles/
+git status
+git add .
+git status
+git commit -m "added Cura, .desktop, prusaslicer"
+git push 
+git status
+xfconf-query -c thunar -l -v
+micro ~/.config/Thunar/accels.scm
+micro ~/.config/Thunar/accels.scm
+jf
+jf
+./Unigine_Superposition-1.1.run 
+cd Unigine_Superposition-1.1/
+./Superposition 
+gamescope -- ./Superposition 
+./uninstall.sh 
+cd ..
+jf
+notify-send --help
+cd dotfiles/
+git status
+git add .
+git status
+git commit -m "created .config, added several tools, kernel image and hyprbasics"
+git --help | grep verbose
+git --help | grep verb
+git --help | grep -i verb
+git --help 
+man git
+git push
+git status
+git add .
+git status
+git commit -m "created .config, added several tools, kernel image and hyprbasics"
+git push
+git status
+git add .
+git status}
+git status
+git commit -m "waybar and notifications border config"
+git status
+git push
+git status
+git add .
+git status
+git commit -m "creamy mako colors"
+git push
+mpc current 
+mpc current restart
+mpc current play
+mpc play 
+mpc seek +5
+mpc seek +1
+mpc mute
+mpc volume toggle
+mpc volume 0
+mpc volume 60
+mpc volume 50
+mpc volume restore
+man mpc
+mpc volume 0
+mpc volume 50
+btop
+nvtop 
+qqqqqq
+exit

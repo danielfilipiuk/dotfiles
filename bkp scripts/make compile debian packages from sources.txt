@@ -1,0 +1,97 @@
+Fix (proper way)
+
+You need to redirect install paths from /usr/local → /usr
+
+🔹 Option A — override via make install variables (quick fix)
+
+Try:
+
+debuild -b -uc -us -- \
+  PREFIX=/usr
+
+or:
+
+dpkg-buildpackage -b -uc -us -- \
+  PREFIX=/usr
+
+👉 This only works if the Makefile respects PREFIX (many do, some don’t).
+
+🔹 Option B — patch debian/rules (reliable)
+
+Open:
+
+nano debian/rules
+
+Look for:
+
+dh_auto_install
+
+Replace or override it like this:
+
+override_dh_auto_install:
+	dh_auto_install -- PREFIX=/usr
+
+If the project uses DESTDIR + hardcoded /usr/local, then force it:
+
+override_dh_auto_install:
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/diskgraph PREFIX=/usr
+🔹 Option C — brute-force fix (works always)
+
+After install step, move files:
+
+override_dh_auto_install:
+	dh_auto_install
+	mv debian/diskgraph/usr/local/* debian/diskgraph/usr/
+	rm -rf debian/diskgraph/usr/local
+🧪 Why this happens (context you’ll appreciate)
+
+Debian policy:
+
+/usr → managed by packages
+
+/usr/local → reserved for sysadmin (you compiling stuff manually)
+
+So dh_usrlocal:
+
+allows directories only
+
+forbids packaged files there
+
+👉 That’s exactly why it explodes here.
+
+✅ Fastest path for you
+
+Given this is a tiny C tool, do this:
+
+nano debian/rules
+
+Replace install step with:
+
+override_dh_auto_install:
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/diskgraph PREFIX=/usr
+
+Then:
+
+debuild -b -uc -us
+🧩 Extra sanity check
+
+After build, inspect:
+
+dpkg-deb -c ../diskgraph_*.deb
+
+You want:
+
+/usr/bin/diskgraph
+/usr/share/man/man1/diskgraph.1.gz
+
+NOT /usr/local/...
+
+⚙️ Bonus (you’ll like this)
+
+This project is very upstream-ish, not Debianized properly.
+
+If you want to make it “clean” long-term:
+
+add --prefix=/usr support to upstream Makefile
+
+or patch it in debian/patches

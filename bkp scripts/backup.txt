@@ -1,0 +1,60 @@
+* dos - 7z
+
+7z u -t7z -mx=9 -mmt=16 -aou -ms=on -bt /mnt/1TB/dos.7z /mnt/data/DOS
+-------------------------------------------------------------------------------------------------
+* dream -7z
+
+7z u -t7z -mx=9 -mmt=16 -aou -ms=on -bt /mnt/1TB/dreamm.7z /mnt/data/dreamm
+-------------------------------------------------------------------------------------------------
+* engines tar z?
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/engines.tar.zst ./engines
+-------------------------------------------------------------------------------------------------
+* linux - tar z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/linux.tar.zst ./linux
+-------------------------------------------------------------------------------------------------
+* lutris_configs tar z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/lutris_configs.tar.zst ./Lutris_configs
+-------------------------------------------------------------------------------------------------
+* lutris prefixes tar z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/lutris_prefixes.tar.zst ./lutris_prefixes
+-------------------------------------------------------------------------------------------------
+* mame288 tar
+
+tar -I 'zstd -T16 -v' -cpvf /mnt/1TB/mame288.tar.zst /mnt/data/mame288
+-------------------------------------------------------------------------------------------------
+* minecraft - 7z
+
+7z u -t7z -mx=9 -mmt=16 -aou -ms=on -bt /mnt/1TB/minecraft.7z /mnt/data/minecraft
+7z u -t7z -mx=9 -mmt=16 -aou -ms=on -bt /mnt/1TB/minecraft_1.20.4.7z /mnt/data/minecraft_1.20.4
+-------------------------------------------------------------------------------------------------
+* portables - 7z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/portables.tar.zst ./portables
+-------------------------------------------------------------------------------------------------
+* retroarch - 7z
+
+7z u -t7z -mx=9 -mmt=16 -aou -ms=off -bt /mnt/1TB/retroarch.7z /mnt/data/retroarch
+-------------------------------------------------------------------------------------------------
+* roms - tar
+
+tar -cpvf /mnt/1TB/roms.tar /mnt/data/roms
+-------------------------------------------------------------------------------------------------
+* scummvm - 7z
+
+7z u -t7z -mx=9 -mmt=16 -aou -ms=on -bt /mnt/1TB/scummvm.7z /mnt/data/scummvm
+-------------------------------------------------------------------------------------------------
+* steam - tar z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/steam-compatdata.tar.zst /mnt/data/SteamLibrary/steamapps/compatdata
+-------------------------------------------------------------------------------------------------
+tools - 7z
+
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/tools.tar.zst /mnt/data/tools
+-------------------------------------------------------------------------------------------------
+* wine - tar z
+tar --acls --xattrs --numeric-owner -I 'zstd -19 -T16 --ultra -v' -cpvf /mnt/1TB/wine.tar.zst ./wine
+-------------------------------------------------------------------------------------------------

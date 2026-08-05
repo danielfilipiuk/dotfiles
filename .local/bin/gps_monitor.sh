@@ -18,7 +18,7 @@ notify() {
 # Handle process toggle safely for long process name string lengths
 if pgrep -f "gpu-screen-recorder" >/dev/null; then
     pkill -SIGINT -f "gpu-screen-recorder"
-    notify "  Monitor Recording stopped" "  Video saved."
+    notify "⬛ Monitor Recording stopped" "💾 Video saved."
     exit 0
 fi
 
@@ -36,7 +36,7 @@ FILENAME="$OUTPUT_DIR/monitor_${MONITOR_NAME}_$(date +%Y-%m-%d_%H-%M-%S).mp4"
 # Set audio device
 AUDIO_DEVICE="alsa_output.pci-0000_30_00.6.analog-stereo.monitor"
 
-notify " Monitor Recording started" "$(basename "$FILENAME")"
+notify "🔴 Monitor Recording started" "$(basename "$FILENAME")"
 
 # Record the target monitor directly by passing its output name (e.g., DVI-D-1 or DP-1)
 gpu-screen-recorder \
@@ -49,5 +49,5 @@ STATUS=$?
 
 # Only notify if we exited normally
 if [ $STATUS -eq 0 ]; then
-    notify " Monitor Recording finished" "$(basename "$FILENAME")"
+    notify "⬛ Monitor Recording finished" "$(basename "$FILENAME")"
 fi

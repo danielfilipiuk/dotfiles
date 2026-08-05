@@ -1,0 +1,27 @@
+#!/bin/bash
+
+for d in /mnt/data/games/*/; do dir=$(basename "$d"); 7z u -t7z -mx=9 -mmt=12 -ms=on -aou -bt "/media/daniel/DIETER/games/$dir.7z" "$d"; done
+
+ 7z u -t7z -mx=9 -mmt=12 -aou -bt /media/daniel/DIETER/ScummVM/ScummVM.7z /mnt/data/ScummVM/
+
+ 7z u -t7z -mx=9 -mmt=12 -aou -bt /media/daniel/DIETER/dreamm/dreamm.7z /mnt/data/dreamm/
+
+for d in /mnt/data/DOS/*/; do dir=$(basename "$d"); 7z u -t7z -mx=9 -mmt=12 -ms=on -aou -bt "/media/daniel/DIETER/DOS/$dir.7z" "$d"; done
+
+dreamm
+scummvm
+design
+documents
+install-windows
+pictures
+tools
+videos
+installers
+mame
+roms
+tools win
+dos
+books
+games
+fonts
+install-dos

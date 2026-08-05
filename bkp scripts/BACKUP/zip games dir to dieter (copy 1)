@@ -1,0 +1,4 @@
+#!/bin/bash
+
+for d in /mnt/data/games/*/; do dir=$(basename "$d"); 7z a -t7z -mx=9 -mmt=12 -ms=on -aou "/media/daniel/DIETER/games/$dir.7z" "$d"; done
+

@@ -1,0 +1,36 @@
+
+perf stat -d  7z u -t7z -mx=9 -mmt=16 -aou -bt /run/media/daniel/DIETER/ScummVM/ScummVM.7z /mnt/data/ScummVM/
+
+perf stat -d 7z u -t7z -mx=9 -mmt=16 -aou -bt /run/media/daniel/DIETER/dreamm/dreamm.7z /mnt/data/dreamm/
+
+for d in /mnt/data/DOS/*/; do dir=$(basename "$d"); perf stat -d 7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/DOS/$dir.7z" "$d"; done
+
+for d in /mnt/data/linux/*/; do dir=$(basename "$d"); 7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/linux/$dir.7z" "$d"; done
+
+
+for d in /mnt/data/portables/*/; do dir=$(basename "$d"); perf stat -d 7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/portables/$dir.7z" "$d"; done
+
+rsync /mnt/data/mac /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /home/daniel/profile /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/500G/videos /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/500G/downloads /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/500G/downloads-bkp /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/500G/books-PDF /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/data/MAME /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+rsync /mnt/data/roms /run/media/daniel/DIETER -PahiuvtU --progress --info=progress2,misc,stats2 --size-only
+
+for d in /mnt/data/emuladores/*/; do dir=$(basename "$d"); perf stat -d 7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/emuladores/$dir.7z" "$d"; done
+
+for d in /mnt/data/wine/*/; do dir=$(basename "$d"); perf stat -d 7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/wine/$dir.7z" "$d"; done
+
+7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/steam compatdata/compatdata.7z" /mnt/data/SteamLibrary/steamapps/compatdata
+
+7z u -t7z -mx=9 -mmt=16 -ms=on -aou -bt "/run/media/daniel/DIETER/heroic prefixes/prefixes.7z" /mnt/data/Heroic_Library/prefixes
+

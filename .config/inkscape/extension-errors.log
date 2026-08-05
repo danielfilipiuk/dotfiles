@@ -1,0 +1,20 @@
+Extension "Export to PDF via Scribus" failed to load because a dependency was not met. Dependency:
+	type: executable
+	location: path
+	string: scribus
+
+Extension "Formula (typst)" failed to load because a dependency was not met. Dependency:
+	type: executable
+	location: path
+	string: typst
+
+Extension "Optimized PNG" failed to load because a dependency was not met. Dependency:
+	type: executable
+	location: path
+	string: optipng
+
+Extension "Formula (pdflatex)" failed to load because a dependency was not met. Dependency:
+	type: executable
+	location: path
+	string: pdflatex
+

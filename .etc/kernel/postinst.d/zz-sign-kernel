@@ -1,0 +1,16 @@
+#!/bin/sh
+# Auto-sign kernel when installed via .deb
+
+KEY="/etc/sb/keys/MOK.key"
+CRT="/etc/sb/keys/MOK.crt"
+
+VERSION="$1"
+KERNEL="/boot/vmlinuz-$VERSION"
+SIGNED="/boot/vmlinuz-$VERSION.signed"
+
+if [ -f "$KERNEL" ]; then
+    echo "→ Signing kernel: $KERNEL"
+    sbsign --key "$KEY" --cert "$CRT" --output "$SIGNED" "$KERNEL" || exit 1
+    mv "$SIGNED" "$KERNEL"
+    echo "✅ Kernel signed: $KERNEL"
+fi

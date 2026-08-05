@@ -17,7 +17,7 @@ notify() {
 # Handle process toggle safely for long process name string lengths
 if pgrep -f "gpu-screen-recorder" >/dev/null; then
     pkill -SIGINT -f "gpu-screen-recorder"
-    notify "  Window Recording stopped" "  Video saved."
+    notify "⬛  Window Recording stopped" "💾  Video saved."
     exit 0
 fi
 
@@ -33,7 +33,7 @@ FILENAME="$OUTPUT_DIR/window_$(date +%Y-%m-%d_%H-%M-%S).mp4"
 # Set audio device
 AUDIO_DEVICE="alsa_output.pci-0000_30_00.6.analog-stereo.monitor"
 
-notify " Window Recording started" "$(basename "$FILENAME")"
+notify "🔴 Window Recording started" "$(basename "$FILENAME")"
 
 # FIX: Use "-w region" and pass the specific geometry structure to "-region"
 #gpu-screen-recorder -w region -region "${WIDTH}x${HEIGHT}+${X_POS}+${Y_POS}" -f 60 -a "$AUDIO_DEVICE" -o "$FILENAME"
@@ -49,5 +49,5 @@ STATUS=$?
 
 # Only notify if we exited normally
 if [ $STATUS -eq 0 ]; then
-    notify " Window Recording finished" "$(basename "$FILENAME")"
+    notify "⬛ Window Recording finished" "$(basename "$FILENAME")"
 fi
