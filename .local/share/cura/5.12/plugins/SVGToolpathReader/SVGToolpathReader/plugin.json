@@ -1,0 +1,8 @@
+{
+	"name": "SVG Toolpath Reader",
+	"author": "Ghostkeeper",
+	"version": "1.2.2",
+	"description": "Reads SVG files as toolpaths, for debugging printer movements.",
+	"api": 5,
+	"supported_sdk_versions": ["5.0.0", "6.0.0", "7.0.0", "8.0.0"]
+}

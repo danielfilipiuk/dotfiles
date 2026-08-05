@@ -1,0 +1,10 @@
+{
+    "name": "Theme Creator",
+    "version": "1.4.0",
+    "author": "HellAholic",
+    "description": "Create Custom Themes for Ultimaker Cura by modifying the Fonts, User Interface sizes, and colors.",
+    "api": 5,
+    "package_id": "ThemeCreator",
+    "supported_sdk_versions": ["8.9.0"],
+    "website": "https://github.com/HellAholic/CuraThemeCreator"
+}

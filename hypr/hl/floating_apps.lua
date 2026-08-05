@@ -301,8 +301,5 @@ hl.window_rule({
 hl.window_rule({
 	 name = "tomboy",
 	 match = {class = "tomboy-ng"},
-	 size = "570 700",
-	 center = true,
-	 float = true,	
-	 monitor = 1,  
+	 float = true,	   
 })

@@ -1,0 +1,42 @@
+min_slic3r_version = 2.9.3
+1.0.7 Prefer clockwise movements.
+1.0.6 Bugfix start g-code heatbreak temp.
+1.0.5 Change in metrics.
+1.0.4 Update profile image.
+1.0.3 Update profile image.
+1.0.2 Lowered heatbreak temperature for all profiles. Change spool weights and filament costs. Renamed PC Blend and PC Blend Carbon Fiber profiles.
+1.0.1 User release. Start g-code safety update. 
+0.2.3 Deleted Prusament TPU95A profile. Tuned filament profile for Prusament PLA Blend. Minor changes in formatting and naming of profiles.
+0.2.2 Fixed Buddy3D PLA Sikn filament profile.
+0.2.1 Tuned Prusament Prusament PCCF profile.
+0.2.0 Removed Buddy3D PLA, PETG and ASA profiles. Tuned Prusament PLA Blend profile and Buddy3d PLA Silk profile. Add new Prusament TPU95A profile. Lowered max volumetric speed for Prusament PCCF profile. 
+0.1.2 Tuned Start and End g-code. Removed uPLA and PLA+ profiles.
+0.1.1 Firs layer speed up increased. Adjusted volumetric speed for Prusament PA profile. Lowered first layer bed temperature for Prusament PA profile. Change PA11 Carbon Fiber profile name. Deleted shrinkage compensation. Added short travel acceleration. Modify cooling for Prusament PCCF and Prusament PC Blend profiles. 
+0.1.0 Adujst for Prusament PA profile - changed first layer and bed temperature, volumetric speed and extrusion multiplier. Optimized cooling for ASA profile - added dynamic fan speeds and changed first layer temperature.
+0.0.26 Corrected first layer bed temperature and extruder temperature for Prusament PC Blend profile.
+0.0.25 New start and end g-code with auto retracting, less filament waste. Improved PC Blend profile for better bridging and overhangs. Turn on JD for iX in all profiles. 
+0.0.24 Improved PCCF profile with better bridging and overhangs. Modify Buddy3D ABS profile for better quality.
+0.0.23 Added cooling_slowdown_logic and cooling_perimeter_transition_distance to all profiles. Improved overhang performance for PLA profile. Improved printing quality for ABS profile.
+min_slic3r_version = 2.8.0
+0.0.22 Added bed shape and texture.
+0.0.21 Correction in compatible_printers_condition. Better PA for PETG profile. And improved Prusamnet PLA profile.
+0.0.20 Reworked profile structure. Improve PETG performance. Optimized speed settings. 
+0.0.19 Fix in Prusament PA profile.
+0.0.18 Hotfix for Prusament PA. 
+0.0.17 Added new profiles. Tuned Prusament PLA, PETG and PC Blend profiles. Tuned Structural profiles speeds to avoid VFA. 
+0.0.16 Change printer name. Retract height adujsted. Removed default printer profile. Added new materials from Buddy3D and Prusa Polymers.
+0.0.15 One speed for all profiles. Added filament vendor. Changed thumbnail size to 380x285px.
+0.0.14 Start and End g-code optimized. 
+0.0.13 Added new profiles for ABS, lowered travel speed and turn on E relative distance.
+0.0.12 Improve PETG cooling and removing of some profiles.
+0.0.11 Lower heatbreak temp for ASA, PC and PPCF to 65c.
+0.0.10 New and improved purge line. Cleaned up start gcode. Optimized cleaning sequence. Fix PCCF max volumetric flow.
+0.0.9 Change heatbreak temps back. Printer need to have PCCF parts on extruder. Optimized the Express mode and PC profile.
+0.0.8 Limit max crossing infill speed on PETG
+0.0.7 Lowered max heatbreak temp to 65c for PETG shourd. Optimized The Express mode
+0.0.6 Added correct filament density and filament costs
+0.0.5 Added new naming scheme for profiles, new layer height and speed settings, added support for ASA
+0.0.4 Added metric bedlet_target
+0.0.3 Alpha release
+0.0.2 Fixes
+0.0.1 Initial test version

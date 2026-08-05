@@ -1,0 +1,24 @@
+min_slic3r_version = 2.9.1
+1.1.14 Updated spool weight for Prusament filaments.
+1.1.13 Added filament profiles for Fiberlogy ABS+GF, FiberFlex CF, HIPS, PC-ABS, PETG-PTFE (0.4mm and 0.6mm nozzle).
+1.1.12 Added filament profiles for Tectonic-3D AURA PLA, Tectonic-3D AURA PETG, Tectonic-3D AURA ASA+, Fiberlogy PCTG, Fiberlogy PCTG-CF, Fiberlogy PCTG-GF, 3DXTECH PPS (0.4mm and 0.6mm nozzle).  
+1.1.11 Added filament profiles for Prusament PC Space Grade, Prusament Woodfill, Prusament rPLA, Filament PM ASA (0.4mm and 0.6mm nozzle).
+1.1.10 Updated filament profile for Verbatim PP.
+1.1.9 Added filament profiles for FiberThree PA-CF Pro, FiberThree PA-GF Pro and Fiberon PPS-CF10.
+1.1.8 Added profiles for Filament PM PA-GFJet (0.4 and 0.6 nozzle).
+1.1.7 Added filament profile for Prusament PP Glass Fiber (0.4 and 0.6 nozzle), igus iglidur i180 and J260 (0.4 nozzle).
+1.1.6 Added filament profile for Prusament TPU 95A.
+1.1.5 Added filament profile for FiberThree PA ORTHO (0.6mm nozzle).
+1.1.4 Added filament profile for Prusament PETG V0. Filament vendor "BASF" renamed to "Forward AM".
+1.1.3 Fixed vendor label for 3DXTECH PEEK in configuration wizard.
+1.1.2 Added filament profiles for Buddy3D ASA, Buddy3D ABS-FR, Verbatim PP.
+1.1.1 Added filament profiles for Prusament PETG Carbon Fiber, Buddy3D ABS ESD, FiberThree PA ESD, 3DXTECH PEEK, 3DXTECH PEEK-GF, Generic PCTG. Added 0.6mm nozzle profiles for Prusament PP Carbon Fiber and Prusament PETG Magnetite 40%.
+1.1.0 Added filament profiles for Prusament PETG Tungsten 75%, Prusament PETG Magnetite 40%, Prusament PP Carbon Fiber. Extruder clearance moved to printer settings.
+min_slic3r_version = 2.8.0-alpha0
+1.0.5 Added filament profiles for Prusament PETG Tungsten 75%, Prusament PETG Magnetite 40%, Prusament PP Carbon Fiber.
+1.0.4 Updated Prusament PEI 1010 filament profile
+1.0.3 Updated print, chamber, bed temperatures, layer times and cooling for all HT materials and PC-CF, fixed Z-offsets for most LT materials, added wipe for ASA, PC, PC-CF, adjusted PA values and lowered retraction speeds for LT materials, fixed filament types and filament g-codes, added feedrate override for carbon filled materials, slowed down print and retraction speeds for FLEX, lowered maximum print height
+1.0.2 Renamed high temp printer variant, added resources. 
+1.0.1 HT90 HT separated in configuration wizard
+1.0.0 Initial Prusa Pro HT configuration bundle
+
