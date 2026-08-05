@@ -1,0 +1,15 @@
+# editor backups
+*~
+*.swp
+
+# temporary downloads
+*.part
+
+# caches
+.cache/
+
+# thumbnails
+thumbs.db
+
+# logs
+*.log
