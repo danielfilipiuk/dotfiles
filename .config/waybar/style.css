@@ -227,12 +227,12 @@ menuitem {
 }
 #taskbar button.active {
 	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.85);
+	background: rgba(202, 158, 230,.85) ;
 }
 
 #taskbar button.active:hover {
 	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.85);
+	background: rgba(218, 150, 238,85) ;
 
 }
 

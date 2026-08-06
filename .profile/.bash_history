@@ -44786,3 +44786,12 @@ df
 dust
 dust /mnt/3tb
 dust /mnt/3TB
+cd dotfiles/
+git status
+git add .
+git commit -m "added disks module and menu to waybar. Added animations to waybar modules. Created waybar drawer with hardware info related modules."
+git push
+git status
+pastel color #ca9ee6
+pastel color ca9ee6
+pastel color violet
