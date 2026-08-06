@@ -13,6 +13,8 @@
 (monitor-yresolution 113)
 (theme "System")
 (theme-color-scheme system)
+(show-welcome-dialog no)
+(color-profile-policy keep)
 (fill-options
     (style fg-color)
     (custom-style solid-color)

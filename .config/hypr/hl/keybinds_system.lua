@@ -25,7 +25,7 @@ end)
 hl.bind(mainMod .. " + M",  hl.dsp.exec_cmd("app2unit -- fuzzel-mount"), {description = "udisks mount drives with fuzzel"})
 ---------------------------------------------------------------
 -- UUCTL SERICE MANAGER
-hl.bind("CTRL + ALT + End", hl.dsp.exec_cmd("app2unit -S out -- uuctl fuzzel -d --placeholder Services --counter --no-sort -w 80 -l 15"), {description = "uwsm - uuctl"})
+hl.bind("CTRL + ALT + End", hl.dsp.exec_cmd("app2unit -S out -- uuctl fuzzel -d --placeholder \"type Service name...\" --counter --no-sort -w 80 -l 15"), {description = "uwsm - uuctl"})
 ---------------------------------------------------------------
 -- HYPRLOCK
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("pidof hyprlock || app2unit -S both -- hyprlock"), {locked = true}, {description = "Lock the screen"})

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1000 1000"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg3"
+   sodipodi:docname="suspend.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs3" /><sodipodi:namedview
+   id="namedview3"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="0.3985"
+   inkscape:cx="346.29862"
+   inkscape:cy="478.04266"
+   inkscape:window-width="1138"
+   inkscape:window-height="868"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg3" />
+<metadata
+   id="metadata1"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g
+   id="g3"
+   style="fill:#b57daa;fill-opacity:0.90196079"><path
+     d="M500,990c-66.1,0-130.3-13-190.7-38.5c-58.4-24.7-110.8-60-155.7-105s-80.3-97.4-105-155.7C23,630.3,10,566.1,10,500c0-66.1,13-130.3,38.5-190.7c24.7-58.4,60-110.8,105-155.7c45-45,97.4-80.3,155.7-105C369.7,23,433.9,10,500,10c66.1,0,130.3,13,190.7,38.5c58.4,24.7,110.8,60,155.7,105c45,45,80.3,97.4,105,155.7C977,369.7,990,433.9,990,500c0,66.1-13,130.3-38.5,190.7c-24.7,58.4-60,110.8-105,155.7s-97.4,80.3-155.7,105C630.3,977,566.1,990,500,990z M500,79.6c-112.3,0-217.9,43.7-297.3,123.1C123.3,282.1,79.6,387.7,79.6,500s43.7,217.9,123.1,297.3c79.4,79.4,185,123.1,297.3,123.1c112.3,0,217.9-43.7,297.3-123.1c79.4-79.4,123.1-185,123.1-297.3s-43.7-217.9-123.1-297.3C717.9,123.3,612.3,79.6,500,79.6z"
+     id="path1"
+     style="fill:#b57daa;fill-opacity:0.90196079" /><path
+     d="M322.5,290.6h108v412h-108V290.6z"
+     id="path2"
+     style="fill:#b57daa;fill-opacity:0.90196079" /><path
+     d="M561.6,290.6h107.9v412H561.6V290.6z"
+     id="path3"
+     style="fill:#b57daa;fill-opacity:0.90196079" /></g>
+</svg>

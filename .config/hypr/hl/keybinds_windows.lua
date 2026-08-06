@@ -12,9 +12,14 @@
 local closeWindowBind = hl.bind(mainMod .. " + Escape", hl.dsp.window.close(),	{ description = "close window" })
 -- closeWindowBind:set_enabled(false)
 ---------------------------------------------------------------
+---------------------------------------------------------------
+-- MATAR PROCESO 
+local closeWindowBind = hl.bind(mainMod .. " + CTRL + Escape", hl.dsp.window.kill(),	{ description = "kill process & window" })
+-- closeWindowBind:set_enabled(false)
+---------------------------------------------------------------
 
 
-
+---------------------------------------------------------------
 -- FLOAT TOGGLE
 hl.bind(mainMod .. " + Return", hl.dsp.window.float({ action = "toggle" }),	{ description = "toggle float / tiled" })
 ---------------------------------------------------------------

@@ -44401,3 +44401,21 @@ btop
 nvtop 
 qqqqqq
 exit
+git-gui
+man git-gui
+git gui
+du -sh .git
+cd dotfiles/
+du -sh .git
+git count-objects -vH
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git count-objects -vH
+/usr/bin/fastfetch 
+/usr/local/bin/fastfetch 
+/usr/local/bin/fastfetch_266 
+/usr/local/bin/fastfetch_266 
+/usr/local/bin/fastfetch 
+/usr/bin/fastfetch 
+hyprprop 
+hyprprop 

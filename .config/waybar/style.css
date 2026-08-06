@@ -93,7 +93,7 @@ window#waybar.toplevel-active {
 tooltip {
 	background: rgba(248,246,242,.75);
 	color: rgba(30,30,30,.90);
-	border: 3px solid rgba(30,30,30,.75);
+	border: 3px solid rgba(181,125,170,.85);
 	border-radius: 16px;
 }
 tooltip label {

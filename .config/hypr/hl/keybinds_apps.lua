@@ -58,6 +58,10 @@ hl.bind(mainMod .. " + K",  hl.dsp.exec_cmd("app2unit -- wlclock-hypr"), {descri
 -- TOMBOY NEW NOTE 
 hl.bind(mainMod .. " + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng -c"), {description = "tomboy new note"})
 ---------------------------------------------------------------
+-- TOMBOY SEARCH NOTES 
+hl.bind(mainMod .. " + ALT + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng"), {description = "tomboy new note"})
+---------------------------------------------------------------
+
 
 
 

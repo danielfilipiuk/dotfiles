@@ -163,29 +163,30 @@
 
 "mpd": {
 	"format": "  {volume} {stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}",
-	"format-disconnected": "   ",
+	"format-disconnected": "<span color='#dd3835'><b>   </b></span>",
 	"format-stopped": "  {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}",
 	"interval": 1,
 	"unknown-tag": "",
 	"justify": "center",
 	"consume-icons": {
-		"on": " " // Icon shows only when "consume" is on
+		"on": "<span color='#b57daa'><b> </b></span>" // Icon shows only when "consume" is on
 	},
 	"random-icons": {
-		"on": " "
+		"on": "<span color='#b57daa'><b> </b></span>"
 	},
 	"repeat-icons": {
-		"on": " "
+		"on": "<span color='#b57daa'><b> </b></span>"
 	},
 	"single-icons": {
-		"on": " "		
+		"on": "<span color='#b57daa'><b> </b></span>"		
 	},
 	"state-icons": {
 		"paused":"",
 		"playing":""
 	},
 	//"tooltip-format": "MPD (connected)",
-	"tooltip-format": "Music Player Daemon\t{elapsedTime:%M:%S} / {totalTime:%M:%S}\n{artist} - {album}\n{title}\n{filename}",
+	"tooltip-format": "\t{elapsedTime:%M:%S} / {totalTime:%M:%S}\nArtist:\t{artist}\nAlbum:\t{album}\nTitle:\t{title}\nFile: {filename}",
+	"tooltip-format-stopped": "Music Player Daemon\nStopped.",
 	"tooltip-format-disconnected": "Music Player Daemon\nDisconnected :(",
 	
 	"on-click": "mpc toggle",
@@ -352,7 +353,7 @@
 			"days":       "<span color='#2e2e2d'>{}</span>",
 			"weeks":      "<span color='#6b653b'><b>{}</b></span>",
 			"weekdays":   "<span color='#707982'><b>{}</b></span>",
-			"today":      "<span color='#ff6699'><b>{}</b></span>"
+			"today":      "<span color='#da70d6'><b>{}</b></span>"
 		}
 	},
 	"actions": {

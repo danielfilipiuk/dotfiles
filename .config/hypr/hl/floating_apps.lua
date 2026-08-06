@@ -5,6 +5,7 @@ hl.window_rule({
 	 opacity = 1,
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -15,6 +16,7 @@ hl.window_rule({
 	 float = true,
 	 center = true,
 	 size = "804 47",
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -24,6 +26,7 @@ hl.window_rule({
 	 float = true,
 	 center = true,
 	 size = "500 500",
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -31,6 +34,7 @@ hl.window_rule({
 	 match = {class = "peazip"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -38,6 +42,7 @@ hl.window_rule({
 	 match = {class = "xarchiver"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -45,6 +50,7 @@ hl.window_rule({
 	 match = {class = "gnome-disks"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -52,6 +58,7 @@ hl.window_rule({
 	 match = {class = "mediainfo-gui"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -60,6 +67,7 @@ hl.window_rule({
 	 match = {class = "system-config-printer"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -70,6 +78,7 @@ hl.window_rule({
 	opacity = 1,
 	xray = true,
 	stay_focused = true,
+	persistent_size = true,
 })
 
 
@@ -78,6 +87,7 @@ hl.window_rule({
 	 match = {title = "Jack retasking for HDA Intel sound cards"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -85,6 +95,7 @@ hl.window_rule({
 	 match = {class = "qjoypad"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -93,6 +104,7 @@ hl.window_rule({
 	 match = {title = "GkDebconf"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -102,6 +114,7 @@ hl.window_rule({
 	center = true,
 	dim_around = false,
 	opacity = 1,
+	persistent_size = true,
 })
 
 hl.window_rule({
@@ -109,6 +122,7 @@ hl.window_rule({
 	 match = {class = "yad-icon-browser"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -117,6 +131,7 @@ hl.window_rule({
 	 float = true,
 	 center = true,
 	 size = "784 572",
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -124,6 +139,7 @@ hl.window_rule({
 	 match = {title = "AntiMicroX"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -132,6 +148,7 @@ hl.window_rule({
 	 name = "Simple Scan",
 	 match = {class = "simple-scan"},
 	 float = true,
+	 persistent_size = true,
 })
 
 
@@ -141,6 +158,7 @@ hl.window_rule({
 	 size = "818 400",
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -149,6 +167,7 @@ hl.window_rule({
 	 size = "818 850",
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -156,6 +175,7 @@ hl.window_rule({
 	 match = {title = "xcolors"},
 	center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -163,6 +183,7 @@ hl.window_rule({
 	 match = {title = "xcolorsel: /etc/X11/rgb.txt"},
 	center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 
@@ -171,12 +192,14 @@ hl.window_rule({
 	 match = {title = "^xfontsel.*"},
 	center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "Xsane",
 	 match = {class = "Xsane"},
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -186,6 +209,7 @@ hl.window_rule({
 	dim_around = false,
 	opacity = 1,
 	xray = true,
+	persistent_size = true,
 })
 
 
@@ -195,12 +219,14 @@ hl.window_rule({
 	 size = "909 692",
 	 float = true,
 	 animation = "gnomed",
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "Xpad",
 	 match = {class = "xpad"},
 	 float = true,
+	 persistent_size = true,
 })
 
 
@@ -210,6 +236,7 @@ hl.window_rule({
 	 match = {class = "org.openrgb.OpenRGB"},
 	 opacity = .85,
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -217,8 +244,8 @@ hl.window_rule({
 	 match = {class = "nwg-look"},
 	 float = true,
 	 size = "870 731",
+	 persistent_size = true,
 })
-
 
 
 hl.window_rule({
@@ -228,6 +255,7 @@ hl.window_rule({
 	 center = true,
 	 --size = "1150 866",
 	 monitor = "1",
+	 persistent_size = true,
 })
 
 
@@ -237,6 +265,7 @@ hl.window_rule({
 	 float = true,
 	 center = true,
 	 --size = "650 510",
+	 persistent_size = true,
 })
 
 
@@ -245,12 +274,14 @@ hl.window_rule({
 	 match = {class = "noblenote"},
 	 float = true,
 	 opacity = .85,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "gsmartcontrol",
 	 match = {class = "Gsmartcontrol"},
-	 float = true, 
+	 float = true,
+	 persistent_size = true, 
 })
 
 
@@ -259,12 +290,14 @@ hl.window_rule({
 	 name = "dpkg-reconfigure",
 	 match = {class = "dpkg-reconfigure"},
 	 float = true, 
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "bulky renamer",
 	 match = {class = "bulky.py"},
 	 float = true, 
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -272,12 +305,14 @@ hl.window_rule({
 	 match = {class = "gucharmap"},
 	 float = true, 
 	 size = "980 800",
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "efck-chat-keyboard",
 	 match = {class = "efck-chat-keyboard"},
 	 float = true,	 
+	 persistent_size = true,
 })
 
 
@@ -288,6 +323,7 @@ hl.window_rule({
 	 center = true,
 	 float = true,	
 	 monitor = 1,  
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -295,11 +331,22 @@ hl.window_rule({
 	 match = {title = ".*glmark.*"},
 	 center = true,
 	 float = true,	
-	 monitor = 1,  
+	 monitor = 1,
+	 persistent_size = true,  
 })
 
 hl.window_rule({
 	 name = "tomboy",
 	 match = {class = "tomboy-ng"},
 	 float = true,	   
+	 opacity = .90,
+	 persistent_size = true,
+})
+
+
+hl.window_rule({
+	 name = "gpick",
+	 match = {class = "gpick"},
+	 float = true,
+	 persistent_size = true,	   
 })

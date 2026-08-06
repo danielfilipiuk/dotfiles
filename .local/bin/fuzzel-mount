@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Step 1: Choose the drive
-DRIVE_CHOICE=$(echo -e "1TB (/dev/sdb1)\nData (/dev/sdd1)\n3TB (/dev/sdc1)" | fuzzel --dmenu -w 20 -l 5 --prompt="Select Drive: ")
+DRIVE_CHOICE=$(echo -e "  1TB (/dev/sdb1)\n  Data (/dev/sdd1)\n  3TB (/dev/sdc1)" | fuzzel --dmenu -w 20 -l 3 --prompt="Select Drive: ")
 
 case "$DRIVE_CHOICE" in
     *"sdb1"*) DEV="/dev/sdb1" ;;
@@ -11,13 +11,13 @@ case "$DRIVE_CHOICE" in
 esac
 
 # Step 2: Choose action
-ACTION_CHOICE=$(echo -e "Mount\nUnmount" | fuzzel --dmenu -w 20 -l 5 --prompt="Action for $DEV: ")
+ACTION_CHOICE=$(echo -e " Mount\n Unmount" | fuzzel --dmenu -w 20 -l 2 --prompt="Action for $DEV: ")
 
 case "$ACTION_CHOICE" in
-    "Mount")
+    " Mount")
         ~/.local/bin/udmounts mount "$DEV"
         ;;
-    "Unmount")
+    " Unmount")
         ~/.local/bin/udmounts unmount "$DEV"
         ;;
     *)

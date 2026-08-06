@@ -11,8 +11,8 @@
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 644 37)
-    (size 633 984)
+    (position 73 118)
+    (size 1141 788)
     (monitor 1)
     (open-on-exit)
     (aux-info
@@ -60,7 +60,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 282)
+            (position 185)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style icon)
@@ -83,8 +83,8 @@
     (monitor 1))
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
-    (position 0 0)
-    (size 1264 984)
+    (position 110 184)
+    (size 1024 733)
     (monitor 1))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")

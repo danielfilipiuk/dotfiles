@@ -3,35 +3,43 @@
 --	 match = {float = "1"},
 --	 center = true,
 --})
+
+
+
 hl.window_rule({
 	 name = "About",
 	 match = {title = ".*About.*"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "Properties window",
 	 match = {title = ".*Properties.*"},
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "save as dialog",
 	 match = {title = "^Save As.*"},
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "Save dialog",
 	 match = {title = "^Save.*"},
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "save dialog",
 	 match = {title = ".save.*"},
 	 float = true,
+	 persistent_size = true,
 })
 
 
@@ -39,6 +47,7 @@ hl.window_rule({
 	 name = "XDG save as...",
 	 match = {class = "xdg-desktop-portal-gtk"},
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -46,6 +55,7 @@ hl.window_rule({
 	 match = {title = "Select Directory"},
 	 size = "530 697",
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -53,6 +63,7 @@ hl.window_rule({
 	 match = {title = ".*Preferences.*"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -62,6 +73,7 @@ hl.window_rule({
 	 match = {class = "yad"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -69,6 +81,7 @@ hl.window_rule({
 	 match = {title = ".*Rename.*"},
 	 float = true,
 	 center = true,	 
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -76,6 +89,7 @@ hl.window_rule({
 	 match = {title = ".*Properties.*"},
 	 float = true,
 	 center = true,	 
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -83,6 +97,7 @@ hl.window_rule({
 	 match = {title = "Custom Actions"},
 	 float = true,
 	 center = true,	 
+	 persistent_size = true,
 })
 
 
@@ -91,6 +106,7 @@ hl.window_rule({
 	 match = {title = ".*Audio Information.*"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -99,6 +115,7 @@ hl.window_rule({
 	 match = {class = "exo-desktop-item-edit"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 
@@ -107,12 +124,14 @@ hl.window_rule({
 	 match = {title = "File Operation Progress"},
 	 float = true,
 	 center = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
 	 name = "synaptic dialogs",
 	 match = {title = "synaptic"},
 	 center = false,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -120,6 +139,7 @@ hl.window_rule({
 	 match = {title = ".*Print.*"},
 	 center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -127,6 +147,7 @@ hl.window_rule({
 	 match = {title = ".*Open File.*"},
 	 center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -134,6 +155,7 @@ hl.window_rule({
 	 match = {title = "Mousepad Shortcuts"},
 	 center = true,
 	 float = true,
+	 persistent_size = true,
 })
 
 

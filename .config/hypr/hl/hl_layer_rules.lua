@@ -32,6 +32,7 @@ hl.layer_rule({
 	blur = true,
     	animation = "slide",
     	ignore_alpha = 0.5,
+    	above_lock = 2,
 })
 
 hl.layer_rule({ 

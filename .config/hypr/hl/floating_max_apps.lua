@@ -9,7 +9,7 @@ hl.window_rule({
 
 hl.window_rule({
 	 name = "Inkscape",
-	 match = {class = "Inkscape?"},
+	 match = {class = "org.inkscape.Inkscape"},
 	 float = true,
 	 --maximize = true,
 	 content = "photo",
@@ -46,6 +46,7 @@ hl.window_rule({
 	 match = {class = "org.qbittorrent.qBittorrent"},
 	 float = true,
 	 center = true,
+	persistent_size = true,
 })
 
 hl.window_rule({
@@ -69,6 +70,7 @@ hl.window_rule({
 	 match = {class = "io.github.ilya_zlobintsev.LACT"},
 	 float = true,
 	 center = true,
+	persistent_size = true,
 })
 
 hl.window_rule({
@@ -76,6 +78,7 @@ hl.window_rule({
 	 match = {class = "dev.serebit.Waycheck"},
 	 float = true,
 	-- center = true,
+	persistent_size = true,
 })
 
 
@@ -157,7 +160,7 @@ hl.window_rule({
 	 match = {initial_class = "org.bunkus.mkvtoolnix-gui"},
 	 float = true,
 	 monitor = "1",
-	 	persistent_size = true,
+	persistent_size = true,
 })
 
 
@@ -189,7 +192,8 @@ hl.window_rule({
 	 name = "Gimp",
 	 match = {class = "Gimp"},
 	 monitor = "1",
-	persistent_size = true,
+	 float = true, 
+	 persistent_size = true,
 })
 
 hl.window_rule({
@@ -219,5 +223,6 @@ hl.window_rule({
 hl.window_rule({
 	 name = "ristretto",
 	 match = {class = "org.xfce.ristretto"},
-	 float = true,	 
+	 float = true,
+	 	 
 })
