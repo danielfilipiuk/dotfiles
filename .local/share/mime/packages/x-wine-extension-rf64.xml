@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-wine-extension-rf64">
+    <glob pattern="*.rf64"/>
+    <comment>RIFF 64 Broadcast Wave Format</comment>
+  </mime-type>
+</mime-info>

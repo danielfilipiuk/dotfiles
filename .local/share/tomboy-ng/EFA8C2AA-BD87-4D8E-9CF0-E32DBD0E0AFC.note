@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>lua variables</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>lua variables</underline>
+
+Absolutely! And that rule is actually the correct way to do it. 👍
+
+hl.window_rule({
+    match = { title = "^Rename .*" },
+    size = "500 50",
+    float = true,
+    center = true,
+})
+
+The reason it works comes from regular expressions (regex). Hyprland uses regexes for many matchers, and they're incredibly powerful once you know the basics.
+
+The ^
+
+^ means:
+
+"the beginning of the string."
+
+So
+
+^Rename
+
+means
+
+Match only if the title starts with Rename.
+
+Examples:
+
+Rename ".bashrc"          ✔
+Rename "notes.txt"        ✔
+Rename Multiple Files     ✔
+Please Rename             ✘
+File Rename               ✘
+
+Without the ^
+
+Rename
+
+it means
+
+Find the word "Rename" anywhere in the title.
+
+So these would also match:
+
+Please Rename This        ✔
+File Rename               ✔
+Window: Rename            ✔
+The .*
+
+The dot (.) means
+
+any character
+
+The star (*) means
+
+zero or more of the previous thing
+
+Together
+
+.*
+
+means
+
+anything after this.
+
+So
+
+^Rename .*
+
+reads almost like English:
+
+Starts with "Rename "
+then anything.
+
+Examples:
+
+Rename ".dbus"            ✔
+Rename "music"            ✔
+Rename "myfile.txt"       ✔
+Rename                    ✔ (because * means zero or more)
+Why not
+title = "Rename Multiple Files"
+
+Because that's an exact string.
+
+It matches only
+
+Rename Multiple Files
+
+and nothing else.
+
+That's why it worked for the bulk rename dialog.
+
+The single-file rename dialog changes every time:
+
+Rename ".bashrc"
+Rename "notes.txt"
+Rename "kernel.config"
+Rename "vacation.jpg"
+
+A regex lets one rule match all of those.
+
+The regexes you'll use 90% of the time
+Starts with
+^Firefox
+
+Matches
+
+Firefox
+Firefox - Downloads
+Firefox — ChatGPT
+Ends with
+txt$
+
+The $ means
+
+end of the string.
+
+Matches
+
+notes.txt
+
+Doesn't match
+
+notes.txt.backup
+Exact match
+^kitty$
+
+Both symbols together mean
+
+start here...
+...and end here.
+
+So it matches only
+
+kitty
+
+not
+
+kitty terminal
+kitty-1
+mykitty
+Contains
+Steam
+
+Matches
+
+Steam
+Steam Library
+Launching Steam
+One I think you'll love
+
+Suppose one day you want every terminal to float except one.
+
+You can do
+
+match = {
+    class = "^kitty$",
+}
+
+or
+
+match = {
+    title = "^ncmpcpp$",
+}
+
+or
+
+match = {
+    class = "^mpv$",
+    title = "YouTube",
+}
+
+You can combine them very precisely.
+
+Since we're building your setup...
+
+I have a recommendation that will save you a lot of headaches later.
+
+Instead of one rules.lua, split it into categories:
+
+~/.config/hypr/
+
+hyprland.lua
+look.lua
+bindings.lua
+input.lua
+monitors.lua
+autostart.lua
+
+rules/
+    dialogs.lua
+    terminals.lua
+    media.lua
+    games.lua
+    utilities.lua
+
+Then your hyprland.lua simply requires them:
+
+require("rules.dialogs")
+require("rules.terminals")
+require("rules.media")
+require("rules.games")
+require("rules.utilities")
+
+
+
+
+
+I want to use the program awww.
+I load the daemon as a systemd service, and then I need to give it an order via "awww img". issue is "awww img" does not recognize folders, only 1 file at a time.
+i dont want a script running in the background with a folder variable and a sleep command, I want a systemd timer that executes "awww img" every X time and randomizes the file each time, something similar to what this script do with the input folder:
+
+
+
+
+
+Method 1: Set in hyprland.confYou can configure Hyprland to launch the application using X11 every time you run it. Add this to your hyprland.conf:ini# GTK apps
+env = GDK_BACKEND,x11
+
+# Qt apps
+env = QT_QPA_PLATFORM,xcb
+
+# SDL apps
+env = SDL_VIDEODRIVER,x11
+Use code with caution.Note: This sets the environment variable globally, which applies to all launched applications.Method 2: Launch via the TerminalIf you only want to force an X11 backend for an app on a one-off basis or in a script, run the specific command in the terminal:For GTK Apps (e.g., Thunar, GNOME Text Editor):GDK_BACKEND=x11 app-nameFor Qt Apps (e.g., VLC, qBittorrent):QT_QPA_PLATFORM=xcb app-nameMethod 3: Edit the Application .desktop FileTo ensure an app always opens on X11 when launched from your application launcher (like Rofi or Wofi), you can override its .desktop file:Copy the .desktop file to your user directory:cp /usr/share/applications/appname.desktop ~/.local/share/applications/Open the file in a text editor.Find the line that starts with Exec= and modify it to include the environment variable.For example: Exec=env GDK_BACKEND=x11 appname %UIf you tell me what specific application you are trying to run, I can give you the exact environment variable or startup flag required for that specific program.
+
+
+
+
+
+
+
+
+</note-content></text>
+  <last-change-date>2026-08-04T17:45:58.6697633-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:45:58.6697633-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:45:58.6697633-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>570</width>
+  <height>700</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

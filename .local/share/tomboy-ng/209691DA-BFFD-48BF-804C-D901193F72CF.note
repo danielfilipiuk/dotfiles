@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>animaciones hyprland</title>
+  
+<text xml:space="preserve"><note-content version="0.1">animaciones hyprland
+
+global
+  ↳ windows - styles: slide, popin, gnomed
+    ↳ windowsIn - window open - styles: same as windows
+    ↳ windowsOut - window close - styles: same as windows
+    ↳ windowsMove - everything in between, moving, dragging, resizing.
+  ↳ layers - styles: slide, popin, fade
+    ↳ layersIn - layer open
+    ↳ layersOut - layer close
+  ↳ fade
+    ↳ fadeIn - fade in for window open
+    ↳ fadeOut - fade out for window close
+    ↳ fadeSwitch - fade on changing activewindow and its opacity
+    ↳ fadeShadow - fade on changing activewindow for shadows
+    ↳ fadeGlow - fade on changing activewindow for glow
+    ↳ fadeDim - the easing of the dimming of inactive windows
+    ↳ fadeLayers - for controlling fade on layers
+      ↳ fadeLayersIn - fade in for layer open
+      ↳ fadeLayersOut - fade out for layer close
+    ↳ fadePopups - for controlling fade on wayland popups
+      ↳ fadePopupsIn - fade in for wayland popup open
+      ↳ fadePopupsOut - fade out for wayland popup close
+    ↳ fadeDpms - for controlling fade when dpms is toggled
+  ↳ border - for animating the border's color switch speed
+  ↳ borderangle - for animating the border's gradient angle - styles: once (default), loop
+  ↳ shadowangle - for animating the shadow's gradient angle - styles: once (default), loop
+  ↳ glowangle - for animating the glow's gradient angle - styles: once (default), loop
+  ↳ workspaces - styles: slide, slidevert, fade, slidefade, slidefadevert
+    ↳ workspacesIn - styles: same as workspaces
+    ↳ workspacesOut - styles: same as workspaces
+    ↳ specialWorkspace - styles: same as workspaces
+      ↳ specialWorkspaceIn - styles: same as workspaces
+      ↳ specialWorkspaceOut - styles: same as workspaces
+  ↳ zoomFactor - animates the screen zoom
+  ↳ monitorAdded - monitor added zoom animation
+</note-content></text>
+  <last-change-date>2026-08-04T17:43:42.2402111-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:43:42.2402111-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:43:42.2402111-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>633</width>
+  <height>984</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

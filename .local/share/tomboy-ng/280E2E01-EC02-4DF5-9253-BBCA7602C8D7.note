@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>checklist procesos</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>checklist procesos</underline>
+
+"Did Fuzzel find the application?"
+ls ~/.local/share/applications/
+"Did the desktop entry parse correctly?"
+desktop-file-validate ~/.local/share/applications/foo.desktop
+"Did app2unit create the service?"
+systemctl --user
+"Did systemd start it?"
+systemctl --user status app-foo@....service
+"Is the process actually running?"
+ps -ef
+"What did the application say?"
+journalctl --user -u app-foo@....service
+
+</note-content></text>
+  <last-change-date>2026-08-04T17:44:15.6686021-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:44:15.6686021-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:44:15.6686021-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>558</width>
+  <height>710</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

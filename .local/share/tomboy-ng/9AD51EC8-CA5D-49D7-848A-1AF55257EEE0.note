@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>cores rating</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>cores rating</underline>
+
+daniel:~$ cat /sys/devices/system/cpu/cpu0/cpufreq/amd_pstate_prefcore_ranking
+186
+daniel:~$ cat /sys/devices/system/cpu/cpu1/cpufreq/amd_pstate_prefcore_ranking
+191
+daniel:~$ cat /sys/devices/system/cpu/cpu2/cpufreq/amd_pstate_prefcore_ranking
+171
+daniel:~$ cat /sys/devices/system/cpu/cpu3/cpufreq/amd_pstate_prefcore_ranking
+181
+daniel:~$ cat /sys/devices/system/cpu/cpu4/cpufreq/amd_pstate_prefcore_ranking
+166
+daniel:~$ cat /sys/devices/system/cpu/cpu5/cpufreq/amd_pstate_prefcore_ranking
+196
+daniel:~$ cat /sys/devices/system/cpu/cpu6/cpufreq/amd_pstate_prefcore_ranking
+176
+daniel:~$ cat /sys/devices/system/cpu/cpu7/cpufreq/amd_pstate_prefcore_ranking
+196
+daniel:~$ cat /sys/devices/system/cpu/cpu8/cpufreq/amd_pstate_prefcore_ranking
+186
+daniel:~$ cat /sys/devices/system/cpu/cpu9/cpufreq/amd_pstate_prefcore_ranking
+191
+daniel:~$ cat /sys/devices/system/cpu/cpu10/cpufreq/amd_pstate_prefcore_ranking
+171
+daniel:~$ cat /sys/devices/system/cpu/cpu11/cpufreq/amd_pstate_prefcore_ranking
+181
+daniel:~$ cat /sys/devices/system/cpu/cpu12/cpufreq/amd_pstate_prefcore_ranking
+166
+daniel:~$ cat /sys/devices/system/cpu/cpu13/cpufreq/amd_pstate_prefcore_ranking
+196
+daniel:~$ cat /sys/devices/system/cpu/cpu14/cpufreq/amd_pstate_prefcore_ranking
+176
+daniel:~$ cat /sys/devices/system/cpu/cpu15/cpufreq/amd_pstate_prefcore_ranking
+196
+</note-content></text>
+  <last-change-date>2026-08-04T17:44:29.1894408-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:44:29.1894408-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:44:29.1894408-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>543</width>
+  <height>838</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

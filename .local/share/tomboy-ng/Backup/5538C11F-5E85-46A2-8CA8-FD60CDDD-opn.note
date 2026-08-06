@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>check RT limits</title>
+  
+<text xml:space="preserve"><note-content version="0.1">check RT limits
+
+heck the limits
+
+Run:
+
+ulimit -r
+
+If you see:
+
+95
+
+you're good.
+
+If it says:
+
+0
+
+then PAM limits haven't been applied.
+
+Verify MPD
+
+The warning should disappear.
+
+You can also inspect the scheduling policy:
+
+ps -Leo pid,cls,rtprio,pri,ni,cmd | grep mpd
+
+You should eventually see something like:
+
+SCHED_FIFO   50
+
+or
+
+FF 50
+
+for the output thread.
+
+</note-content></text>
+  <last-change-date>2026-08-04T17:43:58.6422449-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:43:58.6422449-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:43:58.6422449-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>633</width>
+  <height>984</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

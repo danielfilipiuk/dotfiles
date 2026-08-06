@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-wine-extension-nsa">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <glob pattern="*.nsa"/>
+  <comment>Nullsoft Streaming Audio File</comment>
+</mime-type>

@@ -1,0 +1,4 @@
+FILE_$(N).$(EXT)
+FILE_$(K).$(EXT)
+$(PARENT) $(N).$(EXT)
+$(PARENT) $(K).$(EXT)

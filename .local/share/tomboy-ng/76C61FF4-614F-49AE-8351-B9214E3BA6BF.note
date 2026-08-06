@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Variables steam</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>Variables steam</underline>
+
+gamescope -W 1280 -H 1024 -r 60 -s 2 --rt -e -- %command%
+
+gamescope -W 1280 -H 1024 -r 60 -s 1.5 --rt --mangoapp -O DP-1 -f -- %command%
+
+original de GTA4
+
+WINEDLLOVERRIDES="dinput8=n,b" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 -nomemrestrict -norestrictions -forcehighqualitymirrors -fullspecaudio -frameLimit 1 -managed -reservedapp 0 -highforFPS -availablevidmem 4096
+
+gamescope -W 1280 -H 1024 -r 60 -f --rt -- %command%
+
+para skyrim?
+
+PROTON_DXVK_LOWLATENCY=1 PROTON_ENABLE_WAYLAND=1 PROTON_USE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 ENABLE_HDR_WSI=1 %command%
+
+gamescope -W 1280 -H 1024 -r 60 --rt -O DP-1 -f --
+</note-content></text>
+  <last-change-date>2026-08-04T17:40:42.0629923-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:40:42.0629923-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:40:42.0629923-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>633</width>
+  <height>984</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

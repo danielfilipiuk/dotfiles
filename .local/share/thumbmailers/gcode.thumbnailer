@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/home/daniel/.local/bin/gcodeThumb.py
+Exec=/home/daniel/.local/bin/gcodeThumb.py %i %o %s
+MimeType=text/x.gcode

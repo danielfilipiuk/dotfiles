@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2025 Hervé Quatremain
+
+  This file is part of Length.
+
+  Length is free software: you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+
+  Length is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with
+  Length. If not, see <https://www.gnu.org/licenses/>.
+
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<schemalist gettext-domain="length">
+  <schema id="io.github.herve4m.Length" path="/io/github/herve4m/Length/Devel/">
+    <key name="opacity" type="i">
+      <default>100</default>
+      <range min="0" max="100"/>
+      <summary>Ruler Opacity</summary>
+      <description>Opacity percentage of the Length interface</description>
+    </key>
+
+    <key name="track-pointer" type="b">
+      <default>false</default>
+      <summary>Track the pointer</summary>
+      <description>Display the pointer position in the ruler.</description>
+    </key>
+
+    <key name="offset" type="d">
+      <default>0.0</default>
+      <summary>Origin of the Ruler</summary>
+      <description>Point of origin in ruler units.</description>
+    </key>
+
+    <key name="scale" type="d">
+      <default>1.0</default>
+      <summary>Scale factor</summary>
+      <description>Reduce or enlarge the scale of the units.</description>
+    </key>
+
+    <key name="calibration" type="aa{ss}">
+      <default>[]</default>
+      <summary>Monitor Calibration Parameters</summary>
+      <description>
+        For each monitor, specify whether to let the ruler retrieve the monitor size from the system, or use the provided monitor size for the computations.
+      </description>
+    </key>
+
+    <key name="unit" type="s">
+      <choices>
+        <choice value="px"/>
+        <choice value="cm"/>
+        <choice value="inch"/>
+        <choice value="pica"/>
+        <choice value="point"/>
+        <choice value="pct"/>
+        <choice value="relpct"/>
+      </choices>
+      <default>"px"</default>
+      <summary>Ruler Unit</summary>
+      <description>Unit to use for the ruler</description>
+    </key>
+
+    <key name="direction-left-to-right" type="b">
+      <default>true</default>
+      <summary>Direction from Left to Right</summary>
+      <description>
+        Display the scale from left to right when TRUE, else from right to left.
+      </description>
+    </key>
+
+    <key name="show-markings" type="b">
+      <default>true</default>
+      <summary>Show the Ruler Markings</summary>
+      <description>Display the ticks on the ruler.</description>
+    </key>
+
+    <key name="show-grid" type="b">
+      <default>true</default>
+      <summary>Show the Grid</summary>
+      <description>Display a grid when the ruler is expanded.</description>
+    </key>
+
+    <key name="show-diagonals" type="b">
+      <default>false</default>
+      <summary>Show Dialogals</summary>
+      <description>Display the diagonal rulers.</description>
+    </key>
+
+    <key name="show-angles" type="b">
+      <default>false</default>
+      <summary>Show Angles</summary>
+      <description>Display the diagonal angles.</description>
+    </key>
+
+    <key name="use-default-font" type="b">
+      <default>true</default>
+      <summary>Use default font</summary>
+      <description>Whether to use the default font</description>
+    </key>
+
+    <key name="font-name" type="s">
+      <default>'Monospace 10'</default>
+      <summary>Font Name</summary>
+      <description>
+        The font to use when "use-default-font" is FALSE.
+      </description>
+    </key>
+
+    <key name="window-size" type="(ii)">
+      <default>(640, 43)</default>
+      <summary>Window Size</summary>
+      <description>
+        Window size (width and height) of the last closed window.
+      </description>
+    </key>
+
+    <key name="use-default-color" type="b">
+      <default>true</default>
+      <summary>Use default color scheme</summary>
+      <description>Whether to use the default color scheme</description>
+    </key>
+
+    <key name="foreground-color" type="(dddd)">
+      <default>(0.0, 0.0, 0.0, 1.0)</default>
+      <summary>Foreground Color</summary>
+      <description>
+        Color (red, green, blue, alpha) for the ruler ticks and the labels
+      </description>
+    </key>
+
+    <key name="background-color" type="(dddd)">
+      <default>(1.0, 1.0, 1.0, 1.0)</default>
+      <summary>Background Color</summary>
+      <description>
+        Color (red, green, blue, alpha) for the ruler background
+      </description>
+    </key>
+  </schema>
+</schemalist>

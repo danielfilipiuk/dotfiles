@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-wine-extension-mp1">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <glob pattern="*.mp1"/>
+  <comment>MPEG Layer 1 Audio File</comment>
+</mime-type>

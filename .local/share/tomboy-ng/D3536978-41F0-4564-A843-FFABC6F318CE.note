@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>.desktop template</title>
+  
+<text xml:space="preserve"><note-content version="0.1">.desktop template
+
+[Desktop Entry]
+Version=1.0
+Name=Free:ac
+GenericName=Free Audio Format Converter
+Comment=Converts audio files into other formats
+Icon=freac
+MimeType=application/x-ogg;application/ogg;audio/x-mp3;audio/x-scpls;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;application/x-flac;audio/x-wav;audio/flac;audio/x-opus+ogg;
+Exec=/opt/freac-1.1.7-linux-x86_64.AppImage
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Audio;AudioEditing;AudioConverter;flac;mp3;opus
+--------------------------------------------------------------------------------------------
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GNU Image Manipulation Program
+GenericName=Image Editor
+Comment=Create images and edit photographs
+Keywords=GIMP;graphic;design;illustration;painting;
+Exec=app2unit -S out -- env GDK_BACKEND=x11 gimp-3.2 %U
+TryExec=gimp-3.2
+Icon=gimp
+Terminal=false
+Categories=Graphics;2DGraphics;RasterGraphics;GTK;
+StartupNotify=true
+MimeType=image/x-xcf;application/pdf;application/postscript;application/x-navi-animation;image/apng;image/avci;image/avif;image/bmp;image/dds;image/g3-fax;image/gif;image/heif;image/hej2k;image/jp2;image/jpeg;image/jxl;image/openraster;image/png;image/qoi;image/svg+xml;image/tiff;image/vnd.microsoft.icon;image/vnd.wap.wbmp;image/webp;image/x-dcm;image/x-dcx;image/x-exr;image/x-fits;image/x-flic;image/x-icns;image/x-ico;image/x-jp2-codestream;image/x-pcx;image/x-pixmap;image/x-portable-anymap;image/x-psd;image/x-psp;image/x-seattle-filmcamera;image/x-sgi;image/x-sun-raster;image/x-tga;image/x-wmf;image/x-xbitmap;image/x-xwindowdump
+StartupWMClass=gimp
+Path=
+--------------------------------------------------------------------------------------------
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cliphist
+GenericName=Clipboard history manager
+Comment=Saves clipboard objects
+Categories=Utility;
+Keywords=wayland;clipboard;
+TryExec=cliphist
+Exec=wl-paste --watch cliphist -max-items 10 store
+StartupNotify=false
+Terminal=false
+Icon=clipboard
+OnlyShowIn=wlroots;Hyprland
+</note-content></text>
+  <last-change-date>2026-08-04T17:44:44.5677919-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:44:44.5677919-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:44:44.5677919-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>633</width>
+  <height>984</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

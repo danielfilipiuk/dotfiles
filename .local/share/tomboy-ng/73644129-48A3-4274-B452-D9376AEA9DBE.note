@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>design principles</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>design principles</underline>
+
+Desktop Principles
+Typography
+Numbers communicate information.
+Units support numbers.
+Never use pure black or pure white for text.
+Material
+Transparency exists to preserve context.
+Blur exists only behind material.
+Borders define material; opacity defines weight.
+Interaction
+Hover should acknowledge the pointer.
+Active should feel stable, not loud.
+Color communicates state, never decoration.
+Composition
+The wallpaper is part of the interface.
+Persistent UI should almost disappear.
+Temporary UI may carry the accent color.
+Behavior
+Every daemon must justify its existence.
+Prefer composition over integration.
+Prefer text files over opaque configuration.
+</note-content></text>
+  <last-change-date>2026-08-04T17:45:32.4370575-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:45:32.4370575-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:45:32.4370575-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>570</width>
+  <height>700</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

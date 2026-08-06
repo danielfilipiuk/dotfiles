@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>hyprland example service</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>hyprland example service</underline>
+
+[Unit]
+Description=Hyprpaper wallpaper utility for Hyprland
+Documentation=man:hyprpaper(1)
+# order startup after WM
+After=graphical-session.target
+
+[Service]
+Type=exec
+# Repurpose XDG Autostart filtering
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "Hyprland" ""
+ExecStart=hyprpaper
+Restart=on-failure
+Slice=background-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target
+# Alternatively can be wanted by specific WMs' targets
+# Should also be duplicated in 'After=' to avoid ordering loop
+#WantedBy=wayland-session@hyprland.desktop.target
+
+
+
+-------------------------------------------------------------------------
+
+
+
+[Unit]
+Description=Clipboard history “manager” for wayland
+Documentation=https://github.com/sentriz/cliphist
+# order startup after WM
+After=graphical-session.target
+
+[Service]
+Type=exec
+# Repurpose XDG Autostart filtering
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
+ExecStart=wl-paste --watch cliphist -max-items 10 store
+Restart=on-failure
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target
+# Alternatively can be wanted by specific WMs' targets
+# Should also be duplicated in 'After=' to avoid ordering loop
+#WantedBy=wayland-session@sway.desktop.target
+#WantedBy=wayland-session@wayfire.desktop.target
+#WantedBy=wayland-session@labwc.desktop.target
+#WantedBy=wayland-session@hyprland.desktop.target
+</note-content></text>
+  <last-change-date>2026-08-04T17:44:58.3459788-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-04T17:44:58.3459788-03:00</last-metadata-change-date>
+  <create-date>2026-08-04T17:44:58.3459788-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>570</width>
+  <height>700</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>
