@@ -44419,3 +44419,244 @@ git count-objects -vH
 /usr/bin/fastfetch 
 hyprprop 
 hyprprop 
+git log --oneline -5
+cd dotfiles/
+git log --oneline -5
+git reset --soft HEAD~1
+git add .
+git ls-files
+git ls-files | more
+git log --oneline -5
+git show --stat d4fc60c
+git show --stat c9ad35e
+git reset --soft 618ac33
+git log --oneline -5
+git restore --staged .
+git status
+git add .
+git status
+git commit -m "reorganized folder structure"
+git push
+git add .
+git status
+git commit -m "reorganized folder structure and solved some +100MB files"
+git push
+git log --oneline -5
+git log --oneline -5
+git reset --soft 618ac33
+git status
+git add .
+git status
+git commit -m "reorganized folder structure and solved some +100MB files"
+git push
+git status
+micro README.md 
+git add .
+git status
+git commit -m "minor README modification"
+git push
+git status
+git status
+tomboy-ng --help
+man tomboy-ng
+micro .gitignore
+git status
+git add .
+git status
+git commit -m "added .gitignore"
+git push
+git status
+git count-objects -vH
+sudo apt install lazygit
+lazygit 
+gitk
+sudo apt install gitk
+gtik
+gitk
+gtik --all
+gitk --akk
+gitk --all
+tig
+sudo apt install tigt
+sudo apt install tigt
+sudo apt install tig
+tig
+git diff
+git diff
+git difftool
+meld
+sudo apt install meld
+meld
+git difftool
+rocm-smi 
+sudo rocm-smi 
+sudo amd-smi 
+git status
+git commit --help
+git add .
+git commit -m "removed some heavy unneded zips"
+git push
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git count-objects -vH
+git log --oneline --graph
+git log origin/main..HEAD --oneline
+git status
+git add .
+ls .config/darktable/lua
+ll .config/darktable/lua
+git rm --cached .config/darktable/lua
+git status
+git add .
+git rm --cached .config/darktable/lua
+rm -f .gitmodules
+git status
+git add .
+git status
+git commit -m "folder organization and added usr/local/folders"
+git status
+git push
+git ls-files --stage | grep darktable
+git status
+ls -la .gitmodules
+git rm --cached .config/darktable/lua
+git commit -m "removed lua folder from darktable"
+git push
+git status
+git add .
+git commit -m "removed lua folder from darktable"
+git push
+git status
+git ls-files --stage | grep darktable/lua
+tomboy-ng --help
+tomboy-nn
+tomboy-ng
+sudo apt install gpick
+gpick
+gpick
+git status
+git add .
+git status
+git commit -m "theme modified to creamy/charcoal/plum in wlogout, snappy, fuzzel, waybar, mako. also floating windows details"
+git status
+git push
+git status
+git count-objects -vH
+hyprprop 
+hyprprop 
+hyprprop 
+pastel
+sudo apt install pastel
+pastel 248,246,242,0.05
+pastel --hlep
+pastel --help
+pastel color 248,246,242,0.05
+pastel complement 248,246,242,0.05
+pastel opposite 248,246,242,0.05
+pastel distinct 10 248,246,242,0.05
+man pastel
+apt show wcolor
+apt show wcolor
+man pastel
+pastel yad
+man pastel
+pastel --color-picker yad
+pastel --color-picker color yad
+man pastel
+pastel --color-picker=yad
+pastel color --color-picker=yad
+pastel color --color-picker yad
+pastel color --color-picker hyprpicker
+pastel --color-picker hyprpicker
+man pastel
+pastel pick --color-picker
+pastel --color-picker yad pick
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+pastel color #2d2d2ccc
+pastel color #2d2d2c
+pastel  #2d2d2ccc
+pastel color 2d2d2c
+pastel color 2d2d2ccc
+sudo apt purge --auto-remove gpick
+pastel color rgba(248,246,242,.15)
+pastel color 248,246,242,.15
+hyprctl layers
+hyprctl layers
+hyprctl layers
+sleep 2 && hyprctl layers
+sleep 5 && hyprctl layers
+sleep 5 && hyprctl layers
+echo "Hyprland" | pastel format ansi | xargs printf
+echo "Hyprland" | pastel format ansi-8bit | xargs printf
+pastel sort <<EOF
+#f8f6f2
+#e8f0f4
+#2b2b2b
+#444444
+#7aa2f7
+#d79921
+EOF
+
+pastel color rgba(0, 0, 0, .25);
+pastel color rgba(0, 0, 0, .25
+pastel color rgba0, 0, 0, .25
+pastel color 0, 0, 0, .25
+pastel color (0, 0, 0, .25)
+pastel color rgba 0, 0, 0, .25
+pastel color "0, 0, 0, .25"
+pastel color "30,30,30,.90"
+pastel color "248,246,242,.85"
+pastel color "30,30,30,.70"
+pastel color "248,246,242,.90"
+pastel color "248,246,242,.50"
+pastel color "248,246,242,.75"
+pastel color "248,246,242,.85"
+pastel color "248,246,242,.65"
+pastel color "248,246,242,.60"
+pastel color "30,30,30,.70"
+pastel color "30,30,30,.30"
+fuzzel -d --placeholder "type Service name..."
+hyprctl reload
+pastel color #b57daa
+pastel color b57daa
+pastel color "181,125,170,.50
+pastel color "181,125,170,.50"
+pastel color "181,125,170,.75"
+pastel color "248,246,242,1"
+ pastel color "248,246,242,.60"
+ pastel color "248,246,242,.90"
+ pastel color f8f6f2 
+ pastel color "248,246,242,.95"
+ pastel color #c398b8
+ pastel color c398b8
+ pastel color b57daa
+ pastel color "181, 125, 170,.85"
+ pastel color b57daabf
+ pastel color "181, 125, 170, 0.749"
+ pastel color "181, 125, 170, 0.50"
+ pastel color "181, 125, 170, 0.60"
+ pastel color "181, 125, 170, 0.70"
+ pastel color "181, 125, 170, 0.65"
+man  wlclock
+sleep 3 && hyprctl clients 
+sleep 3 && hyprctl layers
+sleep 3 && hyprctl clients 
+hyprctl clients 
+hyprctl clients 
+hyprctl clients 
+sleep 2 && hyprctl clients 
+glmatrix
+glmatr
+glmatrix_screensaver 
+glmatrix_screensaver && sleep 2 && killall glmatrix && pidof hyprlock || app2unit -S out -- hyprlock -q
+pastel color "181,125,170,.85"
+pastel color bf8fb5
+killall mpd 
+btop
+ncmpcpp 
+uptime
+fff
+exit
+pastel color plumn
+pastel color plum

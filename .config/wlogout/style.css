@@ -6,30 +6,38 @@
 }
 
 window {
-	background-color: rgba(30,30,30,.50);
+	background-color: rgba(48, 16, 52, 0.5);
 	/*background-color: rgba(25, 25, 30, 0.85);*/
 }
 
 button {
     margin: 10px 10px;
     padding: 0px 0px;   
-    border-radius: 70px;
-    border-color: rgba(0, 0, 0, .15);
+    border-radius: 36px;
+    border-color: rgba(248, 246, 242, 0.25);
     /*border-color: rgba(24, 11, 33, 0.50);*/
     border-style: solid;
 	border-width: 3px;
         text-shadow: 0 1px 2px rgba(248, 246, 242, 0.15);
 	color:rgba(248, 246, 242, 0.85) ;
-	background-color: rgba(0, 0, 0, .25);
+	background-color: rgba(248, 246, 242, 0.25);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
 }
 
-button:focus { 
-	background-color: rgba(248, 246, 242, 0.75) ;
+button:hover {
+	background-color: rgba(248, 246, 242, 0.65) ;
 	outline-style: none;
-  	border-color: rgba(248, 246, 242, 0.65) ;
+  	border-color: rgba(248, 246, 242, 0.55) ;
+  	color: rgba(30,30,30,.90);
+  	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+button:focus { 
+	background-color: rgba(248, 246, 242, 0.85) ;
+	outline-style: none;
+  	border-color: rgba(248, 246, 242, 0.75) ;
   	color: rgba(30,30,30,.90);
   	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 
@@ -46,47 +54,42 @@ button:active {
   border-color: #d492d8;*/
 }
 
-button:hover {
-	background-color: rgba(248, 246, 242, 0.85) ;
-	outline-style: none;
-  	border-color: rgba(248, 246, 242, 0.75) ;
-  	  	color: rgba(30,30,30,.90);
-}
+
 
 #lock {
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/lock.svg"));
 }
 #lock:hover, #lock:active, #lock:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/lock.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/lock.svg"));
 }
 #logout {
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/logout.svg"));
 }
 #logout:hover, #logout:active, #logout:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/logout.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/logout.svg"));
 }
 #suspend { 
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/suspend.svg"));
 }
 #suspend:hover, #suspend:active, #suspend:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/suspend.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/suspend.svg"));
 }
 #shutdown {
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/shutdown.svg"));
 }
 #shutdown:hover, #shutdown:active, #shutdown:focus  {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/shutdown.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/shutdown.svg"));
 }
 #reboot {
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/reboot.svg"));
 }
 #reboot:hover, #reboot:active, #reboot:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/reboot.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/reboot.svg"));
 }
 #softreboot {
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/softreboot.svg"));
 }
 #softreboot:hover, #softreboot:active, #softreboot:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/plum/softreboot.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/softreboot.svg"));
 }
 
