@@ -44660,3 +44660,87 @@ fff
 exit
 pastel color plumn
 pastel color plum
+pastel color rgba(23e0d5ff
+pastel color rgba(23e0d5ff)
+pastel color rgba23e0d5ff
+pastel color rgba 23e0d5ff
+pastel color 23e0d5ff
+pastel color 00ff99ff
+pastel color ca9ee6ff
+pastel color violet
+pastel color 
+pastel color "61,174,233,.25
+pastel color "61,174,233,.25"
+pastel color ee82eedd
+jf
+pastel color plum
+pastel color orchid
+pastel color plum
+pastel color "221,160,221,.50"
+pastel color mediumorchid
+pastel color "186,85,211,.50"
+hstr 
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+pastel color "48,16,52,05"
+pastel color "48,16,52,5"
+pastel color "48,16,52,.5"
+pastel color rgb(48, 16, 52)
+pastel color "48,16,52,.85"
+pastel color "48,16,52,.85" --help
+pastel color "48,16,52,.85"
+pastel color "48,16,52,.85" -a
+pastel --help
+pastel color "48,16,52,.85" list
+pastel color list "48,16,52,.85" 
+pastel color "48,16,52,.85" 
+cd dotfiles/
+git status
+git add .
+git status
+git commit -m "touches of plum in wlogout, snappy, hyprlock"
+git push
+jf
+exit
+hyprctl layers
+hyprctl layers
+sudo libevdev-events /dev/input/event0
+apt-file search libevdev-events
+apt-file search libevdev-
+apt-file search libevdev-e
+apt-file search libevdev
+sudo libevdev-events 
+libevdev-events 
+libevdev-tweak-device /dev/input/event0
+libinput list-devices
+sudo libinput /dev/input/event0
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+ldd $(which waybar) | grep gtk
+killall waybar
+waybar
+waybar
+waybar
+G_DEBUG=fatal-criticals gdb --args waybar
+sudo apt install gdb
+G_DEBUG=fatal-criticals gdb --args waybar
+sudo apt install waybar-dbgsym
+info files
+G_DEBUG=fatal-criticals gdb --args waybar

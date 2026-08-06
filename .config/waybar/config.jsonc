@@ -48,12 +48,30 @@
 	//"hyprland/workspaces"
 
 "modules-center": [   
-	"temperature",
-	"cpu",
-	"memory",
-	"custom/gpu-usage",
+	"group/hardware"
+	//"temperature",
+	//"cpu",
+	//"memory",
+	//"custom/gpu-usage",
+		],
 
-],
+
+"group/hardware": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 750,
+		"children-class": "not-temperature",
+		"transition-left-to-right": true,
+		"click-to-reveal": false,
+		},
+	"modules": [
+		"temperature",
+		"cpu",
+		"memory",
+		"custom/gpu-usage",
+		]
+		},
+
 
 "modules-right": [
     	"tray",
@@ -116,11 +134,6 @@
 },
 
 
-
-///////////////////////////////////////////////////////////////////////////////////////  
-"hyprland/submap": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
 
 
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -332,6 +345,8 @@
 	"tooltip": true,
 	"always-on": false,
 	"expand": true, 
+	"format": "<span style=\"italic\">{}</span>",
+	
 },
 
 
@@ -377,8 +392,10 @@
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
-    
-    
+
+
+
+
 ///////////////////////////////////////////////////////////////////////////////////////    
     
 "cpu": {

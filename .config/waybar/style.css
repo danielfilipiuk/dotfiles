@@ -93,12 +93,14 @@ window#waybar.toplevel-active {
 tooltip {
 	background: rgba(248,246,242,.75);
 	color: rgba(30,30,30,.90);
-	border: 3px solid rgba(181,125,170,.85);
+	border-top:    4px solid rgba(181,125,170,.30);
+	border-left:   4px solid rgba(181,125,170,.25);
+	border-right:  4px solid rgba(181,125,170,.45);
+	border-bottom: 4px solid rgba(181,125,170,.55);
 	border-radius: 16px;
 }
 tooltip label {
-  	padding: 3px 3px;
-	border-radius: 16px;
+  	padding: 2px 6px;
 	text-shadow: 0 1px 2px rgba(0,0,0,.20);
 }
 
@@ -139,7 +141,8 @@ tooltip label {
 menu {
 	background: rgba(248,246,242,.75);
 	color: rgba(30,30,30,.90);
-	border: 1px rgba(248,246,242,0.10);
+	border: 1px rgba(248,246,242,0.65);
+	box-shadow: 0 1px 2px rgba(30,30,30,.20);
 }
 menuitem {
 	color: rgba(30,30,30,.90);
@@ -209,7 +212,13 @@ menuitem {
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 	background: rgba(0, 0, 0, .25);
 	padding: 0px 10px;  
-	border-radius: 16px;      
+	border-radius: 16px;
+}   
+#taskbar button.maximized{
+	color: rgba(255, 255, 255, 1);
+}
+#taskbar button.minimized{
+	color: rgba(255, 255, 255, 0);
 }
 #taskbar button:hover {
 	border: 1px rgba(248,246,242,0.10);
@@ -219,7 +228,6 @@ menuitem {
 #taskbar button.active {
 	border: 1px rgba(248,246,242,0.10);
 	background: rgba(248,246,242,.85);
-
 }
 
 #taskbar button.active:hover {
@@ -235,13 +243,18 @@ menuitem {
 #window {
      background-color: rgba(0, 0, 0, 0);
      color: rgba(255, 255, 255, 1);
+     -gtk-icon-effect: dim;
+     opacity: 0.75;     
+    
 }
 #window:active {
 /*    background-color: #ca9ee6;*/
 	background-color: #ca9ee6;
+	-gtk-icon-effect: highlight;
 }
 #window:hover {
     background: #60406c;
+    -gtk-icon-effect: highlight;
 }
 #window.empty {
     background-color: rgba(0, 0, 0, 0);    
@@ -390,15 +403,18 @@ border: 1px rgba(0,0,0,0.20);
     	-gtk-icon-effect: dim;
    	border-radius: 16px;
    	color: rgba(30,30,30,.90);
+   	opacity: .75;
 }
 #tray:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
+	opacity: 1;
 }
 #tray > .needs-attention {
       	border: 1px rgba(248,246,242,0.05);
       	-gtk-icon-effect: highlight;
+      	opacity: 1;
       	border-radius: 16px;
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
