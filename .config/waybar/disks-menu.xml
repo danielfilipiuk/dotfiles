@@ -3,39 +3,59 @@
   <object class="GtkMenu" id="menu">
 		<child>
 			<object class="GtkMenuItem" id="mount1tb">
-				<property name="label">mount 1tb</property>
+				<property name="label">  mount 1TB</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="unmount1tb">
-				<property name="label">unmount 1tb</property>
+				<property name="label"> unmount 1TB</property>
 			</object>
 		</child>
-	<child>
-      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
-    	</child>
     		<child>
 			<object class="GtkMenuItem" id="mountdata">
-				<property name="label">mount data</property>
+				<property name="label">  mount Data</property>
 			</object>
    		 </child>
    		 <child>
 			<object class="GtkMenuItem" id="unmountdata">
-				<property name="label">unmount data</property>
+				<property name="label"> unmount Data</property>
 			</object>
    		 </child>
-   	 <child>
-      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
-    	</child>
     		<child>
 			<object class="GtkMenuItem" id="mount3tb">
-				<property name="label">mount 3tb</property>
+				<property name="label">  mount 3TB</property>
 			</object>
    		 </child>
    		 <child>
 			<object class="GtkMenuItem" id="unmount3tb">
-				<property name="label">unmount 3tb</property>
+				<property name="label"> unmount 3TB</property>
 			</object>
    		 </child>
-   /object>
+   		 <child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter3"/>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="qdir">
+				<property name="label">  QdirStat</property>
+			</object>
+   		 </child>
+    		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter4"/>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="gsmart">
+				<property name="label">  GsmartControl</property>
+			</object>
+   		 </child>
+   		 <child>
+			<object class="GtkMenuItem" id="gnomedisks">
+				<property name="label">  Disks</property>
+			</object>
+   		 </child>
+   		 <child>
+			<object class="GtkMenuItem" id="gparted">
+				<property name="label">  Gparted</property>
+			</object>
+   		 </child>
+   </object>
 </interface>

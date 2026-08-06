@@ -3,32 +3,32 @@
   <object class="GtkMenu" id="menu">
 		<child>
 			<object class="GtkMenuItem" id="stop">
-				<property name="label">  stop playing</property>
+				<property name="label">  Stop Playing</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="repeat">
-				<property name="label">  repeat</property>
+				<property name="label">  Repeat</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="random">
-				<property name="label">  random</property>
+				<property name="label">  Random</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="single">
-				<property name="label">  single</property>
+				<property name="label">  Single</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="singleonce">
-				<property name="label">󰑎  single once</property>
+				<property name="label">󰑎  Single Once</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="consume">
-				<property name="label">  consume</property>
+				<property name="label">  Consume</property>
 			</object>
 		</child>
 		<child>
@@ -36,17 +36,17 @@
     		</child>
     		<child>
 			<object class="GtkMenuItem" id="update">
-				<property name="label">  update MPD database</property>
+				<property name="label">  Update MPD Database</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="ncmpcpp">
-				<property name="label">  ncmpcpp - TTY MPD client</property>
+				<property name="label">  NcMPCpp</property>
 			</object>
 		</child>
     		<child>
 			<object class="GtkMenuItem" id="cava">
-				<property name="label">󰺢  cava - Audio Visualizer</property>
+				<property name="label">󰺢   Cava</property>
 			</object>
     		</child>  
     		          

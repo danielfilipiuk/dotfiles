@@ -3,17 +3,17 @@
   <object class="GtkMenu" id="menu">
 		<child>
 			<object class="GtkMenuItem" id="au">
-				<property name="label">  audio-detective™ - Audio Pipeline Inspector</property>
+				<property name="label">  Audio-Detective™</property>
 			</object>
     		</child> 
 		<child>
 			<object class="GtkMenuItem" id="qpwgraph">
-				<property name="label">  qpwgraph - PipeWire Graph Interface</property>
+				<property name="label">  QPWGraph</property>
 			</object>
     		</child>
     		<child>
 			<object class="GtkMenuItem" id="pw-top">
-				<property name="label">  pw-top - PipeWire process viewer</property>
+				<property name="label">  PW-Top</property>
 			</object>
     		</child>  
   </object>

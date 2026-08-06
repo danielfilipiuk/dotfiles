@@ -13,7 +13,7 @@
     		</child>
     		<child>
 			<object class="GtkMenuItem" id="lact">
-				<property name="label">  Linux GPU Control App</property>
+				<property name="label">  LACT GPU Control App</property>
 			</object>
     		</child>
     		<child>

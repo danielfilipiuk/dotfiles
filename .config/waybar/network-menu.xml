@@ -3,12 +3,12 @@
   <object class="GtkMenu" id="menu">
 		<child>
 			<object class="GtkMenuItem" id="eth">
-				<property name="label">  ethstatus - TTY monitor</property>
+				<property name="label">  Ethstatus</property>
 			</object>
     		</child> 
 		<child>
 			<object class="GtkMenuItem" id="modem">
-				<property name="label">  modem website</property>
+				<property name="label">  Modem Website</property>
 			</object>
     		</child>
     		

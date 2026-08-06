@@ -14,8 +14,8 @@ window#waybar {
   	font-family: inherit;
     /*border-bottom: 3px solid rgba(255, 255, 255, 0.05); */
     color: rgba(255, 255, 255, 1);
-    transition-property: background-color;
-    transition-duration: 0.5s;
+transition: all .25s cubic-bezier(.4,0,.2,1);
+
 }
 window#waybar.hidden {
     opacity: 0.5;
@@ -58,6 +58,7 @@ window#waybar.toplevel-active {
 #workspaces,
 #workspaces,*/
 #cpu,
+#disk,
 #memory,
 #temperature,
 #custom-gpu-usage,
@@ -77,6 +78,11 @@ window#waybar.toplevel-active {
     border: 1px rgba(0,0,0,0.10);
     color: rgba(248,246,242,1);
     text-shadow: 0 1px 2px rgba(0,0,0,.25);
+    transition: all .25s cubic-bezier(.4,0,.2,1);
+   /* transition:
+    background-color 250ms ease-out,
+    color 250ms ease-out,
+    border-color 250ms ease-out;*/
 }
 
 
@@ -210,19 +216,13 @@ menuitem {
 	border: 1px rgba(0,0,0,0.20);
     	color: rgba(255, 255, 255, .35);
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-	background: rgba(0, 0, 0, .25);
+	background: rgba(248,246,242,.45);
 	padding: 0px 10px;  
 	border-radius: 16px;
-}   
-#taskbar button.maximized{
-	color: rgba(255, 255, 255, 1);
-}
-#taskbar button.minimized{
-	color: rgba(255, 255, 255, 0);
 }
 #taskbar button:hover {
 	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.70);
+	background: rgba(248,246,242,.60);
 
 }
 #taskbar button.active {
@@ -232,7 +232,7 @@ menuitem {
 
 #taskbar button.active:hover {
 	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.90);
+	background: rgba(248,246,242,.85);
 
 }
 
@@ -571,10 +571,24 @@ menuitem {
 
 
 
-
+/*  DISK */
 
 #disk {
-    background-color: #964B00;}
+/*padding: 0 8px;
+    border-radius: 8px;*/
+
+   }
+#disk:hover {
+      	border: 1px rgba(248,246,242,0.05);
+	background: rgba(248,246,242,.85);
+	color: rgba(30,30,30,.90);
+}
+
+    
+/* BACKLIGHT */
+
+
+
 #backlight {
     background-color: #90b1b1;}
 

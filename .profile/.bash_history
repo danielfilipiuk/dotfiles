@@ -44744,3 +44744,45 @@ G_DEBUG=fatal-criticals gdb --args waybar
 sudo apt install waybar-dbgsym
 info files
 G_DEBUG=fatal-criticals gdb --args waybar
+cd dotfiles/
+git status
+git add .
+git commit -m "applied creamy-plum in almost? all items: hyprlock, waybar-tooltips, waybar-menus, mako, wlogout, window borders, wlclock, fuzzel, snappy."
+git push
+fff
+exit
+sudo apt purge --auto-remove dbg
+sudo apt purge --auto-remove gdb
+free -h
+df
+df -h
+nvtop
+sudo apt update
+sudo apt upgrade
+sudo apt show inkscape -a
+sudo apt changelog inkscape
+sudo apt reinstall inkscape thunderbird micro hwinfo system-config-printer keyboard-configuration fbcat console-setup brave-browser 
+sudo apt clean
+sudo apt autoclean 
+sudo apt reinstall hyprland --dry-run 
+gamemode --rt -- glxgears
+gamescope --rt -- glxgears
+glxgears
+killall waybar
+waybar
+waybar
+killall waybar
+waybar
+waybar
+waybar
+gnome-disks 
+pkexec gsmartcontrol
+gsmartcontrol-root 
+gparted
+pkexec gparted
+sudo gparted
+pkexec /sbin/gparted
+df
+dust
+dust /mnt/3tb
+dust /mnt/3TB
