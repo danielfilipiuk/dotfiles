@@ -76,7 +76,7 @@ window#waybar.toplevel-active {
     border-radius: 16px; 
     background-color: rgba(0, 0, 0, .25);
     border: 1px rgba(0,0,0,0.10);
-    color: rgba(248,246,242,1);
+    color: rgba(248,246,242,.9);
     text-shadow: 0 1px 2px rgba(0,0,0,.25);
     transition: all .25s cubic-bezier(.4,0,.2,1);
    /* transition:
@@ -136,11 +136,11 @@ tooltip label {
 
 /* LABEL  */
 
-
-/*label:focus {
+/*
+*label:hover {
     background-color: #000000;
-}*/
-
+}
+*/
 
  /* MENUS */
 
@@ -222,17 +222,16 @@ menuitem {
 }
 #taskbar button:hover {
 	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.60);
-
+	background: rgba(248,246,242,.85);
 }
 #taskbar button.active {
-	border: 1px rgba(248,246,242,0.10);
-	background: rgba(202, 158, 230,.85) ;
+	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.85)  ;
 }
 
 #taskbar button.active:hover {
-	border: 1px rgba(248,246,242,0.10);
-	background: rgba(218, 150, 238,85) ;
+	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.90)
 
 }
 
@@ -273,6 +272,10 @@ border: 1px rgba(0,0,0,0.20);
 	color: rgba(30,30,30,.90);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+#mpd.playing:hover {
+	background: rgba(248,246,242,.95);
+
+}
 #mpd.paused {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.45);
@@ -281,7 +284,7 @@ border: 1px rgba(0,0,0,0.20);
 }
 #mpd.stopped {
 	border: 1px rgba(0,0,0,0.20);
-    	color: rgba(255, 255, 255, .35);
+    color: rgba(248,246,242,.5);
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #mpd.disconnected {
@@ -316,7 +319,10 @@ border: 1px rgba(0,0,0,0.20);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
+#pulseaudio.muted:hover {
+	background: rgba(248,246,242,.95);
 
+}
 
 /* WIREPLUMBER  */
 
@@ -340,7 +346,12 @@ border: 1px rgba(0,0,0,0.20);
         padding:  0 0px;
         text-shadow: 0 1px 2px rgba(0,0,0,.15);
 	border: 0px rgba(0,0,0,0.20);
-    	color: rgba(255, 255, 255, .50);
+    color: rgba(248,246,242,.5);
+}
+#keyboard-state:hover {
+
+	    color: rgba(248,246,242,.95);
+text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 #keyboard-state > label {
         background: rgba(0, 0, 0, .25);
@@ -356,7 +367,10 @@ border: 1px rgba(0,0,0,0.20);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
+#keyboard-state > label.locked:hover {
+	background: rgba(248,246,242,.95);
 
+}
 
  /* SUBMAP */
 
@@ -388,6 +402,12 @@ border: 1px rgba(0,0,0,0.20);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
+#network.disconnected:hover {
+      	border: 1px rgba(248,246,242,0.05);
+    	background: #ffd700;   
+	color: rgba(30,30,30,.90);
+	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
 
 /* TRAY  */
 
@@ -434,11 +454,15 @@ border: 1px rgba(0,0,0,0.20);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
+#idle_inhibitor.activated:hover {
+	background: rgba(248,246,242,.95);
+
+}
+
 #idle_inhibitor:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 }
-
 
 /* INHIBITOR  */
 
@@ -447,7 +471,7 @@ border: 1px rgba(0,0,0,0.20);
 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 	border: 1px rgba(0,0,0,0.20);
      	padding:  0 5px;   
-      	color: rgba(255, 255, 255, .50); 
+      	     color: rgba(248,246,242,.5);
 }
 #inhibitor.activated {
       	border: 1px rgba(248,246,242,0.05);
@@ -459,6 +483,11 @@ border: 1px rgba(0,0,0,0.20);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
+#inhibitor.activated:hover {
+	background: rgba(248,246,242,.95);
+
+}
+
 
 /*
 menu {

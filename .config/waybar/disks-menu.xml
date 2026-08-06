@@ -13,7 +13,7 @@
 		</child>
     		<child>
 			<object class="GtkMenuItem" id="mountdata">
-				<property name="label">  mount Data</property>
+				<property name="label">   mount Data</property>
 			</object>
    		 </child>
    		 <child>
@@ -23,7 +23,7 @@
    		 </child>
     		<child>
 			<object class="GtkMenuItem" id="mount3tb">
-				<property name="label">  mount 3TB</property>
+				<property name="label">  mount 3TB</property>
 			</object>
    		 </child>
    		 <child>

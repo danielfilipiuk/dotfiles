@@ -44795,3 +44795,12 @@ git status
 pastel color #ca9ee6
 pastel color ca9ee6
 pastel color violet
+cd dotfiles/
+git add .
+git commit -m "modified colors of waybar wlr/taskbar module to match creamy-plum"
+git push
+exit
+pastel color     	ffb300
+pastel color gold
+pastel color orange
+sysrb

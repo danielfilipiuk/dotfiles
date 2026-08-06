@@ -23,7 +23,7 @@ button {
 	background-color: rgba(30, 30, 30, 0.65);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 30%;
+	background-size: 40%;
 }
 
 button:hover {
@@ -57,16 +57,16 @@ button:active {
 
 
 #lock {
-    background-image: image(url("/home/daniel/.local/share/wlogout/cream/lock.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/icons/hyprland-white.svg"));
 }
 #lock:hover, #lock:active, #lock:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/lock.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/icons/hyprland.svg"));
 }
 #logout {
-    background-image: image(url("/home/daniel/.local/share/wlogout/cream/logout.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/icons/debian-white.svg"));
 }
 #logout:hover, #logout:active, #logout:focus {
-    background-image: image(url("/home/daniel/.local/share/wlogout/charcoal/logout.svg"));
+    background-image: image(url("/home/daniel/.local/share/wlogout/icons/debian.svg"));
 }
 #suspend { 
     background-image: image(url("/home/daniel/.local/share/wlogout/cream/suspend.svg"));

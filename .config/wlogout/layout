@@ -31,6 +31,6 @@
 {
     "label" : "softreboot",
     "action" : "systemctl soft-reboot",
-    "text" : "SoftReboot",
+    "text" : "SReboot",
     "keybind" : "m"
 }
