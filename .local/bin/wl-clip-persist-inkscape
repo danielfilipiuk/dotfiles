@@ -1,0 +1,3 @@
+#!/bin/sh
+exec /usr/local/bin/wl-clip-persist --clipboard regular	--disable-timestamps --all-mime-type-regex '(?i)^(?!image/x-inkscape-svg).+'
+	

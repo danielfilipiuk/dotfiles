@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="direction" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Afficher les inscriptions de gauche à droite ou de droite à gauche.</desc>
+  </info>
+
+  <title>Changer la direction des inscriptions</title>
+
+  <media its:translate="no" type="image" src="figures/direction.png">
+    <p>Left-to-right and right-to-left markings</p>
+  </media>
+
+  <p>Vous pouvez changer la direction des inscriptions.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item><p>Sélectionner <gui style="menuitem">Préférences</gui>.</p></item>
+
+    <item><p>Dans la page <gui style="tab">Général</gui>, cliquer le bouton gauche à droite (<media its:translate="no" type="image" src="figures/direction-ltr-symbolic.svg"/>) ou le bouton droite à gauche (<media its:translate="no" type="image" src="figures/direction-rtl-symbolic.svg"/>).</p></item>
+
+    <item><p>Fermer la fenêtre <gui>Préférences</gui>.</p></item>
+  </steps>
+
+  <p>Vous pouvez aussi changer la direction en appuyant sur <key>D</key>.</p>
+</page>

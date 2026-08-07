@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="colors" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Seleziona i colori del righello.</desc>
+  </info>
+
+  <title>Cambiamento Colori</title>
+
+  <media its:translate="no" type="image" src="figures/colors.png">
+    <p><app>Length</app> in different colors</p>
+  </media>
+
+  <p>È possibile modificare il colore del righello e il colore dei segni.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Vai a <gui style="menuitem">Preferenze</gui>.</p></item>
+
+    <item>
+      <p>Nella pagina <gui style="tab">Generale</gui>, nella sezione <gui style="group">Aspetto</gui>, deseleziona la casella di controllo <gui style="button">Usa colori predefiniti</gui>. Quando l'opzione <gui style="button">Usa colori predefiniti</gui> è abilitata, il righello è bianco e i segni sono neri. Quando la casella di controllo <gui style="button">Usa colori predefiniti</gui> è deselezionata, è possibile selezionare i colori.</p>
+    </item>
+
+    <item>
+      <p>Per selezionare un colore per i contrassegni, clicca su <gui style="button">Primo piano</gui>. Nella finestra di selezione del colore, puoi scegliere un colore tra quelli disponibili. Se il colore desiderato non è disponibile, clicca sul pulsante <gui style="button">Personalizzato</gui> (<gui style="button">+</gui>) e inserisci le componenti rosso, verde e blu del colore.</p>
+    </item>
+
+    <item><p>Per selezionare un colore per il righello, fare clic su <gui style="button">Sfondo</gui>.</p></item>
+
+    <item><p>Chiudere la finestra di dialogo <gui>Preferenze</gui>.</p></item>
+  </steps>
+</page>

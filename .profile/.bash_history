@@ -44804,3 +44804,467 @@ pastel color     	ffb300
 pastel color gold
 pastel color orange
 sysrb
+pastel color 00ff99ff
+cd dotfiles/
+git statuys
+git statuys
+git status
+git add .
+git commit -m "wlogout icons updated, accent colour applied to various items. Window border, shadow & glow updated."
+git status
+git push
+git status
+exit
+killall waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+GTK_DEBUG=interactive waybar
+waybar 
+clear
+waybar
+waybar --version
+cd downloads/
+git clone https://github.com/Alexays/Waybar.git
+cd Waybar/
+meson setup build
+sudo apt install libdbusmenu-gtk3-dev libnotify-dev libupower-glib-dev libplayerctl-dev 
+sudo apt install libmpdclient-dev libxkbregistry-dev 
+apt-file search epoll-shim
+apt-file search epoll
+meson setup build --reconfigure
+sudo apt install libinotifytools0-dev clang-tidy libiniparser-dev catch2 libwireplumber-0.5-dev libjack-dev libgps-dev libmm-glib-dev libgtk-layer-shell-dev libsystemd-dev 
+sudo apt install libinotifytools0-dev clang-tidy libiniparser-dev catch2 libwireplumber-0.5-dev libjack-jackd2-dev libgps-dev libmm-glib-dev libgtk-layer-shell-dev libsystemd-dev 
+meson setup build --reconfigure
+sudo apt install libiniparser-dev 
+sudo apt install libiniparser4 
+apt-file search libcava-devc
+apt-file search libcava-dev
+apt-file search libcava
+sudo apt install  libcava-java 
+meson setup build --reconfigure
+meson setup build --reconfigure
+apt-file search iniparser.h
+sudo apt install libiniparser-dev 
+sudo apt install libcxxtools-dev 
+meson setup build --reconfigure
+sudo apt purge --auto-remove libcxxtools-dev 
+ninja -C build
+cd build
+ls
+ll
+killall waybar
+./waybar
+sudo apt install   clang-tidy gobject-introspection libdbusmenu-gtk3-dev libevdev-dev   libfmt-dev libgirepository1.0-dev libgtk-3-dev libgtkmm-3.0-dev   libinput-dev libjsoncpp-dev libmpdclient-dev libnl-3-dev libnl-genl-3-dev   libpulse-dev libsigc++-2.0-dev libspdlog-dev libwayland-dev scdoc upower   libxkbregistry-dev
+cd ..
+meson clean
+meson setup build --reconfigure
+ninja -C build
+cd build
+ll
+./waybar
+sudo apt reinstall libgtk-nocsd0 
+./waybar
+env RUST_BACKTRACE=1 ./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+.
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+3
+3
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+env RUST_BACKTRACE=1 ./waybar
+waybar     -c ~/.config/waybar/config-left.jsonc     -c ~/.config/waybar/config-right.jsonc
+waybar     -c ~/.config/waybar/config-left.jsonc     -c ~/.config/waybar/config-right.jsonc
+waybar --help
+waybar -c ~/.config/waybar/config-left.jsonc -c ~/.config/waybar/config-right.jsonc
+waybar --config ~/.config/waybar/config-left.jsonc --config ~/.config/waybar/config-right.jsonc
+waybar --config ~/.config/waybar/config-left.jsonc
+waybar --config ~/.config/waybar/config-right.jsonc
+waybar --config ~/.config/waybar/config-right.jsonc
+waybar
+waybar -c
+waybar -c ~/.config/waybar/left.jsonc &
+waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+ps aux | grep waybar
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+hyprctl dispa
+hyprctl execr 
+hyprctl execr --help
+hyprctl dispatch
+hyprctl dispatch hl.dsp.window.close()
+hyprctl dispatch hl.dsp.window.close
+hyprctl dispatch hl.dsp.window.close
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+hyprctl eval \"hl.dispatch(hl.dsp.focus({ window = 'address:{address}' }))\
+hyprctl eval \"hl.dispatch(hl.dsp.focus({ window = 'address:{address}' }))\
+hyprctl eval "hl.dispatch(hl.dsp.focus({ window = 'address:{address}' }))
+
+hyprctl eval "hl.dispatch(hl.dsp.focus({ window = 'address:{address}' }))"
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/left.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- waybar -c ~/.config/waybar/left.jsonc && app2unit -- waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+./waybar --version
+./waybar --version
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+killall waybar
+app2unit -- ./waybar -c ~/.config/waybar/left.jsonc && app2unit -- ./waybar -c ~/.config/waybar/right.jsonc &
+sudo apt purge --auto-remove waybar --dry-run
+systemctl --user status waybar.service 
+cat /etc/systemd/user/graphical-session.target.wants/waybar.service 
+micro ~/bin/launch-waybars
+chmod +x ~/bin/launch-waybars 
+cp ./waybar ~/bin/
+micro /etc/systemd/user/graphical-session.target.wants/waybar.service 
+micro ~/.config/systemd/user/waybar-left.service
+micro ~/.config/systemd/user/waybar-right.service
+systemctl --user enable waybar-left.service 
+systemctl --user enable waybar-right.service 
+systemctl --user disable waybar.service 
+systemctl --user disable --global waybar.service 
+systemctl disable  waybar.service 
+systemctl --user disable --now waybar.service 
+systemctl --user stop waybar.service 
+systemctl --user disable --now waybar.service 
+systemctl --global disable --now waybar.service 
+sudo systemctl --global disable --now waybar.service 
+sudo systemctl --global disable waybar.service 
+sudo systemctl stop waybar.service 
+sudo systemctl status waybar.service 
+sudo  systemctl status --global  waybar.service 
+systemctl --user status waybar.service 
+systemctl --user daemon-reload 
+systemctl --user start --now waybar-left.service 
+systemctl --user start --now waybar-right.service 
+killall waybar
+systemctl --user start --now waybar-left.service 
+systemctl --user start --now waybar-right.service 
+systemctl --user status waybar-right.service 
+systemctl --user status waybar-left.service 
+systemctl --user status waybar.service 
+systemctl --user status waybar-left.service 
+systemctl --user status waybar-right.service 
+micro ~/.config/systemd/user/waybar-left.service
+systemctl --user restart waybar-left.service 
+systemctl --user daemon-reload 
+systemctl --user restart waybar-left.service 
+micro ~/.config/systemd/user/waybar-left.service
+micro ~/.config/systemd/user/waybar-right.service
+systemctl --user daemon-reload 
+systemctl --user status wayland-sessionq
+systemctl --user status waybar-left.service 
+systemctl --user status waybar-right.service 
+micro ~/.config/systemd/user/waybar-left.service
+micro ~/.config/systemd/user/waybar-right.service
+systemctl --user daemon-reload 
+systemctl --user restart waybar-left.service 
+systemctl --user restart waybar-right.service 
+systemctl --user list-dependencies graphical-session.target
+systemctl --user list-dependencies
+loginctl show-user daniel | grep Linger
+systemctl --user status
+systemctl --user status gpg-agent.service
+systemctl --user status gnome-keyring-daemon.service
+ps aux | grep -E "gpg-agent|gnome-keyring"
+loginctl show-user daniel -p Linger
+loginctl list-users
+systemctl --user cat gnome-keyring-daemon.service
+systemctl --user cat ssh-agent.service
+waybar
+waybar
+waybar
+waybar
+waybar
+killall waYBAR
+killall waybar
+jf
+btop
+loginctl list-users
+loginctl show-user daniel -p Linger
+systemctl --user status
+systemctl --user list-dependencies
+jf
+exit
+cd downloads/
+cd Waybar/
+systemctl [200~sudo apt install   clang-tidy gobject-introspection libdbusmenu-gtk3-dev libevdev-dev   libfmt-dev libgirepository1.0-dev libgtk-3-dev libgtkmm-3.0-dev   libinput-dev libjsoncpp-dev libmpdclient-dev libnl-3-dev libnl-genl-3-dev   libpulse-dev libsigc++-2.0-dev libspdlog-dev libwayland-dev scdoc upower \
+sudo apt install   clang-tidy gobject-introspection libdbusmenu-gtk3-dev libevdev-dev   libfmt-dev libgirepository1.0-dev libgtk-3-dev libgtkmm-3.0-dev   libinput-dev libjsoncpp-dev libmpdclient-dev libnl-3-dev libnl-genl-3-dev   libpulse-dev libsigc++-2.0-dev libspdlog-dev libwayland-dev scdoc upower   libxkbregistry-dev
+sudo apt install scdoc wayland-protocols 
+cd downloads/
+cd Waybar/
+meson setup build --reconfigure 
+meson setup build 
+meson setup --wipe
+meson setup build --wipe
+meson setup build 
+meson setup build --reconfigure 
+meson setup build --wipe
+meson setup build --reconfigure 
+ninja -C build
+systemctl --user restart waybar-left.service 
+/usr/local/bin/waybar
+/usr/local/bin/waybar
+ldd /usr/local/bin/waybar
+ldd /usr/local/bin/waybar
+/usr/local/bin/waybar
+ldconfig -p | grep libcava
+sudo ldconfig -p | grep libcava
+ldconfig -v 2>/dev/null | grep /usr/local/lib
+grep -R "/usr/local/lib" /etc/ld.so.conf*
+micro /etc/ld.so.conf.d/local.conf
+sudo ldconfig
+sudo ldconfig -v
+sudo rm /etc/ld.so.conf.d/xfdashboard.conf 
+sudo ldconfig -v
+ninja -C build install
+cat ~/.config/systemd/user/waybar-right.service 
+cd ~/.config/waybar/
+ll
+diff -u cpu-menu.xml gpu-menu.xml
+cd ..
+git clone https://github.com/PolpOnline/gpu-usage-waybar.git
+cd gpu-usage-waybar/
+cargo build
+cargo build --target release
+rustc --print target-list
+cargo build --release 
+ll
+cargo install 
+
+cargo uninstall gpu-usage-waybar
+cargo build --release 
+cargo build --target release
+cargo build --release 
+cargo clean
+cargo build --release 
+cd ..
+cd ~/downloads/
+git clone https://github.com/PolpOnline/gpu-usage-waybar.git
+cd gpu-usage-waybar/
+cargo build --release 
+cd target/release/
+./gpu-usage-waybar 
+ldd ./gpu-usage-waybar 
+cd ..
+cd ..
+cargo 
+cargo build
+cd target/debug/
+./gpu-usage-waybar 
+env RUST_BACKTRACE=1 ./gpu-usage-waybar 
+hstr 
+git clone https://github.com/Alexays/Waybar.git
+cd ..
+cd ..
+cd ~/downloads/
+git clone https://github.com/Alexays/Waybar.git
+cd Waybar/
+cat README.md 
+meson setup build
+ninja -C build
+cd ~/downloads/
+git clone https://github.com/Alexays/Waybar.git
+cat ~/.config/waybar/cpu-menu.xml 
+cat ~/.config/waybar/gpu-menu.xml 
+hstr 
+git clone https://github.com/PolpOnline/gpu-usage-waybar.git
+cd gpu-usage-waybar/
+grep -R "menu-actions" -n src/
+ll
+grep -R "builder file" -n src/
+grep -R "builder" -n src/
+grep -R "menu" -n src/
+grep -R "menu" -n ./src/
+cargo
+cargo build --release 
+ninja
+ninja -C build
+grep -R "builder" -n src/
+grep -R "menu" -n src/
+ll
+cd target/release/
+ll
+./gpu-usage-waybar 
+hstr 
+env RUST_BACKTRACE=1 ./gpu-usage-waybar 
+/usr/local/bin/gpu-usage-waybar 
+journalctl --user -u waybar-right -b | grep "Menu item"
+jf
+btop
+jf
+ll /usr/local/lib
+ll /usr/local/lib/
+namei -l /usr/local/lib/systemd/network
+ls -ld /usr/local
+ls -ld /usr/local/lib
+ls -ld /usr/local/lib/systemd
+systemctl cat systemd-networkd.service
+ls -ld /usr/local /usr/local/lib /usr/local/lib/systemd
+namei -l /usr/local/lib/systemd/network
+systemd --version
+sudo systemd --version
+systemd-run --version
+btop
+jf
+sudo chmod 755 /usr/local/lib
+micro .config/systemd/user/waybar-left.service 
+systemctl --user daemon-reload 
+systemctl --user restart --now waybar-left.service waybar-right.service 
+systemctl --user daemon-reload 
+sudo rmdir bin
+sudo ln -s /home/daniel/.local/bin /usr/local/bin
+exit
+systemctl --user daemon-rel
+systemctl --user daemon-reload 
+systemctl --user restart awww-daemon.service 
+jf
+systemctl --user status cliphist-daemon.service 
+systemctl --user status cliphist-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-daemon.service 
+wlcopy
+wl-copy 
+wl-paste 
+wl-paste --watch cliphist store
+whereis cliphist
+whereis cliphist-daemon 
+cliphist
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-daemon.service 
+ps aux | grep wl-paste
+ps aux | grep cliphist
+cat .config/systemd/user/cliphist-daemon.service 
+cat /usr/bin/cliphist 
+systemctl --user daemon-reload 
+systemctl --user restart snappy-switcher.service 
+audio-detective™.sh 
+btop
+jf

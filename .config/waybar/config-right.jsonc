@@ -1,0 +1,42 @@
+{
+    "include": ["~/.config/waybar/modules.jsonc"],
+
+    "name": "right",
+    "output": "DP-1",
+
+    "position": "top",
+    "layer": "top",
+    "height": 24,
+
+    "spacing": 5,
+    "margin-top": 5,
+    "margin-bottom": 5,
+
+    "expand-left": false,
+    "expand-right": false,
+    "fixed-center": false,
+
+    "mode": "dock",
+    "reload_style_on_change": false,
+    "markup": true,
+
+    "modules-left": [
+        "wlr/taskbar"
+    ],
+
+    "modules-center": [
+        "group/hardware"
+    ],
+
+    "modules-right": [
+        "tray",
+        "mpd",
+        "pulseaudio",
+        "keyboard-state",
+        "hyprland/submap",
+        "inhibitor",
+        "network",
+        "disk",
+        "clock"
+    ]
+}

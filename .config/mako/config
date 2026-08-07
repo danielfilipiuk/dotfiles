@@ -28,12 +28,12 @@ on-button-right=exec makoctl menu -n "$id" -- wmenu -p 'Select action: '
 ##########style options
 
 font=JetBrainsMonoNerdFont 9
-background-color=#f8f6f299
+background-color=#f8f6f2aa
 #background-color=#fffbf0dd
 text-color=#2d2d2c
 border-color=#b57daac9
 progress-color=#fffbf0ee
-border-size=3
+border-size=4
 border-radius=18
 icons=1
 icon-path=/usr/share/icons/Papirus

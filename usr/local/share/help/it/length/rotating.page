@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="rotating" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#start"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ruota il righello.</desc>
+  </info>
+
+  <title>Modifica dell'orientamento del righello</title>
+
+  <media its:translate="no" type="image" src="figures/orientation.png">
+    <p>Changing the ruler's orientation</p>
+  </media>
+
+  <p>È possibile ruotare il righello in posizione verticale.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item>
+      <p>Fare clic sul pulsante verticale per ruotare il righello verticalmente. Fare clic sul pulsante orizzontale per ruotare nuovamente il righello in posizione orizzontale.</p>
+    </item>
+  </steps>
+
+  <p>È anche possibile modificare l'orientamento del righello trascinandone gli angoli o cliccando con il tasto centrale del mouse.</p>
+</page>

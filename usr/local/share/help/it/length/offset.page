@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offset" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambia l'origine dell'unità.</desc>
+  </info>
+
+  <title>Impostazione di un offset</title>
+
+  <media type="image" src="figures/offset.png">
+    <p>Cambiare l'origine</p>
+  </media>
+
+  <p>È possibile modificare l'origine del righello aggiungendo uno scostamento.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Regola l'offset.</p></item>
+  </steps>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="rotating" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#start"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Orienter la règle</desc>
+  </info>
+
+  <title>Changer l’orientation de la règle</title>
+
+  <media its:translate="no" type="image" src="figures/orientation.png">
+    <p>Changing the ruler's orientation</p>
+  </media>
+
+  <p>Vous pouvez orienter la règle verticalement.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item>
+      <p>Cliquer le bouton vertical pour orienter la règle verticalement. Cliquer le bouton horizontal pour orienter la règle horizontalement.</p>
+    </item>
+  </steps>
+
+  <p>Vous pouvez aussi changer l’orientation de la règle en tirant sur ses coins ou en cliquant le bouton du milieu de la souris.</p>
+</page>

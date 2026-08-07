@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>meson build</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>meson build</underline>
+A tip for your future compilations
+
+After building, you can always ask Meson what it's going to install:
+
+meson install -C build --dry-run
+
+or simply inspect:
+
+meson introspect build --installed
+
+It will show every file the project intends to install. It's a great way to learn how a project is structured.
+
+
+
+Since you're on Debian Sid...
+
+I think you'd enjoy adopting this workflow:
+
+meson setup build
+meson compile -C build
+sudo meson install -C build
+sudo ldconfig
+
+or, if the project still documents Ninja directly:
+
+meson setup build
+ninja -C build
+sudo ninja -C build install
+sudo ldconfig
+
+It becomes muscle memory, and you avoid exactly the kind of "works in the build directory but not after copying" issues you just ran into.
+</note-content></text>
+  <last-change-date>2026-08-06T22:11:35.4837932-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-06T22:11:35.4837932-03:00</last-metadata-change-date>
+  <create-date>2026-08-06T22:11:07.4835582-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

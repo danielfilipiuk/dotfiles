@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="scale" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Changer le point d’origine</desc>
+  </info>
+
+  <title>Changer l’échelle des unités de la règle</title>
+
+  <media type="image" src="figures/scale.png">
+    <p>Changer le facteur d’échelle des unités</p>
+  </media>
+
+  <p>Vous pouvez changer l’échelle des unités par un facteur. Quand vous définissez une échelle, un indicateur est affiché sur la règle.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item><p>Ajuster l’échelle.</p></item>
+  </steps>
+
+</page>

@@ -27,7 +27,7 @@
 
 "mode": "dock",
 
-"reload_style_on_change": true,
+"reload_style_on_change": false,
 
 "margin-top": 5,
 "margin-bottom": 5,
@@ -41,12 +41,13 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////
     // Choose the order of the modules
-"modules-left": ["wlr/taskbar"],
-	//"ext/workspaces",
+"modules-left": [
+	"wlr/taskbar"
+	//"ext/workspaces"
         //"hyprland/submap",
 	//  "hyprland/window"
 	//"hyprland/workspaces"
-
+],
 "modules-center": [   
 	"group/hardware"
 	//"temperature",
@@ -68,7 +69,7 @@
 		"temperature",
 		"cpu",
 		"memory",
-		"custom/gpu-usage",
+		"custom/gpu-usage"
 		]
 		},
 
@@ -100,13 +101,21 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 
 "hyprland/workspaces": {
-      "format": "{name} {windows}",
+      "format": "{windows}",
       "enable-bar-scroll": true,
       "all-outputs": false,
       "move-to-monitor": true,
-      "show-special": true,
+      "show-special": false,
       "on-click": "activate",
       "expand": false,
+      "tooltip": true, 
+      "persistent-only": false,
+      "format-window-separator": "  ",
+      //"update-active-window": "true",
+     "tooltips": {
+     		"default": "{workspace}: {windows}",
+     		"empty": "",
+     		},
       "workspace-taskbar": {
 	 	"enable": true,
 	 	"format": "{icon}",
@@ -114,12 +123,7 @@
 	 	"icon-size": 16,
 	 	"on-click-window": "hyprctl eval \"hl.dispatch(hl.dsp.focus({ window = 'address:{address}' }))\"",
 	 	},
-     "tooltip": true, 
-     "tooltips": {
-     		"default": "{workspace}: {windows}",
-     		"empty": "",
-     			},
-     "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})' ",
+       "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})' ",
      "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})' ",
 },
 
@@ -128,10 +132,10 @@
 
 
 "ext/workspaces": {
-	"format": "{name} {icon}",
+	"format": "",
 	"on-click": "activate",
 	"on-click-right": "close",
-	"sort-by-id": true
+	
 },
 
 
@@ -143,12 +147,12 @@
 
 "wlr/taskbar": {
 	"all-outputs": false,
-	//"markup": true,
+	"markup": true,
 	//"max-length": 10,
 	"sort-by-app-id": true,
 	"truncate": false,
 	"format": "{icon}",
-	"expand": true,
+	"expand": false,
 	"icon-size": 16,
 	"icon-theme": "Papirus",
 	//"bar-css-states": true,
@@ -156,8 +160,8 @@
 	"tooltip-format": "{title}",
 	"on-click": "activate",
 	"on-click-right": "close",
-	//"on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({window=\"e+1\"})' ",
-        //"on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({window=\"e-1\"})' ",
+	"on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({window=\"e+1\"})' ",
+        "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({window=\"e-1\"})' ",
 	
 },
 
@@ -450,6 +454,7 @@
   "return-type": "json",
   "format-icons": "",
   "tooltip": false,
+  	"tooltip-format": "{temperature}, {power}, {gpu_utilization}, {mem_used}, {mem_total}, {p_level}"
   "on-click": "app2unit -T -- nvtop",
   	"menu": "on-click-right",
 	"menu-file": "~/.config/waybar/gpu-menu.xml",
@@ -501,7 +506,7 @@
 
 
 "disk": {
-	"path": "/",
+	"paths": "/",
 	"interval": 60,
 	"format": "",
 	"align": "center",

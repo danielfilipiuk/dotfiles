@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="adjusting" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ajuster la position de la règle pour des mesures précises.</desc>
+  </info>
+
+  <title>Ajuster la règle avec précision</title>
+
+  <p>Pour mesurer des objets avec précision, positionner la règle de façon précise.</p>
+
+  <p>Déplacer la règle tout en appuyant sur <key>Ctrl</key> pour aligner la règle sur l’objet. Quand la règle approche du bord de l’objet, la règle se colle sur la fenêtre.</p>
+
+  <p>Pour déplacer la règle avec les flèches, appuyer sur <keyseq><key>Alt</key><key>F7</key></keyseq> et utiliser les flèches. Pour un ajustement précis, appuyer sur <key>Ctrl</key> tout en déplaçant la règle avec les flèches. Appuyer sur <key>Esc</key> pour sortir du mode clavier.</p>
+
+  <p>Pour empêcher l’object à mesurer de masquer la règle, cliquer avec le bouton droit sur la règle et choisir <gui style="menuitem">Toujours au Dessus</gui> :</p>
+
+  <media type="image" src="figures/always-on-top.png">
+    <p>Utiliser le menu contextuel et choisir <gui style="menuitem">Toujours au Dessus</gui>.</p>
+  </media>
+</page>

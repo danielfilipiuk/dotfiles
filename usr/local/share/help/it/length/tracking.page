@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="tracking" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visualizza la posizione del puntatore.</desc>
+  </info>
+
+  <title>Tracciamento del puntatore</title>
+
+  <media type="image" src="figures/tracking.png">
+    <p>Tracciamento del puntatore abilitato</p>
+  </media>
+
+  <p>Per misurazioni precise, è possibile attivare il tracciamento del puntatore. Quando attivato, il righello mostra la posizione corrente del puntatore. È anche possibile bloccare il tracciamento per contrassegnare una posizione sul righello.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Abilita la casella di controllo <gui style="button">Tracciamento del puntatore</gui>.</p></item>
+
+    <item>
+      <p>Per bloccare la posizione del tracciamento, premere <key>P</key>. Premere nuovamente <key>P</key> per sbloccare il tracciamento.</p>
+    </item>
+  </steps>
+
+  <p>È anche possibile abilitare e disabilitare il tracciamento premendo <tasto>T</tasto>.</p>
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="layers" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Choisir les outils de mesure.</desc>
+  </info>
+
+  <title>Choisir les outils de mesure</title>
+
+  <p><app>Longueur</app> fournit plusieurs outils organisés en couches.</p>
+
+  <p>La couche des inscriptions affiche les marques sur la règle.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-markings.png">
+    <p>Ruler's markings</p>
+  </media>
+
+  <p>Pour mesurer de grands objets quand la règle est étirée, activez la grille.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-grid.png">
+    <p>Ruler's grid</p>
+  </media>
+
+  <p>La couche des diagonales affiche la règle en diagonale.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-diagonals.png">
+    <p>Diagonal rulers</p>
+  </media>
+
+  <p>Activez la couche des angles pour mesurer des angles.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-angles.png">
+    <p>Measuring angles</p>
+  </media>
+
+  <p>Vous pouvez activer plusieurs outils à la fois. Les couches des inscriptions et de la grille sont toutes les deux activées par défaut.</p>
+
+  <p>Activez les outils via la fenêtre des <gui>Préférences</gui>.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item><p>Sélectionner <gui style="menuitem">Préférences</gui>.</p></item>
+
+    <item>
+      <p>Activez ou désactivez les outils dans la page <gui style="tab">Général</gui>, dans la section <gui style="group">Outils</gui>.</p>
+      <media its:translate="no" type="image" src="figures/layer-preferences.png">
+        <p>Activating layers</p>
+      </media>
+    </item>
+
+    <item><p>Fermer la fenêtre <gui>Préférences</gui>.</p></item>
+  </steps>
+
+  <p>Vous pouvez aussi utiliser les racourcis clavier :</p>
+  <list>
+    <item><p><key>m</key> pour les inscriptions</p></item>
+    <item><p><key>g</key> pour la grille</p></item>
+    <item><p><key>i</key> pour les diagonales</p></item>
+    <item><p><key>a</key> pour les angles</p></item>
+  </list>
+</page>

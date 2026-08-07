@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calibrating" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Indica le dimensioni del tuo monitor per misurare con precisione le distanze.</desc>
+  </info>
+
+  <title>Calibrazione dei monitor</title>
+
+  <media type="image" src="figures/calibrating.png">
+    <p>Calibrazione dei monitor</p>
+  </media>
+
+  <p>Per rappresentare accuratamente alcune unità, <app>Lunghezza</app> utilizza le dimensioni fisiche del monitor.</p>
+
+  <p>In alcuni ambienti, <app>Length</app> recupera queste informazioni dal sistema. Altri ambienti non forniscono questa dimensione. In tal caso, è necessario calibrare <app>Length</app> per la visualizzazione:</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Vai a <gui style="menuitem">Preferenze</gui>.</p></item>
+
+    <item>
+      <p>La pagina <gui style="tab">Calibrazione</gui> elenca i tuoi monitor. Per ogni monitor, puoi lasciare che <app>Length</app> calcoli le dimensioni del monitor oppure puoi specificare la dimensione diagonale del monitor in pollici.</p>
+      <p>Quando <gui style="button">Calcola dimensioni monitor</gui> è abilitato, <app>ength</app> recupera le dimensioni del monitor dal sistema. Quando la casella di controllo <gui style="button">Calcola dimensioni monitor</gui> è deselezionata, è possibile specificare la dimensione diagonale del monitor in pollici.</p>
+    </item>
+
+    <item><p>Chiudere la finestra di dialogo <gui>Preferenze</gui>.</p></item>
+  </steps>
+
+  <note style="important">
+    <p>È necessario specificare le dimensioni del monitor quando <app>Length</app> non riesce a recuperarle dal sistema. Se non si specificano le dimensioni, <app>Length</app> baserà i suoi calcoli su un monitor da 24 pollici, il che potrebbe comportare misurazioni imprecise per l'unità selezionata.</p>
+  </note>
+</page>

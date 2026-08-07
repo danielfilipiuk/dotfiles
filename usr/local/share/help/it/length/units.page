@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="units" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+    <link type="topic" xref="calibrating"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambia l'unità di misura dei segni sul righello.</desc>
+  </info>
+
+  <title>Selezione delle unità</title>
+
+  <media type="image" src="figures/units.png">
+    <p>Modifica dell'unità di misura del righello</p>
+  </media>
+
+  <p><app>Length</app> è dotato di diverse unità che puoi selezionare dalla finestra di dialogo <gui>Preferenze</gui>.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Vai a <gui style="menuitem">Preferenze</gui>.</p></item>
+
+    <item><p>Nella pagina <gui style="tab">Generale</gui>, nella sezione <gui style="group">Scala</gui>, seleziona l'unità di misura del righello.</p></item>
+
+    <item><p>Chiudere la finestra di dialogo <gui>Preferenze</gui>.</p></item>
+  </steps>
+
+  <p>In alternativa, utilizzare i tasti numerici per passare da un'unità all'altra:</p>
+  <list>
+    <item><p><key>1</key> per i pixel</p></item>
+    <item><p><key>2</key> per centimetri</p></item>
+    <item><p><key>3</key> per pollici</p></item>
+    <item><p><key>4</key> per pica (1/6 di pollice)</p></item>
+    <item><p><key>5</key> per punti (1/72 di pollice)</p></item>
+    <item><p><key>6</key> per la percentuale della dimensione dello schermo</p></item>
+    <item><p><key>7</key> per la percentuale della dimensione del righello</p></item>
+  </list>
+
+  <note style="tip">
+    <title>Calibrazione di <app>Length</app></title>
+    <p>Per rappresentare accuratamente alcune unità, <app>Lunghezza</app> utilizza le dimensioni fisiche del monitor.</p>
+    <p>In alcuni ambienti, <app>Length</app> recupera queste informazioni dal sistema. Altri ambienti non forniscono questa dimensione. In tal caso, è necessario calibrare <app>Length</app> per il monitor.</p>
+    <p>Per maggiori informazioni sulla configurazione di <app>Length</app> per le dimensioni del monitor, vedere <link xref="calibrating"/>.</p>
+  </note>
+</page>

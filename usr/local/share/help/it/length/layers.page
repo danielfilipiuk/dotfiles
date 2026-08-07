@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="layers" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Selezionare gli strumenti di misura.</desc>
+  </info>
+
+  <title>Selezione degli strumenti di misurazione</title>
+
+  <p><app>Length</app> fornisce diversi strumenti di misurazione organizzati in livelli.</p>
+
+  <p>Il livello dei segni mostra i segni dei righelli.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-markings.png">
+    <p>Ruler's markings</p>
+  </media>
+
+  <p>Per aiutarti a misurare oggetti di grandi dimensioni quando il righello è espanso, puoi attivare la griglia.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-grid.png">
+    <p>Ruler's grid</p>
+  </media>
+
+  <p>Il livello diagonale mostra i righelli diagonali.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-diagonals.png">
+    <p>Diagonal rulers</p>
+  </media>
+
+  <p>Attiva il livello angolo per misurare gli angoli.</p>
+
+  <media its:translate="no" type="image" src="figures/layer-angles.png">
+    <p>Measuring angles</p>
+  </media>
+
+  <p>È possibile attivare più livelli per utilizzare più strumenti contemporaneamente. Ad esempio, i livelli di marcatura e griglia sono abilitati per impostazione predefinita.</p>
+
+  <p>È possibile attivare i livelli dalla finestra di dialogo <gui>Preferenze</gui>.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Vai a <gui style="menuitem">Preferenze</gui>.</p></item>
+
+    <item>
+      <p>Nella pagina <gui style="tab">Generale</gui>, nella sezione <gui style="group">Livelli</gui>, utilizzare le caselle di controllo per abilitare o disabilitare i livelli.</p>
+      <media its:translate="no" type="image" src="figures/layer-preferences.png">
+        <p>Activating layers</p>
+      </media>
+    </item>
+
+    <item><p>Chiudere la finestra di dialogo <gui>Preferenze</gui>.</p></item>
+  </steps>
+
+  <p>In alternativa, utilizzare le scorciatoie da tastiera:</p>
+  <list>
+    <item><p><key>m</key> per lo strato di marcatura</p></item>
+    <item><p><key>g</key> per il livello della griglia</p></item>
+    <item><p><key>i</key> per lo strato diagonale</p></item>
+    <item><p><key>a</key> per lo strato angolare</p></item>
+  </list>
+</page>

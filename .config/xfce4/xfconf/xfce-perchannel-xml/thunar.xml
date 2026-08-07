@@ -8,10 +8,10 @@
   <property name="last-window-height" type="int" value="476"/>
   <property name="last-window-maximized" type="bool" value="true"/>
   <property name="last-show-hidden" type="bool" value="true"/>
-  <property name="last-separator-position" type="int" value="155"/>
-  <property name="last-splitview-separator-position" type="int" value="384"/>
-  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_100_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="157,157,148,148,176,750,65,92,461,128,98,59,101,71"/>
+  <property name="last-separator-position" type="int" value="181"/>
+  <property name="last-splitview-separator-position" type="int" value="473"/>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
+  <property name="last-details-view-column-widths" type="string" value="157,157,183,148,176,470,65,92,332,128,98,78,101,526"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_SIZE"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="misc-directory-specific-settings" type="bool" value="true"/>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calibrating" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Indiquer la taille de l’écran pour des mesures justes.</desc>
+  </info>
+
+  <title>Calibrer les écrans</title>
+
+  <media type="image" src="figures/calibrating.png">
+    <p>Calibrer les écrans</p>
+  </media>
+
+  <p>Pour représenter certaines unités de façon juste, <app>Longueur</app> utilise la taille physique de l’écran.</p>
+
+  <p>Pour certains environements, <app>Longueur</app> obtient cette information du système. D’autres environements ne fournissent pas l’information. Dans ce cas, vous devez calibrer <app>Longueur</app> pour votre écran.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item><p>Sélectionner <gui style="menuitem">Préférences</gui>.</p></item>
+
+    <item>
+      <p>La page <gui style="tab">Calibration</gui> liste vos écrans. Pour chaque écran, vous pouvez laisser <app>Longueur</app> calculer la taille, ou vous pouvez donner la diagonale de l’écran en pouces.</p>
+      <p>Quand <gui style="button">Calculer la taille de l’écran</gui> est actif, <app>Longueur</app> utilise la taille de l’écran fournie par le système. Quand <gui style="button">Calculer la taille de l’écran</gui> est inactif, vous pouvez indiquer la diagonale de l’écran en pouces.</p>
+    </item>
+
+    <item><p>Fermer la fenêtre <gui>Préférences</gui>.</p></item>
+  </steps>
+
+  <note style="important">
+    <p>Indiquez la taille de l’écran quand <app>Longueur</app> ne peut pas la récupérer auprès du système. Sinon, <app>Longueur</app> effectue ses calculs pour un écran de 24 pouces, et la règle peut devenir très imprécise.</p>
+  </note>
+</page>

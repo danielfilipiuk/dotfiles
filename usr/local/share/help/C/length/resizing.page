@@ -1,0 +1,38 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="topic"
+      id="resizing">
+
+  <info>
+    <link type="guide" xref="index#start"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+
+    <desc>Adjust the size of the ruler.</desc>
+  </info>
+
+  <title>Resizing the Ruler</title>
+
+  <media its:translate="no" type="image" src="figures/size.png">
+    <p>Changing the ruler's dimension</p>
+  </media>
+
+  <p>
+    You can resize the ruler for adjusting it to the object to measure.
+    You resize the ruler by dragging the edges.
+  </p>
+</page>

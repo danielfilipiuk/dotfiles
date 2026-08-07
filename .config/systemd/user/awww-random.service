@@ -7,3 +7,4 @@ Requires=awww-daemon.service
 [Service]
 Type=oneshot
 ExecStart=%h/.local/bin/awww-random
+

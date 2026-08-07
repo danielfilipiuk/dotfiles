@@ -56,21 +56,22 @@ window#waybar.toplevel-active {
 #power-profiles-daemon, 
 #taskbar,
 #workspaces,
-#workspaces,*/
-#cpu,
-#disk,
-#memory,
-#temperature,
-#custom-gpu-usage,
 #taskbar,
+#workspaces,*/
+#workspaces,
+#temperature,
+#cpu,
+#memory,
+#custom-gpu-usage,
 #mpd,
 #pulseaudio,
 #keyboard-state,
-#network,
-#tray,
 #idle_inhibitor,
 #inhibitor,
+#network,
 #submap,
+#disk,
+#tray,
 #clock {
     padding: 0px 10px;   
     border-radius: 16px; 
@@ -84,14 +85,26 @@ window#waybar.toplevel-active {
     color 250ms ease-out,
     border-color 250ms ease-out;*/
 }
-
-
-/* you can set a style on hover for any module like this */
-/*#pulseaudio:hover {*/
-/*    background-color: #a37800;*/
-/*}*/
-
-
+/*
+label.module {
+   background: transparent;
+    border: none;
+    padding: 0 0;
+    min-width: 10px;
+    border-radius: 0px;  
+    margin: 0;
+    color: transparent;
+}
+box.module button:hover {
+       background: transparent;
+    border: none;
+    padding: 0 0;
+    min-width: 10px;
+    border-radius: 0px;  
+    margin: 0;
+    color: transparent;
+}
+*/
 
 
 /* TOOLTIP OPTIONS */
@@ -99,48 +112,17 @@ window#waybar.toplevel-active {
 tooltip {
 	background: rgba(248,246,242,.75);
 	color: rgba(30,30,30,.90);
-	border-top:    4px solid rgba(181,125,170,.30);
-	border-left:   4px solid rgba(181,125,170,.25);
-	border-right:  4px solid rgba(181,125,170,.45);
-	border-bottom: 4px solid rgba(181,125,170,.55);
+	border-top:    4px solid rgba(181,125,170,.25);
+	border-left:   4px solid rgba(181,125,170,.35);
+	border-right:  4px solid rgba(181,125,170,.55);
+	border-bottom: 4px solid rgba(181,125,170,.75);
 	border-radius: 16px;
 }
 tooltip label {
   	padding: 2px 6px;
-	text-shadow: 0 1px 2px rgba(0,0,0,.20);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
-
-/*
-tooltip {
-	background: rgba(0, 0, 0, 0.60);
-	border: 3px #d492d8;
-	border-radius: 16px;
-}
-tooltip label {
-  	padding: 3px 3px;
-	border-radius: 16px;
-}
-
-*/
-
-
-/* MODE  */
-
-
-#mode {
-    background-color: transparent;
-}
-
-
-
-/* LABEL  */
-
-/*
-*label:hover {
-    background-color: #000000;
-}
-*/
 
  /* MENUS */
 
@@ -152,49 +134,16 @@ menu {
 }
 menuitem {
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.20);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 
 /* WORKSPACES  */
 
 
-#workspaces {
-    background-color: rgba(0, 0, 0, .25);
-    color: rgba(255, 255, 255, 1);
-    border-radius: 10px;
-    padding: 0 0px;  
-}
-#workspaces button {
-    background-color: transparent;
-    color: #ffffff;
-    border-radius: 10px;        
-}
-#workspaces button.empty {
-	background-color: transparent;
-	background: transparent;
-}
-#workspaces button:hover {
-    background: rgba(0, 0, 0, .35);
-}
-#workspaces button.focused, #workspaces button.active {
-    background: #60406c;
-    border-radius: 10px;
-}
-#workspaces button.urgent {
-    background-color: #ca9ee6;
-    color: #2d3436;
-}
-#workspaces.taskbar-window.active {
-    background: #60406c;
-    border-radius: 10px;
-}
-
-
-
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-right: 0px;
+    margin-left: 0px;
 }
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
@@ -203,18 +152,86 @@ menuitem {
 
 
 
+#workspaces {
+	background-color: transparent;
+	padding:  0 0px;   
+
+	
+}
+#workspaces button {
+ 	border: 1px rgba(0,0,0,0.20);
+    	color: rgba(255, 255, 255, .85);
+    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	background: rgba(248,246,242,.45);
+	padding: 0px 10px;  
+	border-radius: 16px;  
+	-gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.50);
+	
+	
+	 
+}
+#workspaces button.empty {
+   background: rgba(0,0,0,0);
+    border: none;
+    padding: 0 0;
+    min-width: 0px;
+    border-radius: 0px;  
+    margin: 0;
+    color: rgba(0,0,0,0);
+      box-shadow: none;
+}
+
+
+#workspaces button.visible {
+  border: 1px rgba(248,246,242,0.10);
+	background: rgba(248,246,242,.85);
+}
+#workspaces button:hover {
+  border: 1px rgba(248,246,242,0.10);
+	background: rgba(248,246,242,.85);
+}
+#workspaces button.active {
+ 	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.85)  ;
+}
+#workspaces button.urgent {
+    background-color: #ca9ee6;
+    color: #2d3436;
+}
+#workspaces .taskbar-window {
+background-color: transparent;
+	color: transparent;
+}
+#workspaces .taskbar-window.active {
+	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.85)  ;
+}
+#workspaces .workspace-label  {
+   background: rgba(0,0,0,0);
+    border: none;
+    padding: 0 0;
+    min-width: 0;
+    border-radius: 0px;  
+    margin: 0;
+    color: rgba(0,0,0,0);
+}
+
+
+
+
 /* WLR / TASKBAR */
 
 #taskbar {
 	background-color: transparent;
-	padding:  0 0px;     
+	padding:  0 0px;   
+	  
 }
 #taskbar.empty {
 	background-color: transparent;
 }
 #taskbar button{
 	border: 1px rgba(0,0,0,0.20);
-    	color: rgba(255, 255, 255, .35);
+    	color: rgba(255, 255, 255, .85);
     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
 	background: rgba(248,246,242,.45);
 	padding: 0px 10px;  
@@ -270,7 +287,7 @@ border: 1px rgba(0,0,0,0.20);
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #mpd.playing:hover {
 	background: rgba(248,246,242,.95);
@@ -280,23 +297,23 @@ border: 1px rgba(0,0,0,0.20);
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.45);
 	color: rgba(30,30,30,.55);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #mpd.stopped {
 	border: 1px rgba(0,0,0,0.20);
     color: rgba(248,246,242,.5);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #mpd.disconnected {
 	border: 1px rgba(0,0,0,0.20);
     	background-color: rgba(0, 0, 0, .50);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
     	color: #f03a17;
 }
 #mpd:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	color: rgba(30,30,30,.90);
 }
 
@@ -305,17 +322,17 @@ border: 1px rgba(0,0,0,0.20);
 
 
 #pulseaudio {
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #pulseaudio:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #pulseaudio.muted {
       	border: 1px rgba(248,246,242,0.05);
-      	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+      	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
@@ -344,26 +361,26 @@ border: 1px rgba(0,0,0,0.20);
 #keyboard-state {
 	background: transparent;
         padding:  0 0px;
-        text-shadow: 0 1px 2px rgba(0,0,0,.15);
+        text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	border: 0px rgba(0,0,0,0.20);
     color: rgba(248,246,242,.5);
 }
 #keyboard-state:hover {
 
 	    color: rgba(248,246,242,.95);
-text-shadow: 0 1px 2px rgba(0,0,0,.15);
+text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #keyboard-state > label {
         background: rgba(0, 0, 0, .25);
         border-radius: 16px;
-        text-shadow: 0 1px 2px rgba(0,0,0,.15);
+        text-shadow: 0 1px 2px rgba(0,0,0,.25);
         padding:  0 10px;
 }
 #keyboard-state > label.locked {
       	border: 1px rgba(248,246,242,0.05);
 	border-radius: 16px;
 	padding:  0 10px;
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 }
@@ -378,7 +395,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 #submap {
 	background: rgba(248,246,242,.85);
 	border: 1px rgba(248,246,242,0.05);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	color: rgba(30,30,30,.90);
 }
 
@@ -387,26 +404,26 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 
 
 #network {
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #network:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #network.disconnected {
       	border: 1px rgba(248,246,242,0.05);
     	background: #ffb300;   
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 #network.disconnected:hover {
       	border: 1px rgba(248,246,242,0.05);
     	background: #ffd700;   
 	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 /* TRAY  */
@@ -416,7 +433,8 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 	border: 1px rgba(0,0,0,0.20);
  	border-radius: 16px;
  	padding:  0 12px;    
- 	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+ 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+ 	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #tray > .passive {
       	border: 1px rgba(248,246,242,0.05);
@@ -424,12 +442,14 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
    	border-radius: 16px;
    	color: rgba(30,30,30,.90);
    	opacity: .75;
+   	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #tray:hover {
       	border: 1px rgba(248,246,242,0.05);
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 	opacity: 1;
+	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #tray > .needs-attention {
       	border: 1px rgba(248,246,242,0.05);
@@ -438,6 +458,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
       	border-radius: 16px;
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
+	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 
@@ -447,7 +468,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 #idle_inhibitor {
 	border: 1px rgba(0,0,0,0.20);
      	padding:  0 5px;    
-     	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+     	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 #idle_inhibitor.activated {
       	border: 1px rgba(248,246,242,0.05);
@@ -468,7 +489,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 
 
 #inhibitor {
-	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	border: 1px rgba(0,0,0,0.20);
      	padding:  0 5px;   
       	     color: rgba(248,246,242,.5);
@@ -489,18 +510,6 @@ text-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
 
-/*
-menu {
-	border-radius: 15px;
-	background: #161320;
-	color: #B5E8E0;
-}
-menuitem {
-	border-radius: 15px;
-}
-*/
-
-
 /* CLOCK  */
 
 
@@ -515,7 +524,7 @@ menuitem {
 }
 
 
-/* CPU  */
+/* CPU */
 
 
 #cpu {
@@ -528,8 +537,9 @@ menuitem {
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 } 
-    
-    
+
+/* MEMORY */
+
 #memory {
 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
 	border: 1px rgba(0,0,0,0.05);
@@ -540,8 +550,10 @@ menuitem {
 	background: rgba(248,246,242,.85);
 	color: rgba(30,30,30,.90);
 } 
-
     
+/* GPU USAGE */
+
+
 #custom-gpu-usage {
 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
         background: rgba(0, 0, 0, .25);
@@ -553,28 +565,7 @@ menuitem {
 	color: rgba(30,30,30,.90);
 } 
 
-
-#cpu_graph {
-}
-
-/* CUSTOM MEDIA  */
-
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-
-/* TEMPERATURE  */
-
+/* TEMPERATURE */
 
 #temperature {
 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
@@ -613,46 +604,6 @@ menuitem {
 	color: rgba(30,30,30,.90);
 }
 
-    
-/* BACKLIGHT */
-
-
-
-#backlight {
-    background-color: #90b1b1;}
-
-
-/* KEYBOARD LANGUAGE  */
-
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-
-/* POWER PROFILES  */
-
-
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
 
 /* SCRATCHPAD  */
 
@@ -664,23 +615,3 @@ menuitem {
 	background-color: transparent;
 }
 
-
-/* PRIVACY  */
-
-
-#privacy {
-    padding: 0;
-}
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}

@@ -6,8 +6,7 @@ Requisite=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/cliphist-daemon
-StandardOutput=null
+ExecStart=/home/daniel/dotfiles/.local/bin/cliphist-daemon
 Restart=on-failure
 
 

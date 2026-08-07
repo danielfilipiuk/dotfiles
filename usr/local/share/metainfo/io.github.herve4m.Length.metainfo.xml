@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.herve4m.Length</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Length</name>
+  <name xml:lang="uk">Лінійка</name>
+  <name xml:lang="ru">Линейка</name>
+  <name xml:lang="nl">Lengte</name>
+  <name xml:lang="it">Length</name>
+  <name xml:lang="fr">Longueur</name>
+  <name xml:lang="es">Longitud</name>
+  <summary>Measure objects on screen</summary>
+  <summary xml:lang="uk">Виміряйте об'єкти на екрані</summary>
+  <summary xml:lang="ru">Измеряйте объекты на экране</summary>
+  <summary xml:lang="nl">Meet objecten op het scherm</summary>
+  <summary xml:lang="it">Misura gli oggetti sullo schermo</summary>
+  <summary xml:lang="fr">Mesurer des objets à l’écran</summary>
+  <summary xml:lang="es">Medición de objetos en pantalla</summary>
+  <description>
+    <p>
+      GNOME application for measuring distances on screen to help you design and inspect layouts and graphics.
+      Length includes the following features:
+    </p>
+    <p xml:lang="uk">Додаток для GNOME який може виміряти дистанції на екрані, щоб допомагати вам розробляти й досліджувати графіку і дизайни. "Лінійка" має наступні функції:</p>
+    <p xml:lang="ru">Приложение для GNOME, которое может измерять дистанцию на экране, чтобы помогать вам создавать и изучать графику и дизайн. "Линейка" имеет следующие возможности:</p>
+    <p xml:lang="nl">Een GNOME-toepassing voor het meten van afstanden op het scherm. Vooral handig bij het ontwerpen en nameten van grafische elementen. Lengte beschikt over de volgende mogelijkheden:</p>
+    <p xml:lang="it">Applicazione GNOME per misurare le distanze sullo schermo per aiutarti a progettare e ispezionare layout e grafica. Length include le seguenti funzionalità:</p>
+    <p xml:lang="fr">Une application pour GNOME pour mesurer des distances à l’écran et vous aider à concevoir et inspecter mises en page et graphiques. Longueur comprend les fonctionnalités suivantes :</p>
+    <p xml:lang="es">Aplicación GNOME para medir distancias en pantalla para ayudarle a diseñar e inspeccionar diseños y gráficos. Longitud incluye las siguientes características:</p>
+    <ul>
+      <li>Pixels, centimeters, inches, picas, points, or percentages as units</li>
+      <li xml:lang="uk">Пікселі, сантиметри, дюйми, піки (пайки) або проценти як одиниці вимірювання</li>
+      <li xml:lang="ru">Пиксели, сантиметры, дюймы, пики (пайки), точки или проценты в качестве единиц измерения</li>
+      <li xml:lang="nl">Meet afstanden in diverse eenheden: pixels, centimeters, inches, pica's, punten of percentages;</li>
+      <li xml:lang="it">Pixel, centimetri, pollici, pica, punti o percentuali come unità</li>
+      <li xml:lang="fr">Unités en pixels, centimètres, pouces, picas, points ou pourcentages</li>
+      <li xml:lang="es">Píxeles, centímetros, pulgadas, picas, puntos o porcentajes como unidades</li>
+      <li>Horizontal or vertical orientation</li>
+      <li xml:lang="uk">Горизонтальна або вертикальна орієнтація</li>
+      <li xml:lang="ru">Горизонтальная или вертикальная ориентация</li>
+      <li xml:lang="nl">Horizontale of verticale oriëntatie;</li>
+      <li xml:lang="it">Orientamento orizzontale o verticale</li>
+      <li xml:lang="fr">Orientation horizontale ou verticale</li>
+      <li xml:lang="es">Orientación horizontal o vertical</li>
+      <li>Left-to-right or right-to-left orientation</li>
+      <li xml:lang="uk">Напрямок зліва-направо або справа-наліво</li>
+      <li xml:lang="ru">Ориентация слева направо или справа налево</li>
+      <li xml:lang="nl">Van-links-naar-rechts of van-rechts-naar-links;</li>
+      <li xml:lang="it">Orientamento da sinistra a destra o da destra a sinistra</li>
+      <li xml:lang="fr">Orientation de gauche à droite ou de droite à gauche</li>
+      <li xml:lang="es">Orientación de izquierda a derecha o de derecha a izquierda</li>
+      <li>Transparency levels</li>
+      <li xml:lang="uk">Рівні прозорості</li>
+      <li xml:lang="ru">Уровни прозрачности</li>
+      <li xml:lang="nl">Meerdere doorzichtigheidsniveaus;</li>
+      <li xml:lang="it">Livelli di trasparenza</li>
+      <li xml:lang="fr">Niveaux de transparence</li>
+      <li xml:lang="es">Niveles de transparencia</li>
+      <li>Track pointer position</li>
+      <li xml:lang="uk">Відстежування позиції курсору</li>
+      <li xml:lang="ru">Отслеживание позиции курсора</li>
+      <li xml:lang="nl">Meten door de cursor te volgen.</li>
+      <li xml:lang="it">Tracciamento della posizione del puntatore</li>
+      <li xml:lang="fr">Suivi de la position du pointeur</li>
+      <li xml:lang="es">Posición del puntero</li>
+    </ul>
+  </description>
+  <developer id="io.github.herve4m">
+    <name translate="no">Hervé Quatremain</name>
+  </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#fcf9c2</color>
+    <color type="primary" scheme_preference="dark">#adadd2</color>
+  </branding>
+  <url type="homepage">https://github.com/herve4m/length</url>
+  <url type="vcs-browser">https://github.com/herve4m/length</url>
+  <url type="bugtracker">https://github.com/herve4m/length/issues</url>
+  <url type="translate">https://github.com/herve4m/length/tree/main/po</url>
+  <url type="contribute">https://github.com/herve4m/length/blob/main/CONTRIBUTING.md</url>
+  <translation type="gettext">length</translation>
+  <launchable type="desktop-id">io.github.herve4m.Length.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/horizontal-pixels.png</image>
+      <caption>Horizontal view of Length with pixels as units</caption>
+      <caption xml:lang="uk">Горизонтальний перегляд "Лінійки" з пікселями як одиниця вимірювання</caption>
+      <caption xml:lang="ru">Горизонтальный просмотр "Линейки" с пикселями в качестве единицы измерения</caption>
+      <caption xml:lang="nl">Horizontale weergave met pixels als eenheden</caption>
+      <caption xml:lang="it">Vista orizzontale della lunghezza con pixel come unità</caption>
+      <caption xml:lang="fr">Longueur en pixels en position horizontale</caption>
+      <caption xml:lang="es">Vista horizontal con píxeles como unidades</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/vertical-inches.png</image>
+      <caption>Vertical view of Length with inches as units</caption>
+      <caption xml:lang="uk">Вертикальний перегляд "Лінійки" з дюймами як одиниця вимірювання</caption>
+      <caption xml:lang="ru">Вертикальный просмотр "Линейки" с дюймами в качестве единицы измерения</caption>
+      <caption xml:lang="nl">Verticale weergave met pixels als eenheden</caption>
+      <caption xml:lang="it">Vista verticale della lunghezza con pollici come unità</caption>
+      <caption xml:lang="fr">Longueur en pouces en position verticale</caption>
+      <caption xml:lang="es">Vista vertical en pulgadas</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/menu.png</image>
+      <caption>Length main menu</caption>
+      <caption xml:lang="uk">Головне меню "Лінійки"</caption>
+      <caption xml:lang="ru">Главное меню "Линейки"</caption>
+      <caption xml:lang="nl">Hoofdmenu</caption>
+      <caption xml:lang="it">Menu principale di Length</caption>
+      <caption xml:lang="fr">Menu principal de Longueur</caption>
+      <caption xml:lang="es">Menú principal</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/preferences.png</image>
+      <caption>Preferences window</caption>
+      <caption xml:lang="uk">Вікно налаштувань</caption>
+      <caption xml:lang="ru">Окно настроек</caption>
+      <caption xml:lang="nl">Voorkeurenvenster</caption>
+      <caption xml:lang="it">Preferenze della finestra</caption>
+      <caption xml:lang="fr">Préférences</caption>
+      <caption xml:lang="es">Ventana de preferencias</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/track-pointer.png</image>
+      <caption>Pointer tracking enabled</caption>
+      <caption xml:lang="uk">Увімкнено відстежування курсора</caption>
+      <caption xml:lang="ru">Включено отслеживание курсора</caption>
+      <caption xml:lang="nl">Cursor volgen ingeschakeld</caption>
+      <caption xml:lang="it">Tracciamento del puntatore abilitato</caption>
+      <caption xml:lang="fr">Suivi du pointeur activé</caption>
+      <caption xml:lang="es">Seguimiento del puntero habilitado</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/herve4m/length/main/data/media/screenshots/right-to-left.png</image>
+      <caption>Right to left ruler orientation</caption>
+      <caption xml:lang="uk">Напрямок лінійки справа-наліво</caption>
+      <caption xml:lang="ru">Ориентация курсора справа налево</caption>
+      <caption xml:lang="nl">Van-rechts-naar-links</caption>
+      <caption xml:lang="it">Orientamento del righello da destra a sinistra</caption>
+      <caption xml:lang="fr">Orientation de la règle de droite à gauche</caption>
+      <caption xml:lang="es">Orientación de la regla de derecha a izquierda</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.10.2" date="2026-05-16">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v0102</url>
+      <description translate="no">
+        <p>Add the vertical or horizontal CSS class to the application window</p>
+      </description>
+    </release>
+    <release version="0.10.1" date="2025-09-29">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v0101</url>
+      <description translate="no">
+        <p>Fix inaccurate measures for the diagonal rulers</p>
+      </description>
+    </release>
+    <release version="0.10.0" date="2025-09-22">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v0100</url>
+      <description translate="no">
+        <p>
+          Disable middle click for locking the position of the mouse tracker.
+          Now only the P keyboard shortcut remains to lock the tracker.
+        </p>
+        <p>Add angles measurement</p>
+        <p>The grid and diagonal rulers can now be disabled from the Preferences dialog</p>
+        <p>Add keyboard shortcuts for showing/hiding the markings (M), the grid (G), the diagonal rulers (I), and the angles (A)</p>
+        <p>Add a keyboard shortcut (D) for switching between left-to-right and right-to-left</p>
+      </description>
+    </release>
+    <release version="0.9.0" date="2025-08-13">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v090</url>
+      <description translate="no">
+        <p>Change orientation on middle click</p>
+        <p>Add Ukrainian and Russian translations</p>
+        <p>Prevent the scaling factor from being set to zero</p>
+      </description>
+    </release>
+    <release version="0.8.1" date="2025-07-02">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v081</url>
+      <description translate="no">
+        <p>Add the scaling factor feature, which enables to scale the units to adjust the ruler to the object to measure when this object is zoomed, for example</p>
+        <p>Fix the alpha channel being ignore when opacity is set to zero</p>
+      </description>
+    </release>
+    <release version="0.7.0" date="2025-06-25">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v070</url>
+      <description translate="no">
+        <p>Add the relative percentage unit, which enables percentage to be relative to the dimensions of the ruler itself</p>
+        <p>The alpha channel of the custom background color is now used for the ruler opacity</p>
+      </description>
+    </release>
+    <release version="0.6.0" date="2025-04-02">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v060</url>
+      <description translate="no">
+        <p>Use version 48 of the GNOME runtime</p>
+      </description>
+    </release>
+    <release version="0.5.0" date="2025-03-17">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v050</url>
+      <description translate="no">
+        <p>Add Italian and Dutch translations</p>
+      </description>
+    </release>
+    <release version="0.4.0" date="2025-02-19">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v040</url>
+      <description translate="no">
+        <p>Add a control in the main menu to change the orientation of the ruler</p>
+        <p>Add help pages</p>
+        <p>Add diagonal rulers when the ruler window is extended</p>
+      </description>
+    </release>
+    <release version="0.3.1" date="2025-02-05">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v031</url>
+      <description translate="no">
+        <p>
+          In some environments, the system does not provide a monitor description, which resulted in Length ignoring the monitor.
+          With this release, Length uses the monitor manufacturer and model when the description is not available.
+       </p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2025-02-05">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v030</url>
+      <description translate="no">
+        <p>Add picas and points as units for the ruler</p>
+        <p>Enable calibration of each monitor in a multiple display environment</p>
+      </description>
+    </release>
+    <release version="0.2.2" date="2025-01-31">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v022</url>
+      <description translate="no">
+        <p>Fix wrong monitor detection</p>
+      </description>
+    </release>
+    <release version="0.2.1" date="2025-01-31">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v021</url>
+      <description translate="no">
+        <p>Fix quality issues</p>
+        <p>Fix issue for when the monitor details cannot be retrieved</p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2025-01-31">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v020</url>
+      <description translate="no">
+        <p>Fix quality issues</p>
+        <p>Italian translation</p>
+      </description>
+    </release>
+    <release version="0.1.1" date="2025-01-31">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v011</url>
+      <description translate="no">
+        <p>Fix invisible menu button in dark mode</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2025-01-31">
+      <url type="details">https://github.com/herve4m/length/blob/main/CHANGELOG.rst#v010</url>
+      <description translate="no">
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
+</component>

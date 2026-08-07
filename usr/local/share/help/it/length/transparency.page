@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="transparency" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Regola la trasparenza per misurare gli oggetti dietro il righello.</desc>
+  </info>
+
+  <title>Regolazione della trasparenza</title>
+
+  <media type="image" src="figures/transparency.png">
+    <p>Rendere il righello semitrasparente</p>
+  </media>
+
+  <p>Per aiutarti a misurare gli oggetti dietro il righello, puoi regolarne l'opacità. Rendendo il righello semitrasparente, puoi vedere gli oggetti dietro di esso.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item>
+      <p>Regola la percentuale di opacità. Un'opacità del 100% significa che il righello non è affatto trasparente e maschera gli oggetti dietro di esso.</p>
+    </item>
+  </steps>
+
+  <p>In alternativa, puoi regolare l'opacità utilizzando i tasti freccia: <key>Sinistra</key> o <key>Giù</key> per ridurre l'opacità e rendere il righello semitrasparente, e <key>Destra</key> o <key>Su</key> per aumentare l'opacità.</p>
+
+  <p>Per evitare che l'oggetto da misurare copra il righello, fare clic con il pulsante destro del mouse sul righello e selezionare <gui style="menuitem">Sempre in primo piano</gui>:</p>
+
+  <media type="image" src="figures/always-on-top.png">
+    <p>Utilizzare il menu contestuale e selezionare <gui style="menuitem">Sempre in primo piano</gui>.</p>
+  </media>
+</page>

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+/home/daniel/bin/waybar -c /home/daniel/.config/waybar/left.jsonc &
+LEFT=$!
+
+/home/daniel/bin/waybar -c /home/daniel/.config/waybar/right.jsonc &
+RIGHT=$!
+
+trap "kill $LEFT $RIGHT" EXIT
+
+wait

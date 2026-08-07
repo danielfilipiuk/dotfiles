@@ -11,6 +11,9 @@ RestartSec=3s
 # keep trying till session is ready
 StartLimitInterval=60
 StartLimitBurst=30
+LogLevelMax=err
+StandardOutput=null
+StandardError=null
 
 
 # inherit env from graphical session

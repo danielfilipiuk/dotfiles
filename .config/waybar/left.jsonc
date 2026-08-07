@@ -1,0 +1,50 @@
+//*///////////////////////////////*/
+//*    WAYBAR CONFIG LEFT MONITOR*/
+//*//////////////////////////////*/
+
+// -*- mode: jsonc -*-
+
+{
+  "name": "Waybar",
+  "layer": "top",
+  "output": "DVI-D-1",
+
+  "position": "top",
+  "height": 24,
+  "spacing": 5,
+
+  "expand-left": false,
+  "expand-right": false,
+  "fixed-center": false,
+
+  "mode": "dock",
+  "reload_style_on_change": false,
+
+  "margin-top": 5,
+  "margin-bottom": 5,
+
+  "markup": true,
+///////////////////////////////////////////////////////////////////////////////////////
+  "modules-left": [
+    "wlr/taskbar"
+  ],
+
+///////////////////////////////////////////////////////////////////////////////////////
+"wlr/taskbar": {
+	"all-outputs": false,
+	"markup": true,
+	"truncate": false,
+	"format": "{icon}",
+	"expand": false,
+	"icon-size": 16,
+	"icon-theme": "Papirus",
+	"tooltip": true, 
+	"tooltip-format": "{title}",
+	"on-click": "activate",
+	"on-click-right": "close",
+	//"on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({window=\"e+1\"})' ",
+        //"on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({window=\"e-1\"})' ",
+	
+},
+///////////////////////////////////////////////////////////////////////////////////////
+}

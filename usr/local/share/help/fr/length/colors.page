@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="colors" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sélectionner les couleurs de la règle.</desc>
+  </info>
+
+  <title>Changer les couleurs</title>
+
+  <media its:translate="no" type="image" src="figures/colors.png">
+    <p><app>Length</app> in different colors</p>
+  </media>
+
+  <p>Vous pouvez changer la couleur de la règle et de ses inscriptions.</p>
+
+  <steps>
+    <item><p>Cliquer le menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) dans le coin gauche de la règle.</p></item>
+
+    <item><p>Sélectionner <gui style="menuitem">Préférences</gui>.</p></item>
+
+    <item>
+      <p>Dans la page <gui style="tab">Général</gui>, dans la section <gui style="group">Apparence</gui>, décocher <gui style="button">Utiliser les couleurs par défaut</gui>. Quand <gui style="button">Utiliser les couleurs par défaut</gui> est actif, la règle est blanche et les inscriptions sont noires. Quand <gui style="button">Utiliser les couleurs par défaut</gui> est inactif, vous pouvez choisir vos couleurs.</p>
+    </item>
+
+    <item>
+      <p>Cliquer sur <gui style="button">Avant-plan</gui> pour choisir la couleur des inscriptions. Dans la fenêtre des couleurs, choisir une couleur disponible. Si les couleurs ne conviennent pas, cliquer <gui style="button">Personalisé</gui> (<gui style="button">+</gui>) et entrer les composants rouges, verts et bleus de la couleur.</p>
+    </item>
+
+    <item><p>Cliquer sur <gui style="button">Arrière-plan</gui> pour choisir la couleur de la règle.</p></item>
+
+    <item><p>Fermer la fenêtre <gui>Préférences</gui>.</p></item>
+  </steps>
+</page>

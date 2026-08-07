@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="fonts" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Seleziona un font per i segni del righello.</desc>
+  </info>
+
+  <title>Cambiare i Font</title>
+
+  <media type="image" src="figures/fonts.png">
+    <p><app>Length</app> utilizzando diversi font per le marcature</p>
+  </media>
+
+  <p>È possibile modificare il font utilizzato per i segni del righello.</p>
+
+  <steps>
+    <item><p>Fare clic sul pulsante del menu (<media its:translate="no" type="image" src="figures/open-menu-symbolic.svg"/>) nell'angolo sinistro del righello.</p></item>
+
+    <item><p>Vai a <gui style="menuitem">Preferenze</gui>.</p></item>
+
+    <item>
+      <p>Nella pagina <gui style="tab">Generale</gui>, nella sezione <gui style="group">Aspetto</gui>, deseleziona la casella di controllo <gui style="button">Usa carattere predefinito</gui>. Quando <gui style="button">Usa carattere predefinito</gui> è abilitato, il righello utilizza il carattere fornito con <app>Lunghezza</app>. Quando la casella di controllo <gui style="button">Usa carattere predefinito</gui> è deselezionata, è possibile selezionare un carattere personalizzato.</p>
+    </item>
+
+    <item>
+      <p>Per selezionare un font per i segni del righello, clicca su <gui style="button">Carattere personalizzato</gui>. Nella finestra di selezione del font, puoi scegliere un font e una dimensione.</p>
+    </item>
+
+    <item><p>Chiudere la finestra di dialogo <gui>Preferenze</gui>.</p></item>
+  </steps>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="adjusting" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#use"/>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Regola la posizione del righello per misurare con precisione gli oggetti.</desc>
+  </info>
+
+  <title>Regolazione accurata del righello</title>
+
+  <p>Per misurare con precisione gli oggetti, potrebbe essere necessario posizionare con precisione il righello.</p>
+
+  <p>Per allineare il righello alla finestra dell'oggetto, trascinalo tenendo premuto <key>Ctrl</key>. Quando il righello si avvicina al bordo dell'oggetto, si aggancia alla finestra.</p>
+
+  <p>È anche possibile spostare il righello utilizzando i tasti freccia. Premere <keyseq><key>Alt</key><key>F7</key></keyseq> e utilizzare i tasti freccia per spostare il righello. Per una regolazione più precisa, premere <key>Ctrl</key> mentre si sposta il righello con i tasti freccia. Premere <key>Esc</key> per uscire dalla modalità tastiera.</p>
+
+  <p>Per evitare che l'oggetto da misurare copra il righello, fare clic con il pulsante destro del mouse sul righello e selezionare <gui style="menuitem">Sempre in primo piano</gui>:</p>
+
+  <media type="image" src="figures/always-on-top.png">
+    <p>Utilizzare il menu contestuale e selezionare <gui style="menuitem">Sempre in primo piano</gui>.</p>
+  </media>
+</page>

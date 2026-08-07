@@ -1,0 +1,13 @@
+[Unit]
+Description=Persist Wayland clipboard
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=/usr/local/bin/wl-clip-persist-inkscape
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
+

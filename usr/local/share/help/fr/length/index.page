@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" xml:lang="fr">
+
+  <info>
+    <title type="link" role="trail">Longueur</title>
+    <title type="link">Longueur</title>
+    <title type="text">Longueur</title>
+
+    <keywords>length, longueur, mesurer, règle</keywords>
+
+    <revision pkgversion="0.4.0" docversion="0.1.0" version="0.1.0" date="2025-02-08" status="final"/>
+
+    <credit type="author copyright">
+      <name its:translate="no">Hervé Quatremain</name>
+      <years>2025</years>
+    </credit>
+
+    <!--
+    <credit type="translator">
+      <name its:translate="no">Your Name</name>
+      <years>2025</years>
+    </credit>
+    -->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Apprendre à utiliser <app>Longueur</app> pour mesurer des objets à l’écran.</desc>
+  </info>
+
+  <title>
+    <media its:translate="no" type="image" width="48px" height="48px" src="figures/io.github.herve4m.Length.svg"/>
+    Length
+  </title>
+
+  <p><app>Longueur</app> permet de mesurer des distances à l’écran pour vous aider à composer et inspecter des structures et des images.</p>
+
+  <section id="start" style="2column">
+    <title>Débuter</title>
+  </section>
+
+  <section id="use" style="2column">
+    <title>Utiliser <app>Longueur</app></title>
+  </section>
+
+  <section id="preferences" style="2column">
+    <title>Préférences</title>
+  </section>
+
+
+</page>
