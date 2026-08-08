@@ -1,0 +1,84 @@
+* {
+/*otf-font-awesome` is required to be installed for icons */
+	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
+/*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+	font-size: 12px;
+}
+/*The following classes are applied to the entire Waybar rather than just the window widget:*/
+window#waybar {
+	background-color: transparent;
+	font-family: inherit;
+	/*border-bottom: 3px solid rgba(255, 255, 255, 0.05); */
+	color: rgba(248,246,242,.9);
+	transition: all .25s cubic-bezier(.4,0,.2,1);
+	
+	}
+window#waybar.hidden {opacity: 0.5;}
+window#waybar.empty {background-color: transparent;color: transparent;}
+window#waybar.solo {background-color: transparent;}
+window#waybar.termite {background-color: #3F3F3F;}
+window#waybar.chromium {background-color: #000000;border: none;}
+window#waybar.empty #window {background-color: transparent;}
+window#waybar.toplevel-active {background: #60406c;}
+window#waybar
+
+/*A style with the .module selector would affect all the modules. In practice, you may prefer to use more specific label.module and box.module selectors.*/
+label.module {
+	padding: 0px 10px;   
+	border-radius: 16px; 
+	background-color: rgba(0, 0, 0, .25);
+	border: 1px rgba(0,0,0,0.10);
+	color: rgba(248,246,242,.85);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	transition: all .25s cubic-bezier(.4,0,.2,1);
+}
+box.module button {}
+box.module button:hover {
+	border: 1px rgba(248,246,242,0.10);
+	background: rgba(248,246,242,.95);
+}
+box.module button:active {}
+box.module button:active:hover {}
+
+
+
+tooltip {
+	background: rgba(248,246,242,.75);
+	color: rgba(30,30,30,.90);
+	border-top:    4px solid rgba(181,125,170,.25);
+	border-left:   4px solid rgba(181,125,170,.35);
+	border-right:  4px solid rgba(181,125,170,.55);
+	border-bottom: 4px solid rgba(181,125,170,.75);
+	border-radius: 16px;
+}
+tooltip label {
+  	padding: 2px 6px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+menu {
+	background: rgba(248,246,242,.75);
+	color: rgba(30,30,30,.90);
+	border: 1px rgba(248,246,242,0.65);
+	box-shadow: 0 1px 2px rgba(30,30,30,.20);
+}
+menuitem {
+	color: rgba(30,30,30,.90);
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+/* WLR / TASKBAR */
+#taskbar {}
+#taskbar button{
+    	background: rgba(248,246,242,.45);
+	}
+#taskbar button:hover {}
+#taskbar button.active {
+	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.85)  ;
+}
+#taskbar button.active:hover {
+	border: 1px rgba(238, 130, 238,.25);
+	background: rgba(238, 130, 238,.90)
+}
+

@@ -14,13 +14,13 @@ button {
     margin: 10px 10px;
     padding: 0px 0px;   
     border-radius: 36px;
-    border-color: rgba(30, 30, 30, 0.15);
+    border-color: rgba(248,246,242,.05);
     /*border-color: rgba(24, 11, 33, 0.50);*/
     border-style: solid;
-	border-width: 3px;
-        text-shadow: 0 1px 2px rgba(248, 246, 242, 0.15);
+	border-width: 3px ;
+        text-shadow: 1px 2px 2px rgba(35, 45, 35, 0.25);
 	color:rgba(248, 246, 242, 0.85) ;
-	background-color: rgba(30, 30, 30, 0.65);
+	background-color: rgba(248,246, 242, 0.25);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 40%;
@@ -31,7 +31,7 @@ button:hover {
 	outline-style: none;
   	border-color: rgba(248, 246, 242, 0.55) ;
   	color: rgba(30,30,30,.90);
-  	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+  	text-shadow: 1px 1px 2px rgba(30,45,30,.15);
 }
 
 button:focus { 
@@ -39,7 +39,7 @@ button:focus {
 	outline-style: none;
   	border-color: rgba(248, 246, 242, 0.75) ;
   	color: rgba(30,30,30,.90);
-  	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+  	text-shadow: 1px 2px 2px rgba(30,30,30,.15);
 
 }
 
@@ -48,7 +48,7 @@ button:active {
 	outline-style: none;
   	border-color: rgba(248, 246, 242, 0.75) ;
   	color: rgba(30,30,30,.90);
-  	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+  	text-shadow: 1px 2px 2px rgba(30,30,30,.15);
 	/*background-color: rgba(96, 46, 100, 0.70);
 	outline-style: none;
   border-color: #d492d8;*/

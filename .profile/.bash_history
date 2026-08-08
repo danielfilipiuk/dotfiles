@@ -45268,3 +45268,299 @@ systemctl --user restart snappy-switcher.service
 audio-detective™.sh 
 btop
 jf
+jf
+btop
+ps aux | grep wl-paste
+ps aux | grep cliphist
+cat /home/daniel/dotfiles/.local/bin/cliphist-daemon 
+cat /home/daniel/.config/systemd/user/cliphist-daemon.service 
+wl-clip-persist
+micro .config/systemd/user/cliphist-daemon.service 
+micro bin/cliphist-daemon 
+apt-file search wl-clip-persist
+systemctl --user restart cliphist-daemon.service 
+cd dow
+cd downloads/
+7z x wl-clip-persist-0.5.0.zip 
+cd wl-clip-persist-0.5.0/
+ls
+ll
+cat README.md 
+cargo build --release
+cd~
+cd ~
+systemctl --user daemon-reload 
+systemctl --user enable --now wl-clip-persist.service 
+systemctl --user daemon-reload 
+systemctl --user status wl-clip-persist.service 
+systemctl --user status wl-clip-persist.service
+systemctl --user status wl-clip-persist.service
+cat /usr/local/bin/wl-clip-persist-inkscape 
+cat .config/systemd/user/wl-clip-persist.service 
+cd downloads/
+cd wl-clip-persist-0.5.0/
+cargo build --clean
+cargo build --wipe
+cargo clean
+cd ~/dotfiles/
+git status
+git add .
+git commit -m "installed wl-clip-persist service, cliphist, compiled waybar (added cava support) and separated config into 2 jsonc files, one for each monitor. installed git as brave app. Minor mods in various user serivces"
+git status
+git push
+./linux-kernel-config-and-build 
+exit
+btop
+jf
+iwconfig
+nl80211
+apt-file search nl80211
+cd downloads/
+git clone https://github.com/jiixyj/epoll-shim.git
+cd epoll-shim/
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build .
+ctest --output-on-failure 
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. 
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake
+cmake .
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . -O3
+cmake --build . -v --clean-first
+ctest --output-on-failure 
+cd ..
+cd ..
+git clone https://github.com/juniorrantila/libinotify.git
+cd libinotify/
+meson setup build --optimization 3
+meson build --optimization 3
+meson setup --optimization 3
+meson build setup --optimization 3
+meson build
+meson setup --reconfigure 
+ls
+meson setup build --reconfigure 
+meson build --optimization 3
+ninja -C build
+apt-file search event.h
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja -C build
+ninja --version
+ninja --help
+ninja -C build
+ninja -C build
+ninja -C build
+cd ..
+cd epoll-shim/
+ll
+cmake --build . -v --target install
+cd build/
+cmake --build . -v --target install
+cmake install
+cmake . install
+cmake --build . -v
+cmake clean
+cmake --system-information 
+cmake --build .
+cmake --build . --target install
+cmake --build . install
+hstr 
+make install -v
+cmake install -v
+cmake install
+make install
+cmake . --target install
+cmake --help
+cmake . --install
+cmake --install
+cmake --install -v
+cmake . --install -v
+cmake . --build --install -v
+cmake . --build --install
+cmake --build . --target install
+cmake --build . --target help
+cmake .. -DCMAKE_BUILD_TYPE=release
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
+cmake --build .
+cmake --build . --target install
+make install
+head -40 ../CMakeLists.txt
+grep -R "install(" ..
+find . -name "libepoll*"
+find . -name "libep*"
+find . -name "lib*"
+find .. -name "lib*"
+git rev-parse HEAD
+git remote -v
+cmake --build .
+ls -R src
+ls src
+cat ../src/CMakeLists.txt
+journalctl -k | grep "wireless extensions"
+lspci -nnk | grep -A4 -i network
+iw dev
+sudo apt install iw
+iw dev
+sudo iw dev
+iw dev wlan0 station dump
+sudo iw dev wlan0 station dump
+sudo iw dev wlan0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+sudo iw dev wlp38s0 station dump
+iw dev wlp38s0 station dump
+micro ~/.config/waybar/right.jsonc 
+/usr/sbin/iw dev wlp38s0 station dump
+micro ~/.config/waybar/right.jsonc 
+lsmod
+cd downloads/
+hstr 
+git clone https://github.com/Alexays/Waybar.git
+cd Waybar/
+cat README.md 
+meson --help
+meson setup --help
+cat README.md 
+meson setup build -O3
+meson setup build --optimization O3
+meson setup build --optimization 3
+meson setup build --optimization 3 --reconfigure
+meson setup build --wipe
+meson build --wipe
+meson --wipe
+meson build clean
+meson build --clean
+meson clean
+meson setup build --optimization 3 --reconfigure
+cd ..
+git clone https://github.com/Alexays/Waybar.git
+cd Waybar/
+meson setup build --optimization 3 --reconfigur
+meson setup build --optimization 3 --reconfigure
+cat README.md 
+ninja -C build  -v
+meson setup build --optimization 3 --reconfigure
+meson setup build --wipe 
+meson setup build --optimization 3 --reconfigure
+ninja -C build 
+cd build/
+./waybar --version
+./waybar
+./waybar --config ~/.config/waybar/right.jsonc 
+./waybar --config ~/.config/waybar/left.jsonc 
+cat ../README.md 
+ninja -C build install -v
+cd ,,
+cd ..
+ninja -C build install -v
+waybar
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+pastel color #2a202e
+pastel color 2a202e
+pastel color eb4d4b
+pastel color tomato
+pastel color f0932b
+pastel color orange
+hstr 
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+pastel --color-picker hyprpicker pick
+btop
+jf
+wlogout 
+exec
+exec jf
+exec /usr/local/bin/jf
+alias
+exec sudo journalctl -b -W --no-tail -f
+exec -- sudo journalctl -b -W --no-tail -f

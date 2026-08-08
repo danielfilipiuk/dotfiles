@@ -1,617 +1,177 @@
+/* RIGHT MONITOR WAYBAR CONFIGURATION */
 
-
+/* GLOBAL SETTINGS */
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
-/*    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-    font-size: 12px;
+	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
+	font-size: 12px; 
+	 transition:
+    		background-color 250ms ease-out,
+    		color 250ms ease-out,
+    		border-color 250ms ease-out;
 }
-
 /*The following classes are applied to the entire Waybar rather than just the window widget:*/
+window#waybar {background-color: transparent;}
+window#waybar.hidden {opacity: 0.5;}
+window#waybar.empty {background-color: transparent;color:transparent;}
+window#waybar.solo {background-color: transparent;}
+window#waybar.termite {background-color: #3F3F3F;}
+window#waybar.chromium {background-color: #000000;border: none;}
+window#waybar.empty #window {background-color: transparent;}
+window#waybar.toplevel-active {background: #60406c;}
 
-window#waybar {
-    background-color: transparent;
-  	font-family: inherit;
-    /*border-bottom: 3px solid rgba(255, 255, 255, 0.05); */
-    color: rgba(255, 255, 255, 1);
-transition: all .25s cubic-bezier(.4,0,.2,1);
-
-}
-window#waybar.hidden {
-    opacity: 0.5;
-}
-window#waybar.empty {
-    background-color: transparent;
-    color: transparent;
-}
-window#waybar.solo {
-    background-color: transparent;    
-}
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-window#waybar.empty #window {
-	background-color: transparent;	 
-}
-window#waybar.toplevel-active {
-	background: #60406c;
-}
-
-
-/* GENERAL SETTINGS  */
-
-/*#battery,
-#cpu,
-#memory,
-#disk,
-#backlight,
-#wireplumber,
-#custom-media,
-#mode,
-#scratchpad,
-#power-profiles-daemon, 
-#taskbar,
-#workspaces,
-#taskbar,
-#workspaces,*/
-#workspaces,
-#temperature,
-#cpu,
-#memory,
-#custom-gpu-usage,
-#mpd,
-#pulseaudio,
-#keyboard-state,
-#idle_inhibitor,
-#inhibitor,
-#network,
-#submap,
-#disk,
-#tray,
-#clock {
-    padding: 0px 10px;   
-    border-radius: 16px; 
-    background-color: rgba(0, 0, 0, .25);
-    border: 1px rgba(0,0,0,0.10);
-    color: rgba(248,246,242,.9);
-    text-shadow: 0 1px 2px rgba(0,0,0,.25);
-    transition: all .25s cubic-bezier(.4,0,.2,1);
-   /* transition:
-    background-color 250ms ease-out,
-    color 250ms ease-out,
-    border-color 250ms ease-out;*/
-}
-/*
-label.module {
-   background: transparent;
-    border: none;
-    padding: 0 0;
-    min-width: 10px;
-    border-radius: 0px;  
-    margin: 0;
-    color: transparent;
-}
-box.module button:hover {
-       background: transparent;
-    border: none;
-    padding: 0 0;
-    min-width: 10px;
-    border-radius: 0px;  
-    margin: 0;
-    color: transparent;
-}
-*/
-
-
-/* TOOLTIP OPTIONS */
-
+/* TOOLTIPS */
 tooltip {
 	background: rgba(248,246,242,.75);
-	color: rgba(30,30,30,.90);
-	border-top:    4px solid rgba(181,125,170,.25);
-	border-left:   4px solid rgba(181,125,170,.35);
-	border-right:  4px solid rgba(181,125,170,.55);
+	color: rgba(48,30,46,.9);
+	border-top:    4px solid rgba(181,125,170,.35);
+	border-left:   4px solid rgba(181,125,170,.45);
+	border-right:  4px solid rgba(181,125,170,.65);
 	border-bottom: 4px solid rgba(181,125,170,.75);
-	border-radius: 16px;
-}
+	}
 tooltip label {
-  	padding: 2px 6px;
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
+	padding: 3px 10px;
+	text-shadow: 0 1px 2px rgba(42,32,46,.25);
+	}
 
-
- /* MENUS */
-
-menu {
+/* MENUS */
+menu {	
 	background: rgba(248,246,242,.75);
-	color: rgba(30,30,30,.90);
-	border: 1px rgba(248,246,242,0.65);
-	box-shadow: 0 1px 2px rgba(30,30,30,.20);
-}
+	color: rgba(48,30,46,.9);
+	border: 3px solid rgba(248,246,242,0.25);
+	box-shadow: 0 1px 2px rgba(42,32,46,.25);
+	}
 menuitem {
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-
-
-/* WORKSPACES  */
-
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0px;
-}
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
-}
-
-
-
-#workspaces {
-	background-color: transparent;
-	padding:  0 0px;   
-
+	color: rgba(48,30,46,.9);
+	text-shadow: 0 1px 2px rgba(42,32,46,.25);
+	}
 	
-}
-#workspaces button {
- 	border: 1px rgba(0,0,0,0.20);
-    	color: rgba(255, 255, 255, .85);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	background: rgba(248,246,242,.45);
-	padding: 0px 10px;  
-	border-radius: 16px;  
-	-gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.50);
+/* MACROS */
+button {border-radius: 16px;}
+box {border-radius: 16px;}
+label.module {
+	border-top:    3px solid rgba(248,246,242,0.01);
+	border-left:   3px solid rgba(248,246,242,0.03);
+	border-right:  3px solid rgba(248,246,242,0.04);
+	border-bottom: 3px solid rgba(248,246,242,0.05);
+	border-radius: 16px;
+	text-shadow: 1px 1px 1px rgba(248,246,242,0.15);
+	color: rgba(48,30,46,.9);
+	padding: 3px 10px;
+	background: rgba(248,246,242,.55);}
+label.module:hover {
+	background: rgba(248,246,242,1);
+	text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
 	
-	
-	 
-}
-#workspaces button.empty {
-   background: rgba(0,0,0,0);
-    border: none;
-    padding: 0 0;
-    min-width: 0px;
-    border-radius: 0px;  
-    margin: 0;
-    color: rgba(0,0,0,0);
-      box-shadow: none;
-}
-
-
-#workspaces button.visible {
-  border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.85);
-}
-#workspaces button:hover {
-  border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.85);
-}
-#workspaces button.active {
- 	border: 1px rgba(238, 130, 238,.25);
-	background: rgba(238, 130, 238,.85)  ;
-}
-#workspaces button.urgent {
-    background-color: #ca9ee6;
-    color: #2d3436;
-}
-#workspaces .taskbar-window {
-background-color: transparent;
-	color: transparent;
-}
-#workspaces .taskbar-window.active {
-	border: 1px rgba(238, 130, 238,.25);
-	background: rgba(238, 130, 238,.85)  ;
-}
-#workspaces .workspace-label  {
-   background: rgba(0,0,0,0);
-    border: none;
-    padding: 0 0;
-    min-width: 0;
-    border-radius: 0px;  
-    margin: 0;
-    color: rgba(0,0,0,0);
-}
-
-
-
-
+/* MODULES SETTINGS */
 /* WLR / TASKBAR */
-
-#taskbar {
-	background-color: transparent;
-	padding:  0 0px;   
-	  
-}
-#taskbar.empty {
-	background-color: transparent;
-}
-#taskbar button{
-	border: 1px rgba(0,0,0,0.20);
-    	color: rgba(255, 255, 255, .85);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.15);
-	background: rgba(248,246,242,.45);
-	padding: 0px 10px;  
-	border-radius: 16px;
-}
-#taskbar button:hover {
-	border: 1px rgba(248,246,242,0.10);
-	background: rgba(248,246,242,.85);
-}
-#taskbar button.active {
-	border: 1px rgba(238, 130, 238,.25);
-	background: rgba(238, 130, 238,.85)  ;
-}
-
-#taskbar button.active:hover {
-	border: 1px rgba(238, 130, 238,.25);
-	background: rgba(238, 130, 238,.90)
-
-}
-
-
-/* WINDOWS  */
-
-
-#window {
-     background-color: rgba(0, 0, 0, 0);
-     color: rgba(255, 255, 255, 1);
-     -gtk-icon-effect: dim;
-     opacity: 0.75;     
-    
-}
-#window:active {
-/*    background-color: #ca9ee6;*/
-	background-color: #ca9ee6;
-	-gtk-icon-effect: highlight;
-}
-#window:hover {
-    background: #60406c;
-    -gtk-icon-effect: highlight;
-}
-#window.empty {
-    background-color: rgba(0, 0, 0, 0);    
-}
-
-
-/* MPD  */
-
-
-#mpd {
-border: 1px rgba(0,0,0,0.20);
-}
-#mpd.playing {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#mpd.playing:hover {
-	background: rgba(248,246,242,.95);
-
-}
-#mpd.paused {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.45);
-	color: rgba(30,30,30,.55);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#mpd.stopped {
-	border: 1px rgba(0,0,0,0.20);
-    color: rgba(248,246,242,.5);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#mpd.disconnected {
-	border: 1px rgba(0,0,0,0.20);
-    	background-color: rgba(0, 0, 0, .50);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-    	color: #f03a17;
-}
-#mpd:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	color: rgba(30,30,30,.90);
-}
-
-
-/* PULSEAUDIO  */
-
-
-#pulseaudio {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#pulseaudio:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#pulseaudio.muted {
-      	border: 1px rgba(248,246,242,0.05);
-      	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#pulseaudio.muted:hover {
-	background: rgba(248,246,242,.95);
-
-}
-
-/* WIREPLUMBER  */
-
-
-#wireplumber {
-    background-color: transparent;
-    margin: 0px 3px;
-} 
-#wireplumber.muted {
-    /*background-color: #f53c3c;*/
-    background-color: #ca9ee6;
-    color: #2d3436;
-}
-
-
-/* KEYBOARD STATE  */
-
-
-#keyboard-state {
-	background: transparent;
-        padding:  0 0px;
-        text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	border: 0px rgba(0,0,0,0.20);
-    color: rgba(248,246,242,.5);
-}
-#keyboard-state:hover {
-
-	    color: rgba(248,246,242,.95);
-text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#keyboard-state > label {
-        background: rgba(0, 0, 0, .25);
-        border-radius: 16px;
-        text-shadow: 0 1px 2px rgba(0,0,0,.25);
-        padding:  0 10px;
-}
-#keyboard-state > label.locked {
-      	border: 1px rgba(248,246,242,0.05);
-	border-radius: 16px;
-	padding:  0 10px;
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#keyboard-state > label.locked:hover {
-	background: rgba(248,246,242,.95);
-
-}
-
+#taskbar {}
+#taskbar.empty {background-color: transparent;}
+#taskbar button{padding: 3px 10px;background: rgba(248,246,242,.65);-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#taskbar button.active {background: rgba(238, 130, 238,.85);-gtk-icon-effect: highlight;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#taskbar button:hover {background: rgba(248,246,242,1);-gtk-icon-effect: highlight;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+ 
  /* SUBMAP */
-
-
-#submap {
-	background: rgba(248,246,242,.85);
-	border: 1px rgba(248,246,242,0.05);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	color: rgba(30,30,30,.90);
-}
-
-
-/* NETWORK  */
-
-
-#network {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#network:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#network.disconnected {
-      	border: 1px rgba(248,246,242,0.05);
-    	background: #ffb300;   
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-
-#network.disconnected:hover {
-      	border: 1px rgba(248,246,242,0.05);
-    	background: #ffd700;   
-	color: rgba(30,30,30,.90);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-
-/* TRAY  */
-
-
-#tray {
-	border: 1px rgba(0,0,0,0.20);
- 	border-radius: 16px;
- 	padding:  0 12px;    
- 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
- 	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#tray > .passive {
-      	border: 1px rgba(248,246,242,0.05);
-    	-gtk-icon-effect: dim;
-   	border-radius: 16px;
-   	color: rgba(30,30,30,.90);
-   	opacity: .75;
-   	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#tray:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-	opacity: 1;
-	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#tray > .needs-attention {
-      	border: 1px rgba(248,246,242,0.05);
-      	-gtk-icon-effect: highlight;
-      	opacity: 1;
-      	border-radius: 16px;
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-	 -gtk-icon-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-
-
-/* IDLE INHIBITOR  */
-
-
-#idle_inhibitor {
-	border: 1px rgba(0,0,0,0.20);
-     	padding:  0 5px;    
-     	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#idle_inhibitor.activated {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#idle_inhibitor.activated:hover {
-	background: rgba(248,246,242,.95);
-
-}
-
-#idle_inhibitor:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-}
-
-/* INHIBITOR  */
-
-
-#inhibitor {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	border: 1px rgba(0,0,0,0.20);
-     	padding:  0 5px;   
-      	     color: rgba(248,246,242,.5);
-}
-#inhibitor.activated {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#inhibitor:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#inhibitor.activated:hover {
-	background: rgba(248,246,242,.95);
-
-}
-
-
-/* CLOCK  */
-
-
-#clock {
-	border: 1px rgba(0,0,0,0.20);
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#clock:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-
-
-/* CPU */
-
-
-#cpu {
-	min-width: 100px;
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#cpu:hover {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-} 
-
-/* MEMORY */
-
-#memory {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	border: 1px rgba(0,0,0,0.05);
-        background: rgba(0, 0, 0, .25);
-}
-#memory:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-} 
-    
-/* GPU USAGE */
-
-
-#custom-gpu-usage {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-        background: rgba(0, 0, 0, .25);
-        border: 1px rgba(0,0,0,0.05);
-}
-#custom-gpu-usage:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-} 
+#submap {background: rgba(248,246,242,.95);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#submap:hover {background: rgba(248,246,242,1);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
 
 /* TEMPERATURE */
+#temperature {}
+#temperature.warning {background-color: #f0932b;}
+#temperature.warning:hover {background-color: #ffa500;}
+#temperature.critical {	background-color: #eb4d4b;}
+#temperature.critical:hover {	background-color: #ff6347;}
 
-#temperature {
-	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-	border: 1px rgba(0,0,0,0.20);
-}
-#temperature:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
-#temperature.warning {
-      	border: 1px rgba(248,246,242,0.05);
-    	background-color: #f0932b;
-    	color: rgba(30,30,30,.90);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-#temperature.critical {
-      	border: 1px rgba(248,246,242,0.05);
-    	background-color: #eb4d4b;
-    	color: rgba(30,30,30,.90);
-    	text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
+/* CPU */
+#cpu {min-width: 100px;}
 
+/* MEMORY */
+#memory {}
 
+/* GPU USAGE */
+#custom-gpu-usage {}
+#custom-gpu-usage:hover {background: rgba(248,246,242,1);text-shadow: 1px 1px 1px rgba(48,30,46,.15);}
+
+/* CAVA */
+#cava {background: rgba(248,246,242,.75); color: rgba(295, 100, 255,.55);}
+#cava:hover {background: rgba(248,246,242,1); color: rgba(295, 100, 255,.95);}
+
+/* MPD  */
+#mpd {}
+#mpd.playing {background: rgba(248,246,242,95);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.playing:hover {background: rgba(248,246,242,1);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.paused {background: rgba(248,246,242,.85);color: rgba(30,30,30,.5);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.paused:hover {background: rgba(248,246,242,1);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.stopped {color: rgba(30,30,30,.5);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.stopped:hover {background: rgba(248,246,242,1);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.disconnected {color: #ffb300;text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#mpd.disconnected:hover {background: #ffd700;text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+
+/* PULSEAUDIO  */
+#pulseaudio {}
+#pulseaudio.muted {color: rgba(30,30,30,.5);background: rgba(248,246,242,.95);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#pulseaudio.muted:hover {background: rgba(248,246,242,1);}
+
+/* WIREPLUMBER  */
+#wireplumber {background-color: transparent;} 
+#wireplumber.muted {background: rgba(248,246,242,.95);}
+#wireplumber.muted:hover {background: rgba(248,246,242,1);}
+
+/* KEYBOARD STATE  */
+#keyboard-state {background: rgba(248,246,242,.50);color: rgba(30,30,30,.5)}
+#keyboard-state > label {background: rgba(248,246,242,.25);padding: 3px 10px;border-radius: 16px;border: 3px solid rgba(248,246,242,0.05);text-shadow: 1px 1px 1px rgba(248,246,242,0.15);}
+#keyboard-state > label.locked {background: rgba(248,246,242,.95);border: 3px solid rgba(248,246,242,0.05);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);color: rgba(30,30,30,.75)}
+
+/* TRAY  */
+#tray {background: rgba(248,246,242,.65);padding: 3px 10px;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#tray:hover {background: rgba(248,246,242,1);-gtk-icon-effect: highlight;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#tray > .passive {background: rgba(248,246,242,1);-gtk-icon-effect: dim;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#tray > .needs-attention {background: rgba(248,246,242,1); -gtk-icon-effect: highlight;-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+
+/* NETWORK  */
+#network {}
+#network.disconnected {background: #ffb300;}
+#network.disconnected:hover {background: #ffd700;}
+
+/* INHIBITOR  */
+#inhibitor {color: rgba(30,30,30,.5);}
+#inhibitor.activated {background: rgba(248,246,242,.95);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);color: rgba(30,30,30,.95);}
+#inhibitor.activated:hover {background: rgba(248,246,242,1);color: rgba(30,30,30,1);}
 
 /*  DISK */
+#disk {}
 
-#disk {
-/*padding: 0 8px;
-    border-radius: 8px;*/
-
-   }
-#disk:hover {
-      	border: 1px rgba(248,246,242,0.05);
-	background: rgba(248,246,242,.85);
-	color: rgba(30,30,30,.90);
-}
+/* CLOCK  */
+#clock {text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
 
 
-/* SCRATCHPAD  */
 
 
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-#scratchpad.empty {
-	background-color: transparent;
-}
+
+
+/* WINDOW  */
+#window {}
+#window:active {}
+#window:hover {}
+#window.empty {}
+
+/* IDLE INHIBITOR  */
+#idle_inhibitor {}
+#idle_inhibitor.activated {background: rgba(248,246,242,.95);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
+#idle_inhibitor.activated:hover 
+
+/* hyprland  WORKSPACES  */
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {margin-left: 0px;}
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {margin-right: 0px;}
+#workspaces {}
+#workspaces button {}
+#workspaces button.empty {}
+#workspaces button.visible {}
+#workspaces button:hover {}
+#workspaces button.active {}
+#workspaces button.urgent {background-color: #ca9ee6;color: #2d3436;}
+#workspaces .taskbar-window {}
+#workspaces .taskbar-window.active {}
+#workspaces .workspace-label  {}
 

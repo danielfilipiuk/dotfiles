@@ -326,7 +326,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="cm" />
+       unit="mm" />
     <eventcontext
        id="text"
        usecurrent="1"
@@ -707,7 +707,7 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.inkscape"
+       default="org.inkscape.output.svgz.inkscape"
        append_extension="1"
        enable_preview="1"
        path="/home/daniel/profile/Boutique/planchas/planchas-2026"
@@ -722,7 +722,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/vectorized/" />
+       path="/home/daniel/profile/Boutique/personalizados/maison odisea/" />
     <group
        id="import"
        enable_preview="1"
@@ -1359,10 +1359,10 @@
      org.inkscape.filter.add_nodes.unit="px" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Medium';font-family:'JetBrainsMono Nerd Font';font-size:15.87466667px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#f8f6f2;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.18897638;stroke-linejoin:round;stroke-linecap:round;font-weight:500;stroke:#000000;fill-opacity:0.8509804">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.18897638;stroke-linejoin:round;stroke-linecap:round;font-weight:bold;fill-opacity:0.8509804;stroke:#000000">
     <group
-       width="1184"
-       height="799"
+       width="942"
+       height="211"
        x="0"
        y="0"
        maximized="1"

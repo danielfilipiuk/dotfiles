@@ -49,7 +49,7 @@ hl.config({
     hyprtasking = {
       layout = "grid", --linear
       gap_size = 0,
-      bg_color = 0xfafafa,
+      bg_color = 0x000000,
       border_size = 0,
       exit_on_hovered = false,
       warp_on_move_window = 1,
