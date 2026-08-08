@@ -45564,3 +45564,16 @@ exec /usr/local/bin/jf
 alias
 exec sudo journalctl -b -W --no-tail -f
 exec -- sudo journalctl -b -W --no-tail -f
+cd dotfiles/
+git status
+git add .
+git commit -m "several modifications to theme, now more whitey-wlogout, fuzzel, snappy hypttasking, eye-candy. Reestructuration of style config. Divided and simplified config in left-right. Two waybar mode, created services and disabled original one. Waybar built from git repo, now it works as a charm."
+git push
+hstr 
+hstr 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+waybar --config ~/.config/waybar/right.jsonc 
+mpc crossfade 0
+mpc crossfade 
+jf

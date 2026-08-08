@@ -2,7 +2,7 @@
 <note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
   <title>check RT limits</title>
   
-<text xml:space="preserve"><note-content version="0.1">check RT limits
+<text xml:space="preserve"><note-content version="0.1"><underline>check RT limits</underline>
 
 heck the limits
 
@@ -46,8 +46,8 @@ for the output thread.
   <create-date>2026-08-04T17:43:58.6422449-03:00</create-date>
   <cursor-position>1</cursor-position>
   <selection-bound-position>1</selection-bound-position>
-  <width>633</width>
-  <height>984</height>
+  <width>570</width>
+  <height>700</height>
   <x>120</x>
   <y>132</y>
   <open-on-startup>False</open-on-startup>

@@ -276,7 +276,7 @@
         "interval": 300,
         "format-wifi": " {signalStrength}<span size=\"smaller\">%</span>",
         "format-ethernet": "{ipaddr}/{cidr}  ",
-        "tooltip-format": "{ifname}\n{essid}\n{ipaddr} /{cidr}\n{gwaddr}",
+        "tooltip-format": "{ifname}\n{essid}\n{ipaddr} /{cidr}",
         "format-linked": "{ifname} (No IP)   ",
         "format-disconnected": "..󱍢..",
         //"format-alt": "{ifname}: "
@@ -512,7 +512,7 @@
 	"waves": true,
 	//"noise_reduction": 0.85,
 	"input_delay": 2,
-	"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+	"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "▓", "▒", "▒", ],
 	"actions": {
 		"on-click-right": "mode"
 	}
