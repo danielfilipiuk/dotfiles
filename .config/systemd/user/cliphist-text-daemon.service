@@ -1,0 +1,17 @@
+[Unit]
+Description=Clipboard text history “manager” powered with Fuzzel for Wayland
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=wl-paste --type text --watch cliphist store
+Restart=on-failure
+
+
+[Install]
+WantedBy=graphical-session.target
+
+
+

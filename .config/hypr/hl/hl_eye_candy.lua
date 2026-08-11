@@ -18,7 +18,7 @@ hl.config({
         col = {
             active_border   = { colors = {"rgba(238, 130, 238,1)", "rgba(0, 255, 153, 1)"}, angle = 45 },
               --active_border   = { colors = {"rgba(23e0d5ff)", "rgba(00ff99ff)"}, angle = 45 },
-            inactive_border = "rgba(59595977)",
+            inactive_border = { colors = {"rgba(48,30,46,.75)", "rgba(30,30,0,.75)"}, angle = 45 },
         },
 ---------------------------------------------------------------
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -70,29 +70,31 @@ hl.config({
 ---------------------------------------------------------------
         glow = {
         	enabled = true,
-        	range = 15, --Glow range (“size”) in layout px
+        	range = 20, --Glow range (“size”) in layout px
         	render_power = 3, --in what power to render the falloff (more power, the faster the falloff) [1 - 4]
 	--color =  "rgba(23e0d522)",--glow’s color. Alpha dictates glow’s opacity.
-		color =  "rgba(228,226,222,.20)",--glow’s color. Alpha dictates glow’s opacity.
-		color_inactive = "rgba(30,30,30,.25)",
+		--color =  "rgba(228,226,222,.25)",--glow’s color. Alpha dictates glow’s opacity.
+		color = { colors = {"rgba(238, 130, 238,.25)", "rgba(0, 255, 153, .25)"}, angle = 45 },
+		color_inactive = { colors = {"rgba(48,30,46,.25)", "rgba(30,30,30,.25)"}, angle = 45 },
+		--	rgba(48,30,46,.90);
 			--#23e0d511
         },
 ---------------------------------------------------------------
-        --motion_blur = {
-        	--enabled = true,
-        	--samples = 7,
-        --},
+        motion_blur = {
+        	enabled = true,
+        	samples = 50,
+       },
 ---------------------------------------------------------------
-        --wobble = {
+	wobble = {
         --	enabled = true,
         --	mesh = 12,
         --	stifness = 200,
         --	damping = 12,
-        --	mass = 1,
+       	--	mass = 1,
         --	intensity = 0.2,
-        --	value_epsilon = 0.25,
-        --	velocity_epsilon = 2,
-        --},
+       	--	value_epsilon = 0.25,
+       	--	velocity_epsilon = 2,
+       },
 ---------------------------------------------------------------
     },
 ---------------------------------------------------------------

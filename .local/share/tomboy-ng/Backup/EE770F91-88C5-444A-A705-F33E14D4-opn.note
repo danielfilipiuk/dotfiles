@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>GTA4 COMMAND LINE</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>GTA4 COMMAND LINE</underline>
+-nomemrestrict -norestrictions -forcehighqualitymirrors -fullspecaudio -frameLimit 1 -managed -reservedapp 0 -highorFPS -availablevidmem 4096
+
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- env WINEDLLOVERRIDES="dinput8=n,b" %command% -nomemrestrict -norestrictions -scOfflineOnly -fullspecaudio -forcehighqualitymirrors
+</note-content></text>
+  <last-change-date>2026-08-10T19:57:11.4271466-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-10T19:57:11.4271466-03:00</last-metadata-change-date>
+  <create-date>2026-08-10T05:06:18.1421641-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

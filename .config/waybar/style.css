@@ -6,8 +6,8 @@
 * {
 	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
 	font-size: 12px; 
-	font-weight: normal;
-	/*font-variant: small-caps;*/
+	font-weight: bold;
+	font-variant: small-caps;
 	-gtk-dpi: 96;
 	letter-spacing: 0px;
 	border-radius: 16px;
@@ -34,53 +34,67 @@ window#waybar.toplevel-active {background: #60406c;}
 
 /* TOOLTIPS */
 tooltip {background: rgba(248,246,242,.75);
-	border-top:    4px solid rgba(181,125,170,.35);
-	border-left:   4px solid rgba(181,125,170,.45);
-	border-right:  4px solid rgba(181,125,170,.65);
-	border-bottom: 4px solid rgba(181,125,170,.75);}
+	border-top:    4px solid rgba(208, 132, 204,.3);
+	border-left:   4px solid rgba(208, 132, 204,.4);
+	border-right:  4px solid rgba(208, 132, 204,.6);
+	border-bottom: 4px solid rgba(208, 132, 204,.7);}
 tooltip label {	padding: 7px 7px;
-		text-shadow: 1px 1px 2px rgba(42,32,46,.25);}
+		text-shadow: 1px 1px 2px rgba(42,32,46,.25);
+		font-variant: normal;
+		font-weight: normal;
+		letter-spacing: 0.5px;}
+		
 
 /* MENUS */
 menu {	background: rgba(248,246,242,.75);
-	border: 3px solid rgba(248,246,242,0.25);
+	border-top:    4px solid rgba(208, 132, 204,.3);
+	border-left:   4px solid rgba(208, 132, 204,.4);
+	border-right:  4px solid rgba(208, 132, 204,.6);
+	border-bottom: 4px solid rgba(208, 132, 204,.7);
 	box-shadow: 1px 1px 2px rgba(42,32,46,.25);}
 menu label {	color: rgba(48,30,46,.90);
 		padding: 2px 0px;
-		text-shadow: 1px 1px 2px rgba(42,32,46,.25);}
+		text-shadow: 1px 1px 2px rgba(42,32,46,.25);
+		font-variant: normal;
+		font-weight: normal;
+		letter-spacing: 0.5px;}
 	
 /* MACROS */
 button {}
 box {}
 label.module {
-	border-top:    3px solid rgba(248,246,242,0.01);
-	border-left:   3px solid rgba(248,246,242,0.03);
-	border-right:  3px solid rgba(248,246,242,0.04);
-	border-bottom: 3px solid rgba(248,246,242,0.05);
-	padding: 3px 10px;
-	background: rgba(248,246,242,.55);}
+	border-top:    3px solid rgba(248,246,242,0.03);
+	border-left:   3px solid rgba(248,246,242,0.04);
+	border-right:  3px solid rgba(248,246,242,0.05);
+	border-bottom: 3px solid rgba(248,246,242,0.07);
+	padding: 3px 7px;
+	background: rgba(248,246,242,.55);
+	text-shadow: 1px 1px 2px  rgba(248,246,242,0.25);}
 label.module:hover {
-	background: rgba(248,246,242,1);
-	text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
+	border-top:    3px solid rgba(208, 132, 204,.05);
+	border-left:    3px solid rgba(208, 132, 204,.10);
+	border-right:    3px solid rgba(208, 132, 204,.15);
+	border-bottom:    3px solid rgba(208, 132, 204,0.20);
+	background: rgba(208, 132, 204,1);
+	text-shadow: 1px 1px 2px rgba(248,246,242,0.25);}
 
 /* MODULES SETTINGS */
 /* WLR / TASKBAR */
-#taskbar {background: rgba(248,246,242,.50)}
+#taskbar {}
 #taskbar.empty {background-color: transparent;}
 #taskbar button{padding: 3px 10px;
-		background: rgba(248,246,242,.35);
-		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
-#taskbar button.active {background: rgba(238, 130, 238,.85);
-			-gtk-icon-effect: highlight;
+		background: rgba(248,246,242,.55);
+		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
+#taskbar button.active {background: rgba(208, 132, 204,.9);
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#taskbar button:hover {	background: rgba(248,246,242,1);
+#taskbar button:hover {	background: rgba(208, 132, 204,1);
 			-gtk-icon-effect: highlight;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
  
  /* SUBMAP */
-#submap {	background: rgba(248,246,242,.95);
+#submap {	background: rgba(208, 132, 204,.9);
 		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#submap:hover {	background: rgba(248,246,242,1);}
+#submap:hover {	background: rgba(208, 132, 204,1);}
 
 /* TEMPERATURE */
 #temperature {}
@@ -96,30 +110,44 @@ label.module:hover {
 #memory {}
 
 /* GPU USAGE */
-#custom-gpu-usage {}
-#custom-gpu-usage:hover {	background: rgba(248,246,242,1);
-				text-shadow: 1px 2px 2px rgba(48,30,46,.25);}
+#custom-gpu-usage {background-color: transparent;}
+#custom-gpu-usage:hover { background: rgba(208, 132, 204,1);}
 
 /* CAVA */
-#cava {	background: rgba(248,246,242,.75); 
-	color: rgba(295, 100, 255,.55);}
-#cava:hover {	background: rgba(248,246,242,1);
-		color: rgba(295, 100, 255,.75);}
+#cava {	color: rgba(50,25,65,.75);
+	text-shadow: 1px 2px 2px rgba(248,246,242,.35);}
+#cava:hover {	border-top:    3px solid rgba(208, 132, 204,.05);
+		border-left:    3px solid rgba(208, 132, 204,.10);
+		border-right:    3px solid rgba(208, 132, 204,.15);
+		border-bottom:    3px solid rgba(208, 132, 204,0.20);	
+		background: rgba(208, 132, 204,1);
+		text-shadow: 1px 1px 2px rgba(248,246,242,.55);
+		color: rgba(48,30,46,1);}
 
 /* MPD  */
 #mpd {}
-#mpd.playing {	background: rgba(248,246,242,.95);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#mpd.playing:hover {background: rgba(248,246,242,1);}
-#mpd.paused {	background: rgba(248,246,242,.75);	
-		color: rgba(48,30,46,.50);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#mpd.paused:hover {	color: rgba(48,30,46,.90);
-			background: rgba(248,246,242,1);}
+#mpd.playing {	border-top:    3px solid rgba(208, 132, 204,.05);
+		border-left:    3px solid rgba(208, 132, 204,.10);
+		border-right:    3px solid rgba(208, 132, 204,.15);
+		border-bottom:    3px solid rgba(208, 132, 204,0.20);
+		background: rgba(208, 132, 204,.90);
+		text-shadow: 1px 1px 2px rgba(248,246,242,0.25);}
+#mpd.playing:hover {	background: rgba(208, 132, 204,1);}
+#mpd.paused {	border-top:    3px solid rgba(208, 132, 204,.05);
+		border-left:    3px solid rgba(208, 132, 204,.10);
+		border-right:    3px solid rgba(208, 132, 204,.15);
+		border-bottom:    3px solid rgba(208, 132, 204,0.20);	
+		color: rgba(48,30,46,.65);	
+		background: rgba(208, 132, 204,.8);
+		text-shadow: 1px 1px 2px rgba(248,246,242,0.25);}
+#mpd.paused:hover {	background: rgba(208, 132, 204,1);}
 #mpd.stopped {	color: rgba(48,30,46,.50);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#mpd.stopped:hover {	color: rgba(48,30,46,.90); 
-			background: rgba(248,246,242,1);}
+		text-shadow: 1px 1px 2px rgba(248,246,242,0.25);}
+#mpd.stopped:hover {	border-top:    3px solid rgba(208, 132, 204,.05);
+			border-left:    3px solid rgba(208, 132, 204,.10);
+			border-right:    3px solid rgba(208, 132, 204,.15);
+			border-bottom:    3px solid rgba(208, 132, 204,0.20);	
+			background: rgba(208, 132, 204,1);}
 #mpd.disconnected {	color: #ffb300;
 			text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
 #mpd.disconnected:hover {	background: #ffd700;
@@ -127,32 +155,48 @@ label.module:hover {
 
 /* PULSEAUDIO  */
 #pulseaudio {}
-#pulseaudio.muted {	color: rgba(48,30,46,.95);
-			background: rgba(248,246,242,.95);
-			text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#pulseaudio.muted:hover {background: rgba(248,246,242,1);
-			text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
+#pulseaudio.muted {	border-top:    3px solid rgba(208, 132, 204,.05);
+			border-left:    3px solid rgba(208, 132, 204,.10);
+			border-right:    3px solid rgba(208, 132, 204,.15);
+			border-bottom:    3px solid rgba(208, 132, 204,0.20);
+			background: rgba(208, 132, 204,.90);}
+#pulseaudio.muted:hover {background: rgba(208, 132, 204,1);}
 
 /* KEYBOARD STATE  */
 #keyboard-state {background: rgba(248,246,242,.50);}
-#keyboard-state > label {background: rgba(248,246,242,.25);padding: 3px 10px;border: 3px solid rgba(248,246,242,0.05);text-shadow: 1px 1px 2px  rgba(48,30,46,.25);}
-#keyboard-state > label.locked {background: rgba(248,246,242,.95);border: 3px solid rgba(248,246,242,0.05);text-shadow: 1px 1px 1px  rgba(48,30,46,.15);color: rgba(30,30,30,.75)}
+#keyboard-state > label {background: rgba(248,246,242,.25);
+			padding: 3px 10px;
+			border: 3px solid rgba(248,246,242,0.05);
+			text-shadow: 1px 1px 2px  rgba(248,246,242,0.25);}
+#keyboard-state > label.locked {border-top:    3px solid rgba(208, 132, 204,.05);
+				border-left:    3px solid rgba(208, 132, 204,.10);
+				border-right:    3px solid rgba(208, 132, 204,.15);
+				border-bottom:    3px solid rgba(208, 132, 204,0.20);
+				background: rgba(208, 132, 204,.85);}
 
 /* TRAY  */
 #tray {	background: rgba(248,246,242,.55);
-	padding: 3px 10px;
-	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
-#tray:hover {	background: rgba(248,246,242,.70);	
+	padding: 3px 7px;
+	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
+	border-top:    3px solid rgba(248,246,242,0.01);
+	border-left:   3px solid rgba(248,246,242,0.03);
+	border-right:  3px solid rgba(248,246,242,0.05);
+	border-bottom: 3px solid rgba(248,246,242,0.07);}
+#tray:hover {	border-top:    3px solid rgba(208, 132, 204,.05);
+		border-left:    3px solid rgba(208, 132, 204,.10);
+		border-right:    3px solid rgba(208, 132, 204,.15);
+		border-bottom:    3px solid rgba(208, 132, 204,0.20);	
+		background: rgba(208, 132, 204,1);	
 		-gtk-icon-effect: highlight;
 		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
 #tray > .active {-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .active:hover {	background: rgba(248,246,242,1);
+#tray > .active:hover {	background: rgba(208, 132, 204,1);
 			-gtk-icon-effect: highlight;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .passive {	background: rgba(248,246,242,1);
+#tray > .passive {	background: rgba(195, 152, 184,1);
 			-gtk-icon-effect: dim;
-			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
-#tray > .needs-attention {	background: rgba(248,246,242,1); 
+			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
+#tray > .needs-attention {	background: rgba(208, 132, 204,1);
 				-gtk-icon-effect: highlight;
 				-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
 
@@ -163,12 +207,9 @@ label.module:hover {
 
 /* INHIBITOR  */
 #inhibitor {color: rgba(30,30,30,.55);}
-#inhibitor.activated {	background: rgba(248,246,242,.85);
-			text-shadow: 1px 1px 2px rgba(42,32,46,.25);
+#inhibitor.activated {	background: rgba(208, 132, 204,.9);
 			color: rgba(30,30,30,.95);}
-#inhibitor.activated:hover {	background: rgba(248,246,242,1);
-				color: rgba(30,30,30,1);
-				text-shadow: 1px 1px 2px rgba(42,32,46,.25);}
+#inhibitor.activated:hover {	background: rgba(208, 132, 204,1);}
 
 /*  DISK */
 #disk {}

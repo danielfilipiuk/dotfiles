@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=io.github.herve4m.Length
-Exec=/usr/local/bin/length --gapplication-service

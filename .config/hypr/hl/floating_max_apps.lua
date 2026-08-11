@@ -13,7 +13,6 @@ hl.window_rule({
 	 float = true,
 	 --maximize = true,
 	 content = "photo",
-	persistent_size = true,
 	 monitor = "1",
 })
 

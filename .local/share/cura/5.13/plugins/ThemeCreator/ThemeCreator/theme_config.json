@@ -1,0 +1,4115 @@
+{
+  "fonts": {
+    "items": [
+      {
+        "key": "large",
+        "label": "Large Font",
+        "value": {
+          "size": 1.35,
+          "weight": 400,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "large_bold",
+        "label": "Large Bold Font",
+        "value": {
+          "size": 1.35,
+          "weight": 600,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "huge",
+        "label": "Huge Font",
+        "value": {
+          "size": 1.8,
+          "weight": 400,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "huge_bold",
+        "label": "Huge Bold Font",
+        "value": {
+          "size": 1.8,
+          "weight": 600,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "medium",
+        "label": "Medium Font",
+        "value": {
+          "size": 1.16,
+          "weight": 400,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "medium_bold",
+        "label": "Medium Bold Font",
+        "value": {
+          "size": 1.16,
+          "weight": 600,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "medium_italic",
+        "label": "Medium Italic Font",
+        "value": {
+          "size": 1.16,
+          "weight": 400,
+          "family": "Noto Sans",
+          "italic": true
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "default",
+        "label": "Default Font",
+        "value": {
+          "size": 0.95,
+          "weight": 400,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "default_bold",
+        "label": "Default Bold Font",
+        "value": {
+          "size": 0.95,
+          "weight": 600,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "default_italic",
+        "label": "Default Italic Font",
+        "value": {
+          "size": 0.95,
+          "weight": 400,
+          "family": "Noto Sans",
+          "italic": true
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "small",
+        "label": "Small Font",
+        "value": {
+          "size": 0.9,
+          "weight": 400,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "small_bold",
+        "label": "Small Bold Font",
+        "value": {
+          "size": 0.9,
+          "weight": 700,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "small_emphasis",
+        "label": "Small Emphasis Font",
+        "value": {
+          "size": 0.9,
+          "weight": 700,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      },
+      {
+        "key": "tiny_emphasis",
+        "label": "Tiny Emphasis Font",
+        "value": {
+          "size": 0.7,
+          "weight": 700,
+          "family": "Noto Sans"
+        },
+        "category": "Standard Fonts",
+        "type": "font"
+      }
+    ]
+  },
+  "colors": {
+    "items": [
+      {
+        "key": "background_1",
+        "label": "Primary Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "background_2",
+        "label": "Secondary Background",
+        "value": [
+          243,
+          243,
+          243,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "background_3",
+        "label": "Tertiary Background",
+        "value": [
+          232,
+          240,
+          253,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "background_4",
+        "label": "Quaternary Background",
+        "value": [
+          3,
+          12,
+          66,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "accent_1",
+        "label": "Primary Accent",
+        "value": [
+          25,
+          110,
+          240,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "accent_2",
+        "label": "Secondary Accent",
+        "value": [
+          16,
+          70,
+          156,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "border_main",
+        "label": "Main Border",
+        "value": [
+          212,
+          212,
+          212,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "border_accent_1",
+        "label": "Primary Accent Border",
+        "value": [
+          25,
+          110,
+          240,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "border_accent_2",
+        "label": "Secondary Accent Border",
+        "value": [
+          16,
+          70,
+          156,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "border_field",
+        "label": "Field Border",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_default",
+        "label": "Default Text",
+        "value": [
+          0,
+          14,
+          26,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_disabled",
+        "label": "Disabled Text",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_primary_button",
+        "label": "Primary Button Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_secondary_button",
+        "label": "Secondary Button Text",
+        "value": [
+          25,
+          110,
+          240,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_link_hover",
+        "label": "Link Hover Text",
+        "value": [
+          16,
+          70,
+          156,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "text_lighter",
+        "label": "Lighter Text",
+        "value": [
+          108,
+          108,
+          108,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_green_1",
+        "label": "Ultimaker Green (Light)",
+        "value": [
+          233,
+          245,
+          237,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_green_5",
+        "label": "Ultimaker Green (Medium)",
+        "value": [
+          36,
+          162,
+          73,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_green_9",
+        "label": "Ultimaker Green (Dark)",
+        "value": [
+          31,
+          44,
+          36,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_red_1",
+        "label": "Ultimaker Red (Light)",
+        "value": [
+          251,
+          232,
+          233,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_red_5",
+        "label": "Ultimaker Red (Medium)",
+        "value": [
+          218,
+          30,
+          40,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_red_9",
+        "label": "Ultimaker Red (Dark)",
+        "value": [
+          59,
+          31,
+          33,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_orange_1",
+        "label": "Ultimaker Orange (Light)",
+        "value": [
+          255,
+          235,
+          221,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_orange_5",
+        "label": "Ultimaker Orange (Medium)",
+        "value": [
+          252,
+          123,
+          30,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_orange_9",
+        "label": "Ultimaker Orange (Dark)",
+        "value": [
+          64,
+          45,
+          32,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_yellow_1",
+        "label": "Ultimaker Yellow (Light)",
+        "value": [
+          255,
+          248,
+          225,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_yellow_5",
+        "label": "Ultimaker Yellow (Medium)",
+        "value": [
+          253,
+          209,
+          58,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "um_yellow_9",
+        "label": "Ultimaker Yellow (Dark)",
+        "value": [
+          64,
+          58,
+          36,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "base_color"
+      },
+      {
+        "key": "main_background",
+        "label": "Main Background",
+        "value": "background_1",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "detail_background",
+        "label": "Detail Background",
+        "value": "background_2",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "wide_lining",
+        "label": "Wide Lining",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "thick_lining",
+        "label": "Thick Lining",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "lining",
+        "label": "Lining",
+        "value": [
+          192,
+          193,
+          194,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "viewport_overlay",
+        "label": "Viewport Overlay",
+        "value": [
+          246,
+          246,
+          246,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "primary",
+        "label": "Primary Element",
+        "value": "accent_1",
+        "category": "Interactive Elements",
+        "type": "color"
+      },
+      {
+        "key": "primary_hover",
+        "label": "Primary Element Hover",
+        "value": [
+          48,
+          182,
+          231,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "primary_text",
+        "label": "Primary Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_selection",
+        "label": "Text Selection",
+        "value": [
+          156,
+          195,
+          255,
+          127
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "border",
+        "label": "Border",
+        "value": [
+          127,
+          127,
+          127,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "border_field",
+        "label": "Field Border",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "color"
+      },
+      {
+        "key": "secondary",
+        "label": "Secondary Element",
+        "value": [
+          240,
+          240,
+          240,
+          255
+        ],
+        "category": "Interactive Elements",
+        "type": "color"
+      },
+      {
+        "key": "expandable_active",
+        "label": "Expandable Active",
+        "value": [
+          240,
+          240,
+          240,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "expandable_hover",
+        "label": "Expandable Hover",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "icon",
+        "label": "Icon Color",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Icons & Indicators",
+        "type": "color"
+      },
+      {
+        "key": "primary_button",
+        "label": "Primary Button",
+        "value": "accent_1",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "primary_button_hover",
+        "label": "Primary Button Hover",
+        "value": [
+          16,
+          70,
+          156,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "primary_button_text",
+        "label": "Primary Button Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "secondary_button",
+        "label": "Secondary Button",
+        "value": "background_1",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "secondary_button_shadow",
+        "label": "Secondary Button Shadow",
+        "value": [
+          216,
+          216,
+          216,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "secondary_button_hover",
+        "label": "Secondary Button Hover",
+        "value": [
+          232,
+          240,
+          253,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "secondary_button_text",
+        "label": "Secondary Button Text",
+        "value": "accent_1",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_background",
+        "label": "Main Window Header Background",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_background_gradient",
+        "label": "Main Window Header Background Gradient",
+        "value": [
+          25,
+          23,
+          91,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_text_active",
+        "label": "Main Window Header Button Text Active",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_text_inactive",
+        "label": "Main Window Header Button Text Inactive",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_text_hovered",
+        "label": "Main Window Header Button Text Hovered",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_background_active",
+        "label": "Main Window Header Button Background Active",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_background_inactive",
+        "label": "Main Window Header Button Background Inactive",
+        "value": [
+          255,
+          255,
+          255,
+          0
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "main_window_header_button_background_hovered",
+        "label": "Main Window Header Button Background Hovered",
+        "value": [
+          117,
+          114,
+          159,
+          255
+        ],
+        "category": "Window Header",
+        "type": "color"
+      },
+      {
+        "key": "account_widget_outline_active",
+        "label": "Account Widget Outline Active",
+        "value": [
+          70,
+          66,
+          126,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "account_sync_state_icon",
+        "label": "Account Sync State Icon",
+        "value": [
+          25,
+          25,
+          25,
+          255
+        ],
+        "category": "Icons & Indicators",
+        "type": "color"
+      },
+      {
+        "key": "machine_selector_printer_icon",
+        "label": "Machine Selector Printer Icon",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Icons & Indicators",
+        "type": "color"
+      },
+      {
+        "key": "action_panel_secondary",
+        "label": "Action Panel Secondary",
+        "value": "accent_1",
+        "category": "Miscellaneous",
+        "type": "color"
+      },
+      {
+        "key": "first_run_shadow",
+        "label": "First Run Shadow",
+        "value": [
+          50,
+          50,
+          50,
+          255
+        ],
+        "category": "Messages & Dialogs",
+        "type": "color"
+      },
+      {
+        "key": "toolbar_background",
+        "label": "Toolbar Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "notification_icon",
+        "label": "Notification Icon",
+        "value": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "category": "Icons & Indicators",
+        "type": "color"
+      },
+      {
+        "key": "printer_type_label_background",
+        "label": "Printer Type Label Background",
+        "value": [
+          228,
+          228,
+          242,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "window_disabled_background",
+        "label": "Window Disabled Background",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "text",
+        "label": "General Text",
+        "value": [
+          25,
+          25,
+          25,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_disabled",
+        "label": "Disabled Text",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Base Colors",
+        "type": "color"
+      },
+      {
+        "key": "text_detail",
+        "label": "Detail Text",
+        "value": [
+          174,
+          174,
+          174,
+          128
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_link",
+        "label": "Link Text",
+        "value": "accent_1",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_inactive",
+        "label": "Inactive Text",
+        "value": [
+          174,
+          174,
+          174,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_medium",
+        "label": "Medium Text",
+        "value": [
+          128,
+          128,
+          128,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_scene",
+        "label": "Scene Text",
+        "value": [
+          102,
+          102,
+          102,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_scene_hover",
+        "label": "Scene Hover Text",
+        "value": [
+          123,
+          123,
+          113,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "error",
+        "label": "Error Color",
+        "value": [
+          218,
+          30,
+          40,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "warning",
+        "label": "Warning Color",
+        "value": [
+          253,
+          209,
+          58,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "success",
+        "label": "Success Color",
+        "value": [
+          36,
+          162,
+          73,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "disabled",
+        "label": "Disabled Color",
+        "value": [
+          229,
+          229,
+          229,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "toolbar_button_hover",
+        "label": "Toolbar Button Hover",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "toolbar_button_active",
+        "label": "Toolbar Button Active",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "toolbar_button_active_hover",
+        "label": "Toolbar Button Active Hover",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button",
+        "label": "Button Background",
+        "value": "background_2",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button_hover",
+        "label": "Button Hover",
+        "value": "background_3",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button_text",
+        "label": "Button Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button_disabled",
+        "label": "Disabled Button",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button_disabled_text",
+        "label": "Disabled Button Text",
+        "value": "text_disabled",
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "small_button_text",
+        "label": "Small Button Text",
+        "value": [
+          102,
+          102,
+          102,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "small_button_text_hover",
+        "label": "Small Button Text Hover",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "button_tooltip",
+        "label": "Button Tooltip",
+        "value": [
+          31,
+          36,
+          39,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "extruder_disabled",
+        "label": "Extruder Disabled",
+        "value": [
+          255,
+          255,
+          255,
+          102
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "action_button",
+        "label": "Action Button",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "action_button_hovered",
+        "label": "Action Button Hovered",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "action_button_disabled",
+        "label": "Action Button Disabled",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "action_button_disabled_text",
+        "label": "Action Button Disabled Text",
+        "value": [
+          196,
+          196,
+          196,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "action_button_shadow",
+        "label": "Action Button Shadow",
+        "value": [
+          223,
+          223,
+          223,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "scrollbar_background",
+        "label": "Scrollbar Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "scrollbar_handle",
+        "label": "Scrollbar Handle",
+        "value": [
+          10,
+          8,
+          80,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "scrollbar_handle_hover",
+        "label": "Scrollbar Handle Hover",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "scrollbar_handle_down",
+        "label": "Scrollbar Handle Down",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_category",
+        "label": "Setting Category",
+        "value": "background_1",
+        "category": "Miscellaneous",
+        "type": "color"
+      },
+      {
+        "key": "setting_category_disabled",
+        "label": "Setting Category Disabled",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "setting_category_hover",
+        "label": "Setting Category Hover",
+        "value": "background_2",
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "setting_category_text",
+        "label": "Setting Category Text",
+        "value": "text_default",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "setting_category_disabled_text",
+        "label": "Setting Category Disabled Text",
+        "value": [
+          24,
+          41,
+          77,
+          101
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "setting_category_active_text",
+        "label": "Setting Category Active Text",
+        "value": "text_default",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "setting_control",
+        "label": "Setting Control",
+        "value": "background_2",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_highlight",
+        "label": "Setting Control Highlight",
+        "value": "background_3",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_border",
+        "label": "Setting Control Border",
+        "value": [
+          199,
+          199,
+          199,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_border_highlight",
+        "label": "Setting Control Border Highlight",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_text",
+        "label": "Setting Control Text",
+        "value": [
+          35,
+          35,
+          35,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_button",
+        "label": "Setting Control Button",
+        "value": [
+          102,
+          102,
+          102,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_button_hover",
+        "label": "Setting Control Button Hover",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Buttons",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_disabled",
+        "label": "Setting Control Disabled",
+        "value": "background_2",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_disabled_text",
+        "label": "Setting Control Disabled Text",
+        "value": [
+          127,
+          127,
+          127,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "setting_control_disabled_border",
+        "label": "Setting Control Disabled Border",
+        "value": [
+          127,
+          127,
+          127,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "setting_unit",
+        "label": "Setting Unit",
+        "value": [
+          127,
+          127,
+          127,
+          255
+        ],
+        "category": "Miscellaneous",
+        "type": "color"
+      },
+      {
+        "key": "setting_validation_error_background",
+        "label": "Setting Validation Error Background",
+        "value": "um_red_1",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "setting_validation_error",
+        "label": "Setting Validation Error",
+        "value": "um_red_5",
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "setting_validation_warning_background",
+        "label": "Setting Validation Warning Background",
+        "value": "um_yellow_1",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "setting_validation_warning",
+        "label": "Setting Validation Warning",
+        "value": "um_yellow_5",
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "setting_validation_ok",
+        "label": "Setting Validation Ok",
+        "value": "background_2",
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "material_compatibility_warning",
+        "label": "Material Compatibility Warning",
+        "value": [
+          243,
+          166,
+          59,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "core_compatibility_warning",
+        "label": "Core Compatibility Warning",
+        "value": [
+          243,
+          166,
+          59,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "progressbar_background",
+        "label": "Progress Bar Background",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "progressbar_control",
+        "label": "Progress Bar Fill",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "slider_groove",
+        "label": "Slider Groove",
+        "value": [
+          223,
+          223,
+          223,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "slider_groove_fill",
+        "label": "Slider Groove Fill",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "slider_handle",
+        "label": "Slider Handle",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "slider_handle_active",
+        "label": "Slider Handle Active",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "slider_text_background",
+        "label": "Slider Text Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "quality_slider_unavailable",
+        "label": "Quality Slider Unavailable",
+        "value": [
+          179,
+          179,
+          179,
+          255
+        ],
+        "category": "Interactive Elements",
+        "type": "color"
+      },
+      {
+        "key": "quality_slider_available",
+        "label": "Quality Slider Available",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Interactive Elements",
+        "type": "color"
+      },
+      {
+        "key": "checkbox",
+        "label": "Checkbox",
+        "value": "background_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_hover",
+        "label": "Checkbox Hover",
+        "value": "background_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_disabled",
+        "label": "Checkbox Disabled",
+        "value": "background_2",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_border",
+        "label": "Checkbox Border",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_border_hover",
+        "label": "Checkbox Border Hover",
+        "value": "border_main",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_border_disabled",
+        "label": "Checkbox Border Disabled",
+        "value": "text_disabled",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_mark",
+        "label": "Checkbox Mark",
+        "value": "text_default",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_mark_disabled",
+        "label": "Checkbox Mark Disabled",
+        "value": "text_disabled",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_square",
+        "label": "Checkbox Square",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_text",
+        "label": "Checkbox Text",
+        "value": "text_default",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "checkbox_text_disabled",
+        "label": "Checkbox Text Disabled",
+        "value": "text_disabled",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "switch",
+        "label": "Switch",
+        "value": "background_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "switch_state_checked",
+        "label": "Switch State Checked",
+        "value": "accent_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "switch_state_unchecked",
+        "label": "Switch State Unchecked",
+        "value": "text_disabled",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio",
+        "label": "Radio Button",
+        "value": "background_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_disabled",
+        "label": "Radio Disabled",
+        "value": "background_2",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_selected",
+        "label": "Radio Button Selected",
+        "value": "accent_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_selected_disabled",
+        "label": "Radio Selected Disabled",
+        "value": "text_disabled",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_border",
+        "label": "Radio Button Border",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_border_hover",
+        "label": "Radio Border Hover",
+        "value": "border_main",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_border_disabled",
+        "label": "Radio Border Disabled",
+        "value": "text_disabled",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_dot",
+        "label": "Radio Dot",
+        "value": "background_1",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_dot_disabled",
+        "label": "Radio Dot Disabled",
+        "value": "background_2",
+        "category": "Form Controls",
+        "type": "color"
+      },
+      {
+        "key": "radio_text",
+        "label": "Radio Text",
+        "value": "text_default",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "radio_text_disabled",
+        "label": "Radio Text Disabled",
+        "value": "text_disabled",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field",
+        "label": "Text Field",
+        "value": "background_1",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_border",
+        "label": "Text Field Border",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_border_hovered",
+        "label": "Text Field Border Hovered",
+        "value": "border_main",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_border_active",
+        "label": "Text Field Border Active",
+        "value": "border_accent_2",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_border_disabled",
+        "label": "Text Field Border Disabled",
+        "value": "background_2",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_text",
+        "label": "Text Field Text",
+        "value": "text_default",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "text_field_text_disabled",
+        "label": "Text Field Text Disabled",
+        "value": "text_disabled",
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "category_background",
+        "label": "Category Background",
+        "value": "background_2",
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "tooltip",
+        "label": "Tooltip Background",
+        "value": [
+          25,
+          25,
+          25,
+          255
+        ],
+        "category": "Interactive Elements",
+        "type": "color"
+      },
+      {
+        "key": "tooltip_text",
+        "label": "Tooltip Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "message_background",
+        "label": "Message Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "message_border",
+        "label": "Message Border",
+        "value": [
+          192,
+          193,
+          194,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "message_close",
+        "label": "Message Close",
+        "value": [
+          102,
+          102,
+          102,
+          255
+        ],
+        "category": "Messages & Dialogs",
+        "type": "color"
+      },
+      {
+        "key": "message_close_hover",
+        "label": "Message Close Hover",
+        "value": [
+          8,
+          7,
+          63,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "message_progressbar_background",
+        "label": "Message Progressbar Background",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "message_progressbar_control",
+        "label": "Message Progressbar Control",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Messages & Dialogs",
+        "type": "color"
+      },
+      {
+        "key": "message_success_icon",
+        "label": "Message Success Icon",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "message_warning_icon",
+        "label": "Message Warning Icon",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "message_error_icon",
+        "label": "Message Error Icon",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "tool_panel_background",
+        "label": "Tool Panel Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "status_offline",
+        "label": "Status Offline",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "status_ready",
+        "label": "Status Ready",
+        "value": [
+          0,
+          205,
+          0,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "status_busy",
+        "label": "Status Busy",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "status_paused",
+        "label": "Status Paused",
+        "value": [
+          255,
+          140,
+          0,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "status_stopped",
+        "label": "Status Stopped",
+        "value": [
+          236,
+          82,
+          80,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "disabled_axis",
+        "label": "Disabled Axis",
+        "value": [
+          127,
+          127,
+          127,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "x_axis",
+        "label": "X Axis",
+        "value": [
+          218,
+          30,
+          40,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "y_axis",
+        "label": "Y Axis",
+        "value": [
+          25,
+          110,
+          240,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "z_axis",
+        "label": "Z Axis",
+        "value": [
+          36,
+          162,
+          73,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "all_axis",
+        "label": "All Axis",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "viewport_background",
+        "label": "Viewport Background",
+        "value": [
+          250,
+          250,
+          250,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "volume_outline",
+        "label": "Build Volume Outline",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "buildplate",
+        "label": "Build Plate",
+        "value": [
+          244,
+          244,
+          244,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "buildplate_grid",
+        "label": "Build Plate Grid",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "buildplate_grid_minor",
+        "label": "Build Plate Grid Minor",
+        "value": [
+          228,
+          228,
+          228,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "convex_hull",
+        "label": "Convex Hull",
+        "value": [
+          35,
+          35,
+          35,
+          127
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "disallowed_area",
+        "label": "Disallowed Area",
+        "value": [
+          0,
+          0,
+          0,
+          40
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "error_area",
+        "label": "Error Area",
+        "value": [
+          255,
+          0,
+          0,
+          127
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "model_overhang",
+        "label": "Model Overhang",
+        "value": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "model_unslicable",
+        "label": "Model Unslicable",
+        "value": [
+          122,
+          122,
+          122,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "model_unslicable_alt",
+        "label": "Model Unslicable Alt",
+        "value": [
+          172,
+          172,
+          127,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "model_selection_outline",
+        "label": "Model Selection Outline",
+        "value": [
+          50,
+          130,
+          255,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "model_non_printing",
+        "label": "Model Non Printing",
+        "value": [
+          122,
+          122,
+          122,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "xray",
+        "label": "Xray",
+        "value": [
+          26,
+          26,
+          62,
+          255
+        ],
+        "category": "3D Viewport",
+        "type": "color"
+      },
+      {
+        "key": "layerview_ghost",
+        "label": "Layerview Ghost",
+        "value": [
+          31,
+          31,
+          31,
+          95
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_none",
+        "label": "Layerview None",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_inset_0",
+        "label": "Layerview Inset 0",
+        "value": [
+          230,
+          0,
+          0,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_inset_x",
+        "label": "Layerview Inset X",
+        "value": [
+          0,
+          230,
+          0,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_skin",
+        "label": "Layerview Skin",
+        "value": [
+          230,
+          230,
+          0,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_support",
+        "label": "Layerview Support",
+        "value": [
+          0,
+          230,
+          230,
+          127
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_skirt",
+        "label": "Layerview Skirt",
+        "value": [
+          0,
+          230,
+          230,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_infill",
+        "label": "Layerview Infill",
+        "value": [
+          230,
+          115,
+          0,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_support_infill",
+        "label": "Layerview Support Infill",
+        "value": [
+          0,
+          230,
+          230,
+          127
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_move_combing",
+        "label": "Layerview Move Combing",
+        "value": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_move_retraction",
+        "label": "Layerview Move Retraction",
+        "value": [
+          128,
+          127,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_support_interface",
+        "label": "Layerview Support Interface",
+        "value": [
+          63,
+          127,
+          255,
+          127
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_prime_tower",
+        "label": "Layerview Prime Tower",
+        "value": [
+          0,
+          255,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_nozzle",
+        "label": "Layerview Nozzle",
+        "value": [
+          224,
+          192,
+          16,
+          64
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_starts",
+        "label": "Layerview Starts",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_move_while_retracting",
+        "label": "Layerview Move While Retracting",
+        "value": [
+          127,
+          255,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "layerview_move_while_unretracting",
+        "label": "Layerview Move While Unretracting",
+        "value": [
+          255,
+          127,
+          255,
+          255
+        ],
+        "category": "Layer View",
+        "type": "color"
+      },
+      {
+        "key": "monitor_printer_family_tag",
+        "label": "Monitor Printer Family Tag",
+        "value": [
+          228,
+          228,
+          242,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_text_disabled",
+        "label": "Monitor Text Disabled",
+        "value": [
+          238,
+          238,
+          238,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "monitor_icon_primary",
+        "label": "Monitor Icon Primary",
+        "value": [
+          10,
+          8,
+          80,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_icon_accent",
+        "label": "Monitor Icon Accent",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_icon_disabled",
+        "label": "Monitor Icon Disabled",
+        "value": [
+          238,
+          238,
+          238,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "monitor_card_border",
+        "label": "Monitor Card Border",
+        "value": [
+          192,
+          193,
+          194,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "monitor_card_background",
+        "label": "Monitor Card Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "monitor_card_hover",
+        "label": "Monitor Card Hover",
+        "value": [
+          232,
+          242,
+          252,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "monitor_stage_background",
+        "label": "Monitor Stage Background",
+        "value": [
+          246,
+          246,
+          246,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "monitor_stage_background_fade",
+        "label": "Monitor Stage Background Fade",
+        "value": [
+          246,
+          246,
+          246,
+          102
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_tooltip",
+        "label": "Monitor Tooltip",
+        "value": [
+          25,
+          25,
+          25,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_tooltip_text",
+        "label": "Monitor Tooltip Text",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "monitor_context_menu",
+        "label": "Monitor Context Menu",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "monitor_context_menu_hover",
+        "label": "Monitor Context Menu Hover",
+        "value": [
+          245,
+          245,
+          245,
+          255
+        ],
+        "category": "Text",
+        "type": "color"
+      },
+      {
+        "key": "monitor_skeleton_loading",
+        "label": "Monitor Skeleton Loading",
+        "value": [
+          238,
+          238,
+          238,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_placeholder_image",
+        "label": "Monitor Placeholder Image",
+        "value": [
+          230,
+          230,
+          230,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_image_overlay",
+        "label": "Monitor Image Overlay",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_shadow",
+        "label": "Monitor Shadow",
+        "value": [
+          200,
+          200,
+          200,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_carousel_dot",
+        "label": "Monitor Carousel Dot",
+        "value": [
+          216,
+          216,
+          216,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "monitor_carousel_dot_current",
+        "label": "Monitor Carousel Dot Current",
+        "value": [
+          119,
+          119,
+          119,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "cloud_unavailable",
+        "label": "Cloud Unavailable",
+        "value": [
+          153,
+          153,
+          153,
+          255
+        ],
+        "category": "Monitor & Cloud",
+        "type": "color"
+      },
+      {
+        "key": "cloud_inactive",
+        "label": "Cloud Inactive",
+        "value": [
+          253,
+          209,
+          58,
+          255
+        ],
+        "category": "Status & States",
+        "type": "color"
+      },
+      {
+        "key": "connection_badge_background",
+        "label": "Connection Badge Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "warning_badge_background",
+        "label": "Warning Badge Background",
+        "value": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "error_badge_background",
+        "label": "Error Badge Background",
+        "value": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "category": "Backgrounds",
+        "type": "color"
+      },
+      {
+        "key": "border_field_light",
+        "label": "Border Field Light",
+        "value": [
+          180,
+          180,
+          180,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "border_main_light",
+        "label": "Border Main Light",
+        "value": [
+          212,
+          212,
+          212,
+          255
+        ],
+        "category": "Borders & Outlines",
+        "type": "color"
+      },
+      {
+        "key": "paint_normal_area",
+        "label": "Paint Normal Area",
+        "value": "background_3",
+        "category": "Paint & Selection",
+        "type": "color"
+      },
+      {
+        "key": "paint_preferred_area",
+        "label": "Paint Preferred Area",
+        "value": "um_green_5",
+        "category": "Paint & Selection",
+        "type": "color"
+      },
+      {
+        "key": "paint_avoid_area",
+        "label": "Paint Avoid Area",
+        "value": "um_red_5",
+        "category": "Paint & Selection",
+        "type": "color"
+      }
+    ]
+  },
+  "sizes": {
+    "items": [
+      {
+        "key": "window_minimum_size",
+        "label": "Minimum Window Size",
+        "value": [
+          80,
+          48
+        ],
+        "category": "Window Sizes",
+        "type": "size"
+      },
+      {
+        "key": "popup_dialog",
+        "label": "Popup Dialog",
+        "value": [
+          40,
+          36
+        ],
+        "category": "Window Sizes",
+        "type": "size"
+      },
+      {
+        "key": "small_popup_dialog",
+        "label": "Small Popup Dialog",
+        "value": [
+          36,
+          12
+        ],
+        "category": "Window Sizes",
+        "type": "size"
+      },
+      {
+        "key": "main_window_header",
+        "label": "Main Window Header",
+        "value": [
+          0.0,
+          4.0
+        ],
+        "category": "Header & Menu",
+        "type": "size"
+      },
+      {
+        "key": "stage_menu",
+        "label": "Stage Menu",
+        "value": [
+          0.0,
+          4.0
+        ],
+        "category": "Header & Menu",
+        "type": "size"
+      },
+      {
+        "key": "account_button",
+        "label": "Account Button",
+        "value": [
+          12,
+          2.5
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "print_setup_widget",
+        "label": "Print Setup Widget",
+        "value": [
+          38.0,
+          30.0
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "print_setup_extruder_box",
+        "label": "Extruder Setup Box",
+        "value": [
+          0.0,
+          6.0
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "slider_widget_groove",
+        "label": "Slider Widget Groove",
+        "value": [
+          0.16,
+          0.16
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "slider_widget_handle",
+        "label": "Slider Widget Handle",
+        "value": [
+          1.3,
+          1.3
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "slider_widget_tickmarks",
+        "label": "Slider Widget Tick Marks",
+        "value": [
+          0.5,
+          0.5
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "print_setup_big_item",
+        "label": "Print Setup Large Item",
+        "value": [
+          28,
+          2.5
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "print_setup_icon",
+        "label": "Print Setup Icon",
+        "value": [
+          1.2,
+          1.2
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "drag_icon",
+        "label": "Drag Icon Size",
+        "value": [
+          1.416,
+          0.25
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "application_switcher_item",
+        "label": "App Switcher Item",
+        "value": [
+          8,
+          9
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "application_switcher_icon",
+        "label": "App Switcher Icon",
+        "value": [
+          3.75,
+          3.75
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "expandable_component_content_header",
+        "label": "Expandable Content Header",
+        "value": [
+          0.0,
+          3.0
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "configuration_selector",
+        "label": "Configuration Selector",
+        "value": [
+          35.0,
+          4.0
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "action_panel_widget",
+        "label": "Action Panel Widget",
+        "value": [
+          26.0,
+          0.0
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "action_panel_information_widget",
+        "label": "Action Panel Info Widget",
+        "value": [
+          20.0,
+          0.0
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "machine_selector_widget",
+        "label": "Machine Selector Widget",
+        "value": [
+          20.0,
+          4.0
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "machine_selector_widget_content",
+        "label": "Machine Selector Content",
+        "value": [
+          25.0,
+          32.0
+        ],
+        "category": "Setup & Print",
+        "type": "size"
+      },
+      {
+        "key": "machine_selector_icon",
+        "label": "Machine Selector Icon",
+        "value": [
+          2.5,
+          2.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "views_selector",
+        "label": "Views Selector",
+        "value": [
+          16.0,
+          4.0
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "printer_type_label",
+        "label": "Printer Type Label",
+        "value": [
+          3.5,
+          1.5
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "default_radius",
+        "label": "Default Border Radius",
+        "value": [
+          0.25,
+          0.25
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "wide_lining",
+        "label": "Wide Line Thickness",
+        "value": [
+          0.5,
+          0.5
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "thick_lining",
+        "label": "Thick Line Thickness",
+        "value": [
+          0.2,
+          0.2
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "default_lining",
+        "label": "Default Line Thickness",
+        "value": [
+          0.08,
+          0.08
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "default_arrow",
+        "label": "Default Arrow Size",
+        "value": [
+          0.8,
+          0.8
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "logo",
+        "label": "Logo Size",
+        "value": [
+          16,
+          2
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "wide_margin",
+        "label": "Wide Margin",
+        "value": [
+          2.0,
+          2.0
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "thick_margin",
+        "label": "Thick Margin",
+        "value": [
+          1.71,
+          1.43
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "default_margin",
+        "label": "Default Margin",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "thin_margin",
+        "label": "Thin Margin",
+        "value": [
+          0.71,
+          0.71
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "narrow_margin",
+        "label": "Narrow Margin",
+        "value": [
+          0.5,
+          0.5
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "extruder_icon",
+        "label": "Extruder Icon",
+        "value": [
+          2.5,
+          2.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "section",
+        "label": "Section Size",
+        "value": [
+          0.0,
+          2
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "section_header",
+        "label": "Section Header",
+        "value": [
+          0.0,
+          2.5
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "section_control",
+        "label": "Section Control",
+        "value": [
+          0,
+          1
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "section_icon",
+        "label": "Section Icon",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "section_icon_column",
+        "label": "Section Icon Column",
+        "value": [
+          2.5,
+          2.5
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "setting",
+        "label": "Setting Item",
+        "value": [
+          25.0,
+          1.8
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "setting_control",
+        "label": "Setting Control",
+        "value": [
+          9.0,
+          2.0
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "setting_control_radius",
+        "label": "Setting Control Radius",
+        "value": [
+          0.15,
+          0.15
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "setting_control_depth_margin",
+        "label": "Setting Control Depth Margin",
+        "value": [
+          1.4,
+          0.0
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "setting_unit_margin",
+        "label": "Setting Unit Margin",
+        "value": [
+          0.5,
+          0.5
+        ],
+        "category": "Sections & Settings",
+        "type": "size"
+      },
+      {
+        "key": "standard_list_lineheight",
+        "label": "Standard List Line Height",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "standard_arrow",
+        "label": "Standard Arrow Size",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "card",
+        "label": "Card Size",
+        "value": [
+          25.0,
+          10
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "card_icon",
+        "label": "Card Icon",
+        "value": [
+          6.0,
+          6.0
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "card_tiny_icon",
+        "label": "Card Tiny Icon",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "button",
+        "label": "Standard Button",
+        "value": [
+          4,
+          4
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "button_icon",
+        "label": "Button Icon",
+        "value": [
+          2.5,
+          2.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "action_button",
+        "label": "Action Button",
+        "value": [
+          15.0,
+          2.5
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "action_button_icon",
+        "label": "Action Button Icon",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "action_button_icon_small",
+        "label": "Small Action Button Icon",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "action_button_radius",
+        "label": "Action Button Radius",
+        "value": [
+          0.15,
+          0.15
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "radio_button",
+        "label": "Radio Button Size",
+        "value": [
+          1.3,
+          1.3
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "small_button",
+        "label": "Small Button",
+        "value": [
+          2,
+          2
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "small_button_icon",
+        "label": "Small Button Icon",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "medium_button",
+        "label": "Medium Button",
+        "value": [
+          2.5,
+          2.5
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "medium_button_icon",
+        "label": "Medium Button Icon",
+        "value": [
+          2,
+          2
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "large_button",
+        "label": "Large Button",
+        "value": [
+          3.0,
+          3.0
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "large_button_icon",
+        "label": "Large Button Icon",
+        "value": [
+          2.8,
+          2.8
+        ],
+        "category": "Icon Sizes",
+        "type": "size"
+      },
+      {
+        "key": "context_menu",
+        "label": "Context Menu Size",
+        "value": [
+          20,
+          2
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "icon_indicator",
+        "label": "Icon Indicator",
+        "value": [
+          1,
+          1
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "printer_status_icon",
+        "label": "Printer Status Icon",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "Application",
+        "type": "size"
+      },
+      {
+        "key": "button_tooltip",
+        "label": "Button Tooltip Size",
+        "value": [
+          1.0,
+          1.3
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "button_tooltip_arrow",
+        "label": "Button Tooltip Arrow",
+        "value": [
+          0.25,
+          0.25
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "progressbar",
+        "label": "Progress Bar Size",
+        "value": [
+          26.0,
+          0.75
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "progressbar_radius",
+        "label": "Progress Bar Radius",
+        "value": [
+          0.15,
+          0.15
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "scrollbar",
+        "label": "Scrollbar Size",
+        "value": [
+          0.75,
+          0.5
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "slider_groove",
+        "label": "Slider Groove Size",
+        "value": [
+          0.5,
+          0.5
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "slider_groove_radius",
+        "label": "Slider Groove Radius",
+        "value": [
+          0.15,
+          0.15
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "slider_handle",
+        "label": "Slider Handle Size",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "slider_layerview_size",
+        "label": "Layer View Slider",
+        "value": [
+          1.0,
+          34.0
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "layerview_menu_size",
+        "label": "Layer View Menu",
+        "value": [
+          16.0,
+          4.0
+        ],
+        "category": "Header & Menu",
+        "type": "size"
+      },
+      {
+        "key": "layerview_legend_size",
+        "label": "Layer View Legend",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "layerview_row",
+        "label": "Layer View Row",
+        "value": [
+          11.0,
+          1.5
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "layerview_row_spacing",
+        "label": "Layer View Row Spacing",
+        "value": [
+          0.0,
+          0.5
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "checkbox",
+        "label": "Checkbox Size",
+        "value": [
+          1.33,
+          1.33
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "checkbox_mark",
+        "label": "Checkbox Mark Size",
+        "value": [
+          1,
+          1
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "checkbox_radius",
+        "label": "Checkbox Radius",
+        "value": [
+          0.25,
+          0.25
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "spinbox",
+        "label": "Spin Box Size",
+        "value": [
+          6.0,
+          3.0
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "combobox",
+        "label": "Combo Box Size",
+        "value": [
+          14,
+          2
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "combobox_wide",
+        "label": "Wide Combo Box Size",
+        "value": [
+          22,
+          2
+        ],
+        "category": "Control Sizes",
+        "type": "size"
+      },
+      {
+        "key": "tooltip",
+        "label": "Tooltip Size",
+        "value": [
+          20.0,
+          10.0
+        ],
+        "category": "Lists & Cards",
+        "type": "size"
+      },
+      {
+        "key": "tooltip_margins",
+        "label": "Tooltip Margins",
+        "value": [
+          1.0,
+          1.0
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "tooltip_arrow_margins",
+        "label": "Tooltip Arrow Margins",
+        "value": [
+          2.0,
+          2.0
+        ],
+        "category": "Layout Margins",
+        "type": "size"
+      },
+      {
+        "key": "save_button_save_to_button",
+        "label": "Save To Button",
+        "value": [
+          0.3,
+          2.7
+        ],
+        "category": "Button Sizes",
+        "type": "size"
+      },
+      {
+        "key": "save_button_specs_icons",
+        "label": "Save Button Specs Icons",
+        "value": [
+          1.4,
+          1.4
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "first_run_shadow_radius",
+        "label": "First Run Shadow Radius",
+        "value": [
+          1.2,
+          1.2
+        ],
+        "category": "UI Element Sizes",
+        "type": "size"
+      },
+      {
+        "key": "monitor_preheat_temperature_control",
+        "label": "Preheat Temperature Control",
+        "value": [
+          4.5,
+          2.0
+        ],
+        "category": "Specialized",
+        "type": "size"
+      },
+      {
+        "key": "welcome_wizard_window",
+        "label": "Welcome Wizard Window",
+        "value": [
+          46,
+          50
+        ],
+        "category": "Window Sizes",
+        "type": "size"
+      },
+      {
+        "key": "modal_window_minimum",
+        "label": "Modal Window Minimum",
+        "value": [
+          60.0,
+          50.0
+        ],
+        "category": "Window Sizes",
+        "type": "size"
+      },
+      {
+        "key": "wizard_progress",
+        "label": "Wizard Progress",
+        "value": [
+          10.0,
+          0.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message",
+        "label": "Message",
+        "value": [
+          30.0,
+          5.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message_close",
+        "label": "Message Close",
+        "value": [
+          2,
+          2
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message_radius",
+        "label": "Message Radius",
+        "value": [
+          0.25,
+          0.25
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message_action_button",
+        "label": "Message Action Button",
+        "value": [
+          0,
+          2.5
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message_image",
+        "label": "Message Image",
+        "value": [
+          15.0,
+          10.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "message_type_icon",
+        "label": "Message Type Icon",
+        "value": [
+          2,
+          2
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "menu",
+        "label": "Menu",
+        "value": [
+          18,
+          2
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "jobspecs_line",
+        "label": "Jobspecs Line",
+        "value": [
+          2.0,
+          2.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "objects_menu_size",
+        "label": "Objects Menu Size",
+        "value": [
+          15,
+          15
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "notification_icon",
+        "label": "Notification Icon",
+        "value": [
+          1.5,
+          1.5
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "avatar_image",
+        "label": "Avatar Image",
+        "value": [
+          6.8,
+          6.8
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "monitor_shadow_radius",
+        "label": "Monitor Shadow Radius",
+        "value": [
+          0.4,
+          0.4
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "monitor_empty_state_offset",
+        "label": "Monitor Empty State Offset",
+        "value": [
+          5.6,
+          5.6
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "monitor_empty_state_size",
+        "label": "Monitor Empty State Size",
+        "value": [
+          35.0,
+          25.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "monitor_column",
+        "label": "Monitor Column",
+        "value": [
+          18.0,
+          1.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "monitor_progress_bar",
+        "label": "Monitor Progress Bar",
+        "value": [
+          16.5,
+          1.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "table_row",
+        "label": "Table Row",
+        "value": [
+          2.0,
+          2.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "welcome_wizard_content_image_big",
+        "label": "Welcome Wizard Content Image Big",
+        "value": [
+          18,
+          15
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "welcome_wizard_cloud_content_image",
+        "label": "Welcome Wizard Cloud Content Image",
+        "value": [
+          4,
+          4
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "banner_icon_size",
+        "label": "Banner Icon Size",
+        "value": [
+          2.0,
+          2.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "marketplace_large_icon",
+        "label": "Marketplace Large Icon",
+        "value": [
+          4.0,
+          4.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "preferences_page_list_item",
+        "label": "Preferences Page List Item",
+        "value": [
+          8.0,
+          2.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "recommended_button_icon",
+        "label": "Recommended Button Icon",
+        "value": [
+          1.7,
+          1.7
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "recommended_section_setting_item",
+        "label": "Recommended Section Setting Item",
+        "value": [
+          14.0,
+          2.0
+        ],
+        "category": "Other",
+        "type": "size"
+      },
+      {
+        "key": "reset_profile_icon",
+        "label": "Reset Profile Icon",
+        "value": [
+          1,
+          1
+        ],
+        "category": "Other",
+        "type": "size"
+      }
+    ]
+  }
+}

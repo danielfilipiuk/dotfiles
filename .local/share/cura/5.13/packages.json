@@ -1,0 +1,580 @@
+{
+    "dismissed": [],
+    "installed": {
+        "BananaSplit": {
+            "filename": "/home/daniel/.cache/cura/5.11/cura_packages/BananaSplit.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "jarrrgh",
+                    "display_name": "jarrrgh",
+                    "email": "jarrrgh+ultimaker@gmail.com",
+                    "website": "https://github.com/jarrrgh"
+                },
+                "description": "Split model with one easy action along the build plate. Position your model so that part of it goes below the build plate and press Split button. The tool will reflect anything below the surface on top of it. You may then move the original model along the Z axis to fine tune the \"cut\" real-time.\n\nThis is a pseudo-split, which means objects are not actually split in half. Instead, they get duplicated and mirrored along the build plate. Cura takes care, that nothing below the build plate gets printed.",
+                "display_name": "Banana Split",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "BananaSplit",
+                "package_type": "plugin",
+                "package_version": "1.0.4",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.11.0",
+                "website": "https://github.com/jarrrgh/banana-split"
+            }
+        },
+        "BarbarianPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/BarbarianPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "nallath",
+                    "display_name": "nallath",
+                    "email": "j.vankessel@ultimaker.com",
+                    "website": "http://www.github.com/nallath"
+                },
+                "description": "An extension that enables users to quickly convert models from inches to metric",
+                "display_name": "Barbarian Units",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "BarbarianPlugin",
+                "package_type": "plugin",
+                "package_version": "2.3.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "http://www.github.com/nallath/barbarianPlugin"
+            }
+        },
+        "CalibrationShapesReborn": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/CalibrationShapesReborn.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "Parts to add to your scene to test various capabilities of your printer. Test how far your printer can bridge with the custom bridging test shapes! Also lets you make some basic shapes (cube, sphere, cylinder, tube, cone) - but now you can manually set the dimensions, for a few of them, anyway!\n\nOriginally by 5@xes.\n\nUpdated for compatibility with current versions of Cura.\nThis version no longer includes test towers - they were awkward to begin with and AutoTowers Generator does a far better job than I ever could.",
+                "display_name": "Calibration Shapes Reborn",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "CalibrationShapesReborn",
+                "package_type": "plugin",
+                "package_version": "1.2.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.10.0",
+                "website": "https://github.com/Slashee-the-Cow/CalibrationShapesReborn/"
+            }
+        },
+        "CuraBlender": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/CuraBlender.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "awiegel",
+                    "display_name": "Alexander Wiegel",
+                    "email": "alexander.wiegel@outlook.com",
+                    "website": "https://github.com/awiegel"
+                },
+                "description": "Provides support for reading/writing BLEND files.\nAdds further functionality, for example live mesh reloading.\n\nTrailer: https://www.youtube.com/watch?v=0cdlJtuJI70",
+                "display_name": "CuraBlender",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "CuraBlender",
+                "package_type": "plugin",
+                "package_version": "2.0.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/awiegel/CuraBlender"
+            }
+        },
+        "CustomJobPrefix": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/CustomJobPrefix.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Lets the user customise the prefix and postfix for print jobs (gcode files) on a per-printer basis. \n\nFormerly known as Custom Printjob Prefix.",
+                "display_name": "Printjob Naming",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "CustomJobPrefix",
+                "package_type": "plugin",
+                "package_version": "3.7.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-CustomJobPrefix"
+            }
+        },
+        "CustomSupportsReborn": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/CustomSupportsReborn.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "Create custom supports of several different shapes (or my favourite, click two points on your model and it'll do a line of support between them) to hold things up the way YOU want them. Don't let the automatic supports force you to do things their way any more.\n\nSupports can taper outwards (little top, big bottom) to hold up little bits of model without support so small it'll fall over. Set the taper angle to a negative value and they'll go inwards! Big top, small bottom, perfect for when you're running low on filament... or when you want to make sure you don't run low on filament :)\n\nThis is based on the Custom Support Cylinder plugin by 5axes, but I've updated it to make sure it works with current versions of Cura and added a few new features.\n\nGot any problems? Suggestions? Want to say hi? Come by the site and I'll be happy to see you!",
+                "display_name": "Custom Supports Reborn",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "CustomSupportsReborn",
+                "package_type": "plugin",
+                "package_version": "1.2.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.9.0",
+                "website": "https://github.com/Slashee-the-Cow/CustomSupportsReborn"
+            }
+        },
+        "DirectSupportBlockersReborn": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/DirectSupportBlockersReborn.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "Don't start with a tiny cube! Infinite shapes to make support blockers out of!\n\nBox\nSet the width, depth and height and click your object to create one, then move it where it's needed.  \n\nCylinder\nJust pick your diameter and height, click your object, and move it into position!\n\nSquare/Rectangular Pyramid\nDefine sizes for the top and bottom (it can go from small to big or vice versa) and height.\n- Normal supports will only avoid the part which intersects your model.\n- Tree supports will avoid the whole pyramid.\n\nLine\nClick two points on your model and it will draw a line of support blocker between them.\n\nCustom\nTurn any model into a support blocker! Works super if you need thing really specific. (Which is sort of the point.)\nRemember to move your custom blocker to intersect with the surface of the model that needs blocking.\n\nAll built in types can be a fixed height or go down to the build plate.\n\nInspired as a follow-up to \"Custom Support Eraser Plus\" by 5@xes but not based on it.",
+                "display_name": "Direct Support Blockers Reborn",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "DirectSupportBlockersReborn",
+                "package_type": "plugin",
+                "package_version": "1.0.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.10.0",
+                "website": "https://github.com/Slashee-the-Cow/DirectSupportBlockersReborn"
+            }
+        },
+        "HellaFusion": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/HellaFusion.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "HellAholic",
+                    "display_name": "HellAholic",
+                    "email": null,
+                    "website": "https://github.com/HellAholic"
+                },
+                "description": "This is a Multi-Quality Profile G-code Splicer. It allows you to print different sections of your model with different quality settings in a single print job. Want a fast draft quality for the base and fine details at the top? HellaFusion makes it possible.\n\nHow it works:\n- Define transition heights where you want to switch quality profiles\n- Assign a different Cura quality profile to each section\n- HellaFusion automatically slices each section and combines them into one seamless G-code file\n- Your printer executes a single print job with smooth transitions between quality settings",
+                "display_name": "HellaFusion",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "HellaFusion",
+                "package_type": "plugin",
+                "package_version": "1.1.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.9.0",
+                "website": "https://github.com/HellAholic/HellaFusion"
+            }
+        },
+        "MaterialSettingsPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/MaterialSettingsPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Lets the user select which print settings are available on the Materials pane of the preferences.\n\nThis plugin does not change the fact that a setting value specified in the \"sidebar\" settings, or in a quality profile, always overrides the value set for the material.",
+                "display_name": "Material Settings",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "MaterialSettingsPlugin",
+                "package_type": "plugin",
+                "package_version": "3.7.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-MaterialSettingsPlugin/"
+            }
+        },
+        "MeasureTool": {
+            "filename": "/home/daniel/.cache/cura/5.8/cura_packages/MeasureTool.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds a tool for measuring parts of models.\n\nThe plugin lets the user select two points, either on models or on the build plate. The distance between these two points is shown in the panel for the tool; the distance is shown both per axis and diagonally. \n\nWhen clicking the tool moves the closest of the two points to the cursor. Hold down the shift key to alternate between the two points instead.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Measure Tool",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "MeasureTool",
+                "package_type": "plugin",
+                "package_version": "1.2.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-MeasureTool/"
+            }
+        },
+        "MeshTools": {
+            "filename": "/home/daniel/.cache/cura/5.8/cura_packages/MeshTools.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds several mesh analysis and manipulation tools.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Mesh Tools",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "MeshTools",
+                "package_type": "plugin",
+                "package_version": "3.7.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-MeshTools"
+            }
+        },
+        "OrientationPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/OrientationPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "nallath",
+                    "display_name": "nallath",
+                    "email": "j.vankessel@ultimaker.com",
+                    "website": "http://www.github.com/nallath"
+                },
+                "description": "Extension that enables the automatic orientation of models to reduce the need for support. This wraps the MeshTweaker by Christoph Schranz, so it can be easily used in Cura. ",
+                "display_name": "Auto-Orientation",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "OrientationPlugin",
+                "package_type": "plugin",
+                "package_version": "3.7.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/nallath/CuraOrientationPlugin"
+            }
+        },
+        "PauseBackendPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/PauseBackendPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds a button to the sidebar to toggle automatic slicing.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Automatic Slicing Toggle",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "PauseBackendPlugin",
+                "package_type": "plugin",
+                "package_version": "3.6.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-PauseBackendPlugin"
+            }
+        },
+        "PrinterSettingsPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/PrinterSettingsPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds printer settings to the sidebar \n\nNB: Changes made in the sidebar override values set in the machine definition and end up in quality profiles. It is not recommended to use this plugin unless you understand the implications: USE AT YOUR OWN RISK.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Printer Settings",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "PrinterSettingsPlugin",
+                "package_type": "plugin",
+                "package_version": "3.6.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-PrinterSettingsPlugin"
+            }
+        },
+        "SVGToolpathReader": {
+            "filename": "/home/daniel/.cache/cura/5.8/cura_packages/SVGToolpathReader.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "Ghostkeeper",
+                    "display_name": "Ghostkeeper",
+                    "email": "rubend@tutanota.com",
+                    "website": "https://github.com/Ghostkeeper"
+                },
+                "description": "Allows reading SVG image files and lets the printer draw the outlines directly.",
+                "display_name": "SVG Toolpath Reader",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "SVGToolpathReader",
+                "package_type": "plugin",
+                "package_version": "1.2.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/Ghostkeeper/SVGToolpathReader"
+            }
+        },
+        "SettingsExporter": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/SettingsExporter.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "EmJay276",
+                    "display_name": "EmJay276",
+                    "email": "ultimaker@mjaeger.eu",
+                    "website": "https://github.com/EmJay276"
+                },
+                "description": "Exports all current settings of Cura and some metadata to a JSON file. \nThis allows profiles from Cura to be exported and used via the Command Line Interface with the CuraEngine.\nPrint settings are located in \"settings\" \u2192 \"extruders\" \u2192 \"<extruder_nr>\" \u2192 \"all\"",
+                "display_name": "Settings Exporter",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "SettingsExporter",
+                "package_type": "plugin",
+                "package_version": "1.0.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/EmJay276/CuraSettingsExportPlugin"
+            }
+        },
+        "SettingsGuide2": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/SettingsGuide2.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "Ghostkeeper",
+                    "display_name": "Ghostkeeper",
+                    "email": "rubend@tutanota.com",
+                    "website": "https://github.com/Ghostkeeper"
+                },
+                "description": "A guide on what settings do and how to use them.\nRight-click on a setting to access the guide.",
+                "display_name": "Settings Guide",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "SettingsGuide2",
+                "package_type": "plugin",
+                "package_version": "2.9.2",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/Ghostkeeper/SettingsGuide"
+            }
+        },
+        "SidebarGUIPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/SidebarGUIPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Provides an alternative interface which restores the sidebar.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Sidebar GUI",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "SidebarGUIPlugin",
+                "package_type": "plugin",
+                "package_version": "4.6.9",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.12.0",
+                "website": "https://github.com/fieldOfView/Cura-SidebarGUIPlugin"
+            }
+        },
+        "SpoonAntiWarpingReborn": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/SpoonAntiWarpingReborn.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "Helps prevent warping by creating \"spoons\" which help anchor parts of your print, without having to put like 20 brims around the whole thing. Let the automatic function place spoons on all the important corners of your shape, do it yourself - or a bit of both! Don't like where a spoon is pointed? Just select it like a normal model and rotate it.\n\nThe spoons are easy to remove from most materials and shouldn't leave any visible scarring. You can customise the size of the handle and the spoon itself (affecting the \"grab\" and \"pull\" they have) or use a teardrop shape which goes straight out to the spoon for a larger footprint on the build plate.\n\nYou can set the spoons to print before (or after) all the objects in the scene.\n\nUnlike the \"Tab Anti-Warping Reborn\" it doesn't use support settings. Spoons don't get in the way of any settings!\n\nOriginally created by 5@xes. For the Reborn version, I've updated and optimised all the code and made sure it works on newer versions of Cura.",
+                "display_name": "Spoon Anti-Warping Reborn",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "SpoonAntiWarpingReborn",
+                "package_type": "plugin",
+                "package_version": "1.1.3",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.10.0",
+                "website": "https://github.com/Slashee-the-Cow/SpoonAntiWarpingReborn/"
+            }
+        },
+        "StacksOfShapes": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/StacksOfShapes.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "A cornucopia of delightful things to add to your scene! Not only do we have 3D objects (mostly based on simple geometric shapes) but we also have a whole bunch of 2D symbols extruded to models you can add to your print for the finishing touch.\n\nMake them as big as you want, then use Cura's tools to move them around, rotate, mirror, scale them however you want. Be creative! It's much better than relying on my creativity.\n\nAnything you'd like to see added to this? Anything you have that you want to add to this? Just want to say hi? Come to the site and I'll enjoy the company!",
+                "display_name": "Stacks of Shapes",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "StacksOfShapes",
+                "package_type": "plugin",
+                "package_version": "1.0.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.10.0",
+                "website": "https://github.com/Slashee-the-Cow/StacksOfShapes"
+            }
+        },
+        "StartOptimiser": {
+            "filename": "/home/daniel/.cache/cura/5.8/cura_packages/StartOptimiser.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Lets the user optimise the Cura startup time by only loading configuration files for printers that are currently configured in Cura.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Startup Optimiser",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "StartOptimiser",
+                "package_type": "plugin",
+                "package_version": "3.6.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-StartOptimiser"
+            }
+        },
+        "TabAntiWarpingReborn": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/TabAntiWarpingReborn.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "SlasheeTheCow",
+                    "display_name": "Slashee the Cow",
+                    "email": "slasheethecow@gmail.com",
+                    "website": "https://github.com/slashee-the-cow"
+                },
+                "description": "Sick of warping but don't want to put 20 lines of brim all around something? Get something more targeted! This lets you - or the automatic function :) - put round \"tabs\" on the corners of objects to hold them securely in place.\n\nThe tabs are printed as support so they're quite easy to remove, especially the \"dish\" shaped ones, which are also easier to get off the build plate. You can specify the diameter and height of the tabs. After creation, tabs can be individually moved or deleted as required.\n\nOriginally created by 5@xes. For the Reborn version, I've updated and optimised all the code, made sure it works on current versions of Cura and threw in a couple of small new features which seemed like they'd be useful.",
+                "display_name": "Tab Anti-Warping Reborn",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "TabAntiWarpingReborn",
+                "package_type": "plugin",
+                "package_version": "1.1.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.10.0",
+                "website": "https://github.com/Slashee-the-Cow/TabAntiWarpingReborn/"
+            }
+        },
+        "TabbedSettingsPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/TabbedSettingsPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds tabs for categories to the custom print settings. Each settings-category has its own tab, and each tab shows all settings in that category.\n\nThere are two additional tabs: \"Favorites\" and \"Changed settings\". The \"Favorites\" tab behaves much like the original settings view. Instead of making all settings visible here, it is recommended to create a concise set of often-used settings. Start with the \"Basic\" set of favorites, and add other settings as you go. You can use the \"Settings Visibility Set Creator\" plugin to create multiple custom sets.\n\nThe \"Changed settings\" tab shows a list of settings that have been changed compared to the profile you have loaded. It is a handy view to check before you start a print.\n\nThis plugin can be used in tandem with the \"Sidebar GUI\" plugin, but also works fine without it.\n\nThe development of this plugin can be sponsored via Github Sponsors (https://github.com/sponsors/fieldofview) or Paypal (https://www.paypal.me/fieldofview)",
+                "display_name": "Tabbed Settings",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "TabbedSettingsPlugin",
+                "package_type": "plugin",
+                "package_version": "1.0.9",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.12.0",
+                "website": "https://github.com/fieldOfView/Cura-TabbedSettingsPlugin"
+            }
+        },
+        "ThemeCreator": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/ThemeCreator.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "HellAholic",
+                    "display_name": "HellAholic",
+                    "email": null,
+                    "website": "https://github.com/HellAholic"
+                },
+                "description": "Theme customization plugin that empowers users to create, edit, and manage custom visual themes for Ultimaker Cura with an intuitive graphical interface.\nThis plugin transforms Cura's theming from a technical file-editing task into an accessible, visual experience that anyone can use to personalize their 3D printing workflow.",
+                "display_name": "Theme Creator",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "ThemeCreator",
+                "package_type": "plugin",
+                "package_version": "1.4.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.9.0",
+                "website": "https://github.com/HellAholic/CuraThemeCreator"
+            }
+        },
+        "ThingiBrowser": {
+            "filename": "/home/daniel/.cache/cura/5.12/cura_packages/ThingiBrowser.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "ChrisTerBekeAuthor",
+                    "display_name": "Chris ter Beke",
+                    "email": "info@christerbeke.com",
+                    "website": "https://christerbeke.com"
+                },
+                "description": "Search and import 3D files from popular online repositories directly in Cura.\n\nThis plugin is not affiliated with Thingiverse or MyMiniFactory.",
+                "display_name": "ThingiBrowser",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "ThingiBrowser",
+                "package_type": "plugin",
+                "package_version": "3.1.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.4.0",
+                "website": "https://github.com/ChrisTerBeke/ThingiBrowser"
+            }
+        },
+        "VersionInTitlebarPlugin": {
+            "filename": "/home/daniel/.cache/cura/5.10/cura_packages/VersionInTitlebarPlugin.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "fieldofview",
+                    "display_name": "fieldOfView",
+                    "email": "aldo@fieldofview.com",
+                    "website": "http://fieldofview.com"
+                },
+                "description": "Adds the application version and the current jobname to the titlebar",
+                "display_name": "Titlebar Info",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "VersionInTitlebarPlugin",
+                "package_type": "plugin",
+                "package_version": "3.6.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.0.0",
+                "website": "https://github.com/fieldOfView/Cura-VersionInTitlebarPlugin"
+            }
+        }
+    },
+    "to_install": {},
+    "to_remove": [],
+    "version": 1
+}

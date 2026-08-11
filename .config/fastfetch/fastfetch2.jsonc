@@ -97,7 +97,7 @@
         "detectionMethod": "auto",
         "driverSpecific": true,
 	"temp": true,
-	"format": "{$2}{$3}{name}  {#2}[C:{core-count}]{?frequency} [{frequency}]{?} {temperature}"
+	"format": "{$2}{$3}AMD Radeon Cezzane 512SP {#2}[C:{core-count}]{?frequency} [{frequency}]{?} {temperature}"
       },
       {
         "type": "display",

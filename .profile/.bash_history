@@ -45577,3 +45577,277 @@ waybar --config ~/.config/waybar/right.jsonc
 mpc crossfade 0
 mpc crossfade 
 jf
+waybjf
+jf
+cd dotfiles/
+git status
+git add .
+git commit -m "MILK IN A WISKEY GLASS WITH A FLOATING PLUM theme complete, I think."
+git push
+jf
+ exec wl-paste --type image --watch cliphist store
+jf
+micro .config/systemd/user/cliphist-daemon.service 
+micro .config/systemd/user/cliphist-daemon.service 
+micro /usr/local/bin/cliphist-daemon 
+micro /usr/local/bin/cliphist-daemon 
+mv .config/systemd/user/cliphist-daemon.service .config/systemd/user/cliphist-text-daemon.se
+micro .config/systemd/user/cliphist-text-daemon.service 
+micro .config/systemd/user/cliphist-image-daemon.service 
+micro .config/systemd/user/cliphist-image-daemon.service 
+micro .config/systemd/user/cliphist-image-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user status cliphist-daemon.service 
+systemctl --user status cliphist-text-daemon.service 
+systemctl --user enable --now cliphist-text-daemon.service 
+systemctl --user daemon-reload 
+systemctl --user enable --now cliphist-text-daemon.service 
+systemctl --user enable --now cliphist-image-daemon.service 
+systemctl --user enable --now cliphist-image-daemon.service 
+systemctl --user status cliphist-image-daemon.service 
+systemctl --user status cliphist-text-daemon.service 
+systemctl --user disable --now cliphist-daemon.service 
+systemctl --user  stauts cliphist-daemon.service 
+systemctl --user  status cliphist-daemon.service 
+systemctl --user status cliphist-text-daemon.service 
+systemctl --user status cliphist-image-daemon.service 
+ exec -- wl-paste --type image --watch cliphist store &
+ exec -- wl-paste --type text --watch cliphist store &
+jf
+btop
+jf
+cliphist list
+pastel color >#c398b8
+pastel color c398b8
+pastel color plum
+sudo apt update
+exit
+syssrb 
+hyprlauncher 
+hyprpm update 
+sudo apt reinstall hyprland
+hyprlauncher 
+hyprlauncher --help
+hyprlauncher 
+hyprlock 
+hstr 
+hyprlock 
+hyprlock 
+hyprlock 
+btop
+jf
+hyprsunset 
+hypridle 
+hyprpm update 
+hyprpm reload
+cd downloads/
+git clone https://github.com/hyprwm/hyprlock.git
+cd hyprlock/
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+sudo apt install libsdbus-c++-dev 
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+sudo apt install libsdbus-c++-bin 
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+sudo apt install libpamtest0-dev 
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+sudo apt purge --auto-remove libpamtest0-dev 
+sudo apt install libpam-ocaml-dev 
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+sudo apt install libpam0g-dev 
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+cmake --build ./build --config Release --target hyprlock -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+hyprlock 
+jf
+pastel color b57daa
+pastel color orchid
+pastel color 281843
+pastel color "48,25,65,.9"
+waybar --help
+man waybar
+man waybar-styles 
+hyprshutdown --dry-run
+jf
+hyprpm upate
+hyprpm update
+hyprpm reload
+hyprland --version
+btop
+hyprctl version
+hyprctl plugins list
+hyprctl full-reload
+hyprctl reload
+hyprctl reload
+cd downloads/
+cd Waybar/
+cat README.md 
+meson setup build --reconfigure
+ninja -C build
+ninja -C rebuild
+ninja -C clean
+meson clean
+meson setup build clean
+meson setup build -wipe
+cd ..
+hstr 
+git clone https://github.com/Alexays/Waybar.git
+cd Waybar/
+meson setup build
+ninja -C build
+cat README.md 
+ninja -C build install 
+cd ..
+cd hyprlock/
+cd build/
+./hyprlock 
+cd build/
+./hyprlock 
+./hyprlock 
+./hyprlock 
+./hyprlock --version
+hyprlock --version
+hyprlock 
+hyprlock 
+hyprlock 
+./hyprlock 
+./hyprlock 
+hyprlauncher --help
+hyprlauncher -o 
+hyprlauncher -o 1 2
+hyprlauncher -o 1
+hyprlauncher -o "1=ls,2=ll"
+hyprlauncher -o "1=ls,2=ll"
+hyprlauncher -o "1=ls,2=ll"
+hyprlauncher -o "1:ls,2:ll"
+hyprlauncher --help
+hyprlauncher --dmenu
+hyprlauncher -m
+hyprlauncher -t
+hyprlauncher -
+hyprlauncher --help
+man hyprlauncher
+printf "A\nB\nC\n" | hyprlauncher --dmenu
+printf "A\nB\nC\n" | hyprlauncher --dmenu
+uuctl --hyprlauncher
+uuctl hyprlauncher
+uuctl hyprlauncher
+sudo apt install vicinacd ..
+cd ..
+cd ..
+cd ~/downloads/
+git clone https://github.com/vicinaehq/vicinae.git
+cd vicinae/
+ll
+mkdir build
+cd build
+cmake ..
+apt-file search qt6qmlconfig
+apt-file search qt6qml-dev
+cd ..
+cd --
+cd ..
+cd down
+cd down
+la
+cd daniel/
+cd downloads/
+./Vicinae-x86_64.AppImage 
+./Vicinae-x86_64.AppImage open
+/tmp/.mount_VicinaGaLeHo/AppRun.wrapped open
+cd /mnt/1TB/
+sudo mc
+man hyprshutdown 
+cd /mnt/500G/kernel/
+ll
+cd linux-7.1.8/
+./linux-kernel-config-and-build 
+cd downloads/
+7z . libz3-4_4.13.3-1_amd64.deb 
+tar xvf libz3-4_4.13.3-1_amd64.deb 
+dpkg-deb -x ./libz3-4_4.13.3-1_amd64.deb ./libz3-cura
+hstr 
+chmod +x ./UltiMaker-Cura-5.13.0-linux-X64.AppImage
+./UltiMaker-Cura-5.13.0-linux-X64.AppImage --appimage-extract
+cp ./libz3-cura/usr/lib/x86_64-linux-gnu/libz3.so.4 ./squashfs-root
+hstr 
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+ll .Appimage
+ll *.Appimage
+ll .Appimage
+ll | grep -i Appimage
+ll .AppImage
+ll AppImage
+ll | grep AppImage
+cd squashfs-root/
+./AppRun --help
+cuart
+cura
+cd ..
+./cura-5.12.AppImage 
+chmod +x ./UltiMaker-Cura-5.12.0-linux-X64.AppImage 
+./UltiMaker-Cura-5.12.0-linux-X64.AppImage --appimage-extract
+cp ./libz3-cura/usr/lib/x86_64-linux-gnu/libz3.so.4 ./squashfs-root
+cp ./libz3-cura/usr/lib/x86_64-linux-gnu/libz3.so.4 ./squashfs-root
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+./appimagetool-x86_64.AppImage squashfs-root cura-5.12.AppImage -v
+sudo apt install /mnt/500G/kernel/linux-libc-dev_7.1.8-1_amd64.deb 
+sudo apt purge --auto-remove linux-image-7.1.6-polaris-v1 linux-image-7.1.6-polaris-v2 linux-headers-7.1.6-polaris-v1 linux-headers-7.1.6-polaris-v2 
+sudo apt update
+winecfg
+wine ---version
+wine --version
+winetricks
+sudo apt clean
+sudo apt autoclean
+f
+jf
+hyprland --version
+fff
+fastfetch
+fastfetch --no-logo
+fastfetch --nologo
+fastfetch -nologo
+cd downloads/
+./gif
+./gifcurry-6.0.1.0-x86_64.AppImage 
+./gifcurry-6.0.1.0-x86_64.AppImage 
+btop
+fff
+/usr/bin/fastfetch 
+alias
+nano /usr/local/bin/fff 
+fff
+/usr/bin/fastfetch 
+/usr/bin/fastfetch --version
+apt show fastfetch 
+nano .config/fastfetch/fastfetch2.jsonc 
+micro .config/fastfetch/fastfetch2.jsonc 
+fff
+fff
+fff
+fff
+btop
+btop
+fff
+btop
+btop
+fff
+fff
+ffmpeg -i videos/monitor_DP-1_2026-08-10_01-33-40.mp4 videos/wobble.gif
+ffmpeg -i videos/monitor_DP-1_2026-08-10_01-33-40.mp4 -vf "fps=15,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" videos/wobble.gif
+ffmpeg -i videos/monitor_DP-1_2026-08-10_01-33-40.mp4 -vf "fps=15,scale=1280:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" videos/wobble.gif
+ffmpeg -i videos/monitor_DP-1_2026-08-10_01-33-40.mp4 -vf "fps=15,scale=1024:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" videos/wobble.gif
+jf
+gamescope --help
+gamescope --help | grep mango
+gamescope --help | grep mango
+btop
+man gamescope 
+gamescope  --help
+jf
+systemctl --user status hypridle.service 
+systemctl --user status hypridle.service 
+systemctl --user  hypr
+sysrb 

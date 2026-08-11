@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sun, 09 Aug 2026 23:36:25 -0300
+Source: linux-upstream
+Binary: linux-headers-7.1.8-polaris-v1 linux-image-7.1.8-polaris-v1 linux-libc-dev
+Architecture: amd64
+Version: 7.1.8-1
+Distribution: forky
+Urgency: low
+Maintainer: daniel <daniel@POLARIS.PUROSELLO>
+Changed-By: daniel <daniel@POLARIS.PUROSELLO>
+Description:
+ linux-headers-7.1.8-polaris-v1 - Linux kernel headers for 7.1.8-polaris-v1 on amd64
+ linux-image-7.1.8-polaris-v1 - Linux kernel, version 7.1.8-polaris-v1
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-upstream (7.1.8-1) forky; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 80712c6694b10f2b8f4339f7c8f5c51dc4ba3547 9659472 linux-headers-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ 089d4868acf09e5da2d362b27d9023351f46a42f 30003108 linux-image-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ f24512602061ff8e45f4841cbcda451195818e0e 1496232 linux-libc-dev_7.1.8-1_amd64.deb
+ a3e8cf4f4f79e2e8c9bb40452d8df3d7ffa2a388 7287 linux-upstream_7.1.8-1_amd64.buildinfo
+Checksums-Sha256:
+ 090cadd525997b068b6cffacadddb5bcea3bc6410ed678f7f88a123f33fae728 9659472 linux-headers-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ 899b67aae848304347ff3e9b50a937ed958f71a5942bc92f5b1768a8aa3b5f1f 30003108 linux-image-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ 9ff069b2bd97d279714030df1e0c5701d2571db009fc7528f1129fa13da2a0ba 1496232 linux-libc-dev_7.1.8-1_amd64.deb
+ 265763be4060f8579b5d7c2a2228069a9ca5d3bb0aa8af223ac8846a771b4f76 7287 linux-upstream_7.1.8-1_amd64.buildinfo
+Files:
+ ecbf4e1917af51d9b39ae2c621e1221d 9659472 kernel optional linux-headers-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ ac9f83470c3e705ef60c7cf5e93b0db4 30003108 kernel optional linux-image-7.1.8-polaris-v1_7.1.8-1_amd64.deb
+ 95d446799761f6c1e10e92ed1583043b 1496232 devel optional linux-libc-dev_7.1.8-1_amd64.deb
+ c7b44ee5bdc5f1f1d45f61df7512bd5d 7287 kernel optional linux-upstream_7.1.8-1_amd64.buildinfo

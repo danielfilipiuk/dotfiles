@@ -366,6 +366,7 @@
     
 "cpu": {
 	"interval": 1,
+	"cursor": "crosshair",
 	"format": " {usage}<span size=\"smaller\">%</span>  {avg_frequency}<span size=\"smaller\">G</span>",
 	
 
@@ -376,6 +377,7 @@
 
 "memory": {
 	"interval": 30,
+	"cursor": "crosshair",
 	"format": " {used:0.1f}<span size=\"smaller\">G</span>",
 },	
 
@@ -383,6 +385,7 @@
 
  "temperature": {
 	// "thermal-zone": 2,
+	"cursor": "crosshair",
 	"hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
 	"interval": 1,
 	"tooltip-format": "{temperatureC}°C\n{temperatureF}°F\n{temperatureK}°K",
@@ -415,6 +418,7 @@
   "return-type": "json",
   "format-icons": "",
   "tooltip": true,
+"cursor": "crosshair",
   "on-click": "app2unit -T -- nvtop",
   	"menu": "on-click-right",
 	"menu-file": "/home/daniel/.config/waybar/gpu-menu.xml",
