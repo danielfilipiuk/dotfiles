@@ -4,11 +4,11 @@
   <section name="Settings">
    <value name="LastOutputDirectory1">/home/daniel/music/</value>
    <value name="Language">internal</value>
-   <value name="StartCount">17</value>
-   <value name="WindowPosX">516</value>
-   <value name="WindowPosY">39</value>
-   <value name="WindowSizeX">454</value>
-   <value name="WindowSizeY">669</value>
+   <value name="StartCount">18</value>
+   <value name="WindowPosX">1027</value>
+   <value name="WindowPosY">43</value>
+   <value name="WindowSizeX">568</value>
+   <value name="WindowSizeY">893</value>
    <value name="Encoder">opus-enc</value>
    <value name="WindowMaximized">0</value>
    <value name="ShowTips">0</value>
@@ -92,7 +92,7 @@
    <value name="ActiveDrive">0</value>
   </section>
   <section name="Donate">
-   <value name="StartCount">17</value>
+   <value name="StartCount">18</value>
    <value name="ShowAgain">1</value>
   </section>
   <section name="Playlist">
@@ -131,7 +131,7 @@
    <value name="SingleFileMode">1</value>
   </section>
   <section name="Joblist">
-   <value name="FieldSizes">267,9,50,80,1</value>
+   <value name="FieldSizes">267,123,50,80,1</value>
    <value name="Fields">&lt;artist&gt;,&lt;title&gt;,&lt;track&gt;,&lt;time&gt;,&lt;bytes&gt;</value>
   </section>
   <section name="LAME">

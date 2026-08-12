@@ -4,32 +4,54 @@
   
 <text xml:space="preserve"><note-content version="0.1"><underline>GIT commands</underline>
 
-#basic commands to upload changes.
+<underline>Command SQL analogy</underline>
+git add      Insert rows into a staging table
+git commit   Commit a transaction
+git push     Replicate to a remote server
+git gc       VACUUM FULL / database compaction
+git reflog   Transaction log
+git reflog   expire Delete old transaction log entries
+
+
+<underline>#basic commands to upload changes.</underline>
 git status
+git log --oneline --graph
 git add .
 git status
 git commit -m " "
 git status
 
-#to check database sizes:
+#see commit not yet uploaded
+git log origin/main..HEAD --oneline
+
+<underline># Check repository health</underline>
+git status
 git count-objects -vH
 
-# Safety net
+<underline># Safety net</underline>
 git branch backup-before-clean
 
-# Go back to the last good commit while keeping your files
+<underline># Go back to the last good commit while keeping your files</underline>
 git reset --soft 618ac33
 
-# Unstage everything
+<underline># Unstage everything</underline>
 git restore --staged .
 
-# Now permanently remove unreachable objects
+<underline># After removing large files from history (not for routine use)</underline>
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+
+<underline>#If I accidentally commit a 3 GB ISO...</underline>
+git reset ...
+#or
+git rebase -i
+#then
 git reflog expire --expire=now --all
 git gc --prune=now --aggressive
 
 </note-content></text>
-  <last-change-date>2026-08-05T20:07:46.2637716-03:00</last-change-date>
-  <last-metadata-change-date>2026-08-05T20:07:46.2637716-03:00</last-metadata-change-date>
+  <last-change-date>2026-08-05T20:38:56.2631747-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-05T20:38:56.2631747-03:00</last-metadata-change-date>
   <create-date>2026-08-05T20:03:11.2642232-03:00</create-date>
   <cursor-position>1</cursor-position>
   <selection-bound-position>1</selection-bound-position>

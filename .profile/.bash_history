@@ -45851,3 +45851,184 @@ systemctl --user status hypridle.service
 systemctl --user status hypridle.service 
 systemctl --user  hypr
 sysrb 
+./ProtonUp-Qt-2.15.1-x86_64.AppImage 
+./ProtonUp-Qt-2.15.1-x86_64.AppImage 
+BTOP
+btop
+jf
+hyprlock
+hyprlock
+cmd[update:1] ~/.config/hypr/scripts/now-playing.sh
+~/.config/hypr/scripts/now-playing.sh
+playerctl --help
+playerctl 
+playerctl pause
+mpc 
+mpc --format={artist{
+mpc --format={artist}
+mpc --format=artist, album, track
+mpc --format=artist, album, title
+mpc --format=artist, title
+mpc --format=artist
+mpc 
+df -u
+df 
+df -h
+gamescope -F vkcube
+gamescope -f vkcube
+btop
+hyprprop 
+hyprprop 
+hyprprop 
+gimp-3.2 &
+xprop WM_CLASS
+hyprprop 
+env | sort > /tmp/gimp-terminal-env
+env | sort > /tmp/gimp-terminal-env
+env | sort > /tmp/gimp-terminal-env
+env | sort > /tmp/gimp-terminal-env
+tr '\0' '\n' < /proc/$(pgrep -n gimp-3.2)/environ | sort > /tmp/gimp-fuzzel-env
+diff -u /tmp/gimp-terminal-env /tmp/gimp-fuzzel-env
+daniel:/mnt/500G/downloads$ tr '\0' '\n' < /proc/$(pgrep -n gimp-3.2)/environ | sort > /tmp/gimp-fuzzel-env
+daniel:/mnt/500G/downloads$ diff -u /tmp/gimp-terminal-env /tmp/gimp-fuzzel-env
+--- /tmp/gimp-terminal-env	2026-08-11 20:21:03.780373314 -0300
++++ /tmp/gimp-fuzzel-env	2026-08-11 20:21:12.784302451 -0300
+@@ -3,12 +3,12 @@
+ APP2UNIT_SLICES=a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice
+ APP2UNIT_TYPE=service
+ AQ_TRACE=0
+-COLORTERM=truecolor
+ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+ DEBUG=False
+ DISPLAY=:0
+ ELECTRON_OZONE_PLATFORM_HINT=auto
+ GCC_COLORS=error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01
++GDK_BACKEND=x11
+ GDK_SCALE=1
+ GPG_AGENT_INFO=/run/u
+daniel:/mnt/500G/downloads$ tr '\0' '\n' < /proc/$(pgrep -n gimp-3.2)/environ | sort > /tmp/gimp-fuzzel-env
+daniel:/mnt/500G/downloads$ diff -u /tmp/gimp-terminal-env /tmp/gimp-fuzzel-env
+--- /tmp/gimp-terminal-env	2026-08-11 20:21:03.780373314 -0300
++++ /tmp/gimp-fuzzel-env	2026-08-11 20:21:12.784302451 -0300
+@@ -3,12 +3,12 @@
+ APP2UNIT_SLICES=a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice
+ APP2UNIT_TYPE=service
+ AQ_TRACE=0
+-COLORTERM=truecolor
+ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+ DEBUG=False
+ DISPLAY=:0
+ ELECTRON_OZONE_PLATFORM_HINT=auto
+ GCC_COLORS=error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01
++GDK_BACKEND=x11
+ GDK_SCALE=1
+ GPG_AGENT_INFO=/run/u
+echo "$GDK_BACKEND"
+export | grep -i echo GDK_BACKEND
+export | grep -i echo GDK_BACKEND
+export | grep -i GDK_BACKEND
+export | grep -i GDK
+tr '\0' '\n' < /proc/$(pgrep -n fuzzel)/environ | grep GDK
+grep -Rns --exclude-dir=.git 'GDK_BACKEND'     ~/.config ~/.local ~/.profile ~/.bashrc ~/.bash_profile     /etc/environment /etc/profile /etc/profile.d 2>/dev/null
+grep -Rns 'GDK_BACKEND'     ~/.config/systemd/user     /etc/systemd/user     /usr/lib/systemd/user     /usr/local/lib/systemd/user 2>/dev/null
+grep -Rns 'GDK_BACKEND'     ~/.config/systemd/user     /etc/systemd/user     /usr/lib/systemd/user     /usr/local/lib/systemd/user 2>/dev/null
+command -v app2unit
+grep -Rns 'GDK_BACKEND' "$(dirname "$(command -v app2unit)")" 2>/dev/null
+grep -Rns 'GDK_BACKEND\|fuzzel' ~/.config/hypr
+app2unit -- env | grep GDK
+app2unit -S both -- env | grep GDK
+app2unit -S both -- env | sort > /tmp/app2unit-env
+grep GDK /tmp/app2unit-env
+less ~/.local/bin/app2unit
+grep -nEi 'GDK|GTK|WAYLAND|X11|desktop|environment|env' ~/.local/bin/app2unit
+head -80 ~/.local/bin/app2unit
+app2unit -S both -- gimp-3.2
+tr '\0' '\n' < /proc/$(pgrep -n gimp-3.2)/environ | grep GDK
+hyprprop 
+grep -Ril 'Exec=gimp-3.2'     ~/.local/share/applications     /usr/local/share/applications     /usr/share/applications 2>/dev/null
+grep -nE '^\[Desktop Entry\]|^Name|^Exec|^TryExec|^Type|^X-|^Environment' /home/daniel/.local/share/applications/gimp.desktop
+grep -nE '^\[Desktop Entry\]|^Name|^Exec|^TryExec|^Type|^X-|^Environment' /usr/share/applications/gimp.desktop
+hyprprop 
+hyprprop 
+cd ~/dotfiles/
+git status
+git add .
+git commit -m "kernel 7.1.8, waybar css minimal details"
+git push
+git log origin/main..HEAD --oneline
+git reset --soft 430a8f6
+git status
+fir add .
+git add .
+git push
+git rebase -i
+git reset ...
+git count-objects -vH
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push
+git count-objects -vH
+git log origin/main..HEAD --oneline
+git reset --soft 430a8f6
+git log origin/main..HEAD --oneline
+git restore --staged .
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git status
+git log --oneline --graph
+update-desktop-database 
+update-desktop-database --help
+update-desktop-database -v
+update-desktop-database -v ~/.local/share/applications
+inkscape
+inkscape
+inkscape
+cd ~/downloads/
+sudo apt reinstall ./Heroic-2.22.1-linux-amd64.deb 
+hyprprop 
+hyprprop 
+hyprprop 
+gimp
+gimp-3.2 
+cat /home/daniel/dotfiles/.local/share/applications/yazi.desktop
+ll /home/daniel/dotfiles/.local/share/icons/
+ll /home/daniel/dotfiles/.local/share/icons/ | grep yazi
+./linux_system_info_collector 
+./system_info_collector collect --convert-after -o
+./linux_system_info_collector collect --convert-after -o
+./linux_system_info_collector 
+./gotop 
+./gotop --help
+./gotop -a -s 
+./gotop -s 
+gotop --list-devices
+gotop --list devices
+gotop
+gotop
+gotop
+gotop
+gotop
+gotop
+gotop
+gotop
+gotop
+iotop
+sudo iotop
+iftop
+sudo apt install iftop
+sudo iftop
+cd ~/downloads/
+./UltiMaker-Cura-5.12.0-linux-X64.AppImage --appimage-extracty
+./UltiMaker-Cura-5.12.0-linux-X64.AppImage --appimage-extract
+./appimagetool-x86_64.AppImage ./squashfs-root cura-5.13.AppImage -v
+chmod +x cura-5.13.AppImage 
+./cura-5.13.AppImage 
+./UltiMaker-Cura-5.13.0-linux-X64.AppImage --appimage-extract
+./appimagetool-x86_64.AppImage ./squashfs-root cura-5.13.AppImage -v
+chmod +x cura-5.13.AppImage 
+./cura-5.13.AppImage 
+./cura-5.13.AppImage 
+./cura-5.13.AppImage 
+./cura-5.13.AppImage 
+./cura-5.13.AppImage 
+cura

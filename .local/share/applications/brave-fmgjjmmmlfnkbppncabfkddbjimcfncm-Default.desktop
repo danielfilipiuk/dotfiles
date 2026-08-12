@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Gmail
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fmgjjmmmlfnkbppncabfkddbjimcfncm
+Icon=brave-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default
+StartupWMClass=crx_fmgjjmmmlfnkbppncabfkddbjimcfncm

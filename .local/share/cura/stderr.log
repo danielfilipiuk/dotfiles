@@ -1,13 +1,403 @@
-Fatal Python error: Aborted
-
-Current thread 0x00007f289f77a780 (most recent call first):
-  File "UM/View/GL/OpenGLContext.py", line 36 in setContext
-  File "UM/View/GL/OpenGLContext.py", line 125 in detectBestOpenGLVersion
-  File "UM/Qt/QtApplication.py", line 179 in initialize
-  File "cura/CuraApplication.py", line 350 in initialize
-  File "UM/Application.py", line 296 in run
-  File "UM/Qt/QtApplication.py", line 386 in run
-  File "cura/CuraApplication.py", line 888 in run
-  File "cura_app.py", line 243 in <module>
-
-Extension modules: PyQt6.QtCore, PyQt6.QtNetwork, PyQt6.QtGui, PyQt6.QtWidgets, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.sparse.linalg._isolve._iterative, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.linalg._flinalg, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, scipy.spatial.transform._rotation, _cffi_backend, PyQt6.QtOpenGL, PyQt6.QtQml, PyQt6.QtQuick, pyArcus, PyQt6.QtSvg, pyclipper._pyclipper, pynest2d, scipy.optimize._minpack2, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._cobyla, scipy.optimize._slsqp, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy.optimize.__nnls, scipy.optimize._highs.cython.src._highs_wrapper, scipy.optimize._highs._highs_wrapper, scipy.optimize._highs.cython.src._highs_constants, scipy.optimize._highs._highs_constants, scipy.linalg._interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, shapely.lib, shapely._geos, shapely._geometry_helpers, scipy.ndimage._nd_image, _ni_label, scipy.ndimage._ni_label (total: 88)
+trimesh/interfaces/scad.py:28: DeprecationWarning: Use shutil.which instead of find_executable
+  _scad_executable = find_executable('openscad', path=_search_path)
+trimesh/interfaces/blender.py:36: DeprecationWarning: Use shutil.which instead of find_executable
+  _blender_executable = find_executable('blender', path=_search_path)
+trimesh/interfaces/vhacd.py:21: DeprecationWarning: Use shutil.which instead of find_executable
+  _vhacd_executable = find_executable(_name, path=_search_path)
+trimesh/curvature.py:12: DeprecationWarning: Please use `coo_matrix` from the `scipy.sparse` namespace, the `scipy.sparse.coo` namespace is deprecated.
+  from scipy.sparse.coo import coo_matrix
+trimesh/exchange/ply.py:953: DeprecationWarning: Use shutil.which instead of find_executable
+  draco_encoder = find_executable('draco_encoder')
+trimesh/util.py:89: DeprecationWarning: 'pkgutil.find_loader' is deprecated and slated for removal in Python 3.14; use importlib.util.find_spec() instead
+  return pkgutil.find_loader(name) is not None
+trimesh/exchange/binvox.py:18: DeprecationWarning: Use shutil.which instead of find_executable
+  binvox_encoder = find_executable('binvox')
+trimesh/path/exchange/dxf.py:1101: DeprecationWarning: Use shutil.which instead of find_executable
+  _teigha = find_executable(_name)
+UM/Qt/QtApplication.py:734: DeprecationWarning: QEvent constructor is deprecated
+  super().__init__(self.QtFunctionEvent)
+sentry_sdk/hub.py:383: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[35m2026-08-12 01:49:41,245[0m - [36mDEBUG[0m - [37m[MainThread] UM.Application.initialize [171]: Initializing UltiMaker Cura[0m
+[35m2026-08-12 01:49:41,245[0m - [36mDEBUG[0m - [37m[MainThread] UM.Application.initialize [172]: App Version 5.13.0[0m
+[35m2026-08-12 01:49:41,245[0m - [36mDEBUG[0m - [37m[MainThread] UM.Application.initialize [173]: Api Version 8.12.0[0m
+[35m2026-08-12 01:49:41,245[0m - [36mDEBUG[0m - [37m[MainThread] UM.Application.initialize [174]: Build type None[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/.mount_curafDClAE/../Resources/share/uranium/plugins must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/.mount_curafDClAE/../Resources/share/cura/plugins must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib/uranium must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib64/uranium must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib32/uranium must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/.mount_curafDClAE/plugins must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/Resources/uranium/plugins must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/Resources/cura/plugins must be a folder.[0m
+[35m2026-08-12 01:49:41,245[0m - [36mDEBUG[0m - [37m[MainThread] UM.Resources.__initializeStoragePaths [483]: Initializing storage paths[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.Resources.__initializeStoragePaths [494]: Config storage path is /home/daniel/.config/cura/5.13[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.Resources.__initializeStoragePaths [502]: Data storage path is /home/daniel/.local/share/cura/5.13[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.Resources.__initializeStoragePaths [514]: Cache storage path is /home/daniel/.cache/cura/5.13[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /tmp/.mount_curafDClAE/share/cura/resources/bundled_packages/cura.json[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager.__init__ [56]: Found bundled packages JSON file: /tmp/.mount_curafDClAE/share/uranium/resources/bundled_packages/uranium.json[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [124]: Trying OpenGL context 4.1...[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGLContext.detectBestOpenGLVersion [132]: Yay, we got at least OpenGL 4.1 core: 4.6 Core profile[0m
+[35m2026-08-12 01:49:41,246[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.QtApplication.initialize [193]: Detected most suitable OpenGL context version: 4.1 Core profile[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.Qt.QtApplication.initialize [200]: Initializing job queue ...[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.Qt.QtApplication.initialize [204]: Initializing version upgrade manager ...[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /tmp/.mount_curafDClAE/share/cura/resources/bundled_packages/cura.json[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager._loadManagementData [174]: Loaded bundled packages data from /tmp/.mount_curafDClAE/share/uranium/resources/bundled_packages/uranium.json[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager._loadManagementData [201]: Loaded user packages management file from /home/daniel/.local/share/cura/5.13/packages.json[0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PackageManager._removeAllScheduledPackages [280]: Attempting to remove the following scheduled packages: - [0m
+[35m2026-08-12 01:49:41,246[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.initializeBeforePluginsAreLoaded [138]: Loading plugin configuration file '/home/daniel/.config/cura/5.13/plugins.json'[0m
+[35m2026-08-12 01:49:41,246[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib/cura must be a folder.[0m
+[35m2026-08-12 01:49:41,246[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib64/cura must be a folder.[0m
+[35m2026-08-12 01:49:41,246[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/libx32/cura must be a folder.[0m
+[35m2026-08-12 01:49:41,246[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.addPluginLocation [205]: Plugin location /tmp/lib32/cura must be a folder.[0m
+[35m2026-08-12 01:49:41,247[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ConsoleLogger 1.0.1[0m
+[35m2026-08-12 01:49:41,250[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin OBJReader 1.0.1[0m
+[35m2026-08-12 01:49:41,253[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin OBJWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,257[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin STLReader 1.0.1[0m
+[35m2026-08-12 01:49:41,260[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin STLWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,264[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin FileLogger 1.0.1[0m
+[35m2026-08-12 01:49:41,268[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin LocalContainerProvider 1.0.1[0m
+[35m2026-08-12 01:49:41,272[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin LocalFileOutputDevice 1.0.1[0m
+[35m2026-08-12 01:49:41,277[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CameraTool 1.0.1[0m
+[35m2026-08-12 01:49:41,280[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MirrorTool 1.0.1[0m
+[35m2026-08-12 01:49:41,286[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin RotateTool 1.0.2[0m
+[35m2026-08-12 01:49:41,292[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ScaleTool 1.0.1[0m
+[35m2026-08-12 01:49:41,294[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SelectionTool 1.0.1[0m
+[35m2026-08-12 01:49:41,299[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin TranslateTool 1.0.1[0m
+[35m2026-08-12 01:49:41,307[0m - [32mINFO[0m - [37m[MainThread] UpdateChecker.UpdateChecker.checkNewVersion [70]: Checking for new version[0m
+[35m2026-08-12 01:49:41,310[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin UpdateChecker 1.0.1[0m
+[35m2026-08-12 01:49:41,319[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SimpleView 1.0.1[0m
+[35m2026-08-12 01:49:41,325[0m - [33mWARNING[0m - [37m[MainThread] 3DConnexion.register [25]: Unable to load 3Dconnexion library: No module named 'pynavlib'[0m
+[35m2026-08-12 01:49:41,325[0m - [33mWARNING[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [514]: Plugin 3DConnexion did not return any objects to register[0m
+[35m2026-08-12 01:49:41,348[0m - [36mDEBUG[0m - [37m[MainThread] 3MFReader.SpecificSettingsModel._update [59]: Updating SpecificSettingsModel[0m
+[35m2026-08-12 01:49:41,349[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin 3MFReader 1.0.1[0m
+[35m2026-08-12 01:49:41,362[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin 3MFWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,365[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin AMFReader 1.0.0[0m
+[35m2026-08-12 01:49:41,373[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CuraDrive 1.2.0[0m
+[35m2026-08-12 01:49:41,391[0m - [32mINFO[0m - [37m[MainThread] CuraEngineBackend.CuraEngineBackend.__init__ [113]: Found CuraEngine at: /tmp/.mount_curafDClAE/CuraEngine[0m
+[35m2026-08-12 01:49:41,392[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CuraEngineBackend 1.0.2[0m
+[35m2026-08-12 01:49:41,394[0m - [36mDEBUG[0m - [37m[MainThread] UM.Backend.Backend._logSocketState [232]: Socket state changed to Listening[0m
+[35m2026-08-12 01:49:41,395[0m - [32mINFO[0m - [37m[MainThread] UM.Backend.Backend.startEngine [96]: Started engine process: /tmp/.mount_curafDClAE/CuraEngine[0m
+[35m2026-08-12 01:49:41,396[0m - [36mDEBUG[0m - [37m[MainThread] UM.Backend.Backend._backendLog [140]: [Backend] Calling engine with: ['/tmp/.mount_curafDClAE/CuraEngine', 'connect', '127.0.0.1:49674', ''][0m
+[35m2026-08-12 01:49:41,400[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CuraProfileReader 1.0.1[0m
+[35m2026-08-12 01:49:41,403[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CuraProfileWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,410[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [0m
+[35m2026-08-12 01:49:41,411[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] Cura_SteamEngine version 5.13.0[0m
+[35m2026-08-12 01:49:41,411[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [0m
+[35m2026-08-12 01:49:41,411[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] Copyright (C) 2024 Ultimaker[0m
+[35m2026-08-12 01:49:41,412[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [0m
+[35m2026-08-12 01:49:41,412[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] This program is free software: you can redistribute it and/or modify[0m
+[35m2026-08-12 01:49:41,414[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] it under the terms of the GNU Affero General Public License as published by[0m
+[35m2026-08-12 01:49:41,414[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] the Free Software Foundation, either version 3 of the License, or[0m
+[35m2026-08-12 01:49:41,415[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] (at your option) any later version.[0m
+[35m2026-08-12 01:49:41,415[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [0m
+[35m2026-08-12 01:49:41,416[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] This program is distributed in the hope that it will be useful,[0m
+[35m2026-08-12 01:49:41,416[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of[0m
+[35m2026-08-12 01:49:41,416[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the[0m
+[35m2026-08-12 01:49:41,416[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] GNU Affero General Public License for more details.[0m
+[35m2026-08-12 01:49:41,417[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [0m
+[35m2026-08-12 01:49:41,417[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] You should have received a copy of the GNU Affero General Public License[0m
+[35m2026-08-12 01:49:41,417[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.[0m
+[35m2026-08-12 01:49:41,417[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [2026-08-12 01:49:41.409] [info] Connecting to 127.0.0.1:49674[0m
+[35m2026-08-12 01:49:41,428[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin DigitalLibrary 1.1.0[0m
+[35m2026-08-12 01:49:41,428[0m - [36mDEBUG[0m - [37m[MainThread] UM.Backend.Backend._logSocketState [236]: Socket state changed to Connected[0m
+[35m2026-08-12 01:49:41,428[0m - [36mDEBUG[0m - [37m[MainThread] UM.Backend.Backend._onSocketStateChanged [225]: Backend connected on port 49674[0m
+[35m2026-08-12 01:49:41,433[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin FirmwareUpdateChecker 1.0.1[0m
+[35m2026-08-12 01:49:41,436[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin FirmwareUpdater 1.0.1[0m
+[35m2026-08-12 01:49:41,438[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin GCodeGzReader 1.0.1[0m
+[35m2026-08-12 01:49:41,440[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin GCodeGzWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,443[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin GCodeProfileReader 1.0.1[0m
+[35m2026-08-12 01:49:41,450[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin GCodeReader 1.0.1[0m
+[35m2026-08-12 01:49:41,453[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin GCodeWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,457[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ImageReader 1.0.1[0m
+[35m2026-08-12 01:49:41,460[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin LegacyProfileReader 1.0.1[0m
+[35m2026-08-12 01:49:41,463[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MachineSettingsAction 1.0.1[0m
+[35m2026-08-12 01:49:41,472[0m - [32mINFO[0m - [37m[MainThread] MakerbotWriter.MakerbotWriter.__init__ [34]: Using PyDulcificum: 5.10.2[0m
+[35m2026-08-12 01:49:41,472[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MakerbotWriter 0.1.0[0m
+[35m2026-08-12 01:49:41,491[0m - [36mDEBUG[0m - [37m[MainThread] cura.OAuth2.AuthorizationService.getAccessToken [158]: No auth data to retrieve the access_token from[0m
+[35m2026-08-12 01:49:41,492[0m - [36mDEBUG[0m - [37m[MainThread] cura.UltimakerCloud.UltimakerCloudScope.requestHook [30]: User is not logged in for Cloud API request to https://api.ultimaker.com/cura-packages/v1/cura/v8.12.0/packages/package-updates?installed_packages=GenericNylon:1.4.0&installed_packages=FABtotumPLA:1.4.0&installed_packages=ULTIMAKERBASCFMETHOD:2.0.0&installed_packages=VertexDeltaABS:1.4.0&installed_packages=PolyWoodPLA:1.0.1&installed_packages=DagomaChromatikPLA:1.0.1&installed_packages=GenericABS:1.4.0&installed_packages=PolyMaxPLA:1.0.1&installed_packages=UltimakerPP:1.4.0&installed_packages=ULTIMAKERNYLON12CFMETHOD:2.0.0&installed_packages=FABtotumABS:1.4.0&installed_packages=GenericPETCF:1.4.0&installed_packages=GenericBAM:1.4.0&installed_packages=UltimakerABS:1.4.0&installed_packages=JABILSEBSMETHOD:2.0.0&installed_packages=UltimakerTPLA:1.4.0&installed_packages=ULTIMAKERPETGMETHOD:2.0.0&installed_packages=FABtotumNylon:1.4.0&installed_packages=GenericPVA:1.4.0&installed_packages=UltimakerBAM:1.4.0&installed_packages=VertexDeltaPET:1.4.0&installed_packages=FiberlogyHDPLA:1.0.1&installed_packages=ULTIMAKERASAMETHOD:2.0.0&installed_packages=ULTIMAKERTOUGHMETHOD:2.0.0&installed_packages=UltimakerPPSCF:1.0.0&installed_packages=UltimakerCPEP:1.4.0&installed_packages=GenericHIPS:1.4.0&installed_packages=GenericCPE:1.4.0&installed_packages=PolyPlusPLA:1.0.1&installed_packages=BASFMETALMETHOD:2.0.0&installed_packages=BASFUltrafuse316L:1.0.1&installed_packages=GenericCFFPA:1.4.0&installed_packages=GenericGFFCPE:1.4.0&installed_packages=Filo3DPLA:1.0.1&installed_packages=ULTIMAKERNYLONCFMETHOD:2.0.0&installed_packages=ULTIMAKERSR30METHOD:2.0.0&installed_packages=UltimakerPETCF:1.4.0&installed_packages=GenericToughPLA:1.4.0&installed_packages=UltimakerNylon:1.4.0&installed_packages=GenericPC:1.4.0&installed_packages=VertexDeltaTPU:1.4.0&installed_packages=GenericGFFPA:1.4.0&installed_packages=IMADE3DJellyBOXPLA:1.0.1&installed_packages=UltimakerPLA:1.4.0&installed_packages=FABtotumTPU:1.4.0&installed_packages=GenericPLA:1.4.0&installed_packages=POLYMAKERPCMETHOD:2.0.0&installed_packages=PolyFlexPLA:1.0.1&installed_packages=ULTIMAKERNYLONMETHOD:2.0.0&installed_packages=ULTIMAKERRAPIDRINSEMETHOD:2.0.0&installed_packages=GenericTPU:1.4.0&installed_packages=UltimakerTPU:1.4.0&installed_packages=UltimakerPVA:1.4.0&installed_packages=UltimakerCPE:1.4.0&installed_packages=UltimakerPC:1.4.0&installed_packages=GenericCPEPlus:1.4.0&installed_packages=PolyMaxPC:1.0.1&installed_packages=VertexDeltaPLA:1.4.0&installed_packages=GenericCFFCPE:1.4.0&installed_packages=OctofiberPLA:1.0.1&installed_packages=GenericPETG:1.4.0&installed_packages=GenericPP:1.4.0&installed_packages=ULTIMAKERPVAMETHOD:2.0.0&installed_packages=IMADE3DJellyBOXPETG:1.0.1&installed_packages=JabilTPE_SEBS1300_95a:1.0.1&installed_packages=ULTIMAKERABSMETHOD:2.0.0&installed_packages=ULTIMAKERPLAMETHOD:2.0.0&installed_packages=UltimakerPETG:1.4.0&installed_packages=ULTIMAKERABSRMETHOD:2.0.0&installed_packages=OBJWriter:1.0.1&installed_packages=ImageReader:1.0.1&installed_packages=ModelChecker:1.0.1&installed_packages=VersionUpgrade47to48:1.0.0&installed_packages=VersionUpgrade44to45:1.0.0&installed_packages=SliceInfoPlugin:1.0.1&installed_packages=FirmwareUpdater:1.0.1&installed_packages=GCodeGzReader:1.0.1&installed_packages=OBJReader:1.0.1&installed_packages=CuraDrive:1.2.0&installed_packages=MeshTools:3.7.2&installed_packages=CustomJobPrefix:3.7.0&installed_packages=VersionUpgrade42to43:1.0.0&installed_packages=MakerbotWriter:1.0.1&installed_packages=VersionUpgrade41to42:1.0.0&installed_packages=VersionUpgrade413to50:1.0.0&installed_packages=StacksOfShapes:1.0.0&installed_packages=VersionUpgrade30to31:1.0.1&installed_packages=VersionUpgrade27to30:1.0.1&installed_packages=TabAntiWarpingReborn:1.1.0&installed_packages=SupportEraser:1.0.1&installed_packages=UpdateChecker:1.0.1&installed_packages=SettingsExporter:1.0.0&installed_packages=MachineSettingsAction:1.0.1&installed_packages=UFPWriter:1.0.1&installed_packages=VersionUpgrade33to34:1.0.1&installed_packages=AMFReader:1.0.0&installed_packages=GCodeReader:1.0.1&installed_packages=3DConnexion:1.0.0&installed_packages=PostProcessingPlugin:2.2.1&installed_packages=SimulationView:1.0.1&installed_packages=CuraProfileReader:1.0.1&installed_packages=UltimakerMachineActions:1.0.1&installed_packages=TrimeshReader:1.0.0&installed_packages=UM3NetworkPrinting:1.0.1&installed_packages=DirectSupportBlockersReborn:1.0.2&installed_packages=GCodeGzWriter:1.0.1&installed_packages=LegacyProfileReader:1.0.1&installed_packages=VersionUpgrade35to40:1.0.0&installed_packages=BarbarianPlugin:2.3.2&installed_packages=MaterialSettingsPlugin:3.7.0&installed_packages=VersionUpgrade43to44:1.0.0&installed_packages=DigitalLibrary:1.1.0&installed_packages=TabbedSettingsPlugin:1.0.9&installed_packages=CuraProfileWriter:1.0.1&installed_packages=3MFReader:1.0.1&installed_packages=VersionUpgrade49to410:1.0.0&installed_packages=VersionUpgrade52to53:1.0.0&installed_packages=VersionUpgrade460to462:1.0.0&installed_packages=RemovableDriveOutputDevice:1.0.1&installed_packages=PerObjectSettingsTool:1.0.1&installed_packages=CustomSupportsReborn:1.2.0&installed_packages=MeasureTool:1.2.0&installed_packages=MirrorTool:1.0.1&installed_packages=VersionUpgrade45to46:1.0.0&installed_packages=UFPReader:1.0.0&installed_packages=USBPrinting:1.0.2&installed_packages=PauseBackendPlugin:3.6.0&installed_packages=FirmwareUpdateChecker:1.0.1&installed_packages=VersionUpgrade25to26:1.0.1&installed_packages=VersionUpgrade22to24:1.0.1&installed_packages=VersionUpgrade462to47:1.0.0&installed_packages=VersionUpgrade411to412:1.0.0&installed_packages=SVGToolpathReader:1.2.2&installed_packages=VersionUpgrade48to49:1.0.0&installed_packages=CalibrationShapesReborn:1.2.2&installed_packages=GCodeProfileReader:1.0.1&installed_packages=StartOptimiser:3.6.0&installed_packages=ThingiBrowser:3.1.0&installed_packages=HellaFusion:1.1.0&installed_packages=ThemeCreator:1.4.0&installed_packages=CuraBlender:2.0.0&installed_packages=RotateTool:1.0.1&installed_packages=SpoonAntiWarpingReborn:1.1.3&installed_packages=STLWriter:1.0.1&installed_packages=X3DReader:1.0.1&installed_packages=VersionInTitlebarPlugin:3.6.0&installed_packages=VersionUpgrade32to33:1.0.1&installed_packages=OrientationPlugin:3.7.2&installed_packages=PrinterSettingsPlugin:3.6.0&installed_packages=VersionUpgrade40to41:1.0.1&installed_packages=VersionUpgrade34to35:1.0.1&installed_packages=ScaleTool:1.0.1&installed_packages=SentryLogger:1.0.0&installed_packages=SettingsGuide2:2.9.2&installed_packages=VersionUpgrade21to22:1.0.1&installed_packages=SidebarGUIPlugin:4.6.9&installed_packages=VersionUpgrade26to27:1.0.1&installed_packages=XRayView:1.0.1&installed_packages=BananaSplit:1.0.4[0m
+[35m2026-08-12 01:49:41,492[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin Marketplace 1.0.0[0m
+[35m2026-08-12 01:49:41,496[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ModelChecker 1.0.1[0m
+[35m2026-08-12 01:49:41,498[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MonitorStage 1.0.1[0m
+[35m2026-08-12 01:49:41,509[0m - [36mDEBUG[0m - [37m[EngineOutputThread] UM.Backend.Backend._backendLog [140]: [Backend] [2026-08-12 01:49:41.509] [info] Connected to 127.0.0.1:49674[0m
+[35m2026-08-12 01:49:41,510[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PaintTool 1.0.0[0m
+[35m2026-08-12 01:49:41,514[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PerObjectSettingsTool 1.0.1[0m
+[35m2026-08-12 01:49:41,518[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PostProcessingPlugin 2.3.0[0m
+[35m2026-08-12 01:49:41,522[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PrepareStage 1.0.1[0m
+[35m2026-08-12 01:49:41,524[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PreviewStage 1.0.1[0m
+[35m2026-08-12 01:49:41,528[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin RemovableDriveOutputDevice 1.0.1[0m
+[35m2026-08-12 01:49:41,540[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SimulationView 1.1.0[0m
+[35m2026-08-12 01:49:41,544[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SliceInfoPlugin 1.0.1[0m
+[35m2026-08-12 01:49:41,548[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SolidView 1.0.1[0m
+[35m2026-08-12 01:49:41,551[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SupportEraser 1.0.1[0m
+[35m2026-08-12 01:49:41,554[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin TrimeshReader 1.0.0[0m
+[35m2026-08-12 01:49:41,558[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin UFPReader 1.0.0[0m
+[35m2026-08-12 01:49:41,561[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin UFPWriter 1.0.1[0m
+[35m2026-08-12 01:49:41,611[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin UM3NetworkPrinting 2.0.0[0m
+/tmp/.mount_curafDClAE/share/cura/plugins/USBPrinting/USBPrinterOutputDevice.py:280: SyntaxWarning: invalid escape sequence '\d'
+  if re.search(b"[B|T\d*]: ?\d+\.?\d*", line):  # Temperature message. 'T:' for extruder and 'B:' for bed
+/tmp/.mount_curafDClAE/share/cura/plugins/USBPrinting/USBPrinterOutputDevice.py:281: SyntaxWarning: invalid escape sequence '\d'
+  extruder_temperature_matches = re.findall(b"T(\d*): ?(\d+\.?\d*)\s*\/?(\d+\.?\d*)?", line)
+/tmp/.mount_curafDClAE/share/cura/plugins/USBPrinting/USBPrinterOutputDevice.py:303: SyntaxWarning: invalid escape sequence '\d'
+  bed_temperature_matches = re.findall(b"B: ?(\d+\.?\d*)\s*\/?(\d+\.?\d*)?", line)
+[35m2026-08-12 01:49:41,624[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin USBPrinting 1.0.2[0m
+[35m2026-08-12 01:49:41,627[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin UltimakerMachineActions 1.0.1[0m
+[35m2026-08-12 01:49:41,634[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade21to22 1.0.1[0m
+[35m2026-08-12 01:49:41,638[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade22to24 1.0.1[0m
+[35m2026-08-12 01:49:41,641[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade25to26 1.0.1[0m
+[35m2026-08-12 01:49:41,644[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade26to27 1.0.1[0m
+[35m2026-08-12 01:49:41,646[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade27to30 1.0.1[0m
+[35m2026-08-12 01:49:41,649[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade30to31 1.0.1[0m
+[35m2026-08-12 01:49:41,651[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade32to33 1.0.1[0m
+[35m2026-08-12 01:49:41,682[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade33to34 1.0.1[0m
+[35m2026-08-12 01:49:41,685[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade34to35 1.0.1[0m
+[35m2026-08-12 01:49:41,688[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade35to40 1.0.0[0m
+[35m2026-08-12 01:49:41,690[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade40to41 1.0.1[0m
+[35m2026-08-12 01:49:41,692[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade411to412 1.0.0[0m
+[35m2026-08-12 01:49:41,695[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade413to50 1.0.0[0m
+[35m2026-08-12 01:49:41,698[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade41to42 1.0.0[0m
+[35m2026-08-12 01:49:41,700[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade42to43 1.0.0[0m
+[35m2026-08-12 01:49:41,702[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade43to44 1.0.0[0m
+[35m2026-08-12 01:49:41,705[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade44to45 1.0.0[0m
+[35m2026-08-12 01:49:41,708[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade45to46 1.0.0[0m
+[35m2026-08-12 01:49:41,710[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade460to462 1.0.0[0m
+[35m2026-08-12 01:49:41,713[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade462to47 1.0.0[0m
+[35m2026-08-12 01:49:41,715[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade47to48 1.0.0[0m
+[35m2026-08-12 01:49:41,718[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade48to49 1.0.0[0m
+[35m2026-08-12 01:49:41,720[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade49to410 1.0.0[0m
+[35m2026-08-12 01:49:41,723[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade511to512 1.0.0[0m
+[35m2026-08-12 01:49:41,725[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade512to513 1.0.0[0m
+[35m2026-08-12 01:49:41,728[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade52to53 1.0.0[0m
+[35m2026-08-12 01:49:41,730[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade53to54 1.0.0[0m
+[35m2026-08-12 01:49:41,732[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade54to55 1.0.0[0m
+[35m2026-08-12 01:49:41,734[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade56to57 1.0.0[0m
+[35m2026-08-12 01:49:41,737[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade58to59 1.0.0[0m
+[35m2026-08-12 01:49:41,739[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionUpgrade59to510 1.0.0[0m
+[35m2026-08-12 01:49:41,747[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin X3DReader 1.0.1[0m
+[35m2026-08-12 01:49:41,749[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin XRayView 1.0.1[0m
+[35m2026-08-12 01:49:41,758[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin XmlMaterialProfile 1.0.1[0m
+[35m2026-08-12 01:49:41,779[0m - [32mINFO[0m - [37m[MainThread] ThemeCreator.ThemeCreator.__init__ [36]: Theme Creator extension loaded[0m
+[35m2026-08-12 01:49:41,780[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ThemeCreator 1.4.0[0m
+[35m2026-08-12 01:49:41,786[0m - [36mDEBUG[0m - [37m[MainThread] SidebarGUIPlugin.__matchVersion [58]: This version of the plugin is not compatible with this version of Cura. Please check for an update.[0m
+[35m2026-08-12 01:49:41,786[0m - [33mWARNING[0m - [37m[MainThread] SidebarGUIPlugin.register [26]: Plugin not loaded because of a version mismatch[0m
+[35m2026-08-12 01:49:41,787[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SidebarGUIPlugin 4.6.9[0m
+/home/daniel/.local/share/cura/5.13/plugins/SettingsGuide2/SettingsGuide2/Mistune/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+UM/Settings/SettingFunction.py:277: DeprecationWarning: Attribute s is deprecated and will be removed in Python 3.14; use value instead
+  if node.s.startswith("_"):
+[35m2026-08-12 01:49:41,990[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SettingsGuide2 2.9.2[0m
+[35m2026-08-12 01:49:42,000[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CalibrationShapesReborn 1.2.2[0m
+[35m2026-08-12 01:49:42,007[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MeshTools 3.7.2[0m
+[35m2026-08-12 01:49:42,013[0m - [32mINFO[0m - [37m[MainThread] StartOptimiser.StartOptimiser.__init__ [44]: 9806 containers are blacklisted by StartOptimiser[0m
+[35m2026-08-12 01:49:42,014[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin StartOptimiser 3.6.0[0m
+[35m2026-08-12 01:49:42,019[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MaterialSettingsPlugin 3.7.0[0m
+/home/daniel/.local/share/cura/5.13/plugins/StacksOfShapes/StacksOfShapes/ShapesData.py:495: SyntaxWarning: invalid escape sequence '\Z'
+  TOOLTIP_KEY: catalog.i18nc("shape_tooltip_tetrominoes:", "A tetromino that looks like the letter \Z\". It's a mirror of the \"S\"."),
+[35m2026-08-12 01:49:42,036[0m - [32mINFO[0m - [37m[MainThread] StacksOfShapes.StacksOfShapes.log [46]: self._race_condition_version = False, reported version = 5.13.0[0m
+[35m2026-08-12 01:49:42,036[0m - [32mINFO[0m - [37m[MainThread] StacksOfShapes.StacksOfShapes.log [46]: current_version < _fixed_version_minimum = False current_version > _unbroken_version_maximum = True[0m
+[35m2026-08-12 01:49:42,037[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin StacksOfShapes 1.0.0[0m
+[35m2026-08-12 01:49:42,045[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/live_reload.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/auto_arrange_on_reload.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/auto_scale_on_read.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/show_scale_message.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/file_extension.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/warn_before_closing_other_blender_instances.[0m
+[35m2026-08-12 01:49:42,046[0m - [33mWARNING[0m - [37m[MainThread] UM.Preferences.getValue [116]: Tried to get the value of non-existing setting cura_blender/blender_path.[0m
+[35m2026-08-12 01:49:42,047[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CuraBlender 2.0.0[0m
+[35m2026-08-12 01:49:42,049[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PauseBackendPlugin 3.6.0[0m
+[35m2026-08-12 01:49:42,061[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CustomSupportsReborn 1.2.0[0m
+[35m2026-08-12 01:49:42,067[0m - [36mDEBUG[0m - [37m[MainThread] TabbedSettingsPlugin.__matchVersion [55]: This version of the plugin is not compatible with this version of Cura. Please check for an update.[0m
+[35m2026-08-12 01:49:42,068[0m - [33mWARNING[0m - [37m[MainThread] TabbedSettingsPlugin.register [23]: Plugin not loaded because of a version mismatch[0m
+[35m2026-08-12 01:49:42,068[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin TabbedSettingsPlugin 1.0.9[0m
+[35m2026-08-12 01:49:42,084[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SpoonAntiWarpingReborn 1.1.3[0m
+[35m2026-08-12 01:49:42,089[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin CustomJobPrefix 3.7.0[0m
+[35m2026-08-12 01:49:42,135[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin HellaFusion 1.1.0[0m
+[35m2026-08-12 01:49:42,180[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SVGToolpathReader 1.2.2[0m
+[35m2026-08-12 01:49:42,186[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin BananaSplit 1.0.4[0m
+sentry_sdk/hub.py:383: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[35m2026-08-12 01:49:42,230[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin ThingiBrowser 3.1.0[0m
+[35m2026-08-12 01:49:42,241[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin TabAntiWarpingReborn 1.1.0[0m
+[35m2026-08-12 01:49:42,243[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin PrinterSettingsPlugin 3.6.0[0m
+[35m2026-08-12 01:49:42,246[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin SettingsExporter 1.0.0[0m
+[35m2026-08-12 01:49:42,253[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin OrientationPlugin 3.7.2[0m
+[35m2026-08-12 01:49:42,259[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin MeasureTool 1.2.0[0m
+[35m2026-08-12 01:49:42,261[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin BarbarianPlugin 2.3.2[0m
+[35m2026-08-12 01:49:42,268[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin DirectSupportBlockersReborn 1.0.2[0m
+[35m2026-08-12 01:49:42,270[0m - [32mINFO[0m - [37m[MainThread] UM.PluginRegistry.loadPlugin [540]: Loaded plugin VersionInTitlebarPlugin 3.6.0[0m
+[35m2026-08-12 01:49:42,271[0m - [36mDEBUG[0m - [37m[MainThread] UM.PluginRegistry.loadPlugins [456]: Loading all plugins took 1.0423712730407715 seconds[0m
+[35m2026-08-12 01:49:42,274[0m - [32mINFO[0m - [37m[MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.[0m
+[35m2026-08-12 01:49:42,301[0m - [33mWARNING[0m - [37m[MainThread] UM.VersionUpgradeManager._getUpgradeTasks [334]: Failed to get file version: ../custom_material.xml.fdm_material, skip it[0m
+[35m2026-08-12 01:49:42,304[0m - [32mINFO[0m - [37m[MainThread] UM.VersionUpgradeManager.upgrade [177]: Checking and performing updates took 0.030101537704467773[0m
+UM/Qt/QtApplication.py:734: DeprecationWarning: QEvent constructor is deprecated
+  super().__init__(self.QtFunctionEvent)
+[35m2026-08-12 01:49:42,332[0m - [32mINFO[0m - [37m[MainThread] UM.Qt.QtApplication.startSplashWindowPhase [267]: Completed loading preferences.[0m
+[35m2026-08-12 01:49:42,554[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/variants/biqu/qt6.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,612[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/definitions/qt.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,630[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/quality/deltacomb/qt.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,747[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/variants/biqu/qt.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,764[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/extruders/qt6.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,779[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/definitions/qt6.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,850[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/quality/deltacomb/qt6.conf, ignoring it.[0m
+[35m2026-08-12 01:49:42,863[0m - [33mWARNING[0m - [37m[MainThread] StartOptimiser.LocalContainerProviderPatches._pathToIdAndMime [48]: MIME type could not be found for file: /tmp/.mount_curafDClAE/share/cura/resources/extruders/qt.conf, ignoring it.[0m
+[35m2026-08-12 01:49:43,107[0m - [36mDEBUG[0m - [37m[MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [565]: Loading metadata into container registry took 0.7460358142852783 seconds[0m
+[35m2026-08-12 01:49:43,111[0m - [36mDEBUG[0m - [37m[MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Selected build plate: 0[0m
+[35m2026-08-12 01:49:43,113[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._log_hardware_info [965]: System: Linux[0m
+[35m2026-08-12 01:49:43,113[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._log_hardware_info [966]: Release: 7.1.8-polaris-v1[0m
+[35m2026-08-12 01:49:43,113[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._log_hardware_info [967]: Version: #1 SMP PREEMPT_DYNAMIC Sun Aug  9 23:46:04 -03 2026[0m
+sentry_sdk/hub.py:383: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[35m2026-08-12 01:49:43,118[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._log_hardware_info [968]: Processor name: [0m
+[35m2026-08-12 01:49:43,118[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._log_hardware_info [969]: CPU Cores: 16[0m
+[35m2026-08-12 01:49:43,119[0m - [36mDEBUG[0m - [37m[MainThread] cura.CuraApplication.run [892]: Using conan dependencies: {'cura_resources': {'version': '5.13.0', 'revision': '2080749113c0205b06291f2d96ec0ffa'}, 'uranium': {'version': '5.13.0', 'revision': '77cea53c8f8f2ef1357efe1678bd3969'}, 'pyarcus': {'version': '5.11.0', 'revision': '817c75c07a0339124f37fb720fe41bf1'}, 'uvula': {'version': '1.0.1', 'revision': '9a68f8144765842c934e82caeb4b88a8'}, 'curaengine': {'version': '5.13.0', 'revision': '17695d489fe7193993d851c6defc145f'}, 'onetbb': {'version': '2022.2.0', 'revision': 'c46933bfdedba8347b631aa6fc9878cf'}, 'hwloc': {'version': '2.9.3', 'revision': '11acb96cf1e611d293bf90172fadff7d'}, 'arcus': {'version': '5.11.0', 'revision': '4c44446b0851a944fc0353d6f9639600'}, 'curaengine_grpc_definitions': {'version': '0.4.0', 'revision': '436fbcd68eb6a04004788e2cc1b8fb9a'}, 'asio-grpc': {'version': '2.9.2', 'revision': '09f63ea2cd9edcef9c173a5a57deb045'}, 'grpc': {'version': '1.54.3', 'revision': '137ce7b9a4cc51aac36d56f3c2630403'}, 'cura_binary_data': {'version': '5.13.0', 'revision': 'bc6bea3c865cd821e09e1bac4f446dd9'}, 'fdm_materials': {'version': '5.13.0', 'revision': 'c66aab36ef997e4d6180def1d2219a7e'}, 'dulcificum': {'version': '5.10.2', 'revision': '760a781b43c58a0cf805df05b4c3c90b'}, 'nlohmann_json': {'version': '3.11.2', 'revision': '1ded6ae5d200a68ac17c51d528b945e2'}, 'range-v3': {'version': '0.12.0', 'revision': '4c05d91d7b40e6b91b44b5345ac64408'}, 'ctre': {'version': '3.7.2', 'revision': '86bd3592feebcdafd2ab7b8a1aad0c80'}, 'pysavitar': {'version': '5.11.0-alpha.0', 'revision': '1554a8b1c2e50e450ea510bb39ff83ee'}, 'savitar': {'version': '5.11.0-alpha.0', 'revision': '852eb8ba455c990aa9e87cc9fc9f465f'}, 'pynest2d': {'version': '5.10.0', 'revision': 'ff5d39339d68c1cb296f83563e3eeacd'}, 'nest2d': {'version': '5.10.0', 'revision': 'c4a62b678b517066869b38cf36798f33'}, 'spdlog': {'version': '1.15.1', 'revision': '92e99f07f134481bce4b70c1a41060e7'}, 'fmt': {'version': '11.1.3', 'revision': '8364f0feb23ee32e4b870455edb552ae'}, 'nlopt': {'version': '2.7.1', 'revision': '61296485856e44d13b39346ef54325f1'}, 'clipper': {'version': '6.4.2', 'revision': '7c8fe83a09fcb2e6adb118763eaa6e58'}, 'sentry-native': {'version': '0.7.15', 'revision': 'fa839e8362a9095abe09d1e197df06c4'}, 'libcurl': {'version': '8.20.0', 'revision': '465ac276192c197ddc6a9f4494004278'}, 'cpython': {'version': '3.12.2', 'revision': '68cb44d6d7eeb24578b1c942ce16a8cd'}, 'openssl': {'version': '3.6.2', 'revision': '36f92686a9285adfe2ccd1c1dbf9ea35'}}[0m
+[35m2026-08-12 01:49:43,119[0m - [36mDEBUG[0m - [37m[MainThread] cura.CuraApplication.run [893]: Using python dependencies: {'typing_extensions': {'version': '4.3.0'}, 'Twisted': {'version': '21.2.0'}, 'Automat': {'version': '20.2.0'}, 'networkx': {'version': '2.6.2'}, 'requests': {'version': '2.32.3'}, 'incremental': {'version': '22.10.0'}, 'hyperlink': {'version': '21.0.0'}, 'zeroconf': {'version': '0.31.0'}, 'pybind11': {'version': '2.6.2'}, 'jaraco.functools': {'version': '4.1.0'}, 'cryptography': {'version': '44.0.0'}, 'numpy': {'version': '1.26.4'}, 'idna': {'version': '2.8'}, 'Cython': {'version': '0.29.26'}, 'python-utils': {'version': '2.3.0'}, 'packaging': {'version': '26.2'}, 'jaraco.context': {'version': '6.0.1'}, 'SecretStorage': {'version': '3.3.3'}, 'urllib3': {'version': '2.2.3'}, 'certifi': {'version': '2023.5.7'}, 'scipy': {'version': '1.11.3'}, 'constantly': {'version': '15.1.0'}, 'chardet': {'version': '3.0.4'}, 'wheel': {'version': '0.37.1'}, 'importlib-metadata': {'version': '4.10.0'}, 'PyQt6-sip': {'version': '13.6.0'}, 'trimesh': {'version': '3.9.36'}, 'zope.interface': {'version': '5.4.0'}, 'sentry-sdk': {'version': '0.13.5'}, 'pycparser': {'version': '2.22'}, 'PyQt6': {'version': '6.6.0'}, 'six': {'version': '1.16.0'}, 'cffi': {'version': '1.17.1'}, 'jeepney': {'version': '0.8.0'}, 'Charon': {'version': '1.0'}, 'setuptools': {'version': '75.6.0'}, 'mypy-extensions': {'version': '0.4.3'}, 'keyring': {'version': '25.5.0'}, 'attrs': {'version': '21.3.0'}, 'ifaddr': {'version': '0.1.7'}, 'shapely': {'version': '2.0.6'}, 'pip': {'version': '26.1.1'}, 'charset-normalizer': {'version': '2.1.0'}, 'pyserial': {'version': '3.4'}, 'jaraco.classes': {'version': '3.4.0'}, 'numpy-stl': {'version': '2.10.1'}, 'PyQt6-Qt6': {'version': '6.6.0'}, 'colorlog': {'version': '6.6.0'}, 'tomli': {'version': '2.0.1'}, 'pyclipper': {'version': '1.3.0.post5'}, 'more-itertools': {'version': '10.5.0'}, 'mypy': {'version': '0.931'}, 'zipp': {'version': '3.5.0'}}[0m
+[35m2026-08-12 01:49:43,119[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication.run [895]: Initializing machine error checker[0m
+UM/Qt/QtApplication.py:734: DeprecationWarning: QEvent constructor is deprecated
+  super().__init__(self.QtFunctionEvent)
+UM/Settings/SettingFunction.py:277: DeprecationWarning: Attribute s is deprecated and will be removed in Python 3.14; use value instead
+  if node.s.startswith("_"):
+[35m2026-08-12 01:49:43,492[0m - [32mINFO[0m - [37m[MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [creality_ender3][0m
+[35m2026-08-12 01:49:43,924[0m - [32mINFO[0m - [37m[MainThread] cura.Settings.GlobalStack.addExtruder [199]: Extruder[creality_base_extruder_0 #3] added to [Creality Ender 3] at position [0][0m
+[35m2026-08-12 01:49:43,929[0m - [32mINFO[0m - [37m[MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 / Ender-3 v2 in list of firmware to check.[0m
+[35m2026-08-12 01:49:43,950[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [165]: New error check scheduled.[0m
+[35m2026-08-12 01:49:43,978[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender3 took 0.02122950553894043 seconds.[0m
+[35m2026-08-12 01:49:43,986[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: AddCoolingProfile[0m
+[35m2026-08-12 01:49:43,989[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: AnnealingOrDrying[0m
+[35m2026-08-12 01:49:43,993[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: ChangeAtZ[0m
+[35m2026-08-12 01:49:43,994[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: ColorMix[0m
+[35m2026-08-12 01:49:43,995[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: CreateThumbnail[0m
+[35m2026-08-12 01:49:43,995[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: DisplayFilenameAndLayerOnLCD[0m
+[35m2026-08-12 01:49:43,999[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: DisplayInfoOnLCD[0m
+[35m2026-08-12 01:49:43,999[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: DisplayProgressOnLCD[0m
+[35m2026-08-12 01:49:44,000[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: FilamentChange[0m
+[35m2026-08-12 01:49:44,002[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: InsertAtLayerChange[0m
+[35m2026-08-12 01:49:44,004[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: LimitXYAccelJerk[0m
+[35m2026-08-12 01:49:44,006[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: PauseAtHeight[0m
+[35m2026-08-12 01:49:44,013[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: PurgeLinesAndUnload[0m
+[35m2026-08-12 01:49:44,014[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: RetractContinue[0m
+[35m2026-08-12 01:49:44,015[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: SearchAndReplace[0m
+[35m2026-08-12 01:49:44,017[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: Stretch[0m
+[35m2026-08-12 01:49:44,019[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: TimeLapse[0m
+/tmp/.mount_curafDClAE/share/cura/plugins/PostProcessingPlugin/scripts/TweakAtZ.py:732: SyntaxWarning: invalid escape sequence '\d'
+  lines[l_index] = re.sub("S(\d+|\d.+)", f"S{self.inactive_print_temp} ; TweakAtZ: Alter temperature", line)
+/tmp/.mount_curafDClAE/share/cura/plugins/PostProcessingPlugin/scripts/TweakAtZ.py:734: SyntaxWarning: invalid escape sequence '\d'
+  lines[l_index] = re.sub("S(\d+|\d.+)", f"S{self.active_print_temp} ; TweakAtZ: Alter temperature", line)
+[35m2026-08-12 01:49:44,023[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: TweakAtZ[0m
+[35m2026-08-12 01:49:44,024[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: UsePreviousProbeMeasurements[0m
+/tmp/.mount_curafDClAE/share/cura/plugins/PostProcessingPlugin/scripts/ZHopOnTravel.py:490: SyntaxWarning: invalid escape sequence '\d'
+  if "G11" in next_line or re.search("G1 F(\d+\.\d+|\d+) E(-?\d+\.\d+|-?\d+)", next_line) and reset_type == 0:
+[35m2026-08-12 01:49:44,027[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [217]: Begin loading of script: ZHopOnTravel[0m
+[35m2026-08-12 01:49:44,031[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication.run [900]: Initializing machine manager[0m
+[35m2026-08-12 01:49:44,041[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication.run [905]: Initializing container manager[0m
+/tmp/.mount_curafDClAE/share/cura/plugins/3MFReader/ThreeMFReader.py:140: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  vertices_data = numpy.fromstring(mesh_data.getFlatVerticesAsBytes(), dtype=numpy.float32)
+[35m2026-08-12 01:49:44,198[0m - [36mDEBUG[0m - [37m[JobQueueWorker [0]] UM.Mesh.MeshData.calculateNormalsFromVertices [675]: Calculating normals took 0.07448601722717285 seconds[0m
+[35m2026-08-12 01:49:44,208[0m - [36mDEBUG[0m - [37m[MainThread] cura.OAuth2.AuthorizationService.loadAuthDataFromPreferences [284]: Attempting to load the auth data from preferences.[0m
+[35m2026-08-12 01:49:44,209[0m - [36mDEBUG[0m - [37m[MainThread] cura.OAuth2.AuthorizationHelpers.checkToken [121]: Checking the access token for [https://account.ultimaker.com/check-token][0m
+[35m2026-08-12 01:49:44,215[0m - [36mDEBUG[0m - [37m[JobQueueWorker [0]] UM.Mesh.MeshData.approximateConvexHull [619]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.0066242218017578125 seconds. 8 input vertices. 8 output vertices.[0m
+[35m2026-08-12 01:49:44,216[0m - [33mWARNING[0m - [37m[MainThread] UM.OutputDevice.OutputDeviceManager.removeOutputDevice [235]: Could not find output device with id digital_factory to remove[0m
+[35m2026-08-12 01:49:44,227[0m - [36mDEBUG[0m - [37m[MainThread] UM.Scene.Camera._preferencesChanged [266]: Changing perspective mode to orthographic.[0m
+[35m2026-08-12 01:49:44,305[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.MachineErrorChecker._checkStack [169]: Need to check for errors again. Discard the current progress and reschedule a check.[0m
+[35m2026-08-12 01:49:44,308[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [188]: Loading theme file: /home/daniel/.local/share/cura/5.13/themes/custom-theme/theme.json[0m
+[35m2026-08-12 01:49:44,308[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [188]: Loading theme file: /tmp/.mount_curafDClAE/share/cura/resources/themes/cura-light/theme.json[0m
+[35m2026-08-12 01:49:44,335[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [323]: Loaded theme /tmp/.mount_curafDClAE/share/cura/resources/themes/cura-light[0m
+[35m2026-08-12 01:49:44,336[0m - [32mINFO[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [324]: System's em size is 13px.[0m
+[35m2026-08-12 01:49:44,337[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [323]: Loaded theme /home/daniel/.local/share/cura/5.13/themes/custom-theme[0m
+[35m2026-08-12 01:49:44,337[0m - [32mINFO[0m - [37m[MainThread] UM.Qt.Bindings.Theme.load [324]: System's em size is 13px.[0m
+[35m2026-08-12 01:49:44,613[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [355]: Creating post processing plugin view.[0m
+[35m2026-08-12 01:49:44,673[0m - [36mDEBUG[0m - [37m[MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [365]: Post processing view created.[0m
+[35m2026-08-12 01:49:44,726[0m - [33mWARNING[0m - [37m[MainThread] UM.Signal.connect [231]: 'selectedFaceChanged': Face selection using the Selection class is deprecated, since 5.11.0, please use the SelectionPass for faces in CuraRenderer instead.[0m
+[35m2026-08-12 01:49:45,108[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.[0m
+[35m2026-08-12 01:49:45,156[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:16:5: QML ProfileWarningReset: Binding loop detected for property "width"[0m
+[35m2026-08-12 01:49:45,156[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:16:5: QML ProfileWarningReset: Binding loop detected for property "width"[0m
+[35m2026-08-12 01:49:45,157[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:16:5: QML ProfileWarningReset: Binding loop detected for property "width"[0m
+[35m2026-08-12 01:49:45,157[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:16:5: QML ProfileWarningReset: Binding loop detected for property "width"[0m
+[35m2026-08-12 01:49:45,168[0m - [36mDEBUG[0m - [37m[MainThread] MeshTools.MeshTools._onEngineCreated [144]: Inserting item in context menu[0m
+[35m2026-08-12 01:49:45,185[0m - [36mDEBUG[0m - [37m[MainThread] MaterialSettingsPlugin.MaterialSettingsPlugin._setupNewPreferencesDialogHook [110]: Setting up MaterialSettingsPlugin for Cura 5.11+ PreferencesDialog[0m
+[35m2026-08-12 01:49:45,185[0m - [36mDEBUG[0m - [37m[MainThread] MaterialSettingsPlugin.MaterialSettingsPlugin._setupNewPreferencesDialogHook [138]: Connected to focusWindowChanged for preference dialog detection[0m
+[35m2026-08-12 01:49:45,185[0m - [36mDEBUG[0m - [37m[MainThread] PauseBackendPlugin.PauseBackend._createAdditionalComponentsView [31]: Creating additional ui components for Pause Backend plugin.[0m
+[35m2026-08-12 01:49:45,189[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///home/daniel/.local/share/cura/5.13/plugins/PauseBackendPlugin/PauseBackendPlugin/PauseBackend5x.qml:60: TypeError: Cannot read property 'ContentAlignment' of undefined[0m
+[35m2026-08-12 01:49:45,201[0m - [36mDEBUG[0m - [37m[MainThread] CustomJobPrefix.CustomJobPrefix._createAdditionalComponentsView [49]: Creating additional ui components for CustomJobPrefix[0m
+[35m2026-08-12 01:49:45,206[0m - [36mDEBUG[0m - [37m[MainThread] UM.Mesh.MeshData.calculateNormalsFromVertices [675]: Calculating normals took 0.00012111663818359375 seconds[0m
+[35m2026-08-12 01:49:45,206[0m - [36mDEBUG[0m - [37m[MainThread] STLReader.STLReader._read [68]: Loaded a mesh with 2544 vertices[0m
+[35m2026-08-12 01:49:45,220[0m - [36mDEBUG[0m - [37m[MainThread] UM.Mesh.MeshData.calculateNormalsFromIndexedVertices [700]: Calculating normals took 0.008133411407470703 seconds[0m
+[35m2026-08-12 01:49:45,221[0m - [36mDEBUG[0m - [37m[MainThread] UM.Controller.setActiveStage [222]: Setting active stage to PrepareStage[0m
+[35m2026-08-12 01:49:45,255[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.[0m
+[35m2026-08-12 01:49:45,293[0m - [36mDEBUG[0m - [37m[MainThread] UM.Controller._updateActiveView [150]: Setting active view to SolidView[0m
+[35m2026-08-12 01:49:45,294[0m - [36mDEBUG[0m - [37m[MainThread] ModelChecker.ModelChecker._createView [118]: Creating model checker view.[0m
+[35m2026-08-12 01:49:45,297[0m - [36mDEBUG[0m - [37m[MainThread] ModelChecker.ModelChecker._createView [127]: Model checker view created.[0m
+[35m2026-08-12 01:49:45,298[0m - [36mDEBUG[0m - [37m[MainThread] SliceInfoPlugin.SliceInfo._createDialog [88]: Creating dialog [MoreInfoWindow.qml][0m
+[35m2026-08-12 01:49:46,726[0m - [36mDEBUG[0m - [37m[MainThread] cura.CuraApplication.run [947]: Booting Cura took 5.71772837638855 seconds[0m
+[35m2026-08-12 01:49:46,727[0m - [36mDEBUG[0m - [37m[JobQueueWorker [2]] cura.Machines.ContainerTree.run [174]: Started background loading of MachineNodes[0m
+[35m2026-08-12 01:49:46,789[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [165]: New error check scheduled.[0m
+[35m2026-08-12 01:49:46,797[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:46,855[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.[0m
+[35m2026-08-12 01:49:46,925[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:46,926[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:46,934[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:46,952[0m - [32mINFO[0m - [37m[JobQueueWorker [1]] SettingsGuide2.CuraSettingsGuide.load_all [181]: Finished loading Settings Guide articles.[0m
+[35m2026-08-12 01:49:46,956[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Account/UserOperations.qml:67:17: Unable to assign [undefined] to QString[0m
+[35m2026-08-12 01:49:46,958[0m - [36mDEBUG[0m - [37m[MainThread] cura.API.Account._sync [251]: Starting a new sync while previous sync was not completed[0m
+[35m2026-08-12 01:49:46,959[0m - [36mDEBUG[0m - [37m[MainThread] cura.OAuth2.AuthorizationService.callback [297]: Auth data was successfully loaded[0m
+[35m2026-08-12 01:49:47,030[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.[0m
+[35m2026-08-12 01:49:47,238[0m - [36mDEBUG[0m - [37m[JobQueueWorker [2]] cura.Machines.ContainerTree.run [183]: All MachineNode loading completed[0m
+[35m2026-08-12 01:49:47,305[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/PrintSetupSelector.qml:28:17: QML PrintSetupSelectorHeader: Layout polish loop detected for PrintSetupSelectorHeader_QMLTYPE_246(0x15302a50, parent=0x140e0650, geometry=0,0 442x26). Aborting after two iterations.[0m
+[35m2026-08-12 01:49:47,330[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGL.__init__ [121]: Initialized OpenGL subsystems.[0m
+[35m2026-08-12 01:49:47,330[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGL.__init__ [122]: OpenGL Version:  4.6 (Core Profile) Mesa 26.1.5-1[0m
+[35m2026-08-12 01:49:47,331[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGL.__init__ [123]: OpenGL Vendor:   AMD[0m
+[35m2026-08-12 01:49:47,331[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGL.__init__ [124]: OpenGL Renderer: AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 7.1.8-polaris-v1)[0m
+[35m2026-08-12 01:49:47,331[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.OpenGL.__init__ [125]: GLSL Version:    4.60.0[0m
+[35m2026-08-12 01:49:47,335[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.QtRenderer._initialize [219]: Support for Vertex Array Objects: True[0m
+[35m2026-08-12 01:49:47,336[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/default.shader]...[0m
+[35m2026-08-12 01:49:47,338[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/selection.shader]...[0m
+[35m2026-08-12 01:49:47,339[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/select_face.shader]...[0m
+[35m2026-08-12 01:49:47,340[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/default.shader]...[0m
+[35m2026-08-12 01:49:47,340[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/selection.shader]...[0m
+[35m2026-08-12 01:49:47,341[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/select_face.shader]...[0m
+[35m2026-08-12 01:49:47,341[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/default.shader]...[0m
+[35m2026-08-12 01:49:47,342[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/composite.shader]...[0m
+[35m2026-08-12 01:49:47,343[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/overhang.shader]...[0m
+[35m2026-08-12 01:49:47,344[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/striped.shader]...[0m
+[35m2026-08-12 01:49:47,345[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/transparent_object.shader]...[0m
+[35m2026-08-12 01:49:47,346[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/striped.shader]...[0m
+[35m2026-08-12 01:49:47,346[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/xray.shader]...[0m
+[35m2026-08-12 01:49:47,347[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/xray_composite.shader]...[0m
+[35m2026-08-12 01:49:47,348[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/default.shader]...[0m
+[35m2026-08-12 01:49:47,349[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/grid.shader]...[0m
+[35m2026-08-12 01:49:47,349[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/uranium/resources/shaders/platform.shader]...[0m
+[35m2026-08-12 01:49:47,350[0m - [36mDEBUG[0m - [37m[MainThread] UM.View.GL.ShaderProgram.load [62]: Loading [/tmp/.mount_curafDClAE/share/cura/resources/shaders/xray.shader]...[0m
+[35m2026-08-12 01:49:47,363[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.Bindings.Theme.getIcon [154]: The icon 'category_machine' is deprecated. Please use icon 'Printer' instead.[0m
+UM/Qt/QtApplication.py:421: DeprecationWarning: The icon 'category_machine' is deprecated. Please use icon 'Printer' instead.
+  super().exec(*args, **kwargs)
+[35m2026-08-12 01:49:47,365[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,367[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,369[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,371[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,372[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,838[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:47,839[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,098[0m - [36mDEBUG[0m - [37m[MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onGetRemoteClustersFinished [170]: Synced cloud printers with account.[0m
+[35m2026-08-12 01:49:48,278[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,280[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,282[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,496[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,667[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,763[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,879[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,948[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:48,995[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/Settings/SettingView.qml:329:13: QML Connections: Detected function "onSetScrollPositionChangeLoseFocus" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.[0m
+[35m2026-08-12 01:49:49,242[0m - [32mINFO[0m - [37m[MainThread] cura.Machines.MachineErrorChecker._setResult [221]: Error check finished, result = False, time = 2.45s[0m
+[35m2026-08-12 01:49:50,370[0m - [36mDEBUG[0m - [37m[MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [56]: No more on-app-exit callbacks to process. Tell the app to exit.[0m
+[35m2026-08-12 01:49:50,370[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication.closeApplication [685]: Close application[0m
+[35m2026-08-12 01:49:50,370[0m - [32mINFO[0m - [37m[MainThread] cura.CuraApplication._setLoadingHint [883]: Initializing Active Machine...[0m
+[35m2026-08-12 01:49:50,372[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:50,372[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [79]: No active GlobalStack, set quality profile model as empty.[0m
+[35m2026-08-12 01:49:50,373[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [74]: Updating IntentSelectionModel.[0m
+[35m2026-08-12 01:49:50,373[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.IntentSelectionModel._update [79]: No active GlobalStack, set quality profile model as empty.[0m
+[35m2026-08-12 01:49:50,374[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:64: TypeError: Cannot read property 'name' of null[0m
+[35m2026-08-12 01:49:50,374[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/PrintSetupSelector/ProfileWarningReset.qml:64: TypeError: Cannot read property 'name' of null[0m
+[35m2026-08-12 01:49:50,375[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.[0m
+[35m2026-08-12 01:49:50,376[0m - [36mDEBUG[0m - [37m[MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.[0m
+[35m2026-08-12 01:49:50,421[0m - [33mWARNING[0m - [37m[MainThread] UM.Qt.QtApplication.__onQmlWarning [449]: file:///tmp/.mount_curafDClAE/share/cura/resources/qml/WelcomePages/AddLocalPrinterScrollView.qml:357:25: Unable to assign QString to QRegularExpression[0m
+[35m2026-08-12 01:49:50,421[0m - [36mDEBUG[0m - [37m[MainThread] UM.Qt.QtApplication.windowClosed [516]: Shutting down cura[0m
+[35m2026-08-12 01:49:50,425[0m - [33mWARNING[0m - [37m[MainThread] LocalContainerProvider.LocalContainerProvider.saveContainer [141]: Dirty container [None] is not saved because the resource type is unknown in ContainerRegistry[0m
+[35m2026-08-12 01:49:50,428[0m - [36mDEBUG[0m - [37m[MainThread] CuraEngineBackend.CuraEngineBackend._terminate [437]: Attempting to kill the engine process[0m
+[35m2026-08-12 01:49:50,428[0m - [36mDEBUG[0m - [37m[MainThread] CuraEngineBackend.CuraEngineBackend._terminate [443]: Killing engine process[0m
+[35m2026-08-12 01:49:50,429[0m - [36mDEBUG[0m - [37m[MainThread] CuraEngineBackend.CuraEngineBackend._terminate [446]: Engine process is killed. Received return code -15[0m

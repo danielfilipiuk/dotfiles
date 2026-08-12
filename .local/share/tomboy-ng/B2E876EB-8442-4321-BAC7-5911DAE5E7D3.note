@@ -4,13 +4,13 @@
   
 <text xml:space="preserve"><note-content version="0.1"><underline>GIT commands</underline>
 
-<underline>Command	SQL analogy</underline>
-git add	     Insert rows into a staging table
-git commit	  Commit a transaction
-git push	    Replicate to a remote server
-git gc	      VACUUM FULL / database compaction
-git reflog	  Transaction log
-git reflog   expire	Delete old transaction log entries
+<underline>Command SQL analogy</underline>
+git add      Insert rows into a staging table
+git commit   Commit a transaction
+git push     Replicate to a remote server
+git gc       VACUUM FULL / database compaction
+git reflog   Transaction log
+git reflog   expire Delete old transaction log entries
 
 
 <underline>#basic commands to upload changes.</underline>

@@ -273,7 +273,7 @@ Keywords[vi]=GIMP;graphic;design;illustration;painting;đồ họa;do hoa;thiế
 Keywords[zh_CN]=GIMP;graphic;design;illustration;painting;图形;图像;图片;照片;设计;绘画;绘制;幻想;想象;想像;ps;
 Keywords[zh_TW]=GIMP;圖形;影像;設計;插畫;繪圖;graphic;design;illustration;painting;
 Keywords=GIMP;graphic;design;illustration;painting;
-Exec=app2unit -S out -- env GDK_BACKEND=x11 gimp-3.2 %U
+Exec=gimp-3.2 %U
 TryExec=gimp-3.2
 Icon=gimp
 Terminal=false

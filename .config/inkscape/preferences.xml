@@ -54,7 +54,7 @@
        state="1" />
     <group
        id="panels"
-       state="0" />
+       state="1" />
     <group
        id="rulers"
        state="1" />
@@ -119,9 +119,9 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="501.945519799319"
-         height="287.93774051306"
-         ry="0"
+         width="3206.22531680614"
+         height="1424.12432332679"
+         ry="22.3735400823161"
          rx="0"
          convertguides="1" />
       <eventcontext
@@ -882,7 +882,7 @@
        value="4" />
     <group
        id="displayprofile"
-       enable="0"
+       enable="1"
        from_display="0"
        intent="0"
        uri="" />
@@ -1359,13 +1359,13 @@
      org.inkscape.filter.add_nodes.unit="px" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.18897638;stroke-linejoin:round;stroke-linecap:round;font-weight:bold;fill-opacity:0.8509804;stroke:#000000">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:none;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:3.40157503;stroke-linejoin:round;stroke-linecap:round;font-weight:bold;fill-opacity:0.8509804;stroke:#000000">
     <group
        width="902"
-       height="835"
+       height="978"
        x="0"
        y="0"
-       maximized="0"
+       maximized="1"
        fullscreen="0"
        id="geometry" />
     <group

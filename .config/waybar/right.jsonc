@@ -183,8 +183,8 @@
 		"singleonce": "mpc single once",
 		"consume": "mpc consume",
 		"update": "mpc update",
-		"ncmpcpp": "app2unit -- kitty -e ncmpcpp",
-		"cava": "app2unit -- kitty -e cava",
+		"ncmpcpp": "app2unit -T ncmpcpp",
+		"cava": "app2unit -T cava",
 			},
 },
 
@@ -263,9 +263,9 @@
         "menu": "on-click-right",
 	"menu-file": "~/.config/waybar/pulseaudio-menu.xml",
 	"menu-actions": {
-		"au": "app2unit -- kitty -e audio-detective™.sh",
+		"au": "app2unit -T audio-detective™.sh",
 		"qpwgraph": "app2unit -- qpwgraph",
-		"pw-top": "app2unit -- kitty -e pw-top",
+		"pw-top": "app2unit -T pw-top",
 			},
     },
 
@@ -273,7 +273,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////
     "network": {
          "interface": "wlp38s0", // (Optional) To force the use of this interface
-        "interval": 300,
+        "interval": 3600,
         "format-wifi": " {signalStrength}<span size=\"smaller\">%</span>",
         "format-ethernet": "{ipaddr}/{cidr}  ",
         "tooltip-format": "{ifname}\n{essid}\n{ipaddr} /{cidr}",
@@ -285,7 +285,7 @@
 	"menu": "on-click-right",
 	"menu-file": "~/.config/waybar/network-menu.xml",
 	"menu-actions": {
-		"eth": "app2unit -- kitty -e ethstatus -i wlp38s0 -v vga",
+		"eth": "app2unit -T -- ethstatus -i wlp38s0 -v vga",
 		"modem": "app2unit -- brave-browser --new-window 192.168.0.1",
 		},
     },

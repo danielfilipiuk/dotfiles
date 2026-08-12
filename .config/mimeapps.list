@@ -109,6 +109,7 @@ x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
 text/x-dsrc=org.xfce.mousepad.desktop;
 text/x-python=org.xfce.mousepad.desktop;
+application/x-core=org.xfce.mousepad.desktop;
 
 [Default Applications]
 application/java-archive=userapp-java -jar %f-X2ZO72.desktop;
@@ -169,6 +170,7 @@ x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop;
 x-scheme-handler/prusaslicer=PrusaSlicerURLProtocol.desktop;
 x-scheme-handler/terminal=kitty.desktop;
 x-scheme-handler/unknown=brave-browser.desktop;
+application/x-core=org.xfce.mousepad.desktop
 
 [Removed Associations]
 application/ogg=easytag.desktop;
