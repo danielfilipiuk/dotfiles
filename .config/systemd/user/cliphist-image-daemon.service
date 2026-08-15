@@ -6,7 +6,7 @@ Requisite=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=wl-paste --type image --watch cliphist store
+ExecStart=cliphist-image --type image --watch cliphist store
 Restart=on-failure
 
 

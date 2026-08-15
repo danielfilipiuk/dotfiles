@@ -4,8 +4,8 @@ PartOf=graphical-session.target
 After=graphical-session.target awww-daemon.service
 
 [Timer]
-OnActiveSec=10s
-OnUnitActiveSec=10m
+OnActiveSec=3s
+OnUnitActiveSec=30m
 Unit=awww-random.service
 
 [Install]

@@ -136,4 +136,3 @@ export MPDCONF=$XDG_CONFIG_HOME/mpd/mpd.conf
 #clear
 #fortune | cowsay -f eyes | lolcat -a -s 160 
 #echo 
-

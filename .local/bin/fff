@@ -1,3 +1,4 @@
 /usr/bin/fastfetch --config ~/.config/fastfetch/fastfetch2.jsonc
-/usr/bin/fastfetch --version
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false  && ansiweather -l "Buenos Aires,AR" -f 3 -p true -s true -a false
+#ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false -p true -s true| lolcat -f
 echo

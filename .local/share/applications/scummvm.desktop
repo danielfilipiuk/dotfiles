@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=/mnt/data/scummvm/bin/scummvm --config=/mnt/data/scummvm/ini/scummvm.ini --logfile=/mnt/data/scummvm/logs/scummvm.log --screenshotpath=/mnt/data/scummvm/screenshots
+Name=ScummVM
+Type=Application
+Terminal=false
+Categories=Game;
+Icon=scummvm
+Keywords=dream;monkey;maniac;loom;indiana
+GenericName=DOS retro emulation arena for Maniac Mansion
+Comment=Script Creation Utility for Maniac Mansion Virtual Machine
+Path=
+StartupNotify=true

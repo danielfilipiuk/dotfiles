@@ -49,14 +49,236 @@ git rebase -i
 git reflog expire --expire=now --all
 git gc --prune=now --aggressive
 
+
+
+
+
+
+Aha — now we have the exact picture. And I need to correct one thing from my previous message: the history is not clean yet.
+
+This line proves it:
+
+* dd15e52 (HEAD -&gt; main) Reorganize dotfiles
+* 430a8f6 (backup-before-clean) kernel 7.1.8, waybar css minimal details
+* 4778980 (origin/main) ...
+
+And this is the smoking gun:
+
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+
+dd15e52
+40f52e0
+430a8f6
+
+The bad 151 MB file is still part of 430a8f6.
+
+The fact that dd15e52 deletes it doesn't help. GitHub will still receive the blob from 430a8f6.
+
+Also, your backup-before-clean branch is preserving the bad commit, which is fine — that's exactly what we want as a safety net.
+
+And one very important thing
+
+Your stash is empty:
+
+git stash list
+
+No output.
+
+That's actually okay because your working tree is now clean. Your previously unstaged changes apparently ended up represented in dd15e52, so we don't have to worry about recovering them from the stash.
+
+Let's do this properly now
+
+We're going to edit 430a8f6 itself.
+
+You currently have:
+
+4778980  ← GitHub
+    ↓
+430a8f6  ← BAD: contains 151 MB kernel archive
+    ↓
+dd15e52  ← current commit, deletes it
+
+We want:
+
+4778980  ← GitHub
+    ↓
+NEW-HASH ← same as 430a8f6, but WITHOUT kernel archive
+    ↓
+NEW-HASH ← Reorganize dotfiles
+
+Your backup-before-clean branch means we can always get back to the old state.
+
+Step 1 — start the interactive rebase
+
+Run:
+
+git rebase -i origin/main
+
+You should get two commits:
+
+pick 430a8f6 kernel 7.1.8, waybar css minimal details
+pick dd15e52 Reorganize dotfiles
+
+Change only the first pick to edit:
+
+edit 430a8f6 kernel 7.1.8, waybar css minimal details
+pick dd15e52 Reorganize dotfiles
+
+Save and exit.
+
+Step 2 — Git should stop at 430a8f6
+
+Now check:
+
+git status
+
+It should say something along the lines of:
+
+You are currently editing a commit while rebasing...
+
+And the kernel archive should now physically exist again, because Git has checked out the contents of 430a8f6.
+
+Confirm:
+
+ls -lh kernel/7.1.8/linux-7.1.8.tar.xz
+
+You should see approximately:
+
+151M kernel/7.1.8/linux-7.1.8.tar.xz
+Step 3 — remove it from this commit
+
+Now this command should work:
+
+git rm kernel/7.1.8/linux-7.1.8.tar.xz
+
+Then:
+
+git commit --amend --no-edit
+
+You should see the commit recreated with the deletion.
+
+Step 4 — continue the rebase
+git rebase --continue
+
+Git will replay your Reorganize dotfiles commit on top of the newly rewritten 430a8f6.
+
+Then STOP
+
+Don't push yet.
+
+Run:
+
+git log --oneline --graph --decorate -5
+
+and:
+
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+
+The second command should ideally show only the backup-before-clean commit:
+
+430a8f6 backup-before-clean ...
+
+and not your new main commits.
+
+That's the critical verification.
+
+Why this time will work
+
+Earlier, we accidentally edited the new commit, which already contained the deletion:
+
+dd15e52
+delete mode ... linux-7.1.8.tar.xz
+
+So there was nothing for git rm to remove.
+
+This time we're explicitly stopping at:
+
+430a8f6
+
+where the 151 MB file actually exists.
+
+Then we remove it from that historical snapshot.
+
+After that, the later Reorganize dotfiles commit will still contain the deletion naturally.
+
+Don't run git gc yet either. Once we verify the rewritten history, we'll make the old 151 MB object unreachable and then garbage-collect it.
+
+b9205ab (HEAD -&gt; main) Reorganize dotfiles
+ce45cb9 kernel 7.1.8, waybar css minimal details
+4778980 (origin/main, origin/HEAD) MILK IN A WISKEY GLASS WITH A FLOATING PLUM theme complete, I think.
+084ceef several modifications to theme, now more whitey-wlogout, fuzzel, snappy hypttasking, eye-candy. Reestructuration of style config. Divi$
+ac7417b installed wl-clip-persist service, cliphist, compiled waybar (added cava support) and separated config into 2 jsonc files, one for eac$
+
+40f52e0 (safety-before-rewrite) Reorganize dotfiles
+
+430a8f6 (backup-before-clean) kernel 7.1.8, waybar css minimal details
+
+safe to add commit and push?
+
+Yes — now you're in the good state. 🎯
+
+Your history is exactly what we wanted:
+
+4778980  ← origin/main (GitHub)
+   │
+   ▼
+ce45cb9  ← rewritten kernel commit
+   │
+   ▼
+b9205ab  ← rewritten Reorganize dotfiles
+   │
+   ▼
+HEAD
+
+And importantly, your old commits are isolated on safety branches:
+
+430a8f6  ← backup-before-clean
+40f52e0  ← safety-before-rewrite
+
+Those old commits are not part of main.
+
+One final verification before pushing
+
+Run:
+
+git log --oneline --all -- kernel/7.1.8/linux-7.1.8.tar.xz
+
+If you get:
+
+430a8f6 (backup-before-clean) ...
+
+and nothing involving b9205ab or ce45cb9, that's perfect.
+
+Then:
+
+git status
+
+should say:
+
+Your branch is ahead of 'origin/main' by 2 commits.
+nothing to commit, working tree clean
+Then clean the old 151 MB object
+
+Since main no longer references it, now is the right time:
+
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+
+Check:
+
+git count-objects -vH
+
+Then:
+
+git push
 </note-content></text>
-  <last-change-date>2026-08-05T20:38:56.2631747-03:00</last-change-date>
-  <last-metadata-change-date>2026-08-05T20:38:56.2631747-03:00</last-metadata-change-date>
+  <last-change-date>2026-08-12T02:28:44.4966784-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-12T02:28:44.4966784-03:00</last-metadata-change-date>
   <create-date>2026-08-05T20:03:11.2642232-03:00</create-date>
   <cursor-position>1</cursor-position>
   <selection-bound-position>1</selection-bound-position>
-  <width>784</width>
-  <height>505</height>
+  <width>939</width>
+  <height>839</height>
   <x>120</x>
   <y>132</y>
   <open-on-startup>False</open-on-startup>

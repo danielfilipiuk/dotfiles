@@ -10,18 +10,21 @@
   "output": "DP-1",
 
   "position": "top",
-  "height": 30,
+  "height": 32,
   "spacing": 5,
 
   "expand-left": false,
   "expand-right": false,
+  "expand-center": false,
   "fixed-center": false,
 
   "mode": "dock",
   "reload_style_on_change": true,
 
   "margin-top": 5,
-  "margin-bottom": 5,
+  "margin-bottom": 7,
+  "margin-left": 5,
+  "margin-right": 5,
 
   "markup": true,
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -35,10 +38,9 @@
 ],
 ///////////////////////////////////////////////////////////////////////////////////////
 "modules-right": [
-    "cava",
-    "mpd",
+    "group/mpd",
     "pulseaudio",
-    "keyboard-state",
+//    "keyboard-state",
     "tray",
     "network",
     "disk",
@@ -48,12 +50,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 "group/hardware": {
 	"orientation": "inherit",
-	"drawer": {
-		"transition-duration": 750,
-		"children-class": "not-temperature",
-		"transition-left-to-right": true,
-		"click-to-reveal": false,
-		},
+	//"drawer": {
+	//	"transition-duration": 750,
+	//	"children-class": "not-temperature",
+	//	"transition-left-to-right": true,
+	//	"click-to-reveal": false,
+	//	},
 	"modules": [
 		"temperature",
 		"cpu",
@@ -61,7 +63,16 @@
 		"custom/gpu-usage"
 		]
 		},
-///////////////////////////////////////////////////////////////////////////////////////
+		
+"group/mpd": {
+	"orientation": "inherit",
+	"modules": [
+		"cava",
+		"mpd"
+		]
+		},
+		
+//////////////////////////////////////////////////////////////////////////////////////
 
 "hyprland/workspaces": {
       "format": "{windows}",
@@ -249,12 +260,12 @@
 //        "format-source": "{volume}% ",
 //        "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
+       //     "headphone": "",
+       //     "hands-free": "",
+       //     "headset": "",
+       //     "phone": "",
+       //     "portable": "",
+       //     "car": "",
             "default": [" ", " ", " "]
         },
         "on-click": "app2unit -S out -- pavucontrol --tab=1",
@@ -274,10 +285,10 @@
     "network": {
          "interface": "wlp38s0", // (Optional) To force the use of this interface
         "interval": 3600,
-        "format-wifi": " {signalStrength}<span size=\"smaller\">%</span>",
-        "format-ethernet": "{ipaddr}/{cidr}  ",
-        "tooltip-format": "{ifname}\n{essid}\n{ipaddr} /{cidr}",
-        "format-linked": "{ifname} (No IP)   ",
+        "format-wifi": "",
+        //"format-ethernet": "{ipaddr}/{cidr}  ",
+        "tooltip-format": "{ifname}\n{essid}\n{ipaddr} /{cidr}\n{signalStrength}<span size=\"smaller\">%</span>",
+        //"format-linked": "{ifname} (No IP)   ",
         "format-disconnected": "..󱍢..",
         //"format-alt": "{ifname}: "
         "on-click": "pidof wpa_gui || app2unit -S out -- wpa_gui -i wlp38s0 -m 5 -q",
@@ -376,7 +387,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 
 "memory": {
-	"interval": 30,
+	"interval": 1,
 	"cursor": "crosshair",
 	"format": " {used:0.1f}<span size=\"smaller\">G</span>",
 },	
@@ -418,6 +429,7 @@
   "return-type": "json",
   "format-icons": "",
   "tooltip": true,
+  "interval": "1000",
 "cursor": "crosshair",
   "on-click": "app2unit -T -- nvtop",
   	"menu": "on-click-right",
@@ -446,23 +458,24 @@
 
 
 "inhibitor": {
-	"what": [ "sleep", "shutdown"],
+	"what": [ "idle", "sleep", "shutdown"],
 	"format": "{icon}",
 	"format-icons": {
 		"activated": "",
 		"deactivated": "",
 			},
 	"tooltip": true,
-//	"menu": "on-click-right",
-//	"menu-file": "~/.config/waybar/power-menu.xml",
-//	"menu-actions": {
-//		"lock": "pidof hyprlock || app2unit -- hyprlock -q",
-//		"logout": "uwsm stop",
-//		"suspend": "pidof hyprlock || app2unit -- hyprlock -q && sleep 2 && systemctl suspend",
-//		"softreboot": "syssrb",
-//		"reboot": "sysrb",
-//		"shutdown": "sysoff",
-//			},
+	"menu": "on-click-right",
+	"menu-file": "~/.config/waybar/power-menu.xml",
+	"menu-actions": {
+		"lock": "pidof hyprlock || app2unit -- hyprlock -q",
+		"logout": "uwsm stop",
+		"DPMSoff": "hyprctl dispatch 'hl.dsp.dpms({ action = \"disable\" })'",
+		"suspend": "pidof hyprlock || app2unit -- hyprlock -q && sleep 2 && systemctl suspend",
+		"softreboot": "systemctl soft-reboot",
+		"reboot": "systemctl reboot",
+		"shutdown": "systemctl poweroff",
+			},
 },
 ///////////////////////////////////////////////////////////////////////////////////////
 

@@ -6,8 +6,8 @@
 * {
 	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
 	font-size: 12px; 
-	font-weight: bold;
-	font-variant: small-caps;
+	font-weight: normal;
+	/*font-variant: small-caps;*/
 	-gtk-dpi: 96;
 	letter-spacing: 0px;
 	border-radius: 16px;
@@ -34,8 +34,8 @@ window#waybar.toplevel-active {background: #60406c;}
 
 /* TOOLTIPS */
 tooltip {background: rgba(248,246,242,.75);
-	border-top:    4px solid rgba(208, 132, 204,.3);
-	border-left:   4px solid rgba(208, 132, 204,.4);
+	border-top:    4px solid rgba(208, 132, 204,.5);
+	border-left:   4px solid rgba(208, 132, 204,.5);
 	border-right:  4px solid rgba(208, 132, 204,.6);
 	border-bottom: 4px solid rgba(208, 132, 204,.7);}
 tooltip label {	padding: 7px 7px;
@@ -47,8 +47,8 @@ tooltip label {	padding: 7px 7px;
 
 /* MENUS */
 menu {	background: rgba(248,246,242,.75);
-	border-top:    4px solid rgba(208, 132, 204,.3);
-	border-left:   4px solid rgba(208, 132, 204,.4);
+	border-top:    4px solid rgba(208, 132, 204,.5);
+	border-left:   4px solid rgba(208, 132, 204,.5);
 	border-right:  4px solid rgba(208, 132, 204,.6);
 	border-bottom: 4px solid rgba(208, 132, 204,.7);
 	box-shadow: 1px 1px 2px rgba(42,32,46,.25);}
@@ -97,7 +97,7 @@ label.module:hover {
 #submap:hover {	background: rgba(208, 132, 204,1);}
 
 /* TEMPERATURE */
-#temperature {}
+#temperature {min-width: 50px;}
 #temperature.warning {background-color: #f0932b;}
 #temperature.warning:hover {background-color: #ffa500;}
 #temperature.critical {	background-color: #eb4d4b;}
@@ -107,11 +107,11 @@ label.module:hover {
 #cpu {min-width: 100px;}
 
 /* MEMORY */
-#memory {}
+#memory {min-width: 50px;}
 
 /* GPU USAGE */
-#custom-gpu-usage {background-color: transparent;}
-#custom-gpu-usage:hover { background: rgba(208, 132, 204,1);}
+#custom-gpu-usage {}
+#custom-gpu-usage:hover {background: rgba(208, 132, 204,1);}
 
 /* CAVA */
 #cava {	color: rgba(50,25,65,.75);
@@ -154,7 +154,7 @@ label.module:hover {
 				text-shadow: 1px 1px 1px  rgba(48,30,46,.15);}
 
 /* PULSEAUDIO  */
-#pulseaudio {}
+#pulseaudio {min-width: 45px;}
 #pulseaudio.muted {	border-top:    3px solid rgba(208, 132, 204,.05);
 			border-left:    3px solid rgba(208, 132, 204,.10);
 			border-right:    3px solid rgba(208, 132, 204,.15);
@@ -215,7 +215,7 @@ label.module:hover {
 #disk {}
 
 /* CLOCK  */
-#clock {}
+#clock {min-width: 45px;}
 
 
 

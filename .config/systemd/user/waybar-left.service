@@ -9,9 +9,7 @@ Type=exec
 ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "Hyprland" ""
 ExecStart=/home/daniel/bin/waybar -c /home/daniel/.config/waybar/left.jsonc
 Restart=on-failure
-#LogLevelMax=err
-StandardOutput=null
-StandardError=journal
+
 
 
 [Install]

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=/mnt/data/dreamm/dreamm
+Name=Dreamm
+Type=Application
+Terminal=false
+Categories=Game;
+Icon=dreamm_icon
+Keywords=dream;monkey;maniac;loom;indiana
+GenericName=DOS retro emulation arena for Maniac Mansion
+Comment=
+Path=
+StartupNotify=false

@@ -46032,3 +46032,1314 @@ chmod +x cura-5.13.AppImage
 ./cura-5.13.AppImage 
 ./cura-5.13.AppImage 
 cura
+gamescope --help
+gamescope --help | grep -i sync
+JF
+jf
+tetris
+sudo apt search tetris
+wine downloads/Mod\ Organizer\ 2-6194-2-5-2-1722760304.exe 
+protontricks --help
+protontricks -l
+protontricks-desktop-install --help
+protontricks-launch --help
+protontricks-launch ~/downloads/Mod\ Organizer\ 2-6194-2-5-2-1722760304.exe 
+protontricks -l
+protontricks-launch /mnt/data/SteamLibrary/steamapps/compatdata/22330/pfx/drive_c/Modding/MO2/ModOrganizer.exe 
+protontricks-launch /mnt/data/SteamLibrary/steamapps/compatdata/22330/pfx/drive_c/Modding/MO2/ModOrganizer.exe 
+sudo apt install vitetris tint bastet
+bastet
+tint
+vitetris 
+sudo apt install gotop
+sudo apt install bashtop 
+bashtop
+bashtop
+systemd-cgtop 
+sudo apt install ytop
+git count-objects -vH
+cd dotfiles/
+git count-objects -vH
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git branch backup-before-clean
+git log origin/main..HEAD --oneline
+git reset --soft 430a8f6
+git restore --staged .
+git status
+git add .
+git commit -m "some color mods, icons for apps located properly"
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push
+git status
+git reset --soft HEAD~1
+git reset --soft HEAD~1
+git restore --staged .
+git add .
+git push
+git log --oneline --graph -10
+git reset --soft 430a8f6
+git log --oneline --graph -10
+git restore --staged .
+git log --oneline --graph -10
+git reset
+git status
+git add .
+git push
+git commit -m "reorganized"
+git push
+git reset --soft 430a8f6
+git restore --staged .
+git status
+git add .
+git commit -m "Reorganize dotfiles"
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push
+git log --oneline --graph -10
+git branch safety-before-rewrite
+git branch -vv
+git rebase -i origin/main
+git rm kernel/7.1.8/linux-7.1.8.tar.xz
+git stash push -u -m "temporary before history rewrite"
+git status
+git rebase -i origin/main
+git rm kernel/7.1.8/linux-7.1.8.tar.xz
+git commit --amend --no-edit
+git rebase --continue
+git log --oneline --graph --decorate -5
+git status
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+git stash list
+git log --oneline --graph --decorate -5
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+git rebase -i origin/main
+git status
+ls -lh kernel/7.1.8/linux-7.1.8.tar.xz
+git rm kernel/7.1.8/linux-7.1.8.tar.xz
+git commit --amend --no-edit
+git rebase --continue
+git log --oneline --graph --decorate -5
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+git log --oneline --graph --decorate -5
+git log --all --oneline -- kernel/7.1.8/linux-7.1.8.tar.xz
+git log --oneline --all -- kernel/7.1.8/linux-7.1.8.tar.xz
+git status
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git count-objects -vH
+git push
+systemctl status hdparm-drives.service 
+systemctl status force-hdd-standby.service 
+systemctl status force-hdd-standby.timer 
+sudo micro /etc/systemd/system/force-hdd-standby.service 
+sudo micro /etc/systemd/system/force-hdd-standby.timer 
+sudo systemctl daemon-reload 
+jf
+exec -- htop
+micro .config/hypr/hl/hl_autostart.lua 
+tomboy-ng --help
+hyprprop 
+jf
+tomboy-ng 
+app2unit -- S Out tomboy-ng
+app2unit -S Out -- tomboy-ng
+app2unit -SOut -- tomboy-ng
+app2unit -Sout -- tomboy-ng
+app2unit -S out -- tomboy-ng
+app2unit -S out -- tomboy-ng
+btop
+exec -- btop
+jf
+exec -- jf
+cat jf
+cat /usr/local/bin/jf
+alias
+jf
+systemctl --user status cliphist-daemon.service 
+systemctl --user status cliphist-image-daemon.service 
+systemctl --user status cliphist-text-daemon.service 
+chmod +x /usr/local/bin/cliphist-image /usr/local/bin/cliphist-text 
+systemctl --user daemon-reload
+/usr/local/bin/cliphist-text 
+systemctl --user daemon-rek
+systemctl --user daemon-reñ
+systemctl --user daemon-rel
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-image-daemon.service 
+systemctl --user restart cliphist-text-daemon.service 
+systemctl --user restart cliphist-text-daemon.service
+
+systemctl --user restart cliphist-image-daemon.service 
+chmod ugoa +x /usr/local/bin/cliphist-image /usr/local/bin/cliphist-text 
+chmod ugo +x /usr/local/bin/cliphist-image /usr/local/bin/cliphist-text 
+chmod +x ugoa /usr/local/bin/cliphist-image /usr/local/bin/cliphist-text 
+hstr 
+chmod ugoa+x /usr/local/bin/cliphist-image /usr/local/bin/cliphist-text 
+systemctl --user restart cliphist-image-daemon.service 
+ln -s /usr/local/bin/cliphist-image /usr/bin/wl-paste
+ln -s /usr/bin/wl-paste /usr/local/bin/cliphist-image
+ln -s /usr/bin/wl-paste /usr/local/bin/cliphist-text
+systemctl --user daemon-reload 
+systemctl --user restart cliphist-image-daemon.service 
+systemctl --user restart cliphist-text-daemon.service
+systemctl --user status cliphist-text-daemon.service
+systemctl --user status cliphist-image-daemon.service
+cd downloads/
+chmod +x mo2-lint 
+mv mo2-lint ~/bin
+mo2-lint install oblivion /mnt/data/SteamLibrary/steamapps/compatdata/22330/ -s 
+cmatrix
+/usr/libexec/xscreensaver/apple2 
+mpc status
+mpc stats
+mpc update
+mpc stats
+mpc stats
+lsblk 
+lsblk 
+exec -- btop
+hyprprop 
+gamescopectl 
+gamescopectl --help
+gamescopereaper --help
+gamescope-type --help
+lsmod
+sudo apt update
+sudo apt list --upgradable 
+cd /mnt/data/DOS/volfied/
+ls
+dosbox volfied.exe 
+cd ..
+cd Titus\ the\ Fox\ -\ To\ Marrakech\ and\ Back/
+ll
+dosbox fox.com
+dosbox titus.exe
+dosbox ffc.com
+dosbox titf_trn
+dosbox --help
+man dosbox
+dosbox -t fox.com
+/mnt/data/scummvm/bin/scummvm --config=./ini/scummvm.ini --logfile=./logs/scummvm.log --screenshotpath=./screenshots
+gamescope -W 1280 -H 1024 -f --rt -O DP-1 retroarch
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- retroarch
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- retroarch
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- retroarch
+retroarch --appendconfig video_driver = wayland
+WAYLAND_DISPLAY="" retroarch
+WAYLAND_DISPLAY="" retroarch
+WAYLAND_DISPLAY="" retroarch
+WAYLAND_DISPLAY="" retroarch --verbose
+WAYLAND_DISPLAY="" retroarch --help
+WAYLAND_DISPLAY="" retroarch --verbose --features
+WAYLAND_DISPLAY="" retroarch --verbose -D
+man retroarch
+ll
+pkgkit
+pkgit
+apt-file search pkgit
+pipx
+uv
+sudo apt install muon
+apt show pipx
+apt show pipx
+curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+sudo apt install pipx
+curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+sudo apt install girepository-tools 
+curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+pipx install girepository-2.0
+apt-file search girepository-2.0
+sudo apt install gir1.2-girepository-2.0 libgirepository-2.0-0 
+sudo apt install gir1.2-girepository-2.0 libgirepository-2.0-dev 
+curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+pipx list 
+hyprmod 
+sudo apt install lua
+sudo apt install lua5.5 
+hyprmod 
+jf
+sudo apt install lua5.4
+curl -LsSf https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/install.sh | sh
+hyprmod 
+pipx uninstall hyprmod 
+btop
+pipx uninstall hyprmod
+exit
+hstr 
+img2txt -H 25 ~/pictures/hyprland/hyprland_big.png
+img2txt -H 20 ~/pictures/hyprland/hyprland_big.png
+img2txt -H 19 ~/pictures/hyprland/hyprland_big.png
+img2txt -H 18 ~/pictures/hyprland/hyprland_big.png
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15 --help
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15 -b 2
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15 -b 1
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 2
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 4
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 7
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 10
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 100
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -b 0
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15 --help
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -d fstein
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -d ordered8
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -d ordered4
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png -d ordered2
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15 --help
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png --format caca
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png --format ansi
+img2txt -H 15 ~/pictures/hyprland/hyprland_big.png > hyprtxt_15
+exit
+cat pictures/hyprland/hyprtxt_15 
+exit
+hstr 
+img2txt -W 40 -H 30 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 30 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 30 -H 20 ~/pictures/hyprland/hyprland.svg 
+img2txt -W 30 -H 20 ~/pictures/hyprland/hyprland.png 
+img2txt -W 30 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 20 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 40 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 30 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 34 -H 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 30 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 20 ~/pictures/hyprland/hyprland_big.png 
+img2txt -W 25 ~/pictures/hyprland/hyprland_big.png 
+cat hyprtxt_15 
+systemctl --user restart awww-random.timer 
+systemctl --user daemon-reload 
+systemctl --user restart awww-random.timer 
+sudo apt install linuxlogo 
+slabtop 
+exit
+figlet Hyprland -f slant
+figlet Hyprland -f shallow
+figlet Hyprland -f shadow
+figlet Hyprland 
+figlet Hyprland -f smslant
+figlet Hyprland -f smshadow
+figlet Hyprland -f big
+figlet Hyprland -f small
+figlet Hyprland -f smsmall
+figlet Hyprland -f terminal
+figlet Hyprland -f digital
+figlet Hyprland -f bubble
+figlet Hyprland -f LEAN
+figlet Hyprland -f lean
+figlet Hyprland -f block
+figlet Hyprland -f mini
+figlet Hyprland -f banner
+figlet Hyprland -f mnemonic
+toilet
+sudo apt install toilet
+toilet Hyprland
+toilet Hyprland --help
+toilet Hyprland -F gay
+toilet Hyprland -F metal
+toilet Hyprland -F list5
+toilet Hyprland -F list
+toilet Hyprland -F crop
+toilet Hyprland -F flip
+toilet Hyprland -F flop
+toilet Hyprland -F 180
+toilet Hyprland -Fleft
+toilet Hyprland -F left
+toilet Hyprland -F right
+toilet Hyprland -F lsit
+toilet Hyprland -F list
+toilet Hyprland -F border
+toilet Hyprland -F center
+toilet Hyprland -F slant
+toilet Hyprland -f slant
+figlet Hyprland -f slant
+toilet Hyprland -f big
+toilet Hyprland -f big -F metal
+toilet Hyprland -f big -F gay
+toilet Hyprland -f block -F gay
+toilet Hyprland -f block -F metal
+toilet Hyprland -f slant-F metal
+toilet Hyprland -f big -F metal
+toilet Hyprland -f big -F metal -s
+toilet Hyprland -f big -F metal -S
+toilet Hyprland -f big -F metal -K
+toilet Hyprland -f big -F metal -W
+toilet Hyprland -f big -F metal -W
+toilet Hyprland -f big -F metal -o
+boxes
+sudo apt install boxes
+toilet Hyprland -f big -F metal -o | boxes
+toilet Hyprland -f big -F metal -o | boxes --help
+toilet Hyprland -f big -F metal -o | boxes --
+toilet Hyprland -f big -F metal -o | boxes -c -k
+toilet Hyprland -f big -F metal -o | boxes -c -p 3
+toilet Hyprland -f big -F metal -o | boxes -c -p3
+toilet Hyprland -f big -F metal -o | boxes
+img2txt -W 25 ~/pictures/hyprland/hyprland.svg 
+img2txt -W 25 ~/pictures/hyprland/logo.svg 
+img2txt ~/pictures/hyprland/logo.svg 
+img2txt -W 50 ~/pictures/hyprland/logo.svg 
+img2txt -W 250 ~/pictures/hyprland/logo.svg 
+img2txt -W 150 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+figlety
+figlet
+figlet hola
+figlet Debian
+figlet Hyprland
+figlet Hyprland --help
+man figlet
+figlet Hyprland -I3
+man figlet
+figlet Hyprland -I5
+man figlet
+figlet Hyprland -f script
+man figlet
+img2txt -W 100 ~/pictures/debian/logo+debian.svg 
+img2txt -W 150 ~/pictures/debian/logo+debian.svg 
+img2txt -W 150 ~/pictures/debian/logo+debian.svg 
+img2txt ~/pictures/debian/logo+debian.svg 
+img2txt -W 250 ~/pictures/debian/logo+debian.svg 
+img2txt -W 200 ~/pictures/debian/logo+debian.svg 
+jf
+img2txt -W 250 ~/pictures/debian/logo+debian.svg 
+img2txt -W 150 ~/pictures/debian/logo+debian.svg 
+img2txt -W 150 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg | lolcat
+img2txt -W 100 ~/pictures/hyprland/logo.svg | cowsay
+figlet Hyprland
+figlet Hyprland | lolcat
+figlet Hyprland | cowsay
+figlet Hyprland -f small | cowsay
+figlet Hyprland -f list | cowsay
+figlet Hyprland -f smslant | cowsay
+figlet Hyprland -f smshadow | cowsay
+figlet Hyprland -f smscript | cowsay
+cat pictures/hyprland/hyprlogo_text.txt 
+cat pictures/hyprland/hyprlogo_text.txt & sleep 1
+cat pictures/hyprland/hyprlogo_text.txt & sleep 1
+cat pictures/hyprland/hyprlogo_text.txt & sleep 1
+cat pictures/hyprland/hyprlogo_text.txt & sleep .5
+cat pictures/hyprland/hyprlogo_text.txt & sleep .5
+cat pictures/hyprland/hyprlogo_text.txt & sleep .1
+cat pictures/hyprland/hyprlogo_text.txt & sleep 1
+cat pictures/hyprland/hyprlogo_text.txt & sleep 1
+nano .profile 
+figlet Hyprland -f block
+figlet Hyprland -f slant
+figlet Hyprland 
+figlet Hyprland -f shadow
+figlet Hyprland -f smshadow
+figlet Hyprland -f ngshadow
+figlet Hyprland -f bgshadow
+figlet Hyprland -f bigshadow
+figlet Hyprland -f 
+img2txt -W 50 ~./pictures/hyprland/logo.svg 
+img2txt -W 50 ~/pictures/hyprland/logo.svg 
+img2txt -W 70 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 90 ~/pictures/hyprland/logo.svg 
+img2txt -W 150 ~/pictures/hyprland/logo.svg 
+img2txt -W 110 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg 
+img2txt -W 100 ~/pictures/hyprland/logo.svg > ./pictures/hyprland/hyprlogo_text.txt
+cat ./pictures/hyprland/hyprlogo_text.txt
+nano .profile 
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+figlet Hyprland -f smblock
+figlet Hyprland -f mblock
+figlet Hyprland -f block
+figlet Welcome $USER -f smblock
+figlet Welcome $USER
+figlet Welcome $USER -fsmal
+figlet Welcome $USER -f small
+figlet Welcome $USER -f script
+figlet Hyprland -f smblock
+figlet Welcome $USER -f script | boxes
+figlet Welcome $USER -f block | boxes
+figlet | boxes
+figlet Welcome $USER | boxes
+figlet Welcome $USER -f small | boxes
+boxes
+ls | boxes
+uname -a | boxes
+man boxes
+
+man boxes | less
+boxes -l | less
+uname -a | boxes ansi
+uname -a | boxes -f ansi
+man boxes | less
+uname -a | boxes ansi
+uname -a | boxes -
+exit
+exit
+exit
+exit
+exit
+exit
+boxes -l | less
+echo Welcome back $USER 
+echo Welcome back $USER | boxes ansi
+echo Welcome back $USER | boxes -d ansi
+echo Welcome back $USER | boxes -d double-ansi
+echo Welcome back $USER | boxes -d doubleansi
+echo Welcome back $USER | boxes -d ansi-double
+exit
+echo Welcome back $USER | boxes -d ansi-double
+echo Welcome back $USER | boxes -d ansi-double | lolcat
+echo Welcome back $USER | boxes -d ansi-double -c
+echo Welcome back $USER | boxes -d ansi-double --color
+echo Welcome back $USER | boxes -d ansi-double | lolcat
+echo Welcome back $USER | boxes -d ansi-double | lolcat
+echo Welcome back $USER | boxes -d ansi-double | lolcat
+edxit
+exit
+exit
+exit
+exit
+printf "Welcome back" $USER\n
+printf "Welcome back $USER\n"
+printf "Welcome back $USER\n" | lolcat
+edxit
+exit
+exit
+exit
+echo $OSTYPE 
+echo $MOTD_SHOWN 
+echo $RANDOM 
+echo $SHELL
+echo $TERM
+echo $
+echo $HOSTNAME 
+echo $HOSTTYPE 
+echo $
+printf "Welcome back $USER\n" | boxes -d ansi
+printf uname -a\n"Welcome back $USER\n" | boxes -d ansi
+printf "uname -a\n Welcome back $USER\n" | boxes -d ansi
+printf uname -a\n "Welcome back $USER\n" | boxes -d ansi
+printf "Welcome back $USER\n" | boxes -d ansi
+tty
+rintf "Welcome back $USER\ntty" | boxes -d ansi
+printf "Welcome back $USER\ntty" | boxes -d ansi
+printf exit"Welcome back $USER\n" | boxes -d ansi
+exit
+tty | sed 's|/dev/||'
+ps -p $$ -o tty=
+exit
+printf exit"Welcome back $USER\n" | boxes -d ansi
+printf Welcome back $USER\n | boxes -d ansi
+tty & printf "Welcome back $USER\n" | boxes -d ansi
+tty
+tty && printf "Welcome back $USER\n" | boxes -d ansi
+tty | boxes -d ansi && printf "Welcome back $USER\n" | boxes -d ansi
+tty | boxes -d ansi-double && printf "Welcome back $USER\n" | boxes -d ansi
+tty | boxes -d ansi && printf "Welcome back $USER\n" | boxes -d ansie
+exit
+cat pictures/hyprland/hyprtxt_15 | boxes -d ansi
+cat pictures/hyprland/hyprlogo_text.txt | boxes -d ansi
+cat pictures/hyprland/hyprlogo_text.txt 
+cat pictures/hyprland/hyprlogo_text.txt | boxes -d ansi
+exit
+cat /etc/security/limits.conf 
+cat /etc/security/group.conf 
+cat /etc/security/pam_env.conf 
+cat /etc/security/pwquality.conf 
+cat /etc/security/pwhistory.conf 
+cat /etc/security/opasswd 
+sudo cat /etc/security/opasswd 
+cat /proc/sys/kernel/osrelease 
+cat /proc/sys/kernel/ostype 
+cat /proc/sys/kernel/ctrl-alt-del 
+cat /proc/sys/kernel/dmesg_restrict 
+echo $USER
+echo $
+echo $HOSTTYPE 
+echo $MACHTYPE 
+echo $LOGNAME 
+echo $TERMIN
+echo $TERMINFO 
+nano .profile 
+nano motd 
+nano issue
+sudo nano /etc/issue
+sudo nano /etc/issue
+sudo nano /etc/issue
+sudo nano /etc/motd
+sudo nano /etc/motd
+nano issue
+nano motd 
+cp /etc/issue .
+nano motd
+nano issue
+nano motd 
+nano motd 
+cp motd /etc/motd
+sudo cp motd /etc/motd
+nano /etc/motd
+sudo nano /etc/motd
+sudo nano /etc/issue
+sudo nano /etc/motd
+echo Debian GNU/Linux forky/sid \n \l
+sudo nano /etc/motd
+uname
+uname --help
+uname -p
+uname -i
+uname -o
+uname -a
+uname -s
+uname -n
+uname -r
+uname -v
+uname -nor
+uname -nors
+uname -sor
+uname -sorn
+uname -nsor
+uname -nso
+uname -nor
+uname -nors
+uname -nor
+uname -no
+uname -ors
+uname -orn
+uname -or
+figlet-toilet hola
+figlet hola
+figlet Welcome $USER
+figlet Welcome $USER -F script
+figlet Welcome $USER -f script
+figlet Welcome $USER -f smscript
+figlet Welcome $USER -f slant
+figlet Welcome $USER -f block
+figlet Welcome $USER -f smblock
+figlet Hyprland -f smblock
+figlet Hyprland -f block
+figlet Hyprland -f sm
+figlet Hyprland -f smblock
+figlet Welcome $USER -f smblock | boxes
+uname -a
+uname -a | boxes --help
+uname -a | boxes -m
+uname -a | boxes 
+uname -a | boxes -m
+uname -a | boxes -p 1
+uname -a | boxes -p1
+uname -a | boxes -d ansi
+uname -a | boxes -d parchment
+echo "Welcome $USER" | boxes -d parchment
+echo "Welcome $USER" | boxes -d ansi
+echo "$HOSTNAME $OSTYPE \n Welcome $USER" | boxes -d ansi
+echo "$HOSTNAME $OSTYPE "\"n Welcome $USER" | boxes -d ansi
+echo "$HOSTNAME $OSTYPE Welcome $USER" | boxes -d ansi
+echo "Welcome $USER" | boxes -d ansi
+echo "Welcome back $USER" | boxes -d ansi
+sudo nano /etc/update-motd.d/99-custom 
+sudo chmod +x /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+echo Welcome back $USER | boxes -d ansi
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+sudo chmox -x /etc/update-motd.d/10-uname 
+sudo chmod -x /etc/update-motd.d/10-uname 
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+df
+printf "Welcome $USER"
+printf "Welcome $USER\n"
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+sudo nano /etc/update-motd.d/99-custom 
+nano .bashrc 
+chmod -x /etc/update-motd.d/99-custom 
+sudo chmod -x /etc/update-motd.d/99-custom 
+nano .bashrc 
+nano .profile 
+nano .bashrc 
+tty --help
+tty -s
+man tty
+ttyautolock --help
+man ttyautolock
+jf
+ansiweather -l "Buenos Aires,AR" 
+ansiweather -l "Buenos Aires,AR" -f 5
+ansiweather -l "Buenos Aires,AR" -f 5 --help
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric -f 5
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric | boxes
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric | boxes -d ansi
+ansiweather -l "Buenos Aires,AR" -s true -d true -u metric | lolcat
+ansiweather -l "Buenos Aires,AR"
+ansiweather -l "Catamarca,AR"
+ansiweather -l "ramos mejia,AR"
+ansiweather -l "Buenos Aires,AR"
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" -a false -s false
+man ansiweather 
+man ansiweather 
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" 
+ansiweather -l "Buenos Aires,AR" -H true
+ansiweather -l "Buenos Aires,AR" -H true -d true
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false
+clear
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false
+printf "Welcome $USER\n"
+colorize red printf "Welcome $USER\n"
+colorize red | printf "Welcome $USER\n"
+colorize red printf "Welcome $USER\n"
+man colorize
+colorize cyan printf "Welcome $USER\n"
+man colorize
+colorize cyan -|printf "Welcome $USER\n"
+colorize cyan -| printf "Welcome $USER\n"
+colorize cyan black printf "Welcome $USER\n"
+man colorize
+printf "Welcome $USER\n" | colorize cyan
+printf "Welcome $USER\n" | colorize red
+printf "Welcome $USER\n" | colorize green
+printf "Welcome $USER\n" | colorize yellow
+nano .profile 
+exit
+printf "Welcome $USER\n" | colorize blue
+printf "Welcome $USER\n" | colorize bright-cyan
+printf "Welcome $USER\n" | colorize
+nano .profile 
+exit
+exit
+exit
+exit
+exit
+exit
+nano .profile 
+nano .profile 
+cat 12.txt 
+tiv
+tiv pictures/hyprland/hyprland_big.png 
+tiv pictures/hyprland/hyprland.svg 
+tiv pictures/hyprland/hyprland.svg 
+tiv pictures/hyprland/hyprland.png 
+tiv pictures/hyprland/logo.svg 
+tiv pictures/debian/g2.png 
+tiv pictures/debian/emblem-debian.svg 
+tiv pictures/debian/DALL·E\ 2024-09-27\ 00.45.10\ -\ A\ surrealist\ drawing\ of\ the\ Linux\ Tux\ penguin\,\ with\ elongated\ and\ fluid\ forms\,\ reminiscent\ of\ Salvador\ Dali\'s\ style.\ Tux\ is\ depicted\ in\ a\ dreamlike\,\ d.webp-mirror
+tiv pictures/debian/hexagonal.png 
+tiv pictures/debian/hexagonal.png 
+tiv pictures/debian/swirl+debian_black_bg.png 
+tiv
+tiv pictures/debian/swirl+debian_black_bg.png -2
+tiv pictures/debian/swirl+debian_black_bg.png -1
+tiv pictures/debian/swirl+debian_black_bg.png -0
+tiv pictures/debian/swirl+debian_black_bg.png -2
+tiv
+tiv pictures/debian/swirl+debian_black_bg.png -c 10
+tiv pictures/debian/swirl+debian_black_bg.png -c 1
+tiv pictures/debian/swirl+debian_black_bg.png 
+tiv
+tiv pictures/debian/swirl+debian_black_bg.png -w 80
+tiv pictures/debian/swirl+debian_black_bg.png -w 120
+tiv pictures/debian/swirl+debian_black_bg.png -w 100
+tiv pictures/debian/swirl+debian_black_bg.png -w 90
+tiv pictures/debian/swirl+debian_black_bg.png 
+tiv
+tiv pictures/debian/swirl+debian_black_bg.png -x
+tiv pictures/debian/swirl+debian_black_bg.png -x
+tiv pictures/debian/swirl+debian_black_bg.png
+clear && tiv pictures/debian/swirl+debian_black_bg.png
+clear && tiv pictures/hyprland/hyprland_blackBg.png 
+clear && tiv pictures/hyprland/hyprland_blackBg.png -x
+clear && tiv pictures/debian/swirl+debian_black_bg.png
+exit
+exit
+nano .profile 
+man boxes
+boxes -l
+boxes -l |  les
+boxes -l |  less
+man boxes
+figlet "Hyprland" | lolcat -f | boxes -d unicornsay
+colorize cyan figlet "Hyprland" | lolcat -f | boxes -d unicornsay
+colorize cyan | figlet "Hyprland" | lolcat -f | boxes -d unicornsay
+figlet "Hyprland" | lolcat -f | boxes -d unicornsay
+figlet "Hyprland" | lolcat | boxes -d unicornsay
+figlet "Hyprland" | lolcat | boxes -d unicornsay
+figlet "Hyprland" | lolcat | boxes -d unicornsay
+figlet "Hyprland" | lolcat -f | boxes -d unicornsay
+figlet "Hyprland" | colorize cyan | boxes -d unicornsay
+colorize cyan | figlet "Hyprland" | colorize cyan | boxes -d unicornsay
+colorize cyan | figlet "Hyprland" |  boxes -d unicornsay
+colorize cyan -l figlet "Hyprland" |  boxes -d unicornsay
+cat .profile 
+figlet "Hyprland" | colorize cyan | boxes -d unicornsay
+}
+figlet "Hyprland" | colorize cyan | boxes -d ansi
+man boxes
+figlet "Hyprland" | colorize cyan | boxes -d ansi -m
+figlet "Hyprland" | colorize cyan | boxes -d ansi -m
+figlet "Hyprland" | colorize cyan | boxes -d ansi
+man boxes
+figlet "Hyprland" | colorize cyan | boxes -d ansi --no-color
+figlet "$USER" | colorize cyan | boxes -d ansi --no-color
+figlet "Welcome $USER" | colorize cyan | boxes -d ansi --no-color
+figlet "Welcome $USER" | colorize cyan | boxes -d ansi
+tty | figlet | colorize cyan | boxes -d ansi
+exit
+exit
+exit
+exit
+banner
+banner
+sudo apt intall banner
+sudo apt install banne
+img2txt pictures/hyprland/hyprland_blackBg.
+img2txt pictures/hyprland/hyprland_blackBg.png 
+img2txt pictures/hyprland/hyprland_blackBg.svg
+img2txt pictures/hyprland/hyprland_blackBg.png -W 80
+img2txt pictures/hyprland/hyprland_blackBg.png -W 60
+img2txt pictures/hyprland/hyprland_blackBg.png -W 79
+img2txt pictures/hyprland/hyprland_blackBg.png -W 
+img2txt pictures/hyprland/hyprland_blackBg.png -W 80
+img2txt pictures/hyprland/hyprland_blackBg.png -W 75
+img2txt pictures/hyprland/hyprland_blackBg.png -W 79
+img2txt pictures/hyprland/hyprland_blackBg.svg -W 79
+img2txt pictures/hyprland/hyprland_blackBg.svg -W 80
+img2txt pictures/hyprland/hyprland_blackBg.svg
+img2txt pictures/debian/swirl+debian_black_bg.png 
+img2txt pictures/debian/swirl+debian_black_bg.png -W 80
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75
+img2txt pictures/debian/swirl+debian_black_bg.svg -W 75
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75 -H 60
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75 -H 5
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75 -H 55
+img2txt pictures/debian/swirl+debian_black_bg.png -W 75 -H 30
+img2txt pictures/debian/swirl+debian_black_bg.png -H 30
+img2txt pictures/debian/swirl+debian_black_bg.png -H 25
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 25
+img2txt pictures/debian/swirl+debian_black_bg.png -H 22
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 13
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23 > pictures/debian/swirl+debian_black_bg.txt 
+cat pictures/debian/swirl+debian_black_bg.txt 
+cat /etc/motd
+cat /etc/issue
+cat /etc/
+cat pictures/debian/swirl+debian_black_bg.txt 
+cat /etc/issue
+cat pictures/debian/swirl+debian_black_bg.txt 
+micro /etc/issue
+micro /etc/issue
+micro /etc/issue
+micro pictures/debian/swirl+debian_black_bg.txt 
+cat /etc/issue
+cat pictures/debian/swirl+debian_black_bg.txt 
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 25
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+sudo cp /etc/issue /etc/issue-ascii
+sudo cp pictures/debian/swirl+debian_black_bg.txt /etc/issue
+cat /etc/issue
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+exit
+exit
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png 
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+exit
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png -H 18
+img2txt pictures/debian/swirl+debian_black_bg.png -H 17
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png -H 15
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 25
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 23
+img2txt pictures/debian/swirl+debian_black_bg.png -H 20
+img2txt pictures/debian/swirl+debian_black_bg.png -H 18
+img2txt pictures/debian/swirl+debian_black_bg.png -H 17
+img2txt pictures/debian/Tux_Enhanced.svg 
+img2txt pictures/debian/Tux_Enhanced.svg -H 20 
+img2txt pictures/debian/Tux_Enhanced.svg
+exit
+ls
+ll
+img2txt pictures/debian/Tux_Enhanced.svg
+exit
+jf
+ansiweather
+sudo apt install ansiweather 
+ansiweather 
+ansiweather --help
+man ansiweather
+ansiweather -l Buenos Aires
+ansiweather -l Buenos_Aires
+ansiweather -l BuenosAires
+man ansiweathe
+man ansiweather
+inxi -A
+inxi -b
+inxi -e
+inxi
+inxi -S
+figlist
+figlet Hyprland -f digital
+showfigfonts 
+showfigfonts Hyprland
+fff
+hstr 
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false --help
+man ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false
+man ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -a false
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -a false
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -a false -F 5
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -a false -F 5 -s true
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -F 5 -s true
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -F 5
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" -i false -p false -F 5
+ansiweather -l "Buenos Aires,AR" -i false -p false
+ansiweather -l "Buenos Aires,AR" -H true -d true -i false -p false -s true
+ansiweather -l "Buenos Aires,AR" -H true -d true -p false -s true
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false -F 3
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false -F 1
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false -F
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false && ansiweather -F
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false && ansiweather -F -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false && ansiweather -l "Buenos Aires,AR" -F -a false
+man ansiweather 
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false && ansiweather -l "Buenos Aires,AR" -f 3 -a false
+colorize cyan ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false && ansiweather -l "Buenos Aires,AR" -f 3 -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize Cyan
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize cyan
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat 
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat 
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Cyan && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize yellow
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize white
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize White
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize green
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize Green
+man ansiweather 
+man colorize
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | colorize Green --attr=blink
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false -p true | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3  | lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -a false -p true -s true| lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -p true -s true| lolcat -f
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -p true -s true| colorize Yelow
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true | colorize Yellow && ansiweather -l "Buenos Aires,AR" -f 3 -p true -s true| colorize Yellow
+cat drawing.txt 
+glxgears
+vkcube
+vkmark 
+bpytop
+cpufetch 
+cpufetch --help
+cpufetch -s fancy
+cpufetch -s retro
+cpufetch -s legacy
+cpufetch -s legacy
+cpufetch --logo-short
+cpufetch --logo-long
+cpufetch --logo-short
+cpufetch --logo-short -s fancy
+cpufetch --logo-short -s fancy -F
+cpufetch --logo-short -s fancy 
+asciinema 
+asciinema rec demo.cast
+asciinema paly demo.cast
+asciinema play demo.cast
+man asciinema 
+ascii-draw 
+ansiweather -lBuenos Aires -F -um
+ansiweather -l "Buenos Aires,AR" -F -um
+ansiweather -l "Buenos Aires,AR"
+ansiweather -l "Buenos Aires,AR" -u metric -s true -f 5 -d true
+inxi
+man inxi
+screenfetch
+apt show screenfetch 
+man colorize
+hyprctl hyprsunset profile
+cat .config/hypr/hyprsunset.conf 
+nano .config/hypr/hyprsunset.conf 
+tetradraw 
+tetradraw 
+tetradraw --help
+man tetradraw
+tetradraw
+tetradraw
+cat 123.txt 
+cat 123.txt 
+tetradraw
+cat 12.txt 
+nano 12.txt 
+}
+nano /usr/local/bin/fff 
+fff
+nano /usr/local/bin/fff 
+fff
+nano /usr/local/bin/fff 
+fff
+nano /usr/local/bin/fff 
+fff
+nano /usr/local/bin/fff 
+fff
+nano /usr/local/bin/fff 
+fff
+binclock
+binclock --help
+binclock -l
+binclock --help
+binclock -g
+binclock -h
+binclock -c
+binclock -v
+binclock -l
+glxgears
+btop
+exit
+fff
+exit
+apt search journalctl-desktop
+fff
+jf
+micro .config/systemd/user/user.conf 
+alias
+sudo journalctl -b -W --no-tail -f --priority notice 
+micro .bash_aliases 
+jf
+exit
+jf
+exit
+./Pixel_Fireplace 
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./Pixel_Fireplace 
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./Pixel_Fireplace 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./Pixel_Fireplace 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -- ./Pixel_Fireplace 
+gamescope -W 1280 -H 1024 --rt -- ./Pixel_Fireplace 
+gamescope -W 1280 -H 1024-- ./Pixel_Fireplace 
+./start.sh 
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh 
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh 
+cd ..
+cd Neon\ 
+cd Neon\ Drive/
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./run.sh 
+gamescope -W 1280 -H 1024 -w 1280 -h 1024 --rt -O DP-1 -f -- ./run.sh 
+/mnt/data/engines/blood_nblood/nblood
+sudo apt install libvpx9 
+sudo apt install libvpx11
+sudo apt install libvpx12
+/mnt/data/engines/blood_nblood/nblood
+ldd /mnt/data/engines/blood_nblood/nblood
+apt-file search libvpx7
+ln -s /lib/x86_64-linux-gnu/libvpx.so /mnt/data/engines/blood_nblood/libvpx.so.7
+/mnt/data/engines/blood_nblood/nblood
+cd ..
+cd ..
+cd engines/
+cd blood_nblood/mods/
+cd ..
+./nblood 
+cd ..
+cd redneck_rampage_rednukem/
+./rednukem 
+ln -s /lib/x86_64-linux-gnu/libvpx.so /mnt/data/engines/redneck_rampage_rednukem/libvpx.so.7
+./rednukem 
+cd..
+cd ..
+cd space_cadet_pinball/
+./SpaceCadetPinball 
+gamescope -W 1280 -H 1024 -f -R --rt -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f -R --rt -- ./ut-bin
+gamescope -W 1280 -H 1024 -f -R --rt --backend sdl -- ./ut-bin
+gamescope -W 1280 -H 1024 -f -R --rt --backend wayland -- ./ut-bin
+gamescope -W 1280 -H 1024 -f -R --rt -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 -f --rt -- ./ut-bin-amd64 
+cd ,,
+cd ..
+cd ..
+cd Unreal
+cd UnrealGold/
+cd System64/
+gamescope -W 1280 -H 1024 -f --rt --force-grab-cursor -g -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f --rt --force-grab-cursor -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -w 1280 -h 1024 -f --rt -- ./unreal-bin-amd64
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- /mnt/data/linux/Blasphemous/Blasphemous
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- /mnt/data/linux/Blasphemous/Blasphemous
+gamescope -W 1280 -H 1024 -f --rt -- unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f --rt -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f --rt -- ./unreal-bin-amd64
+gamescope --help
+gamescope -W 1280 -H 1024 -f -R --rt -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f -R --rt -e -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f -R --rt --force-grab-cursor -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f -R --rt -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 -f -R --rt -- ./unreal-bin-amd64
+wine uninstall
+wine control
+winecfg
+hyprprop 
+hyprprop 
+alias
+cd games/linux/dusk
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- start.sh 
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh 
+gamescope --rt -O DP-1 -f -- ./start.sh 
+gamescope --rt -O DP-1 -- ./start.sh 
+gamescope --rt -- ./start.sh 
+hyprprop 
+CD ..
+cd ..
+cd Ziggurat2/
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./start.sh
+touch runthis.sh
+nano runthis.sh 
+chmod +x runthis.sh 
+./runthis.sh 
+cd .. 
+cd ULTRAKILL/
+./runthis.sh 
+cd /mnt/data/engines/UnrealGold/System64
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -- ./unreal-bin-amd64
+gamescope --help
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 -b -- ./unreal-bin-amd64
+gamescope --help
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 --force-windows-fullscreen -- ./unreal-bin-amd64
+LD_PRELOAD="" gamescope -W 1280 -H 1024 --rt -O DP-1 --force-windows-fullscreen -f -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./unreal-bin-amd64
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./unreal-bin-amd64 --help
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./unreal-bin-amd64
+./ucc-bin-amd64 
+./ucc-bin-amd64 help
+./unreal-bin-amd64 help
+cd ../...
+cd ../..
+cd UnrealTournament/
+./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f --backend sdl -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend sdl -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend vulkan -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend wayland -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend opengl -- ./ut-bin-amd64 
+gamescope --help
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend drm -- ./ut-bin-amd64 
+gamescope -W 1280 -H 1024 --rt --backend auto -- ./ut-bin-amd64 
+gamescope --rt --backend sdl -- ./ut-bin-amd64 
+gamescope -- ./ut-bin-amd64 
+cd ..
+cd UT2004/
+jf
+./d1x-rebirth 
+./d1x-rebirth 
+./d1x-rebirth 
+./d1x-rebirth -hogdir ./data
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./d1x-rebirth -hogdir ./data
+gamescope -W 1280 -H 1024 --rt -O DP-1 -b -- ./d1x-rebirth -hogdir ./data
+./d1x-rebirth -hogdir ./datarunth/mnt/data/engines/eduke32/eduke32
+/mnt/data/engines/eduke32/eduke32
+/mnt/data/engines/eduke32/eduke32
+cd ..
+cd ..
+cd ..
+cd engines/
+cd eduke32/
+./eduke32 
+./prince 
+./prince 
+ldd ./prince 
+sudo cp libSDL2_image-2.0.so.0 /usr/local/lib/
+./prince 
+sudo cp libSDL2_image-2.0.so.0 /usr/local/lib/
+ldd ./prince 
+sudo apt install libsdl-image1.2
+ldd ./prince 
+sudo mv /usr/local/lib/libSDL2_image-2.0.so.0 /usr/local/lib/x86_64-linux-gnu/
+ldd ./prince 
+./prince 
+./prince 
+LD_LIBRARY_PATH=- ./prince 
+LD_LIBRARY_PATH=. ./prince 
+LD_LIBRARY_PATH=. ./prince 
+LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/ ./prince 
+LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu ./prince 
+LD_LIBRARY_PATH=/usr/local/lib/x86_64-linux-gnu ./prince 
+LD_LIBRARY_PATH=/usr/lib ./prince 
+./prince 
+LD_LIBRARY_PATH=./data ./prince 
+
+./daikatana 
+./daikatana 
+cd ..
+cd ..
+cd engines/
+cd quake2_yamagi/
+./quake2 --help
+cd ..
+cd wolfenstein-ecwolf/
+./ec
+./bin/ecwolf 
+./bin/ecwolf 
+./bin/ecwolf 
+apt-file search murrine
+sudo apt install gtk2-engines-murrine 
+apt-file search murrine
+./bin/ecwolf 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./bin/ecwolf 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- .ecwolf 
+gamescope -W 1280 -H 1024 --rt -O DP-1 -f -- ./ecwolf
+./ecwolf 
+ldd ./ecwolf
+./ecwolf
+./ecwolf
+./ecwolf
+./ecwolf --version
+cd ~/downloads/
+cd ecwolf-1.4.2-src/
+cmake .
+sudo apt install libsdl-mixer1.2-dev 
+cmake .
+sudo apt install libsdl2-mixer-dev 
+cmake .
+sudo apt install libsdl2-net-dev 
+cmake .
+make -O3 -j18
+make -j18
+cd /mnt/data/engines/wolfenstein-ecwolf/
+.
+./ecwolf 
+./ecwolf 
+./ecwolf 
+./ecwolf --version
+cd ..
+cd ..
+cd engines/
+cd hexen2/
+./glhexen2
+./glhexen2
+./glhexen2
+./start.sh 
+cd game/
+./Launch\ Hedon 
+cd hgzdoom/
+./hedon
+jf
+cat /var/log/cups/error_log
+btop
+fff
+clear
+gpu-screen-recorder --help
+gpu-screen-recorder 
+gpu-screen-recorder gui
+apt show gpu-screen-recorder-service 
+apt show gpu-screen-recorder-mod
+apt show gpu-screen-recorder-scripts 
+jf
+systemctl --user daemon-reload 
+jf
+sysrb
+jf
+exity
+exit
+exit
+exit
+exit
+sudo mkdir /etc/issue.d
+cd /etc/issue.d/
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+sudo nano 99-addendum.issue
+nano ~/.profile 
+agetty --show-issue
+/sbin/agetty --show-issue
+/sbin/agetty --show-issue
+fff
+cd downloads/
+git clone https://github.com/gaheldev/Millisecond.git
+cd Millisecond/
+meson setup build/
+meson install -C build
+millisecond 
+grep -e "CONFIG_IRQ_FORCED_THREADING=y" -e "CONFIG_PREEMPT_RT=y" /boot/config-$(uname -r)
+cd downloads/
+mv linux-7.1.8.tar.xz /mnt/500G/kernel/
+cd ..
+cd kernel/
+tar xvf li
+ls
+cd /mnt/500G/kernel/
+tar xvf linux-7.1.8.tar.xz 
+cp ~/kernel/7.1.8/.config ~/kernel/7.1.8/linux-kernel-config-and-build ./linux-7.1.8
+cd linux-7.1.8/
+./linux-kernel-config-and-build 
+sudo apt install ../linux-libc-dev_7.1.8-1_amd64.deb 
+sudo apt install latencytop
+cd ~/downloads/
+ git clone git://git.infradead.org/latencytop.git 
+ git clone git://git.infradead.org/latencytop.git 
+wget https://www.latencytop.org/download/latencytop-0.5.tar.gz
+tar xvf latencytop-0.5.tar.gz 
+mc
+tar xvf latencytop-0.5.tar.gz 
+wget https://www.latencytop.org/download/latencytop-0.5.tar.gz
+./latencytop 

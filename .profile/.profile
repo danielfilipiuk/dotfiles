@@ -29,9 +29,14 @@ fi
 # add dotfiles bin folder to path
 PATH="$HOME/dotfiles/.local/bin:$PATH"
 
+#tty | boxes -d ansi | colorize Magenta && printf "Welcome back $USER\n" | boxes -d ansi | colorize cyan
+printf "Welcome back $USER\n" | boxes -d ansi | colorize cyan
+
 # Start Hyprland directly after login to TTY1
 if uwsm check may-start; then
 	clear && \
-	cat ~/pictures/hyprland/hypr_logo.txt && \
+	cat ~/pictures/hyprland/hyprlogo_text.txt & \
+	sleep 1 && \
 	exec uwsm start hyprland-uwsm.desktop
 fi
+

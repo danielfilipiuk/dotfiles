@@ -57,8 +57,8 @@ hl.config({
 ---------------------------------------------------------------
         blur = {
             enabled   = true,
-            size      = 3, 	-- blur.size and blur.passes have to be at least 1.
-	    passes    = 1,	-- Increasing blur.passes is necessary to prevent blur looking wrong on higher blur.
+            size      = 2, 	-- blur.size and blur.passes have to be at least 1.
+	    passes    = 2,	-- Increasing blur.passes is necessary to prevent blur looking wrong on higher blur.
 				-- size values, but remember that higher blur.passes will require more strain on the GPU.
             contrast = 0.8916,  -- contrast modulation for blur. [0.0 - 2.0]
             vibrancy  = 0.1696, -- Increase saturation of blurred colors. [0.0 - 1.0]

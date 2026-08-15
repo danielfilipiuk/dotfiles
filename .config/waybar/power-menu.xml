@@ -11,13 +11,24 @@
 				<property name="label">  Logout</property>
 			</object>
     		</child>
+    		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    		</child>
+    		<child>
+			<object class="GtkMenuItem" id="DPMSoff">
+				<property name="label"> Turn OFF Monitors</property>
+			</object>
+    		</child>
+		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter2"/>
+    		</child>
 		<child>
 			<object class="GtkMenuItem" id="suspend">
 				<property name="label">  Suspend</property>
 			</object>
 		</child>
 		<child>
-      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+      		<object class="GtkSeparatorMenuItem" id="delimiter3"/>
     		</child>
 		<child>
 			<object class="GtkMenuItem" id="softreboot">
