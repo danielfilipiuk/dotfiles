@@ -39,7 +39,7 @@ tooltip {background: rgba(248,246,242,.75);
 	border-right:  4px solid rgba(208, 132, 204,.6);
 	border-bottom: 4px solid rgba(208, 132, 204,.7);}
 tooltip label {	padding: 7px 7px;
-		text-shadow: 1px 1px 2px rgba(42,32,46,.5);
+		text-shadow: 2px 1px 2px rgba(42,32,46,.5);
 		font-variant: normal;
 		font-weight: normal;
 		letter-spacing: 0.5px;}
@@ -51,10 +51,10 @@ menu {	background: rgba(248,246,242,.75);
 	border-left:   4px solid rgba(208, 132, 204,.5);
 	border-right:  4px solid rgba(208, 132, 204,.6);
 	border-bottom: 4px solid rgba(208, 132, 204,.7);
-	box-shadow: 1px 1px 2px rgba(42,32,46,.25);}
+	box-shadow: 2px 1px 2px rgba(42,32,46,.25);}
 menu label {	color: rgba(48,30,46,.90);
 		padding: 2px 0px;
-		text-shadow: 1px 1px 2px rgba(42,32,46,.5);
+		text-shadow: 2px 1px 2px rgba(42,32,46,.5);
 		font-variant: normal;
 		font-weight: normal;
 		letter-spacing: 0.5px;}
@@ -69,7 +69,7 @@ label.module {
 	border-bottom: 2px solid rgba(248,246,242,0.05);
 	padding: 3px 7px;
 	background: rgba(248,246,242,.50);
-	text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
+	text-shadow: 2px 1px 2px  rgba(48,30,46,.25);
 	/*text-shadow: 1px 1px 2px  rgba(248,246,242,.5);*/}
 label.module:hover {
 	/*font-weight: bold;*/
@@ -78,7 +78,7 @@ label.module:hover {
 	border-right:    2px solid rgba(208, 132, 204,.04);
 	border-bottom:    2px solid rgba(208, 132, 204,0.05);
 	background: rgba(208, 132, 204,1);
-	text-shadow: 1px 1px 2px  rgba(48,30,46,.15);
+	text-shadow: 2px 1px 2px  rgba(48,30,46,.15);
 	/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
 
 /* MODULES SETTINGS */
@@ -96,7 +96,7 @@ label.module:hover {
  
  /* SUBMAP */
 #submap {	background: rgba(208, 132, 204,.9);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.5);}
+		text-shadow: 2px 1px 2px  rgba(48,30,46,.5);}
 #submap:hover {	background: rgba(208, 132, 204,1);}
 
 /* TEMPERATURE */
@@ -118,16 +118,18 @@ label.module:hover {
 				background: rgba(208, 132, 204,1);}
 
 /* CAVA */
-#cava {	color: rgba(50,25,65,.75);
-	text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
-	/*text-shadow: 1px 2px 2px rgba(248,246,242,.5);*/}
+#cava {	   	min-width: 75px;
+		color: rgba(208, 132, 204,.95);
+		/*color: rgba(50,25,65,.75);*/
+		text-shadow: 2px 1px 2px  rgba(48,30,46,.75);
+		/*text-shadow: 1px 2px 2px rgba(248,246,242,.5);*/}
 #cava:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
 		border-left:    2px solid rgba(208, 132, 204,.03);
 		border-right:    2px solid rgba(208, 132, 204,.04);
 		border-bottom:    2px solid rgba(208, 132, 204,0.05);	
 		background: rgba(208, 132, 204,1);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.15);
-		/*text-shadow: 1px 1px 2px rgba(248,246,242,.5);*/
+		/*text-shadow: 2px 1px 2px  rgba(48,30,46,.15);*/
+		text-shadow: 2px 1px 2px rgba(248,246,242,.75);
 		color: rgba(48,30,46,1);}
 
 /* MPD  */
@@ -183,25 +185,26 @@ label.module:hover {
 				border-left:    2px solid rgba(208, 132, 204,.03);
 				border-right:    2px solid rgba(208, 132, 204,.04);
 				border-bottom:    2px solid rgba(208, 132, 204,0.05);
-				background: rgba(208, 132, 204,.55);
+				background: rgba(248,246,242,.70);
 				}
+#pulseaudio-slider.muted {   background: rgba(208, 132, 204,.8); }
+#pulseaudio-slider.muted:hover {   background: rgba(208, 132, 204,1); }
 #pulseaudio-slider slider {background: rgba(248,246,242,0);}
-			
-
-#pulseaudio-slider trough {
-    min-height: 16px;
-    min-width: 50px;
-    border-radius: 16px;
-    
-    
-}
-#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.8);
-				border-radius: 16px;
-}
-#pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);
-					
-}
-
+#pulseaudio-slider.muted trough {background: rgba(48,30,46,.8);
+  }
+#pulseaudio-slider.muted trough:hover {background: rgba(48,30,46,.95);
+  }
+#pulseaudio-slider trough {	
+				background: rgba(48,30,46,.5);
+				min-height: 16px;
+			   	min-width: 50px;
+			   	border-radius: 16px;}
+#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.9);
+				border-radius: 16px;}
+#pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);}
+#pulseaudio-slider.muted highlight {	background: rgba(208, 132, 204,.1);
+				border-radius: 16px;}
+#pulseaudio-slider.muted highlight:hover {	background: rgba(208, 132, 204,1);}
 
 /* KEYBOARD STATE  */
 #keyboard-state {background: rgba(248,246,242,.50);}
@@ -256,7 +259,7 @@ label.module:hover {
 #disk {}
 
 /* CLOCK  */
-#clock {min-width: 45px;}
+#clock {min-width: 40px;}
 
 
 
