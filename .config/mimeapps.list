@@ -3,7 +3,7 @@ application/epub+zip=mcomix.desktop;libreoffice-writer.desktop;qpdfview.desktop;
 application/gzip=xarchiver.desktop;peazip.desktop;
 application/java-archive=xarchiver.desktop;userapp-java -jar %f-X2ZO72.desktop;
 application/octet-stream=org.xfce.mousepad.desktop;com.dosbox_x.DOSBox-X.desktop;dosbox.desktop;xarchiver.desktop;vlc.desktop;dolphin-emu.desktop;org.inkscape.Inkscape.desktop;libreoffice-draw.desktop;libreoffice-impress.desktop;org.gnome.TextEditor.desktop;
-application/pdf=qpdfview.desktop;org.inkscape.Inkscape.desktop;libreoffice-draw.desktop;
+application/pdf=org.inkscape.Inkscape.desktop;qpdfview.desktop;libreoffice-draw.desktop;
 application/pgp-keys=org.xfce.mousepad.desktop;
 application/pgp-signature=org.xfce.mousepad.desktop;
 application/sql=sqlitebrowser.desktop;
@@ -173,6 +173,7 @@ x-scheme-handler/terminal=kitty.desktop;
 x-scheme-handler/unknown=brave-browser.desktop;
 application/x-core=org.xfce.mousepad.desktop
 application/vnd.debian.binary-package=deb-gview.desktop
+application/pdf=qpdfview.desktop
 
 [Removed Associations]
 application/ogg=easytag.desktop;

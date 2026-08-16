@@ -1,0 +1,24 @@
+# settings
+
+(GimpGegl-gegl-newsprint-config "2026-08-16 05:48:08"
+    (time 1786870088)
+    (color-model black-on-white)
+    (pattern2 line)
+    (period2 12)
+    (angle2 15)
+    (pattern3 line)
+    (period3 12)
+    (angle3 45)
+    (pattern4 line)
+    (period4 12)
+    (angle4 0)
+    (pattern circle)
+    (period 5)
+    (angle 75)
+    (black-pullout 1)
+    (aa-samples 16)
+    (turbulence 0)
+    (blocksize -1)
+    (angleboost 0))
+
+# end of settings

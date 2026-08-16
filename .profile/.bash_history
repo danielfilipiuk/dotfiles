@@ -47777,3 +47777,154 @@ timidity --help
 hstr 
 timidity -iA -Os &
 dosbox-x STARTH.EXE 
+cd downloads/
+git clone https://github.com/qarmin/mykrut.git
+cd mykrut/
+carg build --release
+cargobuild --release
+cargo uild --release
+cargo build --release
+cd target/release/
+./mykrut 
+ll
+cd ..
+cd ..
+cargo build install
+hstr 
+cargo install
+cp target/release/mykrut /usr/local/bin
+cd ..
+./system_info_collector convert -d /home/user/data.csv -p /home/user/plot.html -o
+./system_info_collector collect  --convert-after -o
+./system_info_collector collect --help
+./system_info_collector -p ./ -
+./system_info_collector -a convert -d /home/user/data.csv -p /home/user/plot.html -o
+./system_info_collector -a collect  --convert-after -o
+./system_info_collector -a collect -o
+./system_info_collector -a convert -d ./system_data.csv -p . -o
+./system_info_collector -a convert -d ./system_data.csv -p ./system_data_plot.html -o
+cd /mnt/500G/torrents/
+cd Screamer/
+innoextract setup_screamer.exe 
+git status
+cd ~/dotfiles/
+git status
+git add .
+git status
+git commit -m "added several useful apps. Thunar custom action for converting images to SVG. waybar theme mod in font waight and shadow"
+git status
+git push
+git status
+hstr 
+git count-objects -vH
+fff
+jf
+eyedropper 
+cd downloads/
+cd etr-0.8.4/
+./configure
+apt-file search sfml-system
+sudo apt install libsfml-dev 
+./configure
+make -j18
+make
+make check
+./configure
+sudo apt install floor pow
+jf
+mykrut 
+cd ..
+cd ~/downloads/
+git clone https://github.com/qarmin/space_finder.git
+cd space_finder/
+cargo build --release
+target/release/space_finder 
+cargo build --install
+cargo build install
+cargo install build
+eyedropper 
+eyedropper 
+eyedropper 
+eyedropper --help
+eyedropper --help-gapplication
+killall eyedropper 
+killall eyedropper 
+eyedropper --gapplication-service
+eyedropper --gapplication-service &&
+eyedropper --gapplication-service &
+eyedropper &
+eyedropper
+killall eyedropper 
+app2unit -- eye
+app2unit -- /usr/local/bin/eyedropper 
+eyedropper --help
+eyedropper --help-all
+sudo apt purge --auto-remove gnome-paint 
+cd ..
+cd ~/download
+cd ~/downloads
+sudo apt clean
+sudo apt autoclean
+sudo apt update
+btop
+exit
+micro
+fff
+clear
+cat /usr/local/bin/fff 
+fff
+clear
+cat fff
+celar
+clear
+cat /usr/local/bin/fff 
+fff
+clear
+cat /usr/local/bin/fff 
+fff
+hyprsysteminfo 
+plocate libhyprutils
+apt-file search hyprsysteminfo
+cd downloads/
+git clone https://github.com/hyprwm/hyprsysteminfo.git
+cd hyprsysteminfo/
+ll
+make 
+cmake .
+make 
+make install
+clear
+cat /usr/local/bin/fff 
+clear
+cat /usr/local/bin/fff | lolcat
+fff
+nano /usr/local/bin/fff
+fff
+clear
+cat /usr/local/bin/fff | lolcat
+fff
+clear
+cat /usr/local/bin/fff | lolcat
+
+cat /usr/local/bin/fff | lolcat
+micro ~/.config/fastfetch/nix.json
+fastfetch --config ~/.config/fastfetch/nix.json
+micro ~/.config/fastfetch/nix.json
+micro ~/.config/fastfetch/nix.json
+mv ~/.config/fastfetch/nix.json ~/.config/fastfetch/nix.jsonc
+fastfetch --config ~/.config/fastfetch/nix.jsonc
+sudo apt purge --autoremove && sudo apt clean && sudo apt autoclean
+sudo apt purge --autoremove && sudo apt clean && sudo apt autoclean
+sudo apt purge --autoremove & sudo apt clean & sudo apt autoclean
+sudo apt purge --autoremove\ sudo apt clean\ sudo apt autoclean
+dust
+man dust
+jf
+cd downloads/
+sudo apt install ./opensave_2.3.0.beta.2_amd64.deb 
+whereis opensave
+man opensave
+sysrb
+jf
+audio-detective™.sh 
+pw-top 

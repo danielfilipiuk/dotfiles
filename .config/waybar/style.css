@@ -171,6 +171,38 @@ label.module:hover {
 			background: rgba(208, 132, 204,.90);}
 #pulseaudio.muted:hover {background: rgba(208, 132, 204,1);}
 
+/* PULSEAUDIO SLIDER */
+#pulseaudio-slider {	border-top:    2px solid rgba(248,246,242,0.02);
+			border-left:   2px solid rgba(248,246,242,0.03);
+			border-right:  2px solid rgba(248,246,242,0.04);
+			border-bottom: 2px solid rgba(248,246,242,0.05);
+			padding: 3px 7px;
+			background: rgba(248,246,242,.50);
+			}
+#pulseaudio-slider:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
+				border-left:    2px solid rgba(208, 132, 204,.03);
+				border-right:    2px solid rgba(208, 132, 204,.04);
+				border-bottom:    2px solid rgba(208, 132, 204,0.05);
+				background: rgba(208, 132, 204,.55);
+				}
+#pulseaudio-slider slider {background: rgba(248,246,242,0);}
+			
+
+#pulseaudio-slider trough {
+    min-height: 16px;
+    min-width: 50px;
+    border-radius: 16px;
+    
+    
+}
+#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.8);
+				border-radius: 16px;
+}
+#pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);
+					
+}
+
+
 /* KEYBOARD STATE  */
 #keyboard-state {background: rgba(248,246,242,.50);}
 #keyboard-state > label {background: rgba(248,246,242,.25);

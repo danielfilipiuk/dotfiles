@@ -102,7 +102,7 @@
 	<submenu></submenu>
 	<unique-id>1686957403187183-1</unique-id>
 	<command>app2unit -- qdirstat %f</command>
-	<description>QdirStat here</description>
+	<description>Investigate space occupied with QdirStat</description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<directories/>
@@ -142,22 +142,22 @@
 </action>
 <action>
 	<icon>object-rotate-right</icon>
-	<name>rotate 90° -&gt; JPG</name>
+	<name>rotate 90° ==&gt; JPG</name>
 	<submenu>image</submenu>
 	<unique-id>1695871301666538-1</unique-id>
 	<command>convert -rotate 90 %F %F-1.jpg</command>
-	<description>rotate 90° -&gt; JPG</description>
+	<description>rotate 90° RIGHT and convert to JPG</description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<image-files/>
 </action>
 <action>
 	<icon>object-rotate-left</icon>
-	<name>rotate 90° &lt;- JPG</name>
+	<name>rotate 90° &lt;== JPG</name>
 	<submenu>image</submenu>
 	<unique-id>1695871498286972-2</unique-id>
 	<command>convert -rotate -90 %F %F-1.jpg</command>
-	<description>rotate 90° &lt;- JPG</description>
+	<description>rotate 90° LEFT and convert to JPG</description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<image-files/>
@@ -190,7 +190,7 @@
 	<submenu>image</submenu>
 	<unique-id>1726239558299147-1</unique-id>
 	<command>inkscape %N --export-type=svgz</command>
-	<description>Convert to SVGZ</description>
+	<description>Compress SVG to SVGZ</description>
 	<range>*</range>
 	<patterns>*.eps;*.svg;*.EPS;*.SVG;*.ai;*.AI</patterns>
 	<image-files/>
@@ -247,7 +247,7 @@
 </action>
 <action>
 	<icon>image-x-svg+xml</icon>
-	<name>IMAGE =&gt; SVG</name>
+	<name>IMAGE ==&gt; SVG</name>
 	<submenu>image</submenu>
 	<unique-id>1786858337548610-1</unique-id>
 	<command>/home/daniel/bin/thunar_custom_action_imagetosvg.sh %F</command>

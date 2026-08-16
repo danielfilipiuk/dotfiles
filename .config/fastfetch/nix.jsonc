@@ -1,0 +1,148 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": { "type": "none" },
+  "display": { "separator": "", "percent": { "type": 1, "width": 3 } },
+  "modules": [
+    "break",
+    { "type": "custom", "format": "{##727272}{{" },
+    {
+      "type": "os",
+      "key": "  {##575757}system.{##7E97AB}os         {##727272}= ",
+      "format": "{##88afa2}\"{name} {version} ({codename})\"{##727272};",
+    },
+    {
+      "type": "os",
+      "key": "  {##575757}system.{##7E97AB}arch       {##727272}= ",
+      "format": "{##88afa2}\"{arch}\"{##727272};",
+    },
+    {
+      "type": "locale",
+      "key": "  {##575757}system.{##7E97AB}locale     {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "uptime",
+      "key": "  {##575757}system.{##7E97AB}uptime     {##727272}= ",
+      "format": "{##88afa2}\"{days} days, {hours} hours, {minutes} mins\"{##727272};",
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "  {##575757}hardware.{##7E97AB}cpu      {##727272}= ",
+      "format": "{##88afa2}\"{name} ({cores-logical}) @ {freq-max}\"{##727272};",
+    },
+    {
+      "type": "gpu",
+      "key": "  {##575757}hardware.{##7E97AB}gpu      {##727272}= ",
+      "format": "{##88afa2}\"{name}\"{##727272};",
+    },
+    // The <10/>9 field widths pin the `#` comment column: fastfetch renders a
+    // size as a bare integer once it fits in the base prefix ("0 B" vs
+    // "5.49 GiB"), so any spacing tuned against the current values drifts as
+    // soon as a figure crosses a prefix or a digit boundary.
+    {
+      "type": "memory",
+      "key": "  {##575757}hardware.{##7E97AB}ram      {##727272}= ",
+      "format": "{##88afa2}\"{used<10} / {total>9}\"{##727272};  {##575757}# {percentage}",
+    },
+    {
+      "type": "swap",
+      "key": "  {##575757}hardware.{##7E97AB}swap     {##727272}= ",
+      "format": "{##88afa2}\"{used<10} / {total>9}\"{##727272};  {##575757}# {percentage}",
+    },
+    {
+      "type": "disk",
+      "folders": "/",
+      "key": "  {##575757}hardware.{##7E97AB}disk0    {##727272}= ",
+      "format": "{##88afa2}\"{size-used<10} / {size-total>9}\"{##727272};  {##575757}# {size-percentage}",
+    },
+    {
+      "type": "disk",
+      "folders": "/srv/media",
+      "key": "  {##575757}hardware.{##7E97AB}disk1    {##727272}= ",
+      "format": "{##88afa2}\"{size-used<10} / {size-total>9}\"{##727272};  {##575757}# {size-percentage}",
+    },
+    "break",
+    {
+      "type": "de",
+      "key": "  {##575757}desktop.{##7E97AB}de        {##727272}= ",
+      "format": "{##88afa2}\"{pretty-name} {version}\"{##727272};",
+    },
+    {
+      "type": "wm",
+      "key": "  {##575757}desktop.{##7E97AB}wm        {##727272}= ",
+      "format": "{##88afa2}\"{pretty-name} ({protocol-name})\"{##727272};",
+    },
+    {
+      "type": "display",
+      "key": "  {##575757}desktop.{##7E97AB}display   {##727272}= ",
+      "format": "{##88afa2}\"{width}x{height} @ {refresh-rate}Hz\"{##727272};",
+    },
+    {
+      "type": "localip",
+      "key": "  {##575757}desktop.{##7E97AB}localIp   {##727272}= ",
+      "format": "{##88afa2}\"{ipv4}\"{##727272};",
+    },
+    "break",
+    {
+      "type": "shell",
+      "key": "  {##575757}terminal.{##7E97AB}shell    {##727272}= ",
+      "format": "{##88afa2}\"{pretty-name} {version}\"{##727272};",
+    },
+    {
+      "type": "terminal",
+      "key": "  {##575757}terminal.{##7E97AB}term     {##727272}= ",
+      "format": "{##88afa2}\"{pretty-name}\"{##727272};",
+    },
+    {
+      "type": "packages",
+      "key": "  {##575757}terminal.{##7E97AB}packages {##727272}= ",
+      "format": "{##727272}[ {##88afa2}\"{nix-system} nix-system\" \"{nix-user} nix-user\"{##727272} ];",
+    },
+    "break",
+    {
+      "type": "command",
+      "text": "node --version | sed 's/^v//'",
+      "key": "  {##575757}dev.{##7E97AB}node          {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "{ python3 --version 2>/dev/null || python --version 2>/dev/null; } | cut -d' ' -f2",
+      "key": "  {##575757}dev.{##7E97AB}python        {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "go env GOVERSION | sed 's/^go//'",
+      "key": "  {##575757}dev.{##7E97AB}go            {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "rustc --version | cut -d' ' -f2",
+      "key": "  {##575757}dev.{##7E97AB}rust          {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "ruby -e 'print RUBY_VERSION'",
+      "key": "  {##575757}dev.{##7E97AB}ruby          {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "nix --version | cut -d' ' -f3",
+      "key": "  {##575757}dev.{##7E97AB}nix           {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    {
+      "type": "command",
+      "text": "git --version | cut -d' ' -f3",
+      "key": "  {##575757}dev.{##7E97AB}git           {##727272}= ",
+      "format": "{##88afa2}\"{result}\"{##727272};",
+    },
+    { "type": "custom", "format": "{##727272}}" },
+    "break",
+  ],
+}
