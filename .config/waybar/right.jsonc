@@ -10,7 +10,7 @@
   "output": "DP-1",
 
   "position": "top",
-  "height": 32,
+  "height": 30,
   "spacing": 5,
 
   "expand-left": false,
@@ -125,7 +125,7 @@
 	"truncate": false,
 	"format": "{icon}",
 	"expand": false,
-	"icon-size": 18,
+	"icon-size": 16,
 	"icon-theme": "Papirus",
 	"tooltip": true, 
 	"tooltip-format": "{title}",

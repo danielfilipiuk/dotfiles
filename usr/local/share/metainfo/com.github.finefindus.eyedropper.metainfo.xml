@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FineFindus 2022 <finefindusgh@gmail.com> -->
+<component type="desktop-application">
+  <id>com.github.finefindus.eyedropper</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>Eyedropper</name>
+  <name xml:lang="ko">Eyedropper</name>
+  <name xml:lang="ja">Eyedropper</name>
+  <name xml:lang="he">Eyedropper</name>
+  <name xml:lang="ka">Eyedropper</name>
+  <name xml:lang="kk-Cyrl">Көзтамызғыш</name>
+  <name xml:lang="kw">Eyedropper</name>
+  <name xml:lang="vi">Eyedropper</name>
+  <name xml:lang="ar">قطَّارة</name>
+  <name xml:lang="bn">Eyedropper</name>
+  <name xml:lang="ta">கண்</name>
+  <name xml:lang="zh-Hans-CN">滴管</name>
+  <name xml:lang="uk">Піпетка</name>
+  <name xml:lang="tr">Damlalık</name>
+  <name xml:lang="sv">Ögondroppe</name>
+  <name xml:lang="ru">Eyedropper</name>
+  <name xml:lang="pt-BR">Conta-Gotas</name>
+  <name xml:lang="pt">Conta-Gotas</name>
+  <name xml:lang="pl">Eyedropper</name>
+  <name xml:lang="nl">Eyedropper</name>
+  <name xml:lang="nb-NO">Eyedropper</name>
+  <name xml:lang="it">Contagocce</name>
+  <name xml:lang="hu">Pipetta</name>
+  <name xml:lang="hr">Pipeta</name>
+  <name xml:lang="hi">Eyedropper</name>
+  <name xml:lang="fr">Pipette</name>
+  <name xml:lang="fi">Eyedropper</name>
+  <name xml:lang="eu">Eyedropper</name>
+  <name xml:lang="es">Eyedropper</name>
+  <name xml:lang="de">Eyedropper</name>
+  <name xml:lang="cs">Eyedropper</name>
+  <name xml:lang="ca">Eyedropper</name>
+  <name xml:lang="bg">Капкомер</name>
+  <summary>Pick and format colors</summary>
+  <summary xml:lang="ko">색상을 선택하고 형식을 바꿉니다</summary>
+  <summary xml:lang="ja">色を選択してフォーマットを確認</summary>
+  <summary xml:lang="kk-Cyrl">Түстерді таңдау және пішімдеу</summary>
+  <summary xml:lang="kw">Kuntel ha furvasa kolors</summary>
+  <summary xml:lang="vi">Chọn và định dạng màu sắc</summary>
+  <summary xml:lang="ar">انتقِ الألوان ونسِّقها</summary>
+  <summary xml:lang="bn">রঙ নির্বাচন করুন এবং বিন্যাস করুন</summary>
+  <summary xml:lang="ro">Alegeți și formatați culorile</summary>
+  <summary xml:lang="ta">வண்ணங்களைத் தேர்ந்தெடுத்து வடிவமைக்கவும்</summary>
+  <summary xml:lang="et">Valige ja vormindage värvid</summary>
+  <summary xml:lang="zh-Hans-CN">拾取并格式化颜色</summary>
+  <summary xml:lang="uk">Обирайте та форматуйте кольори</summary>
+  <summary xml:lang="tr">Renkleri seç ve biçimlendir</summary>
+  <summary xml:lang="sv">Välj och formatera färger</summary>
+  <summary xml:lang="ru">Выбирайте и форматируйте цвета</summary>
+  <summary xml:lang="pt-BR">Selecione e formate cores</summary>
+  <summary xml:lang="pt">Selecione e formate as cores</summary>
+  <summary xml:lang="pl">Pobieraj i formatuj kolory</summary>
+  <summary xml:lang="nl">Kleuren kiezen en opmaken</summary>
+  <summary xml:lang="nb-NO">Velg farger fra skjermen</summary>
+  <summary xml:lang="it">Preleva e sistema i colori</summary>
+  <summary xml:lang="hu">Színek választása és átalakítása</summary>
+  <summary xml:lang="hr">Odaberi i formatiraj boje</summary>
+  <summary xml:lang="hi">रंग चुनें और प्रारूपित करें</summary>
+  <summary xml:lang="fr">Choisissez et formatez des couleurs</summary>
+  <summary xml:lang="fi">Valitse ja muotoile värejä</summary>
+  <summary xml:lang="es">Elija y formatee los colores</summary>
+  <summary xml:lang="de">Farbe auswählen und formatieren</summary>
+  <summary xml:lang="cs">Vyberte a formátujte barvy</summary>
+  <summary xml:lang="ca">Escull i formata colors</summary>
+  <summary xml:lang="bg">Избиране и форматиране на цветове</summary>
+  <developer id="io.github.finefindus">
+    <name translatable="no">FineFindus</name>
+    <name translatable="no" xml:lang="vi">FineFindus</name>
+    <name translatable="no" xml:lang="zh-Hans-CN">FineFindus</name>
+    <name translatable="no" xml:lang="uk">FineFindus</name>
+    <name translatable="no" xml:lang="tr">FineFindus</name>
+    <name translatable="no" xml:lang="ru">FineFindus</name>
+    <name translatable="no" xml:lang="pt-BR">FineFindus</name>
+    <name translatable="no" xml:lang="pt">FineFindus</name>
+    <name translatable="no" xml:lang="nl">FineFindus</name>
+    <name translatable="no" xml:lang="it">FineFindus</name>
+    <name translatable="no" xml:lang="hr">FineFindus</name>
+    <name translatable="no" xml:lang="fr">FineFindus</name>
+    <name translatable="no" xml:lang="eu">FineFindus</name>
+    <name translatable="no" xml:lang="es">FineFindus</name>
+    <name translatable="no" xml:lang="de">FineFindus</name>
+    <name translatable="no" xml:lang="cs">FineFindus</name>
+    <name translatable="no" xml:lang="ca">FineFindus</name>
+    <name translatable="no" xml:lang="bg">FineFindus</name>
+  </developer>
+  <update_contact>finefindus@proton.me</update_contact>
+  <description>
+    <p>
+      Enter or pick a color and view it in different formats.
+    </p>
+    <p xml:lang="ko">색상을 입력하거나 고른 후 다른 형식으로 봅니다.</p>
+    <p xml:lang="ja">色を選択もしくは入力して、別の形式で確認できます。</p>
+    <p xml:lang="kk-Cyrl">Түсті енгізіңіз немесе таңдаңыз және оны әртүрлі пішімдерде көріңіз.</p>
+    <p xml:lang="kw">Ynworra po kuntel unn kolor ha furvasa y yn furvasow dyffrans.</p>
+    <p xml:lang="vi">Nhập hoặc chọn một màu và xem nó ở các định dạng khác nhau.</p>
+    <p xml:lang="ar">أدخل لونًا أو انتقهِ واستعرضه بتنسيقات مختلفة.</p>
+    <p xml:lang="bn">একটি রঙ লিখুন বা বেছে নিন এবং এটি বিভিন্ন বিন্যাসে দেখুন।</p>
+    <p xml:lang="ro">Introduceți sau alegeți o culoare și vizualizați-o în diferite formate.</p>
+    <p xml:lang="zh-Hans-CN">输入或拾取颜色并以不同格式查看它。</p>
+    <p xml:lang="ru">Введите или выберите цвет и просмотрите его в разных форматах.</p>
+    <p xml:lang="pt-BR">Insira ou selecione uma cor e a veja em diferentes formatos.</p>
+    <p>Features</p>
+    <p xml:lang="ko">기능</p>
+    <p xml:lang="ja">機能</p>
+    <p xml:lang="ka">თვისებები</p>
+    <p xml:lang="kk-Cyrl">Мүмкіндіктер</p>
+    <p xml:lang="kw">Nasyow</p>
+    <p xml:lang="vi">Tính năng</p>
+    <p xml:lang="ar">المزايا</p>
+    <p xml:lang="bn">বৈশিষ্ট্যসমূহ</p>
+    <p xml:lang="ro">Funcții</p>
+    <p xml:lang="ta">நற்பொருத்தங்கள்</p>
+    <p xml:lang="et">Omadused</p>
+    <p xml:lang="zh-Hans-CN">特性</p>
+    <p xml:lang="uk">Можливості</p>
+    <p xml:lang="tr">Özellikler</p>
+    <p xml:lang="sv">Funktioner</p>
+    <p xml:lang="ru">Функции</p>
+    <p xml:lang="pt-BR">Funções</p>
+    <p xml:lang="pt">Recursos</p>
+    <p xml:lang="pl">Funkcjonalności</p>
+    <p xml:lang="nl">Functies</p>
+    <p xml:lang="nb-NO">Mulighetene er mange:</p>
+    <p xml:lang="it">Funzionalità</p>
+    <p xml:lang="hu">Funkciók:</p>
+    <p xml:lang="hr">Značajke</p>
+    <p xml:lang="hi">विशेषताएं</p>
+    <p xml:lang="fr">Fonctionnalités</p>
+    <p xml:lang="fi">Ominaisuudet</p>
+    <p xml:lang="eu">Características</p>
+    <p xml:lang="es">Características</p>
+    <p xml:lang="de">Features</p>
+    <p xml:lang="cs">Funkce</p>
+    <p xml:lang="ca">Característiques</p>
+    <p xml:lang="bg">Функции</p>
+    <ul>
+      <li>Pick a Color</li>
+      <li xml:lang="ko">색상 선택</li>
+      <li xml:lang="ja">色をスポイトで選択</li>
+      <li xml:lang="ka">აირჩიეთ ფერი</li>
+      <li xml:lang="kk-Cyrl">Түсті таңдау</li>
+      <li xml:lang="kw">Kuntel unn Kolor</li>
+      <li xml:lang="vi">Chọn một màu</li>
+      <li xml:lang="ar">انتقِ لونًا</li>
+      <li xml:lang="bn">একটি রঙ বেছে নিন</li>
+      <li xml:lang="ro">Selectați o culoare</li>
+      <li xml:lang="ta">ஒரு வண்ணத்தைத் தேர்ந்தெடுங்கள்</li>
+      <li xml:lang="et">Vali värv</li>
+      <li xml:lang="zh-Hans-CN">拾取颜色</li>
+      <li xml:lang="uk">Обирання кольорів</li>
+      <li xml:lang="tr">Bir Renk Seç</li>
+      <li xml:lang="sv">Välj en Färg</li>
+      <li xml:lang="ru">Подбор цвета</li>
+      <li xml:lang="pt-BR">Selecione uma cor na tela</li>
+      <li xml:lang="pt">Selecione qualquer cor na tela</li>
+      <li xml:lang="pl">Pobieranie koloru</li>
+      <li xml:lang="nl">Kies een kleur van het scherm</li>
+      <li xml:lang="nb-NO">Velg farger fra hvor som helst på skjermen</li>
+      <li xml:lang="it">Prelievo di colori</li>
+      <li xml:lang="hu">Szín kiválasztása</li>
+      <li xml:lang="hr">Odaberi boju</li>
+      <li xml:lang="hi">एक रंग चुनें</li>
+      <li xml:lang="fr">Choisissez une couleur</li>
+      <li xml:lang="fi">Valitse väri</li>
+      <li xml:lang="eu">Aukeratu kolore bat</li>
+      <li xml:lang="es">Elige un color</li>
+      <li xml:lang="de">Farbe auswählen</li>
+      <li xml:lang="cs">Vybrat barvu</li>
+      <li xml:lang="ca">Escull un color</li>
+      <li xml:lang="bg">Изберете цвят</li>
+      <li>Edit the viewed color in a simple HSL editor</li>
+      <li xml:lang="ko">간단한 HSL 에디터에서 색상 수정</li>
+      <li xml:lang="ja">表示中の色をシンプルな HSL 形式のエディターで編集する</li>
+      <li xml:lang="kk-Cyrl">Көрінген түсті қарапайым HSL редакторында түзету</li>
+      <li xml:lang="kw">Golego an kolor gwelow yn unn chanjyell simpel HSL</li>
+      <li xml:lang="vi">Chỉnh sửa màu đang xem trong trình chỉnh sửa HSL đơn giản</li>
+      <li xml:lang="ar">حرَّر اللون المعروض في محرِّر HSL بسيط</li>
+      <li xml:lang="bn">দেখানো রঙটি একটি সাধারণ HSL এডিটরে সম্পাদনা করুন</li>
+      <li xml:lang="ro">Modificați culoarea vizualizată într-un editor HSL simplu</li>
+      <li xml:lang="zh-Hans-CN">在简单的 HSL 编辑器中编辑查看的颜色</li>
+      <li xml:lang="ru">Редактирование выбранного цвета в простом редакторе HSL</li>
+      <li xml:lang="pt-BR">Edite a cor visualizada em um editor HSL simples</li>
+      <li>Enter a color in various formats</li>
+      <li xml:lang="ko">여러 형식으로 색상 입력</li>
+      <li xml:lang="ja">様々なフォーマットで色を入力する</li>
+      <li xml:lang="kk-Cyrl">Түсті әртүрлі пішімдерде енгізу</li>
+      <li xml:lang="kw">Ynworra unn kolor yn furvasow dyffrans</li>
+      <li xml:lang="vi">Nhập một màu ở các định dạng khác nhau</li>
+      <li xml:lang="ar">أدخل لونًا بتنسيقات متنوِّعة</li>
+      <li xml:lang="bn">বিভিন্ন ফর্ম্যাটে একটি রঙ লিখুন</li>
+      <li xml:lang="ro">Introduceți o culoare în diverse formate</li>
+      <li xml:lang="zh-Hans-CN">以多种格式输入颜色</li>
+      <li xml:lang="ru">Ввод цвет в различных форматах</li>
+      <li xml:lang="pt-BR">Insira uma cor em vários formatos</li>
+      <li>Convert colors into other formats such as Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="ko">Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab 등의 형식으로 변환</li>
+      <li xml:lang="ja">色を様々な形式に変換して確認する。(例: 16進数, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…)</li>
+      <li xml:lang="kk-Cyrl">Түстерді Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab… сияқты басқа пішімдерге түрлендіру…</li>
+      <li xml:lang="kw">Treylya kolors yn furvasow aral kepar ha Hex, RGB, HSV, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="vi">Chuyển đổi màu sang các định dạng khác như Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="ar">حوِّل الألوان إلى تنسيقات أخرى مثل Hex و RGB و HSV و HSL و CMYK و XYZ و CIE-Lab وغيرها…</li>
+      <li xml:lang="bn">রঙগুলিকে অন্যান্য ফর্ম্যাটে রূপান্তর করুন যেমন Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="ro">Convertiți culorile în alte formate, cum ar fi Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="zh-Hans-CN">将颜色转换为其它格式如 16 进制、RGB、HSV、HSL、CMYK、XYZ、CIE-Lab……</li>
+      <li xml:lang="ru">Конвертация цвета в другие форматы, такие как Hex, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+      <li xml:lang="pt-BR">Converta cores em outros formatos, como Hexadecial, RGB, HSV, HSL, CMYK, XYZ, CIE-Lab…</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/FineFindus/eyedropper/main/data/resources/screenshots/main_default.png</image>
+      <caption>Main window with a color in different formats</caption>
+      <caption xml:lang="ko">색상을 다른 형식으로 보여주는 메인 윈도우</caption>
+      <caption xml:lang="ja">色をたくさんのフォーマットで表示しているメインウィンドウ</caption>
+      <caption xml:lang="kk-Cyrl">Түсі әртүрлі пішімдердегі негізгі терезе</caption>
+      <caption xml:lang="kw">Fenester chif gans unn kolor yn furvasow dyffrans</caption>
+      <caption xml:lang="vi">Cửa sổ chính với một màu ở các định dạng khác nhau</caption>
+      <caption xml:lang="ar">النافذة الرئيسة مع لون بتنسيقات مختلفة</caption>
+      <caption xml:lang="bn">বিভিন্ন ফরম্যাটের রঙের প্রধান উইন্ডো</caption>
+      <caption xml:lang="ro">Fereastră principală cu o culoare în diferite formate</caption>
+      <caption xml:lang="ta">வெவ்வேறு வடிவங்களில் வண்ணத்துடன் முதன்மையான சாளரம்</caption>
+      <caption xml:lang="et">Põhiaken värviga erinevates formaatides</caption>
+      <caption xml:lang="zh-Hans-CN">具有不同格式颜色的主窗口</caption>
+      <caption xml:lang="uk">Головне вікно з кольорами у різних форматах</caption>
+      <caption xml:lang="tr">Farklı biçimlerde renge sahip ana pencere</caption>
+      <caption xml:lang="sv">Huvudfönster med en färg i olika format</caption>
+      <caption xml:lang="ru">Главное окно с цветом в разных форматах</caption>
+      <caption xml:lang="pt-BR">Janela principal com cores em diferentes formatos</caption>
+      <caption xml:lang="pt">Janela principal com uma cor em diferentes formatos</caption>
+      <caption xml:lang="pl">Okno główne z kolorem w różnych formatach</caption>
+      <caption xml:lang="nl">Hoofdvenster met een kleur in verschillende formaten</caption>
+      <caption xml:lang="nb-NO">Hovedvindu med en farge skrevet med forskjellige syntakser</caption>
+      <caption xml:lang="it">Finestra principale con un colore in formati differenti</caption>
+      <caption xml:lang="hu">A fő ablak egy szín különböző formátumaival</caption>
+      <caption xml:lang="hr">Glavni prozor s bojom u različitim formatima</caption>
+      <caption xml:lang="hi">विभिन्न स्वरूपों में रंगों वाली मुख्य खिड़की</caption>
+      <caption xml:lang="fr">Fenêtre principale avec une couleur dans différents formats</caption>
+      <caption xml:lang="fi">Pääikkuna, jossa väri näkyy eri muodoissa</caption>
+      <caption xml:lang="es">Ventana principal con un color en diferentes formatos</caption>
+      <caption xml:lang="de">Hauptfenster mit einer Farbe in verschiedenen Formaten</caption>
+      <caption xml:lang="cs">Hlavní okno s barvou v různých formátech</caption>
+      <caption xml:lang="bg">Основеният прозорец с цвят в различни формати</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/FineFindus/eyedropper/main/data/resources/screenshots/main_customize.png</image>
+      <caption>Main window with customized formats</caption>
+      <caption xml:lang="ko">색상을 커스텀 형식으로 보여주는 메인 윈도우</caption>
+      <caption xml:lang="ja">カスタムの形式を表示しているメインウィンドウ</caption>
+      <caption xml:lang="kk-Cyrl">Реттелген пішімдері бар негізгі терезе</caption>
+      <caption xml:lang="kw">Fenester chif gans furvasow personelhys</caption>
+      <caption xml:lang="vi">Cửa sổ chính với các định dạng tùy chỉnh</caption>
+      <caption xml:lang="ar">النافذة الرئيسة مع تنسيقات مخصَّصة</caption>
+      <caption xml:lang="bn">কাস্টমাইজড ফর্ম্যাট সহ প্রধান উইন্ডো</caption>
+      <caption xml:lang="ro">Fereastră principală cu formate personalizate</caption>
+      <caption xml:lang="ta">தனிப்பயனாக்கப்பட்ட வடிவங்களுடன் முதன்மையான சாளரம்</caption>
+      <caption xml:lang="zh-Hans-CN">具有自定义格式的主窗口</caption>
+      <caption xml:lang="uk">Головне вікно з налаштованими форматами</caption>
+      <caption xml:lang="tr">Özelleştirilmiş biçimlere sahip ana pencere</caption>
+      <caption xml:lang="sv">Huvudfönster med anpassade format</caption>
+      <caption xml:lang="ru">Главное окно с настроенными форматами</caption>
+      <caption xml:lang="pt-BR">Janela principal com formatos personalizados</caption>
+      <caption xml:lang="pt">Janela principal com formatos personalizados</caption>
+      <caption xml:lang="pl">Okno główne z niestandardowymi formatami</caption>
+      <caption xml:lang="nl">Hoofdvenster met aangepaste formaten</caption>
+      <caption xml:lang="nb-NO">Hovedvindu med egne syntakser</caption>
+      <caption xml:lang="it">Finestra principale con formati personalizzati</caption>
+      <caption xml:lang="hu">A fő ablak személyre szabott színformátum-listával</caption>
+      <caption xml:lang="hr">Glavni prozor s prilagođenim formatima</caption>
+      <caption xml:lang="hi">अनुकूलित प्रारूपों के साथ मुख्य खिड़की</caption>
+      <caption xml:lang="fr">Fenêtre principales avec des formats personnalisés</caption>
+      <caption xml:lang="fi">Pääikkuna mukautetuilla muodoilla</caption>
+      <caption xml:lang="es">Ventana principal con formatos personalizados</caption>
+      <caption xml:lang="de">Fenster mit benutzerdefinierten Formaten</caption>
+      <caption xml:lang="cs">Hlavní okno s přizpůsobenými formáty</caption>
+      <caption xml:lang="bg">Основният прозорец с други формати</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/FineFindus/eyedropper/main/data/resources/screenshots/edit_sheet.png</image>
+      <caption>Editor with an HSL editor</caption>
+      <caption xml:lang="ko">HSL 에디터가 포함된 에디터</caption>
+      <caption xml:lang="ja">HSL エディターで色を編集している画面</caption>
+      <caption xml:lang="kk-Cyrl">HSL редакторы бар редактор</caption>
+      <caption xml:lang="kw">Chanjyell gans unn chanjell HSL</caption>
+      <caption xml:lang="vi">Trình chỉnh sửa với trình chỉnh sửa HSL</caption>
+      <caption xml:lang="ar">المحرِّر مع محرِّر HSL</caption>
+      <caption xml:lang="bn">HSL এডিটর সহ এডিটর</caption>
+      <caption xml:lang="ta">எச்.எச்.எல் எடிட்டருடன் ஆசிரியர்</caption>
+      <caption xml:lang="zh-Hans-CN">HSL 编辑器</caption>
+      <caption xml:lang="ru">Редактор с HSL-редактором</caption>
+      <caption xml:lang="pt-BR">Editor com um editor HSL</caption>
+      <caption xml:lang="pl">Edytor z dostosowaniem HSL</caption>
+      <caption xml:lang="nb-NO">HSL-fargeredigering</caption>
+      <caption xml:lang="it">Editor con editor in formato HSL</caption>
+      <caption xml:lang="hu">Színek szerkesztése HSL szerkesztővel</caption>
+      <caption xml:lang="fi">Muokkain, jossa on HSL-muokkain</caption>
+      <caption xml:lang="bg">Редактор с HSL редактор</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/FineFindus/eyedropper/main/data/resources/screenshots/status_page.png</image>
+      <caption>Status page stating to pick a color to get started</caption>
+      <caption xml:lang="ko">시작하기 위해 색상을 선택하라는 내용의 상태 페이지</caption>
+      <caption xml:lang="ja">色を選択して開始する前のステータスページ</caption>
+      <caption xml:lang="kk-Cyrl">Жұмысты бастау үшін түсті таңдауды сұрайтын күй беті</caption>
+      <caption xml:lang="kw">Folen studh ow meneges dhe kuntel unn kolor dhe mos dallethys</caption>
+      <caption xml:lang="vi">Trang trạng thái chỉ ra việc chọn một màu để bắt đầu</caption>
+      <caption xml:lang="ar">صفحة الحالة التي تفيد بضرورة انتقاء لون للبدء</caption>
+      <caption xml:lang="bn">শুরু করার জন্য একটি রঙ বেছে নেওয়ার কথা উল্লেখ করে প্রধান পৃষ্ঠা</caption>
+      <caption xml:lang="ro">Pagina de stare care afirmă că trebuie să alegeți o culoare pentru a începe</caption>
+      <caption xml:lang="ta">தொடங்குவதற்கு ஒரு வண்ணத்தைத் தேர்ந்தெடுப்பதற்கான நிலை பக்கம்</caption>
+      <caption xml:lang="zh-Hans-CN">说明拾取颜色以开始的状态页</caption>
+      <caption xml:lang="uk">Сторінка стану із зазначенням, що потрібно вибрати колір, щоб розпочати</caption>
+      <caption xml:lang="tr">Başlamak için renk seçmenizi söyleyen durum sayfası</caption>
+      <caption xml:lang="sv">Statussida med instruktioner om att välja en färg för att komma igång</caption>
+      <caption xml:lang="ru">Страница статуса, на которой указано, как выбрать цвет для начала работы</caption>
+      <caption xml:lang="pt-BR">Página de status indicando para selecionar uma cor para começar</caption>
+      <caption xml:lang="pt">Página de status informando para escolher uma cor para começar</caption>
+      <caption xml:lang="pl">Strona informująca o konieczności wybrania koloru w celu rozpoczęcia</caption>
+      <caption xml:lang="nl">Statuspagina met vermelding om een kleur te kiezen om te beginnen</caption>
+      <caption xml:lang="nb-NO">Startside</caption>
+      <caption xml:lang="it">Pagina di stato che dice di scegliere un colore per cominciare</caption>
+      <caption xml:lang="hu">Üres oldal, amely azt mondja, hogy válasszon egy színt</caption>
+      <caption xml:lang="hr">Stranica stanja za biranje boje za početak</caption>
+      <caption xml:lang="hi">आरंभ करने के लिए एक रंग चुनने के बारे में बताने वाला स्थिति पृष्ठ</caption>
+      <caption xml:lang="fr">Page d’état indiquant de choisir une couleur pour commencer</caption>
+      <caption xml:lang="fi">Tilasivu kehottaa valitsemaan väri aloittamista varten</caption>
+      <caption xml:lang="es">Página de estado indicando que elija un color para empezar</caption>
+      <caption xml:lang="de">Startseite, mit einem Knopf um eine Farbe auszuwählen zum Anfangen</caption>
+      <caption xml:lang="cs">Stránka stavu uvádějící pro začátek vyberte barvu</caption>
+      <caption xml:lang="bg">Страница, в която се посочва да изберете цвят, за да започнете</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://apps.gnome.org/Eyedropper</url>
+  <url type="bugtracker">https://github.com/FineFindus/eyedropper/issues</url>
+  <url type="vcs-browser">https://github.com/FineFindus/eyedropper</url>
+  <url type="contribute">https://github.com/FineFindus/eyedropper#contributing</url>
+  <url type="translate">https://github.com/FineFindus/eyedropper#translation</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="2.2.1" date="2026-03-29">
+      <description translatable="no">
+        <p>Fixes an issue with the italian translation</p>
+        <p xml:lang="ko">이탈리아어 번역에 있는 문제 해결</p>
+        <p xml:lang="zh-Hans-CN">修复了意大利语翻译存在的问题</p>
+      </description>
+    </release>
+    <release version="2.2.0" date="2026-03-18">
+      <description translatable="no">
+        <p>New features, fixed bugs and updates to modern GNOME styling:</p>
+        <p xml:lang="ko">새로운 기능, 버그 해결 및 현대 GNOME 스타일링에 맞춘 업데이트:</p>
+        <p xml:lang="kk-Cyrl">Жаңа мүмкіндіктер, түзетілген қателер және заманауи GNOME стиліне жаңартулар:</p>
+        <p xml:lang="kw">Nasyow nowydh, ewnhys kudynnow, ha nowedhys dhe gis arnowydh GNOME:</p>
+        <p xml:lang="vi">Tính năng mới, sửa lỗi và cập nhật phong cách GNOME hiện đại:</p>
+        <p xml:lang="ar">مزايا جديدة وإصلاحات للأخطاء وتحديثات لتصميم جنوم الحديث:</p>
+        <p xml:lang="zh-Hans-CN">新特性，修复缺陷以及更新至现代 GNOME 样式：</p>
+        <p xml:lang="ru">Новые функции, исправленные ошибки и обновления современного стиля GNOME:</p>
+        <ul>
+          <li>RGB can now be displayed in decimal notation</li>
+          <li xml:lang="ko">RGB를 이제 십진법으로 표기할 수 있음</li>
+          <li xml:lang="kk-Cyrl">RGB енді ондық жүйеде көрсетіле алады</li>
+          <li xml:lang="kw">RGB gallos bos displetys yn nosyans degeth</li>
+          <li xml:lang="vi">RGB giờ có thể được hiển thị ở ký hiệu thập phân</li>
+          <li xml:lang="ar">يمكن الآن عرض RGB بالترميز العشري</li>
+          <li xml:lang="bn">RGB এখন দশমিক সংখ্যায় প্রদর্শিত হতে পারে</li>
+          <li xml:lang="ro">RGB poate fi acum afișat în notație zecimală</li>
+          <li xml:lang="zh-Hans-CN">RGB 现在可以用小数显示</li>
+          <li xml:lang="ru">RGB теперь можно отображать в десятичной системе счисления</li>
+          <li>Colors can now be directly entered, without picking a color first</li>
+          <li xml:lang="ko">먼저 색상을 선택할 필요 없이 직접 입력 가능</li>
+          <li xml:lang="kk-Cyrl">Түстерді енді алдымен түсті таңдамай-ақ, тікелей енгізуге болады</li>
+          <li xml:lang="kw">Kolors gallos bos ynworrys distowgh, heb ow kuntel unn kolor a-dherag</li>
+          <li xml:lang="vi">Màu giờ có thể được nhập trực tiếp, mà không cần chọn màu trước</li>
+          <li xml:lang="ar">يمكن الآن إدخال الألوان مباشرة، دون الحاجة لانتقاء لون أولًا</li>
+          <li xml:lang="bn">প্রথমে কোনো রঙ নির্বাচন না করেই, এখন সরাসরি রঙ প্রবেশ করানো যাবে</li>
+          <li xml:lang="ro">Culorile pot fi acum introduse direct, fără a alege mai întâi o culoare</li>
+          <li xml:lang="zh-Hans-CN">现在可以直接输入颜色而不用先拾取</li>
+          <li xml:lang="ru">Теперь цвета можно вводить напрямую, не выбирая их предварительно</li>
+          <li>Support for focus-independent (global) shortcuts</li>
+          <li xml:lang="ko">포커스와 무관한 전역 단축키 지원</li>
+          <li xml:lang="kk-Cyrl">Фокусқа тәуелсіз (глобалды) жарлықтарды қолдау</li>
+          <li xml:lang="kw">Skoodhyans dhe kesunyansow bysowek ollvysel</li>
+          <li xml:lang="vi">Hỗ trợ cho phím tắt độc lập với tiêu điểm (toàn cục)</li>
+          <li xml:lang="ar">دعم الاختصارات المستقلة عن التركيز (العامة)</li>
+          <li xml:lang="bn">ফোকাস-বিহীন (গ্লোবাল) শর্টকাটের জন্য সমর্থন</li>
+          <li xml:lang="zh-Hans-CN">支持独立聚焦（全局）快捷键</li>
+          <li xml:lang="ru">Поддержка не зависящих от фокуса (глобальных) ярлыков</li>
+          <li>Fixed an layout issue on systems where scrollbars are always shown</li>
+          <li xml:lang="ko">스크롤 바가 항상 보이는 몇몇 시스템에서의 레이아웃 이슈 해결</li>
+          <li xml:lang="kk-Cyrl">Айналдыру жолақтары әрқашан көрсетілетін жүйелердегі жайма мәселесі түзетілді</li>
+          <li xml:lang="kw">Ewnhys unn kudyn aray yn amontyellow le may barrys scroll yw diskwedhesys pub prys</li>
+          <li xml:lang="vi">Sửa vấn đề bố cục trên hệ thống nơi thanh cuộn luôn được hiển thị</li>
+          <li xml:lang="ar">أُصلحت مشكلة في التخطيط على الأنظمة التي تظهر فيها أشرطة التمرير دائمًا</li>
+          <li xml:lang="bn">যেসব সিস্টেমে স্ক্রলবার সর্বদা প্রদর্শিত হয়, সেখানে লেআউটের সমস্যা সমাধান করা হয়েছে</li>
+          <li xml:lang="ro">A fost rezolvată o problemă de aspect pe sistemele în care sunt afișate întotdeauna bare de derulare</li>
+          <li xml:lang="zh-Hans-CN">修复了在总是显示滚动条的系统上的布局问题</li>
+          <li xml:lang="ru">Исправлена ошибка с макетом в системах, где всегда отображались полосы прокрутки</li>
+          <li>Updated to modern GNOME styling</li>
+          <li xml:lang="ko">현대 GNOME 스타일링에 맞게 업데이트</li>
+          <li xml:lang="kk-Cyrl">Заманауи GNOME стиліне жаңартылды</li>
+          <li xml:lang="kw">Nowedhys dhe gis GNOME arnowydh</li>
+          <li xml:lang="vi">Cập nhật phong cách GNOME hiện đại</li>
+          <li xml:lang="ar">حُدِّث إلى تصميم جنوم الحديث</li>
+          <li xml:lang="bn">আধুনিক GNOME স্টাইলিংয়ে আপডেট করা হয়েছে</li>
+          <li xml:lang="ro">Actualizat la stilul GNOME modern</li>
+          <li xml:lang="zh-Hans-CN">更新至现代 GNOME 样式</li>
+          <li xml:lang="ru">Обновлён до современного стиля GNOME</li>
+          <li>Improved checking for unsupported systems</li>
+          <li xml:lang="ko">미지원 시스템에 대한 확인 개선</li>
+          <li xml:lang="kk-Cyrl">Қолдау көрсетілмейтін жүйелерді тексеру жақсартылды</li>
+          <li xml:lang="kw">Gwellhys ow checkya dhe amontyellow anskooydhys</li>
+          <li xml:lang="vi">Cải thiện kiểm tra cho hệ thống không được hỗ trợ</li>
+          <li xml:lang="ar">تحسين التحقُّق من الأنظمة غير المدعومة</li>
+          <li xml:lang="bn">অসমর্থিত সিস্টেমের জন্য পরীক্ষা উন্নত করা হয়েছে</li>
+          <li xml:lang="ro">Verificare îmbunătățită pentru sistemele incompatibile</li>
+          <li xml:lang="zh-Hans-CN">改进了对不支持系统的检测</li>
+          <li xml:lang="ru">Улучшена проверка на наличие неподдерживаемых систем</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.0" date="2025-03-23">
+      <description translatable="no">
+        <p>New features, fixed bugs and updates to modern GNOME styling:</p>
+        <p xml:lang="ko">새로운 기능, 버그 해결 및 현대 GNOME 스타일링에 맞춘 업데이트:</p>
+        <p xml:lang="kk-Cyrl">Жаңа мүмкіндіктер, түзетілген қателер және заманауи GNOME стиліне жаңартулар:</p>
+        <p xml:lang="kw">Nasyow nowydh, ewnhys kudynnow, ha nowedhys dhe gis arnowydh GNOME:</p>
+        <p xml:lang="vi">Tính năng mới, sửa lỗi và cập nhật phong cách GNOME hiện đại:</p>
+        <p xml:lang="ar">مزايا جديدة وإصلاحات للأخطاء وتحديثات لتصميم جنوم الحديث:</p>
+        <p xml:lang="zh-Hans-CN">新特性，修复缺陷以及更新至现代 GNOME 样式：</p>
+        <p xml:lang="ru">Новые функции, исправленные ошибки и обновления современного стиля GNOME:</p>
+        <ul>
+          <li>RGB can now be displayed in decimal notation</li>
+          <li xml:lang="ko">RGB를 이제 십진법으로 표기할 수 있음</li>
+          <li xml:lang="kk-Cyrl">RGB енді ондық жүйеде көрсетіле алады</li>
+          <li xml:lang="kw">RGB gallos bos displetys yn nosyans degeth</li>
+          <li xml:lang="vi">RGB giờ có thể được hiển thị ở ký hiệu thập phân</li>
+          <li xml:lang="ar">يمكن الآن عرض RGB بالترميز العشري</li>
+          <li xml:lang="bn">RGB এখন দশমিক সংখ্যায় প্রদর্শিত হতে পারে</li>
+          <li xml:lang="ro">RGB poate fi acum afișat în notație zecimală</li>
+          <li xml:lang="zh-Hans-CN">RGB 现在可以用小数显示</li>
+          <li xml:lang="ru">RGB теперь можно отображать в десятичной системе счисления</li>
+          <li>Colors can now be directly entered, without picking a color first</li>
+          <li xml:lang="ko">먼저 색상을 선택할 필요 없이 직접 입력 가능</li>
+          <li xml:lang="kk-Cyrl">Түстерді енді алдымен түсті таңдамай-ақ, тікелей енгізуге болады</li>
+          <li xml:lang="kw">Kolors gallos bos ynworrys distowgh, heb ow kuntel unn kolor a-dherag</li>
+          <li xml:lang="vi">Màu giờ có thể được nhập trực tiếp, mà không cần chọn màu trước</li>
+          <li xml:lang="ar">يمكن الآن إدخال الألوان مباشرة، دون الحاجة لانتقاء لون أولًا</li>
+          <li xml:lang="bn">প্রথমে কোনো রঙ নির্বাচন না করেই, এখন সরাসরি রঙ প্রবেশ করানো যাবে</li>
+          <li xml:lang="ro">Culorile pot fi acum introduse direct, fără a alege mai întâi o culoare</li>
+          <li xml:lang="zh-Hans-CN">现在可以直接输入颜色而不用先拾取</li>
+          <li xml:lang="ru">Теперь цвета можно вводить напрямую, не выбирая их предварительно</li>
+          <li>Support for focus-independent (global) shortcuts</li>
+          <li xml:lang="ko">포커스와 무관한 전역 단축키 지원</li>
+          <li xml:lang="kk-Cyrl">Фокусқа тәуелсіз (глобалды) жарлықтарды қолдау</li>
+          <li xml:lang="kw">Skoodhyans dhe kesunyansow bysowek ollvysel</li>
+          <li xml:lang="vi">Hỗ trợ cho phím tắt độc lập với tiêu điểm (toàn cục)</li>
+          <li xml:lang="ar">دعم الاختصارات المستقلة عن التركيز (العامة)</li>
+          <li xml:lang="bn">ফোকাস-বিহীন (গ্লোবাল) শর্টকাটের জন্য সমর্থন</li>
+          <li xml:lang="zh-Hans-CN">支持独立聚焦（全局）快捷键</li>
+          <li xml:lang="ru">Поддержка не зависящих от фокуса (глобальных) ярлыков</li>
+          <li>Fixed an layout issue on systems where scrollbars are always shown</li>
+          <li xml:lang="ko">스크롤 바가 항상 보이는 몇몇 시스템에서의 레이아웃 이슈 해결</li>
+          <li xml:lang="kk-Cyrl">Айналдыру жолақтары әрқашан көрсетілетін жүйелердегі жайма мәселесі түзетілді</li>
+          <li xml:lang="kw">Ewnhys unn kudyn aray yn amontyellow le may barrys scroll yw diskwedhesys pub prys</li>
+          <li xml:lang="vi">Sửa vấn đề bố cục trên hệ thống nơi thanh cuộn luôn được hiển thị</li>
+          <li xml:lang="ar">أُصلحت مشكلة في التخطيط على الأنظمة التي تظهر فيها أشرطة التمرير دائمًا</li>
+          <li xml:lang="bn">যেসব সিস্টেমে স্ক্রলবার সর্বদা প্রদর্শিত হয়, সেখানে লেআউটের সমস্যা সমাধান করা হয়েছে</li>
+          <li xml:lang="ro">A fost rezolvată o problemă de aspect pe sistemele în care sunt afișate întotdeauna bare de derulare</li>
+          <li xml:lang="zh-Hans-CN">修复了在总是显示滚动条的系统上的布局问题</li>
+          <li xml:lang="ru">Исправлена ошибка с макетом в системах, где всегда отображались полосы прокрутки</li>
+          <li>Updated to modern GNOME styling</li>
+          <li xml:lang="ko">현대 GNOME 스타일링에 맞게 업데이트</li>
+          <li xml:lang="kk-Cyrl">Заманауи GNOME стиліне жаңартылды</li>
+          <li xml:lang="kw">Nowedhys dhe gis GNOME arnowydh</li>
+          <li xml:lang="vi">Cập nhật phong cách GNOME hiện đại</li>
+          <li xml:lang="ar">حُدِّث إلى تصميم جنوم الحديث</li>
+          <li xml:lang="bn">আধুনিক GNOME স্টাইলিংয়ে আপডেট করা হয়েছে</li>
+          <li xml:lang="ro">Actualizat la stilul GNOME modern</li>
+          <li xml:lang="zh-Hans-CN">更新至现代 GNOME 样式</li>
+          <li xml:lang="ru">Обновлён до современного стиля GNOME</li>
+          <li>Improved checking for unsupported systems</li>
+          <li xml:lang="ko">미지원 시스템에 대한 확인 개선</li>
+          <li xml:lang="kk-Cyrl">Қолдау көрсетілмейтін жүйелерді тексеру жақсартылды</li>
+          <li xml:lang="kw">Gwellhys ow checkya dhe amontyellow anskooydhys</li>
+          <li xml:lang="vi">Cải thiện kiểm tra cho hệ thống không được hỗ trợ</li>
+          <li xml:lang="ar">تحسين التحقُّق من الأنظمة غير المدعومة</li>
+          <li xml:lang="bn">অসমর্থিত সিস্টেমের জন্য পরীক্ষা উন্নত করা হয়েছে</li>
+          <li xml:lang="ro">Verificare îmbunătățită pentru sistemele incompatibile</li>
+          <li xml:lang="zh-Hans-CN">改进了对不支持系统的检测</li>
+          <li xml:lang="ru">Улучшена проверка на наличие неподдерживаемых систем</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.1" date="2024-09-18">
+      <description translatable="no">
+        <p>A small fix for failing metadata</p>
+        <p xml:lang="ko">메타데이터가 실패하는 작은 오류 해결</p>
+        <p xml:lang="kk-Cyrl">Сәтсіз метадеректер үшін кішігірім түзету</p>
+        <p xml:lang="kw">Unn ewnans byghan rag data ow fyllell</p>
+        <p xml:lang="vi">Sửa nhỏ cho siêu dữ liệu thất bại</p>
+        <p xml:lang="ar">إصلاح بسيط للبيانات الوصفية المتعذَّرة</p>
+        <p xml:lang="bn">মেটাডেটা ব্যর্থ হওয়ার জন্য একটি ছোট সমাধান</p>
+        <p xml:lang="ro">O mică corecție pentru metadatele care eșuează</p>
+        <p xml:lang="zh-Hans-CN">对衰退元数据的小修复</p>
+        <p xml:lang="ru">Небольшое исправление ошибки с метаданными</p>
+      </description>
+    </release>
+    <release version="2.0.0" date="2024-09-18">
+      <description translatable="no">
+        <p>A new release, including major reworks the the UI and the color system</p>
+        <p xml:lang="ko">UI와 색상 시스템을 대대적으로 개편한 신규 버전</p>
+        <p xml:lang="kk-Cyrl">Интерфейс пен түс жүйесін ауқымды қайта өңдеуді қамтитын жаңа шығарылым</p>
+        <p xml:lang="kw">Unn versyon nowydh, ow komprehendya nowedhys brassa dhe'n ynterfas ha an system kolor</p>
+        <p xml:lang="vi">Bản phát hành mới, bao gồm làm lại lớn cho UI và hệ thống màu</p>
+        <p xml:lang="ar">إصدار جديد، يتضمَّن تعديلات جذرية على واجهة المستخدم ونظام الألوان</p>
+        <p xml:lang="bn">একটি নতুন রিলিজ, যার মধ্যে UI এবং রঙ সিস্টেমের প্রধান পুনর্গঠন অন্তর্ভুক্ত রয়েছে</p>
+        <p xml:lang="zh-Hans-CN">包含界面和色彩系统重大重构的新版本</p>
+        <p xml:lang="ru">Новый релиз, включающий серьезные изменения в пользовательском интерфейсе и цветовой системе</p>
+        <ul>
+          <li>Added a new color editor, allowing to modify colors</li>
+          <li xml:lang="ko">색상을 수정할 수 있는 신규 에디터 추가</li>
+          <li xml:lang="kk-Cyrl">Түстерді өзгертуге мүмкіндік беретін жаңа түс редакторы қосылды</li>
+          <li xml:lang="kw">Addys unn chanjyell nowydh kolor, ow gasa dhe chanjya kolors</li>
+          <li xml:lang="vi">Thêm trình chỉnh sửa màu mới, cho phép sửa đổi màu</li>
+          <li xml:lang="ar">أُضيف محرِّر ألوان جديد، يسمح بتعديل الألوان</li>
+          <li xml:lang="bn">রঙ পরিবর্তন করার জন্য একটি নতুন রঙ এডিটর যোগ করা হলো</li>
+          <li xml:lang="zh-Hans-CN">添加了新的颜色编辑器以允许修改颜色</li>
+          <li xml:lang="ru">Добавлен новый цветовой редактор, позволяющий изменять цвета</li>
+          <li>Reworked the system handling color conversions</li>
+          <li xml:lang="ko">색상 변환 시스템 개편</li>
+          <li xml:lang="kk-Cyrl">Түстерді түрлендіруді өңдейтін жүйе қайта өңделді</li>
+          <li xml:lang="kw">Dasoberi an system mayth ow handla treylyans kolor</li>
+          <li xml:lang="vi">Làm lại hệ thống xử lý chuyển đổi màu</li>
+          <li xml:lang="ar">أُعيد تصميم نظام معالجة تحويلات الألوان</li>
+          <li xml:lang="bn">রঙ রূপান্তরের সিস্টেমটি পুনরায় তৈরি করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">重做了系统对颜色转换的处理</li>
+          <li xml:lang="ru">Переработана система обработки цветовых преобразований</li>
+          <li>Updated to modern GNOME styling</li>
+          <li xml:lang="ko">현대 GNOME 스타일링에 맞게 업데이트</li>
+          <li xml:lang="kk-Cyrl">Заманауи GNOME стиліне жаңартылды</li>
+          <li xml:lang="kw">Nowedhys dhe gis GNOME arnowydh</li>
+          <li xml:lang="vi">Cập nhật phong cách GNOME hiện đại</li>
+          <li xml:lang="ar">حُدِّث إلى تصميم جنوم الحديث</li>
+          <li xml:lang="bn">আধুনিক GNOME স্টাইলিংয়ে আপডেট করা হয়েছে</li>
+          <li xml:lang="ro">Actualizat la stilul GNOME modern</li>
+          <li xml:lang="zh-Hans-CN">更新至现代 GNOME 样式</li>
+          <li xml:lang="ru">Обновлён до современного стиля GNOME</li>
+          <li>A warning page is now shown on unsupported systems</li>
+          <li xml:lang="ko">미지원 시스템에서 경고 페이지 노출</li>
+          <li xml:lang="kk-Cyrl">Қолдау көрсетілмейтін жүйелерде енді ескерту беті көрсетіледі</li>
+          <li xml:lang="kw">Unn folen gwarnyans yw lemmyn diskwedhesys yn amontyellow anskoodhys</li>
+          <li xml:lang="vi">Trang cảnh báo giờ được hiển thị trên hệ thống không được hỗ trợ</li>
+          <li xml:lang="ar">تُعرض الآن صفحة تحذير على الأنظمة غير المدعومة</li>
+          <li xml:lang="bn">অসমর্থিত সিস্টেমগুলিতে এখন একটি সতর্কতামূলক পৃষ্ঠা দেখানো হচ্ছে</li>
+          <li xml:lang="zh-Hans-CN">在不支持的系统上显示警告页面</li>
+          <li xml:lang="ru">В неподдерживаемых системах теперь отображается страница с предупреждением</li>
+          <li>Various internal code improvements and bug fixes</li>
+          <li xml:lang="ko">여러 내부 코드 개선 및 버그 수정</li>
+          <li xml:lang="kk-Cyrl">Ішкі кодты әртүрлі жақсартулар мен қателерді түзетулер</li>
+          <li xml:lang="kw">Gwellheansow divers dhe kod ha ewnhys kudynnow</li>
+          <li xml:lang="vi">Các cải thiện mã nội bộ đa dạng và sửa lỗi</li>
+          <li xml:lang="ar">تحسينات متنوّعة على الكود الداخلي وإصلاحات للأخطاء</li>
+          <li xml:lang="bn">বিভিন্ন অভ্যন্তরীণ কোড উন্নতি এবং বাগ সংশোধন</li>
+          <li xml:lang="zh-Hans-CN">多处内部代码改进和缺陷修复</li>
+          <li xml:lang="ru">Различные улучшения внутреннего кода и исправления ошибок</li>
+          <li>Removed the palette dialog</li>
+          <li xml:lang="ko">팔레트 다이얼로그 삭제</li>
+          <li xml:lang="kk-Cyrl">Палитра сұхбат терезесі өшірілді</li>
+          <li xml:lang="kw">Removys an fenester liwvord</li>
+          <li xml:lang="vi">Xóa hộp thoại bảng màu</li>
+          <li xml:lang="ar">تمت إزالة مربع حوار اللوحة</li>
+          <li xml:lang="bn">প্যালেট ডায়ালগটি সরানো হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">移除了色板对话框</li>
+          <li xml:lang="ru">Удалено диалоговое окно палитры</li>
+          <li>Removed custom color formats</li>
+          <li xml:lang="ko">커스텀 색상 형식 삭제</li>
+          <li xml:lang="kk-Cyrl">Пайдаланушылық түс пішімдері өшірілді</li>
+          <li xml:lang="kw">Removys furvasow a-vusur kolor</li>
+          <li xml:lang="vi">Xóa định dạng màu tùy chỉnh</li>
+          <li xml:lang="ar">أُزيلت تنسيقات الألوان المخصَّصة</li>
+          <li xml:lang="bn">কাস্টম রঙের ফর্ম্যাটগুলি সরানো হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">移除了自定义颜色格式</li>
+          <li xml:lang="ru">Удалены пользовательские цветовые форматы</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.0" date="2023-09-27">
+      <description translatable="no">
+        <p>A new release with exciting new features and many improvements.</p>
+        <p xml:lang="ko">새로운 기능과 다양한 개선 사항이 포함된 최신 릴리즈입니다.</p>
+        <p xml:lang="kk-Cyrl">Қызықты жаңа мүмкіндіктері мен көптеген жақсартулары бар жаңа шығарылым.</p>
+        <p xml:lang="kw">Unn versyon nowydh gans nasyow nowydh yntanus ha meur a gwellheansow.</p>
+        <p xml:lang="vi">Bản phát hành mới với tính năng mới thú vị và nhiều cải thiện.</p>
+        <p xml:lang="ar">إصدار جديد بمزايا جديدة ومثيرة والعديد من التحسينات.</p>
+        <p xml:lang="bn">অনেক নতুন বৈশিষ্ট্য এবং উন্নতি সহ, নতুন রিলিজ।</p>
+        <p xml:lang="zh-Hans-CN">带有新特性和很多改进的新版本。</p>
+        <p xml:lang="ru">Новая версия с новыми захватывающими функциями и множеством улучшений.</p>
+        <ul>
+          <li>Allow entering any format</li>
+          <li xml:lang="ko">아무 형식이나 입력 허용</li>
+          <li xml:lang="kk-Cyrl">Кез келген пішімді енгізуге рұқсат беру</li>
+          <li xml:lang="kw">Alowa owth ynworra neb furvas</li>
+          <li xml:lang="vi">Cho phép nhập bất kỳ định dạng nào</li>
+          <li xml:lang="ar">السماح بإدخال أي تنسيق</li>
+          <li xml:lang="bn">যেকোনো ফর্ম্যাটে ব্যবহার করতে দিন</li>
+          <li xml:lang="zh-Hans-CN">允许输入任意格式</li>
+          <li xml:lang="ru">Ввод данных в любом формате</li>
+          <li>Display color in overview search</li>
+          <li xml:lang="ko">검색에서 색상 표시</li>
+          <li xml:lang="kk-Cyrl">Түсті шолу іздеуінде көрсету</li>
+          <li xml:lang="kw">Diskwedhes kolor yn hwithrans system</li>
+          <li xml:lang="vi">Hiển thị màu trong tìm kiếm tổng quan</li>
+          <li xml:lang="ar">عرض اللون في بحث النظرة العامة</li>
+          <li xml:lang="bn">ওভারভিউ অনুসন্ধানে রঙ প্রদর্শন করুন</li>
+          <li xml:lang="zh-Hans-CN">在概览搜索中显示颜色</li>
+          <li xml:lang="ru">Отображение цвета в обзоре поиске</li>
+          <li>Export palettes to LibreOffice</li>
+          <li xml:lang="ko">리브레오피스로 팔레트 내보내기</li>
+          <li xml:lang="kk-Cyrl">Палитраларды LibreOffice-ке экспорттау</li>
+          <li xml:lang="kw">Esporthya liwvordow dhe LibreOffice</li>
+          <li xml:lang="vi">Xuất bảng màu sang LibreOffice</li>
+          <li xml:lang="ar">صدِّر لوحات الألوان إلى ليبر أوفيس</li>
+          <li xml:lang="bn">প্যালেটগুলি LibreOffice এ রপ্তানি করুন</li>
+          <li xml:lang="zh-Hans-CN">支持将色板导出至 LibreOffice</li>
+          <li xml:lang="ru">Экспорт палитр в LibreOffice</li>
+          <li>A visual differentiation between color and background</li>
+          <li xml:lang="ko">색상과 배경의 시각적 구분</li>
+          <li xml:lang="kk-Cyrl">Түс пен фон арасындағы визуалды айырмашылық</li>
+          <li xml:lang="kw">Unn dihevelepter gwelesek tredh kolor ha kilva</li>
+          <li xml:lang="vi">Sự phân biệt hình ảnh giữa màu và nền</li>
+          <li xml:lang="ar">تمييز مرئي بين اللون والخلفية</li>
+          <li xml:lang="bn">রঙ এবং পটভূমির মধ্যে একটি দৃশ্যমান পার্থক্য</li>
+          <li xml:lang="zh-Hans-CN">在颜色和背景之间的视觉区分</li>
+          <li xml:lang="ru">Визуальное различие между цветом и фоном</li>
+          <li>Improved color conversion</li>
+          <li xml:lang="ko">개선된 색상 변환</li>
+          <li xml:lang="kk-Cyrl">Түстерді түрлендіру жақсартылды</li>
+          <li xml:lang="kw">Gwellhys treylyans kolor</li>
+          <li xml:lang="vi">Cải thiện chuyển đổi màu</li>
+          <li xml:lang="ar">تحسين تحويل الألوان</li>
+          <li xml:lang="bn">উন্নত রঙ রূপান্তর</li>
+          <li xml:lang="zh-Hans-CN">改进了颜色转换</li>
+          <li xml:lang="ru">Улучшенное преобразование цветов</li>
+          <li>Visual refinements to match the state of the art of GNOME apps</li>
+          <li xml:lang="ko">GNOME 앱의 최신 트렌드에 부합하도록 시각적 요소를 세련되게 다듬음</li>
+          <li xml:lang="kk-Cyrl">GNOME қолданбаларының заманауи деңгейіне сәйкес визуалды жақсартулар</li>
+          <li xml:lang="kw">Gwellheansow gwelesek dhe omdhesedha an appys GNOME flamm nowydh</li>
+          <li xml:lang="vi">Cải thiện hình ảnh để phù hợp với tình trạng nghệ thuật của ứng dụng GNOME</li>
+          <li xml:lang="ar">تحسينات مرئية لتواكب أحدث تطبيقات جنوم</li>
+          <li xml:lang="bn">GNOME অ্যাপের অত্যাধুনিকতার সাথে মিল রেখে দৃশ্যমান পরিমার্জন</li>
+          <li xml:lang="zh-Hans-CN">与 GNOME 应用风格状态相匹配的视觉改进</li>
+          <li xml:lang="ru">Визуальные усовершенствования, соответствующие современному уровню приложений GNOME</li>
+          <li>Internal code improvements and bug fixes</li>
+          <li xml:lang="ko">내부 코드 개선 및 버그 수정</li>
+          <li xml:lang="kk-Cyrl">Ішкі кодты жақсартулар мен қателерді түзетулер</li>
+          <li xml:lang="kw">Gwellheansow kod ha ewnhys kudynnow</li>
+          <li xml:lang="vi">Cải thiện mã nội bộ và sửa lỗi</li>
+          <li xml:lang="ar">تحسينات على الشيفرة الداخلية وإصلاحات للأخطاء</li>
+          <li xml:lang="bn">অভ্যন্তরীণ কোডের উন্নতি এবং বাগ সংশোধন</li>
+          <li xml:lang="zh-Hans-CN">内部代码改进和缺陷修复</li>
+          <li xml:lang="ru">Улучшения внутреннего кода и исправления ошибок</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.0" date="2023-02-24">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Show a toast with an Undo option when clearing the history</li>
+          <li xml:lang="ko">기록 삭제 시 되돌리기 옵션이 있는 토스트 표시</li>
+          <li xml:lang="kk-Cyrl">Тарихты тазалау кезінде Болдырмау опциясы бар хабарламаны көрсету</li>
+          <li xml:lang="kw">Diskwedhes unn tardhik gans unn dewis digelmi pan ow dilea an istori</li>
+          <li xml:lang="vi">Hiển thị thông báo với tùy chọn Hoàn tác khi xóa lịch sử</li>
+          <li xml:lang="ar">إظهار تنبيه منبثق مع خيار تراجع عند محو التأريخ</li>
+          <li xml:lang="bn">ইতিহাস সাফ করার সময় পূর্বাবস্থায় ফেরানোর বিকল্প সহ একটি টোস্ট দেখান</li>
+          <li xml:lang="zh-Hans-CN">清除历史时显示带撤消选项的通知提示</li>
+          <li xml:lang="ru">Отображение всплывающего окна при отмене очистки истории</li>
+          <li>Use Ctrl-Q to close the window</li>
+          <li xml:lang="ko">Ctrl-Q로 창 닫기</li>
+          <li xml:lang="kk-Cyrl">Терезені жабу үшін Ctrl-Q пайдаланыңыз</li>
+          <li xml:lang="kw">Devnydhya Ctrl-Q dhe degea an fenester</li>
+          <li xml:lang="vi">Sử dụng Ctrl-Q để đóng cửa sổ</li>
+          <li xml:lang="ar">استخدام Ctrl-Q لإغلاق النافذة</li>
+          <li xml:lang="bn">উইন্ডোটি বন্ধ করতে Ctrl-Q ব্যবহার করুন</li>
+          <li xml:lang="zh-Hans-CN">使用 Ctrl-Q 关闭窗口</li>
+          <li xml:lang="ru">Исполоьзование Ctrl-Q, чтобы закрыть окно</li>
+          <li>Use a default minimum window size, content should no longer unnecessarily cut off</li>
+          <li xml:lang="ko">기본 최소 윈도우 크기를 사용해 콘텐츠가 더 이상 불필요하게 잘리지 않음</li>
+          <li xml:lang="kk-Cyrl">Терезенің әдепкі минималды өлшемін пайдалану, мазмұн енді қажетсіз кесілмеуі керек</li>
+          <li xml:lang="kw">Devnydhya unn braster fenester lyha defowt, dalgh na fella treghi dhe-ves heb res</li>
+          <li xml:lang="vi">Sử dụng kích thước cửa sổ tối thiểu mặc định, nội dung không còn bị cắt không cần thiết nữa</li>
+          <li xml:lang="ar">استخدام حجم نافذة أدنى مبدئي، لن يُقتطع المحتوى بعد الآن دون داعٍ</li>
+          <li xml:lang="bn">একটি ডিফল্ট ন্যূনতম উইন্ডো আকার ব্যবহারের সময়, কন্টেন্ট আর অপ্রয়োজনীয়ভাবে কাটবে না</li>
+          <li xml:lang="zh-Hans-CN">使用默认最小窗口大小，其内容应不会再非必要的被裁切</li>
+          <li xml:lang="ru">Использование минимальный размер окна по умолчанию, чтобы содержимое больше не обрезалось без необходимости</li>
+          <li>New icon by @bertob</li>
+          <li xml:lang="ko">@bertob 님이 만든 새로운 아이콘</li>
+          <li xml:lang="kk-Cyrl">@bertob жасаған жаңа таңбаша</li>
+          <li xml:lang="kw">Arwodhik nowydh gans @bertob</li>
+          <li xml:lang="vi">Biểu tượng mới bởi @bertob</li>
+          <li xml:lang="ar">أيقونة جديدة من تصميم @bertob</li>
+          <li xml:lang="bn">@bertob এর নতুন আইকন</li>
+          <li xml:lang="zh-Hans-CN">由 @bertob 制作的新图标</li>
+          <li xml:lang="ru">Новая иконка от @bertob</li>
+          <li>Export palettes as Adobe Swatch Exchange (ASE), hex, PAL, Paint.NET  (txt) files</li>
+          <li xml:lang="ko">팔레트를 Adobe Swatch Exchange(ASE), 16진수, PAL, Paint.NET(txt) 파일로 내보내기</li>
+          <li xml:lang="kk-Cyrl">Палитраларды Adobe Swatch Exchange (ASE), hex, PAL, Paint.NET (txt) файлдары ретінде экспорттау</li>
+          <li xml:lang="kw">Esporthya liwvordow dhe restrennow Adobe Swatch Exchange (ASE), hex, PAL, Paint.NET (txt)</li>
+          <li xml:lang="vi">Xuất bảng màu dưới dạng Adobe Swatch Exchange (ASE), hex, PAL, Paint.NET (txt) tệp</li>
+          <li xml:lang="ar">صدِّر لوحات الألوان كملفات Adobe Swatch Exchange (ASE) و hex و PAL و Paint.NET (txt)</li>
+          <li xml:lang="bn">প্যালেটগুলি অ্যাডোবি সোয়াচ এক্সচেঞ্জ (ASE), hex, PAL, Paint.NET (txt) ফাইল হিসাবে রপ্তানি করুন</li>
+          <li xml:lang="zh-Hans-CN">支持将色板导出为 Adobe 色板交换（ASE）、16 进制、PAL、Paint.NET（txt）文件</li>
+          <li xml:lang="ru">Экспорт палитр в форматы Adobe Swatch Exchange (ASE), hex, PAL, Paint.Файлы в формате NET (txt)</li>
+          <li>Minor changes to the store metadata</li>
+          <li xml:lang="ko">스토어 메타데이터에 대한 사소한 변경 사항</li>
+          <li xml:lang="kk-Cyrl">Дүкен метадеректеріндегі кішігірім өзгерістер</li>
+          <li xml:lang="kw">Chanjyow le dhe'n data gwerthji</li>
+          <li xml:lang="vi">Thay đổi nhỏ cho siêu dữ liệu cửa hàng</li>
+          <li xml:lang="ar">تغييرات طفيفة على البيانات الوصفية للمتجر</li>
+          <li xml:lang="bn">স্টোর মেটাডেটায় ছোটখাটো পরিবর্তন</li>
+          <li xml:lang="zh-Hans-CN">对存储元数据的微小更改</li>
+          <li xml:lang="ru">Незначительные изменения в метаданных хранилища</li>
+        </ul>
+        <p>Changed:</p>
+        <p xml:lang="ko">변경됨:</p>
+        <p xml:lang="ka">შეცვლილი:</p>
+        <p xml:lang="kk-Cyrl">Өзгертілді:</p>
+        <p xml:lang="kw">Janjyas:</p>
+        <p xml:lang="vi">Đã thay đổi:</p>
+        <p xml:lang="ar">تم التغيير:</p>
+        <p xml:lang="bn">পরিবর্তিত:</p>
+        <p xml:lang="zh-Hans-CN">更改了：</p>
+        <p xml:lang="ru">Изменено:</p>
+        <ul>
+          <li>Hunter-Lab now displays 0 instead of NaN</li>
+          <li xml:lang="ko">Hunter-Lab에서 이제 NaN 대신 0으로 표시</li>
+          <li xml:lang="kk-Cyrl">Hunter-Lab енді NaN орнына 0 көрсетеді</li>
+          <li xml:lang="kw">Hunter-Lab diskwedhes lemmyn 0 yn le NaN</li>
+          <li xml:lang="vi">Hunter-Lab giờ hiển thị 0 thay vì NaN</li>
+          <li xml:lang="ar">يعرض Hunter-Lab الآن 0 بدلًا من NaN</li>
+          <li xml:lang="bn">হান্টার-ল্যাব এখন NaN এর পরিবর্তে 0 প্রদর্শন করে</li>
+          <li xml:lang="zh-Hans-CN">Hunter-Lab 现在显示 0 而不是 NaN</li>
+          <li xml:lang="ru">Hunter-Lab теперь отображает 0 вместо NaN</li>
+          <li>Improved tooltips for copying colors</li>
+          <li xml:lang="ko">색상 복사 툴팁 개선</li>
+          <li xml:lang="kk-Cyrl">Түстерді көшіруге арналған құралдардың кеңестері жақсартылды</li>
+          <li xml:lang="kw">Gwellys deskrifansow toulys dhe ow kopia kolorys</li>
+          <li xml:lang="vi">Cải thiện chú thích công cụ cho việc sao chép màu</li>
+          <li xml:lang="ar">تحسين التلميحات عند نسخ الألوان</li>
+          <li xml:lang="bn">রঙ কপি করার জন্য উন্নত টুলটিপস</li>
+          <li xml:lang="zh-Hans-CN">改进了复制颜色的工具提示</li>
+          <li xml:lang="ru">Улучшены всплывающие подсказки для копирования цветов</li>
+          <li>Palette window now uses a button with a more explicit text instead of an icon</li>
+          <li xml:lang="ko">팔레트 창에서 아이콘 대신 명확한 텍스트와 버튼 사용</li>
+          <li xml:lang="kk-Cyrl">Палитра терезесі енді таңбашаның орнына айқынырақ мәтіні бар батырманы пайдаланады</li>
+          <li xml:lang="kw">Fenester liwvord gulys lemmyn devnydh a unn boton gans tekst yn le unn ikon</li>
+          <li xml:lang="vi">Cửa sổ bảng màu giờ sử dụng nút với văn bản rõ ràng hơn thay vì biểu tượng</li>
+          <li xml:lang="ar">تستخدم نافذة لوحة الألوان الآن زرًا بنص أوضح بدلًا من أيقونة</li>
+          <li xml:lang="bn">প্যালেট উইন্ডো এখন আইকনের পরিবর্তে আরও স্পষ্ট লেখা সহ একটি বাটন ব্যবহার করে</li>
+          <li xml:lang="zh-Hans-CN">色板窗口现在使用带有更显著文字的按钮而不是一个图标</li>
+          <li xml:lang="ru">В окне палитры теперь вместо значка используется кнопка с более четким текстом</li>
+          <li>Reworded project description</li>
+          <li xml:lang="ko">프로젝트 설명 재작성</li>
+          <li xml:lang="kk-Cyrl">Жоба сипаттамасының сөзі өзгертілді</li>
+          <li xml:lang="kw">Dassrifys deskrifans ragdres</li>
+          <li xml:lang="vi">Viết lại mô tả dự án</li>
+          <li xml:lang="ar">أُعيدت صياغة وصف المشروع</li>
+          <li xml:lang="bn">পুনঃশব্দযুক্ত প্রকল্পের বর্ণনা</li>
+          <li xml:lang="zh-Hans-CN">重写了工程描述</li>
+          <li xml:lang="ru">Переформулировано описание проекта</li>
+          <li>Updated all screenshots</li>
+          <li xml:lang="ko">모든 스크린샷 업데이트</li>
+          <li xml:lang="kk-Cyrl">Барлық скриншоттар жаңартылды</li>
+          <li xml:lang="kw">Nowedhys oll imajys</li>
+          <li xml:lang="vi">Cập nhật tất cả ảnh chụp màn hình</li>
+          <li xml:lang="ar">تم تحديث جميع لقطات الشاشة</li>
+          <li xml:lang="bn">সকল স্ক্রিনশট আপডেট করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">更新了所有截图</li>
+          <li xml:lang="ru">Обновлены все скриншоты</li>
+        </ul>
+        <p>Fixed:</p>
+        <p xml:lang="ko">수정됨:</p>
+        <p xml:lang="ka">ჩასწორებულია:</p>
+        <p xml:lang="kk-Cyrl">Түзетілді:</p>
+        <p xml:lang="kw">Ewnhys:</p>
+        <p xml:lang="vi">Đã sửa:</p>
+        <p xml:lang="ar">أُصلح:</p>
+        <p xml:lang="bn">সারানো:</p>
+        <p xml:lang="zh-Hans-CN">修复了：</p>
+        <p xml:lang="ru">Исправлено:</p>
+        <ul>
+          <li>Separator is now hidden when the history list is hidden</li>
+          <li xml:lang="ko">기록 리스트를 숨기면 구분자도 숨겨짐</li>
+          <li xml:lang="kk-Cyrl">Тарих тізімі жасырылғанда, ажыратқыш та жасырылады</li>
+          <li xml:lang="kw">Diberther yw kudh lemmyn pan an rol istori yw kudh</li>
+          <li xml:lang="vi">Dấu phân cách giờ bị ẩn khi danh sách lịch sử bị ẩn</li>
+          <li xml:lang="ar">يُخفى الفاصل الآن عندما تكون قائمة التأريخ مخفية</li>
+          <li xml:lang="bn">ইতিহাস তালিকা লুকানো থাকলে বিভাজক এখন লুকানো থাকে</li>
+          <li xml:lang="zh-Hans-CN">现在当历史列表隐藏时会隐藏分隔符</li>
+          <li xml:lang="ru">Разделитель теперь скрыт, когда скрыт список истории</li>
+          <li>Improved editing experience when change the Hex color/name</li>
+          <li xml:lang="ko">16진수 색상/이름을 변경할 때의 편집 편의성 개선</li>
+          <li xml:lang="kk-Cyrl">Hex түсін/атын өзгерткендегі түзету тәжірибесі жақсартылды</li>
+          <li xml:lang="kw">Gwellys klewans chanjyell pan chanjow an kanow kolor</li>
+          <li xml:lang="vi">Cải thiện trải nghiệm chỉnh sửa khi thay đổi màu/tên Hex</li>
+          <li xml:lang="ar">تحسين تجربة التحرير عند تغيير لون/اسم Hex</li>
+          <li xml:lang="bn">Hex রঙ/নাম পরিবর্তন করার সময় উন্নত সম্পাদনার অভিজ্ঞতা</li>
+          <li xml:lang="zh-Hans-CN">改进了更改 16 进制颜色/名称的编辑体验</li>
+          <li xml:lang="ru">Улучшен процесс редактирования при изменении шестнадцатеричного цвета / названия</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.1" date="2023-01-29">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Russian translation</li>
+          <li xml:lang="ko">러시아어 번역</li>
+          <li xml:lang="ka">რუსული თარგმანი</li>
+          <li xml:lang="kk-Cyrl">Орыс тіліндегі аударма</li>
+          <li xml:lang="kw">Treylyans Russek</li>
+          <li xml:lang="vi">Bản dịch tiếng Nga</li>
+          <li xml:lang="ar">ترجمة روسية</li>
+          <li xml:lang="bn">রুশ অনুবাদ</li>
+          <li xml:lang="zh-Hans-CN">俄语翻译</li>
+          <li xml:lang="ru">Перевод на русский язык</li>
+          <li>Better optimized releases</li>
+          <li xml:lang="ko">개선된 릴리즈</li>
+          <li xml:lang="kk-Cyrl">Жақсырақ оңтайландырылған шығарылымдар</li>
+          <li xml:lang="kw">Versyons gans gwrythyans gwell</li>
+          <li xml:lang="vi">Bản phát hành được tối ưu hóa tốt hơn</li>
+          <li xml:lang="ar">إصدارات محسَّنة بشكل أفضل</li>
+          <li xml:lang="bn">আরও ভালো অপ্টিমাইজ করা রিলিজ</li>
+          <li xml:lang="zh-Hans-CN">更好的优化发布</li>
+          <li xml:lang="ru">Улучшена оптимизация релизов</li>
+          <li>Returns the exit code on quitting</li>
+          <li xml:lang="ko">종료 시 종료 코드 반환</li>
+          <li xml:lang="kk-Cyrl">Шығу кезінде шығу кодын қайтарады</li>
+          <li xml:lang="kw">Derivas an kod kwityans pan ow kwytya</li>
+          <li xml:lang="vi">Trả về mã thoát khi thoát</li>
+          <li xml:lang="ar">إرجاع رمز الخروج عند الإقلاع</li>
+          <li xml:lang="bn">প্রস্থান করার সময় প্রস্থান কোডটি ফেরত পাঠায়</li>
+          <li xml:lang="zh-Hans-CN">退出时返回退出代码</li>
+          <li xml:lang="ru">Возвращение код выхода при выходе</li>
+        </ul>
+        <p>Changed:</p>
+        <p xml:lang="ko">변경됨:</p>
+        <p xml:lang="ka">შეცვლილი:</p>
+        <p xml:lang="kk-Cyrl">Өзгертілді:</p>
+        <p xml:lang="kw">Janjyas:</p>
+        <p xml:lang="vi">Đã thay đổi:</p>
+        <p xml:lang="ar">تم التغيير:</p>
+        <p xml:lang="bn">পরিবর্তিত:</p>
+        <p xml:lang="zh-Hans-CN">更改了：</p>
+        <p xml:lang="ru">Изменено:</p>
+        <ul>
+          <li>History no longer contains duplicated items</li>
+          <li xml:lang="ko">기록에 더 이상 중복되는 항목을 포함하지 않음</li>
+          <li xml:lang="kk-Cyrl">Тарихта енді қайталанатын элементтер жоқ</li>
+          <li xml:lang="kw">Istori yn le kontaynya enworrans dasskrifys</li>
+          <li xml:lang="vi">Lịch sử không còn chứa các mục trùng lặp</li>
+          <li xml:lang="ar">لم يعد التأريخ يحتوي على عناصر مكرَّرة</li>
+          <li xml:lang="bn">ইতিহাসে আর ডুপ্লিকেট করা আইটেম থাকে না</li>
+          <li xml:lang="zh-Hans-CN">历史不再包含重复项目</li>
+          <li xml:lang="ru">История больше не содержит дублирующихся элементов</li>
+        </ul>
+        <p>Fixed:</p>
+        <p xml:lang="ko">수정됨:</p>
+        <p xml:lang="ka">ჩასწორებულია:</p>
+        <p xml:lang="kk-Cyrl">Түзетілді:</p>
+        <p xml:lang="kw">Ewnhys:</p>
+        <p xml:lang="vi">Đã sửa:</p>
+        <p xml:lang="ar">أُصلح:</p>
+        <p xml:lang="bn">সারানো:</p>
+        <p xml:lang="zh-Hans-CN">修复了：</p>
+        <p xml:lang="ru">Исправлено:</p>
+        <ul>
+          <li>Fixed a bug where the wrong rgb format was used</li>
+          <li xml:lang="ko">잘못된 RGB 형식을 사용하던 버그 수정</li>
+          <li xml:lang="kk-Cyrl">Қате rgb пішімі пайдаланылған қате түзетілді</li>
+          <li xml:lang="kw">Ewnhys unn kudyn pan an furvas rgb kamm yw devnydhys</li>
+          <li xml:lang="vi">Sửa lỗi nơi định dạng rgb sai được sử dụng</li>
+          <li xml:lang="ar">أُصلح خطأ كان يُستخدم فيه تنسيق rgb الخاطئ</li>
+          <li xml:lang="bn">ভুল RGB ফর্ম্যাট ব্যবহার করা হতো এমন একটি বাগ ঠিক করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">修复了使用错误 RGB 格式的缺陷</li>
+          <li xml:lang="ru">Исправлена ошибка, из-за которой использовался неправильный формат rgb</li>
+          <li>Fixed a bug where LMS and Hunter-Lab had the same setting</li>
+          <li xml:lang="ko">LMS와 Hunter-Lab이 같은 설정을 사용하는 버그 수정</li>
+          <li xml:lang="kk-Cyrl">LMS пен Hunter-Lab-та бірдей параметр болған қате түзетілді</li>
+          <li xml:lang="kw">Ewnys unn kudyn pan LMS hag Hunter-Lab kavosys an settyans keth</li>
+          <li xml:lang="vi">Sửa lỗi nơi LMS và Hunter-Lab có cùng cài đặt</li>
+          <li xml:lang="ar">أُصلح خطأ حيث كان لـ LMS و Hunter-Lab نفس الإعداد</li>
+          <li xml:lang="bn">একটি বাগ ঠিক করা হয়েছে যেখানে LMS এবং Hunter-Lab এর একই সেটিং থাকতো</li>
+          <li xml:lang="zh-Hans-CN">修复了 LMS 和 Hunter-Lab 具有相同设置的缺陷</li>
+          <li xml:lang="ru">Исправлена ошибка, из-за которой LMS и Hunter-Lab имели одинаковые настройки</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2023-01-03">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Export the generated palettes from the palette dialog as a GIMP palette file</li>
+          <li xml:lang="ko">팔레트 창에서 만든 팔레트를 GIMP 팔레트 파일로 내보내기</li>
+          <li xml:lang="kk-Cyrl">Жасалған палитраларды палитра сұхбат терезесінен GIMP палитра файлы ретінде экспорттау</li>
+          <li xml:lang="kw">Esporthya an liwvord dinythys a'n fenester liwvord avel unn restren liwvord GIMP</li>
+          <li xml:lang="vi">Xuất bảng màu được tạo từ hộp thoại bảng màu dưới dạng tệp bảng màu GIMP</li>
+          <li xml:lang="ar">صدِّر لوحات الألوان المولَّدة من حواريَّة لوحة الألوان كملف لوحة ألوان جمب</li>
+          <li xml:lang="bn">প্যালেট ডায়ালগ থেকে জেনারেট করা প্যালেটগুলিকে GIMP প্যালেট ফাইল হিসেবে রপ্তানি করুন</li>
+          <li xml:lang="zh-Hans-CN">支持从色板对话框将生成的色板导出为 GIMP 色板文件</li>
+          <li xml:lang="ru">Экспорт сгенерированные палитры из диалогового окна «Палитра в файл палитры GIMP</li>
+          <li>A .doap file to describe the project </li>
+          <li xml:lang="ko">프로젝트를 설명하기 위한 .doap 파일</li>
+          <li xml:lang="kk-Cyrl">Жобаны сипаттауға арналған .doap файлы</li>
+          <li xml:lang="kw">Unn restren .doap dhe deskrifa an ragdres</li>
+          <li xml:lang="vi">Tệp .doap để mô tả dự án</li>
+          <li xml:lang="ar">ملف .doap لوصف المشروع</li>
+          <li xml:lang="bn">প্রকল্পটি বর্ণনা করার জন্য একটি .doap ফাইল</li>
+          <li xml:lang="zh-Hans-CN">描述该工程的 .doap 文件</li>
+          <li xml:lang="ru">Файл .doap для описания проекта</li>
+          <li>Show a placeholder page when no color is picked</li>
+          <li xml:lang="ko">색상 미선택 시 보기 페이지 표시</li>
+          <li xml:lang="kk-Cyrl">Ешбір түс таңдалмағанда орын толтырғыш бетін көрсету</li>
+          <li xml:lang="kw">Diskwedhes unn folen wolkom mar kolor vyth yw kuntelys</li>
+          <li xml:lang="vi">Hiển thị trang placeholder khi không có màu được chọn</li>
+          <li xml:lang="ar">عرض صفحة نائبة عند عدم انتقاء أي لون</li>
+          <li xml:lang="bn">যখন কোনও রঙ নির্বাচন করা না হয় তখন একটি স্থানধারক পৃষ্ঠা দেখান</li>
+          <li xml:lang="zh-Hans-CN">未拾取颜色时显示占位页面</li>
+          <li xml:lang="ru">Показывать страницу-заполнитель, если цвет не выбран</li>
+          <li>LMS color space can now be shown</li>
+          <li xml:lang="ko">LMS 색공간 표시 가능</li>
+          <li xml:lang="kk-Cyrl">Енді LMS түс кеңістігі көрсетіле алады</li>
+          <li xml:lang="kw">Efander kolor LMS gallos lemmyn bos diskwedhys</li>
+          <li xml:lang="vi">Không gian màu LMS giờ có thể được hiển thị</li>
+          <li xml:lang="ar">يمكن الآن عرض فضاء الألوان LMS</li>
+          <li xml:lang="bn">LMS কালার স্পেস এখন দেখানো যাবে</li>
+          <li xml:lang="zh-Hans-CN">现在可以显示 LMS 色彩空间</li>
+          <li xml:lang="ru">Теперь можно отобразить цветовое пространство LMS</li>
+          <li>Convert to Hunter-Lab color space</li>
+          <li xml:lang="ko">Hunter-Lab 색공간으로 변환</li>
+          <li xml:lang="kk-Cyrl">Hunter-Lab түс кеңістігіне түрлендіру</li>
+          <li xml:lang="kw">Treylya dhe efander kolor Hunter-Lab</li>
+          <li xml:lang="vi">Chuyển đổi sang không gian màu Hunter-Lab</li>
+          <li xml:lang="ar">التحويل إلى فضاء الألوان Hunter-Lab</li>
+          <li xml:lang="bn">Hunter-Lab কালার স্পেসে রূপান্তর করুন</li>
+          <li xml:lang="zh-Hans-CN">支持转换为 Hunter-Lab 色彩空间</li>
+          <li xml:lang="ru">Преобразование в цветовое пространство Hunter-Lab</li>
+          <li>Customize color formats</li>
+          <li xml:lang="ko">색상 형식 커스터마이징</li>
+          <li xml:lang="kk-Cyrl">Түс пішімдерін реттеу</li>
+          <li xml:lang="kw">Personelhe furvasow kolors</li>
+          <li xml:lang="vi">Tùy chỉnh định dạng màu</li>
+          <li xml:lang="ar">خصِّص تنسيقات الألوان</li>
+          <li xml:lang="bn">রঙের ফর্ম্যাট কাস্টমাইজ করুন</li>
+          <li xml:lang="zh-Hans-CN">自定义颜色格式</li>
+          <li xml:lang="ru">Настройка цветовых форматов</li>
+        </ul>
+        <p>Changed:</p>
+        <p xml:lang="ko">변경됨:</p>
+        <p xml:lang="ka">შეცვლილი:</p>
+        <p xml:lang="kk-Cyrl">Өзгертілді:</p>
+        <p xml:lang="kw">Janjyas:</p>
+        <p xml:lang="vi">Đã thay đổi:</p>
+        <p xml:lang="ar">تم التغيير:</p>
+        <p xml:lang="bn">পরিবর্তিত:</p>
+        <p xml:lang="zh-Hans-CN">更改了：</p>
+        <p xml:lang="ru">Изменено:</p>
+        <ul>
+          <li>Fixed a bug where the illuminants were not fully shown</li>
+          <li xml:lang="ko">광원이 제대로 표시되지 않던 버그 수정</li>
+          <li xml:lang="kk-Cyrl">Жарықтандырғыштар толық көрсетілмеген қате түзетілді</li>
+          <li xml:lang="kw">Ewnhe unn kudyn pan an illuminansyow yw na diskwedhes yn leun</li>
+          <li xml:lang="vi">Sửa lỗi nơi các illuminant không được hiển thị đầy đủ</li>
+          <li xml:lang="ar">أُصلح خطأ حيث لم تكن الإضاءات تُعرض بالكامل</li>
+          <li xml:lang="bn">আলোকসজ্জা সম্পূর্ণরূপে প্রদর্শিত না হওয়া একটি বাগ সংশোধন করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">修复了未完整显示光照的缺陷</li>
+          <li xml:lang="ru">Исправлена ошибка, из-за которой источники освещения отображались не полностью</li>
+          <li>The names of the GNOME color palette are now available</li>
+          <li xml:lang="ko">GNOME 색상 팔레트 이름 사용 가능</li>
+          <li xml:lang="kk-Cyrl">Енді GNOME түс палитрасының атаулары қолжетімді</li>
+          <li xml:lang="kw">An henwyn a'n liwvord GNOME yw kavadow lemmyn</li>
+          <li xml:lang="vi">Tên của bảng màu GNOME giờ có sẵn</li>
+          <li xml:lang="ar">أسماء لوحة ألوان جنوم متاحة الآن</li>
+          <li xml:lang="bn">GNOME কালার প্যালেটের নামগুলি এখন উপলব্ধ</li>
+          <li xml:lang="zh-Hans-CN">GNOME 色板名称现在可用</li>
+          <li xml:lang="ru">Теперь доступны названия цветовой палитры GNOME</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.0" date="2022-10-20">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Options to show names of color (from w3c basic, extended and xkcd)</li>
+          <li xml:lang="ko">색상 이름을 표시하는 옵션 (W3C 기본, 확장 및 xkcd 기준)</li>
+          <li xml:lang="kk-Cyrl">Түс атауларын көрсету опциялары (w3c негізгі, кеңейтілген және xkcd-ден)</li>
+          <li xml:lang="kw">Dewisyow dhe diskwedhes henwyn kolor (a w3c elvennek, hirhes, ha xkcd)</li>
+          <li xml:lang="vi">Tùy chọn để hiển thị tên màu (từ w3c basic, extended và xkcd)</li>
+          <li xml:lang="ar">خيارات لإظهار أسماء الألوان (من w3c الأساسية والموسَّعة وxkcd)</li>
+          <li xml:lang="bn">রঙের নাম দেখানোর বিকল্প (w3c বেসিক, বর্ধিত এবং xkcd থেকে)</li>
+          <li xml:lang="zh-Hans-CN">显示颜色名称的选项（来自 w3c 基本、扩展和 xkcd）</li>
+          <li xml:lang="ru">Параметры отображения названий цветов (от w3c basic, extended и xkcd)</li>
+          <li>Change the color by typing a name in the name field</li>
+          <li xml:lang="ko">이름 필드에 입력하여 색상 변경</li>
+          <li xml:lang="kk-Cyrl">Атау өрісіне атауды енгізу арқылы түсті өзгерту</li>
+          <li xml:lang="kw">Chanjya an kolor erbynn ow jynnskrifa unn hanow y'n kist hanow</li>
+          <li xml:lang="vi">Thay đổi màu bằng cách nhập tên vào trường tên</li>
+          <li xml:lang="ar">غيِّر اللون بكتابة اسم في حقل الاسم</li>
+          <li xml:lang="bn">নাম ক্ষেত্রে একটি নাম লিখে রঙ পরিবর্তন করুন</li>
+          <li xml:lang="zh-Hans-CN">通过在名称区域输入名称来更改颜色</li>
+          <li xml:lang="ru">Изменение цвета, введя название в поле название</li>
+          <li>Palettes are now shown in the palette dialog, accessible by clicking on the large color button</li>
+          <li xml:lang="ko">이제 팔레트 대화 상자에 팔레트가 표시되며, 큰 색상 버튼을 클릭하면 접근할 수 있습니다</li>
+          <li xml:lang="kk-Cyrl">Палитралар енді үлкен түс батырмасын шерту арқылы қол жеткізуге болатын палитра сұхбат терезесінде көрсетіледі</li>
+          <li xml:lang="kw">Liwvordow yw diskwedhys lemmyn y'n fenester liwvord, hedhadow gans ow klyckya war'n boton bras kolor</li>
+          <li xml:lang="vi">Bảng màu giờ được hiển thị trong hộp thoại bảng màu, có thể truy cập bằng cách nhấp vào nút màu lớn</li>
+          <li xml:lang="ar">تُعرض لوحات الألوان الآن في مربّع حوار لوحة الألوان، ويمكن الوصول إليها بالضغط على زر اللون الكبير</li>
+          <li xml:lang="bn">প্যালেটগুলি এখন প্যালেট ডায়ালগে দেখানো হয়, যা বড় রঙের বাটনে ক্লিক করে অ্যাক্সেসযোগ্য</li>
+          <li xml:lang="zh-Hans-CN">色板现在显示于色板对话框，可通过点击颜色按钮来访问</li>
+          <li xml:lang="ru">Палитры теперь отображаются в диалоговом окне палитра, доступном при нажатии на большую цветовую кнопку</li>
+          <li>The App now uses the AdwAboutWindow</li>
+          <li xml:lang="ko">앱에서 이제 AdwAboutWindow를 사용합니다</li>
+          <li xml:lang="kk-Cyrl">Қолданба енді AdwAboutWindow пайдаланады</li>
+          <li xml:lang="kw">An app devnydhya lemmyn an AdwAboutWindow</li>
+          <li xml:lang="vi">Ứng dụng giờ sử dụng AdwAboutWindow</li>
+          <li xml:lang="ar">يستخدم التطبيق الآن AdwAboutWindow</li>
+          <li xml:lang="bn">অ্যাপটি এখন AdwAboutWindow ব্যবহার করে</li>
+          <li xml:lang="zh-Hans-CN">应用现在使用 AdwAboutWindow</li>
+          <li xml:lang="ru">Теперь приложение использует AdwAboutWindow</li>
+          <li>HSL does now support alpha values</li>
+          <li xml:lang="ko">HSL에서 이제 알파값 지원</li>
+          <li xml:lang="kk-Cyrl">HSL енді альфа мәндерін қолдайды</li>
+          <li xml:lang="kw">HSL skoodhya lemmyn niverow klerder</li>
+          <li xml:lang="vi">HSL giờ hỗ trợ giá trị alpha</li>
+          <li xml:lang="ar">يدعم HSL الآن قيم ألفا</li>
+          <li xml:lang="bn">HSL এখন আলফা মান সমর্থন করে</li>
+          <li xml:lang="zh-Hans-CN">HSL 现在支持透明值</li>
+          <li xml:lang="ru">HSL теперь поддерживает альфа-значения</li>
+          <li>HWB and CIELCh are now supported</li>
+          <li xml:lang="ko">HWB 및 CIELCh 지원 시작</li>
+          <li xml:lang="kk-Cyrl">Енді HWB және CIELCh қолдау көрсетіледі</li>
+          <li xml:lang="kw">HWB ha CIELCh yw skoodhys lemmyn</li>
+          <li xml:lang="vi">HWB và CIELCh giờ được hỗ trợ</li>
+          <li xml:lang="ar">HWB وCIELCh مدعومان الآن</li>
+          <li xml:lang="bn">HWB এবং CIELCh এখন সমর্থিত</li>
+          <li xml:lang="zh-Hans-CN">现在支持 HWB 和 CIELCh</li>
+          <li xml:lang="ru">Теперь поддерживаются HWB и CIELCh</li>
+          <li>CIE standard observer for CIELab and CIELCh</li>
+          <li xml:lang="ko">CIELab 및 CIELCh용 CIE 표준 관측자</li>
+          <li xml:lang="kk-Cyrl">CIELab және CIELCh үшін CIE стандартты бақылаушысы</li>
+          <li xml:lang="kw">Aspier savonek CIE rag CLIELab ha CIELCh</li>
+          <li xml:lang="vi">Quan sát viên tiêu chuẩn CIE cho CIELab và CIELCh</li>
+          <li xml:lang="ar">مراقب CIE القياسي لـ CIELab و CIELCh</li>
+          <li xml:lang="bn">CIELab এবং CIELCh এর জন্য CIE স্ট্যান্ডার্ড পর্যবেক্ষক</li>
+          <li xml:lang="zh-Hans-CN">用于 CIELab 和 CIELCh 的 CIE 标准观察者</li>
+          <li xml:lang="ru">Стандартный наблюдатель CIE для CIELab и CIELCh</li>
+          <li>Change CIE illuminants</li>
+          <li xml:lang="ko">CIE 광원 변경</li>
+          <li xml:lang="kk-Cyrl">CIE жарықтандырғыштарын өзгерту</li>
+          <li xml:lang="kw">Chanjya illuminantys CIE</li>
+          <li xml:lang="vi">Thay đổi illuminant CIE</li>
+          <li xml:lang="ar">غيِّر إضاءات CIE</li>
+          <li xml:lang="bn">CIE আলোকসজ্জা পরিবর্তন করুন</li>
+          <li xml:lang="zh-Hans-CN">更改 CIE 光照</li>
+          <li xml:lang="ru">Изменнеие источника освещения CIE</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2022-09-23">
+      <description translatable="no">
+        <p>Fixed a few bugs and added Dutch translations.</p>
+        <p xml:lang="ko">버그 수정 및 네덜란드어 번역을 추가했습니다.</p>
+        <p xml:lang="kk-Cyrl">Бірнеше қате түзетілді және голланд тіліндегі аудармалар қосылды.</p>
+        <p xml:lang="kw">Ewnhys nebes kudynnow ha addys treylyans Iseldiryek.</p>
+        <p xml:lang="vi">Sửa một vài lỗi và thêm bản dịch tiếng Hà Lan.</p>
+        <p xml:lang="ar">أُصلحت بعض الأخطاء وأُضيفت الترجمة الهولندية.</p>
+        <p xml:lang="bn">কিছু বাগ সংশোধন করা হয়েছে এবং ডাচ অনুবাদ যোগ করা হয়েছে।</p>
+        <p xml:lang="zh-Hans-CN">修复了一些缺陷并添加了荷兰语翻译。</p>
+        <p xml:lang="ru">Исправлено несколько ошибок и добавлены переводы на голландский язык.</p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2022-09-21">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Palettes, consisting of darker shades and lighter tints, are now generated from the currently picked color as well as the previous 3</li>
+          <li xml:lang="ko">어두운 색조와 밝은 색조로 구성된 팔레트는 이제 현재 선택된 색상과 이전 3개의 색상을 바탕으로 생성됨</li>
+          <li xml:lang="kk-Cyrl">Қою көлеңкелер мен ашық реңктерден тұратын палитралар енді ағымдағы таңдалған түстен, сондай-ақ алдыңғы 3 түстен жасалады</li>
+          <li xml:lang="kw">Liwvordow, konsystya a skeusliwyow du ha arliwyow gwynn, yw dinthys lemmyn dhyworth an kolor dewisys a-lemmyn hag an tri kyns</li>
+          <li xml:lang="vi">Bảng màu, gồm các sắc tối hơn và tông sáng hơn, giờ được tạo từ màu đang chọn cũng như 3 màu trước</li>
+          <li xml:lang="ar">تُولَّد الآن لوحات الألوان، والتي تتكوَّن من ظلال أغمق ودرجات أفتح، من اللون المنتقى حاليًا بالإضافة إلى الألوان الثلاثة السابقة</li>
+          <li xml:lang="bn">গাঢ় শেড এবং হালকা আভা দিয়ে গঠিত প্যালেটগুলি এখন বর্তমানে নির্বাচিত রঙ এবং পূর্ববর্তী ৩টি রঙ থেকে তৈরি করা হয়</li>
+          <li xml:lang="zh-Hans-CN">现在可从拾取的颜色生成由亮色和暗调组成的色板</li>
+          <li xml:lang="ru">Палитры, состоящие из темных и светлых оттенков, теперь создаются на основе текущего выбранного цвета, а также предыдущих 3-х оттенков</li>
+          <li>Change the order of the color formats by dragging and dropping them in the settings</li>
+          <li xml:lang="ko">설정에서 색상 형식을 드래그하여 정렬</li>
+          <li xml:lang="kk-Cyrl">Баптауларда түс пішімдерінің ретін сүйреп апару арқылы өзгертіңіз</li>
+          <li xml:lang="kw">Chanjya an aray a'n furvasow kolor gans draylys ha droppys y's y'n settyansow</li>
+          <li xml:lang="vi">Thay đổi thứ tự của định dạng màu bằng cách kéo và thả chúng trong cài đặt</li>
+          <li xml:lang="ar">غيِّر ترتيب تنسيقات الألوان بسحبها وإفلاتها في الإعدادات</li>
+          <li xml:lang="bn">সেটিংসে টেনে এনে ফেলে দিয়ে রঙের বিন্যাসের ক্রম পরিবর্তন করুন</li>
+          <li xml:lang="zh-Hans-CN">在设置中通过拖放更改颜色格式的显示顺序</li>
+          <li xml:lang="ru">Изменение порядока расположения цветовых форматов, перетаскивая их в настройках</li>
+          <li>The app has been translated into French by rene-coty</li>
+          <li xml:lang="ko">이 앱은 rene-coty에 의해 프랑스어로 번역되었습니다</li>
+          <li xml:lang="kk-Cyrl">rene-coty қолданбаны француз тіліне аударды</li>
+          <li xml:lang="kw">An app yw treylys yn Frynkek gans rene-coty</li>
+          <li xml:lang="vi">Ứng dụng đã được dịch sang tiếng Pháp bởi rene-coty</li>
+          <li xml:lang="ar">ترجم rene-coty التطبيق إلى الفرنسية</li>
+          <li xml:lang="bn">অ্যাপটি rene-coty দ্বারা ফরাসি ভাষায় অনুবাদ করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">应用已由 rene-coty 翻译为法语</li>
+          <li xml:lang="ru">Приложение было переведено на французский язык пользователем rene-coty</li>
+          <li>A German translation has been added</li>
+          <li xml:lang="ko">독일어 번역 추가</li>
+          <li xml:lang="kk-Cyrl">Неміс тіліндегі аударма қосылды</li>
+          <li xml:lang="kw">Unn treylyans Almaynek yw addys</li>
+          <li xml:lang="vi">Bản dịch tiếng Đức đã được thêm</li>
+          <li xml:lang="ar">أُضيفت ترجمة ألمانية</li>
+          <li xml:lang="bn">একটি জার্মান অনুবাদ যোগ করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">添加了德语翻译</li>
+          <li xml:lang="ru">Был добавлен перевод на немецкий язык</li>
+          <li>Adjusted some strings to be easier to understand</li>
+          <li xml:lang="ko">몇 가지 문자열을 이해하기 쉽도록 수정</li>
+          <li xml:lang="kk-Cyrl">Түсінуге оңай болуы үшін кейбір жолдар түзетілді</li>
+          <li xml:lang="kw">Chanjys nebes lavarow rag konvedhes esya</li>
+          <li xml:lang="vi">Điều chỉnh một số chuỗi để dễ hiểu hơn</li>
+          <li xml:lang="ar">عُدِّلت بعض النصوص لتكون أسهل في الفهم</li>
+          <li xml:lang="bn">সহজে বোঝার জন্য কিছু স্ট্রিং সমন্বয় করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">调整了一些字符串使更易于理解</li>
+          <li xml:lang="ru">Скорректированы некоторые строки, чтобы их было легче понять</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2022-09-08">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Issue and feature-request templates</li>
+          <li xml:lang="ko">이슈 및 기능 제안 템플릿</li>
+          <li xml:lang="kk-Cyrl">Мәселелер мен мүмкіндіктерге сұраныс үлгілері</li>
+          <li xml:lang="kw">Ensampelys rag kudynnow ha govynnow nas</li>
+          <li xml:lang="vi">Mẫu yêu cầu vấn đề và tính năng</li>
+          <li xml:lang="ar">قوالب المشاكل وطلبات المزايا</li>
+          <li xml:lang="bn">ইস্যু এবং বৈশিষ্ট্য-অনুরোধ টেমপ্লেট</li>
+          <li xml:lang="zh-Hans-CN">议题和特性请求模板</li>
+          <li xml:lang="ru">Шаблоны задач и запросов функций</li>
+          <li>Change the color using hex values in the hex field</li>
+          <li xml:lang="ko">16진수 입력란에 16진수 값을 입력하여 색상을 변경하세요</li>
+          <li xml:lang="kk-Cyrl">Hex өрісіндегі hex мәндерін пайдаланып түсті өзгерту</li>
+          <li xml:lang="kw">Chanjya an kolor gans niverow hex y'n ynworrans hex</li>
+          <li xml:lang="vi">Thay đổi màu bằng cách sử dụng giá trị hex trong trường hex</li>
+          <li xml:lang="ar">غيِّر اللون باستخدام قيم hex في حقل hex</li>
+          <li xml:lang="bn">হেক্স ক্ষেত্রে হেক্স মান ব্যবহার করে রঙ পরিবর্তন করুন</li>
+          <li xml:lang="zh-Hans-CN">在 HEX 区域中使用 16 进制数值更改颜色</li>
+          <li xml:lang="ru">Измените цвет, используя шестнадцатеричные значения в шестнадцатеричном поле</li>
+          <li>Previous colors are now visible in the history list</li>
+          <li xml:lang="ko">이전 색상은 기록에서 확인할 수 있습니다</li>
+          <li xml:lang="kk-Cyrl">Алдыңғы түстер енді тарих тізімінде көрінеді</li>
+          <li xml:lang="kw">Kolors kyns yw gweladow lemmyn y'n rol istori</li>
+          <li xml:lang="vi">Màu trước giờ hiển thị trong danh sách lịch sử</li>
+          <li xml:lang="ar">الألوان السابقة مرئية الآن في قائمة التأريخ</li>
+          <li xml:lang="bn">পূর্ববর্তী রঙগুলি এখন ইতিহাসের তালিকায় দৃশ্যমান</li>
+          <li xml:lang="zh-Hans-CN">之前的颜色现在于历史列表中可见</li>
+          <li xml:lang="ru">Предыдущие цвета теперь отображаются в списке истории</li>
+          <li>Disable unwanted color models</li>
+          <li xml:lang="ko">원하지 않는 색상 모델 비활성화</li>
+          <li xml:lang="kk-Cyrl">Қажет емес түс модельдерін сөндіру</li>
+          <li xml:lang="kw">Ungallosegi systemow kolor anmynnesys</li>
+          <li xml:lang="vi">Tắt các mô hình màu không mong muốn</li>
+          <li xml:lang="ar">عطِّل نماذج الألوان غير المرغوب فيها</li>
+          <li xml:lang="bn">অবাঞ্ছিত রঙের মডেলগুলি অক্ষম করুন</li>
+          <li xml:lang="zh-Hans-CN">禁用不需要的颜色模型</li>
+          <li xml:lang="ru">Отключите нежелательные цветовые модели</li>
+          <li>Colors can now be shown as XYZ or CIELAB format</li>
+          <li xml:lang="ko">색상을 이제 XYZ 및 CIELAB 형식으로 표현 가능</li>
+          <li xml:lang="kk-Cyrl">Түстерді енді XYZ немесе CIELAB пішімінде көрсетуге болады</li>
+          <li xml:lang="kw">Kolors gallos lemmyn bos diskwedhes avel furvas XYZ po CIELAB</li>
+          <li xml:lang="vi">Màu giờ có thể được hiển thị dưới dạng XYZ hoặc CIELAB</li>
+          <li xml:lang="ar">يمكن الآن عرض الألوان بتنسيق XYZ أو CIELAB</li>
+          <li xml:lang="bn">রঙগুলি এখন XYZ বা CIELAB ফর্ম্যাটে দেখানো যাবে</li>
+          <li xml:lang="zh-Hans-CN">颜色现在可显示为 XYZ 或 CIELab 格式</li>
+          <li xml:lang="ru">Цвета теперь можно отображать в формате XYZ или CIELAB</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2022-08-28">
+      <description translatable="no">
+        <p>Added:</p>
+        <p xml:lang="ko">추가됨:</p>
+        <p xml:lang="ka">დამატებულია:</p>
+        <p xml:lang="kk-Cyrl">Қосылды:</p>
+        <p xml:lang="kw">Keworrys:</p>
+        <p xml:lang="vi">Đã thêm:</p>
+        <p xml:lang="ar">أُضيف:</p>
+        <p xml:lang="bn">যোগ করা হয়েছে:</p>
+        <p xml:lang="zh-Hans-CN">添加了：</p>
+        <p xml:lang="ru">Добавлено:</p>
+        <ul>
+          <li>Basic UI</li>
+          <li xml:lang="ko">기본 UI</li>
+          <li xml:lang="kk-Cyrl">Негізгі интерфейс</li>
+          <li xml:lang="kw">Ynterfas Selvenel</li>
+          <li xml:lang="vi">UI cơ bản</li>
+          <li xml:lang="ar">واجهة مستخدم أساسية</li>
+          <li xml:lang="bn">প্রাথমিক UI</li>
+          <li xml:lang="zh-Hans-CN">基础界面</li>
+          <li xml:lang="ru">Базовый пользовательский интерфейс</li>
+          <li>Pick a color using the color picker button</li>
+          <li xml:lang="ko">색상 선택 버튼으로 색상 선택</li>
+          <li xml:lang="kk-Cyrl">Түс таңдаушы батырмасын пайдаланып түсті таңдау</li>
+          <li xml:lang="kw">Dewis unn kolor gans an boton kunteller kolor</li>
+          <li xml:lang="vi">Chọn một màu bằng nút trình chọn màu</li>
+          <li xml:lang="ar">انتقِ لونًا باستخدام زر منتقي الألوان</li>
+          <li xml:lang="bn">কালার পিকার বাটন ব্যবহার করে একটি রঙ বেছে নিন</li>
+          <li xml:lang="zh-Hans-CN">使用颜色拾取器按钮拾取颜色</li>
+          <li xml:lang="ru">Выбор цвета с помощью кнопки выбора цвета</li>
+          <li>Copy the color in different color models</li>
+          <li xml:lang="ko">다양한 색상 모델로 색상 복사</li>
+          <li xml:lang="kk-Cyrl">Түсті әртүрлі түс модельдерінде көшіру</li>
+          <li xml:lang="kw">Kopia an kolor yn systemow kolor dyffrans</li>
+          <li xml:lang="vi">Sao chép màu ở các mô hình màu khác nhau</li>
+          <li xml:lang="ar">انسخ اللون في نماذج ألوان مختلفة</li>
+          <li xml:lang="bn">বিভিন্ন রঙের মডেলে রঙটি অনুলিপি করুন</li>
+          <li xml:lang="zh-Hans-CN">以不同颜色模型复制颜色</li>
+          <li xml:lang="ru">Копирование цвета в разных цветовых моделях</li>
+          <li>Change the position of the alpha values in hex values</li>
+          <li xml:lang="ko">16진수 값으로 표시된 알파 값의 위치 변경</li>
+          <li xml:lang="kk-Cyrl">Hex мәндеріндегі альфа мәндерінің орнын өзгерту</li>
+          <li xml:lang="kw">Chanjya an le a'n niverow klerder yn niverow hex</li>
+          <li xml:lang="vi">Thay đổi vị trí của giá trị alpha trong giá trị hex</li>
+          <li xml:lang="ar">غيِّر موضع قيم ألفا في قيم hex</li>
+          <li xml:lang="bn">হেক্স মানের মধ্যে আলফা মানের অবস্থান পরিবর্তন করুন</li>
+          <li xml:lang="zh-Hans-CN">更改 16 进制数值中透明值的位置</li>
+          <li xml:lang="ru">Изменение положения буквенных значений в шестнадцатеричных значениях</li>
+          <li>Added License</li>
+          <li xml:lang="ko">라이선스 추가</li>
+          <li xml:lang="kk-Cyrl">Лицензия қосылды</li>
+          <li xml:lang="kw">Addys Kummyas</li>
+          <li xml:lang="vi">Đã thêm Giấy phép</li>
+          <li xml:lang="ar">أُضيفت الرخصة</li>
+          <li xml:lang="bn">লাইসেন্স যোগ করা হয়েছে</li>
+          <li xml:lang="zh-Hans-CN">添加了许可证</li>
+          <li xml:lang="ru">Добавлена лицензия</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <kudos>
+    <!--
+       GNOME Software kudos:
+    https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/kudos.md
+     -->
+    <kudo>SearchProvider</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>HiDpiIcon</kudo>
+  </kudos>
+  <translation type="gettext">eyedropper</translation>
+  <launchable type="desktop-id">com.github.finefindus.eyedropper.desktop</launchable>
+  <branding>
+    <color type="primary" scheme_preference="light">#78D9F7</color>
+    <color type="primary" scheme_preference="dark">#085367</color>
+  </branding>
+  <custom>
+    <value key="GnomeSoftware::key-colors">[(120, 217, 247)]</value>
+  </custom>
+</component>

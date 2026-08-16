@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.bluemancz.hyprmod</id>
+  <launchable type="desktop-id">io.github.bluemancz.hyprmod.desktop</launchable>
+
+  <name>HyprMod</name>
+  <summary>Native settings app for Hyprland</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <developer id="io.github.bluemancz">
+    <name>Ivo Šmerek</name>
+  </developer>
+
+  <update_contact>ivo97_AT_centrum.cz</update_contact>
+
+  <description>
+    <p>
+      HyprMod is a native GTK4/libadwaita settings app for Hyprland.
+      Every change applies instantly to the running compositor, and
+      your hand-crafted config stays untouched — HyprMod writes only
+      to its own managed config file.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Live preview — changes apply instantly, no reload needed</li>
+      <li>Monitor configuration with layout preview; VRR, HDR, and 10-bit detection</li>
+      <li>Bezier curve editor with draggable control points and live animation preview</li>
+      <li>Keybind editor with interactive key capture, including mouse-drag binds</li>
+      <li>Window rules and layer rules editors with live preview</li>
+      <li>Autostart and environment variable management</li>
+      <li>Pending Changes page — review every unsaved edit before saving</li>
+      <li>Cursor theme picker with live previews</li>
+      <li>Profiles — save, name, and switch between complete configurations</li>
+      <li>Config DNA — every profile gets a unique visual fingerprint</li>
+      <li>Global search across all options (Ctrl+F)</li>
+      <li>Undo with Ctrl+Z</li>
+    </ul>
+  </description>
+
+  <url type="homepage">https://github.com/BlueManCZ/hyprmod</url>
+  <url type="bugtracker">https://github.com/BlueManCZ/hyprmod/issues</url>
+  <url type="vcs-browser">https://github.com/BlueManCZ/hyprmod</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/data/screenshots/monitors.png</image>
+      <caption>Monitor configuration with multi-monitor layout preview</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/BlueManCZ/hyprmod/main/data/screenshots/curves.png</image>
+      <caption>Bezier curve editor with live animation preview</caption>
+    </screenshot>
+  </screenshots>
+
+  <categories>
+    <category>Settings</category>
+    <category>DesktopSettings</category>
+    <category>GTK</category>
+  </categories>
+
+  <keywords>
+    <keyword>hyprland</keyword>
+    <keyword>compositor</keyword>
+    <keyword>wayland</keyword>
+    <keyword>configuration</keyword>
+    <keyword>monitors</keyword>
+    <keyword>keybinds</keyword>
+  </keywords>
+
+  <releases>
+    <release version="0.4.0" date="2026-07-01">
+      <description>
+        <p>New input options, command-line profiles, and Lua migration fixes:</p>
+        <ul>
+          <li>Command-line profile switching: hyprmod profile apply/next/previous/list for keybinds and scripts</li>
+          <li>Multiple keyboard layouts: add, reorder, and edit input sources (layout plus variant)</li>
+          <li>Gestures page hides itself when there's no touchpad or touchscreen to drive it</li>
+          <li>Lua migration fixes for keybind modifiers, the global dispatcher, and workspace layoutopt rules</li>
+          <li>Monitor fixes: disabled outputs stay listed, re-enabling no longer overlaps or crashes the page</li>
+          <li>Refresh monitors no longer discards unsaved changes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.0" date="2026-05-25">
+      <description>
+        <p>Lua config support, new pages, and major fixes:</p>
+        <ul>
+          <li>Lua config support: read and edit hyprland.lua directly, with a "Migrate to Lua" wizard (Hyprland 0.55+)</li>
+          <li>Per-monitor "Identify by description" toggle for port-independent monitor configs</li>
+          <li>Advanced HDR controls: Color Management presets, SDR brightness/saturation, luminance sliders</li>
+          <li>Workspaces page: manage workspace rules with live preview and live IPC apply</li>
+          <li>Deprecation assistant: detect and migrate deprecated syntax with user confirmation and backups</li>
+          <li>Convenience installer (install.sh) and --install / --uninstall CLI flags</li>
+          <li>In-app bug reporting with prefilled GitHub issues</li>
+          <li>Per-monitor VRR control with "Use global" and corrected Off behavior</li>
+          <li>Named window and layer rules support</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2026-05-07">
+      <description>
+        <p>New configuration pages and UX improvements:</p>
+        <ul>
+          <li>Window Rules page — manage windowrule entries with a window picker and live preview</li>
+          <li>Layer Rules page — manage layerrule entries with curated presets and live preview</li>
+          <li>Autostart page — manage exec and exec-once entries with an app picker</li>
+          <li>Env Variables page — manage env entries with POSIX name validation</li>
+          <li>Pending Changes page — review every unsaved edit across the app in one place</li>
+          <li>Mouse-drag (bindm) keybinds with dispatcher, category, and preset support</li>
+          <li>Sidebar reorganized by task; Dwindle, Master, and Scrolling merged into a single Layouts page</li>
+          <li>Profiles page redesigned — active profile promoted to a hero card with the saved-profiles list below; cards show last-modified date</li>
+          <li>Saving keeps the active profile in sync automatically</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-04-21">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+
+  <provides>
+    <binary>hyprmod</binary>
+  </provides>
+
+  <content_rating type="oars-1.1" />
+
+  <branding>
+    <color type="primary" scheme_preference="light">#1a5fb4</color>
+    <color type="primary" scheme_preference="dark">#99c1f1</color>
+  </branding>
+
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+</component>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Network;P2P;Qt;
+Exec=torrent-file-editor %f
+GenericName=Torrent File Editor
+Icon=io.github.torrent_file_editor.Torrent-file-editor
+MimeType=application/x-bittorrent;
+Terminal=false
+Type=Application
+StartupNotify=false
+StartupWMClass=torrent-file-editor
+
+Name=Torrent File Editor
+Comment=Edit and create torrent files

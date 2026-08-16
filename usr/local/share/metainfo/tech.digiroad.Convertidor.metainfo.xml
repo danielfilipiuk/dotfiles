@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>tech.digiroad.Convertidor</id>
+  <name>Convertidor</name>
+  <name xml:lang="ru">Convertidor</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <summary>Converting units of measurement</summary>
+  <summary xml:lang="ru">Преобразование единиц измерения</summary>
+  <developer id="tech.digiroad">
+    <name>Golodnikov Sergey</name>
+    <name xml:lang="ru">Голодников Сергей</name>
+  </developer>
+  <description>
+    <p>Convertidor is a handy and high precision application for converting units of measurement.</p>
+    <p xml:lang="ru">Convertidor - это удобное и высокоточное приложение для преобразования единиц измерения.</p>
+    <p>Features:</p>
+    <p xml:lang="ru">Особенности:</p>
+    <ul>
+      <li>Conversion of 300+ units of measurement.</li>
+      <li xml:lang="ru">Поддерживает более 300 различных единиц измерения.</li>
+      <li>Instant and accurate (synchronous) unit conversion.</li>
+      <li xml:lang="ru">Мгновенное (синхронное) и точное преобразование.</li>
+      <li>Control of calculation accuracy.</li>
+      <li xml:lang="ru">Контроль точности вычислений.</li>
+      <li>Intuitive and user-friendly interface.</li>
+      <li xml:lang="ru">Интуитивно понятный и удобный интерфейс.</li>
+      <li>Tips for units and constants.</li>
+      <li xml:lang="ru">Подсказки для единиц измерения и констант.</li>
+    </ul>
+  </description>
+  <url type="homepage">https://github.com/GS90/Convertidor</url>
+  <url type="vcs-browser">https://github.com/GS90/Convertidor</url>
+  <url type="bugtracker">https://github.com/GS90/Convertidor/issues</url>
+  <url type="help">https://digiroad.tech/en/projects/convertidor</url>
+  <url type="contact">https://digiroad.tech/en/main</url>
+  <translation type="gettext">convertidor</translation>
+  <launchable type="desktop-id">tech.digiroad.Convertidor.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#f6f5f4</color>
+    <color type="primary" scheme_preference="dark">#77767b</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/GS90/Convertidor/refs/heads/main/data/screenshots/light.png</image>
+      <caption>Convertidor in light mode</caption>
+      <caption xml:lang="ru">Convertidor, светлая тема</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/GS90/Convertidor/refs/heads/main/data/screenshots/dark.png</image>
+      <caption>Convertidor in dark mode</caption>
+      <caption xml:lang="ru">Convertidor, тёмная тема</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.4.2" date="2026-04-10">
+      <description translate="no">
+        <ul>
+          <li>Added unit conversion for Frequency and Wavelength.</li>
+          <li>Other improvements and additions.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.4.0" date="2026-03-23">
+      <description translate="no">
+        <ul>
+          <li>Energy unit calculation fixed and improved.</li>
+          <li>Added hints (constants).</li>
+          <li>Improved user interface.</li>
+          <li>Update runtime.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.5" date="2026-03-02">
+      <description translate="no">
+        <p>Detect system color theme.</p>
+      </description>
+    </release>
+    <release version="1.3.4" date="2026-02-23">
+      <description translate="no">
+        <p>Temperature calculation: corrected and improved.</p>
+      </description>
+    </release>
+    <release version="1.3.2" date="2026-02-15">
+      <description translate="no">
+        <p>Fuel consumption: fixed and improved.</p>
+      </description>
+    </release>
+    <release version="1.3.1" date="2026-01-16">
+      <description translate="no">
+        <ul>
+          <li>Energy unit calculation fixed and improved.</li>
+          <li>Theme switching improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.0" date="2026-01-06">
+      <description translate="no">
+        <p>Added the ability to hide and display secondary derived units of measurement.</p>
+      </description>
+    </release>
+    <release version="1.2.4" date="2026-01-02">
+      <description translate="no">
+        <p>Various fixes and improvements.</p>
+      </description>
+    </release>
+    <release version="1.2.3" date="2025-12-27">
+      <description translate="no">
+        <ul>
+          <li>Minor improvements.</li>
+          <li>Translation update (Russian).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.2" date="2025-12-16">
+      <description translate="no">
+        <ul>
+          <li>Minor fixes.</li>
+          <li>Translation update (Russian).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.0" date="2025-10-26">
+      <description translate="no">
+        <p>Minor improvements.</p>
+      </description>
+    </release>
+    <release version="1.1.0" date="2025-10-12">
+      <description translate="no">
+        <p>In the new version, a rounding (quantize) feature has been added, and the default settings have been improved.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2025-10-05">
+      <description translate="no">
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

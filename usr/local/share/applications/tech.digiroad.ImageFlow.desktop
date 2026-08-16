@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name[it]=ImageFlow
+Name[ru]=ImageFlow
+Name=ImageFlow
+Exec=imageflow
+Icon=tech.digiroad.ImageFlow
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Video;Graphics;Utility
+Keywords[it]=video;convertitore;immagine;gif;webp
+Keywords[ru]=video;converter;image;gif;webp
+Keywords=video;converter;image;gif;webp
+StartupNotify=false
+DBusActivatable=true

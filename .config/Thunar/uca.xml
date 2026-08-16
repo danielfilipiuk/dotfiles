@@ -175,7 +175,7 @@
 </action>
 <action>
 	<icon>image-x-gif</icon>
-	<name>Resize to FHD size</name>
+	<name>Resize to FullHD size</name>
 	<submenu>image</submenu>
 	<unique-id>1774735011494997-1</unique-id>
 	<command>convert %F -resize 1920 %F-1920.jpg</command>
@@ -186,7 +186,7 @@
 </action>
 <action>
 	<icon>image-x-svg+xml</icon>
-	<name>Convert to SVGZ</name>
+	<name>SVG =&gt; SVGZ</name>
 	<submenu>image</submenu>
 	<unique-id>1726239558299147-1</unique-id>
 	<command>inkscape %N --export-type=svgz</command>
@@ -244,5 +244,16 @@
 	<range>*</range>
 	<patterns>*</patterns>
 	<other-files/>
+</action>
+<action>
+	<icon>image-x-svg+xml</icon>
+	<name>IMAGE =&gt; SVG</name>
+	<submenu>image</submenu>
+	<unique-id>1786858337548610-1</unique-id>
+	<command>/home/daniel/bin/thunar_custom_action_imagetosvg.sh %F</command>
+	<description>convert JPG or PNG to SVG</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
 </action>
 </actions>

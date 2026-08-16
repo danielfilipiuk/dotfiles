@@ -1,0 +1,143 @@
+#!/bin/bash
+
+UTIMER="utimer"
+BELL="/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga"
+
+# ------------------------------------------------------------
+# Select mode
+# ------------------------------------------------------------
+
+MODE=$(zenity --list \
+    --title="µTimer" \
+    --text="Choose mode:" \
+    --radiolist \
+    --column="" \
+    --column="Mode" \
+    TRUE "Countdown" \
+    FALSE "Timer" \
+    --width=350 \
+    --height=220)
+
+[[ $? -ne 0 ]] && exit 1
+
+
+# ------------------------------------------------------------
+# Duration
+# ------------------------------------------------------------
+
+TIME=$(zenity --entry \
+    --title="µTimer" \
+    --text="Enter duration:" \
+    --entry-text="5m" \
+    --width=350)
+
+[[ $? -ne 0 ]] && exit 1
+
+
+# ------------------------------------------------------------
+# Validate duration
+# ------------------------------------------------------------
+
+if [[ ! "$TIME" =~ ^([0-9]+(ms|s|m|h|d))+$ ]]; then
+    zenity --error \
+        --title="µTimer" \
+        --text="Invalid duration.
+
+Examples:
+30s
+5m
+1h30m
+2d5h"
+
+    exit 1
+fi
+
+
+# ------------------------------------------------------------
+# Start µTimer
+# ------------------------------------------------------------
+
+if [[ "$MODE" == "Countdown" ]]; then
+    "$UTIMER" --countdown="$TIME" --quit-with-success &
+#	"$UTIMER" --countdown="$TIME" >"$OUTPUT" 2>&1 &
+else
+    "$UTIMER" --timer="$TIME" --quit-with-success &
+#"$UTIMER" --timer="$TIME" >"$OUTPUT" 2>&1 &
+fi
+
+PID=$!
+
+
+# ------------------------------------------------------------
+# Wait for µTimer
+#
+# Zenity's progress dialog is just our visual "running" window.
+# ------------------------------------------------------------
+
+(
+    while kill -0 "$PID" 2>/dev/null; do
+        echo "# $MODE — $TIME"
+        sleep 0.2
+    done
+) | zenity --progress \
+    --title="µTimer — $MODE" \
+    --text="Running…" \
+    --pulsate \
+    --auto-close \
+    --cancel-label="Stop" \
+    --width=400 &
+
+ZENITY_PID=$!
+
+
+# ------------------------------------------------------------
+# Wait for either process
+# ------------------------------------------------------------
+
+while kill -0 "$PID" 2>/dev/null; do
+
+    if ! kill -0 "$ZENITY_PID" 2>/dev/null; then
+        kill "$PID" 2>/dev/null
+        wait "$PID"
+        STATUS=1
+        break
+    fi
+
+    sleep 0.2
+done
+
+if [[ -z "$STATUS" ]]; then
+    wait "$PID"
+    STATUS=$?
+fi
+
+wait "$ZENITY_PID" 2>/dev/null
+
+
+# ------------------------------------------------------------
+# Result
+# ------------------------------------------------------------
+
+if [[ "$STATUS" -eq 0 ]]; then
+
+    notify-send \
+        "µTimer" \
+        "$MODE finished: $TIME"
+
+    pw-play "$BELL"
+
+elif [[ "$STATUS" -eq 1 ]]; then
+
+    notify-send \
+        "µTimer" \
+        "utimer stopped"
+
+else
+
+    notify-send \
+        "µTimer" \
+        "utimer exited with status $STATUS"
+
+fi
+
+exit "$STATUS"

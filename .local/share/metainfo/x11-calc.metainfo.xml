@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2025 macmpi/mike632t -->
+
+<component type="desktop-application">
+  <id>io.github.mike632t.x11-calc</id>
+
+  <name>RPN Calculator</name>
+  <summary>HP Calculator Simulator</summary>
+
+  <developer id="mike632t.wordpress.com">
+  <name>mike632t</name>
+  </developer>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>Includes emulators for the HP 35, HP 80, HP 45, HP 70, HP 55, HP 21, HP 22, HP 25, HP 25C,  HP 27,  HP 29C, HP 31E, HP 32E, HP 33E,  HP 33C,  HP 34C,  HP 37E, HP 38C, HP 38E, HP10, HP 67, HP 10C, HP 11C, HP 12C, HP 15C, and HP 16C.</p>
+    <p>If GTK is available then on models with continuous memory or a card reader, right-clicking on the application window will open a dialog window allowing the user to load a saved program in 'run' mode or save it in 'prgm' mode.</p>
+    <p>The default model can be changed either by right-clicking on desktop icon, or if this isn't supported on your system you can access the configuration dialog from a terminal window using the command <code>flatpak run io.github.mike632t.x11-calc --setup</code></p>
+    <p><em>Note - The following fonts should be installed <code>xfonts-base</code> (Debian/Ubuntu), <code>xorg-x11-fonts-base</code> or <code>xorg-x11-fonts-misc</code> (Fedora), <code>font-misc-misc</code> (Gentoo).</em> </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.mike632t.x11-calc.desktop</launchable>
+  <content_rating type="oars-1.1" />
+
+  <url type="homepage">https://github.com/mike632t/x11-calc</url>
+  <url type="faq">https://github.com/mike632t/x11-calc/blob/stable/FAQ.md</url>
+  <url type="bugtracker">https://github.com/mike632t/x11-calc/issues</url>
+  <url type="vcs-browser">https://github.com/mike632t/x11-calc</url>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#729fcf</color>
+    <color type="primary" scheme_preference="dark">#204a87</color>
+  </branding>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/v0.14.0147/img/x11-calc-21-gnome-screenshot.png</image>
+      <caption>HP 21</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/v0.14.0147/img/x11-calc-25c-gnome-screenshot.png</image>
+      <caption>HP 25c</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/v0.14.0147/img/x11-calc-33c-gnome-screenshot.png</image>
+      <caption>HP 33c</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/v0.14.0147/img/x11-calc-15c-gnome-screenshot.png</image>
+      <caption>HP 15c</caption>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+  <release version="0.26.0251" date="2026-03-20">
+    <description>
+      <p>Improvements to the user interface to allow users to resize the window and copy contents of the display using Ctrl-C</p>
+    </description>
+  </release>
+  <release version="0.23.0226" date="2025-12-23">
+    <description>
+      <p>Fixed bug that caused the geometry to be ignored if value was zero</p>
+    </description>
+  </release>
+  <release version="0.23.0224" date="2025-12-14">
+    <description>
+      <p>Updated and improved HP67</p>
+    </description>
+  </release>
+  <release version="0.19.0199" date="2025-10-26">
+    <description>
+      <p>Implemented HP67 card reader</p>
+    </description>
+  </release>
+  <release version="0.19.0194" date="2025-10-12">
+    <description>
+      <p>Added HP55</p>
+    </description>
+  </release>
+  <release version="0.18.0188" date="2025-09-05">
+    <description>
+      <p>Implemented file selection dialog using GTK</p>
+    </description>
+  </release>
+  <release version="0.18.0187" date="2025-09-03">
+    <description>
+      <p>Users without a NumLock key can now enable the numeric keypad using the <code>--numlock'</code> option</p>
+    </description>
+  </release>
+  <release version="0.17.0181" date="2025-08-17">
+    <description>
+      <p>Improved display updates</p>
+    </description>
+  </release>
+  <release version="0.16.172" date="2025-07-08">
+    <description>
+      <p>Added HP10</p>
+    </description>
+  </release>
+  <release version="0.15.171" date="2025-07-07">
+    <description>
+      <p>Fixed regression bug that affected HP12C</p>
+    </description>
+  </release>
+  <release version="0.15.162" date="2025-06-30">
+    <description>
+      <p>Added support for European display formats for SPICE series</p>
+    </description>
+  </release>  <release version="0.15.161" date="2025-06-26">
+    <description>
+      <p>Fixed storage overflow error display</p>
+    </description>
+  </release>
+  <release version="0.14.156" date="2024-07-24">
+    <description>
+      <p>Updated release meta data</p>
+    </description>
+  </release>
+  <release version="0.14.0155" date="2024-07-23">
+    <description>
+      <p>Application now sets the icon</p>
+    </description>
+  </release>
+  <release version="0.14.0154" date="2024-05-06">
+    <description>
+      <p>Another bug fix and addition of shortcut keys for 'A-E' on 15C and 11C</p>
+    </description>
+  </release>
+  <release version="0.14.0148" date="2024-04-19">
+    <description>
+      <p>Minor bug fix</p>
+    </description>
+  </release>
+  <release version="0.14.0147" date="2024-04-14">
+    <description>
+      <p>Firmware support and zooming enhancements</p>
+      <ul>
+          <li>Allow to increase calculator size with <code>--zoom [0-4]</code> parameter</li>
+          <li>Embed missing firmware (separate ROM files no longer required)</li>
+      </ul>
+    </description>
+  </release>
+  <release version="0.12.0134" date="2024-03-10">
+    <description>
+      <p>Improve flathub layout, icon and shortcuts</p>
+    </description>
+  </release>
+  <release version="0.12.0133" date="2024-03-06">
+    <description>
+      <p>Initial release</p>
+    </description>
+  </release>
+</releases>
+
+</component>

@@ -350,3 +350,18 @@ hl.window_rule({
 	 float = true,
 	 persistent_size = true,	   
 })
+
+hl.window_rule({
+	 name = "µTimer",
+	 match = {title = "µTimer"},
+	 float = true,
+	 size = "540 400",	   
+})
+
+
+hl.window_rule({
+	 name = "ristretto",
+	 match = {class = "org.xfce.ristretto"},
+	 float = true,
+	 	 
+})

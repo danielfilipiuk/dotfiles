@@ -1,0 +1,353 @@
+#!/bin/sh
+#
+#  x11-calc.sh
+#
+#  Copyright(C) 2024 - macmpi / MT
+#
+#  Simple launcher to start the default emulator and allow a user to select
+#  which one should be used by default (using setup option).
+#
+#  This  program is free software: you can redistribute it and/or modify it
+#  under  the terms of the GNU General Public License as published  by  the
+#  Free  Software Foundation, either version 3 of the License, or (at  your
+#  option) any later version.
+#
+#  This  program  is distributed in the hope that it will  be  useful,  but
+#  WITHOUT   ANY   WARRANTY;   without even   the   implied   warranty   of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+#  Public License for more details.
+#
+#  You  should have received a copy of the GNU General Public License along
+#  with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#  28 Feb 24         - Initial version - macmpi / MT
+#  29 Feb 24         - Updated  config()  to use a form allowing the  model
+#                      number and command line options to be entered at the
+#                      same time...
+#                    - If no model is defined run setup(), this way if  the
+#                      doesn't select a model they will be asked again next
+#                      time the launcher runs - MT
+#  01 Mar 24         - Allow the model model name to be passed as the first
+#                      command-line parameter. Any other parameters will be
+#                      passed through to the application - macmpi
+#                    - Handle any errors that occour when an invalid option
+#                      or parameter is passed on the command line - MT
+#  02 Mar 24         - Allow  OPTIONS  paths  expansion  and improve zenity
+#                      detection and fallback for error messages - macmpi
+#                    - Prefix model names with 'hp' - MT
+#                    - Updated to work on Tru64 UNIX - MT
+#  03 Mar 24         - Changed to use a drop down selection rather then the
+#                      original list box - MT
+#                    - Changed  default back to a list box, due to an issue
+#                      with the way zenity displays dropdown dialogs - MT
+#                    - Model selection dialog box  style may be selected in
+#                      the configuration file - MT
+#                    - Tidied up default configuration file, and added  the
+#                      script name to all console messages, enabled the use
+#                      of 'nano' if it is installed - MT
+#                    - Reformatted error messages so they will work on both
+#                      the console and message box - MT
+#                    - Error messages always show on console - MT
+#  04 Mar 24         - Remove  OPTIONS  paths  expansion (requires absolute
+#                      paths) and simplify default .rom path logic - macmpi
+#                    - Use hidden files in $HOME if $XDG_DATA_HOME does not
+#                      exist - MT
+#                    - Renamed x11-calc.in (script source file) - macmpi
+#  05 Mar 24         - Avoid eval (risks on variables assignments) - macmpi
+#  09 Mar 24         - Can launch a specific emulator from the command line
+#                      using either hp<model_no> or just <model_no> (aligns
+#                      behaviour with makefile) - MT
+#  16 Mar 24         - Better -r option handling & give error clue - macmpi
+#  18 Mar 24         - No need to load ROM for voyager models - MT
+#  19 Mar 24         - Dynamically split models list in conf file -- macmpi
+#  20 Mar 24         - Trim spaces before printing command line - MT
+#  23 Mar 24         - Updated some error messages and trimmed extra spaces
+#                      from the console output - MT
+#  01 Apr 24         - _models list to be filled by makefile - macmpi
+#  24 Apr 24         - Made help dialog wider and suppressed echoing of the
+#                      command - MT
+#  07 Jul 25         - Modified changed '_f_conf' to '_configfile' - MT
+#                    - Additional command line options are always passed to
+#                      the emulator (even when running setup) - MT
+#  23 Oct 25         - Adds a symbolic link to a shared library of programs
+#                      in /usr/share/x11-calc/prg if it exists - macmpi/MT
+#  24 Oct 25         - Checks for broken symbolic links - MT
+#  25 Oct 25         - Tidied up comments - MT
+#
+
+SUCCESS=0
+ENOENT=2
+EINVAL=22
+ENODATA=61
+ENOACC=126  # Permission denied (not official)
+ENOCMD=127  # Executable file not found (not official)
+ENOFNT=192  # No font (not official)
+
+LIBRARY="lib"  # Name of symbolic link to the shared program library
+
+_models="hp35|hp45|hp55|hp70|hp80|hp21|hp22|hp25|hp25c|hp27|hp29c|hp67|hp31e|hp32e|hp33e|hp33c|hp34c|hp37e|hp38e|hp38c|hp10c|hp11c|hp12c|hp15c|hp16c|hp10"
+
+
+#
+#  launch()
+#
+#  Launches the default emulator
+#
+
+_launch() {
+   [ -z "$MODEL" ] && exit 0
+   [ -n "$CMD_OPTS" ] && OPTIONS="$CMD_OPTS" # Allow command line to override options
+
+   MODEL="`echo "$MODEL" | sed 's/^hp//'`"
+   _emulator="`dirname "$0"`/x11-calc-$MODEL"
+
+   #echo "`basename $0`: Executing '`echo $_emulator $OPTIONS`'."
+
+   if [ -f "$_emulator" ]; then  # Check emulator exists (assume script is in the same directory)
+      "$_emulator" $OPTIONS
+   else
+      `exit $ENOCMD`
+   fi
+
+   _err=$?
+   case $_err in
+      # NOTE: The error messages may be displayed on a dialog box in  which
+      # case  the '*' characters will be replaced by newlines of printed on
+      # the console in which case they will be replaced by a space
+      $SUCCESS)
+         ;;
+      $EINVAL)
+         _errmsg="Invalid operand or parameter:**'$OPTIONS'"
+         ;;
+      $ENOFNT)  # Emulator couldn't load a font so try to suggest which package should be installed
+         _fonts="'xfonts-base' or equivalent"
+         _f_os_release="/etc/os-release"
+         grep -sq "freedesktop" "${_f_os_release}" && _f_os_release="/run/host/os-release"  #  Flatpak
+         grep -sqE "ubuntu|debian" "${_f_os_release}" && _fonts="'xfonts-base'"
+         grep -sq "fedora" "${_f_os_release}" && _fonts="'xorg-x11-fonts-base' or 'xorg-x11-fonts-misc'"
+         grep -sq "gentoo" "${_f_os_release}" && _fonts="'font-misc-misc'"
+         _errmsg="Please install missing fonts from:**$_fonts."
+         ;;
+      $ENOENT)
+         _errmsg="`echo "$OPTIONS" | awk -F '-r ' '{ print $2 }' | awk -F '-. ' '{ print $1 }'`"
+         _errmsg="Unable to open file:**'$_errmsg'**Please check that the file exists and you*can access it. Then specify the correct*path using the '-r' option."
+         ;;
+      $ENODATA)
+         _errmsg="Empty ROM file!"
+         ;;
+      $ENOACC)
+         _errmsg="Access denied."
+         ;;
+      $ENOCMD)
+         _errmsg="Emulator not found."
+         ;;
+      *)  # Something else went wrong!
+         _errmsg="An unhandled error occurred!"
+   esac
+
+   if [ -n "$_errmsg" ]; then
+      if _has_zenity; then
+         zenity --height=100 --width=400 --error --text="` echo "$_errmsg" | tr '*' '\n'`"  # Replace * by newline
+      fi
+      printf '%s\n' "`basename $0`: `echo "$_errmsg" | tr '*' ' ' | tr -s ' '`" >&2  # Replace * by a space and remove multiple spaces
+   fi
+
+   return $_err
+}
+
+
+#
+#  help()
+#
+
+_help() {
+   if _has_zenity; then
+      _launch | zenity --title="x11-calc Help" --text-info --font="courier" --height=320 --width=640  # Run the emulator using '--help' and redirect help text to zenity
+   else
+      _launch  # Just run the emulator using '--help'
+   fi
+}
+
+
+#
+#  config()
+#
+#  Presents a dialog box that allows the user to update the default options
+#
+#  Note: Depends on 'zenity'
+#
+
+_config (){
+   if [ "$DROPDOWN" ]
+   then
+      _selection="$(zenity --forms --title="x11-calc Setup" \
+         --text="Select model number" \
+         --add-combo="Model:" --combo-values=${_models} \
+         --add-entry="Options:" --ok-label="OK" \
+         --height=96 --width=256 2>/dev/null)"
+   else
+      _selection="$(zenity --forms --title="x11-calc Setup" \
+         --text="Select model number" \
+         --add-list="Model:" --list-values=${_models} \
+         --add-entry="Options:" --ok-label="OK" \
+         --width=256 2>/dev/null)"
+   fi
+
+   case $? in
+      0)
+         _tmpfile="$(mktemp)"
+         if [ "$DROPDOWN" ]  # The separator used by different forms is different!
+         then
+            sed "s|^MODEL=.*|MODEL=\"${_selection%|*}\"|" "$_configfile" > $_tmpfile
+            sed "s|^OPTIONS=.*|OPTIONS=\"${_selection#*|}\"|" $_tmpfile > "$_configfile"
+         else
+            sed "s|^MODEL=.*|MODEL=\"${_selection%,|*}\"|" "$_configfile" > $_tmpfile
+            sed "s|^OPTIONS=.*|OPTIONS=\"${_selection#*,|}\"|" $_tmpfile > "$_configfile"
+         fi
+         rm -f $_tmpfile
+         ;;
+      1)
+         exit 0 # User pressed cancel so just quit - don't attempt to launch the emulator
+         ;;
+      *)
+         echo "`basename $0`: An unexpected zenity error ($?) has occurred."
+      ;;
+   esac
+}
+
+
+#
+#  create_symlink()
+#
+#  Create a symbolic link to shared program library in the application data
+#  directory if none exists
+#
+
+_create_symlink() {
+   _link="${XDG_DATA_HOME}/x11-calc/$LIBRARY"
+   if ! ([ -e "$_link" ] || [ -L "$_link" ]); then  # Check NOTHING with the same name exists (even broken link)
+      [ -d /usr/share/x11-calc/prg ] && ln -s /usr/share/x11-calc/prg "$_link"
+      [ -d /app/share/x11-calc/prg ] && ln -s /app/share/x11-calc/prg "$_link"
+   fi
+}
+
+
+#
+#  create_config()
+#
+#  creates the configuration file in the application config directory
+#
+
+_create_config() {
+   ! _has_zenity && echo "`basename $0`: Did you know that installing 'zenity' will give you a graphical setup interface?"
+   mkdir -p "`dirname "${_configfile}"`"
+   cat <<-EOF >"$_configfile"
+#
+# Select which emulator to run by setting the MODEL to one
+# of the following:
+#
+EOF
+   echo "$_models" | sed 's/\(\([^|]*|\)\{8\}\)/\1*/g' | tr '*' '\n' | sed 's/^/# /' >>"$_configfile"
+   cat <<-EOF >>"$_configfile"
+
+MODEL=""
+OPTIONS=""
+
+#
+# To see a list of possible options define the default model above
+# and use: (eventual paths must be absolute)
+#
+# '$0 --help'
+#
+
+EOF
+}
+
+
+#
+#  setup()
+#
+#  Allows the user to update the default configuration in one of three ways
+#  depending on the features available.
+#
+
+_setup() {
+   if _has_zenity
+   then
+      _config
+   else
+      if command -v nano >/dev/null 2>&1
+      then
+         nano "$_configfile"
+      else
+         vi "$_configfile"
+      fi
+   fi
+   . "$_configfile"  # Reload modified settings from config file
+}
+
+
+#
+#  main()
+#
+
+command -v zenity >/dev/null 2>&1  # Tests if 'zenity' installed
+_zenity=$?  # Saves the result
+
+_has_zenity() { return "$_zenity"; }  # Defines a 'dummy' function that allows the saved result to be tested
+
+: "${XDG_CONFIG_HOME:="$HOME/.config"}"  # Define default path for XDG_CONFIG_HOME if not defined
+: "${XDG_DATA_HOME:="$HOME/.local/share"}"  # Define default path for XDG_DATA_HOME if not defined
+
+if [ -d "$XDG_DATA_HOME" ]  # Does XDG_DATA_HOME exist
+then
+   mkdir -p "${XDG_DATA_HOME}/x11-calc"  # If it does create the application specific data directory
+fi
+
+if [ -d "$XDG_CONFIG_HOME" ]  # Does XDG_CONFIG_HOME exist
+then
+   mkdir -p "${XDG_CONFIG_HOME}/x11-calc"  # If it does create an application specific config directory
+   _configfile="${XDG_CONFIG_HOME}/x11-calc/x11-calc.conf" # If it does use it
+else
+   _configfile="${HOME}/.x11-calc.conf"  # Otherwise use a hidden file in the home folder
+fi
+
+if [ ! -f "$_configfile" ]; then  # If the config file does not exist
+   _create_config  # Create it
+   _create_symlink  # and add a symbolic link to the shared program library in the application data directory
+fi
+
+echo "`basename $0`: Using '$_configfile'"
+. "$_configfile"  # Use configuration
+
+if [ -z "$MODEL" ]; then
+   echo "`basename $0`: Default model not defined - running '$0 --setup'"
+fi
+
+if echo "$1" | grep -qwE "$_models" || echo "hp$1" | grep -qwE "$_models"
+then
+   MODEL="$1"
+   shift
+   CMD_OPTS="$*"
+   _launch
+   exit
+fi
+
+case $1 in
+   --help)
+      [ -z "$MODEL" ] && _setup
+      CMD_OPTS="--help"
+      _help
+      ;;
+   --setup)
+      _setup
+      shift
+      CMD_OPTS="$*"
+      _launch
+      ;;
+   *)
+      [ -z "$MODEL" ] && _setup
+      CMD_OPTS="$*"
+      _launch
+      ;;
+esac

@@ -10,10 +10,10 @@ hl.window_rule({
 hl.window_rule({
 	 name = "Inkscape",
 	 match = {class = "org.inkscape.Inkscape"},
-	 float = true,
+--	 float = true,
 	 --maximize = true,
-	 content = "photo",
-	 monitor = "1",
+--	 content = "photo",
+--	 monitor = "1",
 })
 
 hl.window_rule({
@@ -219,9 +219,4 @@ hl.window_rule({
 })
 
 
-hl.window_rule({
-	 name = "ristretto",
-	 match = {class = "org.xfce.ristretto"},
-	 float = true,
-	 	 
-})
+

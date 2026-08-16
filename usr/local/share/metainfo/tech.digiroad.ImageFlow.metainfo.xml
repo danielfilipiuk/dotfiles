@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>tech.digiroad.ImageFlow</id>
+  <name>ImageFlow</name>
+  <name xml:lang="ru">ImageFlow</name>
+  <name xml:lang="it">ImageFlow</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <summary>Video to animated images</summary>
+  <summary xml:lang="ru">Преобразование видео в анимацию</summary>
+  <summary xml:lang="it">Video in immagini animate</summary>
+  <developer id="tech.digiroad">
+    <name>Golodnikov Sergey</name>
+    <name xml:lang="ru">Голодников Сергей</name>
+    <name xml:lang="it">Golodnikov Sergey</name>
+  </developer>
+  <description>
+    <p>This application is designed for converting videos into animated GIF and WebP images using the FFmpeg library.You can configure key parameters, such as the output image size, frame rate, applied filters (interpolation method, dithering mode), palette generation method, and the maximum number of colors.</p>
+    <p xml:lang="ru">Приложение предназначено для конвертации видео в анимированные изображения форматов GIF и WebP с использованием библиотеки FFmpeg. Оно предоставляет возможность настройки основных параметров, таких как разрешение конечного изображения, частота кадров, применяемые фильтры (метод интерполяции и режим дизеринга), способ создания палитры и максимальное количество её цветов.</p>
+    <p xml:lang="it">Questa applicazione è progettata per convertire i video in GIF animate e immagini WebP utilizzando la libreria FFmpeg. È possibile configurare parametri chiave,come la dimensione dell'immagine di output, la frequenza dei fotogrammi, i filtri applicati (metodo di interpolazione, modalità di dithering), metodo di generazione della tavolozza e numero massimo di colori.</p>
+    <p>Features:</p>
+    <p xml:lang="ru">Особенности:</p>
+    <p xml:lang="it">Caratteristiche:</p>
+    <ul>
+      <li>All conversion parameters can be configured.</li>
+      <li xml:lang="ru">Все параметры конвертации могут быть настроены.</li>
+      <li xml:lang="it">Tutti i parametri di conversione possono essere configurati.</li>
+      <li>Time range selection option.</li>
+      <li xml:lang="ru">Возможность выбора временного диапазона.</li>
+      <li xml:lang="it">Opzione di selezione dell'intervallo di tempo.</li>
+      <li>Preview of the result.</li>
+      <li xml:lang="ru">Предварительный просмотр результата.</li>
+      <li xml:lang="it">Anteprima del risultato.</li>
+      <li>Support for many formats.</li>
+      <li xml:lang="ru">Поддержка множества форматов.</li>
+      <li xml:lang="it">Supporto per molti formati.</li>
+      <li>Intuitive and user-friendly interface.</li>
+      <li xml:lang="ru">Интуитивно понятный и удобный интерфейс.</li>
+      <li xml:lang="it">Interfaccia intuitiva e facile da usare.</li>
+    </ul>
+  </description>
+  <url type="homepage">https://github.com/GS90/ImageFlow</url>
+  <url type="vcs-browser">https://github.com/GS90/ImageFlow</url>
+  <url type="bugtracker">https://github.com/GS90/ImageFlow/issues</url>
+  <url type="help">https://digiroad.tech/en/projects/imageflow</url>
+  <url type="contact">https://digiroad.tech/en/main</url>
+  <translation type="gettext">imageflow</translation>
+  <launchable type="desktop-id">tech.digiroad.ImageFlow.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#8ff0a4</color>
+    <color type="primary" scheme_preference="dark">#99c1f1</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/GS90/ImageFlow/refs/heads/main/data/screenshots/dark.png</image>
+      <caption>ImageFlow in dark mode</caption>
+      <caption xml:lang="ru">ImageFlow, тёмная тема</caption>
+      <caption xml:lang="it">ImageFlow in modalità scura</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/GS90/ImageFlow/refs/heads/main/data/screenshots/light.png</image>
+      <caption>ImageFlow in light mode</caption>
+      <caption xml:lang="ru">ImageFlow, светлая тема</caption>
+      <caption xml:lang="it">ImageFlow in modalità chiara</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/GS90/ImageFlow/refs/heads/main/data/screenshots/preferences.png</image>
+      <caption>ImageFlow, preferences</caption>
+      <caption xml:lang="ru">ImageFlow, настройки</caption>
+      <caption xml:lang="it">ImageFlow, preferenze</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.1.2" date="2026-03-23">
+      <description translate="no">
+        <ul>
+          <li>Improved command‑line options for FFmpeg.</li>
+          <li>Updated runtime environment.</li>
+          <li>Various bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.1" date="2026-03-02">
+      <description translate="no">
+        <p>Detect system color theme.</p>
+      </description>
+    </release>
+    <release version="1.1.0" date="2026-01-25">
+      <description translate="no">
+        <ul>
+          <li>Added: time range selection for conversion.</li>
+          <li>Minor improvements.</li>
+          <li>Update Italian translation.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.91" date="2026-01-16">
+      <description translate="no">
+        <ul>
+          <li>Minor fixes.</li>
+          <li>Update Italian translation.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.8" date="2026-01-15">
+      <description translate="no">
+        <p>Improving interface usability.</p>
+      </description>
+    </release>
+    <release version="0.9.7" date="2026-01-15">
+      <description translate="no">
+        <ul>
+          <li>Increased generation performance.</li>
+          <li>Fixed and improved WebP creation.</li>
+          <li>Added drag and drop functionality.</li>
+          <li>Improving default settings.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.6" date="2026-01-10">
+      <description translate="no">
+        <ul>
+          <li>Improved handling of temporary files.</li>
+          <li>Update Italian translation.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.5" date="2026-01-10">
+      <description translate="no">
+        <ul>
+          <li>User interface improvements.</li>
+          <li>Added the ability to select the maximum number of colors in the palette.</li>
+          <li>Added the ability to configure WebP encoding parameters.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.2" date="2026-01-09">
+      <description translate="no">
+        <ul>
+          <li>Minor improvements.</li>
+          <li>Add Italian translation.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.0" date="2026-01-04">
+      <description translate="no">
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

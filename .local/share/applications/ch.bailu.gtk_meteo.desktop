@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=java -jar /usr/local/bin/gtk-meteo-all.jar
+Name=GTK Meteo
+StartupNotify=true
+Categories=GTK;Utility
+Comment=Select location from map and show forecast
+Icon=gtk-meteo
+X-Purism-FormFactor=Workstation;Mobile;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name[ru]=Convertidor
+Name=Convertidor
+Exec=convertidor
+Icon=tech.digiroad.Convertidor
+Terminal=false
+Type=Application
+Categories=Utility;Education;Science
+Keywords[ru]=converter;units;measurement;конвертер;единицы;измерение
+Keywords=units;converter;measurement
+StartupNotify=false
+DBusActivatable=true

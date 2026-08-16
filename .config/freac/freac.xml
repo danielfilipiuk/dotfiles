@@ -2,13 +2,13 @@
 <ConfigFile>
  <configuration name="default">
   <section name="Settings">
-   <value name="LastOutputDirectory1">/home/daniel/music/</value>
+   <value name="LastOutputDirectory1">/</value>
    <value name="Language">internal</value>
-   <value name="StartCount">18</value>
+   <value name="StartCount">21</value>
    <value name="WindowPosX">1027</value>
-   <value name="WindowPosY">43</value>
+   <value name="WindowPosY">45</value>
    <value name="WindowSizeX">568</value>
-   <value name="WindowSizeY">893</value>
+   <value name="WindowSizeY">892</value>
    <value name="Encoder">opus-enc</value>
    <value name="WindowMaximized">0</value>
    <value name="ShowTips">0</value>
@@ -23,7 +23,7 @@
    <value name="KeepWaveFiles">0</value>
    <value name="RemoveTracks">1</value>
    <value name="AddEncodedTracks">0</value>
-   <value name="EncoderOutDir">/home/daniel/music/</value>
+   <value name="EncoderOutDir">/</value>
    <value name="LastFilePattern5"/>
    <value name="LastFilePattern4"/>
    <value name="LastFilePattern3">&lt;albumartist&gt; - &lt;album&gt;/&lt;track&gt; - &lt;artist&gt; - &lt;title&gt;</value>
@@ -39,8 +39,9 @@
    <value name="LastOutputDirectory5">/mnt/data/music/222/Megadeth/</value>
    <value name="LastOutputDirectory4">/mnt/data/music/222/bs/</value>
    <value name="LastOutputDirectory3">/mnt/data/music/pmc/</value>
-   <value name="LastOutputDirectory2">/</value>
+   <value name="LastOutputDirectory2">/home/daniel/music/</value>
    <value name="LastAddedDir">/mnt/500G/torrents/The Rolling Stones - Foreign Tongues [2026] [Hi-Res] [FLAC-24Bit]-Sc4r3cr0w (copy 1)/</value>
+   <value name="LastSelectedOpenDir">/mnt/500G/torrents/Tame Impala The Slow Rush [2020] FLAC CD/Tame_Impala-The_Slow_Rush-CD-FLAC-2020-PERFECT</value>
   </section>
   <section name="Tags">
    <value name="DefaultComment">fre:ac - free audio converter &lt;https://www.freac.org/&gt;</value>
@@ -92,7 +93,7 @@
    <value name="ActiveDrive">0</value>
   </section>
   <section name="Donate">
-   <value name="StartCount">18</value>
+   <value name="StartCount">21</value>
    <value name="ShowAgain">1</value>
   </section>
   <section name="Playlist">
@@ -365,7 +366,7 @@
   </section>
   <section name="TagEdit">
    <value name="ClearAlbumArtist">0</value>
-   <value name="LastSelectedCoverDir">/mnt/500G/torrents/Paul McCartney discography/2013. New/Covers</value>
+   <value name="LastSelectedCoverDir">/home/daniel/downloads</value>
   </section>
   <section name="Logging">
    <value name="ShowLogsTab">1</value>

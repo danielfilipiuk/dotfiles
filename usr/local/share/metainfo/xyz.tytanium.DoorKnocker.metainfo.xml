@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2023 tytan652 <tytan652@tytanium.xyz>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+<component type="desktop">
+  <id>xyz.tytanium.DoorKnocker</id>
+  <launchable type="desktop-id">xyz.tytanium.DoorKnocker.desktop</launchable>
+  <name>Door Knocker</name>
+  <name xml:lang="uk">Door Knocker</name>
+  <name xml:lang="sv">Dörrknackare</name>
+  <name xml:lang="ru">Door Knocker</name>
+  <name xml:lang="pt-BR">Door Knocker</name>
+  <name xml:lang="pl">Door Knocker</name>
+  <name xml:lang="nl">Deurklopper</name>
+  <name xml:lang="ja">Door Knocker</name>
+  <name xml:lang="fi">Door Knocker</name>
+  <name xml:lang="en-GB">Door Knocker</name>
+  <name xml:lang="da">Door Knocker</name>
+  <name xml:lang="cs">Door Knocker</name>
+  <name xml:lang="ca">Door Knocker</name>
+  <name xml:lang="pt">Door Knocker</name>
+  <name xml:lang="it">Door Knocker</name>
+  <name xml:lang="es">Door Knocker</name>
+  <name xml:lang="de">Door Knocker</name>
+  <name xml:lang="tr">Door Knocker</name>
+  <name xml:lang="fr">Door Knocker</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <url type="homepage">https://codeberg.org/tytan652/door-knocker</url>
+  <url type="vcs-browser">https://codeberg.org/tytan652/door-knocker</url>
+  <url type="bugtracker">https://codeberg.org/tytan652/door-knocker/issues</url>
+  <url type="translate">https://translate.codeberg.org/engage/door-knocker/</url>
+  <url type="donation">https://linksta.cc/@tytan652</url>
+  <summary>Check the availability of portals</summary>
+  <summary xml:lang="uk">Перевірка доступності порталів</summary>
+  <summary xml:lang="sv">Kolla tillgängligheten för portaler</summary>
+  <summary xml:lang="ru">Проверить доступность порталов</summary>
+  <summary xml:lang="pt-BR">Verifique a disponibilidade dos portais</summary>
+  <summary xml:lang="pl">Sprawdź dostępność portali</summary>
+  <summary xml:lang="nl">Controleer de beschikbaarheid van portalen</summary>
+  <summary xml:lang="ja">ポータルの可用性を確認</summary>
+  <summary xml:lang="fi">Tarkista portaalien saatavuus</summary>
+  <summary xml:lang="en-GB">Check portal availability</summary>
+  <summary xml:lang="da">Tjek tilgængeligheden af portaler</summary>
+  <summary xml:lang="cs">Zkontrolujte dostupnost portálů</summary>
+  <summary xml:lang="ca">Comprova la disponibilitat dels portals</summary>
+  <summary xml:lang="pt">Verifique a disponibilidade dos portais</summary>
+  <summary xml:lang="it">Verifica la disponibilità dei portali</summary>
+  <summary xml:lang="es">Comprobar la disponibilidad de los portales</summary>
+  <summary xml:lang="de">Überprüft die Verfügbarkeit von Portalen</summary>
+  <summary xml:lang="tr">Portalların kullanılabilirliğini kontrol et</summary>
+  <summary xml:lang="fr">Vérifier la disponibilité des portails</summary>
+  <description>
+    <p>Door Knocker allows you to check availability of all portals provided by xdg-desktop-portal.</p>
+    <p xml:lang="uk">Door Knocker дає змогу перевірити доступність усіх порталів, що надаються xdg-desktop-portal.</p>
+    <p xml:lang="sv">Dörrknackare tillåter dig att kolla tillgängligheten för alla portaler som förses av xdg-desktop-portal.</p>
+    <p xml:lang="ru">Door Knocker позволяет вам проверить доступность всех порталов, предоставленных xdg-desktop-portal.</p>
+    <p xml:lang="pt-BR">Door Knocker permite que verifique a disponibilidade de todos os portais fornecidos pelo xdg-desktop-portal.</p>
+    <p xml:lang="pl">Door Knocker pozwala na sprawdzenie dostępności wszystkich portali dostarczonych przez xdg-desktop-portal.</p>
+    <p xml:lang="nl">Met Deurklopper kunt u controleren welke portalen van xdg-desktop-portal beschikbaar zijn.</p>
+    <p xml:lang="ja">Door Knocker を使うことで、xdg-desktop-portal によって提供されるすべてのポータルの可用性をチェックできます。</p>
+    <p xml:lang="fi">Door Knockerin avulla voit tarkistaa kaikkien xdg-desktop-portalin tarjoamien portaalien saatavuuden.</p>
+    <p xml:lang="en-GB">Door Knocker allows you to check availability of all portals provided by xdg-desktop-portal.</p>
+    <p xml:lang="da">Door Knocker giver dig mulighed for at tjekke tilgængeligheden af alle portaler leveret af xdg-desktop-portal.</p>
+    <p xml:lang="cs">Door Knocker umožňuje zkontrolovat zda jsou k dispozici všechny portály, poskytované xdg-desktop-portal.</p>
+    <p xml:lang="ca">Door Knocker et permet comprovar la disponibilitat de tots els portals proporcionats.</p>
+    <p xml:lang="pt">Door Knocker permite que verifique a disponibilidade de todos os portais fornecidos por xdg-desktop-portal.</p>
+    <p xml:lang="it">Door Knocker ti consente di verificare la disponibilità di tutti i portali forniti da xdg-desktop-portal.</p>
+    <p xml:lang="es">Door Knocker le permite comprobar la disponibilidad de todos los portales proporcionados por xdg-desktop-portal.</p>
+    <p xml:lang="de">Mit Door Knocker kannst du die Verfügbarkeit von durch xdg-desktop-portal bereitgestellten Portalen überprüfen.</p>
+    <p xml:lang="tr">Door Knocker, xdg-desktop-portal tarafından sağlanan tüm portalların kullanılabilirliğini denetlemenizi sağlar.</p>
+    <p xml:lang="fr">Door Knocker vous permet de vérifier la disponibilité de tous les portails fourni par xdg-desktop-portal.</p>
+  </description>
+  <developer id="tytan652@tytanium.xyz">
+    <name translate="no">tytan652</name>
+  </developer>
+  <translation type="gettext">door-knocker</translation>
+  <branding>
+    <color type="primary" scheme_preference="light">#e1d0c0</color>
+    <color type="primary" scheme_preference="dark">#443429</color>
+  </branding>
+  <recommends>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <supports>
+    <control>keyboard</control>
+    <internet>offline-only</internet>
+  </supports>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://codeberg.org/tytan652/door-knocker/raw/commit/6ad5eb41937977e3b398e634caf2264857edabc0/data/screenshots/door-knocker_light.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://codeberg.org/tytan652/door-knocker/raw/commit/6ad5eb41937977e3b398e634caf2264857edabc0/data/screenshots/door-knocker_dark.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://codeberg.org/tytan652/door-knocker/raw/commit/6ad5eb41937977e3b398e634caf2264857edabc0/data/screenshots/door-knocker_screen_cast_dialog_light.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://codeberg.org/tytan652/door-knocker/raw/commit/6ad5eb41937977e3b398e634caf2264857edabc0/data/screenshots/door-knocker_screen_cast_dialog_dark.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.10.0" date="2026-08-15">
+      <description translate="no">
+      </description>
+    </release>
+    <release version="0.9.0" date="2026-03-29">
+      <description translate="no">
+        <p>Style cleanup</p>
+        <ul>
+          <li>Update widget styling</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.8.0" date="2025-09-18">
+      <description translate="no">
+        <p>Prettier shortcuts</p>
+        <ul>
+          <li>Use new Adwaita shortcuts dialog</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.0" date="2025-03-16">
+      <description translate="no">
+        <p>Hello, USB Portal</p>
+        <ul>
+          <li>Add USB portal check</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.0" date="2024-09-20">
+      <description translate="no">
+        <p>Cleanup and spinner</p>
+        <ul>
+          <li>Remove Device portal (obsolete and unused) check</li>
+          <li>Use new Adwaita spinner widget</li>
+          <li>Fix spelling mistakes and typos</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2024-03-21">
+      <description translate="no">
+        <p>Branding and dialog redesign</p>
+        <ul>
+          <li>Use new Adwaita adaptive dialog for all dialogs</li>
+          <li>New logo made by Jakub Steiner</li>
+          <li>Branding color provided by Brage Fuglseth</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.4" date="2024-02-17">
+      <description translate="no">
+        <p>Working icons anywhere for real</p>
+        <ul>
+          <li>Provide all icons except "open menu" as application resources</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.3" date="2024-01-11">
+      <description translate="no">
+        <p>Working icons anywhere</p>
+        <ul>
+          <li>Add missing icons unavailable on non-GNOME environment</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.2" date="2023-11-27">
+      <description translate="no">
+        <p>Translation the beginning</p>
+        <ul>
+          <li>Fix spelling mistakes</li>
+          <li>Enable translation on Codeberg Translate</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.1" date="2023-10-23">
+      <description translate="no">
+        <p>Fixing mistakes</p>
+        <ul>
+          <li>Fix grammar and copy-paste mistakes</li>
+          <li>Do not make missing portal version an issue by itself</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.0" date="2023-09-26">
+      <description translate="no">
+        <p>Feature checks the beginning</p>
+        <ul>
+          <li>Add feature checks for the Screen Cast portal</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.0" date="2023-09-19">
+      <description translate="no">
+        <p>xdg-desktop-portals 1.18 is out</p>
+        <ul>
+          <li>Show a different reason of unavailability when the xdg-desktop-portal is not found</li>
+          <li>Add new portals from xdg-desktop-portals 1.18</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2023-09-09">
+      <description translate="no">
+        <p>Improvements and refactorizations</p>
+        <ul>
+          <li>Make portals checker call asynchronous</li>
+          <li>Show spinner while checking rather than a blank surface</li>
+          <li>Re-try to connect to session D-Bus if failed in previous checks</li>
+          <li>Re-try to find xdg-desktop-portal executable if failed in previous checks</li>
+          <li>Always get xdg-desktop-portal version at each check from its executable if found</li>
+          <li>Use xdg-desktop-portal process ID from D-Bus to find its executable, fitting to most Linux systems without having to rely on hardcoded paths. The old method based on two hardcoded paths is kept as a fallback
+          </li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.1" date="2023-09-04">
+      <description translate="no">
+        <ul>
+          <li>Fix a crash if xdg-desktop-portal executable is not found</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2023-08-22">
+      <description translate="no">
+        <p>The first release for Door Knocker</p>
+        <ul>
+          <li>Check availability of all portals provided by xdg-desktop-portal from version 1.0 to 1.16</li>
+          <li>Check xdg-desktop-portal version to skip portal check or detect unstable version</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

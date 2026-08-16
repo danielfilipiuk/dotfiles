@@ -710,7 +710,7 @@
        default="org.inkscape.output.svgz.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/vectorized/mito religion magia"
+       path="/home/daniel/profile/Boutique/vectorized/objetos"
        use_current_dir="1"
        enable_svgexport="0" />
     <group
@@ -1177,7 +1177,7 @@
        snap-grid="1"
        snap-grid-line="1"
        snap-guide="1"
-       snap-global-toggle="0" />
+       snap-global-toggle="1" />
     <group
        id="kbshortcuts"
        value="negative" />
@@ -1356,16 +1356,22 @@
      org.inkscape.effect.filter.Silhouette.cutout="0"
      org.inkscape.input.pdf.embedImages="0"
      org.inkscape.filter.add_nodes.method="bymax"
-     org.inkscape.filter.add_nodes.unit="px" />
+     org.inkscape.filter.add_nodes.unit="px"
+     org.inkscape.effect.filter.Greyscale.__live_effect__="0"
+     org.inkscape.effect.filter.Greyscale.transparent="0"
+     org.inkscape.effect.filter.Greyscale.strength="0.18836273006135"
+     org.inkscape.effect.filter.Greyscale.blue="0.266008435582823"
+     org.inkscape.effect.filter.Greyscale.green="0.411474309815951"
+     org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#00ff00;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.56692913;stroke-linecap:round;font-weight:bold;stroke-linejoin:round;stroke:#ffffff">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.56692913;stroke-linecap:round;font-weight:bold;stroke-linejoin:round;stroke:#ffffff">
     <group
-       width="942"
-       height="211"
+       width="902"
+       height="976"
        x="0"
        y="0"
-       maximized="1"
+       maximized="0"
        fullscreen="0"
        id="geometry" />
     <group

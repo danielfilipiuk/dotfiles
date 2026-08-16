@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 Ivan Molodetskikh -->
+<component type="desktop-application">
+  <id>org.gnome.gitlab.YaLTeR.VideoTrimmer.Devel</id>
+  <name>Video Trimmer</name>
+  <name xml:lang="zh-Hant-TW">影片修剪</name>
+  <name xml:lang="zh-Hans-CN">视频剪裁器</name>
+  <name xml:lang="uz-Latn">Videoni qirqish vositasi</name>
+  <name xml:lang="uk">Video Trimmer</name>
+  <name xml:lang="tr">Video Kırpıcı</name>
+  <name xml:lang="ta">வீடியோ டிரிம்மர்</name>
+  <name xml:lang="sv">Video Trimmer</name>
+  <name xml:lang="sr-Cyrl">Видео скраћивач</name>
+  <name xml:lang="sl">Video obrezovalnik</name>
+  <name xml:lang="ru">Видеотриммер</name>
+  <name xml:lang="ro">Taie Video</name>
+  <name xml:lang="pt-BR">Video Trimmer</name>
+  <name xml:lang="pt">Aparador de Vídeo</name>
+  <name xml:lang="pl">Video Trimmer</name>
+  <name xml:lang="oc">Copador de vidèo</name>
+  <name xml:lang="nl">Videotrimmer</name>
+  <name xml:lang="nb">Video Trimmer</name>
+  <name xml:lang="kw">Godregher Gwydhyow</name>
+  <name xml:lang="kk-Cyrl">Видео қию қолданбасы</name>
+  <name xml:lang="ka">ვიდეომჭრელი</name>
+  <name xml:lang="ja">Video Trimmer</name>
+  <name xml:lang="it">Video Trimmer</name>
+  <name xml:lang="is">Klippiforrit fyrir myndskeið</name>
+  <name xml:lang="id">Pemangkas Video</name>
+  <name xml:lang="ia">Tonditura de video</name>
+  <name xml:lang="hu">Videóvágó</name>
+  <name xml:lang="hr">Kraćenje videa</name>
+  <name xml:lang="hi">Video Trimmer</name>
+  <name xml:lang="he">חותך סרטונים</name>
+  <name xml:lang="gl">Recortador de vídeo</name>
+  <name xml:lang="fur">Taiarine Videos</name>
+  <name xml:lang="fr">Découpeur de vidéos</name>
+  <name xml:lang="fi">Videotrimmaaja</name>
+  <name xml:lang="fa">ویدیو تراش</name>
+  <name xml:lang="eu">Bideo Trimmer</name>
+  <name xml:lang="es">Recortador de vídeo</name>
+  <name xml:lang="eo">Video Trimmer</name>
+  <name xml:lang="en-GB">Video Trimmer</name>
+  <name xml:lang="el">Περικοπή Βίντεο</name>
+  <name xml:lang="de">Video Trimmer</name>
+  <name xml:lang="da">Videotrimmer</name>
+  <name xml:lang="cs">Střihač videa</name>
+  <name xml:lang="ca">Retallador de vídeos</name>
+  <name xml:lang="bg">Видео ножици</name>
+  <name xml:lang="be-Cyrl">Відэатрымер</name>
+  <name xml:lang="ar">قاطع الفيديو</name>
+  <summary>Trim videos quickly</summary>
+  <summary xml:lang="zh-Hant-TW">快速修剪影片</summary>
+  <summary xml:lang="zh-Hans-CN">快速剪裁视频</summary>
+  <summary xml:lang="uz-Latn">Videolarni tezda qirqish</summary>
+  <summary xml:lang="uk">Швидке обрізання відеозаписів</summary>
+  <summary xml:lang="tr">Videoları hızlıca kırp</summary>
+  <summary xml:lang="ta">வீடியோக்களை விரைவாக ட்ரிம் செய்யுங்கள்</summary>
+  <summary xml:lang="sv">Klipp snabbt i videor</summary>
+  <summary xml:lang="sr-Cyrl">Брзо скратите видео снимке</summary>
+  <summary xml:lang="sl">Hitro obrežite videoposnetke</summary>
+  <summary xml:lang="ru">Быстрая обрезка видео-файлов</summary>
+  <summary xml:lang="ro">Taie rapid filme</summary>
+  <summary xml:lang="pt-BR">Corte vídeos rapidamente</summary>
+  <summary xml:lang="pt">Aparar vídeo rapidamente</summary>
+  <summary xml:lang="pl">Szybkie przycinanie plików wideo</summary>
+  <summary xml:lang="oc">Copar de vidèos rapidament</summary>
+  <summary xml:lang="nl">Trim snel uw video’s</summary>
+  <summary xml:lang="nb">Klipp videoer raskt og enkelt</summary>
+  <summary xml:lang="kw">Godreghi gwydhyowyow snell</summary>
+  <summary xml:lang="kk-Cyrl">Видеоларды жылдам қию</summary>
+  <summary xml:lang="ka">ვიდეოს სწრაფი წაკვეთა</summary>
+  <summary xml:lang="ja">ビデオを素早くトリミングします</summary>
+  <summary xml:lang="it">Taglia i video velocemente</summary>
+  <summary xml:lang="is">Snyrta myndskeið hratt og örugglega</summary>
+  <summary xml:lang="id">Pangkas video secara cepat</summary>
+  <summary xml:lang="ia">Tonde videos rapidemente</summary>
+  <summary xml:lang="hu">Videók gyors vágása</summary>
+  <summary xml:lang="hr">Skrati videa brzo</summary>
+  <summary xml:lang="hi">वीडियो को शीघ्रता से छाँटे</summary>
+  <summary xml:lang="he">חיתוך סרטונים במהירות</summary>
+  <summary xml:lang="gl">Recorte vídeos rapidamente</summary>
+  <summary xml:lang="fur">Taie videos in mût svelt</summary>
+  <summary xml:lang="fr">Découper des vidéos rapidement</summary>
+  <summary xml:lang="fi">Trimmaa videot nopeasti</summary>
+  <summary xml:lang="fa">تراشیدن سریع ویدیوها</summary>
+  <summary xml:lang="eu">Kimatu bideoak azkar</summary>
+  <summary xml:lang="es">Recortar vídeos rápidamente</summary>
+  <summary xml:lang="eo">Tranĉi videojn rapide</summary>
+  <summary xml:lang="en-GB">Trim videos quickly</summary>
+  <summary xml:lang="el">Περικοπή βίντεο γρήγορα</summary>
+  <summary xml:lang="de">Videos schnell trimmen</summary>
+  <summary xml:lang="da">Trim videoer hurtigt</summary>
+  <summary xml:lang="cs">Bleskurychlý střih videa</summary>
+  <summary xml:lang="ca">Retalleu vídeos ràpidament</summary>
+  <summary xml:lang="bg">Бързо изрязване на видео клипове</summary>
+  <summary xml:lang="be-Cyrl">Хуткае абразанне відэа</summary>
+  <summary xml:lang="ar">أقطع القيديوهات بسرعة</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <launchable type="desktop-id">org.gnome.gitlab.YaLTeR.VideoTrimmer.Devel.desktop</launchable>
+  <translation type="gettext">video-trimmer</translation>
+  <content_rating type="oars-1.0"/>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="zh-Hant-TW">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="zh-Hans-CN">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="uz-Latn">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="uk">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="tr">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="ta">இவான் மோலோடெட்ஸ்கிக்</developer_name>
+  <developer_name xml:lang="sv">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="sr-Cyrl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="sl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="ru">Иван Молодецких</developer_name>
+  <developer_name xml:lang="ro">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="pt-BR">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="pt">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="pl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="oc">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="nl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="nb">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="kw">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="kk-Cyrl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="ka">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="ja">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="it">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="is">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="id">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="ia">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="hu">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="hr">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="hi">इवान मोलोडेत्स्किख</developer_name>
+  <developer_name xml:lang="he">איוון מלדצקיך</developer_name>
+  <developer_name xml:lang="gl">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="fur">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="fr">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="fi">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="fa">ایوان مولودتس‌کیخ</developer_name>
+  <developer_name xml:lang="eu">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="es">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="eo">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="en-GB">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="el">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="de">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="da">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="cs">Ivan Moloděckich</developer_name>
+  <developer_name xml:lang="ca">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="bg">Ivan Molodetskikh</developer_name>
+  <developer_name xml:lang="be-Cyrl">Іван Маладзецкіх</developer_name>
+  <developer id="rs.bxt">
+    <name>Ivan Molodetskikh</name>
+    <name xml:lang="zh-Hant-TW">Ivan Molodetskikh</name>
+    <name xml:lang="zh-Hans-CN">Ivan Molodetskikh</name>
+    <name xml:lang="uz-Latn">Ivan Molodetskikh</name>
+    <name xml:lang="uk">Ivan Molodetskikh</name>
+    <name xml:lang="tr">Ivan Molodetskikh</name>
+    <name xml:lang="ta">இவான் மோலோடெட்ஸ்கிக்</name>
+    <name xml:lang="sv">Ivan Molodetskikh</name>
+    <name xml:lang="sr-Cyrl">Ivan Molodetskikh</name>
+    <name xml:lang="sl">Ivan Molodetskikh</name>
+    <name xml:lang="ru">Иван Молодецких</name>
+    <name xml:lang="ro">Ivan Molodetskikh</name>
+    <name xml:lang="pt-BR">Ivan Molodetskikh</name>
+    <name xml:lang="pt">Ivan Molodetskikh</name>
+    <name xml:lang="pl">Ivan Molodetskikh</name>
+    <name xml:lang="oc">Ivan Molodetskikh</name>
+    <name xml:lang="nl">Ivan Molodetskikh</name>
+    <name xml:lang="nb">Ivan Molodetskikh</name>
+    <name xml:lang="kw">Ivan Molodetskikh</name>
+    <name xml:lang="kk-Cyrl">Ivan Molodetskikh</name>
+    <name xml:lang="ka">Ivan Molodetskikh</name>
+    <name xml:lang="ja">Ivan Molodetskikh</name>
+    <name xml:lang="it">Ivan Molodetskikh</name>
+    <name xml:lang="is">Ivan Molodetskikh</name>
+    <name xml:lang="id">Ivan Molodetskikh</name>
+    <name xml:lang="ia">Ivan Molodetskikh</name>
+    <name xml:lang="hu">Ivan Molodetskikh</name>
+    <name xml:lang="hr">Ivan Molodetskikh</name>
+    <name xml:lang="hi">इवान मोलोडेत्स्किख</name>
+    <name xml:lang="he">איוון מלדצקיך</name>
+    <name xml:lang="gl">Ivan Molodetskikh</name>
+    <name xml:lang="fur">Ivan Molodetskikh</name>
+    <name xml:lang="fr">Ivan Molodetskikh</name>
+    <name xml:lang="fi">Ivan Molodetskikh</name>
+    <name xml:lang="fa">ایوان مولودتس‌کیخ</name>
+    <name xml:lang="eu">Ivan Molodetskikh</name>
+    <name xml:lang="es">Ivan Molodetskikh</name>
+    <name xml:lang="eo">Ivan Molodetskikh</name>
+    <name xml:lang="en-GB">Ivan Molodetskikh</name>
+    <name xml:lang="el">Ivan Molodetskikh</name>
+    <name xml:lang="de">Ivan Molodetskikh</name>
+    <name xml:lang="da">Ivan Molodetskikh</name>
+    <name xml:lang="cs">Ivan Moloděckich</name>
+    <name xml:lang="ca">Ivan Molodetskikh</name>
+    <name xml:lang="bg">Ivan Molodetskikh</name>
+    <name xml:lang="be-Cyrl">Іван Маладзецкіх</name>
+  </developer>
+  <update_contact>yalterz@gmail.com</update_contact>
+  <url type="homepage">https://gitlab.gnome.org/YaLTeR/video-trimmer</url>
+  <url type="bugtracker">https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues</url>
+  <url type="translate">https://l10n.gnome.org/module/video-trimmer/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/YaLTeR/video-trimmer</url>
+  <description>
+    <p>
+			Video Trimmer cuts out a fragment of a video given the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.
+		</p>
+    <p xml:lang="zh-Hant-TW">Video Trimmer 會剪掉影片開始和結束之外的部分。提供開始和結束的時間戳之後，Video Trimmer 就會將不在範圍內的部分剪掉。影片不會被重新編碼，所以整個流程非常快也不會降低影片品質。</p>
+    <p xml:lang="zh-Hans-CN">视频剪裁器根据指定的开始和结束时间戳来剪裁出视频片段。视频不会被重新编码，所以这个过程非常快且不会降低视频质量。</p>
+    <p xml:lang="uz-Latn">Video Trimmer berilgan boshlanish va tugash vaqtlariga ko‘ra videoning ma’lum bir qismini qirqib oladi. Video hech qachon qayta kodlanmagani sababli, bu jarayon juda tez amalga oshadi va video sifatiga ta’sir qilmaydi.</p>
+    <p xml:lang="uk">Video Trimmer вирізає фрагмент відеозапису з урахуванням часових позначок початку та кінця. Відео ніколи не перекодовується, тому процес дуже швидкий і не знижує якість відеозапису.</p>
+    <p xml:lang="tr">Video Kırpıcı, video içinde başı ve sonu belirtilmiş bir bölümü kesip dışarı aktarır. Videolar asla yeniden işlenmez, bu yüzden kırpa işlemi hızlı gerçekleşir ve videonun niteliği azalmaz.</p>
+    <p xml:lang="ta">வீடியோ டிரிம்மர் தொடக்க மற்றும் முடிவு நேர முத்திரைகள் கொடுக்கப்பட்ட வீடியோவின் ஒரு பகுதியை வெட்டுகிறது. வீடியோ மீண்டும் குறியாக்கம் செய்யப்படவில்லை, எனவே செயல்முறை மிக வேகமாக உள்ளது மற்றும் வீடியோ தரத்தை குறைக்காது.</p>
+    <p xml:lang="sv">Video Trimmer klipper ut en bit av en video med hjälp av start- och sluttider. Videon kodas aldrig om, så processen är mycket snabb och försämrar inte videokvaliteten.</p>
+    <p xml:lang="sr-Cyrl">Видео скраћивач одсеца део снимка са датим временским ознакама почетка и краја. Видео се никада поново не кодира, тако да је поступак врло брз и не смањује квалитет снимка.</p>
+    <p xml:lang="sl">Video obrezovalnik izzreže delček videoposnetka, če sta podana začetna in končna časovna koda. Videoposnetek ni nikoli ponovno prekodiran, zato je postopek zelo hiter in ne zmanjša kakovosti videoposnetka.</p>
+    <p xml:lang="ru">Видеотриммер вырезает часть видео по начальной и конечной временной метке. Видео не перекодируется, поэтому вся процедура очень быстрая и не приводит к потере качества видео.</p>
+    <p xml:lang="ro">Aplicația taie un fragment dintr-un film pe baza timpilor de început și de sfârșit. Filmul nu este niciodată recodat, așa că procesul este foarte rapid și nu reduce calitatea filmului.</p>
+    <p xml:lang="pt-BR">O Video Trimmer corta um fragmento de um vídeo de acordo com os registros de data/hora de início e término. O vídeo nunca é recodificado, então o processo é muito rápido e não reduz a qualidade do vídeo.</p>
+    <p xml:lang="pt">O Aparador de Vídeo corta um fragmento de um vídeo com os tempos e hora de início e fim. O vídeo nunca é recodificado, pelo que o processo é muito rápido e não reduz a qualidade do vídeo.</p>
+    <p xml:lang="pl">Video Trimmer wycina fragment pliku wideo po podaniu czasu początkowego i końcowego. Wideo nigdy nie jest kodowane ponownie, więc ten proces jest bardzo szybki i nie zmniejsza jego jakości.</p>
+    <p xml:lang="oc">Lo Copador de vidèos retalha un fragement d’una vidèo segon los ponches de debuta e de fin donats. La vidèo es pas jamai reencodada, fa que lo processús es rapid e redusís pas la qualitat de la vidèo.</p>
+    <p xml:lang="nl">Videotrimmer knipt fragmenten uit video’s tussen de opgegeven tijdstempels. De video wordt niet opnieuw gecodeerd - hierdoor verloopt alles snel en blijft de kwaliteit behouden.</p>
+    <p xml:lang="nb">Video Trimmer er et nyttig, lite verktøy til å klippe bort starten og slutten på videoer. Klippingen utføres direkte på videofilen uten at den eksporteres på nytt, så prosessen går raskt og tapsfritt.</p>
+    <p xml:lang="kw">Godregher Gwydhyow treghi unn darn a'n gwydhyow gans an termynyow dalleth ha diwedh. An gwydhyow yw daskodennys bynner, ytho an argerdh yw pur snell ha na lehe an kwalita gwydhyow.</p>
+    <p xml:lang="kk-Cyrl">Видео қию қолданбасы берілген бастапқы және соңғы уақыт белгілері бойынша видео үзіндісін қиып алады. Видео қайта кодталмайды, сондықтан процесс өте жылдам және видео сапасын төмендетпейді.</p>
+    <p xml:lang="ka">Video Trimmer-ს ვიდეოდან მითითებული დროის შტამპების მიხედვით ფრაგმენტების ამოჭრა შეუძლია. ვიდეო თავიდან არ კოდირდება, ასე რომ, პროცესი ძალიან სწრაფია და ვიდეოს ხარისხს არ ამცირებს.</p>
+    <p xml:lang="ja">Video Trimmer は、開始タイムスタンプと終了タイムスタンプを指定して、ビデオをカットします。ビデオが再エンコードされることはないため、処理が非常に高速で、ビデオ品質を低下させることはありません。</p>
+    <p xml:lang="it">Video Trimmer ritaglia un frammento di un video dati i timestamp di inizio e fine. Il video non viene mai ricodificato, quindi il processo è molto veloce e non riduce la qualità del video.</p>
+    <p xml:lang="is">Video Trimmer klippir af litla búta af gefnu myndskeiði miðað við uppgefna byrjun og endi. Myndskeið er aldrei endurkóðað, svo að ferlið gengur  hratt fyrir sig og rýrir ekki gæði myndskeiðsins.</p>
+    <p xml:lang="id">Pemangkas Video memotong suatu fragmen dari sebuah video dengan diberikan waktu awal dan akhir. Video tidak pernah di-enkode ulang, sehingga prosesnya sangat cepat dan tidak mengurangi kualitas video.</p>
+    <p xml:lang="ia">Tonditura de video talia un fragmento de un video date le marcas de tempore de initio e fin. Le video nunquam es recodificate, assi le processo es multo rapide e non reduce le qualitate del video.</p>
+    <p xml:lang="hu">A Videóvágó kivágja egy videónak a kezdő- és végidőbélyegek által megadott részletét. A videó soha nem kerül újrakódolásra, így a folyamat nagyon gyors, és nem csökkenti a videó minőségét.</p>
+    <p xml:lang="hr">Programom „Kraćenje videa” izrezuje se dio videa na osnovi vremenskih oznaka početka i kraja. Video se ne kodira ponovo, stoga je postupak vrlo brz i ne smanjuje kvalitetu videa.</p>
+    <p xml:lang="hi">वीडियो ट्रिमर प्रारंभ और समाप्ति टाइमस्टैम्प दिए गए वीडियो के एक टुकड़े को काट देता है। वीडियो को कभी भी दोबारा एन्कोड नहीं किया जाता है, इसलिए प्रक्रिया बहुत तेज़ है और वीडियो की गुणवत्ता कम नहीं होती है।</p>
+    <p xml:lang="he">חותך הסרטונים חותך חלק מהסרטון בהינתן חותמי זמן של התחלה וסיום. הסרטון לא מעובד מחדש ולכן התהליך הוא מהיר מאוד ואינו פוגע באיכות הסרטון.</p>
+    <p xml:lang="fur">Taiarine Videos al taie un frament di un video in base aes marchis temporâls di inizi e fin indicadis. Il video nol ven mai codificât di gnûf, duncje il procès al è une vore svelt e nol diminuìs la cualitât dal video.</p>
+    <p xml:lang="fr">Découpeur de vidéos découpe un fragment d’une vidéo en fonction des horodatages de début et de fin. La vidéo n’est jamais ré-encodée, le processus est donc très rapide et ne réduit pas la qualité de la vidéo.</p>
+    <p xml:lang="fi">Videotrimmaaja leikkaa videosta pätkän annetun alku- ja loppuajankohdan mukaisesti. Videota ei koskaan enkoodata uudelleen, joten toimenpide on erittäin nopea, eikä videon laatu kärsi.</p>
+    <p xml:lang="fa">ویدیو تراش بخشی از ویدیوی داده شده با برچسب‌های زمانی آغاز و پایان را می‌بُرد. از آن‌جا که ویدیو دوباره کدگذاری نمی‌شود، فرایند بسیار سریع بوده و کیفیت ویدیو را نمی‌کاهد.</p>
+    <p xml:lang="eu">Video Trimmer aplikazioak bideoen zatiak kimatzen ditu, emandako hasierako eta amaierako denbora-zigiluen arabera. Bideoa ez da inoiz birkodetuko, eta beraz, prozesua oso azkarra da eta ez du bideoaren kalitatea murrizten.</p>
+    <p xml:lang="es">Recortador de video corta un fragmento de un video dadas las marcas de tiempo de inicio y fin. El vídeo nunca se recodifica, por lo que el proceso es muy rápido y no reduce la calidad del vídeo.</p>
+    <p xml:lang="en-GB">Video Trimmer cuts out a fragment of a video given the start and end timestamps. The video is never re-encoded, so the process is very fast and does not reduce the video quality.</p>
+    <p xml:lang="el">Η Περικοπή Βίντεο αφαιρεί ένα απόσπασμα ενός βίντεο δεδομένων των χρονικών σημείων έναρξης και λήξης. Το βίντεο δεν επανακωδικοποιείται ποτέ, έτσι η διαδικασία είναι πολύ γρήγορη και δεν μειώνει την ποιότητα του βίντεο.</p>
+    <p xml:lang="de">Video-Trimmer schneidet einen Teil eines Videos anhand der angegebenen Start- und End-Zeitstempel aus. Da das Video nicht neu codiert wird, ist dieser Prozess sehr schnell und beeinträchtigt nicht die Videoqualität.</p>
+    <p xml:lang="da">Videotrimmer klipper et fragment ud af en video baseret på start- og sluttidspunkterne. Videoen bliver aldrig genkodet, så processen er meget hurtig og reducerer ikke videokvaliteten.</p>
+    <p xml:lang="cs">Střihač videa vystřihuje kus videa na základě začáteční a konečné časové značky. Video se nekóduje znovu, takže je Střihač velice rychlý a nesnižuje kvalitu videa.</p>
+    <p xml:lang="ca">El Retallador de vídeos retalla un fragment d'un vídeo donats els segells de temps d'inici i final. El vídeo no es torna a codificar, de manera que el procés és molt ràpid i no redueix la qualitat del vídeo.</p>
+    <p xml:lang="bg">„Видео ножици“ изрязват част от един видео клип чрез зададени точки за начало и край. Видеото не се прекодира, така че процесът е много бърз и не понижава качеството на видеото.</p>
+    <p xml:lang="be-Cyrl">Відэатрымер выразае з відэа фрагмент, у адпаведнасці з пазначаным часам пачатку і канца. Відэа не пераўтвараецца зноў, таму працэс вельмі хуткі і не зніжае якасці відэа.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/-/project/11135/uploads/f6e5a36b50822816e1aa191b63bab3b5/Screenshot_from_2025-03-28_15-32-23.png</image>
+      <caption>Main Window</caption>
+      <caption xml:lang="zh-Hant-TW">主視窗</caption>
+      <caption xml:lang="zh-Hans-CN">主窗口</caption>
+      <caption xml:lang="uz-Latn">Asosiy oyna</caption>
+      <caption xml:lang="uk">Основне вікно</caption>
+      <caption xml:lang="tr">Ana Pencere</caption>
+      <caption xml:lang="ta">பிரதான சாளரம்</caption>
+      <caption xml:lang="sv">Huvudfönster</caption>
+      <caption xml:lang="sr-Cyrl">Главни прозор</caption>
+      <caption xml:lang="sl">Glavno okno</caption>
+      <caption xml:lang="ru">Основное окно</caption>
+      <caption xml:lang="ro">Fereastra principală</caption>
+      <caption xml:lang="pt-BR">Janela principal</caption>
+      <caption xml:lang="pt">Janela principal</caption>
+      <caption xml:lang="pl">Okno główne</caption>
+      <caption xml:lang="oc">Fenèstra principala</caption>
+      <caption xml:lang="nl">Hoofdvenster</caption>
+      <caption xml:lang="nb">Hovedvindu</caption>
+      <caption xml:lang="kw">Fenester Chif</caption>
+      <caption xml:lang="kk-Cyrl">Негізгі терезе</caption>
+      <caption xml:lang="ka">მთავარი ფანჯარა</caption>
+      <caption xml:lang="ja">メインウィンドウ</caption>
+      <caption xml:lang="it">Finestra principale</caption>
+      <caption xml:lang="is">Aðalgluggi</caption>
+      <caption xml:lang="id">Jendela Utama</caption>
+      <caption xml:lang="ia">Fenestra principal</caption>
+      <caption xml:lang="hu">Főablak</caption>
+      <caption xml:lang="hr">Glavni prozor</caption>
+      <caption xml:lang="hi">मुख्य विंडो</caption>
+      <caption xml:lang="he">חלון ראשי</caption>
+      <caption xml:lang="gl">Xanela principal</caption>
+      <caption xml:lang="fur">Barcon principâl</caption>
+      <caption xml:lang="fr">Fenêtre principale</caption>
+      <caption xml:lang="fi">Pääikkuna</caption>
+      <caption xml:lang="fa">پنجرهٔ اصلی</caption>
+      <caption xml:lang="eu">Leiho nagusia</caption>
+      <caption xml:lang="es">Ventana principal</caption>
+      <caption xml:lang="eo">Ĉefa fenestro</caption>
+      <caption xml:lang="en-GB">Main Window</caption>
+      <caption xml:lang="el">Κύριο παράθυρο</caption>
+      <caption xml:lang="de">Hauptfenster</caption>
+      <caption xml:lang="da">Hovedvindue</caption>
+      <caption xml:lang="cs">Hlavní okno</caption>
+      <caption xml:lang="ca">Finestra principal</caption>
+      <caption xml:lang="bg">Основен прозорец</caption>
+      <caption xml:lang="be-Cyrl">Галоўнае акно</caption>
+      <caption xml:lang="ar">النافة الرئيسية</caption>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#aecef4</color>
+    <color type="primary" scheme_preference="dark">#1c3f68</color>
+  </branding>
+  <releases>
+    <release version="26.03.1" date="2026-05-26">
+      <description>
+        <p>Fixed known cases of the trimmed video containing earlier frames that only show up in some players (VLC, Firefox).</p>
+      </description>
+    </release>
+    <release version="26.03" date="2026-03-20">
+      <description>
+        <p>This release improves the default output file naming and adds command-line options.</p>
+        <p xml:lang="zh-Hans-CN">此次发布优化了默认输出文件名并添加了命令行选项。</p>
+        <p xml:lang="uk">У цьому випуску удосконалено визначення типової назви файла результатів та додано параметри командного рядка.</p>
+        <p xml:lang="tr">Bu dağıtım öntanımlı çıktı dosya adlandırmasını iyileştirir ve komut satırı seçenekleri ekler.</p>
+        <p xml:lang="sv">Denna utgåva förbättrar standardutmatningsfilens namn och lägger till kommandoradsflaggor.</p>
+        <p xml:lang="sr-Cyrl">Ово издање побољшава подразумевано именовање излазне датотеке и додаје опције линије наредби.</p>
+        <p xml:lang="sl">Ta izdaja izboljšuje privzeto poimenovanje izhodne datoteke in dodaja možnosti v ukazni vrstici.</p>
+        <p xml:lang="ru">В этой версии улучшено имя выходного файла по умолчанию и добавлены аргументы командной строки.</p>
+        <p xml:lang="ro">Această versiune îmbunătățește denumirea prestabilită a fișierelor rezultate și adaugă opțiuni pentru linia de comandă.</p>
+        <p xml:lang="pt-BR">Esta versão melhora a nomenclatura padrão do arquivo de saída e adiciona opções de linha de comando.</p>
+        <p xml:lang="pl">Te wydanie ulepsza domyślną nazwę pliku wychodzącego i dodaje opcje wiersza poleceń.</p>
+        <p xml:lang="oc">Aquesta version melhora la nominacion per defaut dels fichièrs de sortida e apond d'opcions de linha de comanda.</p>
+        <p xml:lang="kw">An dyllans ma gwellhe an henwyn restren eskorrans defowt hag addya dewisyow arghadow-linen.</p>
+        <p xml:lang="kk-Cyrl">Бұл шығарылым бастапқы шығыс файлдарының атауын жақсартады және командалық жол опцияларын қосады.</p>
+        <p xml:lang="ka">ამ გამოცემაში გაუმჯობესდა ნაგულისხმევი გამოტანის ფაილის სახელს დარქმევა და დაემატა ბრძანების სტრიქონის პარამეტრები.</p>
+        <p xml:lang="ja">このリリースでは、デフォルトの出力ファイル名の付け方を改善し、コマンドラインオプションを追加しました。</p>
+        <p xml:lang="it">In questa versione viene migliorato il nome predefinito dato ai file di output, e vengono aggiunte delle opzioni da riga di comando.</p>
+        <p xml:lang="he">המהדורה הזאת משפרת את מתן השם לקובץ הפלט ומוסיפה אפשרויות שורת פקודה.</p>
+        <p xml:lang="fr">Cette version améliore le nom par défaut du fichier de sortie et ajoute des options de ligne de commande.</p>
+        <p xml:lang="fa">این ارائه نامگذاری پروندهٔ خروجی پیش‌گزیده را بهبود داده و گزینه‌های خط فرمان را می‌افزاید.</p>
+        <p xml:lang="eu">Bertsio honek irteerako fitxategiaren izen lehenetsia hobetzen du eta komando-lerroko aukerak gehitzen ditu.</p>
+        <p xml:lang="de">Diese Version verbessert die Standard-Dateibenennung und fügt neue Befehlszeilen-Optionen hinzu.</p>
+        <p xml:lang="cs">Tohle vydání zlepšuje výchozí pojmenování výstupních souborů a přidává možnosti pro příkazový řádek.</p>
+        <p xml:lang="ca">Aquesta versió millora el nom del fitxer de sortida per defecte i afegeix opcions de línia d'ordres.</p>
+        <p xml:lang="be-Cyrl">У гэтым выпуску палепшана надаванне стандартнай назвы выходных файлаў і дададзены параметры каманднага радка.</p>
+        <ul>
+          <li>The default output filename now includes start and end timestamps.</li>
+          <li xml:lang="zh-Hans-CN">默认输出文件名现在包括了起始和结束时间戳。</li>
+          <li xml:lang="uk">До типових назв файлів результатів нова версія програми додає часові позначки початку і кінця.</li>
+          <li xml:lang="tr">Öntanımlı çıktı dosya adı bundan böyle başlangıç ve bitiş zaman damgalarını içerir.</li>
+          <li xml:lang="sv">Standardfilnamnet för utmatningsfilen inkluderar nu start- och sluttidsstämplar.</li>
+          <li xml:lang="sr-Cyrl">Подразумевани назив излазне датотеке сада укључује временске ознаке почетка и краја.</li>
+          <li xml:lang="sl">Privzeto ime izhodne datoteke zdaj vključuje začetni in zaključni časovni žig.</li>
+          <li xml:lang="ru">Имя выходного файла по умолчанию теперь содержит временные метки начала и конца обрезки.</li>
+          <li xml:lang="ro">Denumirea prestabilită a fișierului rezultat include acum timpii de început și sfârșit.</li>
+          <li xml:lang="pt-BR">O nome do arquivo de saída padrão agora inclui registro de data e hora de início e fim.</li>
+          <li xml:lang="pl">Domyślna nazwa pliku wychodzącego także zawiera znaczniki czasu początku i końca.</li>
+          <li xml:lang="oc">Lo nom de fichièr de sortida per defaut inclutz ara los orodatatges de debuta e de fin.</li>
+          <li xml:lang="kw">An hanow restren eskorrans defowt synsi termynyow dalleth ha diwedh lemmyn.</li>
+          <li xml:lang="kk-Cyrl">Бастапқы шығыс файлының аты енді бастапқы және соңғы уақыт белгілерін қамтиды.</li>
+          <li xml:lang="ka">ნაგულისხმევი გამოტანის ფაილის სახელი ახლა დასაწყისისა და დასასრულის დროის შტამპებს შეიცავს.</li>
+          <li xml:lang="ja">デフォルトの出力ファイル名に、開始/終了タイムスタンプを追加するように修正しました。</li>
+          <li xml:lang="it">Il nome predefinito per i file di output ora include gli istanti di inizio e di fine del video.</li>
+          <li xml:lang="is">Sjálfgefið skráarheiti inniheldur núna upphaf og endi tímamerkja.</li>
+          <li xml:lang="he">שם קובץ הפלט כולל מעתה את חותמות הזמן של ההתחלה והסיום כברירת מחדל.</li>
+          <li xml:lang="fr">Le fichier de sortie par défaut inclut désormais les horodatages de début et de fin.</li>
+          <li xml:lang="fa">نام پروندهٔ خروجی پیش‌گزیده اکنون برچسب‌های زمانی آغاز و پایان را دارد.</li>
+          <li xml:lang="eu">Irteerako fitxategiaren izen lehenetsiak orain hasierako eta amaierako denbora-zigiluak ditu.</li>
+          <li xml:lang="de">Der Standard-Ausgabedateiname enthält nun Start- und End-Zeitstempel</li>
+          <li xml:lang="cs">Výchozí název souboru nyní obsahuje počáteční a koncovou časovou značku.</li>
+          <li xml:lang="ca">El nom de fitxer de sortida predeterminat ara inclou marques horàries d'inici i final.</li>
+          <li xml:lang="be-Cyrl">Цяпер у назву выходнага файла дадаецца час пачатку і канца фрагмента.</li>
+          <li>Added command-line flags for start and end timestamps, precise trimming, and removing audio.</li>
+          <li xml:lang="zh-Hans-CN">添加了用于起始和结束时间戳，精确裁剪以及移除音频等的命令行标志。</li>
+          <li xml:lang="uk">Додано прапорці командного рядка для часових позначок початку і кінця, точного підрізання та вилучення звукових даних.</li>
+          <li xml:lang="tr">Başlangıç ve bitiş zaman damgaları, belgin kırpım ve sesi kaldırma komut satırı bayrakları eklendi.</li>
+          <li xml:lang="sv">La till kommandoradsflaggor för start- och sluttidsstämplar, precis trimning och borttagning av ljud.</li>
+          <li xml:lang="sr-Cyrl">Додате су заставице линије наредби за временске ознаке почетка и краја, прецизно скраћивање и уклањање звука.</li>
+          <li xml:lang="sl">Dodane zastavice ukazne vrstice za začetni in končni časovni žig, natančno obrezovanje in odstranjevanje zvoka.</li>
+          <li xml:lang="ru">Добавлены аргументы командной строки для временных меток начала и конца, точной обрезки и удаления звука.</li>
+          <li xml:lang="ro">Au fost adăugate opțiuni din linia de comandă pentru timpii de început și sfârșit, tăiere precisă și eliminarea sunetului.</li>
+          <li xml:lang="pt-BR">Adicionados sinalizadores de linha de comando para registro de data e hora de início e de fim, corte preciso e remoção de áudio.</li>
+          <li xml:lang="pl">Dodano opcje wiersza poleceń dla znaczników czasu początku i końca, precyzyjnego przycinania i usuwania dźwięku.</li>
+          <li xml:lang="oc">Apondon de bandièras de linha de comanda per l'oradatge de debuta e de fin, la copadura precissa e la supression de l'àudio.</li>
+          <li xml:lang="kw">Addys baneryow arghadow-linen rag termynyow dalleth ha diwedh, godreghans kewar, hag ow remova son.</li>
+          <li xml:lang="kk-Cyrl">Бастапқы және соңғы уақыт белгілері, дәл қиып алу және дыбысты өшіру үшін командалық жол жалаушалары қосылды.</li>
+          <li xml:lang="ka">დაემატა ბრძანების სტრიქონის ალმები დასაწყისისა და დასასრულის დროის შტამპებისთვის, ზუსტი წაკვეთისთვის და ხმის მოსაცილებლად.</li>
+          <li xml:lang="ja">開始/終了タイムスタンプ、正確なトリミング、音声削除のコマンドラインオプションを追加しました。</li>
+          <li xml:lang="it">Aggiunte delle opzioni dalla riga di comando per gli istanti iniziali e finali del video, per effettuare un ritaglio preciso e per rimuovere l'audio.</li>
+          <li xml:lang="he">נוספו דגלוני שורת פקודה לחותמות התחלה וסיום, חיתוך מדויק והסרת שמע.</li>
+          <li xml:lang="fr">Ajout d’arguments en ligne de commande pour horodater le début et la fin, découper précisément et supprimer l’audio.</li>
+          <li xml:lang="fa">پرچم‌های خط فرمان برای برچسب‌های زمانی آغاز و پایان، برش دقیق و برداشتن صدا افزوده شدند.</li>
+          <li xml:lang="eu">Hasierako eta amaierako denbora-zigiluetarako komando-lerroko banderak, kimatze zehatza eta audioa kentzea gehitu dira.</li>
+          <li xml:lang="de">Befehlszeilen-Schalter für Start- und End-Zeitstempel hinzugefügt, präzises Trimmen und Entfernen von Ton.</li>
+          <li xml:lang="cs">Přidány možnosti příkazového řádku pro počáteční a koncovou časovou značku, přesné stříhání a mazání audia.</li>
+          <li xml:lang="ca">S'han afegit indicadors de línia d'ordres per a les marques de temps d'inici i final, retallat precís i eliminació d'àudio.</li>
+          <li xml:lang="be-Cyrl">Дададзены аргументы каманднага радка для ўказання часу пачатка і канца, дакладнага абразання і выдалення гуку.</li>
+          <li>Increased the default window size to make the video 960×540.</li>
+          <li xml:lang="zh-Hans-CN">增加了默认窗口大小以使视频默认大小为 960×540。</li>
+          <li xml:lang="uk">Збільшено типовий розмір вікна для забезпечення розмірів відео 960×540.</li>
+          <li xml:lang="tr">Videoyu 960×540 yapmak için öntanımlı pencere boyutu büyütüldü.</li>
+          <li xml:lang="sv">Ökade standardfönstrets storlek för att göra videon 960×540.</li>
+          <li xml:lang="sr-Cyrl">Повећана је подразумевана величина прозора како би видео био 960×540.</li>
+          <li xml:lang="sl">Povečana privzeta velikost okna za izdelavo videoposnetkov 960x540.</li>
+          <li xml:lang="ru">Размер окна при открытии увеличен, чтобы сделать видео размером 960×540.</li>
+          <li xml:lang="ro">Dimensiunile prestabilite ale ferestrei au fost mărite pentru ca filmul să aibă 960×540.</li>
+          <li xml:lang="pt-BR">Aumentado o tamanho padrão da janela para tornar o vídeo 960×540.</li>
+          <li xml:lang="pl">Powiększono domyślny rozmiar okna, aby wideo było 960×540.</li>
+          <li xml:lang="oc">La talha de fenèstra per defaut es estada aumentada per que la vidèo faga 960×540.</li>
+          <li xml:lang="kw">Kressys an braster fenester defowt rag gul an gwydhyow 960×540.</li>
+          <li xml:lang="kk-Cyrl">Видеоны 960×540 ету үшін терезенің бастапқы өлшемі үлкейтілді.</li>
+          <li xml:lang="ka">ნაგულისხმევი ფანჯრის ზომა გაიზარდა, რომ ვიდეო 960×540 გახდეს.</li>
+          <li xml:lang="ja">ビデオの解像度が 960×540 になるよう、デフォルトのウィンドウサイズを大きくしました。</li>
+          <li xml:lang="it">La dimensione predefinita della finestra è stata ingrandita, per rendere il video 960x540.</li>
+          <li xml:lang="is">Sjálfgefin stærð glugga var aukin í 960×540px.</li>
+          <li xml:lang="he">גודל החלון כברירת מחדל הוגדל כדי שהסרטון יהיה 960×540.</li>
+          <li xml:lang="fr">La taille par défaut de la fenêtre a été augmentée pour que la vidéo s’affiche en 960×540.</li>
+          <li xml:lang="fa">افزایش پهنای پیش‌گزیدهٔ پنجره برای ‪۹۶۰×۵۴۰‬ کردن ویدیو.</li>
+          <li xml:lang="eu">Leiho-tamaina lehenetsia handitu da bideoa 960x540 izan dadin.</li>
+          <li xml:lang="de">Die Standard-Fenstergröße erhöhrt, um das Video auf 960×540 einzustellen.</li>
+          <li xml:lang="cs">Zvětšena výchozí velikost okna, aby video bylo 960×540.</li>
+          <li xml:lang="ca">S'ha incrementat la mida predeterminada de la finestra per a fer el vídeo 960×540.</li>
+          <li xml:lang="be-Cyrl">Стандартны памер акна павялічаны для відэа 960×540.</li>
+          <li>Updated to the GNOME 50 platform.</li>
+          <li xml:lang="zh-Hans-CN">更新至 GNOME 50 平台。</li>
+          <li xml:lang="uk">Програму оновлено до платформи GNOME 50.</li>
+          <li xml:lang="tr">GNOME 50 platformuna güncellendi.</li>
+          <li xml:lang="sv">Uppdaterad till GNOME 50-plattformen.</li>
+          <li xml:lang="sr-Cyrl">Ажурирано на Гном 50 платформу.</li>
+          <li xml:lang="sl">Posodobljeno na platformo GNOME 50.</li>
+          <li xml:lang="ru">Платформа обновлена до версии GNOME 50.</li>
+          <li xml:lang="ro">Actualizată la platforma GNOME 50.</li>
+          <li xml:lang="pt-BR">Atualizado para a plataforma GNOME 50.</li>
+          <li xml:lang="pl">Zaktualizowano do platformy GNOME 50.</li>
+          <li xml:lang="oc">Actualizat per la platafòrma GNOME 50.</li>
+          <li xml:lang="kw">Nowedhys dhe'n vynk GNOME 50.</li>
+          <li xml:lang="kk-Cyrl">GNOME 50 платформасына дейін жаңартылды.</li>
+          <li xml:lang="ka">განახლდა GNOME 50 პლატფორმისთვის.</li>
+          <li xml:lang="ja">GNOME 50 プラットフォームにアップデートしました。</li>
+          <li xml:lang="it">Aggiornato alla piattaforma GNOME 50.</li>
+          <li xml:lang="is">Uppfært í GNOME 50 kerfið.</li>
+          <li xml:lang="he">בוצע עדכון לפלטפורמה GNOME 50.</li>
+          <li xml:lang="fr">Mise à jour vers la plateforme GNOME 50.</li>
+          <li xml:lang="fa">به‌روز شده به بن‌سازهٔ گنوم ۵۰.</li>
+          <li xml:lang="eu">GNOME 50 plataformara eguneratu da.</li>
+          <li xml:lang="de">Auf die GNOME 50-Plattform aktualisiert.</li>
+          <li xml:lang="cs">Aktualizováno na platformu GNOME 50.</li>
+          <li xml:lang="ca">S'ha actualitzat a la plataforma GNOME 50.</li>
+          <li xml:lang="be-Cyrl">Абноўлена да платформы GNOME 50.</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="25.03" date="2025-03-30">
+      <description>
+        <p>This release makes the trimming options more discoverable.</p>
+        <p xml:lang="zh-Hant-TW">此版本使修剪選項更容易被發現。</p>
+        <p xml:lang="uz-Latn">Bu versiya qirqish variantlarini yanada aniqroq qiladi.</p>
+        <p xml:lang="nl">In deze uitgave zijn de trimopties eenvoudiger te vinden.</p>
+        <p xml:lang="ia">Iste version face le optiones de tonditura plus discoperabile.</p>
+        <p xml:lang="hu">Ez a kiadás a vágási beállításokat jobban felfedezhetővé teszi.</p>
+        <p xml:lang="es">Esta versión hace que las opciones de recorte sean más fáciles de encontrar.</p>
+        <p xml:lang="eo">Ĉi tiu eldono faras la tranĉad-opciojn pli malkovreblajn.</p>
+        <p xml:lang="el">Αυτή η έκδοση καθιστά τις επιλογές περικοπής πιο ευδιάκριτες.</p>
+        <p xml:lang="da">Denne udgave gør trimningsmulighederne nemmere at finde.</p>
+        <p xml:lang="bg">Версията прави вариантите за изрязване по-лесни за откриване.</p>
+        <ul>
+          <li>Changed the versioning scheme to year.month.</li>
+          <li xml:lang="zh-Hant-TW">將版本編號方案變更為年.月。</li>
+          <li xml:lang="uz-Latn">Versiyalash tizimi yil.oy ko‘rinishiga o‘zgartirildi.</li>
+          <li xml:lang="nl">Versieschema gewijzigd naar jaar.maand.</li>
+          <li xml:lang="ia">Cambiate le schema de versiones a anno.mense.</li>
+          <li xml:lang="hu">A verziózási séma év.hónap formátumra változott.</li>
+          <li xml:lang="es">Se cambió el esquema de versiones a año.mes.</li>
+          <li xml:lang="eo">Ŝanĝis la versiad-skimon al jaro.monato.</li>
+          <li xml:lang="el">Άλλαξε το σχήμα έκδοσης σε έτος.μήνας.</li>
+          <li xml:lang="da">Versionstalsystem ændret til år.måned.</li>
+          <li xml:lang="bg">Схемата за номериране на версиите е сменена на ГОДИНА.МЕСЕЦ.</li>
+          <li>Moved the accurate trimming and remove audio options from the save dialog to the main window.</li>
+          <li xml:lang="zh-Hant-TW">將精準修剪與移除音訊選項從儲存對話方塊移至主視窗。</li>
+          <li xml:lang="uz-Latn">Aniq qirqish va audioni olib tashlash variantlari saqlash oynasidan asosiy oynaga ko‘chirildi.</li>
+          <li xml:lang="nl">De opties voor nauwkeurig trimmen en audio verwijderen zijn verplaatst van het dialoogvenster Opslaan naar het hoofdvenster.</li>
+          <li xml:lang="ia">Movite le tonditura exacte e remove le optiones de audio ab le dialogo salvar a le fenestra principal</li>
+          <li xml:lang="hu">A pontos vágás és a hang eltávolításának lehetősége átkerült a mentési párbeszédablakból a főablakba.</li>
+          <li xml:lang="es">Se movieron las opciones de recorte preciso y quitar sonido de la ventana de diálogo de guardado a la ventana principal.</li>
+          <li xml:lang="el">Μεταφέρθηκαν οι επιλογές ακριβούς περικοπής και αφαίρεσης ήχου από το παράθυρο διαλόγου αποθήκευσης στο κύριο παράθυρο.</li>
+          <li xml:lang="da">Indstillingerne for Præcis trimning og Fjern lyd flyttet fra dialogen Gem til hovedvinduet.</li>
+          <li xml:lang="bg">Опциите за точно изрязване и премахване на звука са преместени от прозорчето за запазване в основния прозорец.</li>
+          <li>Added , and . shortcuts for short video stepping.</li>
+          <li xml:lang="zh-Hant-TW">新增「.」及「,」快捷鍵，用於短影片的逐個影格前進與後退。</li>
+          <li xml:lang="uz-Latn">Qisqa video qadami uchun , (vergul) va . (nuqta) yorliqlari qo‘shildi.</li>
+          <li xml:lang="nl">Sneltoetsen , en . toegevoegd voor korte videostappen.</li>
+          <li xml:lang="ia">Addite le vias breve , e . pro passos curte de video.</li>
+          <li xml:lang="hu">A , és a . gyorsbillentyűk hozzáadva a videó rövid léptetéséhez.</li>
+          <li xml:lang="es">Se agregaron los atajos , y . para efectuar pequeños saltos en el vídeo.</li>
+          <li xml:lang="eo">Aldonitaj , kaj . mallongigoj por mallonga videopaŝado.</li>
+          <li xml:lang="el">Προστέθηκαν συντομεύσεις , και . για βηματισμό βίντεο μικρής διάρκειας.</li>
+          <li xml:lang="da">Tilføjet ,- og .-genveje til små skridt frem og tilbage.</li>
+          <li xml:lang="bg">Добавени са клавишните комбинации „,“ и „.“ за постъпково придвижване.</li>
+          <li>Updated to the GNOME 48 platform.</li>
+          <li xml:lang="zh-Hant-TW">已更新至 GNOME 48 平台。</li>
+          <li xml:lang="uz-Latn">GNOME 48 platformasiga yangilandi.</li>
+          <li xml:lang="nl">Bijgewerkt: GNOME-platform naar versie 48.</li>
+          <li xml:lang="ia">Actualisate al platteforma GNOME 48.</li>
+          <li xml:lang="hu">Frissítve a GNOME 48 platformhoz.</li>
+          <li xml:lang="fi">Päivitetty Gnome 48 -alustaan.</li>
+          <li xml:lang="es">Actualizada a la plataforma GNOME 48.</li>
+          <li xml:lang="eo">Ĝisdatigita al la GNOME 48 platformo.</li>
+          <li xml:lang="el">Ενημερώθηκε στην πλατφόρμα GNOME 48.</li>
+          <li xml:lang="da">Opdateret til GNOME 48-platformen.</li>
+          <li xml:lang="bg">Обновено за GNOME 48.</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.0" date="2024-09-30">
+      <description>
+        <p>This release improves the behavior of shortcuts and does a minor visual refresh for GNOME 47.</p>
+        <p xml:lang="nb">Denne oppdateringen kommer med forbedrede tastatursnarveier og et oppfrisket utseende.</p>
+        <ul>
+          <li>Added I and O shortcuts to set start and end trimming point.</li>
+          <li xml:lang="nb">Nye tastatursnarveier til innstilling av start- og sluttpunkt.</li>
+          <li>Made all single-letter shortcuts work even when the time input fields are focused.</li>
+          <li xml:lang="nb">Alle tastatursnarveier kan nå brukes selv mens tidsfeltene er i fokus.</li>
+          <li>Changed the play/pause Ctrl+Space shortcut to just Space.</li>
+          <li xml:lang="nb">For å starte/stanse avspillingen, kan nå mellomrom brukes alene i stedet for Ctrl+mellomrom.</li>
+          <li>The video now starts paused after opening.</li>
+          <li xml:lang="nb">Videoer vil nå stå på pause når de åpnes.</li>
+          <li>Updated to the GNOME 47 platform.</li>
+          <li xml:lang="nb">Appen har blitt oppdatert til GNOME 47-plattformen.</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.8.2" date="2023-10-08">
+      <description>
+        <p>This release contains a minor visual refresh for GNOME 45.</p>
+        <p xml:lang="pt">Esta versão contém uma pequena atualização visual para o GNOME 45.</p>
+        <p xml:lang="id">Rilis ini berisi sedikit penyegaran visual untuk GNOME 45.</p>
+        <p xml:lang="hi">इस रिलीज़ में GNOME 45 के लिए एक छोटा सा ताज़ा दृश्य शामिल है।</p>
+        <p xml:lang="fur">Cheste publicazion e conten un inzornament visîf minôr par GNOME 45.</p>
+        <p xml:lang="en-GB">This release contains a minor visual refresh for GNOME 45.</p>
+        <ul>
+          <li>Tweaked the visual style for the GNOME 45 release.</li>
+          <li xml:lang="pt">Ajustado o estilo visual para o lançamento do GNOME 45.</li>
+          <li xml:lang="id">Mengubah gaya visual untuk rilis GNOME 45.</li>
+          <li xml:lang="hi">GNOME 45 रिलीज के लिए दृश्य शैली में बदलाव किया गया।</li>
+          <li xml:lang="fur">Rifinît il stîl visîf pe version 45 di GNOME.</li>
+          <li xml:lang="en-GB">Tweaked the visual style for the GNOME 45 release.</li>
+          <li>Fixed app crashing when ffprobe is missing.</li>
+          <li xml:lang="pt">Corrigida a falha da aplicação quando o ffprobe está em falta.</li>
+          <li xml:lang="id">Memperbaiki aplikasi yang mogok saat ffprobe hilang.</li>
+          <li xml:lang="hi">ffprobe के गायब होने पर ऐप के क्रैश होने की समस्या को ठीक किया गया।</li>
+          <li xml:lang="fur">Comedât il colàs de aplicazion cuant che al mancje ffprobe.</li>
+          <li xml:lang="en-GB">Fixed app crashing when ffprobe is missing.</li>
+          <li>Updated to the GNOME 45 platform.</li>
+          <li xml:lang="pt">Atualizado para a plataforma do GNOME 45.</li>
+          <li xml:lang="id">Dimutakhirkan ke platform GNOME 45.</li>
+          <li xml:lang="hi">GNOME 45 प्लेटफॉर्म पर अपडेट किया गया।</li>
+          <li xml:lang="fur">Inzornât ae plateforme GNOME 45.</li>
+          <li xml:lang="en-GB">Updated to the GNOME 45 platform.</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.8.1" date="2023-04-14">
+      <description>
+        <p>This release adds keyboard shortcuts and fixes a rare crash with some files.</p>
+        <p xml:lang="ta">இந்த வெளியீடு விசைப்பலகை குறுக்குவழிகளைச் சேர்க்கிறது மற்றும் சில கோப்புகளில் அரிதான செயலிழப்பைச் சரிசெய்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje dodaje tipkovne prečace i popravlja rijetki prekid programa s nekim datotekama.</p>
+        <ul>
+          <li>Added several keyboard shortcuts along with the shortcuts window listing them.</li>
+          <li xml:lang="ta">குறுக்குவழிகள் சாளரத்துடன் பல விசைப்பலகை குறுக்குவழிகள் சேர்க்கப்பட்டுள்ளன.</li>
+          <li xml:lang="hr">Dodano je nekoliko tipkovnih prečaca zajedno s prozorom s popisa prečaca.</li>
+          <li>Fixed app crashing when opening files which involve invalid UTF-8.</li>
+          <li xml:lang="ta">செல்லுபடியாகாத UTF-8ஐ உள்ளடக்கிய கோப்புகளைத் திறக்கும்போது பயன்பாடு செயலிழந்து போவது நிலையானது.</li>
+          <li xml:lang="hr">Popravljen je prekid programa prilikom otvaranja datoteka koje uključuju nevažeći UTF-8.</li>
+          <li>Updated to the GNOME 44 platform.</li>
+          <li xml:lang="ta">GNOME 44 இயங்குதளத்திற்கு புதுப்பிக்கப்பட்டது.</li>
+          <li xml:lang="hr">Aktualizirano na platformu GNOME 44.</li>
+          <li>Added Arabic translation (thanks tech-man).</li>
+          <li xml:lang="ta">அரபு மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி டெக்-மேன்).</li>
+          <li xml:lang="hr">Dodan je prijevod na arapski (hvala tech-man).</li>
+          <li>Added Occitan translation (thanks Quentin PAGÈS).</li>
+          <li xml:lang="ta">ஆக்ஸிடன் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி Quentin PAGÈS).</li>
+          <li xml:lang="hr">Dodan je prijevod na okcitanski (hvala Quentin PAGÈS).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.8.0" date="2022-10-14">
+      <description>
+        <p>This release fixes app closing on inaccessible files and updates it to the GNOME 43 platform.</p>
+        <p xml:lang="ta">இந்த வெளியீடு அணுக முடியாத கோப்புகளில் பயன்பாட்டை மூடுவதை சரிசெய்து, அதை GNOME 43 இயங்குதளத்திற்கு புதுப்பிக்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje ispravlja zatvaranje programa za nedostupne datoteke i aktualizira ga na platformu GNOME 43.</p>
+        <ul>
+          <li>Fixed app closing when trying to open inaccessible files.</li>
+          <li xml:lang="ta">அணுக முடியாத கோப்புகளைத் திறக்க முயற்சிக்கும்போது செயலி மூடுவது சரி செய்யப்பட்டது.</li>
+          <li xml:lang="hr">Ispravljanje prekida programa kad se pokušaju otvoriti nedostupne datoteke.</li>
+          <li>Fixed crash when trying to open files from network locations.</li>
+          <li xml:lang="ta">பிணைய இருப்பிடங்களில் இருந்து கோப்புகளைத் திறக்க முயற்சிக்கும்போது செயலிழப்பு சரி செய்யப்பட்டது.</li>
+          <li xml:lang="hr">Ispravljanje prekida programa kad se pokušaju otvoriti datoteke s mrežnih lokacija.</li>
+          <li>Updated to the GNOME 43 platform, which brings the ability to drag-and-drop from Files on Flatpak and a refreshed About dialog.</li>
+          <li xml:lang="ta">GNOME 43 இயங்குதளத்திற்கு புதுப்பிக்கப்பட்டது, இது பிளாட்பாக் இல் உள்ள கோப்புகளில் இருந்து இழுத்து விடுவதற்கான திறனையும் மற்றும் புதுப்பிக்கப்பட்ட உரையாடலையும் வழங்குகிறது.</li>
+          <li xml:lang="hr">Aktualizirano na platformu GNOME 43. Sada omogućuje funkciju „povuci-i-ispusti” iz upravljača datoteka na Flatpaku. Aktualiziran dijalog „O programu”.</li>
+          <li>Added Tamil translation (thanks K.B.Dharun Krishna).</li>
+          <li xml:lang="ta">தமிழ் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி க.பா.தருண் கிருஷ்ணா).</li>
+          <li xml:lang="hr">Dodan je prijevod na tamilski (hvala K.B.Dharun Krishna).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.1" date="2022-03-23">
+      <description>
+        <p>This release enables "Show in Files" for Flatpak and updates translations.</p>
+        <p xml:lang="ta">இந்த வெளியீடு பிளாட்பாக்கான "கோப்புகளில் காண்பி" மற்றும் மொழிபெயர்ப்புகளை மேம்படுத்துகிறது.</p>
+        <p xml:lang="hr">Ovo izdanje omogućuje „Pokaži u upravljaču datoteka” za Flatpak i aktualizira prijevode.</p>
+        <ul>
+          <li>The "Show in Files" button has been enabled for all Flatpak installs.</li>
+          <li xml:lang="ta">அனைத்து பிளாட்பாக் நிறுவல்களுக்கும் "கோப்புகளில் காண்பி" பொத்தான் செயல்படுத்தப்பட்டுள்ளது.</li>
+          <li xml:lang="hr">Gumb „Pokaži u upravljaču datoteka” je aktiviran za sve Flatpak instalicaije.</li>
+          <li>Added Czech translation (thanks Jakub Mach).</li>
+          <li xml:lang="ta">செக் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஜக்குப் மாக்).</li>
+          <li xml:lang="hr">Dodan je prijevod na češki (hvala Jakub Mach).</li>
+          <li>Added French translation.</li>
+          <li xml:lang="ta">பிரஞ்சு மொழிபெயர்ப்பு சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je prijevod na francuski.</li>
+          <li>Added Galician translation (thanks Fran Diéguez).</li>
+          <li xml:lang="ta">காலிசியன் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஃபிரான் டியாகுஸ்).</li>
+          <li xml:lang="hr">Dodan je prijevod na galicijski (hvala Fran Diéguez).</li>
+          <li>Added Turkish translation.</li>
+          <li xml:lang="ta">துருக்கிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je prijevod na turski.</li>
+          <li>Added Ukrainian translation (thanks Andrij Mizyk).</li>
+          <li xml:lang="ta">உக்ரேனிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஆன்ட்ரிஜ் மிசிக்).</li>
+          <li xml:lang="hr">Dodan je prijevod na ukrajiniski (hvala Andrij Mizyk).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.0" date="2021-12-08">
+      <description>
+        <p>This release adds an accurate trimming with re-encoding option and refreshes the design a bit.</p>
+        <p xml:lang="ta">இந்த வெளியீடு ரீ-என்கோடிங் விருப்பத்துடன் துல்லியமான டிரிம்மிங்கைச் சேர்க்கிறது மற்றும் வடிவமைப்பை சிறிது புதுப்பிக்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje dodaje precizno kraćenje s opcijom ponovnog kodiranja kao i manje promjene u dizajnu programa.</p>
+        <ul>
+          <li>Added a checkbox for accurate trimming with re-encoding to the output file selection dialog.</li>
+          <li xml:lang="ta">வெளியீட்டு கோப்பு தேர்வு உரையாடலில் மறு-குறியாக்கத்துடன் துல்லியமான டிரிம்மிங்கிற்கான தேர்வுப்பெட்டி சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je potvrdni okvir za precizno rezanje s ponovnim kodiranjem u dijalogu za biranje datoteke rezultata.</li>
+          <li>Updated the design to better match the newer version of the Adwaita theme.</li>
+          <li xml:lang="ta">அத்வைதா தீமின் புதிய பதிப்போடு சிறப்பாகப் பொருந்தும்படி வடிவமைப்பு புதுப்பிக்கப்பட்டது.</li>
+          <li xml:lang="hr">Aktualiziran je dizajn kako bi bolje odgovarao novijoj verziji Adwaita temi.</li>
+          <li>Added dark style and high contrast support and made dark style the default.</li>
+          <li xml:lang="ta">இருண்ட பாணி மற்றும் உயர் மாறுபாடு ஆதரவு சேர்க்கப்பட்டது மற்றும் இருண்ட பாணியை இயல்புநிலையாக மாற்றப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je tamni stil i podrška za visoki kontrast te je tamni stil postavljen kao standardni.</li>
+          <li>Added a "Show in Files" button to the trimming done notification. Note: due to a limitation this is currently disabled on some Flatpak installs, but you can make it work by giving Video Trimmer the filesystem=host permission (for example, using Flatseal).</li>
+          <li xml:lang="ta">டிரிம்மிங் செய்யப்பட்ட அறிவிப்பில் "கோப்புகளில் காட்டு" பொத்தான் சேர்க்கப்பட்டது. குறிப்பு: ஒரு வரம்பு காரணமாக இது தற்போது சில பிளாட்பாக் நிறுவல்களில் முடக்கப்பட்டுள்ளது, ஆனால் வீடியோ டிரிம்மருக்கு கோப்பு முறைமை=ஹோஸ்ட் அனுமதியை (உதாரணமாக, பிளாட்சீல் ஐப் பயன்படுத்தி) வழங்குவதன் மூலம் அதைச் செயல்படுத்தலாம்.</li>
+          <li xml:lang="hr">Dodan je gumb „Pokaži u datotekama" za obavijesti o završavanju rezanja. Napomena: zbog ograničenja, ovo trenutačno nije moguće na nekim instalacijama Flatpaka, ali može ga se natjerati da radi dajući Video Trimmeru pravo „filesystem=host” (datotečni sustav = host računalo), na primjer, koristeći Flatseal.</li>
+          <li>Added Japanese translation (thanks Sibuya Kaz).</li>
+          <li xml:lang="ta">ஜப்பானிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி சிபுயா காஸ்).</li>
+          <li xml:lang="hr">Dodan je prijevod na japanski (hvala Sibuya Kaz).</li>
+          <li>Added Polish translation (thanks Avery).</li>
+          <li xml:lang="ta">போலிஷ் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஏவரி).</li>
+          <li xml:lang="hr">Dodan je prijevod na poljski (hvala Averry).</li>
+          <li>Added Portuguese translation (thanks Bio DevM).</li>
+          <li xml:lang="ta">போர்த்துகீசிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி Bio DevM).</li>
+          <li xml:lang="hr">Dodan je prijevod na portugalski (hvala Bio DevM).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.1" date="2021-09-11">
+      <description>
+        <p>This release contains a few improvements and adds a number of translations.</p>
+        <p xml:lang="ta">இந்த வெளியீட்டில் சில மேம்பாடுகள் மற்றும் பல மொழிபெயர்ப்புகள் சேர்க்கப்பட்டுள்ளன.</p>
+        <p xml:lang="hr">Ovo izdanje sadrži nekoliko poboljšanja i dodaje brojne prijevode.</p>
+        <p xml:lang="gl">Esta publicación contén unhas poucas melloras e engade unhas cantas traducións</p>
+        <ul>
+          <li>Added a checkbox to remove the audio track to the output file selection dialog.</li>
+          <li xml:lang="ta">வெளியீட்டு கோப்பு தேர்வு உரையாடலில் ஆடியோ டிராக்கை அகற்ற தேர்வுப்பெட்டி சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je potvrdni okvir za uklanjanje audio staze u dijalogu za biranje datoteke rezultata.</li>
+          <li>The video is now automatically paused when the trim button is pressed.</li>
+          <li xml:lang="ta">டிரிம் பட்டனை அழுத்தினால், வீடியோ தானாகவே இடைநிறுத்தப்படும்.</li>
+          <li xml:lang="hr">Video se sada automatski zustavlja kad se pritisne gumb za kraćenje.</li>
+          <li xml:lang="gl">O vídeo agora detense automaticamente cando preme o botón de recortar.</li>
+          <li>The .mp4 output file extension is no longer default when it cannot be used (this affected videos from some Sony cameras).</li>
+          <li xml:lang="ta">.mp4 அவுட்புட் கோப்பு நீட்டிப்பு பயன்படுத்த முடியாதபோது இயல்புநிலையாக இருக்காது (இது சில சோனி கேமராக்களில் இருந்து வீடியோக்களை பாதித்தது).</li>
+          <li xml:lang="hr">Nastavak .mp4 više nije standardni sufiks kad se ne može koristiti (to se odnosilo na videa nekih kamera tvrtke Sony).</li>
+          <li xml:lang="gl">A extensión do ficheiro de saída .mp4 xa non é a predefinida cando non se pode usar (isto afecta aos vídeos dalgunhas cámaras Sony).</li>
+          <li>Added a message when the opened file has no video track.</li>
+          <li xml:lang="ta">திறக்கப்பட்ட கோப்பில் வீடியோ டிராக் இல்லாதபோது ஒரு செய்தியைச் சேர்த்தது.</li>
+          <li xml:lang="hr">Dodana je poruka kad otvorena datoteka nema video stazu.</li>
+          <li>Updated libadwaita, which means slightly newer version of the Adwaita theme.</li>
+          <li xml:lang="ta">லிபத்வைதா புதுப்பிக்கப்பட்டது, அதாவது அத்வைதா தீமின் சற்று புதிய பதிப்பு.</li>
+          <li xml:lang="hr">Aktualizirana je biblioteka libadwaita, što znači nešto novija verzija Adwaita teme.</li>
+          <li>Fixed a crash after closing a window with a visible notification.</li>
+          <li xml:lang="ta">தெரியும் அறிவிப்புடன் ஒரு சாளரத்தை மூடிய பிறகு ஒரு செயலிழப்பு சரி செய்யப்பட்டது.</li>
+          <li xml:lang="hr">Ispravljanje prekida programa nakon zatvaranja prozora s vidljivom obavijesti.</li>
+          <li>Added German translation (thanks Johannes Hayeß).</li>
+          <li xml:lang="ta">ஜெர்மன் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஜோஹன்னஸ் ஹேய்ஸ்).</li>
+          <li xml:lang="hr">Dodan je prijevod na njemački (hvala Johannes Hayeß).</li>
+          <li>Added Basque translation (thanks Sergio).</li>
+          <li xml:lang="ta">பாஸ்க் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி செர்ஜியோ).</li>
+          <li xml:lang="hr">Dodan je prijevod na baskijski (hvala Sergio).</li>
+          <li>Added Hungarian translation (thanks ovari).</li>
+          <li xml:lang="ta">ஹங்கேரிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஓவரி).</li>
+          <li xml:lang="hr">Dodan je prijevod na mađarski (hvala ovari).</li>
+          <li>Added Italian translation (thanks Albano Battistella).</li>
+          <li xml:lang="ta">இத்தாலிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி அல்பானோ பாட்டிஸ்டெல்லா).</li>
+          <li xml:lang="hr">Dodan je prijevod na talijanski (hvala Albano Battistella).</li>
+          <li>Added Brazilian Portuguese translation (thanks Gustavo Costa).</li>
+          <li xml:lang="ta">பிரேசிலிய போர்த்துகீசிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி குஸ்டாவோ கோஸ்டா).</li>
+          <li xml:lang="hr">Dodan je prijevod na brazilski portugalski (hvala Gustavo Costa).</li>
+          <li>Specified input device and screen size recommendations to improve display in the new GNOME Software.</li>
+          <li xml:lang="ta">புதிய க்னோம் மென்பொருளில் காட்சியை மேம்படுத்த குறிப்பிட்ட உள்ளீட்டு சாதனம் மற்றும் திரை அளவு பரிந்துரைகள்.</li>
+          <li xml:lang="hr">Specificirane su preporuke za uređaj unosa i veličinu ekrana kako bi se poboljšao prikaz u novoj verziji programa GNOME softver.</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.0" date="2021-05-13">
+      <description>
+        <p>This release contains a few small improvements.</p>
+        <p xml:lang="ta">இந்த வெளியீட்டில் சில சிறிய மேம்பாடுகள் உள்ளன.</p>
+        <p xml:lang="hr">Ovo izdanje sadrži nekoliko malih poboljšanja.</p>
+        <p xml:lang="gl">Esta publicación contén unhas cantas melloras pequenas.</p>
+        <ul>
+          <li>The default name for the output video is now "input video name (trimmed)".</li>
+          <li xml:lang="ta">வெளியீட்டு வீடியோவின் இயல்புநிலை பெயர் இப்போது "உள்ளீட்டு வீடியோ பெயர் (டிரிம் செய்யப்பட்டது)".</li>
+          <li xml:lang="hr">Za standardno ime video rezultata sada se koristi „ime video unosa (skraćen)”.</li>
+          <li>The default folder for the output video is now the input video's folder. Note: to make this work under Flatpak, you'll need to give Video Trimmer the filesystem=host permission (for example, using Flatseal).</li>
+          <li xml:lang="ta">வெளியீட்டு வீடியோவுக்கான இயல்புநிலை கோப்புறை இப்போது உள்ளீட்டு வீடியோவின் கோப்புறையாகும். குறிப்பு: பிளாட்பேக்கின் கீழ் இதைச் செய்ய, நீங்கள் வீடியோ டிரிம்மருக்கு கோப்பு முறைமை=ஹோஸ்ட் அனுமதியை வழங்க வேண்டும் (எடுத்துக்காட்டாக, பிளாட்சீலைப் பயன்படுத்துதல்).</li>
+          <li xml:lang="hr">Standardna mapa za video rezultat sada je mapa videa unosa. Napomena: da bi ovo funkcioniralo pod Flatpak-om, Video Trimer treba dozvolu „filesystem=host” (na primjer, koristeći Flatseal).</li>
+          <li>It's now possible to open a new Video Trimmer window from the new primary menu.</li>
+          <li xml:lang="ta">புதிய முதன்மை மெனுவிலிருந்து புதிய வீடியோ டிரிம்மர் சாளரத்தைத் திறப்பது இப்போது சாத்தியமாகும்.</li>
+          <li xml:lang="hr">Sada je moguće otvoriti novi prozor programa „Kraćenje videa” iz novog glavnog izbornika.</li>
+          <li xml:lang="gl">Agora é posíbel abrir unha nova xanela do Recortador de vídeo desde o novo menú principal.</li>
+          <li>The timestamp text fields are now arranged in a better way in RTL languages.</li>
+          <li xml:lang="ta">நேர முத்திரை உரை புலங்கள் இப்போது RTL மொழிகளில் சிறந்த முறையில் வரிசைப்படுத்தப்பட்டுள்ளன.</li>
+          <li xml:lang="hr">Tekstualna polja vremenskih oznaka sada su bolje raspoređena za jezike koji se pišu s desna na lijevo.</li>
+          <li xml:lang="gl">Os campos de texto de marcas de tempo agora poden ordenarse dunha forma mellor en idiomas RTL.</li>
+          <li>Video Trimmer now uses libadwaita, which means a slightly updated visual style (rounded window corners!).</li>
+          <li xml:lang="ta">வீடியோ டிரிம்மர் இப்போது லிபட்வைட்டாவைப் பயன்படுத்துகிறது, அதாவது சற்று மேம்படுத்தப்பட்ட காட்சி பாணி (வட்டமான சாளர மூலைகள்!).</li>
+          <li xml:lang="hr">Kraćenje videa sada koristi libadwaita, što znači ponešto aktualiziran vizualni stil (zaobljeni kutovi prozora!).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2021-03-29">
+      <description>
+        <p>Video Trimmer is now a GTK 4 application!</p>
+        <p xml:lang="ta">வீடியோ டிரிம்மர் இப்போது GTK 4 பயன்பாடு!</p>
+        <p xml:lang="hr">„Kraćenje videa” je sada GTK 4 program!</p>
+        <p xml:lang="gl">O Recurtador de vídeo aogra é unha aplicación GTK 4!</p>
+        <ul>
+          <li>The GTK 4 port hopefully fixes video-driver-related crashes.</li>
+          <li xml:lang="ta">GTK 4 போர்ட் வீடியோ-டிரைவர் தொடர்பான செயலிழப்புகளை சரிசெய்கிறது.</li>
+          <li xml:lang="hr">Nadamo se da GTK 4 portiranje ispravlja prekide povezane s pomoćnim video programima.</li>
+          <li xml:lang="gl">Un port de GTK 4 que con sorte arranxa erros críticos relacionados co controlador de vídeo.</li>
+          <li>Improved window animations when opening videos.</li>
+          <li xml:lang="ta">வீடியோக்களை திறக்கும் போது மேம்படுத்தப்பட்ட சாளர அனிமேஷன்கள்.</li>
+          <li xml:lang="hr">Poboljšane animacije prozora prilikom otvaranja videa.</li>
+          <li xml:lang="gl">Animacións de xanela mellorados ao abrir os vídeos.</li>
+          <li>Added Croatian translation (thanks milotype).</li>
+          <li xml:lang="ta">குரோஷிய மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி மைலோடைப்).</li>
+          <li xml:lang="hr">Dodan je prijevod na hrvatski (hvala milotype).</li>
+          <li>Updated translations.</li>
+          <li xml:lang="zh-Hant-TW">更新了翻譯。</li>
+          <li xml:lang="zh-Hans-CN">更新了翻译。</li>
+          <li xml:lang="uz-Latn">Yangilangan tarjimalar.</li>
+          <li xml:lang="uk">Оновлено переклади.</li>
+          <li xml:lang="tr">Çeviriler güncellendi.</li>
+          <li xml:lang="ta">புதுப்பிக்கப்பட்ட மொழிபெயர்ப்புகள்.</li>
+          <li xml:lang="sv">Uppdaterade översättningar.</li>
+          <li xml:lang="sr-Cyrl">Отпремљени преводи.</li>
+          <li xml:lang="sl">Posodobljeni prevodi.</li>
+          <li xml:lang="ru">Обновлены переводы.</li>
+          <li xml:lang="ro">Traduceri actualizate.</li>
+          <li xml:lang="pt-BR">Traduções atualizadas.</li>
+          <li xml:lang="pt">Traduções atualizadas.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia.</li>
+          <li xml:lang="oc">Traduccions actualizadas.</li>
+          <li xml:lang="nl">Bijgewerkte vertalingen.</li>
+          <li xml:lang="nb">Oppdaterte oversettelser.</li>
+          <li xml:lang="kw">Nowedhys treylyansow.</li>
+          <li xml:lang="kk-Cyrl">Аудармалар жаңартылды.</li>
+          <li xml:lang="ka">განახლებული თარგმანები.</li>
+          <li xml:lang="ja">翻訳をアップデートしました。</li>
+          <li xml:lang="it">Traduzioni aggiornate.</li>
+          <li xml:lang="is">Þýðingar uppfærðar.</li>
+          <li xml:lang="id">Memperbarui terjemahan.</li>
+          <li xml:lang="ia">Traductiones actualisate.</li>
+          <li xml:lang="hu">Fordítások frissítve.</li>
+          <li xml:lang="hr">Aktualizirani prijevodi.</li>
+          <li xml:lang="hi">अनुवाद अपडेट किये गये.</li>
+          <li xml:lang="he">תרגומים עודכנו.</li>
+          <li xml:lang="gl">Traducíons actualizadas.</li>
+          <li xml:lang="fur">Traduzions inzornadis.</li>
+          <li xml:lang="fr">Mise à jour des traductions.</li>
+          <li xml:lang="fi">Päivitetyt kielikäännökset.</li>
+          <li xml:lang="fa">ترجمه‌های به‌روز شده.</li>
+          <li xml:lang="eu">Eguneratutako itzulpenak.</li>
+          <li xml:lang="es">Traducciones actualizadas.</li>
+          <li xml:lang="eo">Ĝisdatigitaj tradukoj.</li>
+          <li xml:lang="en-GB">Updated translations.</li>
+          <li xml:lang="el">Ενημερώθηκαν οι μεταφράσεις.</li>
+          <li xml:lang="de">Übersetzungen aktualisiert.</li>
+          <li xml:lang="da">Opdaterede oversættelser.</li>
+          <li xml:lang="cs">Aktualizované překlady.</li>
+          <li xml:lang="ca">S'han actualitzat les traduccions.</li>
+          <li xml:lang="bg">Обновени преводи.</li>
+          <li xml:lang="be-Cyrl">Абноўлены пераклады.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.2" date="2021-02-25">
+      <description>
+        <p>This release fixes an error when trimming GoPro recordings.</p>
+        <p xml:lang="ta">இந்த வெளியீடு GoPro பதிவுகளை டிரிம் செய்யும் போது ஏற்பட்ட பிழையை சரிசெய்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje ispravlja grešku kad se GoPro snimanja skraćuju.</p>
+        <ul>
+          <li>Data streams are no longer copied to the output file as a workaround to prevent errors on GoPro recordings.</li>
+          <li xml:lang="ta">GoPro பதிவுகளில் பிழைகளைத் தடுப்பதற்கான ஒரு தீர்வாக தரவு ஸ்ட்ரீம்கள் இனி வெளியீட்டு கோப்பில் நகலெடுக்கப்படாது.</li>
+          <li xml:lang="hr">Prijenosni podaci više se ne kopiraju u datoteku rezultata čime se sprečavaju greške GoPro snimanja.</li>
+          <li>Updated Spanish translation.</li>
+          <li xml:lang="ta">ஸ்பானிஷ் மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது.</li>
+          <li xml:lang="hr">Aktualiziran je prijevod na španjolski.</li>
+          <li xml:lang="gl">Actualizadas as traducións ao español.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.1" date="2021-01-20">
+      <description>
+        <p>This release fixes an issue where not all streams from the input file were copied into the output file.</p>
+        <p xml:lang="ta">உள்ளீட்டு கோப்பிலிருந்து அனைத்து ஸ்ட்ரீம்களும் வெளியீட்டு கோப்பில் நகலெடுக்கப்படாத சிக்கலை இந்த வெளியீடு சரிசெய்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje rješava problem nekopiranja svih prijenosnih podataka datoteke unosa u datoteku rezultata.</p>
+        <p xml:lang="gl">Esta publicación arranxa un problema cando non todos os fluxos do ficheiro de entrada se copiaron no ficheiro de saída.</p>
+        <ul>
+          <li>All input file streams are now copied to the output file rather than just a single of each type. Subtitles are now copied too rather than skipped.</li>
+          <li xml:lang="ta">அனைத்து உள்ளீட்டு கோப்பு ஸ்ட்ரீம்களும் இப்போது ஒவ்வொரு வகையிலும் ஒரே மாதிரியாக இல்லாமல் வெளியீட்டு கோப்பில் நகலெடுக்கப்படுகின்றன. சப்டைட்டில்கள் தவிர்க்கப்படுவதற்குப் பதிலாக இப்போது நகலெடுக்கப்படுகின்றன.</li>
+          <li xml:lang="hr">Svi prijenosni podaci datoteke unosa sada se kopiraju u datoteku rezultata, umjesto samo pojedinačne vrste. Podnaslovi se sada kopiraju, umjesto da se preskaču.</li>
+          <li>Added Swedish translation (thanks Åke Engelbrektson).</li>
+          <li xml:lang="ta">ஸ்வீடிஷ் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஏக் ஏங்கல்பிரெக்ட்சன்).</li>
+          <li xml:lang="hr">Dodan je prijevod na švedski (hvala Åke Engelbrektson).</li>
+          <li xml:lang="gl">Engadida a tradución ao sueco (grazas Åke Engelbrektson).</li>
+          <li>Added Spanish translation (thanks Óscar Fernández Díaz).</li>
+          <li xml:lang="ta">ஸ்பானிஷ் மொழிபெயர்ப்பு சேர்க்கப்பட்டது (நன்றி ஆஸ்கார் பெர்னாண்டஸ் டியாஸ்).</li>
+          <li xml:lang="hr">Dodan je prijevod na španjolski (hvala Óscar Fernández Díaz).</li>
+          <li xml:lang="gl">Engadida a tradución ao español (grazas Óscar Fernández Díaz).</li>
+          <li>Made the commandline argument description translatable.</li>
+          <li xml:lang="ta">கட்டளை வரி வாத விளக்கத்தை மொழி பெயர்க்கக்கூடியதாக மாற்றியது.</li>
+          <li xml:lang="hr">Omogućeno je prevođenje opisa argumenta naredbenog retka.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.0" date="2020-11-20">
+      <description>
+        <p>This release replaces the Done dialog with an in-app notification and adds a command-line argument to specify the output file.</p>
+        <p xml:lang="ta">இந்த வெளியீடு முடிந்தது உரையாடலைப் பயன்பாட்டில் உள்ள அறிவிப்புடன் மாற்றுகிறது மற்றும் வெளியீட்டு கோப்பைக் குறிப்பிட கட்டளை வரி வாதத்தை சேர்க்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje zamijenjuje dijalog „Gotovo” s programskom obavijesti i dodaje argument naredbenog retka za određivanje datoteke rezultata.</p>
+        <ul>
+          <li>Added an --output or -o argument to specify the output video path. It will be pre-filled in the save dialog.</li>
+          <li xml:lang="ta">வெளியீட்டு வீடியோ பாதையைக் குறிப்பிட --output அல்லது -o ஆர்குமெண்ட் சேர்க்கப்பட்டது. சேமி உரையாடலில் இது முன்பே நிரப்பப்படும்.</li>
+          <li xml:lang="hr">Dodan je argument --output ili -o za određivanje staze video rezultata. Bit će unaprijed popunjen u dijalogu za spremanje.</li>
+          <li>Added support for opening videos with DnD, although it doesn't work on Flatpak unless Video Trimmer is given filesystem access.</li>
+          <li xml:lang="ta">DnD உடன் வீடியோக்களைத் திறப்பதற்கான ஆதரவு சேர்க்கப்பட்டது, இருப்பினும் வீடியோ டிரிம்மருக்கு கோப்பு முறைமை அணுகல் வழங்கப்படாவிட்டால் அது பிளாட்பாக் இல் வேலை செய்யாது.</li>
+          <li xml:lang="hr">Dodana je podrška za otvaranje videa pomoću DnD-a, ali ne radi na Flatpaku ukoliko program „Kraćenje videa” nema prava pristupa datotečnom sustavu.</li>
+          <li>Replaced the Done dialog with an in-app notification to better follow the GNOME HIG.</li>
+          <li xml:lang="ta">க்னோம் HIG சிறப்பாகப் பின்தொடர, முடிந்தது உரையாடலைப் பயன்பாட்டில் உள்ள அறிவிப்புடன் மாற்றப்பட்டது.</li>
+          <li xml:lang="hr">Dijalog „Gotovo” je zamijenjen s programskom obavijesti kako bi se bolje slijedile GNOME smjernice za sučelje.</li>
+          <li xml:lang="gl">Substituído o diálogo de Completado con unha notificación para seguir as GIH de GNOME.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2020-10-11">
+      <description>
+        <p>This release fixes file filter not working on Flatpak and possibly a related file chooser crash.</p>
+        <p xml:lang="ta">இந்த வெளியீடு பிளாட்பாக் இல் வேலை செய்யாத கோப்பு வடிகட்டி மற்றும் தொடர்புடைய கோப்பு தேர்வு செய்யும் செயலிழப்பை சரிசெய்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje popravlja filtar datoteka koji ne radi na Flatpaku i s tim u vezi potencijalni prekid rada birača datoteka.</p>
+        <p xml:lang="gl">Esta publicación arranxa o filtro de ficheiros que non funcionaba en Flatpak e posibelmente unha rotura no selector de ficheiros.</p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2020-08-29">
+      <description>
+        <p>This release fixes crashes related to video preview errors, adds a Ctrl+Q exit shortcut and a Dutch translation.</p>
+        <p xml:lang="ta">இந்த வெளியீடு வீடியோ முன்னோட்டப் பிழைகள் தொடர்பான செயலிழப்புகளைச் சரிசெய்கிறது, Ctrl+Q வெளியேறும் குறுக்குவழியையும் டச்சு மொழிபெயர்ப்பையும் சேர்க்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje ispravlja prekide programa koje se odnose na greške pregleda videa, dodaje prečac Ctrl+Q za zatvaranje programa te prijevod na nizozemski.</p>
+        <ul>
+          <li>Added a Ctrl+Q shortcut to quit Video Trimmer.</li>
+          <li xml:lang="ta">வீடியோ டிரிம்மரில் இருந்து வெளியேற, Ctrl+Q ஷார்ட்கட் சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je prečac Ctrl+Q za zatvaranje programa „Kraćenje videa”.</li>
+          <li xml:lang="gl">Engadido o atallo Ctrl+Q para sáir do Recortador de video.</li>
+          <li>Added a Dutch translation.</li>
+          <li xml:lang="ta">டச்சு மொழிபெயர்ப்பு சேர்க்கப்பட்டது.</li>
+          <li xml:lang="hr">Dodan je prijevod na nizozemski.</li>
+          <li xml:lang="gl">Engadida tradución ao Holandés.</li>
+          <li>Made video preview display an error message when it fails to load.</li>
+          <li xml:lang="ta">உருவாக்கப்பட்ட வீடியோ முன்னோட்டம் ஏற்றத் தவறினால் பிழைச் செய்தியைக் காண்பிக்கும்.</li>
+          <li xml:lang="hr">Pregled videa prikazuje upozorenje kad se ne uspije učitati.</li>
+          <li xml:lang="gl">Facer que a previsualización de vídeo mostre un mensaxe de erro ao fallar ao cargar.</li>
+          <li>Fixed a crash when the GL runtime is not installed (e.g. when installing the Flathub package on clean Ubuntu 18.04 through Ubuntu Software).</li>
+          <li xml:lang="ta">GL இயக்க நேரம் நிறுவப்படாத போது ஒரு செயலிழப்பு சரி செய்யப்பட்டது (எ.கா. உபுண்டு மென்பொருளின் மூலம் சுத்தமான உபுண்டு 18.04 இல் பிளாதப் தொகுப்பை நிறுவும் போது).</li>
+          <li xml:lang="hr">Ispravljanje prekida programa u slučaju da GL vrijeme pokretanja nije instalirano (npr. prilikom instaliranja paketa Flathub na čisti Ubuntu 18.04 putem Ubuntu softvera).</li>
+          <li>Fixed a crash when required GStreamer plugins are not installed.</li>
+          <li xml:lang="ta">தேவைப்படும் GStreamer செருகுநிரல்கள் நிறுவப்படாதபோது, ஒரு செயலிழப்பு சரி செய்யப்பட்டது.</li>
+          <li xml:lang="hr">Ispravljanje prekida programa kad potrebni GStreamer dodaci nisu instalirani.</li>
+          <li>Fixed a crash on failing to change the playback position.</li>
+          <li xml:lang="ta">பிளேபேக் நிலையை மாற்றத் தவறியதில் ஒரு செயலிழப்பு சரி செய்யப்பட்டது.</li>
+          <li xml:lang="hr">Ispravljanje prekida programa pri neuspjelom mijenjanju mjesta reprodukcije.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2020-07-06">
+      <description>
+        <p>This release adds a video preview and a timeline where the target region can be adjusted using the mouse.</p>
+        <p xml:lang="ta">இந்த வெளியீடு வீடியோ மாதிரிக்காட்சியையும், இலக்குப் பகுதியை சுட்டியைப் பயன்படுத்தி சரிசெய்யக்கூடிய காலவரிசையையும் சேர்க்கிறது.</p>
+        <p xml:lang="hr">Ovo izdanje dodaje pregled videa i vremensku traku gdje se ciljno područje može prilagoditi pomoću miša.</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2020-04-29">
+      <description>
+        <p>First release.</p>
+        <p xml:lang="ta">முதல் வெளியீடு.</p>
+        <p xml:lang="hr">Prvo izdanje.</p>
+        <p xml:lang="gl">Primeira publicación.</p>
+      </description>
+    </release>
+  </releases>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+</component>

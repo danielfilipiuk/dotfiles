@@ -47343,3 +47343,437 @@ mc
 tar xvf latencytop-0.5.tar.gz 
 wget https://www.latencytop.org/download/latencytop-0.5.tar.gz
 ./latencytop 
+cd downloads/
+uname -a
+sudo apt purge --auto-remove linux-image-7.1.8-polaris-v1 linux-headers-7.1.8-polaris-v1 
+latencytop
+sudo latencytop
+sudo latencytop --help
+cd ~/dotfiles/
+git status
+git add .
+git commit -m "new kernel with latencytop enabled."
+git status
+git push
+git status
+millisecond 
+jf
+btop
+fff
+jf
+jf
+steam
+fff
+sudo apt install thefuck 
+git stratus
+fuck
+thefuck 
+thefuck -v
+thefuck -a
+thefuck -h
+fuck 
+thefuck 
+thefuck -r
+man thefu
+man thefuck
+man fuck
+thefuck -h
+sudo apt purge --auto-remove lynx elinks
+sudo apt purge --auto-remove lynx
+sudo apt purge --auto-remove lynx:386
+sudo apt purge --auto-remove lynx:i386
+lynx
+elinks
+lynx
+sudo apt install gnome-calculator 
+sudo apt update
+cd downloads/
+git clone https://github.com/torrent-file-editor/torrent-file-editor.git
+cd torrent-file-editor/
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON ..
+apt-file search FindQt6Svg.cmake
+apt-file search Qt6Svg.cps
+apt-file search qt6svg.cps
+apt-file search Qt6SvgConfig.cmake
+
+cmake -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON ..
+apt file search Qt6LinguistTools.cps
+apt-file search Qt6LinguistTools.cps
+apt-file search qt6linguisttools.cps
+apt-file search Qt6LinguistToolsConfig.cmake
+sudo apt install qt6-tools-d
+sudo apt install qt6-tools-dev
+cmake -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON ..
+apt-file search Qt6Core5Compat.cps
+apt-file search qt6core5compat.cps
+apt-file search Qt6Core5CompatConfig.cmake
+sudo apt install qt6-5compat-dev 
+cmake -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON ..
+make -j18
+./torrent-file-editor 
+make install
+torrent-file-editor --help
+info
+torrent-file-editor info
+sudo apt install clocks
+sudo apt install gnome-clocks 
+sudo apt install kronometer 
+cd ~/downloads/
+./play-timer-x86_64 
+/etc/issue
+/etc/issue-ascii
+git clone https://github.com/focustimerhq/FocusTimer.git focus-timer
+cd focus-timer/
+meson setup build --prefix=/usr
+sudo apt install valac
+meson setup build --prefix=/usr
+sudo apt install libpeas-2-dev 
+meson setup build --prefix=/usr
+sudo apt install libgom-1.0-dev 
+meson setup build --prefix=/usr
+ninja -C build
+sudo ninja -C build install
+focus-timer 
+man focus-timer
+focus-timer --help
+focus-timer --help-aññ
+focus-timer --help-all
+sudo apt install kclock 
+peaclock
+cd ..
+git clone https://github.com/octobanana/peaclock.git
+cd peaclock/
+./RUNME.sh build
+cd build/release/
+./peaclock 
+./peaclock --help
+./peaclock timer start
+./peaclock 35s timer start
+./peaclock timer start 35s
+./peaclock timer start 00h:00m:30s
+./peaclock timer start 00h:00m:30s
+./peaclock mode timer start 00h:00m:30s
+./peaclock mode timer 00h:00m:30s
+./peaclock timer 00h:00m:30s
+cd ..
+cd ..
+./RUNME.sh install
+man peaclock
+peaclock --help
+cd ..
+cd
+cd
+cd downloads/
+nano ut.sh
+chmod +x ut.sh 
+./ut
+./ut.sh 
+nano ut2.sh
+chmod +x ut2.sh
+./ut2.sh 
+./ut2.sh 
+./ut2.sh 
+nano ut2.sh
+nano ut2.sh
+./ut2.sh 
+./ut2.sh 
+nano ut2.sh
+micro ut2.sh
+./ut2.sh 
+utimer -c 1s
+micro ut2.sh
+./ut2.sh 
+micro ut2.sh
+micro ut2.sh
+./ut.sh 
+./ut.sh 
+micro utlive.sh
+micro utlive.sh
+chmod +x utlive.sh 
+./utlive.sh 
+./utlive.sh 
+ut2.
+./ut2.sh 
+./ut2.sh 
+./ut2.sh 
+utimer -c 5s
+utimer -c 5s
+micro utlive2.sh
+chmod +x utlive2.sh 
+./utlive2.sh 
+./ut2.sh 
+./ut2.sh 
+./ut2.sh 
+./utlive2.sh 
+cat ./ut2.sh 
+nano ./ut2.sh 
+./ut2.sh 
+whereis utimer
+cp ut2.sh /usr/local/bin/
+mv /usr/local/bin/ut2.sh /usr/local/bin/utimer-gui
+whereis hyprmod
+cat /usr/local/bin/utimer-gui 
+cat /usr/local/bin/fuzzel-mount 
+cat /usr/local/bin/udmounts 
+nload
+apt show nload
+nethogs
+apt show nethogs
+sudo apt install nethogs 
+netho
+nethogs
+/sbin/nethogs
+sudo /sbin/nethogs
+git clone https://github.com/johnfactotum/runemaster.git
+cd runemaster/
+meson setup build
+sudo apt install gjs
+apt show gjs
+sudo apt install libgjs-dev 
+cd ..
+git clone
+git clone https://github.com/rafaelmardojai/blanket.git
+cd runemaster/
+meson builddir --prefix=/usr/local
+cd ..
+cd blanket/
+meson builddir --prefix=/usr/local
+apt-file search blueprint
+meson builddir --prefix=/usr/local
+apt-file search blueprint-compiler
+sudo apt install blueprint-compiler 
+meson builddir --prefix=/usr/local
+sudo ninja -C builddir install
+blanket
+cd ..
+wget https://github.com/mike632t/x11-calc/archive/refs/heads/stable.zip
+unzip stable.zip 
+cd x11-calc-stable/
+make clean; make all
+bin/x11-calc
+bin/x11-calc
+bin/x11-calc
+bin/x11-calc --help
+bin/x11-calc --zoom
+bin/x11-calc --help
+bin/x11-calc --zoom 2
+bin/x11-calc80 --zoom 2
+bin/x11-calc-80 --zoom 2
+bin/x11-calc-12c --zoom 2
+bin/x11-calc-10 --zoom 2
+make install prefix=/usr/local/
+make install prefix=/usr/local
+make install
+make install
+cd ..
+git clone https://github.com/GS90/Convertidor
+cd co
+cd Convertidor/
+meson setup build
+ninja -C build
+ninja -C build install
+cd ..
+git clone git clone https://github.com/GS90/ImageFlow
+git clone https://github.com/GS90/ImageFlow
+cd ImageFlow/
+meson setup build
+ninja -C build install
+imagetops --help
+imagetops
+imageflow 
+cd ..
+cd utimer-0.4/
+./config
+./configure 
+make -j18
+make
+./autogen.sh 
+cd ..
+git clone https://gitlab.gnome.org/World/design/contrast.git
+cd contrast/
+meson setup build
+ninja -C build
+hstr 
+ninja -C build install 
+contrast 
+contrast 
+contrast 
+cd ..
+git clone https://codeberg.org/tytan652/door-knocker.git
+cd door-knocker/
+meson setup build
+meson compile -C build
+ll
+cd build
+ll
+cd data/
+ll
+cd ..
+cd ..
+meson install
+meson compile -C install
+hstr 
+meson install -C build
+door-knocker 
+cd ..
+git clone https://github.com/FailurePoint/RandomNumberFive.git
+cd RandomNumberFive/
+meson setup build
+ninja -C build install 
+random-number-five 
+ninja uninstall
+meson uninstall
+ninja -C uninstall
+meson uninstall
+ninja --help
+ninja -C build uninstall
+cd ..
+cd gtk-meteo/
+ll
+./install.sh --help
+./install.sh --build
+sudo apt install gradlew
+apt-file search gradlew
+apt-file search gradle
+sudo apt install gradle
+sudo apt  show gradle
+ll
+java -jar ./gtk-meteo.jar 
+java -jar ./gtk-meteo-all.jar 
+cd ..
+git clone https://github.com/Huluti/Coulr.git
+cd Coulr/
+meson build
+meson _build
+cd _build/
+ninja
+ninja install
+coulr 
+ninja uninstall
+sudo ninja uninstall
+cd ..
+cd ..
+git clone https://gitlab.gnome.org/YaLTeR/video-trimmer.git
+cd video-trimmer/
+meson -Dprofile=development -Dprefix=$PWD/install build
+ninja -C build
+meson -Dprofile=release build
+build/target/debug/video-trimmer 
+ninja build install
+ninja install
+ninja -C build install
+meson setup build
+meson setup build --reconfigure
+ninja -C build install
+video-trimmer 
+/usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-schemas /home/daniel/.local/share/glib-2.0/schemas/
+/usr/bin/gtk4-update-icon-cache -q -t -f /home/daniel/.local/share/icons/hicolor/
+/usr/bin/gtk4-update-icon-cache -q -t -f /home/daniel/.local/share/icons/hicolor/scalable/apps/
+/usr/bin/gtk4-update-icon-cache -q -t -f /home/daniel/.local/share/icons/hicolor/usr/bin/update-desktop-database -q /home/daniel/d
+/usr/bin/update-desktop-database -q /home/daniel/.local/share/applications
+video-trimmer 
+cd ..
+cd ~/downloads/
+git clone https://gitlab.gnome.org/YaLTeR/video-trimmer.git
+cd video-trimmer/
+meson -Dprofile=development build
+ninja -C build install
+sudo apt install meteo
+cd ..
+git clone https://gitlab.com/bitseater/meteo.git
+cd meteo/
+ll
+meson setup build
+sudo apt install libsoup2.4-dev 
+meson setup build
+sudo apt install webkit2gtk-driver 
+apt-file search webkit2gtk-4.0
+sudo apt install libwebkit2gtk-4.0-dev
+sudo apt install libwebkit2gtk-4.0-dev 
+sudo apt purge --auto-remove libsoup2.4-dev 
+cd ..
+git clone https://github.com/FineFindus/eyedropper.git
+cd eyedropper/
+meson setup build
+ninja -C build install
+eyedropper 
+hyprpo
+hyprprop 
+hyprprop 
+./focus-timer
+cd ~/downloads/
+cd utimer-0.4/
+make
+./configure 
+make -j18
+make check
+'/mnt/500G/downloads/utimer_0.2.1-0ubuntu1~ppa0_amd64/usr/bin/utimer'
+'/mnt/500G/downloads/utimer_0.2.1-0ubuntu1~ppa0_amd64/usr/bin/utimer' --help
+'/mnt/500G/downloads/utimer_0.2.1-0ubuntu1~ppa0_amd64/usr/bin/utimer' --countdown 32s
+'/mnt/500G/downloads/utimer_0.2.1-0ubuntu1~ppa0_amd64/usr/bin/utimer' --countdown 32s -v
+cd ..
+sudo apt install ./utimer_0.2.1-0ubuntu1~ppa0_amd64
+sudo apt install ./utimer_0.2.1-0ubuntu1~ppa0_amd64
+sudo apt install ./utimer_0.2.1-0ubuntu1~ppa0_amd64.deb 
+man utimer
+utimer --help
+utimer -c 20
+utimer -c 20
+utimer -c 20
+utimer -c 5
+utimer -c 5
+utimer -c 5
+man utimer
+man utimer > manutimer.txt
+utimer 2m30s
+utimer -c 2m30s
+peaclock
+eyedropper 
+eyedropper 
+eyedropper --help
+eyedropper --help-all
+eyedropper --help-gapplicationm
+eyedropper --help-gapplication
+eyedropper 
+eyedropper 
+eyedropper 
+meson --wipe
+meson build --wipe
+meson build wipe
+meson wipe build
+meson build clean
+sudo mc
+exit
+./image_to_SVG.sh 
+./image_to_SVG.sh 
+./image_to_SVG.sh 
+chmod +x ~/bin/thunar_custom_action_imagetosvg.sh 
+inkscape --help
+jpgicc 
+inkscape --help
+inkscape --hel
+inkscape JGP__001.jpg -o JGP__001.svgz
+man inkscape
+man inkscape
+magick --help
+magick JGP__001.jpg -threshold 50% pbm:- | potrace -s -o JGP_001.svg
+magick JGP__001.jpg -threshold 50% pbm:- | potrace -s -o JGP_001.svg
+magick JGP__001.jpg -threshold 45% pbm:- | potrace -s -o JGP_001.svg
+inkscape JGP_001.jpg --export-filename=JGP_001.svg --actions="path-to-bitmap"
+inkscape JGP__001.jpg --export-filename=JGP__001.svg --actions="path-to-bitmap"
+magick JGP__001.jpg -threshold 65% pbm:- | potrace -s -o JGP_001.svg
+potrace
+man potrace
+potrace JGP__001.jpg -o JGP__001.svg
+mannrsvg
+man rsvg
+rsvg
+apt show rsvg
+dosbox-x STARTH.EXE 
+timidity 
+timidity --heplp
+timidity --help
+hstr 
+timidity -iA -Os &
+dosbox-x STARTH.EXE 

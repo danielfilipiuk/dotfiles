@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=µTimer-gui
+Comment=GUI for µTimer
+Icon=kronometer
+Exec=utimer-gui
+Categories=Utility;Clock;
+Terminal=false
+StartupNotify=true
