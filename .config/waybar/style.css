@@ -103,11 +103,17 @@ label.module:hover {
 #temperature {min-width: 50px;}
 #temperature.warning {background-color: #f0932b;}
 #temperature.warning:hover {background-color: #ffa500;}
-#temperature.critical {	background-color: #eb4d4b;}
+#temperature.critical {	background-color: #eb4d4b;
+			color: rgba(248,246,242,1);}
 #temperature.critical:hover {	background-color: #ff6347;}
 
 /* CPU */
 #cpu {min-width: 100px;}
+#cpu.50 {background-color: #f0932b;}
+#cpu.50:hover {background-color: #ffa500;}
+#cpu.90 {background-color: #eb4d4b;
+	color: rgba(248,246,242,1);}
+#cpu.90:hover {background-color: #ff6347;}
 
 /* MEMORY */
 #memory {min-width: 50px;}
@@ -166,6 +172,7 @@ label.module:hover {
 
 /* PULSEAUDIO  */
 #pulseaudio {min-width: 45px;}
+#pulseaudio.0 {color: rgba(48,30,46,.50);}
 #pulseaudio.muted {	border-top:    3px solid rgba(208, 132, 204,.02);
 			border-left:    3px solid rgba(208, 132, 204,.03);
 			border-right:    3px solid rgba(208, 132, 204,.04);
@@ -190,12 +197,12 @@ label.module:hover {
 #pulseaudio-slider.muted {   background: rgba(208, 132, 204,.8); }
 #pulseaudio-slider.muted:hover {   background: rgba(208, 132, 204,1); }
 #pulseaudio-slider slider {background: rgba(248,246,242,0);}
-#pulseaudio-slider.muted trough {background: rgba(48,30,46,.8);
+#pulseaudio-slider.muted trough {background: rgba(48,30,46,.15);
   }
-#pulseaudio-slider.muted trough:hover {background: rgba(48,30,46,.95);
+#pulseaudio-slider.muted trough:hover {background: rgba(48,30,46,.35);
   }
 #pulseaudio-slider trough {	
-				background: rgba(48,30,46,.5);
+				background: rgba(48,30,46,.15);
 				min-height: 16px;
 			   	min-width: 50px;
 			   	border-radius: 16px;}

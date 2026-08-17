@@ -48111,3 +48111,46 @@ cliamp upgrade
 cliamp --version
 cliamp play
 cliamp
+cat /usr/local/bin/fff
+ansiweather -l "Lomas del Mirador,AR" -H true -i false -p false -s true -a false 
+ansiweather -l "Buenos Aires,AR" -H true -i false -p false -s true -a false 
+ansiweather -l "Palermo,AR" -H true -i false -p false -s true -a false 
+slowcat
+sudo apt install slowcat pv
+apt-file search slowcat
+apt show epic5
+pv
+sudo apt install pv
+sudo apt install wc
+wx
+wc
+cat /usr/local/bin/fff | wc -l
+cat /usr/local/bin/fff | wc 
+wc --help
+cat /usr/local/bin/fff | wc -w
+cat /usr/local/bin/fff | wc -m
+cat /usr/local/bin/fuzzel-mount | wc -m
+cat /usr/local/bin/fuzzel-mount | wc -w
+cat /usr/local/bin/fuzzel-mount | pv
+nano .bash_aliases 
+mv hl hl_start
+alias
+slowcat /usr/local/bin/fff 
+type slowcat
+type fff
+type eyedropper 
+type cliamp 
+type jx
+type jf
+hl
+type hl
+cat /usr/local/bin/hl
+apt-search hl
+apt-file search hl
+rg
+sudo apt install ripgrep
+sudo mc
+mc
+nano .bash_aliases 
+cat /usr/local/bin/hl_start | hl -- uwsm
+nano .bash_aliases 
