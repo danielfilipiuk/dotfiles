@@ -33,8 +33,11 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu), 	{ description = "app laun
 -- SCREENSABER
 hl.bind(mainMod .. " + Pause", hl.dsp.exec_cmd("pidof glmatrix || glmatrix_screensaver"), {description = "glmatrix" })
 ---------------------------------------------------------------
--- QALCULATE
-hl.bind("XF86Calculator",  hl.dsp.exec_cmd("app2unit -S both -- qalculate-gtk"), {description = "qalculate"})
+-- OMACALC
+hl.bind("XF86Calculator",  hl.dsp.exec_cmd("app2unit -S both -- omacalc"), {description = "omacalc"})
+---------------------------------------------------------------
+-- QALCULATE-GTK
+hl.bind(mainMod .. " + XF86Calculator",  hl.dsp.exec_cmd("app2unit -S both -- qalculate-gtk"), {description = "qalculate"})
 ---------------------------------------------------------------
 -- REGLA
 hl.bind(mainMod .. " + R",  hl.dsp.exec_cmd("app2unit -S both -- length"), {description = "regla"})
@@ -47,7 +50,10 @@ hl.bind(mainMod .. " + F",  hl.dsp.exec_cmd("pidof fsearch || app2unit -S both -
 hl.bind(mainMod .. " + V",  hl.dsp.exec_cmd("app2unit -- cliphist-fuzzel-img"), {description = "cliphist"})
 ---------------------------------------------------------------
 -- HYPRPICKER COLOR PICK
-hl.bind(mainMod .. " + CTRL + I",  hl.dsp.exec_cmd("pidof hyprpicker || app2unit -- hyprpicker -a -n"), {description = "color picker"})
+hl.bind(mainMod .. " + I",  hl.dsp.exec_cmd("pidof hyprpicker || app2unit -- hyprpicker -a -n"), {description = "hyprpicker color picker"})
+---------------------------------------------------------------
+-- eyedropper COLOR PICK
+hl.bind(mainMod .. " + CTRL + I",  hl.dsp.exec_cmd("pidof hyprpicker || app2unit -- eyedropper"), {description = "eyedropper color picker"})
 ---------------------------------------------------------------
 -- EFCK EMOJIS
 hl.bind(mainMod .. " + period",  hl.dsp.exec_cmd("efck-chat-keyboard"), {description = "efck emojis"})
@@ -59,7 +65,7 @@ hl.bind(mainMod .. " + K",  hl.dsp.exec_cmd("app2unit -- wlclock-hypr"), {descri
 hl.bind(mainMod .. " + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng -c"), {description = "tomboy new note"})
 ---------------------------------------------------------------
 -- TOMBOY SEARCH NOTES 
-hl.bind(mainMod .. " + ALT + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng"), {description = "tomboy new note"})
+hl.bind(mainMod .. " + ALT + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng"), {description = "tomboy search note"})
 ---------------------------------------------------------------
 
 

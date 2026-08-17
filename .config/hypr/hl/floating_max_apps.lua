@@ -10,7 +10,9 @@ hl.window_rule({
 hl.window_rule({
 	 name = "Inkscape",
 	 match = {class = "org.inkscape.Inkscape"},
---	 float = true,
+	float = true,
+	persistent_size = true,
+	move = "50% 50%",
 	 --maximize = true,
 --	 content = "photo",
 --	 monitor = "1",

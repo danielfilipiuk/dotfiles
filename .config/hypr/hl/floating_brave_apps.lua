@@ -73,3 +73,18 @@ hl.window_rule({
 	 size = "1069 825",
 })
 
+hl.window_rule({
+	 name = "brave - facebook",
+	 match = {class = "brave-kippjfofjhjlffjecoapiogbkgbpmgej-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})
+
+hl.window_rule({
+	 name = "brave - github",
+	 match = {class = "brave-mjoklplbddabcmpepnokjaffbmgbkkgg-Default"},
+	 opacity = 1,
+	 float = true,
+	 size = "1069 825",
+})

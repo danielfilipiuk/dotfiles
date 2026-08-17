@@ -49,7 +49,7 @@ hl.window_rule({
 	 name = "gnome-disks",
 	 match = {class = "gnome-disks"},
 	 float = true,
-	 center = true,
+	 move = "50% 50%",
 	 persistent_size = true,
 })
 
@@ -121,7 +121,7 @@ hl.window_rule({
 	 name = "Icon Browser",
 	 match = {class = "yad-icon-browser"},
 	 float = true,
-	 center = true,
+	center = true,
 	 persistent_size = true,
 })
 
@@ -199,6 +199,7 @@ hl.window_rule({
 	 name = "Xsane",
 	 match = {class = "Xsane"},
 	 float = true,
+	move = "50% 50%",
 	 persistent_size = true,
 })
 
@@ -235,6 +236,7 @@ hl.window_rule({
 	 name = "openRGB",
 	 match = {class = "org.openrgb.OpenRGB"},
 	 opacity = .85,
+	move = "50% 50%",
 	 float = true,
 	 persistent_size = true,
 })
@@ -244,6 +246,7 @@ hl.window_rule({
 	 match = {class = "nwg-look"},
 	 float = true,
 	 size = "870 731",
+	move = "50% 50%",
 	 persistent_size = true,
 })
 
@@ -252,7 +255,7 @@ hl.window_rule({
 	 name = "imv",
 	 match = {class = "imv"},
 	 float = true,
-	 center = true,
+	move = "50% 50%",
 	 --size = "1150 866",
 	 monitor = "1",
 	 persistent_size = true,
@@ -263,7 +266,7 @@ hl.window_rule({
 	 name = "mpv",
 	 match = {class = "mpv"},
 	 float = true,
-	 center = true,
+	move = "50% 50%",
 	 --size = "650 510",
 	 persistent_size = true,
 })
@@ -281,6 +284,7 @@ hl.window_rule({
 	 name = "gsmartcontrol",
 	 match = {class = "Gsmartcontrol"},
 	 float = true,
+	 move = "50% 50%",
 	 persistent_size = true, 
 })
 
@@ -289,7 +293,8 @@ hl.window_rule({
 hl.window_rule({
 	 name = "dpkg-reconfigure",
 	 match = {class = "dpkg-reconfigure"},
-	 float = true, 
+	 float = true,
+	 move = "50% 50%", 
 	 persistent_size = true,
 })
 
@@ -297,6 +302,7 @@ hl.window_rule({
 	 name = "bulky renamer",
 	 match = {class = "bulky.py"},
 	 float = true, 
+	 move = "50% 50%",
 	 persistent_size = true,
 })
 
@@ -320,7 +326,7 @@ hl.window_rule({
 hl.window_rule({
 	 name = "vkmark",
 	 match = {title = ".*vkmark.*"},
-	 center = true,
+	 move = "50% 50%",
 	 float = true,	
 	 monitor = 1,  
 	 persistent_size = true,
@@ -329,7 +335,7 @@ hl.window_rule({
 hl.window_rule({
 	 name = "glmark",
 	 match = {title = ".*glmark.*"},
-	 center = true,
+	 move = "50% 50%",
 	 float = true,	
 	 monitor = 1,
 	 persistent_size = true,  
@@ -355,7 +361,8 @@ hl.window_rule({
 	 name = "µTimer",
 	 match = {title = "µTimer"},
 	 float = true,
-	 size = "540 400",	   
+	 size = "300 310",
+	move = "50% 50%", 	   
 })
 
 
@@ -363,5 +370,87 @@ hl.window_rule({
 	 name = "ristretto",
 	 match = {class = "org.xfce.ristretto"},
 	 float = true,
-	 	 
+	move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "omacalc",
+	 match = {class = "omacalc"},
+	 float = true,
+	 size = "300 430",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "omacut",
+	 match = {class = "omacut"},
+	 float = true,
+	 size = "870 690",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "omawrite",
+	 match = {class = "omawrite"},
+	 float = true,
+	 size = "720 520",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "eyedropper",
+	 match = {class = "com.github.finefindus.eyedropper"},
+	 float = true,
+	 size = "360 710",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "com.github.maoschanz.drawing",
+	 match = {title = "Drawing"},
+	 float = true,
+	 size = "1234 700",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "com.rafaelmardojai.Blanket",
+	 match = {class = "com.rafaelmardojai.Blanket"},
+	 float = true,
+	 size = "624 700",
+	 move = "50% 50%",
+})
+
+hl.window_rule({
+	 name = "GTK Meteo",
+	 match = {class = "ch.bailu.gtk_meteo"},
+	 float = true,
+	 size = "970 800",
+	 move = "50% 50%",
+})
+
+
+hl.window_rule({
+	 name = "video trimmer",
+	 match = {class = "org.gnome.gitlab.YaLTeR.VideoTrimmer.Devel"},
+	 float = true,
+	 size = "900 700",
+	 move = "50% 50%",
+})
+
+
+hl.window_rule({
+	 name = "RPN calc",
+	 match = {title = "^RPN.*"},
+	 float = true,
+	center = true,
+	 move = "50% 50%",
+})
+
+
+hl.window_rule({
+	 name = "FocusTimer",
+	 match = {class = "io.github.focustimerhq.FocusTimer"},
+	 float = true,
+	 move = "50% 50%",
 })

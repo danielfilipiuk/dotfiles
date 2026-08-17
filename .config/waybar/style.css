@@ -12,7 +12,7 @@
 	letter-spacing: 0px;
 	border-radius: 16px;
 	/*text-shadow: 1px 1px 2px  rgba(48,30,46,.25);*/
-	/*-gtk-icon-style: symbolic;*/
+	-gtk-icon-style: regular;
 	-gtk-icon-theme: "Papirus";
 	color: rgba(48,30,46,1);
 	transition:
@@ -199,7 +199,7 @@ label.module:hover {
 				min-height: 16px;
 			   	min-width: 50px;
 			   	border-radius: 16px;}
-#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.9);
+#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.85);
 				border-radius: 16px;}
 #pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);}
 #pulseaudio-slider.muted highlight {	background: rgba(208, 132, 204,.1);
@@ -222,6 +222,7 @@ label.module:hover {
 #tray {	background: rgba(248,246,242,.5);
 	padding: 3px 7px;
 	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
+	-gtk-icon-style: regular;
 	border-top:    2px solid rgba(248,246,242,0.02);
 	border-left:   2px solid rgba(248,246,242,0.03);
 	border-right:  2px solid rgba(248,246,242,0.04);
@@ -233,14 +234,17 @@ label.module:hover {
 		background: rgba(208, 132, 204,1);	
 		-gtk-icon-effect: highlight;
 		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .active {-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
+#tray > .active {-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
+		-gtk-icon-style: regular;}
 #tray > .active:hover {	background: rgba(208, 132, 204,1);
 			-gtk-icon-effect: highlight;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
 #tray > .passive {	background: rgba(195, 152, 184,1);
+			-gtk-icon-style: regular;
 			-gtk-icon-effect: dim;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
 #tray > .needs-attention {	background: rgba(208, 132, 204,1);
+				-gtk-icon-style: regular;
 				-gtk-icon-effect: highlight;
 				-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
 

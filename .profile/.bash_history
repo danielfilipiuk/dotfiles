@@ -47928,3 +47928,186 @@ sysrb
 jf
 audio-detective™.sh 
 pw-top 
+fff
+cle<ar
+clear
+fff
+sudo apt clean
+sudo apt autoclean
+sudo apt upgrade
+hstr 
+micro hypr/fastfetch/fastfetch2.jsonc 
+micro .config/fastfetch/fastfetch2.jsonc 
+fff
+fff
+cd dotfiles/
+git status
+git add .
+git commit -m "added waybar's pulseaudio slider module. modified pipewire config (resample7). fastfetch logo padding"
+git status
+git push
+git status
+fff
++}
+git status
+git add .
+git commit -m "waybar group audio, pulsebar configured right, colors adjusted. it's so beauty."
+git push
+clear
+fff
+celar
+clear
+fff
+clear
+cd downloads/
+./omacut 
+./install
+cd ..
+cd ..
+git clone https://github.com/omacom-io/omawrite.git
+cd omawrite/
+cd bin/
+./build
+sudo mc
+sudo cp io.github.focustimerhq.FocusTimer-symbolic.svg /usr/share/icons/hicolor/symbolic/apps/
+hstr 
+gtk-update-icon-cache ~/.local/share/icons/hicolor/ -t
+gtk-update-icon-cache ~/.local/share/icons/hicolor/ 
+gtk-update-icon-cache ~/.local/share/icons/hicolor/icon-theme.cache 
+gtk-update-icon-cache ~/.local/share/icons/hicolor/ --help
+
+fff
+sudo apt autoremove --purge 
+aptitude purge -c
+sudo apt install aptitude
+sudo apt install aptitude
+aptitude-c
+aptitude-curses 
+jf
+apt show linux-image-
+apt show linux-image-*
+apt-file search cliamp
+cd downloads/
+chmod +x cliamp-linux-amd64 
+./cliamp-linux-amd64 
+git clone https://github.com/bjarneo/cliamp.git
+cd cliamp/
+make
+sudo apt install go
+sudo apt install golang
+go
+sudo apt install gcc-go
+sudo apt install gccgo-go
+sudo apt install golang-go
+sudo apt install gccgo-go
+make
+go build -o cliamp
+sudo apt install golang-go
+sudo apt install golang-go
+sudo apt purge --auto-remove gccgo-go
+sudo apt reinstall golang-go
+make
+ll
+make install 
+ll ../
+cliamp --version
+ldd /usr/local/bin/cliamp 
+cliamp 
+make all
+make --help
+cd ..
+cd ~/downloads/
+cd pinta-3.1.2/
+./configure 
+sudo apt install dotnet
+cd ..
+git clone https://github.com/omacom-io/omacalc.git
+cd omacalc/
+make
+cargo build --release
+cd ..
+git clone https://github.com/omacom-io/omacut.git
+cd omacut/
+cd bin/
+./build
+sudo apt install qt6-declarative-dev qt6-multimedia-dev qt6-base-dev 
+cd ..
+cd ..
+cd omacalc/
+cd bin/
+./build
+test
+sudo apt install qt6-declarative-dev qt6-multimedia-dev qt6-base-dev 
+./build
+cd ..
+cd ..
+cd omacut/
+cd bin/
+./build
+fff
+hyprprop 
+omacalc --help
+omacalc --help
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+hyprprop 
+ianny
+ianny
+ianny --help
+killall ianny
+ianny --help
+man ianny
+cd ..
+c d ..
+cd ..
+git clone https://github.com/zefr0x/ianny.git
+cd ianny/
+meson setup builddir -Dbuildtype=release
+meson compile -C builddir
+meson install -C builddir
+ianny
+hyprprop 
+rofi -dmenu
+rofi -dmenu --help
+rofi -drun
+rofi window
+rofi -show window
+rofi -show drum
+rofi -show run
+rofi -show drun
+rofi -show drun
+rofi -show drun
+rofi -show drun
+netcat 
+iotop
+latencytop 
+sudo latencytop 
+cd dow
+cliamp setup
+cliamp
+cliamp plugins install HANCORE-linux/cliamp-plugin-nightrider
+cliamp plugins install AlexZeitler/cliamp-plugin-led-burst
+cliamp plugins install AlexZeitler/cliamp-plugin-block-burst
+cliamp plugins install AlexZeitler/cliamp-plugin-vu-meter
+cliamp plugins install 8bit64k/cliamp-plugin-tubeamp
+cliamp plugins install 8bit64k/cliamp-plugin-nova
+cliamp
+cliamp
+cliamp plugins install mikkel-bergmann/cliamp-mandelbrot
+cliamp plugins install mikkel-bergmann/cliamp-mandelbrot
+cliamp
+cliamp --help
+cliamp upgrade
+cliamp --version
+cliamp play
+cliamp
