@@ -450,7 +450,17 @@ hl.window_rule({
 
 hl.window_rule({
 	 name = "FocusTimer",
+	 match = {class = "io.github.htkhiem.Euphonica"},
+	 float = true,
+	 move = "50% 50%",
+	 
+})
+
+
+hl.window_rule({
+	 name = "Euphonica",
 	 match = {class = "io.github.focustimerhq.FocusTimer"},
 	 float = true,
 	 move = "50% 50%",
+	persistent_size = true,	   
 })

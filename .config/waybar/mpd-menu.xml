@@ -40,6 +40,11 @@
 			</object>
 		</child>
 		<child>
+			<object class="GtkMenuItem" id="euphonica">
+				<property name="label">  Euphonica</property>
+			</object>
+		</child>
+		<child>
 			<object class="GtkMenuItem" id="ncmpcpp">
 				<property name="label">  NcMPCpp</property>
 			</object>

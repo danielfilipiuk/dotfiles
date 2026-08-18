@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.htkhiem.Euphonica</id>
+  <name>Euphonica</name>
+  <summary>MPD client with delusions of grandeur</summary>
+  <developer id="io.github.htkhiem">
+    <name>Huynh Thien Khiem</name>
+  </developer>
+  <url type="bugtracker">https://github.com/htkhiem/euphonica/issues</url>
+  <url type="homepage">https://github.com/htkhiem/euphonica</url>
+  <url type="vcs-browser">https://github.com/htkhiem/euphonica</url>
+  <content_rating type="oars-1.1"/>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <description>
+    <p>Dynamic playlists, integrated spectrum visualiser, background blur, synced lyrics &amp; more. </p>
+    <p>**Features**</p>
+    <ul>
+      <li>Supports most MPD features, from queue reordering and ReplayGain to output control, crossfade and MixRamp.</li>
+      <li>Genre &amp; tag filtering, plus in-app tag editing.</li>
+      <li>Client-side dynamic playlists: both query and sticker filter rules, multiple ordering clauses, fetch-first limits, scheduled refreshes, all via an intuitive editor UI.</li>
+      <li>Fetch album arts, artist avatars and (synced) song lyrics from external sources (currently supporting Last.fm, MusicBrainz and LRCLIB).</li>
+      <li>Configurable multi-artist and multi-genre tag splitting.</li>
+      <li>Stay in control while in the background via MPRIS &amp; XDG Background Portal.</li>
+      <li>Customisable spectrum visualiser (FIFO or system PipeWire).</li>
+      <li>Live bitrate readout + audio quality indicators (lossy, lossless, hi-res, DSD).</li>
+      <li>Largely **zero-cost** static background blur.</li>
+      <li>Volume knob with dBFS readout support ('cuz why not?)</li>
+      <li>User-friendly configuration UI &amp; GSettings backend</li>
+      <li>MPD passwords are securely stored in your user's login keyring.</li>
+      <li>Works with large playlists (tested with 30K songs).</li>
+      <li>Commands are bundled into lists for efficient MPD-side processing where possible.</li>
+      <li>myMPD-compatible stickers handling.</li>
+    </ul>
+    <p>
+      <em>PipeWire permissions</em>
+    </p>
+    <p>Euphonica requires PipeWire capture permissions for its PipeWire visualizer backend, but currently it is only possible to specify a "blanket" PipeWire permission that also allows screen recording, microphone access, etc. Euphonica does not make use of these extra permissions, and will be updated to use a more restricted "audio portal" when one becomes available.</p>
+    <p>
+      <em>Screenshot content copyright information &amp; disclaimer</em>
+    </p>
+    <p>Album arts contained in the screenshots have been substituted with random photos from Pexel. All credits go to the original authors.</p>
+    <p>Euphonica is solely a music player programme and does not provide any media content or sources. Users must provide their own content or manually configure Euphonica to access third party online services.</p>
+  </description>
+  <keywords>
+    <keyword translate="no">MPD</keyword>
+    <keyword translate="no">music</keyword>
+    <keyword translate="no">player</keyword>
+    <keyword translate="no">libadwaita</keyword>
+    <keyword translate="no">rust</keyword>
+    <keyword translate="no">mpc</keyword>
+  </keywords>
+  <launchable type="desktop-id">io.github.htkhiem.Euphonica.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://i.ibb.co/Mx4qJCHd/album-view.png</image>
+      <caption>Album View</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/dsXMHBzw/artist-view.png</image>
+      <caption>Artist View</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/4RjyNWQ5/album-content-view.png</image>
+      <caption>Album Content View</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/KxBYq8nj/artist-content-view.png</image>
+      <caption>Artist Content View</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/TxBSwm9K/dyn-playlist-editor.png</image>
+      <caption>Dynamic Playlist Editor</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/KchZ5Tck/mini-ui.webp</image>
+      <caption>UI at different sizes</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/jkL7bcYb/queue-view.png</image>
+      <caption>Queue View</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://i.ibb.co/S7Df5389/viz-settings.png</image>
+      <caption>Visualiser appearance settings</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.99.6-beta" date="2026-08-16">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.6-beta</url>
+      <description>
+        <p>New: artist view now shows album covers too and is limited to albumartists by default.</p>
+        <p>New: redesigned album and artist content views with metadata editing functionality.</p>
+        <p>New: metadata are now automatically backed up to MPD as special stickers.</p>
+        <p>New: Player Pane album art now spins :). Some pretty elaborate logic ensures that the disc comes around to the top at the end of each track.</p>
+        <p>New: album and artist by genre and tags. Tags in particular can be edited in-app.</p>
+        <p>New: artist discography view replaces simple album grid in artist content view.</p>
+        <p>New: now supports connecting to MPD via a named Unix socket (prefix with an '@' symbol).</p>
+        <p>New: lyrics re-fetch button.</p>
+        <p>New: start in any view you like or restore last-opened view.</p>
+        <p>New: radio stream names are now displayed correctly.</p>
+        <p>Change: lazy image load and eager unload are now signals-based, way faster and also more correct.</p>
+        <p>Change: album cells now use raw albumartist tags and can fall back to raw artist tags too.</p>
+        <p>Change: desktop-facing window title now displays track - artist (looks better in GNOME Overview).</p>
+        <p>Fix: current lyric line centering now works cleanly and no longer yoinks focus from text entries. Also helps type-anywhere-to-search work more consistently.</p>
+        <p>Fix: no longer reconnecting endlessly upon malformed commands crashing connection.</p>
+        <p>Fix: earlier artist bio and album wikis leaking to subsequent albums and artists sometimes.</p>
+        <p>Fix: task count and spinner at top left not going away after tasks have ended.</p>
+        <p>Fix: lyric-less tracks (instrumental, symphonies, etc) no longer fetch lyrics after first try. Manually cleared lyrics won't be fetched again.</p>
+        <p>Fix: various queue-not-updating issues when using the Queue N Next feature.</p>
+        <p>Fix: various spacing issues in the bottom bar in different layouts.</p>
+        <p>Fix: album ratings not being populated.</p>
+        <p>Fix: Clear Queue not updating local queue state when playback mode is Stopped.</p>
+        <p>Fix: sidebar queue length sometimes not updating.</p>
+        <p>Fix: album content view multi-selection not working (regression since v0.99.5).</p>
+        <p>Fix: navigating to an Artist Content View from an Album Content View doesn't load albums.</p>
+      </description>
+    </release>
+    <release version="0.99.5-beta" date="2026-06-20">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.5-beta</url>
+      <description>
+        <p>Change: Much faster album/artist grid population over remote connections (~20x).</p>
+        <p>Change: Multithreaded album art decoding and resizing (configurable thread count).</p>
+        <p>Change: Reduced overhead of album grid visibility checks, especially for smooth-scrolling devices.</p>
+        <p>Fix: Hot infinite album art fetching loop for certain library layouts.</p>
+        <p>Fix: Lack of Secret Service no longer prevents login when there is no password needed.</p>
+      </description>
+    </release>
+    <release version="0.99.4-beta" date="2026-05-23">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.4-beta</url>
+      <description>
+        <p>New: ncmpcpp-inspired keyboard shortcuts and new searchable Shortcuts dialog.</p>
+        <p>New: More cache controls: image format, size and graceful clear-cache option.</p>
+        <p>Change: Euphonica now always tries to use folder-level cover art first, cutting down on duplicated downloads.</p>
+        <p>Change: New images are now stored as lossy WebP to vastly reduce cache size on disk. Quality loss should be pretty much imperceptible.</p>
+        <p>Change: Reduced RAM usage and significantly sped up album art loads thanks to more intelligent screen visibility checks.</p>
+        <p>Fix: Type-to-search now fully works! Previously they were intermittent (due to focus sometimes being stolen by the sidebar).</p>
+        <p>Fix: Album art downloads should now be far more reliable for remote collections.</p>
+        <p>Fix: Sync values between volume knobs (in the bar and in the pane).</p>
+      </description>
+    </release>
+    <release version="0.99.3-beta" date="2026-05-02">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.3-beta</url>
+      <description>
+        <p>New: Drag-and-drop to reorder tracks in Queue View and Playlist Editor.</p>
+        <p>New: Volume knob now supports angular dragging for touchscreen use.</p>
+        <p>New: Queue View search by track name, artist or both.</p>
+        <p>New: Queue View now automatically scroll to playing track.</p>
+        <p>New: Optional playback actions upon closing Euphonica (do nothing, pause, stop, stop and clear queue). Defaults to 'do nothing'.</p>
+        <p>New: Cairo-based visualiser renderer in addition to the GSK one. Serves as the new default as it is usually more performant.</p>
+        <p>New: Overall significant visualiser performance improvements for both renderers especially on 4K+ displays.</p>
+        <p>Change: New, more compact seekbar design with animated wave-like lighting pattern. Volume knob also has a new gradients-based look.</p>
+        <p>Change: Play/pause button is now a suggested-action pill.</p>
+        <p>Change: More compact bottom bar design.</p>
+        <p>Change: Tweaked Now Playing pane to expose volume knob directly and symmetrically + use the new seekbar.</p>
+        <p>Change: Visualiser now uses Catmull-Rom curves instead for smoother looks.</p>
+        <p>Change: Default multi-artist tag delimiters adjusted to avoid splitting artists with '.ft' in their names.</p>
+        <p>Fix: Several memory leaks. Euphonica should now properly free a lot of memory upon backgrounding.</p>
+        <p>Fix: Queue View stuck at loading spinner upon resurfacing from background mode.</p>
+      </description>
+    </release>
+    <release version="0.99.2-beta" date="2026-03-28">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.2-beta</url>
+      <description>
+        <p>Fix: Queue View sometimes not refreshing.</p>
+        <p>Fix: Album ratings not being retrieved.</p>
+        <p>Fix: DP album rating filter rule not working correctly.</p>
+        <p>Fix: Force-light UI mode not remembered between starts.</p>
+      </description>
+    </release>
+    <release version="0.99.1-beta" date="2026-03-21">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.1-beta</url>
+      <description>
+        <p>Fix: Refresh (F5) not working.</p>
+        <p>Fix: Reconnecting to a different server while already connected to one doesn't proceed.</p>
+        <p>Fix: Recent View blanking out after refresh.</p>
+        <p>Fix: Queue View now no longer fully refreshes on every visit.</p>
+      </description>
+    </release>
+    <release version="0.99.0-beta" date="2026-03-15">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.99.0-beta</url>
+      <description>
+        <p>Near-complete rearchitecturing and rewrite to async Rust! The execution flow is now far simpler than the prior explicit message-passing design.</p>
+        <p>New: Automatic retry upon failure for all metadata providers to increase reliability over spotty internet connections.</p>
+        <p>New: Error toasts for metadata fetch errors instead of silent failures.</p>
+        <p>New: Loading spinners for every album art with fading effect.</p>
+        <p>Change: much improved auto accent colour picker, now prefers higher-saturation swatches and adjusts brightness to remain legibility in both dark and light UI.</p>
+        <p>Change: top-level views now show an overall loading spinner while they are populated.</p>
+        <p>Fix: MusicBrainz album art fetching now works correctly, improving hit rate. You can re-attempt metadata fetching per album from the app, or remove the cache folder (will cause a full redownload and erase all user-set images!).</p>
+        <p>Fix: Artist avatar fetching now works correctly (again). You can re-attempt metadata fetching per artist from the app, or remove the cache folder (will cause a full redownload and erase all user-set images!).</p>
+        <p>Fix: Dynamic Playlists are now correctly hidden when the MPD server does not advertise stickers support.</p>
+        <p>Fix: Songs from other albums with the same name string appearing in content view.</p>
+        <p>Fix: SQLite metadata conflicts.</p>
+        <p>Fix: Embedded album art not correctly rendered on first boot</p>
+      </description>
+    </release>
+    <release version="0.98.1-beta" date="2026-01-17">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.98.1-beta</url>
+      <description>
+        <p>Fix: re-added sort by rating and fixed other sort options in Album View.</p>
+        <p>Fix: volume level is now restored upon unmuting.</p>
+        <p>Fix: some missing icons on other DEs such as KDE Plasma.</p>
+        <p>Fix: some icons were rendered at the wrong scale, appearing tiny in a corner.</p>
+      </description>
+    </release>
+    <release version="0.98.0-beta" date="2025-11-30">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.98.0-beta</url>
+      <description>
+        <p>New: dynamic, rule-based playlists (at last!). Currently supporting filtering and sorting by song/album ratings, play count, skip count, URI components, tags and the like. Query results can be auto-refreshed. Everything happens client-side so you need not run anything extra on the server. Comes with a GUI editor with live error checking.</p>
+        <p>New: song ratings &amp; other myMPD-compatible sticker features.</p>
+        <p>Refactor: various UI tweaks &amp; performance optimisations. Notably: content views are now centered when in the mini-UI layout; song title marquees are now enabled for all song row widgets; the sort options widgets have been restyled to be in line with existing Libadwaita apps such as Nautilus.</p>
+        <p>Refactor: max background blur radius raised to 2048px to allow achieving a simple gradient-like look.</p>
+        <p>Refactor: reduced unnecessary async poll loops.</p>
+        <p>Fix: freezing after suspend if connected to a remote MPD server.</p>
+        <p>Fix: bottom bar layout bugs when using ALSA output.</p>
+      </description>
+    </release>
+    <release version="0.97.2-beta" date="2025-09-26">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.97.2-beta</url>
+      <description>
+        <p>New: in-app theme selector (follow system style, force light, force dark).</p>
+        <p>Refactor: queuing is now done in the background to avoid freezing UI when adding lots of tracks.</p>
+        <p>Refactor: incremental queue updates are now fully asynchronous and paged to avoid blocking UI and reduce stress on MPD server.</p>
+        <p>Fix: various folder view bugs.</p>
+        <p>Fix: album wiki &amp; artist bio text still showing those of prior albums/artists when the current one does not have one.</p>
+        <p>Fix: albums of the same name getting merged together.</p>
+      </description>
+    </release>
+    <release version="0.97.1-beta" date="2025-09-14">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.97.1-beta</url>
+      <description>
+        <p>New: Option to re-fetch metadata. Will also re-attempt artist avatar fetching.</p>
+        <p>Refactor: Basic album/artist info is now shown early instead of being hidden until external wiki loads.</p>
+        <p>Fix: Repeated inits causing duplicate albums and artists after exiting background mode.</p>
+        <p>Fix: Album wiki text and artist avatars not loading.</p>
+        <p>Fix: Consume mode resetting on new window opens.</p>
+        <p>Fix: Sorting now prefers *sort tags before normal ones.</p>
+      </description>
+    </release>
+    <release version="0.97.0-beta" date="2025-09-07">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.97.0-beta</url>
+      <description>
+        <p>New: Global background task counter and spinner.</p>
+        <p>Refactor: Lazy init for all views, should markedly improve startup smoothness.</p>
+        <p>Refactor: Switched to libsecret to manage MPD password. Will require reentering your password if you use one.</p>
+        <p>Refactor: Add more padding to Recent View row separators.</p>
+        <p>Fix: Many timeout-related crashes. Euphonica will now automatically attempt a reconnection instead.</p>
+        <p>Fix: Playlist editor apply button remaining disabled after one edit.</p>
+      </description>
+    </release>
+    <release version="0.96.4-beta" date="2025-09-02">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.96.4-beta</url>
+      <description>
+        <p>New: Clicking on a (synced) lyric line will seek to its timestamp.</p>
+        <p>Refactor: Many performance improvements to queue operations.</p>
+        <p>Refactor: MPRIS play command now starts playing again from the last-played track in the queue while in the stopped state.</p>
+        <p>Fix: Crash when newlines are included as artist tag delimiters and there are UTF-8 characters.</p>
+        <p>Fix: Crash caused by the PipeWire visualiser backend when changing tracks via MPRIS (including playerctl).</p>
+        <p>Fix: Volume knob not reflecting remote changes.</p>
+        <p>Fix: Empty album and artist tags are now properly included in the Album and Artist views.</p>
+      </description>
+    </release>
+    <release version="0.96.3-beta" date="2025-08-23">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.96.3-beta</url>
+      <description>
+        <p>New: Lyrics import, export and clear features.</p>
+        <p>New: PipeWire visualiser backend can now select specific devices to capture audio from.</p>
+        <p>Fix: Seekbar occasionally not updating itself.</p>
+        <p>Fix: album arts not falling back to embedded art automatically in Album View.</p>
+        <p>Refactor: PipeWire visualiser backend's autoconnection should now be smarter.</p>
+      </description>
+    </release>
+    <release version="0.96.2-beta" date="2025-08-03">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.96.2-beta</url>
+      <description>
+        <p>Fix: Hangups and performance issues on larger libraries.</p>
+        <p>Fix: Crash trying to queue inaccessible song files (will show a toast instead).</p>
+        <p>Fix: Artists and albums with the same names using each other's images. NOTE: existing artist avatars will have to be re-downloaded or set again after this update.</p>
+      </description>
+    </release>
+    <release version="0.96.0-beta" date="2025-07-26">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.96.0-beta</url>
+      <description>
+        <p>New: Recent View. Shows recently-played albums, artists and songs. History can be paused and cleared.</p>
+        <p>New: Animated marquees for long album titles in grid views. Exact behaviour is customisable (wrap/ellipsise/marquee-scroll on hover).</p>
+        <p>New: "Queue Next" option that inserts selected songs after the current song in the queue. Currently available in the album content view only.</p>
+        <p>New: Artist names in the album content view are now clickable (opens the corresponding artist content view).</p>
+        <p>Fix: Current song position in queue desynced from daemon.</p>
+        <p>Fix: Crash after deleting cached images from .cache/euphonica</p>
+        <p>Fix: Embedded art still being downloaded even with folder cover present</p>
+        <p>Refactor: Updated to build against GTK 4.18 and LibAdwaita 1.7+</p>
+      </description>
+    </release>
+    <release version="0.95.2-beta" date="2025-07-14">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.95.2-beta</url>
+      <description>
+        <p>Fix: crash on systems without XDG Background support.</p>
+      </description>
+    </release>
+    <release version="0.95.1-beta" date="2025-07-12">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.95.1-beta</url>
+      <description>
+        <p>Fix: crash on duplicate metadata tags.</p>
+        <p>Fix: crash after exiting artist content page.</p>
+      </description>
+    </release>
+    <release version="0.95.0-beta" date="2025-07-09">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.95.0-beta</url>
+      <description>
+        <p>New: Embedded track arts are now globally supported as fallback in case no cover image file is present in the folder. This also allows tracks in certain albums to have their unique album arts shown.</p>
+        <p>New: Double-clicking on a song in an album content page will now replace the current queue with it.</p>
+        <p>Fix: MPRIS client remaining active even when disabled (#73).</p>
+        <p>Fix: GTK warnings related to QueueRows. Widgets are now disposed of more properly too.</p>
+        <p>Fix: Crash upon loading cover art for albums/artists with extremely long names (#67).</p>
+        <p>Fix: Crash on startup with some keyring configurations (#76).</p>
+      </description>
+    </release>
+    <release version="0.94.1-alpha" date="2025-06-28">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.94.1-alpha</url>
+      <description>
+        <p>Fix: metadata cache thread panicking on invalid album tag information.</p>
+      </description>
+    </release>
+    <release version="0.94.0-alpha" date="2025-06-28">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.94.0-alpha</url>
+      <description>
+        <p>New: Local socket connection support. This also opens up MPD capabilities only available via local sockets, such as configuration editing.</p>
+        <p>Refactor: Folder view state is now preserved across window launches (when background running is enabled)</p>
+        <p>Fix: "Queue all" button in playlist content view queuing twice.</p>
+        <p>Fix: Queue View &amp; Playlist Editor resetting scroll position upon removing a track.</p>
+        <p>Fix: Queue View subtitle not updating upon clearing queue.</p>
+        <p>Fix: Connection error popups now work again.</p>
+      </description>
+    </release>
+    <release version="0.93.1-alpha" date="2025-06-22">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.93.1-alpha</url>
+      <description>
+        <p>Fix: MPRIS duration using the wrong unit, causing seekbars in shell applets to malfunction.</p>
+      </description>
+    </release>
+    <release version="0.93.0-alpha" date="2025-06-21">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.93.0-alpha</url>
+      <description>
+        <p>New: Synced lyrics! Currently fetching from LRCLIB and enabled by default. Plain lyrics will be fetched if no synced version is available. If multiple lyrics entries are available for a song, the one whose stated duration is closest to your local file will be used. You may also turn lyrics fetching off in the Integrations menu as usual.</p>
+        <p>Fix: Sidebar not updating itself to highlighting Queue View when the "jump to pane" button (only visible in mini-bar mode) is clicked.</p>
+      </description>
+    </release>
+    <release version="0.92.0-alpha" date="2025-06-14">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.92.0-alpha</url>
+      <description>
+        <p>New: Background mode. Euphonica can now run in the background, allowing it to serve as your MPRIS daemon. Visualisation backends and album art blur thread will be shut down upon entering background mode, reducing CPU usage to pretty much zero. Polling will still be performed to support shell applets with seekbars (GNOME does with an extension).</p>
+        <p>New: Command-line argument to start Euphonica minimised (--minimized). This allows setting up autostart scripts.</p>
+        <p>Fix: Playback controls are now properly centered instead of being forced to the right by long titles (which will scroll like a marquee instead).</p>
+        <p>Fix: Album info and artist bio spinners not going away in case no metadata could be found.</p>
+      </description>
+    </release>
+    <release version="0.91.0-alpha" date="2025-05-24">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.91.0-alpha</url>
+      <description>
+        <p>New: Cache size report and open button in Library preferences tab.</p>
+        <p>Fix: Bottom bar playback control buttons not centering themselves vertically when seekbar is hidden.</p>
+      </description>
+    </release>
+    <release version="0.90.4-alpha" date="2025-05-18">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.90.4-alpha</url>
+      <description>
+        <p>Fix: child client getting clogged on cold-starts by one-time tasks such as album art downloading.</p>
+      </description>
+    </release>
+    <release version="0.90.3-alpha" date="2025-05-17">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.90.3-alpha</url>
+      <description>
+        <p>From this version onwards we are targeting a v1.0 release, hence the version bump.</p>
+        <p>This version introduces support for matching app accent colour to currently-playing song's album art, and a big revamp of the offline cache mechanism.</p>
+        <ul>
+          <li>New: album rating system using myMPD-compatible tag schema (requires MPD 0.24+).</li>
+          <li>New: Optional capabilities UI with instructions on how to enable them for your MPD instance.</li>
+          <li>New: UI with album-art-matching accent colour support, wider seekbar, and live bitrate readout.</li>
+          <li>New: Setting custom images as album arts and artist avatars are now supported.</li>
+          <li>Refactor: Replaced PoloDB with plain ol' SQLite - easier to inspect, composite indices are supported, etc. Actual metadata docs are still BSON blobs, but since they're only BSON when stored, BSON is now much less prevalent in our cache code. Also, I took this chance to significantly cut down on string clones.</li>
+          <li>Refactor: Replaced murmur2 hashing of URIs with simple base64url encoding. This also does what we need (avoiding special chars) but never collides and is completely reversible.</li>
+          <li>Refactor: Added loading spinners to artist bio, artist discography/songs subviews, album wiki and album content.</li>
+          <li>Fix: Fixed spectrum equaliser "lifting off" from the window's bottom edge when smooth curves drawing (default) is enabled.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.12.0-alpha" date="2025-02-16">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.12.0-alpha</url>
+      <description>
+        <p>PipeWire visualiser backend, fully adaptive UI and initial Flatpak release.</p>
+        <ul>
+          <li>New: Visualiser can now read from the current PipeWire audio stream (only way to visualisation inside Flatpak)</li>
+          <li>Refactor: UI rearrangements at smaller window sizes down to 360x640 for smartphone compatibility</li>
+          <li>Refactor: Visualiser backend has been refactored to allow hot-switching between data sources.</li>
+          <li>Fix: Slowdowns/stuttering upon startup or large changes to the queue.</li>
+          <li>Fix: Long wait times in content views after cold startup in extreme cases. We now have a second high-priority background task queue for user-initiated background tasks.</li>
+          <li>Fix: Multiple download attempts sent to MPD for the same album art.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.11.0-alpha" date="2025-02-02">
+      <url type="details">https://github.com/htkhiem/euphonica/releases/tag/v0.11.0-alpha</url>
+      <description>
+        <p>First public tagged release for Euphonica.</p>
+        <ul>
+          <li>New: customisable spectrum visualiser (reads from MPD FIFO output)</li>
+          <li>Refactor: preferences panel reorganisation</li>
+          <li>Fix: crash when connecting without a prior password entry in keyring</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <branding>
+    <color type="primary" scheme_preference="light">#99c1f1</color>
+    <color type="primary" scheme_preference="dark">#0a3162</color>
+  </branding>
+</component>

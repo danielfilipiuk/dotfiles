@@ -67,6 +67,9 @@ hl.bind(mainMod .. " + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb
 -- TOMBOY SEARCH NOTES 
 hl.bind(mainMod .. " + ALT + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng"), {description = "tomboy search note"})
 ---------------------------------------------------------------
+--  POMODORO 
+hl.bind(mainMod .. " + CTRL + P",  hl.dsp.exec_cmd("app2unit -- focus-timer"), {description = "focus timer - Pomodoro"})
+---------------------------------------------------------------
 
 
 

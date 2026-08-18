@@ -58,25 +58,25 @@ menu label {	color: rgba(48,30,46,.90);
 		font-variant: normal;
 		font-weight: normal;
 		letter-spacing: 0.5px;}
-	
+
 /* MACROS */
 button {}
 box {}
 label.module {
-	border-top:    2px solid rgba(248,246,242,0.02);
-	border-left:   2px solid rgba(248,246,242,0.03);
-	border-right:  2px solid rgba(248,246,242,0.04);
-	border-bottom: 2px solid rgba(248,246,242,0.05);
+	border-top:    2px solid rgba(248,246,242,0.05);
+	border-left:   2px solid rgba(248,246,242,0.05);
+	border-right:  2px solid rgba(248,246,242,0.15);
+	border-bottom: 2px solid rgba(248,246,242,0.15);
 	padding: 3px 7px;
 	background: rgba(248,246,242,.50);
 	text-shadow: 2px 1px 2px  rgba(48,30,46,.25);
 	/*text-shadow: 1px 1px 2px  rgba(248,246,242,.5);*/}
 label.module:hover {
 	/*font-weight: bold;*/
-	border-top:    2px solid rgba(208, 132, 204,.02);
-	border-left:    2px solid rgba(208, 132, 204,.03);
-	border-right:    2px solid rgba(208, 132, 204,.04);
-	border-bottom:    2px solid rgba(208, 132, 204,0.05);
+	border-top:    2px solid rgba(208, 132, 204,0.05);
+	border-left:   2px solid rgba(208, 132, 204,0.05);
+	border-right:  2px solid rgba(208, 132, 204,0.25);
+	border-bottom: 2px solid rgba(208, 132, 204,0.25);
 	background: rgba(208, 132, 204,1);
 	text-shadow: 2px 1px 2px  rgba(48,30,46,.15);
 	/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
@@ -95,7 +95,8 @@ label.module:hover {
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
  
  /* SUBMAP */
-#submap {	background: rgba(208, 132, 204,.9);
+#submap {	min-width: 40px;	
+		background: rgba(208, 132, 204,.9);
 		text-shadow: 2px 1px 2px  rgba(48,30,46,.5);}
 #submap:hover {	background: rgba(208, 132, 204,1);}
 
@@ -129,10 +130,10 @@ label.module:hover {
 		/*color: rgba(50,25,65,.75);*/
 		text-shadow: 2px 1px 2px  rgba(48,30,46,.75);
 		/*text-shadow: 1px 2px 2px rgba(248,246,242,.5);*/}
-#cava:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
-		border-left:    2px solid rgba(208, 132, 204,.03);
-		border-right:    2px solid rgba(208, 132, 204,.04);
-		border-bottom:    2px solid rgba(208, 132, 204,0.05);	
+#cava:hover {	border-top:    2px solid rgba(208, 132, 204,0.05);
+		border-left:   2px solid rgba(208, 132, 204,0.05);
+		border-right:  2px solid rgba(208, 132, 204,0.25);
+		border-bottom: 2px solid rgba(208, 132, 204,0.25);	
 		background: rgba(208, 132, 204,1);
 		/*text-shadow: 2px 1px 2px  rgba(48,30,46,.15);*/
 		text-shadow: 2px 1px 2px rgba(248,246,242,.75);
@@ -140,18 +141,18 @@ label.module:hover {
 
 /* MPD  */
 #mpd {}
-#mpd.playing {	border-top:    2px solid rgba(208, 132, 204,.02);
-		border-left:    2px solid rgba(208, 132, 204,.03);
-		border-right:    2px solid rgba(208, 132, 204,.04);
-		border-bottom:    2px solid rgba(208, 132, 204,0.05);
+#mpd.playing {	border-top:    2px solid rgba(208, 132, 204,0.05);
+		border-left:   2px solid rgba(208, 132, 204,0.05);
+		border-right:  2px solid rgba(208, 132, 204,0.25);
+		border-bottom: 2px solid rgba(208, 132, 204,0.25);
 		background: rgba(208, 132, 204,.90);
 		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
 		/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
 #mpd.playing:hover {	background: rgba(208, 132, 204,1);}
-#mpd.paused {	border-top:    2px solid rgba(208, 132, 204,.02);
-		border-left:    2px solid rgba(208, 132, 204,.03);
-		border-right:    2px solid rgba(208, 132, 204,.04);
-		border-bottom:    2px solid rgba(208, 132, 204,0.05);	
+#mpd.paused {	border-top:    2px solid rgba(208, 132, 204,0.05);
+		border-left:   2px solid rgba(208, 132, 204,0.05);
+		border-right:  2px solid rgba(208, 132, 204,0.25);
+		border-bottom: 2px solid rgba(208, 132, 204,0.25);	
 		color: rgba(48,30,46,.65);	
 		background: rgba(208, 132, 204,.8);
 		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
@@ -160,10 +161,10 @@ label.module:hover {
 #mpd.stopped {	color: rgba(48,30,46,.50);
 		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
 		/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
-#mpd.stopped:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
-			border-left:    2px solid rgba(208, 132, 204,.03);
-			border-right:    2px solid rgba(208, 132, 204,.04);
-			border-bottom:    2px solid rgba(208, 132, 204,0.05);	
+#mpd.stopped:hover {	border-top:    2px solid rgba(208, 132, 204,0.05);
+			border-left:   2px solid rgba(208, 132, 204,0.05);
+			border-right:  2px solid rgba(208, 132, 204,0.25);
+			border-bottom: 2px solid rgba(208, 132, 204,0.25);	
 			background: rgba(208, 132, 204,1);}
 #mpd.disconnected {	color: #ffb300;
 			text-shadow: 1px 1px 2px  rgba(48,30,46,.5);}
@@ -173,45 +174,51 @@ label.module:hover {
 /* PULSEAUDIO  */
 #pulseaudio {min-width: 45px;}
 #pulseaudio.0 {color: rgba(48,30,46,.50);}
-#pulseaudio.muted {	border-top:    3px solid rgba(208, 132, 204,.02);
-			border-left:    3px solid rgba(208, 132, 204,.03);
-			border-right:    3px solid rgba(208, 132, 204,.04);
-			border-bottom:    3px solid rgba(208, 132, 204,0.05);
+#pulseaudio.muted {	border-top:    2px solid rgba(208, 132, 204,0.05);
+			border-left:   2px solid rgba(208, 132, 204,0.05);
+			border-right:  2px solid rgba(208, 132, 204,0.25);
+			border-bottom: 2px solid rgba(208, 132, 204,0.25);
 			background: rgba(208, 132, 204,.90);}
 #pulseaudio.muted:hover {background: rgba(208, 132, 204,1);}
 
+
+
 /* PULSEAUDIO SLIDER */
-#pulseaudio-slider {	border-top:    2px solid rgba(248,246,242,0.02);
-			border-left:   2px solid rgba(248,246,242,0.03);
-			border-right:  2px solid rgba(248,246,242,0.04);
-			border-bottom: 2px solid rgba(248,246,242,0.05);
+#pulseaudio-slider {	border-top:    2px solid rgba(248,246,242,0.05);
+			border-left:   2px solid rgba(248,246,242,0.05);
+			border-right:  2px solid rgba(248,246,242,0.15);
+			border-bottom: 2px solid rgba(248,246,242,0.15);
 			padding: 3px 7px;
 			background: rgba(248,246,242,.50);
 			}
-#pulseaudio-slider:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
-				border-left:    2px solid rgba(208, 132, 204,.03);
-				border-right:    2px solid rgba(208, 132, 204,.04);
-				border-bottom:    2px solid rgba(208, 132, 204,0.05);
-				background: rgba(248,246,242,.70);
-				}
-#pulseaudio-slider.muted {   background: rgba(208, 132, 204,.8); }
+#pulseaudio-slider:hover {background: rgba(248,246,242,.70);}
+#pulseaudio-slider.muted {	border-top:    2px solid rgba(248,246,242,0.05);
+				border-left:   2px solid rgba(248,246,242,0.05);
+				border-right:  2px solid rgba(248,246,242,0.15);
+				border-bottom: 2px solid rgba(248,246,242,0.15);
+				background: rgba(208, 132, 204,.8); }
 #pulseaudio-slider.muted:hover {   background: rgba(208, 132, 204,1); }
 #pulseaudio-slider slider {background: rgba(248,246,242,0);}
 #pulseaudio-slider.muted trough {background: rgba(48,30,46,.15);
   }
 #pulseaudio-slider.muted trough:hover {background: rgba(48,30,46,.35);
   }
-#pulseaudio-slider trough {	
-				background: rgba(48,30,46,.15);
+#pulseaudio-slider trough {	background: rgba(48,30,46,.15);
 				min-height: 16px;
 			   	min-width: 50px;
 			   	border-radius: 16px;}
-#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.85);
+#pulseaudio-slider highlight {	border-top:    2px solid rgba(248,246,242,0.05);
+				border-left:   2px solid rgba(248,246,242,0.05);
+				border-right:  2px solid rgba(248,246,242,0.15);
+				border-bottom: 2px solid rgba(248,246,242,0.15);	
+				background: rgba(208, 132, 204,.85);
 				border-radius: 16px;}
 #pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);}
 #pulseaudio-slider.muted highlight {	background: rgba(208, 132, 204,.1);
 				border-radius: 16px;}
 #pulseaudio-slider.muted highlight:hover {	background: rgba(208, 132, 204,1);}
+
+
 
 /* KEYBOARD STATE  */
 #keyboard-state {background: rgba(248,246,242,.50);}
@@ -230,14 +237,14 @@ label.module:hover {
 	padding: 3px 7px;
 	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
 	-gtk-icon-style: regular;
-	border-top:    2px solid rgba(248,246,242,0.02);
-	border-left:   2px solid rgba(248,246,242,0.03);
-	border-right:  2px solid rgba(248,246,242,0.04);
-	border-bottom: 2px solid rgba(248,246,242,0.05);}
-#tray:hover {	border-top:    2px solid rgba(208, 132, 204,.02);
-		border-left:    2px solid rgba(208, 132, 204,.03);
-		border-right:    2px solid rgba(208, 132, 204,.04);
-		border-bottom:    2px solid rgba(208, 132, 204,0.5);	
+	border-top:    2px solid rgba(248,246,242,0.05);
+	border-left:   2px solid rgba(248,246,242,0.05);
+	border-right:  2px solid rgba(248,246,242,0.15);
+	border-bottom: 2px solid rgba(248,246,242,0.15);}
+#tray:hover {	border-top:    2px solid rgba(208, 132, 204,0.05);
+		border-left:   2px solid rgba(208, 132, 204,0.05);
+		border-right:  2px solid rgba(208, 132, 204,0.25);
+		border-bottom: 2px solid rgba(208, 132, 204,0.25);	
 		background: rgba(208, 132, 204,1);	
 		-gtk-icon-effect: highlight;
 		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}

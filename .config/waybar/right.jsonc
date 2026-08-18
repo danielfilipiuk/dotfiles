@@ -213,6 +213,7 @@
 		"singleonce": "mpc single once",
 		"consume": "mpc consume",
 		"update": "mpc update",
+		"euphonica": "app2unit euphonica",
 		"ncmpcpp": "app2unit -T ncmpcpp",
 		"cava": "app2unit -T cava",
 			},
@@ -554,11 +555,11 @@
 	"source": "/tmp/mpd.fifo",
 	"stereo": true,
 	"reverse": false,
-	//"monstercat": false,
+	"monstercat": true,
 	"waves": true,
 	//"noise_reduction": 0.85,
 	"input_delay": 2,
-	"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "▓", "▒", "▒", ],
+	"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "▒", "▒", "▓", ],
 	"actions": {
 		"on-click-right": "mode"
 	}

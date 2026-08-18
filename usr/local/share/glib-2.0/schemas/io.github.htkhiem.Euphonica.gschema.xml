@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="euphonica">
+	<enum id="io.github.htkhiem.Euphonica.sortby">
+		<value nick="song-title" value="1"/>
+		<value nick="artist" value="2"/>
+		<value nick="album-title" value="3"/>
+		<value nick="album-artist" value="4"/>
+		<value nick="release-date" value="5"/>
+		<value nick="filename" value="6"/>
+		<value nick="last-modified" value="7"/>
+		<value nick="rating" value="8"/>
+	</enum>
+
+	<enum id="io.github.htkhiem.Euphonica.sortdir">
+		<value nick="asc" value="1"/>
+		<value nick="desc" value="0"/>  <!-- Works as boolean too -->
+	</enum>
+
+	<enum id="io.github.htkhiem.Euphonica.pcmsource">
+		<value nick="pipewire" value="1"/>
+		<value nick="fifo" value="0"/>
+	</enum>
+
+	<enum id="io.github.htkhiem.Euphonica.volumeunit">
+		<value nick="percents" value="0"/>
+		<value nick="decibels" value="1"/>  <!-- Works as boolean too -->
+	</enum>
+
+	<enum id="io.github.htkhiem.Euphonica.titlewrapmode">
+		<value nick="ellipsis" value="0"/>
+		<value nick="scroll" value="1"/>
+		<value nick="wrap" value="2"/>
+	</enum>
+
+	<enum id="io.github.htkhiem.Euphonica.onexitaction">
+		<value nick="nothing" value="0"/>
+		<value nick="pause" value="1"/>
+		<value nick="stop" value="2"/>
+		<value nick="stop-and-clear" value="3"/>
+	</enum>
+
+	<!-- Order matches combobox in Preferences/UI tab, while nick matches stackpage name. -->
+	<enum id="io.github.htkhiem.Euphonica.view">
+		<value nick="last" value="0"/>
+		<value nick="recent" value="1"/>
+		<value nick="albums" value="2"/>
+		<value nick="artists" value="3"/>
+		<value nick="folders" value="4"/>
+		<value nick="playlists" value="5"/>
+		<value nick="dyn-playlists" value="6"/>
+		<value nick="queue" value="7"/>
+	</enum>
+
+	<!-- Unused, but kept for compatibility -->
+	<enum id="io.github.htkhiem.Euphonica.imageformat">
+		<value nick="jpeg" value="0"/>
+		<value nick="png" value="1"/>
+	</enum>
+
+	
+
+	<schema id="io.github.htkhiem.Euphonica" path="/io/github/htkhiem/Euphonica/">
+		<child schema="io.github.htkhiem.Euphonica.ui" name="ui"/>
+		<child schema="io.github.htkhiem.Euphonica.state" name="state"/>
+		<child schema="io.github.htkhiem.Euphonica.library" name="library"/>
+		<child schema="io.github.htkhiem.Euphonica.metaprovider" name="metaprovider"/>
+		<child schema="io.github.htkhiem.Euphonica.player" name="player"/>
+		<child schema="io.github.htkhiem.Euphonica.client" name="client"/>
+
+		<key name="background-portal-available" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.client" path="/io/github/htkhiem/Euphonica/client/">
+		<key name="mpd-auto-reconnect" type="b">
+			<default>true</default>
+		</key>
+		<key name="mpd-use-unix-socket" type="b">
+			<default>false</default>
+		</key>
+		<key name="mpd-unix-socket" type="s">
+			<default>'/run/mpd/socket'</default>
+		</key>
+		<key name="mpd-host" type="s">
+			<default>'localhost'</default>
+		</key>
+		<key name="mpd-port" type="u">
+			<default>6600</default>
+		</key>
+		<key name="mpd-ping-interval-s" type="u">
+			<summary>Ping interval for main client</summary>
+			<description>
+			Euphonica relies on a secondary background client that's always in "idle mode" to
+			synchronise itself with changes made by other frontend apps. Its main client does not
+			poll the daemon unless needed (e.g. to update the seekbar). Due to this, it still
+			needs to occasionally ping the daemon to keep the connection alive. Set this to
+			lower than your daemon's timeout interval, which by default is 30s.
+			</description>
+			<default>15</default>
+		</key>
+		<key name="mpd-download-album-art" type="b">
+			<default>true</default>
+		</key>
+		<key name="mpd-backup-metadata" type="b">
+			<default>true</default>
+			<summary>Attempt to back up album and artist metadata docs to MPD's sticker DB</summary>
+		</key>
+
+		<key name="mpd-visualizer-pcm-source" enum='io.github.htkhiem.Euphonica.pcmsource'>
+			<default>'pipewire'</default>
+		</key>
+
+		<key name="mpd-fifo-path" type="s">
+			<default>''</default>
+		</key>
+
+		<key name="mpd-fifo-format" type="s">
+			<default>'44100:16:2'</default>
+			<summary>Audio format of FIFO output for use by the visualiser (specified in the same form as in your mpd.conf).</summary>
+		</key>
+
+		<key name="pipewire-last-device" type="s">
+			<default>''</default>
+		</key>
+
+		<key name="pipewire-restart-between-songs" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.library" path="/io/github/htkhiem/Euphonica/library/">
+		<key name="artist-tag-delims" type="as">
+			<default>[",", ";", ":", "&amp;", "/", "//", "\\", "\\\\", " X ", "feat.", " ft.", "(ft.", ",ft.", "duet with", "special guest"]</default>
+		</key>
+		<key name="artist-tag-delim-exceptions" type="as">
+			<default>["Simon &amp; Garfunkel", "Above &amp; Beyond"]</default>
+		</key>
+		<key name="genre-tag-delims" type="as">
+			<default>[" / ", ";", "&amp;", ",", "/"]</default>
+		</key>
+		<key name="genre-tag-delim-exceptions" type="as">
+			<default>["R&amp;B", "R&amp;B/Hip-Hop", "Electro&amp;Funk"]</default>
+		</key>
+		<key name="sort-nulls-first" type="b">
+			<default>false</default>
+		</key>
+		<key name="search-case-sensitive" type="b">
+			<default>false</default>
+		</key>
+		<key name="sort-case-sensitive" type="b">
+			<default>false</default>
+		</key>
+		<key name="hires-image-size" type="u">
+			<default>1024</default>
+		</key>
+		<key name="thumbnail-image-size" type="u">
+			<default>128</default>
+		</key>
+		<key name="n-recent-albums" type="u">
+			<default>20</default>
+		</key>
+		<key name="n-recent-artists" type="u">
+			<default>20</default>
+		</key>
+		<key name="n-recent-songs" type="u">
+			<default>20</default>
+		</key>
+		<key name="pause-recent" type="b">
+			<default>false</default>
+		</key>
+
+		<key name="store-lossless-images" type="b">
+			<default>false</default>
+		</key>
+
+		<!-- No longer used but kept for compatibility -->
+		<key name="use-hires-backlog-threshold" type="u">
+			<default>10</default>
+			<summary>Number of pending cover load tasks at which hires album art loading is deferred in favor of thumbnails</summary>
+		</key>
+
+		<key name="max-image-resolution" type="u">
+			<default>1024</default>
+			<summary>Maximum resolution for cached images</summary>
+		</key>
+
+		<key name="n-image-threads" type="u">
+			<default>4</default>
+			<summary>Number of threads for image processing operations</summary>
+			<description>Controls the number of threads used for parallel image processing (resizing, encoding, decoding). More threads does not always mean better performance. Requires restart to take effect.</description>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.metaprovider" path="/io/github/htkhiem/Euphonica/metaprovider/">
+		<key name="delay-between-requests-s" type="d">
+			<default>1.5</default>
+			<summary>How long to wait between metadata provider API calls</summary>
+			<description>
+			Services such as Last.fm and MusicBrainz, enforce rate limits. Exceeding these
+			rates may result in failed metadata fetches or even banning. A 1.5s wait between
+			requests is usually tolerated by most services.
+			</description>
+		</key>
+
+		<key name="order" type="as">
+			<default>["musicbrainz", "lastfm", "lrclib"]</default>
+			<summary>The order of providers within the daisy chain.</summary>
+			<description>
+			Providers will be called in this order. Provider names are as returned by the
+			key() method in the MetadataProvider trait. Providers down the line will also be
+			given the accumulated metadata fetched by the prior providers, and are expected
+			to keep filling in the blanks, leaving already-filled fields as-is.
+			</description>
+		</key>
+
+        <key name="n-tries" type="u">
+			<default>3</default>
+			<summary></summary>
+			<description>
+			  Number of fetch retries upon connection errors before giving up, plus one initial try.
+              For example, to retry at most 3 times, set this to 4.
+			</description>
+		</key>
+
+		<child schema="io.github.htkhiem.Euphonica.metaprovider.lastfm" name="lastfm"/>
+		<child schema="io.github.htkhiem.Euphonica.metaprovider.musicbrainz" name="musicbrainz"/>
+		<child schema="io.github.htkhiem.Euphonica.metaprovider.lrclib" name="lrclib"/>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.metaprovider.lastfm" path="/io/github/htkhiem/Euphonica/metaprovider/lastfm/">
+		<key name="name" type="s">
+			<default>'Last.fm'</default>
+		</key>
+		<key name="enabled" type="b">
+			<default>false</default>
+		</key>
+		<key name="api-key" type="s">
+			<default>''</default>
+		</key>
+		<key name="download-album-art" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.metaprovider.lrclib" path="/io/github/htkhiem/Euphonica/metaprovider/lrclib/">
+		<key name="name" type="s">
+			<default>'LRCLIB'</default>
+		</key>
+		<key name="enabled" type="b">
+			<default>false</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.metaprovider.musicbrainz" path="/io/github/htkhiem/Euphonica/metaprovider/musicbrainz/">
+		<key name="name" type="s">
+			<default>'MusicBrainz'</default>
+		</key>
+		<key name="enabled" type="b">
+			<default>false</default>
+		</key>
+		<key name="download-album-art" type="b">
+			<default>true</default>
+		</key>
+		<key name="download-artist-avatar" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.player" path="/io/github/htkhiem/Euphonica/player/">
+		<key name="enable-mpris" type="b">
+			<default>true</default>
+		</key>
+
+		<key name="visualizer-fft-samples" type="u">
+			<default>512</default>
+		</key>
+
+		<key name="visualizer-fps" type="u">
+			<default>30</default>
+		</key>
+
+		<key name="visualizer-spectrum-bins" type="u">
+			<default>10</default>
+		</key>
+
+		<key name="visualizer-spectrum-use-log-bins" type='b'>
+			<default>true</default>
+		</key>
+
+		<key name="visualizer-spectrum-min-hz" type="u">
+			<default>150</default>
+		</key>
+
+		<key name="visualizer-spectrum-max-hz" type="u">
+			<default>16000</default>
+		</key>
+		<key name="visualizer-spectrum-curr-step-weight" type="d">
+			<default>0.09</default>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.ui" path="/io/github/htkhiem/Euphonica/ui/">
+		<key name="colorscheme" type="s">
+			<default>'follow'</default>
+		</key>
+		<key name="use-hires-for-album-cells" type="b">
+			<default>true</default>
+		</key>
+		<key name="recent-playlists-count" type="u">
+			<default>5</default>
+		</key>
+		<key name="use-album-art-as-bg" type="b">
+			<default>true</default>
+		</key>
+		<key name="bg-blur-radius" type="u">
+			<default>256</default>
+		</key>
+		<key name="bg-opacity" type="d">
+			<default>0.36</default>
+		</key>
+		<key name="bg-transition-duration-s" type="d">
+			<default>1.0</default>
+		</key>
+		<key name="vol-knob-sensitivity" type="d">
+			<default>1.0</default>
+		</key>
+		<key name="vol-knob-unit" enum='io.github.htkhiem.Euphonica.volumeunit'>
+			<default>'percents'</default>
+		</key>
+		<key name="use-visualizer" type="b">
+			<default>true</default>
+		</key>
+		<key name="visualizer-use-cairo" type="b">
+			<default>true</default>
+			<summary>Render using Cairo</summary>
+			<description>On certain hardware (e.g., NVIDIA GPUs), Cairo (CPU) rendering may be more performant than GSK.</description>
+		</key>
+		<key name="visualizer-top-opacity" type="d">
+			<default>0.75</default>
+		</key>
+		<key name="visualizer-scale" type="d">
+			<default>1.0</default>
+		</key>
+		<!-- DEPRECATED AND UNUSED -->
+		<key name="visualizer-blend-mode" type="u">
+			<default>6</default>
+			<summary>Index of gsk::BlendMode variant</summary>
+		</key>
+		<key name="visualizer-bottom-opacity" type="d">
+			<default>0.0</default>
+		</key>
+		<key name="visualizer-use-splines" type='b'>
+			<default>true</default>
+		</key>
+		<key name="visualizer-stroke-width" type='d'>
+			<default>0.0</default>
+		</key>
+		<key name="auto-accent" type='b'>
+			<default>true</default>
+		</key>
+		<key name="rotate-album-art" type='b'>
+			<default>false</default>
+			<summary>Show the player album art as a rotating disc</summary>
+		</key>
+		<key name="return-to-starting-angle" type='b'>
+			<default>true</default>
+			<summary>Adjust rotation speed so tracks end at their starting angle</summary>
+		</key>
+		<key name="album-art-rotation-speed" type='d'>
+			<range min="0" max="2"/>
+			<default>1.0</default>
+			<summary>Album art rotation speed</summary>
+		</key>
+		<key name="title-wrap-mode" enum='io.github.htkhiem.Euphonica.titlewrapmode'>
+			<default>'ellipsis'</default>
+		</key>
+		<key name="max-columns" type="u">
+			<default>7</default>
+		</key>
+		<key name="auto-scroll-to-playing" type="b">
+			<default>true</default>
+			<summary>Automatically scroll to the currently playing song in the queue</summary>
+		</key>
+		<key name="artist-show-all-songs" type="b">
+            <default>false</default>
+            <summary>If true, artist content view opens in All Songs tab.</summary>
+        </key>
+		<key name="artist-collapse-discography-years-on-load" type="b">
+            <default>false</default>
+            <summary>If true, the artist discography section will load with all years initially collapsed.</summary>
+        </key>
+		<key name="artist-collapse-discography-albums-on-load" type="b">
+            <default>false</default>
+            <summary>If true, the artist discography section will load with all album contents initially collapsed.</summary>
+        </key>
+		<key name="artist-sort-discography-years-asc" type="b">
+            <default>false</default>
+            <summary>Show the earliest years first.</summary>
+        </key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state" path="/io/github/htkhiem/Euphonica/state/">
+		<child schema="io.github.htkhiem.Euphonica.state.albumview" name="albumview"/>
+		<child schema="io.github.htkhiem.Euphonica.state.artistview" name="artistview"/>
+		<child schema="io.github.htkhiem.Euphonica.state.folderview" name="folderview"/>
+		<child schema="io.github.htkhiem.Euphonica.state.playlistview" name="playlistview"/>
+		<child schema="io.github.htkhiem.Euphonica.state.dynplaylistview" name="dynplaylistview"/>
+		<child schema="io.github.htkhiem.Euphonica.state.queueview" name="queueview"/>
+
+		<!-- Remember last window size -->
+		<key name="last-window-width" type="i">
+			<default>600</default>
+		</key>
+		<key name="last-window-height" type="i">
+			<default>400</default>
+		</key>
+		<key name="last-view" enum='io.github.htkhiem.Euphonica.view'>
+			<summary>Must never be set to 'last'</summary>
+			<default>'recent'</default>
+		</key>
+		<key name="startup-view" enum='io.github.htkhiem.Euphonica.view'>
+			<default>'last'</default>
+		</key>
+
+		<!-- Background & autostart -->
+		<key name="run-in-background" type="b">
+			<default>false</default>
+		</key>
+		<key name="autostart" type="b">
+			<default>false</default>
+		</key>
+		<key name="start-minimized" type="b">
+			<default>true</default>
+		</key>
+		<key name="on-exit-action" enum='io.github.htkhiem.Euphonica.onexitaction'>
+			<default>'nothing'</default>
+			<summary>Action to perform on MPD when Euphonica exits</summary>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.albumview" path="/io/github/htkhiem/Euphonica/state/albumview/">
+		<!-- Album view state -->
+		<key name='sort-by' enum='io.github.htkhiem.Euphonica.sortby'>
+			<default>'album-title'</default>
+			<summary>Album View sort criterion</summary>
+		</key>
+
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Album View sort direction</summary>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.artistview" path="/io/github/htkhiem/Euphonica/state/artistview/">
+		<!-- Artist view state -->
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Artist View sort direction</summary>
+        </key>
+
+        <key name="album-artists-only" type="b">
+            <default>true</default>
+            <summary>Show only album artists</summary>
+        </key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.folderview" path="/io/github/htkhiem/Euphonica/state/folderview/">
+		<!-- Folder view state -->
+		<key name='sort-by' enum='io.github.htkhiem.Euphonica.sortby'>
+			<default>'filename'</default>
+			<summary>Folder View sort criterion</summary>
+		</key>
+
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Folder View sort direction</summary>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.playlistview" path="/io/github/htkhiem/Euphonica/state/playlistview/">
+		<!-- Folder view state -->
+		<key name='sort-by' enum='io.github.htkhiem.Euphonica.sortby'>
+			<default>'filename'</default>
+			<summary>Playlist View sort criterion</summary>
+		</key>
+
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Playlist View sort direction</summary>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.dynplaylistview" path="/io/github/htkhiem/Euphonica/state/dynplaylistview/">
+		<!-- Folder view state -->
+		<key name='sort-by' enum='io.github.htkhiem.Euphonica.sortby'>
+			<default>'filename'</default>
+			<summary>Dynamic Playlist View sort criterion</summary>
+		</key>
+
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Dynamic Playlist View sort direction</summary>
+		</key>
+	</schema>
+
+	<schema id="io.github.htkhiem.Euphonica.state.queueview" path="/io/github/htkhiem/Euphonica/state/queueview/">
+		<!-- Queue view & player pane state -->
+		<key name='show-lyrics' type='b'>
+			<default>true</default>
+		</key>
+
+		<key name='use-synced-lyrics' type='b'>
+			<default>true</default>
+		</key>
+
+		<key name='maximize-lyrics-view' type='b'>
+			<default>false</default>
+		</key>
+
+		<key name="sort-direction" enum='io.github.htkhiem.Euphonica.sortdir'>
+			<default>'asc'</default>
+			<summary>Album View sort direction</summary>
+		</key>
+	</schema>
+</schemalist>

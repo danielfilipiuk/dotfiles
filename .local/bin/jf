@@ -1,0 +1,1 @@
+sudo journalctl -b -W --no-tail -f --priority notice

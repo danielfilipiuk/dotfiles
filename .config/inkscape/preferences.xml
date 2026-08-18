@@ -119,8 +119,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="1006.48999023438"
-         height="347.468536376953"
+         width="229.571984959399"
+         height="332.78617318221"
          ry="0"
          rx="0"
          convertguides="1" />
@@ -707,10 +707,10 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.plain"
+       default="org.inkscape.output.svgz.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/daniel/icons/hicolor/symbolic/apps"
+       path="/home/daniel/profile/Boutique/vectorized/paintings arte"
        use_current_dir="1"
        enable_svgexport="0" />
     <group
@@ -1365,10 +1365,10 @@
      org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#ffffff;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.50000001;stroke-linecap:round;font-weight:bold;stroke-linejoin:round;stroke:#000000">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:none;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.37795276;stroke-linecap:round;font-weight:bold;stroke-linejoin:round;stroke:#ffffff">
     <group
-       width="1280"
-       height="982"
+       width="942"
+       height="211"
        x="0"
        y="0"
        maximized="1"
