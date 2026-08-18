@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Step 1: Choose the drive
-DRIVE_CHOICE=$(echo -e "  1TB (/dev/sdb1)\n   Data (/dev/sdd1)\n  3TB (/dev/sdc1)" | fuzzel --dmenu -w 21 -l 3 --prompt="Select Drive: ")
+DRIVE_CHOICE=$(echo -e "  1TB (/dev/sdb1)\n󰊴   Data (/dev/sdd1)\n  3TB (/dev/sdc1)" | fuzzel --dmenu -w 21 -l 3 --prompt="Select Drive: ")
 
 case "$DRIVE_CHOICE" in
     *"sdb1"*) DEV="/dev/sdb1" ;;

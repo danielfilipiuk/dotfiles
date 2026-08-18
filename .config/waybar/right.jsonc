@@ -177,16 +177,20 @@
 	"unknown-tag": "",
 	"justify": "center",
 	"consume-icons": {
-		"on": "<span color='#b57daa'><b> </b></span>" // Icon shows only when "consume" is on
+		//"on": "<span color='#b57daa'><b> </b></span>" // Icon shows only when "consume" is on
+		"on": "󰮯 " // Icon shows only when "consume" is on
 	},
 	"random-icons": {
-		"on": "<span color='#b57daa'><b> </b></span>"
+		//"on": "<span color='#b57daa'><b> </b></span>"
+		"on": " "
 	},
 	"repeat-icons": {
-		"on": "<span color='#b57daa'><b> </b></span>"
+		//"on": "<span color='#b57daa'><b> </b></span>"
+		"on": " "
 	},
 	"single-icons": {
-		"on": "<span color='#b57daa'><b> </b></span>"		
+		//"on": "<span color='#b57daa'><b> </b></span>"
+		"on": " "		
 	},
 	"state-icons": {
 		"paused":"",
@@ -213,7 +217,8 @@
 		"singleonce": "mpc single once",
 		"consume": "mpc consume",
 		"update": "mpc update",
-		"euphonica": "app2unit euphonica",
+		"xfmpc": "app2unit -- xfmpc",
+		"euphonica": "app2unit -- euphonica",
 		"ncmpcpp": "app2unit -T ncmpcpp",
 		"cava": "app2unit -T cava",
 			},
@@ -499,13 +504,8 @@
 	"menu-file": "~/.config/waybar/power-menu.xml",
 	"menu-actions": {
 		"lock": "pidof hyprlock || app2unit -- hyprlock -q",
-		"logout": "uwsm stop",
 		"DPMSoff": "hyprctl dispatch 'hl.dsp.dpms({ action = \"disable\" })'",
-		"suspend": "pidof hyprlock || app2unit -- hyprlock -q && sleep 2 && systemctl suspend",
-		"softreboot": "systemctl soft-reboot",
-		"reboot": "systemctl reboot",
-		"shutdown": "systemctl poweroff",
-			},
+		},
 },
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -597,3 +597,5 @@
 
 
 }
+
+

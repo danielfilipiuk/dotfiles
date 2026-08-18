@@ -6,13 +6,13 @@ exec tail -n +3 $0
 
 #		loglevel=5 \
 
-menuentry 'Debian 7.1.6-polaris-v1' --class hypr --class linux --class gnu-linux --class gnu --class os --unrestricted {
+menuentry 'Debian 7.2.0-polaris-v1' --class hypr --class linux --class gnu-linux --class gnu --class os --unrestricted {
         load_video
         insmod gzio
         insmod part_gpt
         insmod ext2
         search --no-floppy --fs-uuid --set=root bd5b707d-7c57-432c-bfc3-dbaa7114bd4a
-        linux /boot/vmlinuz-7.1.6-polaris-v1 \
+        linux /boot/vmlinuz-7.2.0-polaris-v1 \
 		root=/dev/nvme0n1p2 ro \
 		rootfstype=ext4 \
 		module.sig_enforce=0 \

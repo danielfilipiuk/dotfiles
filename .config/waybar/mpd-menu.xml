@@ -28,7 +28,7 @@
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="consume">
-				<property name="label">  Consume</property>
+				<property name="label">󰮯  Consume</property>
 			</object>
 		</child>
 		<child>
@@ -40,20 +40,22 @@
 			</object>
 		</child>
 		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter2"/>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="xfmpc">
+				<property name="label">  XfMPC</property>
+			</object>
+		</child>
+		<child>
 			<object class="GtkMenuItem" id="euphonica">
-				<property name="label">  Euphonica</property>
+				<property name="label">  Euphonica</property>
 			</object>
 		</child>
 		<child>
 			<object class="GtkMenuItem" id="ncmpcpp">
 				<property name="label">  NcMPCpp</property>
 			</object>
-		</child>
-    		<child>
-			<object class="GtkMenuItem" id="cava">
-				<property name="label">󰺢   Cava</property>
-			</object>
-    		</child>  
-    		          
+		</child>    		          
   </object>
 </interface>

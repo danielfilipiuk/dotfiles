@@ -1,1 +1,2 @@
+#!/bin/sh
 sudo journalctl -W -b -xp 3
