@@ -1365,7 +1365,7 @@
      org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:none;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.37795276;stroke-linecap:round;font-weight:bold;stroke-linejoin:round;stroke:#ffffff">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.37795276;stroke-linecap:round;font-weight:bold;stroke-linejoin:round">
     <group
        width="942"
        height="211"
