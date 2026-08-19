@@ -1,0 +1,18 @@
+dark_theme = false
+view_mode = 1
+item_size = 2
+show_hidden = true
+sort_key = 0
+sort_order = 0
+auto_refresh = false
+window_size = [
+    1100,
+    700,
+]
+sidebar_width = 160
+thumb_size = 2
+icon_style = 1
+col_size_visible = true
+col_modified_visible = true
+col_kind_visible = true
+thumb_mem_budget_mb = 2048

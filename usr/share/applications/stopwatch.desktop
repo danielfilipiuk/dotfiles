@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Stopwatch
+Comment=A virtual stopwatch
+TryExec=/usr/bin/stopwatch
+Exec=/usr/bin/stopwatch
+Categories=Application;Utility
+Icon=stopwatch
+Keywords=stopwatch;timer;chronometer;

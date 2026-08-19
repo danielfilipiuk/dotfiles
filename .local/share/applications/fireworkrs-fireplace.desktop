@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Fireworkrs fireplace
+GenericName=Fireworkrs
+Comment=Cozy fireplace in your terminal
+Exec=fireworkrs /home/daniel/.config/fireworkrs/fireplace/ -1
+Icon=terminus
+Terminal=true
+Categories=Games;terminal;
+Keywords=games;terminal;fireplace;fireworkrs;

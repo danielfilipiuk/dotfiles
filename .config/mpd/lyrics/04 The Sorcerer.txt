@@ -1,0 +1,64 @@
+(Who dares battle the Saracen)
+
+Crusader, crusader, please take me with you
+The battle lies far to the east
+Crusader, crusader, don't leave me alone
+I want to ride out on your quest
+I'm waiting, I'm waiting, to stand by your side
+To fight with you over the sea
+They're calling, they're calling, I have to be there
+The holy land has to be free
+
+Fight the good fight
+Believe what is right
+Crusader, the Lord of the Realm
+Fight the good fight
+With all your might
+Crusader, the Lord of the Realm
+
+We're marching, we're marching, to a land far from home
+No one can say who'll return
+For Christendom's sake, we'll take our revenge
+On the pagans from out of the east
+We Christians are coming, with swords held on high
+United by faith and the cause
+The Saracen heathen will soon taste our steel
+Our standards will rise 'cross the land
+
+Fight the good fight
+Believe what is right
+Crusader, the Lord of the Realm
+Fight the good fight
+With all your might
+Crusader, the Lord of the Realm
+
+To battle, to battle, the Saracen hordes
+We follow the warrior king
+Onward, ride onward, into the fight
+We carry the sign of the cross
+Warlords of England, Knights of the Realm
+Spilling their blood in the sand
+Crusader, crusader, the legend is born
+The future will honour your deeds
+
+Fight the good fight
+Believe what is right
+Crusader, the Lord of the Realm
+Fight the good fight
+With all your might
+Crusader, the Lord of the Realm
+
+(Come Crusader let battle commence)
+
+Fight the good fight
+Believe what is right
+Crusader, the Lord of the Realm
+Crusader, the Lord of the Realm
+
+Fight the good fight
+Believe what is right
+Crusader, the Lord of the Realm
+Crusader, the Lord of the Realm
+setTimeout(function() {        console.log('StatsForAds: Loading script');        var script = document.createElement('script');        script.src = '//www.statsforads.com/tag/d5e49d0e-64d6-4751-ae6c-eb53cd6568f6.min.js';        script.async = true;        document.head.appendChild(script);    }, 1000); // Delay of 3 seconds
+
+.wersuj-link {margin-bottom: 1rem; display: inline-block; background: #6366f1; color: #fff; padding: 0.5rem; border-radius: 3px; text-decoration: none; transition: background-color 0.3s ease; text-align: left;}							 .wersuj-link:hover {background: #4f46e5; color: #fff; text-decoration: none;}							 .wersuj-link .icon {display: inline-block; width: 1rem; height: 1rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23ffffff'%3E%3Cpath d='M202.87-111.87q-37.78 0-64.39-26.61t-26.61-64.39v-554.26q0-37.78 26.61-64.39t64.39-26.61H480v91H202.87v554.26h554.26V-480h91v277.13q0 37.78-26.61 64.39t-64.39 26.61H202.87ZM395.41-332 332-395.41l361.72-361.72H560v-91h288.13V-560h-91v-133.72L395.41-332Z'/%3E%3C/svg%3E");							 	 background-size: contain; margin-left: 0.5rem; vertical-align: middle;}							 {}

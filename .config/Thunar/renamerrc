@@ -1,18 +1,12 @@
 [Configuration]
 LastActiveMode=THUNAR_RENAMER_MODE_BOTH
-LastActiveRenamer=ThunarSbrInsertRenamer
+LastActiveRenamer=ThunarSbrRemoveRenamer
 
 [ThunarSbrReplaceRenamer]
 CaseSensitive=FALSE
 Replacement=bindings_
 Pattern=binds_
 Regexp=FALSE
-
-[ThunarSbrRemoveRenamer]
-StartOffset=0
-EndOffset=8
-EndOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
-StartOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
 
 [ThunarSbrNumberRenamer]
 TextMode=THUNAR_SBR_TEXT_MODE_TN
@@ -25,4 +19,10 @@ Offset=0
 Text=.svgz
 Mode=THUNAR_SBR_INSERT_MODE_INSERT
 OffsetMode=THUNAR_SBR_OFFSET_MODE_RIGHT
+
+[ThunarSbrRemoveRenamer]
+StartOffset=0
+EndOffset=8
+EndOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
+StartOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
 

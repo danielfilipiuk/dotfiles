@@ -207,11 +207,7 @@ label.module:hover {
 				min-height: 16px;
 			   	min-width: 50px;
 			   	border-radius: 16px;}
-#pulseaudio-slider highlight {	border-top:    2px solid rgba(248,246,242,0.05);
-				border-left:   2px solid rgba(248,246,242,0.05);
-				border-right:  2px solid rgba(248,246,242,0.15);
-				border-bottom: 2px solid rgba(248,246,242,0.15);	
-				background: rgba(208, 132, 204,.85);
+#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.85);
 				border-radius: 16px;}
 #pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);}
 #pulseaudio-slider.muted highlight {	background: rgba(208, 132, 204,.1);

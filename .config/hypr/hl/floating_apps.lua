@@ -464,3 +464,12 @@ hl.window_rule({
 	 move = "50% 50%",
 	persistent_size = true,	   
 })
+
+hl.window_rule({
+	 name = "jdownloader",
+	 match = {class = "org-jdownloader-update-launcher-JDLauncher"},
+	 match = {title = "JDownloader 2"},
+	 float = true,
+	 move = "50% 50%",
+	persistent_size = true,	   
+})

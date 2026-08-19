@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name[bg]=Рисуване с ASCII
+Name[hi]=ASCII Draw
+Name[it]=ASCII Draw
+Name[nb]=ASCII Draw
+Name[ru]=Рисование ASCII
+Name[tr]=ASCII Çizim
+Name[pt_BR]=Desenho ASCII
+Name[zh]=ASCII 绘画
+Name[vi]=ASCII Draw
+Name=ASCII Draw
+Exec=ascii-draw
+Icon=io.github.nokse22.asciidraw
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Graphics;Art;
+Keywords[bg]=графики;изкуство;
+Keywords[hi]=GNOME;GTK;चित्रोपमा;कला;
+Keywords[it]=GNOME;GTK;Grafica;Arte;
+Keywords[nb]=GNOME;GTK;Grafikk;Kunst;Tekst;Tegning;Unicode;
+Keywords[ru]=GNOME;GTK;Графика;Рисование;
+Keywords[pt_BR]=GNOME;GTK;Gráficos;Arte;
+Keywords[zh]=GNOME;GTK;Graphics;Art;
+Keywords[vi]=GNOME;GTK;Graphics;Art;
+Keywords=GNOME;GTK;Graphics;Art;
+StartupNotify=true

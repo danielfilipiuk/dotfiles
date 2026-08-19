@@ -15,7 +15,7 @@
 ## ncmpcpp.
 ##
 #
-ncmpcpp_directory = ~/.config/ncmpcpp
+ncmpcpp_directory = /home/daniel/.config/ncmpcpp
 #
 
 
@@ -24,7 +24,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 ## MPD clients (eg. ncmpc) also use that location.
 ##
 #
-#lyrics_directory = ~/.lyrics
+lyrics_directory = /home/daniel/.config/mpd/lyrics
 #
 
 
@@ -42,7 +42,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 
 ## Needed for tag editor and file operations to work.
 ##
-mpd_music_dir = ~/music
+mpd_music_dir = /mnt/data/music
 #
 mpd_crossfade_time = 0
 #
@@ -481,17 +481,17 @@ header_text_scrolling = yes
 #
 cyclic_scrolling = yes
 #
-#lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
+lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
 #
 #follow_now_playing_lyrics = no
 #
-#fetch_lyrics_for_current_song_in_background = no
+fetch_lyrics_for_current_song_in_background = yes
 #
-#store_lyrics_in_song_dir = no
+#store_lyrics_in_song_dir = no 
 #
 #generate_win32_compatible_filenames = yes
 #
-#allow_for_physical_item_deletion = no
+allow_for_physical_item_deletion = no
 #
 
 
@@ -504,7 +504,7 @@ cyclic_scrolling = yes
 ##
 ## Note: Language has to be expressed as an ISO 639 alpha-2 code.
 ##
-#lastfm_preferred_language = en
+lastfm_preferred_language = en
 #
 #space_add_mode = add_remove
 #

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Fireworkrs fireworks
+GenericName=Fireworkrs
+Comment=Joyfull fireworks in your terminal
+Exec=fireworkrs /home/daniel/.config/fireworkrs/fireworks/ -1
+Icon=terminus
+Terminal=true
+Categories=Games;terminal;
+Keywords=games;terminal;fireworkrs;

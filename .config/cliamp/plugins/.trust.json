@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "plugins": {
+    "block-burst": "08afcd95abd2cde3eb385a29ead18b6e9e52d1a4e891be99703371a6fcecc71a",
+    "led-burst": "686550ca4083dd9fc840f83fc3b28b59b63da4feddb331a9a2d21585042e1eac",
+    "nightrider": "72a0c69bc6bde4e3ffd185d5ff4e9c2b7c6de68cfbaef7b5f5e23b4215fbe053",
+    "nova": "747c4e1b03cefd01ee058e625c1d2fe191f62407fbb92b6ea3f260c8ce036c33",
+    "tubeamp": "42110c2e0b0e03bf27e436f1e49d34eb99f925fa4bd38ef3f3ba470e7dc8f2ed",
+    "vu-meter": "65358e0de3bb44806e693f357b705b6924dd5d2b861580f6d71ab8cff4dec909"
+  }
+}

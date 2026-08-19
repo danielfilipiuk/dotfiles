@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar /opt/jdownloader/JDownloader.jar
+_JAVA_AWT_WM_NONREPARENTING=1 java -jar /opt/jdownloader/JDownloader.jar

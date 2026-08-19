@@ -1,0 +1,73 @@
+speed = 1.00
+
+visualizer = "ClassicLED"
+theme = "ember"
+
+eq_preset = "Custom"
+eq = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+
+[ytmusic]
+enabled = true
+
+
+[plugins.tubeamp]
+# Multiplier on incoming band levels (default 1.0). Bump it up if your audio
+# sources sit low in the spectrum range.
+gain = 1.0
+
+# Attack: how quickly the filament heats up on rising signals (0..1).
+# Higher = snappier response. Default 0.55.
+attack = 0.55
+
+# Release: how slowly the filament cools on falling signals (0..1).
+# Lower = more afterglow / persistence. Default 0.18.
+release = 0.18
+
+# Overdrive threshold (0..1). Bands at or above this level flare red.
+# Default 0.78.
+overdrive = 0.78
+
+
+[plugins.nova]
+
+# --- look ---
+# sol | sirius | rigel | antares | aurora
+theme = "aurora"       
+ring_blend = true
+
+# set to true rotate through all 5 themes automatically
+cycle_themes = false  
+
+# --- feel ---
+# reference | transient | nebula | plasma |  afterglow | analog
+preset = "analog"   
+
+# rotate through all 6 presets automatically (don't set `preset`)
+cycle_presets = false  
+# seconds per theme/preset when cycling
+cycle_seconds = 20     
+
+# --- bloom ---
+# braille dots thicken toward center on peaks
+bloom = true           
+
+# --- dynamics ---
+attack = 0.55
+release = 0.18
+overdrive = 0.78
+sustain = 0.82
+# overdrive spills into adjacent rings
+blend = true  
+# noise gate (0–0.50)         
+gate = 0.00   
+# limiter (0.01–1.00)         
+ceiling = 1.00 
+# response curve (0.10–3.00, 1.00 = linear)        
+knee = 1.00   
+# per-band treble boost         
+tilt = 0.00            
+
+# --- performance ---
+# 0.25–1.00, fraction of frames to render (if it's hogging too much cpu)
+render_rate = 1.00    

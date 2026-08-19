@@ -4,6 +4,6 @@ Type=Application
 Name=JDownloader
 Comment=A small descriptive blurb about this application.
 Icon=jdownloader
-Exec=app2unit -S both -- env GDK_BACKEND=x11 java -jar /opt/jdownloader/JDownloader.jar
+Exec=app2unit -S both -- env _JAVA_AWT_WM_NONREPARENTING=1 java -jar /opt/jdownloader/JDownloader.jar
 Actions=
 Categories=Network;

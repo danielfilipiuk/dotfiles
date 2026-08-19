@@ -42,6 +42,11 @@
 		<child>
       		<object class="GtkSeparatorMenuItem" id="delimiter2"/>
     		</child>
+    		<child>
+			<object class="GtkMenuItem" id="rmpc">
+				<property name="label">  rMpc</property>
+			</object>
+		</child>
 		<child>
 			<object class="GtkMenuItem" id="xfmpc">
 				<property name="label">  XfMPC</property>

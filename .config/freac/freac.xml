@@ -4,11 +4,11 @@
   <section name="Settings">
    <value name="LastOutputDirectory1">/</value>
    <value name="Language">internal</value>
-   <value name="StartCount">21</value>
-   <value name="WindowPosX">1027</value>
+   <value name="StartCount">24</value>
+   <value name="WindowPosX">347</value>
    <value name="WindowPosY">45</value>
-   <value name="WindowSizeX">568</value>
-   <value name="WindowSizeY">892</value>
+   <value name="WindowSizeX">604</value>
+   <value name="WindowSizeY">664</value>
    <value name="Encoder">opus-enc</value>
    <value name="WindowMaximized">0</value>
    <value name="ShowTips">0</value>
@@ -41,7 +41,7 @@
    <value name="LastOutputDirectory3">/mnt/data/music/pmc/</value>
    <value name="LastOutputDirectory2">/home/daniel/music/</value>
    <value name="LastAddedDir">/mnt/500G/torrents/The Rolling Stones - Foreign Tongues [2026] [Hi-Res] [FLAC-24Bit]-Sc4r3cr0w (copy 1)/</value>
-   <value name="LastSelectedOpenDir">/mnt/500G/torrents/Tame Impala The Slow Rush [2020] FLAC CD/Tame_Impala-The_Slow_Rush-CD-FLAC-2020-PERFECT</value>
+   <value name="LastSelectedOpenDir">/mnt/500G/torrents/L'Entourloop - 2022 - La clarté dans la confusion</value>
   </section>
   <section name="Tags">
    <value name="DefaultComment">fre:ac - free audio converter &lt;https://www.freac.org/&gt;</value>
@@ -93,7 +93,7 @@
    <value name="ActiveDrive">0</value>
   </section>
   <section name="Donate">
-   <value name="StartCount">21</value>
+   <value name="StartCount">24</value>
    <value name="ShowAgain">1</value>
   </section>
   <section name="Playlist">
@@ -132,7 +132,7 @@
    <value name="SingleFileMode">1</value>
   </section>
   <section name="Joblist">
-   <value name="FieldSizes">267,123,50,80,1</value>
+   <value name="FieldSizes">267,159,50,80,1</value>
    <value name="Fields">&lt;artist&gt;,&lt;title&gt;,&lt;track&gt;,&lt;time&gt;,&lt;bytes&gt;</value>
   </section>
   <section name="LAME">

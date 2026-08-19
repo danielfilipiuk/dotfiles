@@ -217,10 +217,10 @@
 		"singleonce": "mpc single once",
 		"consume": "mpc consume",
 		"update": "mpc update",
+		"rmpc": "app2unit -T rmpc",
 		"xfmpc": "app2unit -- xfmpc",
 		"euphonica": "app2unit -- euphonica",
 		"ncmpcpp": "app2unit -T ncmpcpp",
-		"cava": "app2unit -T cava",
 			},
 },
 

@@ -1,0 +1,33 @@
+# Your choice of terminal application.
+#
+[deb-gview]
+terminal=xterm
+execute_command=-e
+
+[manual pages]
+pattern=./usr/share/man/man*/*
+viewer=man
+use_terminal=true
+binary_file=false
+file_suffix=
+
+[HTML]
+pattern=*.html
+viewer=sensible-browser
+use_terminal=false
+binary_file=false
+file_suffix=html
+
+[PNG]
+pattern=*.png
+viewer=eog
+use_terminal=false
+binary_file=true
+file_suffix=png
+
+[text]
+pattern=*
+viewer=gedit
+use_terminal=false
+binary_file=false
+file_suffix=

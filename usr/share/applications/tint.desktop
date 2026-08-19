@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=TINT
+Comment=Tetris clone for the terminal
+Comment[es]=Un clon del Tetris para la terminal
+Exec=sh -c '/usr/games/tint -l 1;echo;echo PRESS ENTER;read line'
+Icon=tint
+Terminal=true
+Type=Application
+Categories=Game;BlocksGame;
+Keywords=2d;curses;colour;single-player;
+X-AppStream-Ignore=true
