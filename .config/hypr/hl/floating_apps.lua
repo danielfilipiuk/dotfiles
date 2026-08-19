@@ -473,3 +473,12 @@ hl.window_rule({
 	 move = "50% 50%",
 	persistent_size = true,	   
 })
+
+
+hl.window_rule({
+	 name = "hyprprop-yad",
+	 match = {class = "hyprprop+yad"},
+	 float = true,
+	 size = "416 706",
+	 move = "50% 50%",   
+})

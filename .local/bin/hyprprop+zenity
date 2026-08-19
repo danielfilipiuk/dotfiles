@@ -1,0 +1,2 @@
+#!/bin/sh
+exec hyprprop | zenity --text-info --auto-scroll

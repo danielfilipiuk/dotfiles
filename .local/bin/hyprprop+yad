@@ -1,0 +1,2 @@
+#!/bin/sh
+exec hyprprop | yad --text-info --margins 15 --class=hyprprop+yad

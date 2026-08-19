@@ -70,6 +70,9 @@ hl.bind(mainMod .. " + ALT + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFO
 --  POMODORO 
 hl.bind(mainMod .. " + CTRL + P",  hl.dsp.exec_cmd("app2unit -- focus-timer"), {description = "focus timer - Pomodoro"})
 ---------------------------------------------------------------
+--  HYPRPROP ZENITY 
+hl.bind(mainMod .. " + ALT + P",  hl.dsp.exec_cmd("hyprprop+yad"), {description = "hyprprop yad"})
+---------------------------------------------------------------
 
 
 
