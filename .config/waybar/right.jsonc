@@ -300,8 +300,9 @@
         "menu": "on-click-right",
 	"menu-file": "~/.config/waybar/pulseaudio-menu.xml",
 	"menu-actions": {
-		"au": "app2unit -T audio-detective™.sh",
+		"pwvucontrol": "app2unit -- pwvucontrol",
 		"qpwgraph": "app2unit -- qpwgraph",
+		"au": "app2unit -T audio-detective™.sh",
 		"pw-top": "app2unit -T pw-top",
 			},
     },

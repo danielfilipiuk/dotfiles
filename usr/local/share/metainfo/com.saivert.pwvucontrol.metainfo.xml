@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nicolai Syvertsen 2023 <saivert@saivert.com> -->
+<component type="desktop-application">
+  <id>com.saivert.pwvucontrol</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <name>pwvucontrol</name>
+  <name xml:lang="ru">pwvucontrol</name>
+  <name xml:lang="pl">pwvucontrol</name>
+  <name xml:lang="nl">pwvucontrol</name>
+  <name xml:lang="nb">pwvucontrol</name>
+  <name xml:lang="ka">pwvucontrol</name>
+  <summary>Volume control for pipewire</summary>
+  <summary xml:lang="ru">Управление громкостью для pipewire</summary>
+  <summary xml:lang="pl">Kontrola głośności pipewire</summary>
+  <summary xml:lang="nl">Pipewire-volumebediening</summary>
+  <summary xml:lang="nb">Volumkontroll for pipewire</summary>
+  <summary xml:lang="ka">ხმის დონის კონტროლი pipewire-სთვის</summary>
+  <summary xml:lang="fr">Controle du volume pour PipeWire</summary>
+  <description>
+    <p>A native volume control app made with GTK + Rust.</p>
+    <p xml:lang="ru">Встроенное приложение для управления громкостью, созданное с помощью GTK и Rust.</p>
+    <p xml:lang="pl">Natywna aplikacja kontroli głośności stworzona z użyciem GTK + Rust.</p>
+    <p xml:lang="nl">Een platform-eigen volumebediening, gemaakt met GTK en Rust.</p>
+    <p xml:lang="nb">En egen volumkontroll app laget med GTK + Rust.</p>
+    <p xml:lang="ka">GTK + Rust-ით დაწერილი ხმის დონის კონტროლის აპი.</p>
+    <p xml:lang="fr">Une application native de controle des volumes ecrite avec GTK + Rust.</p>
+  </description>
+  <categories>
+    <category>Audio</category>
+  </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://saivert.com/files/pwvucontrol-light.png</image>
+      <caption>Main window</caption>
+      <caption xml:lang="ru">Главное окно</caption>
+      <caption xml:lang="pl">Główne okno</caption>
+      <caption xml:lang="nl">Hoofdvenster</caption>
+      <caption xml:lang="nb">Hovedvindu</caption>
+      <caption xml:lang="ka">მთავარი ფანჯარა</caption>
+      <caption xml:lang="fr">Fenetre principale</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/saivert/pwvucontrol</url>
+  <url type="bugtracker">https://github.com/saivert/pwvucontrol/issues</url>
+  <content_rating type="oars-1.0"/>
+  <releases>
+    <release version="0.5.2" date="2026-05-08">
+      <description>
+        <p>Changelog since 0.5.1</p>
+        <ul>
+          <li>Now resets the volume on the peak meter capture stream so it always works.</li>
+          <li>Fix crash when audio format is missing channel position data.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.1" date="2025-10-22">
+      <description>
+        <p>Changelog since 0.5.0</p>
+        <ul>
+          <li>More granular LED blocks in the peak meter.</li>
+          <li xml:lang="nb">Mer granulære LED blokker i lydindikatoren.</li>
+          <li>Now saves the selected card profile.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2025-10-17">
+      <description>
+        <p>Changelog since 0.4.9</p>
+        <ul>
+          <li>Remember last used tab.</li>
+          <li xml:lang="nb">Husk siste brukte fane.</li>
+          <li>Alt+number can be used to switch tab.</li>
+          <li xml:lang="nb">Alt+nummer kan brukes for å bytte fane.</li>
+          <li>Show placeholder message when no playback or recording streams are active.</li>
+          <li xml:lang="nb">Vis plassholder melding når ingen avspillings- eller opptaksstrømmer er aktive.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.9" date="2025-03-17">
+      <description>
+        <p>Changelog since 0.4.8</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.8</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.8</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.8</p>
+        <p xml:lang="nb">Endringer siden 0.4.8</p>
+        <p xml:lang="ka">ცვლილებები 0.4.8-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.8</p>
+        <ul>
+          <li>Add LED peak meter option.</li>
+          <li xml:lang="ru">Добавлена опция светодиодного измерителя пиков.</li>
+          <li xml:lang="nb">Lagt til LED lydindikator alternativ.</li>
+          <li>Add beep on volume change option (only output devices).</li>
+          <li xml:lang="ru">Добавлен звуковой сигнал для опции изменения громкости (только устройства вывода).</li>
+          <li xml:lang="nl">Nieuw: pictogrammen voor in- en uitvoerapparaten.</li>
+          <li xml:lang="nb">Lagt til pip ved lydnivåendringer (kun utgangsenheter).</li>
+          <li>Show product name in port dropdown (e.g. for HDMI ports).</li>
+          <li xml:lang="ru">Отображение имени продукта в раскрывающемся списке портов (например, для портов HDMI).</li>
+          <li xml:lang="nb">Vis produktnavn i nedtrekksboksen for porter (f.eks HDMI porter).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.8" date="2025-03-02">
+      <description>
+        <p>Changelog since 0.4.7</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.7</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.7</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.7</p>
+        <p xml:lang="nb">Endringer siden 0.4.7</p>
+        <p xml:lang="ka">ცვლილებები 0.4.7-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.7</p>
+        <ul>
+          <li>Fix displaying of default device name in stream dropdown.</li>
+          <li xml:lang="ru">Исправлено отображение имени устройства по умолчанию в раскрывающемся списке потоков.</li>
+          <li xml:lang="nl">Opgelost: het standaardapparaat wordt voortaan goed getoond in het streammenu.</li>
+          <li xml:lang="nb">Fikset visning av standard enhetsnavn i nedtrekksboksen for programmer.</li>
+          <li>Increase responsiveness of peak meters.</li>
+          <li xml:lang="ru">Повышена скорость ответа измерителей пиков.</li>
+          <li xml:lang="nl">Verbeterd: responsiviteit van de piekmeters.</li>
+          <li xml:lang="nb">Øk responsiviteten for lydindikator.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.7" date="2024-11-03">
+      <description>
+        <p>Changelog since 0.4.6</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.6</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.6</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.6</p>
+        <p xml:lang="nb">Endringer siden 0.4.6</p>
+        <p xml:lang="ka">ცვლილებები 0.4.6-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.6</p>
+        <ul>
+          <li>Fix crash when selecting Pro Audio profile.</li>
+          <li xml:lang="ru">Исправлен сбой программы при выборе профиля Pro Audio.</li>
+          <li xml:lang="nl">Opgelost: crash na het kiezen van het Pro Audio-profiel.</li>
+          <li xml:lang="nb">Fiks krasj når man velger Pro Audio profilen.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.6" date="2024-10-31">
+      <description>
+        <p>Changelog since 0.4.5</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.5</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.5</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.5</p>
+        <p xml:lang="nb">Endringer siden 0.4.5</p>
+        <p xml:lang="ka">ცვლილებები 0.4.5-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.5</p>
+        <ul>
+          <li>Added polish, georgian, russian and french translation.</li>
+          <li xml:lang="ru">Добавлены переводы на польский, грузинский, русский и французский языки.</li>
+          <li xml:lang="nl">Nieuw: Poolse, Georgische, Russische en Franse vertaling.</li>
+          <li xml:lang="nb">La til polsk, georgisk, russisk og fransk oversettelse.</li>
+          <li>Fix not all ports being visible in device port dropdown.</li>
+          <li xml:lang="ru">Исправлено отображение не всех портов в раскрывающем списке портов устройства.</li>
+          <li xml:lang="nl">Opgelost: niet alle poorten werden getoond in het apparaatpoortmenu.</li>
+          <li xml:lang="nb">Fikset så alle porter er synlige i nedtrekksboksen for enheter.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.5" date="2024-07-01">
+      <description>
+        <p>Changelog since 0.4.4</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.4</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.4</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.4</p>
+        <p xml:lang="nb">Endringer siden 0.4.4</p>
+        <p xml:lang="ka">ცვლილებები 0.4.4-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.4</p>
+        <ul>
+          <li>Updated dutch translation.</li>
+          <li xml:lang="ru">Обновлён перевод на голландский язык.</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenie na holenderski.</li>
+          <li xml:lang="nl">Bijgewerkt: Nederlandse vertaling.</li>
+          <li xml:lang="nb">Oppdatert nederlandsk oversettelse.</li>
+          <li xml:lang="ka">განახლდა ჰოლანდიური თარგმანი.</li>
+          <li xml:lang="fr">Mise a jour de la traduction Hollandaise.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.4" date="2024-07-01">
+      <description>
+        <p>Changelog since 0.4.3</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.3</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.3</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.3</p>
+        <p xml:lang="nb">Endringer siden 0.4.3</p>
+        <p xml:lang="ka">ცვლილებები 0.4.3-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.3</p>
+        <ul>
+          <li>Added dutch translation.</li>
+          <li xml:lang="ru">Добавлен перевод на голландский язык.</li>
+          <li xml:lang="pl">Dodano tłumaczenie na holenderski.</li>
+          <li xml:lang="nl">Nieuw: Nederlandse vertaling.</li>
+          <li xml:lang="nb">Lagt til nederlandsk oversettelse.</li>
+          <li xml:lang="ka">დაემატა ჰოლანდიური თარგმანი.</li>
+          <li xml:lang="fr">Ajout de la traduction Hollandaise.</li>
+          <li>Application icons are now hidden in Flatpak build to keep permissions reduced.</li>
+          <li xml:lang="ru">Во Flatpak-версии теперь скрыты значки приложений, чтобы ограничить количество разрешений.</li>
+          <li xml:lang="pl">Ikony aplikacji są teraz ukryte w wersji Flatpak aby zachować ograniczone uprawnienia.</li>
+          <li xml:lang="nl">Verbeterd: toepassingspictogrammen worden verborgen in de flatpakversie om het aantal rechten beperkt te houden.</li>
+          <li xml:lang="nb">Programikoner er nå skjulte i Flatpak-utgaven for å begrense rettigehter som programmet krever.</li>
+          <li xml:lang="ka">აპლიკაციის ხატულები ახლა დამალულია Flatpak-ის ვერსიაში, რომ ნაკლები წვდომა მოვითხოვოთ.</li>
+          <li xml:lang="fr">Les icones des applications sont desormais cachees dans la version Flatpak afin de reduire les permissions.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.3" date="2024-06-15">
+      <description>
+        <p>Changelog since 0.4.2</p>
+        <p xml:lang="ru">Журнал изменений с 0.4.2</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.4.2</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.4.2</p>
+        <p xml:lang="nb">Endringer siden 0.4.2</p>
+        <p xml:lang="ka">ცვლილებები 0.4.2-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.4.2</p>
+        <ul>
+          <li>Added new icons for input and output devices.</li>
+          <li xml:lang="ru">Добавлены новые значки для устройств ввода и вывода.</li>
+          <li xml:lang="pl">Dodano nowe ikony dla urządzeń wejścia/wyjścia.</li>
+          <li xml:lang="nl">Nieuw: pictogrammen voor in- en uitvoerapparaten.</li>
+          <li xml:lang="nb">Lagt til nye ikoner for inngangs- og utgangsenheter</li>
+          <li xml:lang="ka">დაემატა ახალი ხატულები შეყვანის და გამოტანის მოწყობილობებისთვის.</li>
+          <li xml:lang="fr">Ajout de nouvelles icones pour les peripheriques d'entree et de sortie.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.2" date="2024-06-13">
+      <description>
+        <p>Changelog since 0.3.1</p>
+        <p xml:lang="ru">Журнал изменений с 0.3.1</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.3.1</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.3.1</p>
+        <p xml:lang="nb">Endringer siden 0.3.1</p>
+        <p xml:lang="ka">ცვლილებები 0.3.1-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.3.1</p>
+        <ul>
+          <li>Added support for over-amplification. Enable via hamburger menu.</li>
+          <li xml:lang="ru">Добавлена ​​поддержка уровня звука выше 100%. Включение по кнопке гамбургер-меню.</li>
+          <li xml:lang="pl">Dodano wsparcie dla nadmiernego wzmocnienia. Włącz przez hamburger menu.</li>
+          <li xml:lang="nl">Nieuw: ondersteuning voor geluidsversterking - schakel in via het hamburgermenu.</li>
+          <li xml:lang="nb">Lagt til støtte over lydnivå &gt; 100%. Aktiver via programmenyen.</li>
+          <li xml:lang="ka">დაემატა ხმის პროგრამულად აწევის საშუალება. ჩართეთ ჰამბურგერის მენიუდან.</li>
+          <li xml:lang="fr">Ajout de la prise en charge de la suramplification. Activation via le menu hamburger.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2023-12-21">
+      <description>
+        <p>Changelog since 0.2.0</p>
+        <p xml:lang="ru">Журнал изменений с 0.2.0</p>
+        <p xml:lang="pl">Dziennik zmian od wersji 0.2.0</p>
+        <p xml:lang="nl">Wijzigingslog sinds 0.2.0</p>
+        <p xml:lang="nb">Endringer siden 0.2.0</p>
+        <p xml:lang="ka">ცვლილებები 0.2.0-ის შემდეგ</p>
+        <p xml:lang="fr">Evolution depuis la version 0.2.0</p>
+        <ul>
+          <li>Added card tab for selecing sound card profile</li>
+          <li xml:lang="ru">Добавлена вкладка карт для выбора профиля звуковой карты.</li>
+          <li xml:lang="pl">Dodano zakładkę kart do wyboru profilu karty dźwiękowej</li>
+          <li xml:lang="nl">Nieuw: tabblad voor het kiezen van een geluidskaartprofiel</li>
+          <li xml:lang="nb">Lagt til flik for lydkort der du kan velge profil.</li>
+          <li xml:lang="ka">დაემატა ბარათის ჩანართი ხმის ბარათის პროფილის ასარჩევად</li>
+          <li xml:lang="fr">Ajout d'un onglet carte pour selectionner le profil de la carte son</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2023-08-11"/>
+    <release version="0.1.0" date="2023-08-01"/>
+  </releases>
+  <kudos>
+    <!--
+       GNOME Software kudos:
+       https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/kudos.md
+     -->
+    <kudo>ModernToolkit</kudo>
+    <kudo>HiDpiIcon</kudo>
+  </kudos>
+  <developer_name>Nicolai Syvertsen</developer_name>
+  <developer_name xml:lang="ru">Nicolai Syvertsen</developer_name>
+  <developer_name xml:lang="pl">Nicolai Syvertsen</developer_name>
+  <developer_name xml:lang="nl">Nicolai Syvertsen</developer_name>
+  <developer_name xml:lang="nb">Nicolai Syvertsen</developer_name>
+  <developer_name xml:lang="ka">ნიკოლაი სივერსენი</developer_name>
+  <update_contact>saivert@saivert.com</update_contact>
+  <translation type="gettext">pwvucontrol</translation>
+  <launchable type="desktop-id">com.saivert.pwvucontrol.desktop</launchable>
+</component>

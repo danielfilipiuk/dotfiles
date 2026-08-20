@@ -72,8 +72,6 @@ hl.window_rule({
 	 name = "yad dialog",
 	 match = {class = "yad"},
 	 float = true,
-	 center = true,
-	 persistent_size = true,
 })
 
 hl.window_rule({

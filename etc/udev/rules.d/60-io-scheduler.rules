@@ -1,0 +1,3 @@
+ACTION=="add|change", KERNEL=="nvme0n1", ATTR{queue/scheduler}="bfq"
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/scheduler}="bfq"
+

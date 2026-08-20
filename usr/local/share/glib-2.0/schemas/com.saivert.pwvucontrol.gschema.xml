@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="pwvucontrol">
+	<schema path="/com/saivert/pwvucontrol/" id="com.saivert.pwvucontrol" gettext-domain="pwvucontrol">
+        <key name="window-width" type="i">
+            <default>820</default>
+            <summary>Default window width</summary>
+            <description>Default window width</description>
+        </key>
+        <key name="window-height" type="i">
+            <default>640</default>
+            <summary>Default window height</summary>
+            <description>Default window height</description>
+        </key>
+        <key name="is-maximized" type="b">
+            <default>false</default>
+            <summary>Default window maximized behaviour</summary>
+            <description></description>
+        </key>
+        <key name="enable-overamplification" type="b">
+            <default>false</default>
+            <summary>Enable over-amplification</summary>
+            <description></description>
+        </key>
+        <key name="use-peakmeter-led" type="b">
+            <default>false</default>
+            <summary>Use led style peak meter</summary>
+            <description></description>
+        </key>
+        <key name="beep-on-volume-changes" type="b">
+            <default>false</default>
+            <summary>Play system beep on volume change</summary>
+            <description>Lets you preview the sound level even if you don't play any audio.</description>
+        </key>
+        <key name="last-tab-name" type="s">
+            <default>"playback"</default>
+            <summary>The last tab that was open</summary>
+            <description>Stores the last tab that was open.</description>
+        </key>
+	</schema>
+</schemalist>

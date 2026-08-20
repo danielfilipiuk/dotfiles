@@ -2,15 +2,23 @@
 <interface>
   <object class="GtkMenu" id="menu">
 		<child>
-			<object class="GtkMenuItem" id="au">
-				<property name="label">  Audio-Detective™</property>
+			<object class="GtkMenuItem" id="pwvucontrol">
+				<property name="label">  PWvuControl</property>
 			</object>
     		</child> 
-		<child>
+    		<child>
 			<object class="GtkMenuItem" id="qpwgraph">
 				<property name="label">  QPWGraph</property>
 			</object>
     		</child>
+    		<child>
+      		<object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    		</child>
+		<child>
+			<object class="GtkMenuItem" id="au">
+				<property name="label">  Audio-Detective™</property>
+			</object>
+    		</child> 
     		<child>
 			<object class="GtkMenuItem" id="pw-top">
 				<property name="label">  PW-Top</property>

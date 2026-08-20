@@ -209,6 +209,7 @@ hl.window_rule({
 	 float = true,
 	dim_around = false,
 	opacity = 1,
+	center = true,
 	xray = true,
 	persistent_size = true,
 })
@@ -449,7 +450,7 @@ hl.window_rule({
 
 
 hl.window_rule({
-	 name = "FocusTimer",
+	 name = "Euphonica",
 	 match = {class = "io.github.htkhiem.Euphonica"},
 	 float = true,
 	 move = "50% 50%",
@@ -458,7 +459,7 @@ hl.window_rule({
 
 
 hl.window_rule({
-	 name = "Euphonica",
+	 name = "FocusTimer",
 	 match = {class = "io.github.focustimerhq.FocusTimer"},
 	 float = true,
 	 move = "50% 50%",
@@ -479,6 +480,13 @@ hl.window_rule({
 	 name = "hyprprop-yad",
 	 match = {class = "hyprprop+yad"},
 	 float = true,
-	 size = "416 706",
-	 move = "50% 50%",   
+--	 move = "50% 50%",   
 })
+
+hl.window_rule({
+	 name = "hyprprop-zenity",
+	 match = {class = "hyprprop+zenity"},
+	 float = true,
+--	 move = "50% 50%",   
+})
+

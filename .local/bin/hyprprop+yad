@@ -1,2 +1,46 @@
-#!/bin/sh
-exec hyprprop | yad --text-info --margins 15 --class=hyprprop+yad
+#!/bin/bash
+
+# --- Check dependencies ---
+if ! command -v yad &>/dev/null; then
+    #echo "YAD is not installed. Try: sudo apt install yad"
+    notify-send -i Warning "Yad is NOT installed." -u critical -i emblem-unavailable
+    exit 1
+fi
+
+if ! command -v hyprprop &>/dev/null; then
+    #yad --error --show-uri --text="hyprprop is not installed. check https://github.com/vilari-mickopf/hyprprop"
+    [ "$(notify-send --action="default=Open" "hyprprop is NOT installed. Click here to get it:" "https://github.com/vilari-mickopf/hyprprop")" = "default" ] && sensible-browser https://github.com/vilari-mickopf/hyprprop
+    exit 1
+fi
+
+# --- Main loop ---
+while true; do
+
+    hyprprop | yad --text-info \
+        --title="Hyprland Window Properties" \
+        --margins=15 \
+        --class="hyprprop+yad" \
+        --window-icon="display" \
+        --width=520 \
+        --height=850 \
+        --posx=50% \
+        --posy=50% \
+        --buttons-layout="center" \
+        --button="❌ Exit:0" \
+        --button="🔲 Select Window:1" \
+        --on-top \
+        --image="$HOME/pictures/hyprland/hypr.png" \
+        --image-on-top \
+        --center
+
+    case $? in
+        1)
+            # Capture → loop again
+            ;;
+        *)
+            # Close / ESC
+            exit 0
+            ;;
+    esac
+
+done

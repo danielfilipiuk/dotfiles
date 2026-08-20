@@ -1,2 +1,35 @@
-#!/bin/sh
-exec hyprprop | zenity --text-info --auto-scroll
+#!/bin/bash
+
+# --- Check dependencies ---
+if ! command -v zenity &>/dev/null; then
+    #echo "Zenity is not installed. Try: sudo apt install yad"
+    notify-send -i Warning "Zenity is NOT installed." -u critical -i emblem-unavailable
+    exit 1
+fi
+
+if ! command -v hyprprop &>/dev/null; then
+    #yad --error --show-uri --text="hyprprop is not installed. check https://github.com/vilari-mickopf/hyprprop"
+    [ "$(notify-send --action="default=Open" "hyprprop is NOT installed. Click here to get it:" "https://github.com/vilari-mickopf/hyprprop")" = "default" ] && sensible-browser https://github.com/vilari-mickopf/hyprprop
+    exit 1
+fi
+
+# --- Main loop ---
+while true; do
+
+    hyprprop | zenity --text-info \
+        --title="Hyprland Window Properties" \
+        --width=520 \
+        --height=850 \
+        --auto-scroll 
+
+    case $? in
+        0)
+            # Capture → loop again
+            ;;
+        1)
+            # Close / ESC
+            exit 0
+            ;;
+    esac
+
+done

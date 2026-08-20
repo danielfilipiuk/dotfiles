@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name[ka]=pwvucontrol
+Name[nb]=pwvucontrol
+Name[nl]=pwvucontrol
+Name[pl]=pwvucontrol
+Name[ru]=pwvucontrol
+Name=pwvucontrol
+GenericName[fr]=Controle des volumes PipeWire
+GenericName[ka]=Pipewire-ის ხმის კონტროლი
+GenericName[nb]=Pipewire volumkontroll
+GenericName[nl]=Pipewire-volumebediening
+GenericName[pl]=Kontrola głośności Pipewire
+GenericName[ru]=Управление громкостью pipewire
+GenericName=Pipewire Volume Control
+Exec=pwvucontrol
+Icon=com.saivert.pwvucontrol
+Terminal=false
+Type=Application
+Categories=Audio;System
+Keywords[nb]=PipeWire;Volume;Audio;Mixer;Kontroll;Lyd
+Keywords[ru]=PipeWire;Громкость;Аудио;Микшер;Управление;Звук
+Keywords=PipeWire;Volume;Audio;Mixer;Control;Sound
+StartupNotify=true

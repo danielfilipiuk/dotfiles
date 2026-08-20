@@ -4,7 +4,7 @@ hl.window_rule({
 	 opacity = .85,
 	 float = true,
 	 size = "500 500",
-	 move = "775 30",
+	 move = "750 50",
 })
 
 hl.window_rule({
@@ -23,4 +23,13 @@ hl.window_rule({
 	 float = true,
  	 move = "531 25",
  	 size = "748 503",
+})
+
+hl.window_rule({
+	 name = "pwvucontrol",
+	 match = {class = "com.saivert.pwvucontrol"},
+	 float = true,
+	 opacity = .85,
+	 size = "680 500",
+--	 move = "50% 50%",   
 })
