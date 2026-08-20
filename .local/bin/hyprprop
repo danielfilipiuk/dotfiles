@@ -8,6 +8,8 @@
 ## See `man 1 hyprprop` for further details
 
 ## Author: Douile (https://github.com/Douile)
+#  taken from https://github.com/vilari-mickopf/hyprprop
+
 
 ## The window selection part (and others) of this tool is based on grimblast
 ## https://github.com/hyprwm/contrib/blob/main/grimblast

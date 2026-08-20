@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# inspiration taken from the cool dotfiles in  https://github.com/OpalAayan/opaldots/tree/main
+
 # --- Check dependencies ---
 if ! command -v zenity &>/dev/null; then
     #echo "Zenity is not installed. Try: sudo apt install yad"
