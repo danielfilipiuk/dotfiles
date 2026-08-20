@@ -43,13 +43,13 @@
       		<object class="GtkSeparatorMenuItem" id="delimiter2"/>
     		</child>
     		<child>
-			<object class="GtkMenuItem" id="rmpc">
-				<property name="label">  rMpc</property>
+			<object class="GtkMenuItem" id="ncmpcpp">
+				<property name="label">  ncMPCpp</property>
 			</object>
-		</child>
-		<child>
-			<object class="GtkMenuItem" id="xfmpc">
-				<property name="label">  XfMPC</property>
+		</child>  
+    		<child>
+			<object class="GtkMenuItem" id="rmpc">
+				<property name="label">  Rmpc</property>
 			</object>
 		</child>
 		<child>
@@ -58,9 +58,16 @@
 			</object>
 		</child>
 		<child>
-			<object class="GtkMenuItem" id="ncmpcpp">
-				<property name="label">  NcMPCpp</property>
+			<object class="GtkMenuItem" id="xfmpc">
+				<property name="label">  XFmpc</property>
 			</object>
-		</child>    		          
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="ymuse">
+				<property name="label">  Ymuse</property>
+			</object>
+		</child>
+		
+		  		          
   </object>
 </interface>

@@ -12,11 +12,6 @@
 			</object>
     		</child>
 		<child>
-			<object class="GtkMenuItem" id="sens">
-				<property name="label">󰈐  Sens</property>
-			</object>
-		</child>
-		<child>
 			<object class="GtkMenuItem" id="cpux">
 				<property name="label">  Cpu-X</property>
 			</object>

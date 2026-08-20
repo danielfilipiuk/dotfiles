@@ -2,6 +2,11 @@
 <interface>
   <object class="GtkMenu" id="menu">
 		<child>
+			<object class="GtkMenuItem" id="pavucontrol">
+				<property name="label">  PavuControl</property>
+			</object>
+    		</child>
+		<child>
 			<object class="GtkMenuItem" id="pwvucontrol">
 				<property name="label">  PWvuControl</property>
 			</object>

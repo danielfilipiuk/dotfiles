@@ -12,7 +12,7 @@ hl.window_rule({
 	 match = {class = "wpa_gui"},
 	 float = true,
  	 opacity = .85,
-	 move = "927 25",	 
+	 move = "900 50",	 
 })
 
 
@@ -21,7 +21,7 @@ hl.window_rule({
 	 match = {class = "org.rncbc.qpwgraph"},
 	 opacity = 0.85,
 	 float = true,
- 	 move = "531 25",
+ 	 move = "500 50",
  	 size = "748 503",
 })
 
@@ -33,3 +33,92 @@ hl.window_rule({
 	 size = "680 500",
 --	 move = "50% 50%",   
 })
+
+hl.window_rule({
+	 name = "btop-float",
+	 match = {class = "btop-float"},
+	 float = true,
+	 size = "990 700",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "htop-float",
+	 match = {class = "htop-float"},
+	 float = true,
+	 size = "990 700",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "nvtop-float",
+	 match = {class = "nvtop-float"},
+	 float = true,
+	 size = "990 700",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "sens-float",
+	 match = {class = "sens-float"},
+	 float = true,
+	 size = "668 550",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "amdgputoptui-float",
+	 match = {class = "amdgputoptui-float"},
+	 float = true,
+	 size = "590 940",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "radeontop-float",
+	 match = {class = "radeontop-float"},
+	 float = true,
+	 size = "560 470",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "ethstatus-float",
+	 match = {class = "ethstatus-float"},
+	 float = true,
+	 size = "560 470",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "audio-detective™-float",
+	 match = {class = "audio-detective™-float"},
+	 float = true,
+	 size = "451 700",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "pwtop-float",
+	 match = {class = "pwtop-float"},
+	 float = true,
+	 size = "812 300",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "rmpc-float",
+	 match = {class = "rmpc-float"},
+	 float = true,
+	 size = "1155 890",
+	 move = "50% 50%",   
+})
+
+hl.window_rule({
+	 name = "ncmpcpp-float",
+	 match = {class = "ncmpcpp-float"},
+	 float = true,
+	 size = "960 820",
+	 move = "50% 50%",   
+})
+

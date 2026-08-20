@@ -216,11 +216,12 @@
 		"single": "mpc single",
 		"singleonce": "mpc single once",
 		"consume": "mpc consume",
-		"update": "mpc update",
-		"rmpc": "app2unit -T rmpc",
-		"xfmpc": "app2unit -- xfmpc",
+		"update": "mpc update && notify-send -i musicbrainz 'MPC database Updating...' && pw-play /usr/share/sounds/freedesktop/stereo/message-new-instant.oga --volume 0.25",
+		"ncmpcpp": "app2unit -- kitty --class ncmpcpp-float -e ncmpcpp",
+		"rmpc": "app2unit -- kitty --class rmpc-float -e rmpc",
 		"euphonica": "app2unit -- euphonica",
-		"ncmpcpp": "app2unit -T ncmpcpp",
+		"xfmpc": "app2unit -- xfmpc",
+		"ymuse": "app2unit -- ymuse",		
 			},
 },
 
@@ -294,16 +295,17 @@
        //     "car": "",
             "default": [" ", " ", " "]
         },
-        "on-click": "app2unit -S out -- pavucontrol --tab=1",
+        "on-click": "pamixer --toggle-mute",
         "on-click-backward": "pamixer --toggle-mute",
                 
         "menu": "on-click-right",
 	"menu-file": "~/.config/waybar/pulseaudio-menu.xml",
 	"menu-actions": {
+		"pavucontrol": "app2unit -S out -- pavucontrol --tab=1",
 		"pwvucontrol": "app2unit -- pwvucontrol",
 		"qpwgraph": "app2unit -- qpwgraph",
-		"au": "app2unit -T audio-detective™.sh",
-		"pw-top": "app2unit -T pw-top",
+		"au": "app2unit -- kitty --class audio-detective™-float -e audio-detective™.sh",
+		"pw-top": "app2unit -- kitty --class pwtop-float pw-top",
 			},
     },
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -318,7 +320,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////
-    "network": {
+"network": {
          "interface": "wlp38s0", // (Optional) To force the use of this interface
         "interval": 3600,
         "format-wifi": "",
@@ -327,12 +329,13 @@
         //"format-linked": "{ifname} (No IP)   ",
         "format-disconnected": "..󱍢..",
         //"format-alt": "{ifname}: "
-        "on-click": "pidof wpa_gui || app2unit -S out -- wpa_gui -i wlp38s0 -m 5 -q",
+       //"on-click": "pidof wpa_gui || app2unit -S out -- wpa_gui -i wlp38s0 -m 5 -q",
 	
 	"menu": "on-click-right",
 	"menu-file": "~/.config/waybar/network-menu.xml",
 	"menu-actions": {
-		"eth": "app2unit -T -- ethstatus -i wlp38s0 -v vga",
+		"wpagui": "pidof wpa_gui || app2unit -S out -- wpa_gui -i wlp38s0 -m 5 -q",
+		"eth": "app2unit -- kitty --class ethstatus-float -e ethstatus -i wlp38s0 -v vga",
 		"modem": "app2unit -- brave-browser --new-window 192.168.0.1",
 		},
     },
@@ -417,7 +420,15 @@
 	"format": " {usage}<span size=\"smaller\">%</span>  {avg_frequency}<span size=\"smaller\">G</span>",
 	"states": {
 		"50": 50,
-		"90": 90,} 
+		"90": 90,}, 
+	"menu": "on-click-right",
+	"menu-file": "~/.config/waybar/cpu-menu.xml",
+	"menu-actions": {
+		"btop": "app2unit -- kitty --class btop-float -e btop",
+		"htop": "app2unit -- kitty --class htop-float -e htop",
+		"cpux": "app2unit -- cpu-x",
+		"corectrl": "app2unit -- corectrl",
+		},
 },
 
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -441,20 +452,11 @@
 		"format": " {temperatureC}°<span size=\"smaller\">C</span>",
 	"format-warning": " {temperatureC}°<span size=\"smaller\">C</span>",
 	"format-critical": " {temperatureC}°<span size=\"smaller\">C</span>",
-	"on-click": "app2unit -T -- btop",
+	//"on-click": "app2unit -T -- btop",
 	"menu": "on-click-right",
-	"menu-file": "~/.config/waybar/cpu-menu.xml",
+	"menu-file": "~/.config/waybar/temperature-menu.xml",
 	"menu-actions": {
-		"btop": "app2unit -T -- btop",
-		"htop": "app2unit -T -- htop",
-		"sens": "app2unit -T -- sens",
-		"gputopcli": "app2unit -T -- amdgpu_top",
-		"gputopgui": "app2unit -- amdgpu_top --gui",
-		"cpux": "app2unit -- cpu-x",
-		"corectrl": "app2unit -- corectrl",
-		"lact": "app2unit -- lact gui",
-		"radeontop": "app2unit -T -- radeontop",
-		"nvtop": "app2unit -T -- nvtop",
+		"sens": "app2unit -- kitty --class sens-float -e sens",
 		},
 },
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -467,15 +469,15 @@
   "tooltip": true,
   "interval": "1000",
   "cursor": "crosshair",
-  "on-click": "app2unit -T -- nvtop",
+  //"on-click": "app2unit -T -- nvtop",
   	"menu": "on-click-right",
 	"menu-file": "/home/daniel/.config/waybar/gpu-menu.xml",
 	"menu-actions": {
-		"gputopcli": "app2unit -T -- amdgpu_top",
+		"gputopcli": "app2unit -- kitty --class amdgputoptui-float -e amdgpu_top",
 		"gputopgui": "app2unit -- amdgpu_top --gui",
 		"lact": "app2unit -- lact gui",
-		"radeontop": "app2unit -T -- radeontop",
-		"nvtop": "app2unit -T -- nvtop",
+		"radeontop": "app2unit -- kitty --class radeontop-float -e radeontop",
+		"nvtop": "app2unit -- kitty --class nvtop-float -e nvtop",
 		},
 },
 

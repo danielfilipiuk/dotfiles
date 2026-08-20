@@ -21,12 +21,14 @@ local function zoom(offset)
     hl.config({ cursor = { zoom_factor = current } })
 end
 
-hl.bind("SUPER + Z", zoom , {description = "activate zoom"}) 
-hl.bind("SUPER + KP_ADD", function()
-    zoom(1)
-end)
-hl.bind("SUPER + KP_Subtract", function()
-    zoom(-1)
-end)---
+hl.bind("SUPER + Z", zoom,
+{description = "activate zoom"}) 
+	
+hl.bind("SUPER + KP_ADD", function()    zoom(1) end ,
+{description = "zoom +1"}) 
+
+hl.bind("SUPER + KP_Subtract", function()    zoom(-1) end ,
+{description = "zoom -1"}) 
+
 --------------------------------------------------------------
 

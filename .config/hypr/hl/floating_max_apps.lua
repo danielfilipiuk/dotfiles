@@ -117,7 +117,7 @@ hl.window_rule({
 	 name = "Font Manager",
 	 match = {class = "font-manager"},
 	 float = true,
-	persistent_size = true,
+	size = "1200 980",
 })
 
 hl.window_rule({

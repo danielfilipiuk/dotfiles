@@ -490,3 +490,19 @@ hl.window_rule({
 --	 move = "50% 50%",   
 })
 
+
+hl.window_rule({
+	 name = "xfmpc",
+	 match = {class = "xfmpc"},
+	 float = true,
+	 move = "50% 50%",
+	 size = "755 700",	 
+})
+
+hl.window_rule({
+	 name = "ymuse",
+	 match = {class = "ymuse"},
+	 float = true,
+	 move = "50% 50%",
+	 size = "1060 710",	 
+})
