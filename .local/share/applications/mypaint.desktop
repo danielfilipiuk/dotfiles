@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=MyPaint
+GenericName=Painting program
+Comment=MyPaint is a fast, free, and easy graphics app for digital painters.
+Icon=mypaint
+Exec=/opt/MyPaint-v2.0.1.AppImage
+Terminal=false
+Type=Application
+Categories=Graphics;Paint;
+

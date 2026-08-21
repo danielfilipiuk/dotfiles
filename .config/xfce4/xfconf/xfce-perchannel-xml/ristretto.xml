@@ -5,6 +5,7 @@
     <property name="navigationbar" type="empty">
       <property name="position" type="string" value="left"/>
       <property name="sort-type" type="uint" value="0"/>
+      <property name="sort-order" type="uint" value="1"/>
     </property>
     <property name="height" type="uint" value="761"/>
     <property name="width" type="uint" value="694"/>

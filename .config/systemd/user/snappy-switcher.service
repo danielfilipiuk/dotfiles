@@ -5,6 +5,7 @@ PartOf=graphical-session.target
 
 [Service]
 ExecStart=/home/daniel/.local/bin/snappy-switcher --daemon
+ExecStop=/home/daniel/.local/bin/snappy-switcher quit
 Restart=on-failure
 RestartSec=3s
 #LogLevelMax=3
@@ -15,6 +16,7 @@ LogLevelMax=err
 StandardOutput=null
 StandardError=null
 
+ReadWritePaths=/run/user
 
 # inherit env from graphical session
 #Environment=WAYLAND_DISPLAY=%t/wayland-0

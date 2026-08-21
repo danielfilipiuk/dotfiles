@@ -1,4 +1,5 @@
 min_slic3r_version = 2.9.1
+1.1.15 Adjusted shrinkage compensation values to improve dimensional accuracy for Prusament Woodfill, Prusament PC Space Grade, Buddy3D ASA, Filament PM PA-GFJet, FiberThree PA ESD, FiberThree PA-CF Pro, FiberThree PA-GF Pro, Verbatim PP, Fiberlogy PCTG, Fiberlogy PCTG-CF, Fiberlogy PCTG-GF, Fiberlogy ABS+GF, Fiberlogy HIPS, Fiberlogy PC-ABS, Fiberlogy PETG+PTFE and igus iglidur i180.
 1.1.14 Updated spool weight for Prusament filaments.
 1.1.13 Added filament profiles for Fiberlogy ABS+GF, FiberFlex CF, HIPS, PC-ABS, PETG-PTFE (0.4mm and 0.6mm nozzle).
 1.1.12 Added filament profiles for Tectonic-3D AURA PLA, Tectonic-3D AURA PETG, Tectonic-3D AURA ASA+, Fiberlogy PCTG, Fiberlogy PCTG-CF, Fiberlogy PCTG-GF, 3DXTECH PPS (0.4mm and 0.6mm nozzle).  

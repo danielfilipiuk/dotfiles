@@ -23,3 +23,4 @@
  hl.permission("/usr/(bin|local/bin)/hyprlock", "screencopy", "allow")
  hl.permission("/usr/(bin|local/bin)/hyprpicker", "screencopy", "allow")
  hl.permission("/usr/(bin|local/bin)/eyedropper", "screencopy", "allow")
+  hl.permission("/usr/(bin|local/bin)/hypr-alttab", "screencopy", "allow")

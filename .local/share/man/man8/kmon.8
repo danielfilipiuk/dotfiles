@@ -1,0 +1,53 @@
+.ie \n(.g .ds Aq \(aq
+.el .ds Aq '
+.TH kmon 1  "kmon 1.7.1" 
+.SH NAME
+kmon \- kmon 1.7.1
+Orhun Parmaksız <orhunparmaksiz@gmail.com>
+Linux kernel manager and activity monitor
+
+Press \*(Aq?\*(Aq while running the terminal UI to see key bindings.
+.SH SYNOPSIS
+\fBkmon\fR [\fB\-a\fR|\fB\-\-accent\-color\fR] [\fB\-c\fR|\fB\-\-color\fR] [\fB\-t\fR|\fB\-\-tickrate\fR] [\fB\-r\fR|\fB\-\-reverse\fR] [\fB\-u\fR|\fB\-\-unicode\fR] [\fB\-E\fR|\fB\-\-regex\fR] [\fB\-h\fR|\fB\-\-help\fR] [\fB\-V\fR|\fB\-\-version\fR] [\fIsubcommands\fR]
+.SH DESCRIPTION
+kmon 1.7.1
+Orhun Parmaksız <orhunparmaksiz@gmail.com>
+Linux kernel manager and activity monitor
+.PP
+Press \*(Aq?\*(Aq while running the terminal UI to see key bindings.
+.SH OPTIONS
+.TP
+\fB\-a\fR, \fB\-\-accent\-color\fR=\fICOLOR\fR [default: white]
+Set the accent color using hex or color name
+.TP
+\fB\-c\fR, \fB\-\-color\fR=\fICOLOR\fR [default: darkgray]
+Set the main color using hex or color name
+.TP
+\fB\-t\fR, \fB\-\-tickrate\fR=\fIMS\fR [default: 250]
+Set the refresh rate of the terminal
+.TP
+\fB\-r\fR, \fB\-\-reverse\fR
+Reverse the kernel module list
+.TP
+\fB\-u\fR, \fB\-\-unicode\fR
+Show Unicode symbols for the block titles
+.TP
+\fB\-E\fR, \fB\-\-regex\fR
+Interpret the module search query as a regular expression
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Print help
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Print version
+.SH SUBCOMMANDS
+.TP
+kmon\-sort(1)
+Sort kernel modules
+.TP
+kmon\-help(1)
+Print this message or the help of the given subcommand(s)
+.SH VERSION
+v1.7.1
+.SH AUTHORS
+Orhun Parmaksız <orhunparmaksiz@gmail.com>

@@ -16,15 +16,18 @@
 
 ---------------------------------------------------------------
 ----VOLUME UP -----
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("volumechange --inc"),
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("volumechange --inc && \
+						pw-play /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga --volume 0.5"),
 { locked = true, repeating = true },
 {description = "volume up"})
 ----VOLUME DOWN -----
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("volumechange --dec"), 
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("volumechange --dec && \
+						pw-play /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga --volume 0.5"), 
 { locked = true, repeating = true },
 {description = "volume down"})
 ----VOLUME MUTE -----
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("volumechange --toggle"),
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("volumechange --toggle && \
+						pw-play /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga --volume 0.5"),
 { locked = true},
 {description = "volume mute"})
 

@@ -9,8 +9,8 @@ hl.bind(mainMod .. " + CTRL + SHIFT + R", function()
 
     -- reloads and sends a notification
     hl.dispatch(hl.dsp.exec_cmd("hyprctl reload && \
-    							notify-send -i messagebox_info 'Hyprland Reloaded' && \
-    							pw-play /usr/share/sounds/freedesktop/stereo/service-login.oga --volume 0.25"),
+   				notify-send -i messagebox_info 'Hyprland Reloaded' && \
+   				pw-play /usr/share/sounds/freedesktop/stereo/service-login.oga --volume 0.25"),
     { description = "Reload Hyprland configs" })
     
     -- Trigger a native Hyprland on-screen notification popup:

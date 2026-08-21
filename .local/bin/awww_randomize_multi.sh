@@ -26,7 +26,7 @@ while true; do
 			# Get next random image for this display, or re-shuffle images
 			# and pick again if no more unused images are remaining
 			[ -z "$img" ] && if read -r img; then true; else break 2; fi
-			uwsm-app -Sout -- awww img --resize "$RESIZE_TYPE" --outputs "$d" --crop-gravity=center --transition-type=random --transition-duration=5 --transition-fps=60 "$img"
+			uwsm-app -Sout -- awww img --resize "$RESIZE_TYPE" --outputs "$d" --crop-gravity=center --transition-type=random --transition-duration=3 --transition-fps=60 "$img"
 			unset -v img # Each image should only be used once per loop
 		done
 		sleep "${2:-$DEFAULT_INTERVAL}"
