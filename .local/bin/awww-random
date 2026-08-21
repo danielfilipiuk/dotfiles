@@ -10,7 +10,12 @@ if [ ! -d "$WALLPAPER_DIR" ]; then
 fi
 
 # Configuration
-RESIZE_TYPE="crop"
+#Possible values:
+#	no:       Do not resize the image
+#	crop:     Resize the image to fill the whole screen, cropping out parts that don't fit
+#	fit:      Resize the image to fit inside the screen, preserving the original aspect ratio
+#	stretch:  Resize the image to fit inside the screen, without preserving the original aspect ratio
+RESIZE_TYPE="fit"
 export AWWW_TRANSITION_FPS=60
 export AWWW_TRANSITION_STEP=20
 
@@ -29,8 +34,9 @@ for d in $DISPLAYS; do
             --outputs "$d" \
             --crop-gravity=center \
             --transition-type=random \
-            --transition-duration=15 \
+            --transition-duration=10 \
             --transition-fps=60 \
+            --fill-color 00000000 \
             "$IMG"
     fi
 done
