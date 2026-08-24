@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+if pgrep -x Vocalinux-0.15. >/dev/null; then
+    notify-send -e -a 'Vocalinux' 'Vocalinux already running' \
+        -i /home/daniel/icons/hicolor/scalable/apps/vocalinux.svg &&
+        pw-play /home/daniel/sounds/dialog-warning.oga --volume 0.25
+    exit 0
+fi
+
+/home/daniel/opt/Vocalinux-0.15.0.dev20260821+8dc99a3-x86_64.AppImage
+
+# Wait until Vocalinux actually disappears
+while pgrep -x Vocalinux-0.15. >/dev/null; do
+    sleep 1
+done
+
+killall ydotoold 2>/dev/null

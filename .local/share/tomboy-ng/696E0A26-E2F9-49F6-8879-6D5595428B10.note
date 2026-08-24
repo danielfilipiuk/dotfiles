@@ -4,7 +4,7 @@
   
 <text xml:space="preserve"><note-content version="0.1"><underline>New Note 2026-08-16 11:24:18.197</underline>
 opacity: 0.5;}
-window#waybar.empty {	background-color: transparent;
+window#waybar.empty { background-color: transparent;
 			Z}
 </note-content></text>
   <last-change-date>2026-08-16T11:29:33.3947413-03:00</last-change-date>

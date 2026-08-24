@@ -1,0 +1,211 @@
+06:39:13.644: Platform: Wayland
+06:39:13.644: CPU Name: AMD Ryzen 7 5700G with Radeon Graphics
+06:39:13.644: CPU Speed: 3711.774MHz
+06:39:13.644: Physical Cores: 8, Logical Cores: 16
+06:39:13.644: Physical Memory: 60172MB Total, 48629MB Free
+06:39:13.644: Kernel Version: Linux 7.2.0-polaris-v2
+06:39:13.644: Distribution: "Debian GNU/Linux" Unknown
+06:39:13.644: Desktop Environment: Hyprland (Hyprland)
+06:39:13.644: Session Type: wayland
+06:39:13.645: Current Date/Time: 2026-08-22, 06:39:13 AM
+06:39:13.645: Browser Hardware Acceleration: true
+06:39:13.645: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+06:39:13.645: Portable mode: false
+06:39:13.677: OBS 32.1.2+ds-1+b1 (linux)
+06:39:13.677: ---------------------------------
+06:39:13.685: ---------------------------------
+06:39:13.685: audio settings reset:
+06:39:13.685: 	samples per sec: 48000
+06:39:13.685: 	speakers:        2
+06:39:13.685: 	max buffering:   960 milliseconds
+06:39:13.685: 	buffering type:  dynamically increasing
+06:39:13.687: ---------------------------------
+06:39:13.687: Initializing OpenGL...
+06:39:13.687: Using EGL/Wayland
+06:39:13.719: Initialized EGL 1.5
+06:39:13.731: Loading up OpenGL on adapter AMD AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 7.2.0-polaris-v2)
+06:39:13.731: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.1.6-1, shading language 4.60
+06:39:13.815: ---------------------------------
+06:39:13.815: video settings reset:
+06:39:13.815: 	base resolution:   1024x768
+06:39:13.815: 	output resolution: 1024x768
+06:39:13.815: 	downscale filter:  Bicubic
+06:39:13.815: 	fps:               30/1
+06:39:13.815: 	format:            NV12
+06:39:13.815: 	YUV mode:          Rec. 709/Partial
+06:39:13.815: NV12 texture support enabled
+06:39:13.815: P010 texture support not available
+06:39:13.817: Audio monitoring device:
+06:39:13.817: 	name: Default
+06:39:13.817: 	id: default
+06:39:13.818: ---------------------------------
+06:39:13.856: v4l2loopback not installed, virtual camera not registered
+06:39:13.882: VAAPI: API version 1.24
+06:39:13.882: FFmpeg VAAPI H264 encoding supported
+06:39:13.885: FFmpeg VAAPI AV1 encoding not supported
+06:39:13.888: FFmpeg VAAPI HEVC encoding supported
+06:39:13.892: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+06:39:13.892: 
+06:39:13.892: NVENC not supported
+06:39:13.892: Failed to initialize module 'obs-nvenc.so'
+06:39:13.913: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.3 | RPC Version: 1)
+06:39:13.913: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+06:39:13.913: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+06:39:13.917: [obs-websocket] [obs_module_load] Module loaded.
+06:39:13.921: ---------------------------------
+06:39:13.921:   Loaded Modules:
+06:39:13.921:     text-freetype2.so
+06:39:13.921:     rtmp-services.so
+06:39:13.921:     obs-x264.so
+06:39:13.921:     obs-websocket.so
+06:39:13.921:     obs-vst.so
+06:39:13.921:     obs-transitions.so
+06:39:13.921:     obs-qsv11.so
+06:39:13.921:     obs-outputs.so
+06:39:13.921:     obs-filters.so
+06:39:13.921:     obs-ffmpeg.so
+06:39:13.921:     linux-v4l2.so
+06:39:13.921:     linux-pulseaudio.so
+06:39:13.921:     linux-capture.so
+06:39:13.921:     image-source.so
+06:39:13.921:     frontend-tools.so
+06:39:13.921: ---------------------------------
+06:39:13.921: ---------------------------------
+06:39:13.921: Available Encoders:
+06:39:13.921:   Video Encoders:
+06:39:13.921: 	- ffmpeg_svt_av1 (SVT-AV1)
+06:39:13.921: 	- ffmpeg_aom_av1 (AOM AV1)
+06:39:13.921: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+06:39:13.921: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+06:39:13.921: 	- obs_x264 (x264)
+06:39:13.921:   Audio Encoders:
+06:39:13.921: 	- ffmpeg_aac (FFmpeg AAC)
+06:39:13.921: 	- ffmpeg_opus (FFmpeg Opus)
+06:39:13.921: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+06:39:13.921: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+06:39:13.921: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+06:39:13.921: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+06:39:13.921: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+06:39:13.921: ==== Startup complete ===============================================
+06:39:13.923: Switched to Preview/Program mode
+06:39:13.923: ------------------------------------------------
+06:39:13.963: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+06:39:13.963: All scene data cleared
+06:39:13.963: ------------------------------------------------
+06:39:13.968: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+06:39:13.968: Deduplication logic is being applied to all monitored sources.
+06:39:13.968: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+06:39:13.968: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+06:39:13.968: pulse-input: Started recording from 'alsa_output.pci-0000_30_00.6.analog-stereo.monitor' (default)
+06:39:13.968: [Loaded global audio device]: 'Desktop Audio'
+06:39:13.969: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+06:39:13.969: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+06:39:13.969: pulse-input: Started recording from 'alsa_input.pci-0000_30_00.6.analog-stereo' (default)
+06:39:13.969: [Loaded global audio device]: 'Mic/Aux'
+06:39:13.969: v4l2-input: Start capture from /dev/video0
+06:39:14.170: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+06:39:14.170: Deduplication logic is being applied to all monitored sources.
+06:39:14.553: v4l2-input: Input: 0
+06:39:14.604: v4l2-input: Resolution: 640x480
+06:39:14.604: v4l2-input: Pixelformat: YUYV
+06:39:14.604: v4l2-input: Linesize: 1280 Bytes
+06:39:14.604: v4l2-input: Framerate: 30.00 fps
+06:39:14.605: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+06:39:14.606: Switched to scene 'Scene'
+06:39:14.606: Attempted to add Scene without specifying a canvas! Using default canvas instead.
+06:39:14.606: User switched Program to scene 'Scene'
+06:39:14.607: ------------------------------------------------
+06:39:14.607: Loaded scenes:
+06:39:14.607: - scene 'Scene':
+06:39:14.607:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+06:39:14.607: ------------------------------------------------
+06:39:14.709: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+06:39:14.709: 
+06:39:14.783: v4l2-input: /dev/video0: select timed out
+06:39:14.783: v4l2-input: /dev/video0: failed to log status
+06:39:14.950: v4l2-input: /dev/video0: select timed out
+06:39:14.950: v4l2-input: /dev/video0: failed to log status
+06:39:15.117: v4l2-input: /dev/video0: select timed out
+06:39:15.117: v4l2-input: /dev/video0: failed to log status
+06:39:15.284: v4l2-input: /dev/video0: select timed out
+06:39:15.284: v4l2-input: /dev/video0: failed to log status
+06:39:15.450: v4l2-input: /dev/video0: select timed out
+06:39:15.450: v4l2-input: /dev/video0: failed to log status
+06:39:15.617: v4l2-input: /dev/video0: select timed out
+06:39:15.617: v4l2-input: /dev/video0: failed to log status
+06:39:15.784: v4l2-input: /dev/video0: select timed out
+06:39:15.784: v4l2-input: /dev/video0: failed to log status
+06:39:15.951: v4l2-input: /dev/video0: select timed out
+06:39:15.951: v4l2-input: /dev/video0: failed to log status
+06:39:16.118: v4l2-input: /dev/video0: select timed out
+06:39:16.118: v4l2-input: /dev/video0: failed to log status
+06:39:16.285: v4l2-input: /dev/video0: select timed out
+06:39:16.285: v4l2-input: /dev/video0: failed to log status
+06:39:16.452: v4l2-input: /dev/video0: select timed out
+06:39:16.452: v4l2-input: /dev/video0: failed to log status
+06:40:23.514: This plugin supports grabbing the mouse only for popup windows
+06:40:27.266: This plugin supports grabbing the mouse only for popup windows
+06:40:27.266: This plugin supports grabbing the mouse only for popup windows
+06:40:27.777: This plugin supports grabbing the mouse only for popup windows
+06:41:14.381: Settings changed (appearance)
+06:41:14.381: ------------------------------------------------
+06:41:31.813: Settings changed (appearance)
+06:41:31.813: ------------------------------------------------
+06:42:29.472: pulse-input: Stopped recording from 'default'
+06:42:29.472: pulse-input: Got 7811 packets with 9373200 frames
+06:42:29.473: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+06:42:29.473: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+06:42:29.473: pulse-input: Started recording from 'alsa_input.pci-0000_30_00.6.analog-stereo' (default)
+06:43:51.080: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55647f19dbd0 with focusing surface 0x556479b07ee0
+06:43:54.784: User added source 'Mic/Aux' (pulse_input_capture) to scene 'Scene'
+06:44:01.617: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55647ddbc260 with focusing surface 0x556479b07ee0
+06:44:02.142: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55647ddbc260 with focusing surface 0x556479b07ee0
+06:44:05.066: pulse-input: Stopped recording from 'default'
+06:44:05.066: pulse-input: Got 3822 packets with 4586400 frames
+06:44:05.066: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+06:44:05.067: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+06:44:05.067: pulse-input: Started recording from 'alsa_input.pci-0000_30_00.6.analog-stereo' (default)
+06:44:27.088: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x5564798ce350 with focusing surface 0x556479b07ee0
+06:44:35.025: ---------------------------------
+06:44:35.025: [x264 encoder: 'simple_video_stream'] preset: veryfast
+06:44:35.028: [x264 encoder: 'simple_video_stream'] settings:
+06:44:35.028: 	rate_control: CBR
+06:44:35.028: 	bitrate:      6000
+06:44:35.028: 	buffer size:  6000
+06:44:35.028: 	crf:          23
+06:44:35.028: 	fps_num:      30
+06:44:35.028: 	fps_den:      1
+06:44:35.028: 	width:        1024
+06:44:35.028: 	height:       768
+06:44:35.028: 	keyint:       250
+06:44:35.028: 
+06:44:35.030: ---------------------------------
+06:44:35.030: [FFmpeg aac encoder: 'simple_aac'] bitrate: 160, channels: 2, channel_layout: stereo, track: 1
+06:44:35.030: 
+06:44:35.039: ==== Recording Start ===============================================
+06:44:35.039: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/daniel/videos/2026-08-22 06-44-35.mp4'...
+06:44:41.317: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+06:44:41.318: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+06:44:41.318: [mp4 muxer: 'simple_file_output'] Full moov size: 4 KiB
+06:44:41.318: [mp4 muxer: 'simple_file_output'] Final mdat size: 3644 KiB
+06:44:41.318: Output 'simple_file_output': stopping
+06:44:41.318: Output 'simple_file_output': Total frames output: 150
+06:44:41.318: Output 'simple_file_output': Total drawn frames: 189
+06:44:41.318: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+06:44:41.318: [mp4 output: 'simple_file_output'] File output complete. Finalization took 0 ms.
+06:44:41.319: ==== Recording Stop ================================================
+06:45:18.773: ==== Shutting down ==================================================
+06:45:18.781: pulse-input: Stopped recording from 'alsa_output.pci-0000_30_00.6.analog-stereo.monitor'
+06:45:18.781: pulse-input: Got 14584 packets with 17500800 frames
+06:45:18.781: Deduplication logic stopped.
+06:45:18.808: v4l2-input: /dev/video0: Stopped capture after 5459 frames
+06:45:18.824: pulse-input: Stopped recording from 'alsa_input.pci-0000_30_00.6.analog-stereo'
+06:45:18.824: pulse-input: Got 2949 packets with 3538800 frames
+06:45:18.829: All scene data cleared
+06:45:18.829: ------------------------------------------------
+06:45:18.844: Tried to call obs_frontend_remove_event_callback with no callbacks!
+06:45:18.934: [obs-websocket] [obs_module_unload] Shutting down...
+06:45:18.935: Tried to call obs_frontend_remove_event_callback with no callbacks!
+06:45:18.935: [obs-websocket] [obs_module_unload] Finished shutting down.
+06:45:18.938: [Scripting] Total detached callbacks: 0
+06:45:18.938: Freeing OBS context data

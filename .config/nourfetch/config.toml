@@ -1,0 +1,32 @@
+# nourfetch configuration
+# Auto-generated and maintained by nourfetch
+
+# Theme palette to use
+# Options: "nour", "cyberpunk", "catppuccin", "dracula", "nord", "sunset", "matrix", "tokyonight", "gruvbox", "minimal"
+theme = "nour"
+
+# ASCII logo
+# Options: "auto", "gnu", "gnu_small", "guix", "arch", "ubuntu", "fedora", "debian", "nixos", "alpine",
+#          "pop_os", "manjaro", "gentoo", "void", "opensuse", "artix", "endeavouros",
+#          "linuxmint", "zorin", "elementary", "slackware", "freebsd", "redhat", "rocky", "garuda",
+#          "parrot", "tux", "windows11", "windows10", "macos", "nour", "badge"
+logo = "auto"
+
+# Layout style
+# Options: "classic", "modern", "compact"
+layout = "classic"
+
+# Enable Nerd Font icons (true / false)
+nerd_fonts = true
+
+# Display color palette blocks at the bottom (true / false)
+color_blocks = true
+
+# Display progress bars for RAM/GPU/Disk (true / false)
+show_bars = true
+
+# Progress bar character style: "smooth", "block", "circle", "rounded", "ascii"
+bar_style = "smooth"
+
+# Progress bar width in characters
+bar_width = 14

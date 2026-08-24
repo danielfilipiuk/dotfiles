@@ -506,3 +506,11 @@ hl.window_rule({
 	 move = "50% 50%",
 	 size = "1060 710",	 
 })
+
+hl.window_rule({
+	 name = "hyprclock",
+	 match = {class = "org.cvusmo.Hyprclock"},
+	 float = true,
+	 move = "50% 50%",
+	opacity = 0.55,
+})

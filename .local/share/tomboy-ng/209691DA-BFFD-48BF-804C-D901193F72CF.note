@@ -2,7 +2,7 @@
 <note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
   <title>animaciones hyprland</title>
   
-<text xml:space="preserve"><note-content version="0.1">animaciones hyprland
+<text xml:space="preserve"><note-content version="0.1"><underline>animaciones hyprland</underline>
 
 global
   ↳ windows - styles: slide, popin, gnomed

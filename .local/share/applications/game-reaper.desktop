@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cazador de Zombis
+GenericName=Limpiador Proton/Wine
+Name[es]=Cazador de Zombis
+GenericName[es]=Limpiador de juegos colgados (Proton/Wine)
+Comment=Busca y elimina árboles de juegos Proton/Wine colgados, sin tocar partidas en curso
+Comment[es]=Busca y elimina árboles de juegos Proton/Wine colgados, sin tocar partidas en curso
+Exec=/home/daniel/.local/bin/game-reaper
+Icon=edit-clear-all
+Terminal=false
+Categories=System;
+Keywords=proton;wine;steam;zombie;zombi;kill;limpiar;juego;huerfano;vram;
+StartupNotify=true
+StartupWMClass=🧟 Cazador de Zombis · Proton/Wine v1.0.0

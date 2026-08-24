@@ -7,19 +7,31 @@
 
 
 ---------------------------------------------------------------
+-- LATCHSHOT 
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(
+"latchshot -o ~/downloads/capture-$(date +%Y-%m-%d_%H-%M-%S).png -c --no-notify && \
+notify-send \"screenshot taken\" \"saved to $HOME/downloads\" -a \"Latchshot\" -i camera-video && \
+pw-play /usr/share/sounds/freedesktop/stereo/camera-shutter.oga --volume 0.25"),
+{description = "screenshot - latchshot" })
+
+---------------------------------------------------------------
 -- HYPRSHOT REGION SCREENSHOT
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m region -o ~/downloads"),
-{description = "screenshot - hyprshot region" })
+--hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m region -o ~/downloads"),
+--{description = "screenshot - hyprshot region" })
+
+--hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("latchshot -o ~/downloads/capture-$(date +%Y-%m-%d_%H-%M-%S).png -c"),
+--{description = "screenshot - latchshot" })
 
 ---------------------------------------------------------------
 -- HYPRSHOT MONITOR SCREENSHOT
-hl.bind(mainMod .. " + SHIFT + CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -o ~/downloads"),
-{description = "screenshot - hyprshot monitor" })
+--hl.bind(mainMod .. " + SHIFT + CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -o ~/downloads"),
+--{description = "screenshot - hyprshot monitor" })
 
 ---------------------------------------------------------------
 -- HYPRSHOT WINDOW SCREENSHOT
-hl.bind(mainMod .. " + CTRL + Print", hl.dsp.exec_cmd("hyprshot -m window -o ~/downloads"),
-{description = "screenshot - hyprshot window" })
+--hl.bind(mainMod .. " + CTRL + Print", hl.dsp.exec_cmd("hyprshot -m window -o ~/downloads"),
+--
+--{description = "screenshot - hyprshot window" })
 
 ---------------------------------------------------------------
 --GPU SCREEN RECORDER VENTANA

@@ -1,0 +1,407 @@
+"""Monitor page: service health, CPU/RAM, xruns, pw-top and logs."""
+
+from __future__ import annotations
+
+import collections
+
+import gi
+
+gi.require_version('Gtk', '4.0')
+gi.require_version('Adw', '1')
+from gi.repository import Adw, GLib, Gtk  # noqa: E402
+
+from ..backend import prefs, stats, system
+from .widgets import async_call, group, page_scroller, pill, state_style
+
+UNIT_LABELS = {'pipewire.service': 'PipeWire',
+               'wireplumber.service': 'WirePlumber',
+               'pipewire-pulse.service': 'PipeWire-Pulse'}
+
+POLL_CHOICES = (1, 2, 3, 5)   # seconds between samples; 1 s matches pw-top's
+POLL_DEFAULT = 1              # own batch cadence, which is the useful floor
+HISTORY_SEC = 180             # sparklines span ~3 min whatever the poll rate
+
+# Time constant of the DSP-load average, in seconds.
+#
+# `pw-top -b -n 2` returns one cycle's timing, not an average over the poll
+# interval: the first block is the initial state, the second is a single
+# measurement, and the whole call takes ~30 ms.  At a 2048/48000 quantum that
+# is one cycle in ~23 per second — so the running average JACK tools report
+# (they average in the engine, over every cycle) is something we can only
+# approximate here, and this average is the whole of that approximation.
+# Showing raw samples instead would put one arbitrary cycle on screen per
+# tick, which jitters far more than Carla's figure, not less.
+#
+# The weight is derived from the poll interval (LOAD_TAU below) rather than
+# fixed, so changing the rate changes how often the number updates without
+# changing how smoothed it is.  Sampling slower than the time constant can't
+# be smoothed at all, hence the clamp in _load_alpha().
+LOAD_TAU = 3.0
+
+XRUN_SUBTITLE = ('Graph cycles the driver could not complete, '
+                 'counted while this page is open')
+
+
+class Sparkline(Gtk.DrawingArea):
+    """Tiny inline history graph for one metric."""
+
+    def __init__(self, width=120, height=26, history=HISTORY_SEC):
+        super().__init__(content_width=width, content_height=height)
+        self.values = collections.deque(maxlen=history)
+        self.max_hint = 1.0
+        self.set_draw_func(self._draw)
+
+    def set_history(self, n):
+        """Re-window to n samples, keeping the most recent ones."""
+        if n != self.values.maxlen:
+            self.values = collections.deque(self.values, maxlen=n)
+            self.queue_draw()
+
+    def push(self, value):
+        self.values.append(max(0.0, value))
+        self.queue_draw()
+
+    def clear(self):
+        self.values.clear()
+        self.queue_draw()
+
+    def _draw(self, _a, cr, w, h):
+        if len(self.values) < 2:
+            return
+        fg = self.get_style_context().get_color()
+        top = max(self.max_hint, max(self.values)) or 1.0
+        step = w / max(1, (self.values.maxlen or len(self.values)) - 1)
+        n = len(self.values)
+        cr.move_to(w - (n - 1) * step, h - self.values[0] / top * (h - 3) - 1)
+        for i, v in enumerate(self.values):
+            cr.line_to(w - (n - 1 - i) * step, h - v / top * (h - 3) - 1)
+        cr.set_source_rgba(fg.red, fg.green, fg.blue, 0.85)
+        cr.set_line_width(1.6)
+        cr.stroke_preserve()
+        cr.line_to(w, h)
+        cr.line_to(w - (n - 1) * step, h)
+        cr.close_path()
+        cr.set_source_rgba(fg.red, fg.green, fg.blue, 0.12)
+        cr.fill()
+
+
+class MonitorPage:
+    def __init__(self, window):
+        self.window = window
+        self._timer = None
+        self._busy = False
+        self._prev_procs = {}
+        # Xruns are counted as a session figure: pw-top's ERR counters run
+        # from each node's creation, so only the positive deltas between our
+        # own samples are accumulated.  That also survives a driver going away
+        # and taking its counter with it (the raw total drops; the delta is
+        # clamped at 0 rather than counting backwards).
+        self._xrun_prev = None
+        self._xrun_session = 0
+        self._load_avg = None       # smoothed DSP load, see _apply()
+        self._log_cursor = None
+        self._log_paused = False
+        poll = prefs.get('monitor_poll')
+        self._poll = poll if poll in POLL_CHOICES else POLL_DEFAULT
+        self._sparks = []           # every sparkline, re-windowed on rate change
+
+        # ---- services ----
+        svc = group('Services')
+        self.svc_rows = {}
+        for unit, label in UNIT_LABELS.items():
+            row = Adw.ActionRow(title=label, subtitle=unit)
+            p = pill('…', 'dim')
+            cpu = Gtk.Label(width_chars=7, xalign=1)
+            cpu.add_css_class('numeric-value')
+            ram = Gtk.Label(width_chars=8, xalign=1)
+            ram.add_css_class('dim-label')
+            spark = Sparkline()
+            spark.max_hint = 10.0
+            self._sparks.append(spark)
+            restart = Gtk.Button(icon_name='view-refresh-symbolic',
+                                 tooltip_text=f'Restart {label}',
+                                 valign=Gtk.Align.CENTER)
+            restart.add_css_class('flat')
+            restart.connect('clicked', self._restart, unit, label)
+            for wdg in (spark, cpu, ram, p, restart):
+                row.add_suffix(wdg)
+            svc.add(row)
+            self.svc_rows[unit] = {'pill': p, 'cpu': cpu, 'ram': ram,
+                                   'spark': spark}
+
+        # ---- graph health ----
+        health = group('Graph health')
+        self.xrun_row = Adw.ActionRow(
+            title='Xruns (dropouts)', subtitle=XRUN_SUBTITLE)
+        self.xrun_label = Gtk.Label()
+        self.xrun_label.add_css_class('numeric-value')
+        self.xrun_spark = Sparkline()
+        self._sparks.append(self.xrun_spark)
+        xrun_reset = Gtk.Button(icon_name='edit-clear-symbolic',
+                                tooltip_text='Reset the xrun counter',
+                                valign=Gtk.Align.CENTER)
+        xrun_reset.add_css_class('flat')
+        xrun_reset.connect('clicked', self._reset_xruns)
+        self.xrun_row.add_suffix(self.xrun_spark)
+        self.xrun_row.add_suffix(self.xrun_label)
+        self.xrun_row.add_suffix(xrun_reset)
+        health.add(self.xrun_row)
+
+        self.load_row = Adw.ActionRow(
+            title='DSP load',
+            subtitle='Time to process one graph cycle against the quantum, '
+                     'averaged — the same figure JACK tools report')
+        self.load_label = Gtk.Label()
+        self.load_label.add_css_class('numeric-value')
+        self.load_spark = Sparkline()
+        self.load_spark.max_hint = 1.0
+        self._sparks.append(self.load_spark)
+        self.load_row.add_suffix(self.load_spark)
+        self.load_row.add_suffix(self.load_label)
+        health.add(self.load_row)
+
+        self.rate_row = Adw.ComboRow(
+            title='Sample rate',
+            subtitle='How often this page reads the graph. Faster reacts '
+                     'sooner and averages more cycles into the DSP load; '
+                     'slower is lighter on the system.',
+            model=Gtk.StringList.new([f'Every {s} s' for s in POLL_CHOICES]))
+        self.rate_row.set_selected(POLL_CHOICES.index(self._poll))
+        # connected after set_selected, so restoring the pref can't re-enter
+        self.rate_row.connect('notify::selected', self._on_rate)
+        health.add(self.rate_row)
+        self._apply_history()
+
+        # ---- notifications ----
+        notif = group('System notifications',
+                      'Desktop notifications while the app is running.')
+        for key, title, subtitle in (
+                ('notify_links', 'Broken or disconnected links',
+                 'Notify when a link between two live nodes disappears '
+                 '(e.g. a device vanished mid-stream).'),
+                ('notify_services', 'Service failures',
+                 'Notify when PipeWire, WirePlumber or PipeWire-Pulse '
+                 'enters the failed state.'),
+                ('notify_xruns', 'Audio dropouts (xruns)',
+                 'Notify when new xruns are detected while this page is '
+                 'monitoring.')):
+            row = Adw.SwitchRow(title=title, subtitle=subtitle)
+            row.set_active(bool(prefs.get(key)))
+            row.connect('notify::active',
+                        lambda r, _p, k=key: prefs.save(**{k: r.get_active()}))
+            notif.add(row)
+
+        # ---- pw-top ----
+        top = group('Node activity (pw-top)',
+                    'Live per-node timing: WAIT/BUSY times, quantum, rate '
+                    'and error counts. Follower nodes are indented.')
+        self.top_view = Gtk.TextView(editable=False, monospace=True,
+                                     left_margin=12, right_margin=12,
+                                     top_margin=8, bottom_margin=8)
+        self.top_view.add_css_class('card')
+        top_sw = Gtk.ScrolledWindow(min_content_height=220,
+                                    max_content_height=320,
+                                    vexpand=False)
+        top_sw.set_child(self.top_view)
+        top.add(top_sw)
+
+        # ---- logs ----
+        logs = group('Logs', 'journalctl --user for the PipeWire stack.')
+        controls = Adw.ActionRow(title='Follow log')
+        self.log_pause = Gtk.Switch(valign=Gtk.Align.CENTER, active=True,
+                                    tooltip_text='Keep appending new lines')
+        self.log_pause.connect(
+            'notify::active',
+            lambda s, _p: setattr(self, '_log_paused', not s.get_active()))
+        self.err_only = Gtk.ToggleButton(label='Warnings+',
+                                         valign=Gtk.Align.CENTER,
+                                         tooltip_text='Only show warnings '
+                                                      'and errors')
+        self.err_only.add_css_class('flat')
+        self.err_only.connect('toggled', self._reset_log)
+        clear = Gtk.Button(label='Clear view', valign=Gtk.Align.CENTER)
+        clear.add_css_class('flat')
+        clear.connect('clicked', self._clear_log)
+        controls.add_suffix(self.err_only)
+        controls.add_suffix(clear)
+        controls.add_suffix(self.log_pause)
+        logs.add(controls)
+        self.log_view = Gtk.TextView(editable=False, monospace=True,
+                                     left_margin=12, right_margin=12,
+                                     top_margin=8, bottom_margin=8,
+                                     wrap_mode=Gtk.WrapMode.WORD_CHAR)
+        self.log_view.add_css_class('card')
+        log_sw = Gtk.ScrolledWindow(min_content_height=260,
+                                    max_content_height=380, vexpand=False)
+        log_sw.set_child(self.log_view)
+        self._log_sw = log_sw
+        logs.add(log_sw)
+
+        self.widget = page_scroller(svc, health, notif, top, logs, width=980)
+        self.widget.connect('map', self._on_map)
+        self.widget.connect('unmap', self._on_unmap)
+
+    # ---------------------------------------------------------------- poll --
+    def _load_alpha(self) -> float:
+        """EMA weight giving a LOAD_TAU-second average at the current rate.
+
+        Clamped at 1.0: polling slower than the time constant leaves nothing
+        to average, so the raw sample is the honest answer.
+        """
+        return min(1.0, self._poll / LOAD_TAU)
+
+    def _apply_history(self):
+        """Keep the sparklines spanning HISTORY_SEC at whatever the rate is."""
+        samples = max(30, int(HISTORY_SEC / self._poll))
+        for spark in self._sparks:
+            spark.set_history(samples)
+
+    def _on_rate(self, row, _p):
+        poll = POLL_CHOICES[row.get_selected()]
+        if poll == self._poll:
+            return
+        self._poll = poll
+        prefs.save(monitor_poll=poll)
+        self._apply_history()
+        if self._timer:                     # resume on the new interval
+            GLib.source_remove(self._timer)
+            self._timer = GLib.timeout_add_seconds(poll, self._tick)
+
+    def _on_map(self, *_a):
+        self.refresh()
+        if not self._timer:
+            self._timer = GLib.timeout_add_seconds(self._poll, self._tick)
+
+    def _on_unmap(self, *_a):
+        if self._timer:
+            GLib.source_remove(self._timer)
+            self._timer = None
+        # Sampling stops here, so the counters must not attribute whatever
+        # happened while the page was away to the next single sample.
+        self._xrun_prev = None
+
+    def _reset_xruns(self, *_a):
+        self._xrun_session = 0
+        self.xrun_spark.clear()
+        self.xrun_label.set_label('0')
+        self.xrun_row.set_subtitle(XRUN_SUBTITLE)
+
+    def _tick(self):
+        self.refresh()
+        return True
+
+    def refresh(self):
+        if self._busy:
+            return
+        self._busy = True
+        cursor = None if self._log_paused else self._log_cursor
+        prio = '4' if self.err_only.get_active() else None
+
+        def collect():
+            snap = stats.health_snapshot()
+            log_text, new_cursor = ('', self._log_cursor)
+            if not self._log_paused:
+                log_text, new_cursor = stats.journal_tail(
+                    cursor=cursor, lines=120, priority=prio)
+            return snap, log_text, new_cursor
+        async_call(collect, self._apply)
+
+    def _apply(self, result, error):
+        self._busy = False
+        if error or not result:
+            return
+        snap, log_text, new_cursor = result
+
+        for unit, widgets in self.svc_rows.items():
+            state = snap.states.get(unit, 'unknown')
+            p = widgets['pill']
+            p.set_label(state)
+            for c in list(p.get_css_classes()):
+                if c.startswith('pill-'):
+                    p.remove_css_class(c)
+            p.add_css_class(f'pill-{state_style(state)}')
+
+            cur = snap.procs.get(unit)
+            prev = self._prev_procs.get(unit)
+            if cur and cur.ok:
+                widgets['ram'].set_label(f'{cur.rss_bytes / 1048576:.1f} MB')
+                if prev:
+                    pct = stats.cpu_percent(prev, cur)
+                    widgets['cpu'].set_label(f'{pct:.1f}%')
+                    widgets['spark'].push(pct)
+            else:
+                widgets['cpu'].set_label('—')
+                widgets['ram'].set_label('—')
+            self._prev_procs[unit] = cur
+
+        delta = 0
+        if self._xrun_prev is not None:
+            # clamped: a driver that disappeared takes its counter with it
+            delta = max(0, snap.xruns - self._xrun_prev)
+            self._xrun_session += delta
+        self._xrun_prev = snap.xruns
+        self.xrun_spark.push(delta)
+        self.xrun_label.set_label(str(self._xrun_session))
+        if delta > 0:
+            self.xrun_row.set_subtitle(f'+{delta} new since the last sample')
+            if prefs.get('notify_xruns'):
+                self.window.notify_user(
+                    'Audio dropouts detected',
+                    f'{delta} new xrun(s) in the PipeWire graph')
+        elif snap.node_errors:
+            self.xrun_row.set_subtitle(
+                f'{XRUN_SUBTITLE} · {snap.node_errors} node-level error(s) '
+                'reported since those nodes started')
+        else:
+            self.xrun_row.set_subtitle(XRUN_SUBTITLE)
+
+        self._load_avg = snap.load if self._load_avg is None else (
+            self._load_avg + self._load_alpha() * (snap.load - self._load_avg))
+        self.load_label.set_label(f'{self._load_avg * 100:.0f}%')
+        self.load_spark.push(snap.load)
+
+        lines = [f'{"":1} {"ID":>4} {"QUANT":>6} {"RATE":>6} {"WAIT":>8} '
+                 f'{"BUSY":>8} {"W/Q":>5} {"B/Q":>5} {"ERR":>4}  NAME']
+        for r in snap.top:
+            name = r.name if r.is_driver else f'  + {r.name}'
+            lines.append(f'{r.state:1} {r.id:>4} {r.quantum:>6} {r.rate:>6} '
+                         f'{r.wait:>8} {r.busy:>8} {r.w_q:>5} {r.b_q:>5} '
+                         f'{r.errors:>4}  {name}')
+        self.top_view.get_buffer().set_text('\n'.join(lines))
+
+        if log_text:
+            buf = self.log_view.get_buffer()
+            end = buf.get_end_iter()
+            if buf.get_char_count():
+                buf.insert(end, '\n')
+                end = buf.get_end_iter()
+            buf.insert(end, log_text)
+            # trim to the last ~800 lines
+            if buf.get_line_count() > 900:
+                start = buf.get_start_iter()
+                cut = buf.get_iter_at_line(buf.get_line_count() - 800)[1]
+                buf.delete(start, cut)
+            GLib.idle_add(self._scroll_log_end)
+        self._log_cursor = new_cursor
+
+    def _scroll_log_end(self):
+        adj = self._log_sw.get_vadjustment()
+        adj.set_value(adj.get_upper())
+        return False
+
+    def _reset_log(self, *_a):
+        self._clear_log()
+        self._log_cursor = None
+        self.refresh()
+
+    def _clear_log(self, *_a):
+        self.log_view.get_buffer().set_text('')
+
+    def _restart(self, _b, unit, label):
+        self.window.toast(f'Restarting {label}…')
+
+        def done(result, error):
+            rc = result[0] if result else 1
+            self.window.toast(f'{label} restarted' if not error and rc == 0
+                              else f'{label} restart failed')
+        async_call(lambda: system.restart_unit(unit), done)

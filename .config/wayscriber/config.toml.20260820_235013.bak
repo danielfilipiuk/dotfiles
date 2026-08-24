@@ -1,0 +1,5 @@
+config_revision = 3
+
+[performance]
+buffer_count = 4
+max_fps_no_vsync = 60

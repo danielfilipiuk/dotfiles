@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+if pgrep -x hyprclock >/dev/null; then
+    pkill -SIGINT -x hyprclock
+    exit 0
+fi
+
+exec hyprclock
+
+

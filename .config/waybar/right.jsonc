@@ -44,6 +44,8 @@
     //"pulseaudio",
     //"pulseaudio/slider",
 //    "keyboard-state",
+    //"custom/capslock",
+    //"custom/numlock",
     "tray",
     "network",
     "disk",
@@ -377,6 +379,30 @@
     "orientation": "horizontal",
     "tooltip": true,
 },
+///////////////////////////////////////////////////////////////////////////////////////
+// Add these two modules to your Waybar config.jsonc, and reference
+// "custom/capslock" / "custom/numlock" in "modules-left"/"modules-right".
+//
+// They don't poll: "interval": "once" means they only run at Waybar
+// startup. After that, kbd-state.sh updates the cache file and sends
+// SIGRTMIN+8 to Waybar, which redraws that module instantly.
+
+
+  "custom/capslock": {
+    "exec": "cat ~/.cache/waybar-kbd-caps.json 2>/dev/null || echo '{\"text\":\"\",\"class\":\"inactive\"}'",
+    "return-type": "json",
+    "signal": 8,
+    "interval": "once",
+    "tooltip": true
+  },
+  "custom/numlock": {
+    "exec": "cat ~/.cache/waybar-kbd-num.json 2>/dev/null || echo '{\"text\":\"\",\"class\":\"inactive\"}'",
+    "return-type": "json",
+    "signal": 8,
+    "interval": "once",
+    "tooltip": true
+  },
+
 ///////////////////////////////////////////////////////////////////////////////////////
 "keyboard-state": {
         "numlock": true,

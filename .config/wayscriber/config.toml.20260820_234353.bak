@@ -1,0 +1,4 @@
+config_revision = 3
+
+[performance]
+buffer_count = 4

@@ -69,7 +69,7 @@ image/png=photoflare.desktop;imv.desktop;com.github.maoschanz.drawing.desktop;or
 image/svg+xml=org.xfce.ristretto.desktop;imv.desktop;org.xfce.mousepad.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;
 image/svg+xml-compressed=org.inkscape.Inkscape.desktop;org.xfce.ristretto.desktop;org.xfce.mousepad.desktop;
 image/vnd.adobe.photoshop=gimp.desktop;org.geeqie.Geeqie.desktop;
-image/vnd.microsoft.icon=gnome-paint.desktop;imv.desktop;org.geeqie.Geeqie.desktop;
+image/vnd.microsoft.icon=photoflare.desktop;gnome-paint.desktop;imv.desktop;org.geeqie.Geeqie.desktop;
 image/vnd.zbrush.pcx=gnome-paint.desktop;
 image/webp=org.xfce.ristretto.desktop;
 image/x-adobe-dng=org.darktable.darktable.desktop;rawtherapee.desktop;
@@ -111,6 +111,7 @@ text/x-dsrc=org.xfce.mousepad.desktop;
 text/x-python=org.xfce.mousepad.desktop;
 application/x-core=org.xfce.mousepad.desktop;
 application/x-rpm=xarchiver.desktop;
+application/x-archive=xarchiver.desktop;
 
 [Default Applications]
 application/java-archive=userapp-java -jar %f-X2ZO72.desktop;

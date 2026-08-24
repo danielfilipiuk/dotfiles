@@ -1,0 +1,585 @@
+#!/usr/bin/env python3
+"""Game Reaper · safe cleaner for orphaned Proton/Wine processes.
+
+Unlike `pkill -f .exe` (which kills running games) or `wineserver -k`
+(which brings down ALL Wine prefixes), this tool:
+
+  • Groups processes by GAME (Steam AppId / compatdata prefix).
+  • Resolves the game name from Steam's appmanifest.
+  • Classifies each group: ACTIVE (playing) / STARTING (loading) / ZOMBIE (hung).
+    A real game uses GBs of RAM and/or CPU; a hung tree leaves only shells
+    (services.exe, wineserver, explorer.exe…) at ~MB and 0% CPU.
+  • Only allows killing ZOMBIE groups — never a running session or the Steam client.
+  • Kills by exact PID the entire prefix tree (including wine orphans that
+    `kill wineserver` leaves alive) and sweeps any survivors.
+  • Reports freed VRAM.
+
+Usage:
+  game-reaper                 → graphical interface
+  game-reaper --list          → list detected groups (kills nothing)
+  game-reaper --clean         → kill detected ZOMBIEs (asks for confirmation)
+  game-reaper --clean --yes   → kill ZOMBIEs without prompting (for shortcuts/cron)
+"""
+from __future__ import annotations
+
+import os
+import re
+import sys
+import time
+import glob
+import subprocess
+from dataclasses import dataclass, field
+
+try:
+    import psutil
+except Exception as exc:  # pragma: no cover
+    print(f"Requires psutil:  pip install psutil\n{exc}")
+    sys.exit(1)
+
+_VERSION = "1.1.0"
+
+# ── Thresholds (same logic as hd2-watchdog) ───────────────────────────────────
+RAM_ALIVE_MB = 700      # a real game uses several GBs; hung shell ~MB
+CPU_ALIVE = 15.0        # % CPU summed for the group to count as "alive"
+GRACE_S = 180           # startup grace period (loading + shaders + anticheat)
+
+# Never touch the Steam client or shader pre-caching
+_EXCLUDE_NAMES = {
+    'steam', 'steamwebhelper', 'fossilize_replay', 'steamwebhelper.',
+    'srt-logger', 'pressure-vessel-wrap',
+}
+
+_APPID_RE = re.compile(r'compatdata/(\d+)')
+_APPID_CMD_RE = re.compile(r'AppId=(\d+)')
+
+
+# ── Steam libraries / game name ───────────────────────────────────────────────
+
+def _steam_libraries() -> list[str]:
+    libs: list[str] = []
+    roots = [
+        os.path.expanduser('~/.steam/debian-installation/steamapps'),
+        os.path.expanduser('~/.steam/steam/steamapps'),
+        os.path.expanduser('~/.local/share/Steam/steamapps'),
+    ]
+    for r in roots:
+        vdf = os.path.join(r, 'libraryfolders.vdf')
+        if os.path.exists(vdf):
+            try:
+                txt = open(vdf, encoding='utf-8', errors='replace').read()
+                for m in re.finditer(r'"path"\s+"([^"]+)"', txt):
+                    libs.append(os.path.join(m.group(1), 'steamapps'))
+            except Exception:
+                pass
+    libs.extend(roots)
+    seen, out = set(), []
+    for p in libs:
+        if p not in seen and os.path.isdir(p):
+            seen.add(p)
+            out.append(p)
+    return out
+
+
+_NAME_CACHE: dict[str, str] = {}
+
+
+def game_name(appid: str) -> str:
+    if appid in _NAME_CACHE:
+        return _NAME_CACHE[appid]
+    name = ''
+    for lib in _steam_libraries():
+        acf = os.path.join(lib, f'appmanifest_{appid}.acf')
+        if os.path.exists(acf):
+            try:
+                txt = open(acf, encoding='utf-8', errors='replace').read()
+                m = re.search(r'"name"\s+"([^"]+)"', txt)
+                if m:
+                    name = m.group(1)
+                    break
+            except Exception:
+                pass
+    name = name or f'AppID {appid}'
+    _NAME_CACHE[appid] = name
+    return name
+
+
+# ── Detection ─────────────────────────────────────────────────────────────────
+
+def _proton_appid(p: psutil.Process, info: dict) -> str | None:
+    cmd = ' '.join(info.get('cmdline') or [])
+    m = _APPID_RE.search(cmd) or _APPID_CMD_RE.search(cmd)
+    if m:
+        return m.group(1)
+
+    name = (info.get('name') or '')
+    exe = (info.get('exe') or '')
+    wineish = (name.endswith('.exe') or 'compatdata' in exe
+               or '/Proton' in exe or 'proton' in cmd.lower()
+               or 'wine' in exe.lower())
+    if not wineish:
+        return None
+
+    try:
+        env = p.environ()
+    except Exception:
+        return None
+    for k in ('STEAM_COMPAT_DATA_PATH', 'WINEPREFIX',
+              'STEAM_COMPAT_INSTALL_PATH', 'STEAM_COMPAT_TRANSCODED_MEDIA_PATH'):
+        mm = _APPID_RE.search(env.get(k, ''))
+        if mm:
+            return mm.group(1)
+    return None
+
+
+@dataclass
+class Group:
+    appid: str
+    name: str
+    pids: list[int]
+    max_rss: int
+    total_cpu: float
+    age_s: float
+    status: str               # 'ACTIVE' | 'STARTING' | 'ZOMBIE'
+    procs: list[tuple] = field(default_factory=list)  # (pid, pname, rss)
+
+
+def _classify(max_rss: int, total_cpu: float, age_s: float) -> str:
+    if max_rss > RAM_ALIVE_MB * 1024 * 1024 or total_cpu >= CPU_ALIVE:
+        return 'ACTIVE'
+    if age_s < GRACE_S:
+        return 'STARTING'
+    return 'ZOMBIE'
+
+
+def scan() -> list[Group]:
+    candidates: dict[str, list[tuple]] = {}
+    for p in psutil.process_iter(
+            ['pid', 'name', 'exe', 'cmdline', 'memory_info', 'create_time']):
+        try:
+            info = p.info
+            if (info.get('name') or '') in _EXCLUDE_NAMES:
+                continue
+            appid = _proton_appid(p, info)
+            if appid:
+                candidates.setdefault(appid, []).append((p, info))
+        except (psutil.NoSuchProcess, psutil.AccessDenied):
+            continue
+        except Exception:
+            continue
+
+    objs = [p for lst in candidates.values() for (p, _) in lst]
+    for p in objs:
+        try:
+            p.cpu_percent(None)
+        except Exception:
+            pass
+    time.sleep(0.4)
+
+    now = time.time()
+    groups: list[Group] = []
+    for appid, lst in candidates.items():
+        pids, procs = [], []
+        max_rss, total_cpu, oldest = 0, 0.0, now
+        for p, info in lst:
+            try:
+                mi = info.get('memory_info')
+                rss = mi.rss if mi else 0
+                cpu = p.cpu_percent(None)
+            except Exception:
+                rss, cpu = 0, 0.0
+            pids.append(info['pid'])
+            procs.append((info['pid'], info.get('name') or '?', rss))
+            max_rss = max(max_rss, rss)
+            total_cpu += cpu
+            oldest = min(oldest, info.get('create_time') or now)
+        age = now - oldest
+        groups.append(Group(
+            appid=appid, name=game_name(appid), pids=sorted(pids),
+            max_rss=max_rss, total_cpu=total_cpu, age_s=age,
+            status=_classify(max_rss, total_cpu, age),
+            procs=sorted(procs, key=lambda x: x[2], reverse=True),
+        ))
+    groups.sort(key=lambda g: (g.status != 'ZOMBIE', g.name.lower()))
+    return groups
+
+
+def kill_group(g: Group) -> int:
+    before = set(p.pid for p in psutil.process_iter())
+    for pid in g.pids:
+        try:
+            os.kill(pid, 9)
+        except Exception:
+            pass
+    time.sleep(1.0)
+    swept = 0
+    for p in psutil.process_iter(['pid', 'exe', 'cmdline', 'name']):
+        try:
+            info = p.info
+            if (info.get('name') or '') in _EXCLUDE_NAMES:
+                continue
+            if _proton_appid(p, info) == g.appid:
+                os.kill(info['pid'], 9)
+                swept += 1
+        except Exception:
+            continue
+    after = set()
+    for p in psutil.process_iter():
+        try:
+            after.add(p.pid)
+        except Exception:
+            pass
+    return len(before - after)
+
+
+# ── VRAM ──────────────────────────────────────────────────────────────────────
+
+def vram_used_mb() -> int | None:
+    try:
+        out = subprocess.run(
+            ['nvidia-smi', '--query-gpu=memory.used', '--format=csv,noheader,nounits'],
+            capture_output=True, timeout=2, text=True)
+        return int(out.stdout.strip().split('\n')[0])
+    except Exception:
+        return None
+
+
+def _fmt_mem(b: int) -> str:
+    if b >= 1024 ** 3:
+        return f'{b / 1024**3:.2f} GB'
+    if b >= 1024 ** 2:
+        return f'{b / 1024**2:.0f} MB'
+    return f'{b / 1024:.0f} KB'
+
+
+def _fmt_age(s: float) -> str:
+    s = int(s)
+    if s >= 3600:
+        return f'{s//3600}h {(s%3600)//60}m'
+    if s >= 60:
+        return f'{s//60}m {s%60}s'
+    return f'{s}s'
+
+
+# ── CLI ───────────────────────────────────────────────────────────────────────
+
+_C = {'g': '\033[92m', 'y': '\033[93m', 'r': '\033[91m', 'b': '\033[94m',
+      'd': '\033[2m', '0': '\033[0m'}
+
+
+def _print_groups(groups: list[Group], show_procs: bool = True) -> None:
+    if not groups:
+        print("  No Proton/Wine game processes found.")
+        return
+    color = {'ACTIVE': 'g', 'STARTING': 'y', 'ZOMBIE': 'r'}
+    for g in groups:
+        c = _C[color.get(g.status, 'd')]
+        print(f"  {c}● {g.status:<9}{_C['0']} {g.name}  "
+              f"{_C['d']}(AppID {g.appid}){_C['0']}")
+        print(f"      {len(g.pids)} processes · Max RAM {_fmt_mem(g.max_rss)} · "
+              f"CPU {g.total_cpu:.0f}% · age {_fmt_age(g.age_s)}")
+        if show_procs:
+            for pid, pname, rss in g.procs:
+                print(f"        {_C['d']}PID {pid:<8} {pname:<24} "
+                      f"{_fmt_mem(rss):>10}{_C['0']}")
+
+
+def cli_list() -> int:
+    print("🔍 Scanning Proton/Wine processes…\n")
+    groups = scan()
+    _print_groups(groups)
+    z = [g for g in groups if g.status == 'ZOMBIE']
+    print(f"\n  Total: {len(groups)} game(s), {_C['r']}{len(z)} zombie(s){_C['0']}.")
+    if z:
+        print(f"  Run {_C['b']}game-reaper --clean{_C['0']} to clean them.")
+    return 0
+
+
+def cli_clean(assume_yes: bool) -> int:
+    print("🔍 Scanning…\n")
+    groups = scan()
+    _print_groups(groups)
+    zombies = [g for g in groups if g.status == 'ZOMBIE']
+    if not zombies:
+        print("\n✅ No zombies to clean.")
+        return 0
+    print(f"\n🧟 {len(zombies)} ZOMBIE group(s) to remove:")
+    for g in zombies:
+        print(f"   • {g.name} ({len(g.pids)} processes)")
+    if not assume_yes:
+        try:
+            r = input("\nRemove these zombies? [y/N] ").strip().lower()
+        except EOFError:
+            r = 'n'
+        if r not in ('y', 'yes'):
+            print("Cancelled.")
+            return 1
+    v0 = vram_used_mb()
+    total = 0
+    for g in zombies:
+        n = kill_group(g)
+        total += n
+        print(f"   ✅ {g.name}: {n} processes removed")
+    v1 = vram_used_mb()
+    if v0 is not None and v1 is not None:
+        print(f"\n💾 VRAM: {v0} MB → {v1} MB  (freed {max(0, v0 - v1)} MB)")
+    print(f"✅ Done: {total} processes removed.")
+    return 0
+
+
+# ── GUI ───────────────────────────────────────────────────────────────────────
+
+_BG = "#0f172a"; _CARD = "#111827"; _CARD2 = "#0b1220"; _BORDER = "#1f2937"
+_TEXT = "#e2e8f0"; _MUTED = "#94a3b8"; _DIM = "#64748b"
+_GREEN = "#22c55e"; _YELLOW = "#f59e0b"; _RED = "#ef4444"
+_BLUE = "#2563eb"; _GRAY = "#475569"
+
+_STATUS_COLOR = {'ACTIVE': _GREEN, 'STARTING': _YELLOW, 'ZOMBIE': _RED}
+
+
+class ReaperGUI:
+    def __init__(self) -> None:
+        import tkinter as tk
+        from tkinter import ttk
+        self.tk = tk
+        self.ttk = ttk
+        self.root = tk.Tk()
+        self.root.title(f"🧟 Game Reaper · Proton/Wine v{_VERSION}")
+        self.root.configure(bg=_BG)
+        self.root.geometry("860x560")
+        self.root.minsize(720, 460)
+        self._groups: list[Group] = []
+        self._scanning = False
+        self._setup_styles()
+        self._build()
+        self.refresh()
+
+    def _setup_styles(self):
+        s = self.ttk.Style()
+        try:
+            s.theme_use('clam')
+        except Exception:
+            pass
+        s.configure('R.Treeview', background=_CARD, fieldbackground=_CARD,
+                    foreground=_TEXT, rowheight=26, borderwidth=0,
+                    font=('Segoe UI', 10))
+        s.configure('R.Treeview.Heading', background=_CARD2, foreground=_TEXT,
+                    font=('Segoe UI', 9, 'bold'), relief='flat', padding=(6, 6))
+        s.map('R.Treeview', background=[('selected', _BLUE)],
+              foreground=[('selected', 'white')])
+
+    def _build(self):
+        tk, ttk = self.tk, self.ttk
+        hdr = tk.Frame(self.root, bg=_BG)
+        hdr.pack(fill='x', padx=12, pady=(10, 4))
+        tk.Label(hdr, text='🧟 Game Reaper', bg=_BG, fg='#f8fafc',
+                 font=('Segoe UI', 16, 'bold')).pack(side='left')
+        self._vram_lbl = tk.Label(hdr, text='', bg=_BG, fg=_MUTED,
+                                  font=('Segoe UI', 10))
+        self._vram_lbl.pack(side='right')
+
+        sub = tk.Label(self.root,
+                       text='Detects and removes hung Proton/Wine game trees. '
+                            'Never touches a running game or Steam.',
+                       bg=_BG, fg=_DIM, font=('Segoe UI', 9), anchor='w')
+        sub.pack(fill='x', padx=12)
+
+        bar = tk.Frame(self.root, bg=_BG)
+        bar.pack(fill='x', padx=12, pady=8)
+
+        def btn(text, cmd, color):
+            b = tk.Button(bar, text=text, command=cmd, bg=color, fg='white',
+                          relief='flat', padx=14, pady=6, font=('Segoe UI', 10),
+                          cursor='hand2', activebackground=color,
+                          activeforeground='white')
+            b.pack(side='left', padx=(0, 8))
+            return b
+
+        btn('🔄 Scan', self.refresh, _BLUE)
+        self._clean_btn = btn('🧟 Kill ALL zombies', self.clean_all, _RED)
+        btn('✕ Kill selected', self.kill_selected, '#ea580c')
+        self._summary = tk.Label(bar, text='', bg=_BG, fg=_MUTED,
+                                 font=('Segoe UI', 10))
+        self._summary.pack(side='right')
+
+        wrap = tk.Frame(self.root, bg=_BORDER)
+        wrap.pack(fill='both', expand=True, padx=12, pady=(0, 6))
+        cols = ('status', 'game', 'appid', 'procs', 'ram', 'cpu', 'age')
+        heads = {'status': ('Status', 110), 'game': ('Game', 260),
+                 'appid': ('AppID', 80), 'procs': ('Procs', 60),
+                 'ram': ('Max RAM', 100), 'cpu': ('CPU', 70),
+                 'age': ('Age', 90)}
+        tv = ttk.Treeview(wrap, columns=cols, show='headings',
+                          style='R.Treeview', selectmode='browse')
+        for c in cols:
+            h, w = heads[c]
+            tv.heading(c, text=h)
+            tv.column(c, width=w, anchor=('w' if c == 'game' else 'center'),
+                      stretch=(c == 'game'))
+        vs = ttk.Scrollbar(wrap, orient='vertical', command=tv.yview)
+        tv.configure(yscrollcommand=vs.set)
+        vs.pack(side='right', fill='y')
+        tv.pack(side='left', fill='both', expand=True)
+        tv.tag_configure('ACTIVE', foreground=_GREEN)
+        tv.tag_configure('STARTING', foreground=_YELLOW)
+        tv.tag_configure('ZOMBIE', foreground=_RED)
+        tv.bind('<<TreeviewSelect>>', self._on_select)
+        self._tree = tv
+
+        det = tk.Frame(self.root, bg=_BG)
+        det.pack(fill='x', padx=12, pady=(0, 4))
+        tk.Label(det, text='Processes in selected group · exactly what would be killed:',
+                 bg=_BG, fg=_MUTED, font=('Segoe UI', 9, 'bold')).pack(anchor='w')
+        self._detail = tk.Text(det, height=7, bg=_CARD2, fg=_TEXT, relief='flat',
+                               wrap='none', font=('Courier', 9))
+        self._detail.pack(fill='x', pady=(2, 0))
+        self._detail.insert('1.0', '  (select a game from the list to see its processes)')
+        self._detail.configure(state='disabled')
+
+        self._log = tk.Label(self.root, text='Ready.', bg=_BG, fg=_DIM,
+                             font=('Segoe UI', 9), anchor='w', justify='left')
+        self._log.pack(fill='x', padx=12, pady=(0, 10))
+
+    def _proc_lines(self, g: Group) -> str:
+        out = []
+        for pid, pname, rss in g.procs:
+            out.append(f'  PID {pid:<8} {pname:<24} {_fmt_mem(rss):>10}')
+        return '\n'.join(out) if out else '  (no processes)'
+
+    def _on_select(self, _e=None):
+        sel = self._tree.selection()
+        g = next((x for x in self._groups if sel and x.appid == sel[0]), None)
+        self._detail.configure(state='normal')
+        self._detail.delete('1.0', 'end')
+        if g:
+            self._detail.insert('end',
+                f'{g.name}  ·  {g.status}  ·  {len(g.pids)} processes  ·  '
+                f'Max RAM {_fmt_mem(g.max_rss)}  ·  age {_fmt_age(g.age_s)}\n\n')
+            self._detail.insert('end', self._proc_lines(g))
+        else:
+            self._detail.insert('end', '  (select a game from the list to see its processes)')
+        self._detail.configure(state='disabled')
+
+    def log(self, msg: str, color: str = _DIM):
+        self._log.configure(text=msg, fg=color)
+
+    def refresh(self):
+        if self._scanning:
+            return
+        self._scanning = True
+        self.log('🔍 Scanning Proton/Wine processes…')
+        import threading
+        threading.Thread(target=self._scan_worker, daemon=True).start()
+
+    def _scan_worker(self):
+        try:
+            groups = scan()
+            vram = vram_used_mb()
+        except Exception as exc:
+            groups, vram = [], None
+            self.root.after(0, lambda: self.log(f'Error: {exc}', _RED))
+        self.root.after(0, lambda: self._render(groups, vram))
+
+    def _render(self, groups: list[Group], vram):
+        self._scanning = False
+        self._groups = groups
+        tv = self._tree
+        prev = tv.selection()
+        prev_sel = prev[0] if prev else None
+        tv.delete(*tv.get_children())
+        for g in groups:
+            tv.insert('', 'end', iid=g.appid, tags=(g.status,), values=(
+                f'● {g.status}', g.name, g.appid, len(g.pids),
+                _fmt_mem(g.max_rss), f'{g.total_cpu:.0f}%', _fmt_age(g.age_s)))
+        if prev_sel and tv.exists(prev_sel):
+            tv.selection_set(prev_sel)
+        self._on_select()
+        z = [g for g in groups if g.status == 'ZOMBIE']
+        self._summary.configure(
+            text=f'{len(groups)} game(s) · {len(z)} zombie(s)')
+        if vram is not None:
+            self._vram_lbl.configure(text=f'VRAM in use: {vram} MB')
+        self._clean_btn.configure(state=('normal' if z else 'disabled'))
+        if z:
+            self.log(f'⚠ {len(z)} ZOMBIE group(s) detected — ready to clean.', _YELLOW)
+        else:
+            self.log('✅ No zombies. All clean.', _GREEN)
+
+    def _confirm(self, title, msg):
+        from tkinter import messagebox
+        return messagebox.askyesno(title, msg)
+
+    def clean_all(self):
+        zombies = [g for g in self._groups if g.status == 'ZOMBIE']
+        if not zombies:
+            return
+        blocks = '\n\n'.join(
+            f'▸ {g.name}  ({len(g.pids)} processes):\n{self._proc_lines(g)}'
+            for g in zombies)
+        if not self._confirm(
+                'Clean zombies',
+                f'Will remove {len(zombies)} ZOMBIE group(s) and THESE processes:'
+                f'\n\n{blocks}'):
+            return
+        self._do_kill(zombies)
+
+    def kill_selected(self):
+        sel = self._tree.selection()
+        if not sel:
+            self.log('Select a game from the list first.', _YELLOW)
+            return
+        g = next((x for x in self._groups if x.appid == sel[0]), None)
+        if not g:
+            return
+        plist = self._proc_lines(g)
+        if g.status == 'ACTIVE':
+            if not self._confirm(
+                    '⚠ ACTIVE Game',
+                    f'{g.name} appears to be RUNNING (RAM {_fmt_mem(g.max_rss)}, '
+                    f'CPU {g.total_cpu:.0f}%).\n\nAre you sure you want to kill these '
+                    f'processes? You will lose unsaved progress.\n\n{plist}'):
+                return
+        elif not self._confirm(
+                'Kill game',
+                f'Kill {g.name} ({len(g.pids)} processes)?\n\n{plist}'):
+            return
+        self._do_kill([g])
+
+    def _do_kill(self, groups: list[Group]):
+        v0 = vram_used_mb()
+        total = 0
+        for g in groups:
+            total += kill_group(g)
+        v1 = vram_used_mb()
+        freed = (max(0, v0 - v1) if v0 is not None and v1 is not None else None)
+        msg = f'✅ {total} processes removed'
+        if freed is not None:
+            msg += f' · VRAM freed: {freed} MB'
+        self.log(msg, _GREEN)
+        self.refresh()
+
+    def run(self):
+        self.root.mainloop()
+
+
+# ── Entry point ───────────────────────────────────────────────────────────────
+
+def main() -> int:
+    args = sys.argv[1:]
+    if '--list' in args:
+        return cli_list()
+    if '--clean' in args:
+        return cli_clean('--yes' in args or '-y' in args)
+    if '--help' in args or '-h' in args:
+        print(__doc__)
+        return 0
+    try:
+        ReaperGUI().run()
+        return 0
+    except Exception as exc:
+        print(f"Could not open GUI ({exc}).\n"
+              f"Use the command line:  game-reaper --list  |  --clean")
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

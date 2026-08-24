@@ -15,5 +15,6 @@ export UWSM_SILENT_START=1
 export UWSM_APP_UNIT_TYPE=service
 export DEBUG=False
 export TERMINAL=kitty
-export MPDCONF=$XDG_CONFIG_HOME/mpd/mpd.conf
-
+export MPDCONF="$XDG_CONFIG_HOME/mpd/mpd.conf"
+export MPD_HOST="$XDG_RUNTIME_DIR/mpd/socket"
+export XDG_MUSIC_DIR="/mnt/data/music"

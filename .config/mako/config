@@ -13,15 +13,15 @@ sort=-time
 
 #invoke-action <action> 
 # Invoke the named action on the notification. 	An xdg-activation token will be sent to the client, allowing the client to request focus from the compositor. The compositor must support the xdg_activation_v1 protocol and allow the focus request for the following example to work correctly: 	[app-name="some-app-id" actionable] 	on-button-left=invoke-action mail-reply-sender
-		#invoke-default-action
-		#exec 
+#invoke-default-action
+#exec 
 		#example :on-button-middle=exec makoctl menu -n "$id" -- wmenu -p 'Select action: '
-#		 :on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+#on-notify=exec pw-play /usr/share/sounds/freedesktop/stereo/message.oga --volume 0.25
 					
 
-#on-button-left=invoke-default-action
+on-button-left=invoke-default-action
 #on-button-middle=none
-on-button-right=exec makoctl menu -n "$id" -- wmenu -p 'Select action: '
+on-button-right=exec makoctl menu -n "$id" -- fuzzel -p 'Select action: '
 #on-touch=dismiss
 #on-notify=none
 

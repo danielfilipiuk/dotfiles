@@ -2,7 +2,7 @@
 <note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
   <title>.desktop template</title>
   
-<text xml:space="preserve"><note-content version="0.1">.desktop template
+<text xml:space="preserve"><note-content version="0.1"><underline>.desktop template</underline>
 
 [Desktop Entry]
 Version=1.0

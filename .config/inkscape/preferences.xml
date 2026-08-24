@@ -326,7 +326,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm" />
+       unit="px" />
     <eventcontext
        id="text"
        usecurrent="1"
@@ -707,10 +707,10 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svgz.inkscape"
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/vectorized/paintings arte"
+       path="/home/daniel/icons/hicolor/scalable/status"
        use_current_dir="1"
        enable_svgexport="0" />
     <group
@@ -722,7 +722,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/vectorized/paintings arte/" />
+       path="/home/daniel/profile/Boutique/personalizados/fundacion biomes/" />
     <group
        id="import"
        enable_preview="1"
@@ -1365,7 +1365,7 @@
      org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.37795276;stroke-linecap:round;font-weight:bold;stroke-linejoin:round">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Bold';font-family:'JetBrainsMono Nerd Font';font-size:21.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#ff6b26;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.37795276;stroke-linecap:round;font-weight:bold;stroke-linejoin:round">
     <group
        width="942"
        height="211"

@@ -9,4 +9,7 @@ Type=Application
 Categories=Graphics;
 Keywords=bitmap;graphics;editor;
 NoDisplay=true
+Icon=pixelitor
+Path=
+StartupNotify=false
 

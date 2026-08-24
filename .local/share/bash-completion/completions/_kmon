@@ -1,0 +1,120 @@
+#compdef kmon
+
+autoload -U is-at-least
+
+_kmon() {
+    typeset -A opt_args
+    typeset -a _arguments_options
+    local ret=1
+
+    if is-at-least 5.2; then
+        _arguments_options=(-s -S -C)
+    else
+        _arguments_options=(-s -C)
+    fi
+
+    local context curcontext="$curcontext" state line
+    _arguments "${_arguments_options[@]}" : \
+'-a+[Set the accent color using hex or color name]:COLOR:_default' \
+'--accent-color=[Set the accent color using hex or color name]:COLOR:_default' \
+'-c+[Set the main color using hex or color name]:COLOR:_default' \
+'--color=[Set the main color using hex or color name]:COLOR:_default' \
+'-t+[Set the refresh rate of the terminal]:MS:_default' \
+'--tickrate=[Set the refresh rate of the terminal]:MS:_default' \
+'-r[Reverse the kernel module list]' \
+'--reverse[Reverse the kernel module list]' \
+'-u[Show Unicode symbols for the block titles]' \
+'--unicode[Show Unicode symbols for the block titles]' \
+'-E[Interpret the module search query as a regular expression]' \
+'--regex[Interpret the module search query as a regular expression]' \
+'-h[Print help]' \
+'--help[Print help]' \
+'-V[Print version]' \
+'--version[Print version]' \
+":: :_kmon_commands" \
+"*::: :->kmon" \
+&& ret=0
+    case $state in
+    (kmon)
+        words=($line[1] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:kmon-command-$line[1]:"
+        case $line[1] in
+            (sort)
+_arguments "${_arguments_options[@]}" : \
+'-s[Sort modules by their sizes]' \
+'--size[Sort modules by their sizes]' \
+'-n[Sort modules by their names]' \
+'--name[Sort modules by their names]' \
+'-d[Sort modules by their dependent modules]' \
+'--dependent[Sort modules by their dependent modules]' \
+'-h[Print help]' \
+'--help[Print help]' \
+&& ret=0
+;;
+(help)
+_arguments "${_arguments_options[@]}" : \
+":: :_kmon__help_commands" \
+"*::: :->help" \
+&& ret=0
+
+    case $state in
+    (help)
+        words=($line[1] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:kmon-help-command-$line[1]:"
+        case $line[1] in
+            (sort)
+_arguments "${_arguments_options[@]}" : \
+&& ret=0
+;;
+(help)
+_arguments "${_arguments_options[@]}" : \
+&& ret=0
+;;
+        esac
+    ;;
+esac
+;;
+        esac
+    ;;
+esac
+}
+
+(( $+functions[_kmon_commands] )) ||
+_kmon_commands() {
+    local commands; commands=(
+'sort:Sort kernel modules' \
+'help:Print this message or the help of the given subcommand(s)' \
+    )
+    _describe -t commands 'kmon commands' commands "$@"
+}
+(( $+functions[_kmon__help_commands] )) ||
+_kmon__help_commands() {
+    local commands; commands=(
+'sort:Sort kernel modules' \
+'help:Print this message or the help of the given subcommand(s)' \
+    )
+    _describe -t commands 'kmon help commands' commands "$@"
+}
+(( $+functions[_kmon__help__help_commands] )) ||
+_kmon__help__help_commands() {
+    local commands; commands=()
+    _describe -t commands 'kmon help help commands' commands "$@"
+}
+(( $+functions[_kmon__help__sort_commands] )) ||
+_kmon__help__sort_commands() {
+    local commands; commands=()
+    _describe -t commands 'kmon help sort commands' commands "$@"
+}
+(( $+functions[_kmon__sort_commands] )) ||
+_kmon__sort_commands() {
+    local commands; commands=()
+    _describe -t commands 'kmon sort commands' commands "$@"
+}
+
+if [ "$funcstack[1]" = "_kmon" ]; then
+    _kmon "$@"
+else
+    compdef _kmon kmon
+fi

@@ -85,6 +85,12 @@ hl.bind(mainMod .. " + K",  hl.dsp.exec_cmd("app2unit -- wlclock-hypr"),
 {description = "wlclock"})
 
 ---------------------------------------------------------------
+-- HYPRCLOCK 
+hl.bind(mainMod .. "+ ALT + K",  hl.dsp.exec_cmd("app2unit -- hyprclock-hypr"),
+{description = "hyprclock"})
+
+
+---------------------------------------------------------------
 -- TOMBOY NEW NOTE 
 hl.bind(mainMod .. " + N",  hl.dsp.exec_cmd("app2unit -- env QT_QPA_PLATFORM=xcb tomboy-ng -c"),
 {description = "tomboy new note"})

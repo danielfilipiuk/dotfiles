@@ -1,0 +1,35 @@
+{
+  "volume_style": "meter",
+  "advanced": true,
+  "surround_layout": "5.1",
+  "autoload_presets": false,
+  "device_presets": {},
+  "last_page": "dashboard",
+  "dashboard_tab": "overview",
+  "win_width": 1149,
+  "win_height": 882,
+  "win_maximized": true,
+  "graph_positions": {
+    "Midi-Bridge": [
+      60.0,
+      40.0
+    ],
+    "Music Player Daemon": [
+      60.0,
+      118.0
+    ],
+    "alsa_input.pci-0000_30_00.6.analog-stereo": [
+      60.0,
+      214.0
+    ],
+    "alsa_output.pci-0000_30_00.6.analog-stereo": [
+      367.7815781086293,
+      37.95809832726782
+    ]
+  },
+  "notify_links": false,
+  "notify_services": true,
+  "notify_xruns": false,
+  "monitor_poll": 1,
+  "eq_ab_compare": false
+}

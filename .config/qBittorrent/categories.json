@@ -1,0 +1,34 @@
+{
+    "games": {
+        "download_path": false,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "movie": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "series": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "soft": {
+        "download_path": false,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    }
+}

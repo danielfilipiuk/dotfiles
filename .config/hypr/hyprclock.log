@@ -3,9 +3,9 @@
 [WARN] This is a warning message., logger:108
 [ERROR] This is an error message., logger:113
 [INFO] Loading config..., logger:98
-[INFO] Background color: #000000, logger:98
-[INFO] Font color: #00d8d2, logger:98
-[INFO] Font size: 100, logger:98
+[INFO] Background color: #301e2e, logger:98
+[INFO] Font color: #00d8cc, logger:98
+[INFO] Font size: 172, logger:98
 [INFO] Configuration file path: /home/daniel/.config/hypr/hyprclock.conf, logger:98
 [INFO] Building window..., logger:98
 [INFO] Window built successfully., logger:98

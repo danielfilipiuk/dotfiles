@@ -124,8 +124,10 @@ export PAGER="most"
 export QT_ACCESSIBILITY=0
 export SAL_USE_VCLPLUGIN=gtk3
 export RADV_PERFTEST=aco
+#export MPDCONF=$XDG_CONFIG_HOME/mpd/mpd.conf
 export MPDCONF=$XDG_CONFIG_HOME/mpd/mpd.conf
-
+export MPD_HOST=$XDG_RUNTIME_DIR/mpd/socket
+export XDG_MUSIC_DIR=/mnt/data/music
 
  # PARA LOCKEAR LA CONSOLA AUTOMATICAMENTE A LOS 5 MINUTOS DE INACTIVIDAD
 #export TMOUT=20
