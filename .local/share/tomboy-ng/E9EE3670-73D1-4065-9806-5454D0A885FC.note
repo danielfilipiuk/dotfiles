@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>mpcamp 0.1-alpha-v9</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>mpcamp 0.1-alpha-v9</underline>
+
+#1 time info broken, click changes the text "ELAPSED" and "click for remaining" (I think this one is totally unnecesary) but not the time, indeed total now is remaining all the time XD , maybe ditch the change on click. /down distribution is ok, but let's simplify to elapsed/total fixed, no change on click to see remaining (a little bit useless btw , also remove the text, if possbile leave only time info : more visible and less letters -&gt; KIS
+#2 Pause button still glitched, bigger thatn other interface items. maybe replace all the prev/play-pause/stop/next for native ones? those worked in a primitive version. problem I faced configuring jetbrainsfont has several pause / play icons, maybe a more universal font like awesome is more desirable to use, less character variation (in the buttons glyphs don't interact with text, so no real need for a propo font like jb) and I have that too, and thinking in portability-distribution, maybe more universally installed. if not, fallback to tk default icons, if all that is possible
+#3 loved the update database button , but status info at bottom remains there forever "Database update started (job 1)
+#4 selected+hovered  tab color can be same as selected (now it changes to not-selected-hovered, or selected_color+a little bright
+#5 playlist colors ok!
+#6 status bar rightmost info
+#7 somehow the kbps info is not shown anymore : "--"
+#8 clicked player buttons may have the same color as selected_tab, #586B91 (light) #8295BD (dark) , same for random, repeat, single and consume
+#9 pgup/pgdown works in playlist, can home/end work too?
+#10 clear playlist button? maybe al bottom-center, after the tracks/total time info
+#11 bars works ok! maybe turn "VOL" (right of volume bar) to a button so it can be "MUTE" if pressed?
+</note-content></text>
+  <last-change-date>2026-08-26T00:49:54.2858140-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-26T00:49:54.2858140-03:00</last-metadata-change-date>
+  <create-date>2026-08-26T00:49:54.2858140-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

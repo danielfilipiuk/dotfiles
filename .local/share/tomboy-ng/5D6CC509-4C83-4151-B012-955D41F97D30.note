@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>New Note 2026-08-25 23:29:11.675</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>New Note 2026-08-25 23:29:11.675</underline>
+
+v7 testing
+
+#1 volume bar broken if forced to a specific position through random clicking in the whole bar: applies volume change, but bar returns to previous position (volume remains changed)
+#2 volume bar wheel scroll OK, , but applies volume change from visual position, instead the volume applied by #1.
+#3 pause button glyph is bigger than all others, so paused state "deforms" the ui
+#4 time info change on click ok!
+#5 time info too wide. it can be: elaped
+                               <list><list-item dir="ltr">------</list-item></list>
+                                 remaining
+#6 bottom status bar, add total playlist time alongside central "#current/total" info
+#5 general UI distribution feels ok, don't change that for now.
+#6 theme changer OK! let's do it a switchable thematic (moon) or (sun) emoji or jetbrains char.
+#7 󰮯  Consume icon?
+#8 info box looks fine
+#8 response is superb. it even synchronizes with mpDris2 - mako notifications in "real time" -&gt; very fast track changes, info never lags. ui never freezes. -&gt; this' going the right track
+
+</note-content></text>
+  <last-change-date>2026-08-25T23:55:23.2860649-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-25T23:55:23.2860649-03:00</last-metadata-change-date>
+  <create-date>2026-08-25T23:40:15.2861367-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

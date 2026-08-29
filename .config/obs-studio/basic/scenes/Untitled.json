@@ -73,7 +73,9 @@
                 "device_id": "/dev/video0",
                 "input": 0,
                 "pixelformat": 1448695129,
-                "resolution": -1
+                "resolution": 3435973837400,
+                "framerate": -1,
+                "Focus, Absolute": 0
             },
             "mixers": 0,
             "sync": 0,
@@ -123,12 +125,12 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -74.0,
-                            "y": -69.0
+                            "x": 125.0,
+                            "y": 86.0
                         },
                         "pos_rel": {
-                            "x": -1.5260416269302368,
-                            "y": -1.1796875
+                            "x": -1.0078125,
+                            "y": -0.7760416865348816
                         },
                         "scale": {
                             "x": 1.0,
@@ -277,7 +279,7 @@
     "saved_projectors": [],
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -27,
+    "scaling_level": -14,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "modules": {

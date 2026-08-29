@@ -49,6 +49,10 @@ hl.bind(mainMod .. " + XF86Calculator",  hl.dsp.exec_cmd("app2unit -S both -- qa
 {description = "qalculate"})
 
 ---------------------------------------------------------------
+-- RPN CALC
+hl.bind(mainMod .. " + ALT + XF86Calculator",  hl.dsp.exec_cmd("app2unit -S both -- x11-calc"), {description = "RPN calc"})
+
+---------------------------------------------------------------
 -- REGLA
 hl.bind(mainMod .. " + R",  hl.dsp.exec_cmd("app2unit -S both -- length"),
 {description = "ruler"})
@@ -110,6 +114,20 @@ hl.bind(mainMod .. " + CTRL + P",  hl.dsp.exec_cmd("app2unit -- focus-timer"),
 hl.bind(mainMod .. " + ALT + P",  hl.dsp.exec_cmd("hyprprop+yad"),
 {description = "Window properties - hyprprop+yad"})
 
+---------------------------------------------------------------
+--  FUZZEL CHEATSHEET 
+hl.bind(mainMod .. " + H",  hl.dsp.exec_cmd("fuzzel-cheatsheet"),
+{description = "Fuzzel cheatsheet"})
+
+--------------------------------------------------------------
+--  FUZZEL EMOJI 
+hl.bind(mainMod .. " + ALT + period",  hl.dsp.exec_cmd("fuzzel-emoji"),
+{description = "Fuzzel emoji"})
+
+--------------------------------------------------------------
+--  MAKO RESTORE PAST NOTIFICATION 
+hl.bind(mainMod .. " + comma",  hl.dsp.exec_cmd("makoctl restore"),
+{description = "mako restore last notification"})
 ---------------------------------------------------------------
 --------------------------------------------------------------
 ------------------------------ HYPRSHADE -------------------------------

@@ -32,6 +32,7 @@ require("hl.keybinds_mediakeys")
 require("hl.keybinds_zoom")
 require("hl.keybinds_alt-tab_snappy")
 require("hl.keybinds_caps-num")
+require("hl.keybinds_submaps")
 
 
 require("hl.plugin_hyprtasking")

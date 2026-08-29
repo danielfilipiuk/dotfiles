@@ -11,12 +11,12 @@ if [ $EXIT_CODE -eq 0 ]; then
     # Success message
     MSG="$OUTPUT"
     TITLE="Success"
-    notify-send -a "udisksctl" "$TITLE" "$MSG" -i /usr/share/icons/Papirus-Light/128x128/devices/drive-harddisk.svg && pw-play /usr/share/sounds/freedesktop/stereo/device-added.oga --volume 0.25
+    notify-send -a "udisksctl" "$TITLE" "$MSG" -i /usr/share/icons/Papirus-Light/128x128/devices/drive-harddisk.svg && pw-play /home/daniel/sounds/step-start.oga --volume 0.25
 else
     # Failure message: strip out the long D-Bus error paths using sed
     MSG=$(echo "$OUTPUT" | sed -E 's/Error (mount|unmounting) [^:]+: GDBus\.Error:[^:]+: *//')
     TITLE="Error ($ACTION)"
-    notify-send -a "udisksctl" "$TITLE" "$MSG" -i /usr/share/icons/Papirus/64x64/apps/xfce4-fsguard-plugin-warning.svg && pw-play /usr/share/sounds/freedesktop/stereo/dialog-error.oga --volume 0.25
+    notify-send -a "udisksctl" "$TITLE" "$MSG" -i /usr/share/icons/Papirus/64x64/apps/xfce4-fsguard-plugin-warning.svg && pw-play /home/daniel/sounds/step-stop.oga --volume 0.25
 fi
 
 # Send notification via mako (using libnotify's notify-send)

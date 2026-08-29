@@ -10,4 +10,4 @@ StartupWMClass=szyszka
 TryExec=szyszka
 Path=
 StartupNotify=true
-
+Keywords=Rename;Files;

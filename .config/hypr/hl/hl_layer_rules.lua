@@ -30,7 +30,7 @@ hl.layer_rule({
 	match = { namespace = "notifications" }, 
 	blur = true,
     	animation = "slide",
-    	ignore_alpha = 0.5,
+    	ignore_alpha = 0.2,
     	above_lock = 2,
 })
 
@@ -38,7 +38,7 @@ hl.layer_rule({
 	match = { namespace = "launcher" }, 
 	blur = true,
     	blur_popups = true,
-    	ignore_alpha = 0.5,
+    	ignore_alpha = 0.2,
     	animation = "popin",
     	dim_around = true,
 })

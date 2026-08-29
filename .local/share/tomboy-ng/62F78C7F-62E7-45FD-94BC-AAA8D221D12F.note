@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>v14 "The Proper One"</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>v14 "The Proper One"</underline>
+
+<bold>#v13 fixed error:</bold>
+<bold>daniel:~/downloads/mpdamp/0.1-alpha-v13/mpdamp-0.1-alpha-v13-fixed$ ./mpdamp.py</bold>
+<bold>Traceback (most recent call last):</bold>
+  <bold>File "/mnt/500G/downloads/mpdamp/0.1-alpha-v13/mpdamp-0.1-alpha-v13-fixed/./mpdamp.py", line 951, in &lt;module&gt;</bold>
+    <bold>MPDAmp().mainloop()</bold>
+    <bold>~~~~~~^^</bold>
+  <bold>File "/mnt/500G/downloads/mpdamp/0.1-alpha-v13/mpdamp-0.1-alpha-v13-fixed/./mpdamp.py", line 245, in __init__</bold>
+    <bold>self.build()</bold>
+    <bold>~~~~~~~~~~^^</bold>
+  <bold>File "/mnt/500G/downloads/mpdamp/0.1-alpha-v13/mpdamp-0.1-alpha-v13-fixed/./mpdamp.py", line 357, in build</bold>
+    <bold>self.build_queue()</bold>
+    <bold>~~~~~~~~~~~~~~~~^^</bold>
+  <bold>File "/mnt/500G/downloads/mpdamp/0.1-alpha-v13/mpdamp-0.1-alpha-v13-fixed/./mpdamp.py", line 402, in build_queue</bold>
+    <bold>self.queue_tree.bind('&lt;Double-1&gt;', self.queue_double)</bold>
+                                       <bold>^^^^^^^^^^^^^^^^^</bold>
+  <bold>File "/usr/lib/python3.14/tkinter/__init__.py", line 2595, in __getattr__</bold>
+    <bold>return getattr(self.tk, attr)</bold>
+<bold>AttributeError: '_tkinter.tkapp' object has no attribute 'queue_double'</bold>
+
+
+<bold>#I'm on v12 now, and , despite the volume "not-refreshed-on-the-fly"... is a beast of 51K.</bold>
+#if logo cannot be fully integrated, remove it completely! let's change it with
+text "<bold>MPDAMP" in bold, noto sans black if available. &gt; not exceeding box width! (a little less in size than song title - comparing visually here-? if clicked, info dialog is shown as in the logo version.</bold>
+<bold>#time info centered on time box?</bold>
+<bold>#I've seen the code, time box can be reduced in size , I tried  self.display = tk.Frame(self.top, width=100, height=30, bd=1, relief='flat') and it does not look bad, reduce it (take care of the MPDAMP text of the previous item ) because:</bold>
+<bold>#no cava integration in near future: I really want as much as possible the app to not have any (nor even a png) to depend on. -&gt; "mpdamp: a graphical interface for mpd/mpc and a tribute to the OG Winamp, it can be executed from any folder, only the mpdamp.py file is needed" philosophy.</bold>
+<bold>#At least, until UI is rock solid and cava integration or correct logo integration became new goals.</bold>
+<bold>#let's focus on volume situation. both v13 versions failed. v4 has the correct behavior coded. v12 has mute working. V14 must have auto refresh volume bar like v4 version, mute working as v12 IF the feature don't mess v4 code for volume bar.</bold>
+<bold>#let's not mess anything else than those items! the rest is OK</bold>
+<bold># (self.minsize(600, 480) -&gt; looks good for a minimal size when reduced, all tabs shown </bold>
+
+
+
+
+</note-content></text>
+  <last-change-date>2026-08-26T16:16:39.8983183-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-26T16:16:39.8983183-03:00</last-metadata-change-date>
+  <create-date>2026-08-26T16:16:39.8983183-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

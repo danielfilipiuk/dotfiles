@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>mpdamp 0.1-alpha-v10</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>mpdamp 0.1-alpha-v10</underline>
+
+testing / todo
+#1 current song highlight only is reflected when changing tab and returning to playlist, not in "real time" while in playlist tab. selected song remains selected, it works. issue is with currently playing one.
+#1 accents looks fine on active buttons.
+#3 back to icons! looks good
+#4 tab colors ok
+#5 time ui is back! it's ok, for the space it actually occupies, (time box size seems to be fixed) it can be just right of mpdamp icon, leaving below a "prrrecious " space for a future Cava placement?
+#9 elapsed time is "clickable" but has no action. -&gt; if it can be cleanly implemented , let's do it; click changes "elapsed" to "-remaining" -&gt; note the minus, like this format -03:16
+#6 pressing delete in queue tab over an item removes the item, but arrows respond no more till I click on another song. delete only works in playlist tab, as expected. other tabs dont respond to enter nor delete and that's ok, interaction must be by mouse clicks and shift/ctrl+mouse, as expected.
+#7 if it is possible in Browse tab to add selected folders with add button (or another dedicated button if cannot be integrated into current one) or only works for single / multiple files, not folders?
+#8 kbps info broken again = 0 kbps, sometimes it works randomly
+#10 external mpd volume changes and muted status are not recognized in the app's volume bar, whereas internal changes cleanly affects external statuses. (I can see them reflected in waybar's mpd module) -&gt; updates when pause/play
+# possible icons to use (I've noted some horribly overlap next character, so decide if it's worth to use these)
+these are suggestions, I don't want to mess the ui: it's fine rn
+#awesome possible replacements:
+ before PLAYING / QUEUE
+ before DATABASE
+ before BROWSE
+ before SEARCH
+ single
+  volume
+ volume muted
+ previous
+ pĺay
+ pause
+ stop
+ next
+ random
+ repeat
+ before CLEAR QUEUE
+ before UPDATE DATABASE
+ before ADD SELECTED
+ before ADD ALL SHOWN
+ before BACK
+ (light)
+  (dark)
+#noto emoji: ⏸ ▶ ⏯ ⏭ ⏮ ➕ ❎ ❌ 🎵 🎶  🎼  📁  🔍  🔆  🌙
+#11 new tab "PLAYLISTS" -&gt; access mpd configured playlist folder and shows playlists . you can write a name and click "SAVE PLAYLIST" so no extra dialog opens and playlist is saved. "DELETE PLAYLIST" seems useful also. double click to load the playlist and replace the current queue, button to "ADD TO QUEUE" -&gt; add playlist to bottom to current queue. tab somewhat like "BROWSE", that shows playlist dir in real time, no access to other dir, automatically named with ".m3u" so any name can be inserted, it will always be saved as m3u.
+#12 don't know why app icon shown in waybar taskbar is a yellow sun "☀️" 😅
+#13 been using mpcamp for hours, no other issue encountered, no crashes, feels "solid", both themes.
+-&gt; mpdamp 0.1-alpha-v11 "mailman's back with news"
+
+
+</note-content></text>
+  <last-change-date>2026-08-26T03:20:41.2864014-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-26T03:20:41.2864014-03:00</last-metadata-change-date>
+  <create-date>2026-08-26T01:09:27.2854500-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>901</width>
+  <height>550</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

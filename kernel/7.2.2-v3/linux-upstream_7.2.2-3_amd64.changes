@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 28 Aug 2026 15:38:21 -0300
+Source: linux-upstream
+Binary: linux-headers-7.2.2-polaris-v3 linux-image-7.2.2-polaris-v3 linux-libc-dev
+Architecture: amd64
+Version: 7.2.2-3
+Distribution: forky
+Urgency: low
+Maintainer: daniel <daniel@POLARIS.PUROSELLO>
+Changed-By: daniel <daniel@POLARIS.PUROSELLO>
+Description:
+ linux-headers-7.2.2-polaris-v3 - Linux kernel headers for 7.2.2-polaris-v3 on amd64
+ linux-image-7.2.2-polaris-v3 - Linux kernel, version 7.2.2-polaris-v3
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-upstream (7.2.2-3) forky; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 4976db4c47e6466fadd41e6938355ef785bb13f1 9780880 linux-headers-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ 19365bac4cd6bc7230d1cf6ccef4cd17054c5acf 30447404 linux-image-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ 0cf66ab69f72787e9aa439305a4499827a1da413 1505948 linux-libc-dev_7.2.2-3_amd64.deb
+ 0f3d69ad17792ba14e10a01b4dc0584e12c4658b 7265 linux-upstream_7.2.2-3_amd64.buildinfo
+Checksums-Sha256:
+ 9733379d8b73a72359b3472e1146ada77ea4dbf0b77da369575f992216da3cd2 9780880 linux-headers-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ dd9e4cc4c4ed479dcc3e03efd103a1cea455bde9016e2c692382f21aba0e7350 30447404 linux-image-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ 81962b93ffedaa6600a44ff10176cf0ada6fcd51548d034b74a99aad7a2d7d6e 1505948 linux-libc-dev_7.2.2-3_amd64.deb
+ bd95193b291e92e168c360dd56b67b2d2144a0c6f73eb4ff3786bce62d6c92d8 7265 linux-upstream_7.2.2-3_amd64.buildinfo
+Files:
+ db2bbaca560f13c775bb12fa79e655e8 9780880 kernel optional linux-headers-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ f12fca9f0a84e7a6afe1480372fff47e 30447404 kernel optional linux-image-7.2.2-polaris-v3_7.2.2-3_amd64.deb
+ 200ac3a959d46e208b8db45ab7398e17 1505948 devel optional linux-libc-dev_7.2.2-3_amd64.deb
+ 3466ef78e6321f2d1e24a114292618aa 7265 kernel optional linux-upstream_7.2.2-3_amd64.buildinfo

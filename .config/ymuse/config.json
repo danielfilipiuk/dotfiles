@@ -59,7 +59,7 @@
             "URI": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
         }
     ],
-    "LibraryPath": "artists\u0001\u0002artist\u0001\u0002album\u0001",
+    "LibraryPath": "artists\u0001",
     "MainWindowDimensions": {
         "X": 0,
         "Y": 0,

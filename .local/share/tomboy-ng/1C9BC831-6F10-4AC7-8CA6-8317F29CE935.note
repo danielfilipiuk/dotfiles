@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>New Note 2026-08-25 18:23:42.293</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>New Note 2026-08-25 18:23:42.293</underline>
+
+testing/todo:
+<list><list-item dir="ltr"><list><list-item dir="ltr">progress bar can it be a "fillable" bar? "filledbararea" one color, remaining song time another "totalbararea" color</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">volume bar also can have color settings for filled and total</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">"mpdamp" above time and "eject" shows same info, one can be replaced -&gt; eject can be removed</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">mpd info in "mpsamp" dialog shows "?"</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">playlist current item and selected item now does not "show" highlighted or  selected. "selected" color is shown only when double-clicking item, then dissapears</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">below time, alongside song samplerate info, it also could show bitrate, audio format (opus, mp3, etc)</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">play/pause can be an integrated button</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">you can abuse jetbrains-mono-nerdfont-propo icons if needeas I have it extensively integrated in system ui</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">https://github.com/JetBrains/JetBrainsMono</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">cava integration as a replacement for winamp mini integrated spectrum visualizer</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">playlist current item number / total items can be moved from main UI to bottom status bar, leftmost to current status/song, left-aligned</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">when clicking on elapsed time it can change between elapsed/remaining</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">sometimes interface freezes, buttons works, but it is frozen. no apparent cause, it just happens when interacting too much with it.</list-item></list></list-item></list>
+
+mpdamp-0.1-alpha-v6
+testing
+<list><list-item dir="ltr"><list><list-item dir="ltr">UI survived abusive behavior -&gt; no freezes.</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">seek and volume bars "glitch" when dragged from the indicator. clicking random points work as expected, bar moves to that point.</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">time info does not appear, only a white thin horizontal bar at right of song info box</list-item></list></list-item></list>
+todo
+<list><list-item dir="ltr"><list><list-item dir="ltr">add buttons for "consume" "single" alongside random and repeat ones (nice you added those) .</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">buton for "database update" in database tab.</list-item></list></list-item></list>
+<list><list-item dir="ltr"><list><list-item dir="ltr">add a tab like ncmpcpp "Browse: /" that let's you navigate through local dir structure: I have mine foldered as genres - bands - albums , so I frequently go directly to genre folder to find what I was looking, as not tracks have the genre idtag set for a native search</list-item></list></list-item></list>
+<list><list-item dir="ltr">v6 interface is better than v5</list-item></list>
+<list><list-item dir="ltr">v5 light theme was ok! this v6 "warm dark" is good also! so v5 could be "light" theme and v6 could be "dark" theme in v7. they look fine as they are. themes be switched by a single button at status bar, rightmost corner maybe.</list-item></list>
+<list><list-item dir="ltr"></list-item></list>
+
+
+</note-content></text>
+  <last-change-date>2026-08-25T23:20:46.2870914-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-25T23:20:46.2870914-03:00</last-metadata-change-date>
+  <create-date>2026-08-25T19:12:46.2863583-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>771</width>
+  <height>545</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

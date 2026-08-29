@@ -9,7 +9,7 @@ notify() {
         -a "GPU Screen Recorder" \
         -i camera-video \
         -u normal \
-        -t 5000 \
+        -t 2500 \
         "$1" "$2"
 }
 
@@ -17,7 +17,7 @@ notify() {
 # Handle process toggle safely for long process name string lengths
 if pgrep -f "gpu-screen-recorder" >/dev/null; then
     pkill -SIGINT -f "gpu-screen-recorder"
-    notify "⬛  Window Recording stopped" "💾  Video saved." && pw-play /usr/share/sounds/freedesktop/stereo/camera-shutter.oga --volume 0.25
+    notify "⬛  Window Recording stopped" "💾  Video saved." && pw-play /home/daniel/sounds/stop-recording.oga --volume 0.25
     exit 0
 fi
 
@@ -33,7 +33,7 @@ FILENAME="$OUTPUT_DIR/window_$(date +%Y-%m-%d_%H-%M-%S).mp4"
 # Set audio device
 AUDIO_DEVICE="alsa_output.pci-0000_30_00.6.analog-stereo.monitor"
 
-notify "🔴 Window Recording started" "$(basename "$FILENAME")" && pw-play /usr/share/sounds/freedesktop/stereo/message.oga --volume 0.25
+notify "🔴 Window Recording started" "$(basename "$FILENAME")" && pw-play /home/daniel/sounds/start-recording.oga --volume 0.25
 
 # FIX: Use "-w region" and pass the specific geometry structure to "-region"
 #gpu-screen-recorder -w region -region "${WIDTH}x${HEIGHT}+${X_POS}+${Y_POS}" -f 60 -a "$AUDIO_DEVICE" -o "$FILENAME"

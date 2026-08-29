@@ -5,7 +5,7 @@ Name=MEGAsync
 GenericName=File Synchronizer
 Comment=Easy automated syncing between your computers and your MEGA cloud drive.
 Icon=mega
-TryExec=megasync
+TryExec=QT_QPA_PLATFORM=xcb megasync
 Exec=megasync
 Actions=
 Categories=Network;

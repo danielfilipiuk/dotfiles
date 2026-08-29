@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>cargo commands</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>cargo commands</underline>
+
+ok
+cargo build --profile release
+?
+cargo install --profile release
+
+</note-content></text>
+  <last-change-date>2026-08-28T01:53:10.5732611-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-28T01:53:10.5732611-03:00</last-metadata-change-date>
+  <create-date>2026-08-28T01:53:10.5732611-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -67,6 +67,6 @@
     },
     "updates": {
         "channel": "stable",
-        "last_notified_version": ""
+        "last_notified_version": "v0.16.0"
     }
 }

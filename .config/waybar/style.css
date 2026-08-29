@@ -6,7 +6,7 @@
 * {
 	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
 	font-size: 12px; 
-	font-weight: normal;
+	font-weight: bold;
 	/*font-variant: small-caps;*/
 	-gtk-dpi: 96;
 	letter-spacing: 0px;
@@ -14,7 +14,7 @@
 	/*text-shadow: 1px 1px 2px  rgba(48,30,46,.25);*/
 	-gtk-icon-style: regular;
 	-gtk-icon-theme: "Papirus";
-	color: rgba(48,30,46,1);
+	color: rgba(55,59,62,1);
 	transition:
     		background-color 250ms ease-out,
     		color 250ms ease-out,
@@ -34,12 +34,12 @@ window#waybar.toplevel-active {background: #60406c;}
 
 /* TOOLTIPS */
 tooltip {background: rgba(248,246,242,.75);
-	border-top:    4px solid rgba(208, 132, 204,.5);
-	border-left:   4px solid rgba(208, 132, 204,.5);
-	border-right:  4px solid rgba(208, 132, 204,.6);
-	border-bottom: 4px solid rgba(208, 132, 204,.7);}
+	border-top:    4px solid rgba(19, 122, 127, .5);
+	border-left:   4px solid rgba(19, 122, 127, .5);
+	border-right:  4px solid rgba(225, 40, 133,.6);
+	border-bottom: 4px solid rgba(225, 40, 133,.6);}
 tooltip label {	padding: 7px 7px;
-		text-shadow: 2px 1px 2px rgba(42,32,46,.5);
+		text-shadow: 2px 1px 2px rgba(55,59,62,.5);
 		font-variant: normal;
 		font-weight: normal;
 		letter-spacing: 0.5px;}
@@ -47,14 +47,14 @@ tooltip label {	padding: 7px 7px;
 
 /* MENUS */
 menu {	background: rgba(248,246,242,.75);
-	border-top:    4px solid rgba(208, 132, 204,.5);
-	border-left:   4px solid rgba(208, 132, 204,.5);
-	border-right:  4px solid rgba(208, 132, 204,.6);
-	border-bottom: 4px solid rgba(208, 132, 204,.7);
-	box-shadow: 2px 1px 2px rgba(42,32,46,.25);}
+	border-top:    4px solid rgba(19, 122, 127,.5);
+	border-left:   4px solid rgba(19, 122, 127,.5);
+	border-right:  4px solid rgba(225, 40, 133,.6);
+	border-bottom: 4px solid rgba(225, 40, 133,.6);
+	box-shadow: 2px 1px 2px rgba(55,59,62,.5);}
 menu label {	color: rgba(48,30,46,.90);
 		padding: 2px 0px;
-		text-shadow: 2px 1px 2px rgba(42,32,46,.5);
+		text-shadow: 2px 1px 2px rgba(55,59,62,.5);
 		font-variant: normal;
 		font-weight: normal;
 		letter-spacing: 0.5px;}
@@ -63,36 +63,36 @@ menu label {	color: rgba(48,30,46,.90);
 button {}
 box {}
 label.module {
-	
-	padding: 3px 10px;
-	background: rgba(248,246,242,.70);
-	text-shadow: 2px 1px 2px  rgba(48,30,46,.25);
+	color: rgba(253, 246, 227,1);
+	padding: 0px 10px;
+	background:	rgba(19, 122, 127,.55);
+	/*background: rgba(248,246,242,.70);*/
+	text-shadow: 2px 1px 2px  rgba(55,59,62,.5);
 	/*text-shadow: 1px 1px 2px  rgba(248,246,242,.5);*/}
 label.module:hover {
 	/*font-weight: bold;*/
-	
-	background: rgba(208, 132, 204,1);
-	text-shadow: 2px 1px 2px  rgba(48,30,46,.15);
+	background: 	rgba(225, 40, 133,.75);
+	/*background: rgba(208, 132, 204,1);*/
 	/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
 
 /* MODULES SETTINGS */
 /* WLR / TASKBAR */
 #taskbar {}
 #taskbar.empty {background-color: transparent;}
-#taskbar button{padding: 3px 12px;
-		background: rgba(248,246,242,.5);
-		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#taskbar button.active {background: rgba(208, 132, 204,.9);
-			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#taskbar button:hover {	background: rgba(208, 132, 204,1);
+#taskbar button{padding: 0px 10px;
+		background:	rgba(19, 122, 127,.55);
+		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.25);}
+#taskbar button.active {background: 	rgba(225, 40, 133,.75);
+			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
+#taskbar button:hover {	background: 	rgba(225, 40, 133,.85);
 			-gtk-icon-effect: highlight;
-			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
+			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);}
  
  /* SUBMAP */
-#submap {	min-width: 40px;	
-		background: rgba(208, 132, 204,.9);
+#submap {	background: 	rgba(225, 40, 133,.75);	
+		min-width: 40px;	
 		text-shadow: 2px 1px 2px  rgba(48,30,46,.5);}
-#submap:hover {	background: rgba(208, 132, 204,1);}
+#submap:hover {	background: 	rgba(225, 40, 133,.85);}
 
 /* TEMPERATURE */
 #temperature {min-width: 50px;}
@@ -106,8 +106,7 @@ label.module:hover {
 #cpu {min-width: 100px;}
 #cpu.50 {background-color: #f0932b;}
 #cpu.50:hover {background-color: #ffa500;}
-#cpu.90 {background-color: #eb4d4b;
-	color: rgba(248,246,242,1);}
+#cpu.90 {background-color: #eb4d4b;}
 #cpu.90:hover {background-color: #ff6347;}
 
 /* MEMORY */
@@ -115,70 +114,66 @@ label.module:hover {
 
 /* GPU USAGE */
 #custom-gpu-usage {}
-#custom-gpu-usage:hover {	font-weight: normal;
-				background: rgba(208, 132, 204,1);}
+#custom-gpu-usage:hover {	font-weight: bold;
+				background: 	rgba(225, 40, 133,1);}
 
 /* CAVA */
 #cava {	   	min-width: 75px;
-		color: rgba(208, 132, 204,.95);
 		/*color: rgba(50,25,65,.75);*/
-		text-shadow: 2px 1px 2px  rgba(48,30,46,.75);
+		text-shadow: 2px 1px 5px rgba(253, 246, 227,.85);
 		/*text-shadow: 1px 2px 2px rgba(248,246,242,.5);*/}
-#cava:hover {	background: rgba(208, 132, 204,1);
+#cava:hover {	background: 	rgba(225, 40, 133,.75);	
 		/*text-shadow: 2px 1px 2px  rgba(48,30,46,.15);*/
-		text-shadow: 2px 1px 2px rgba(248,246,242,.75);
-		color: rgba(48,30,46,1);}
+		text-shadow: 2px 1px 5px  rgba(134, 206, 203,.95);}
 
 /* MPD  */
 #mpd {}
-#mpd.playing {	background: rgba(208, 132, 204,.90);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
+#mpd.playing {	background: 	rgba(225, 40, 133,.75);
 		/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
-#mpd.playing:hover {	background: rgba(208, 132, 204,1);}
-#mpd.paused {	color: rgba(48,30,46,.65);	
-		background: rgba(208, 132, 204,.8);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
+#mpd.playing:hover {	background: 	rgba(225, 40, 133,.85);}
+#mpd.paused {	color: rgba(253, 246, 227,.65);	
+		background: 	rgba(225, 40, 133,.55);
 		/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
-#mpd.paused:hover {	background: rgba(208, 132, 204,1);}
-#mpd.stopped {	color: rgba(48,30,46,.50);
-		text-shadow: 1px 1px 2px  rgba(48,30,46,.25);
+#mpd.paused:hover {	background: 	rgba(225, 40, 133,.75);}
+#mpd.stopped {	color: rgba(253, 246, 227,.5);
 		/*text-shadow: 1px 1px 2px rgba(248,246,242,0.5);*/}
-#mpd.stopped:hover {	background: rgba(208, 132, 204,1);}
-#mpd.disconnected {	color: #ffb300;
-			text-shadow: 1px 1px 2px  rgba(48,30,46,.5);}
-#mpd.disconnected:hover {	background: #ffd700;
-				text-shadow: 1px 1px 2px  rgba(48,30,46,.5);}
+#mpd.stopped:hover {	background: 	rgba(225, 40, 133,.75);}
+#mpd.disconnected {	color: #ffb300;}
+#mpd.disconnected:hover {	background: #ffd700;}
 
 /* PULSEAUDIO  */
 #pulseaudio {min-width: 45px;}
-#pulseaudio.0 {color: rgba(48,30,46,.50);}
-#pulseaudio.muted {	background: rgba(208, 132, 204,.90);}
-#pulseaudio.muted:hover {background: rgba(208, 132, 204,1);}
+#pulseaudio.0 {color: rgba(253, 246, 227,.55);}
+#pulseaudio.25 {color: rgba(253, 246, 227,.65);}
+#pulseaudio.50 {color: rgba(253, 246, 227,.75);}
+#pulseaudio.75 {color: rgba(253, 246, 227,.85);}
+#pulseaudio.100 {color: rgba(253, 246, 227,1);}
+#pulseaudio.muted {	background: 	rgba(225, 40, 133,.75);
+			color: rgba(253, 246, 227,.75);}
+#pulseaudio.muted:hover {background: 	rgba(225, 40, 133,.85);}
 
 
 
 /* PULSEAUDIO SLIDER */
-#pulseaudio-slider {	padding: 3px 7px;
-			background: rgba(248,246,242,.70);
+#pulseaudio-slider {	padding: 0px 7px;
+			background:	rgba(19, 122, 127,.55);
 			}
-#pulseaudio-slider:hover {background: rgba(248,246,242,.85);}
-#pulseaudio-slider.muted {	background: rgba(208, 132, 204,.8); }
-#pulseaudio-slider.muted:hover {   background: rgba(208, 132, 204,1); }
+#pulseaudio-slider:hover {background:	rgba(19, 122, 127,.85);}
+#pulseaudio-slider.muted {	background: 	rgba(225, 40, 133,.75); }
+#pulseaudio-slider.muted:hover {   background: 	rgba(225, 40, 133,.85); }
 #pulseaudio-slider slider {background: rgba(248,246,242,0);}
-#pulseaudio-slider.muted trough {background: rgba(48,30,46,.15);
-  }
-#pulseaudio-slider.muted trough:hover {background: rgba(48,30,46,.35);
-  }
-#pulseaudio-slider trough {	background: rgba(48,30,46,.15);
-				min-height: 16px;
+#pulseaudio-slider.muted trough {background: rgba(253, 246, 227,.55);  }
+#pulseaudio-slider.muted trough:hover {background: rgba(253, 246, 227,.85);  }
+#pulseaudio-slider trough {	background: rgba(253, 246, 227,.55);
+				min-height: 14px;
 			   	min-width: 50px;
 			   	border-radius: 16px;}
-#pulseaudio-slider highlight {	background: rgba(208, 132, 204,.85);
+#pulseaudio-slider highlight {	background: 	rgba(225, 40, 133,.65);
 				border-radius: 16px;}
-#pulseaudio-slider highlight:hover {	background: rgba(208, 132, 204,1);}
-#pulseaudio-slider.muted highlight {	background: rgba(208, 132, 204,.1);
+#pulseaudio-slider highlight:hover {	background: 	rgba(225, 40, 133,.85);}
+#pulseaudio-slider.muted highlight {	background: 	rgba(225, 40, 133,.75);
 				border-radius: 16px;}
-#pulseaudio-slider.muted highlight:hover {	background: rgba(208, 132, 204,1);}
+#pulseaudio-slider.muted highlight:hover {	background: rgba(208, 132, 204,.85);}
 
 /* CUSTOM KEYBOARD STATE  */
 
@@ -218,24 +213,24 @@ label.module:hover {
 				background: rgba(208, 132, 204,.85);}
 
 /* TRAY  */
-#tray {	background: rgba(248,246,242,.5);
-	padding: 3px 7px;
-	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
+#tray {	background:	rgba(19, 122, 127,.55);
+	padding: 0px 10px;
+	-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.5);
 	-gtk-icon-style: regular;}
 	
-#tray:hover {	background: rgba(208, 132, 204,1);	
+#tray:hover {	background: 	rgba(225, 40, 133,.75);
 		-gtk-icon-effect: highlight;
-		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .active {-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);
+		-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.25);}
+#tray > .active {-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.25);
 		-gtk-icon-style: regular;}
-#tray > .active:hover {	background: rgba(208, 132, 204,1);
+#tray > .active:hover {	background: 	rgba(225, 40, 133,.75);
 			-gtk-icon-effect: highlight;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .passive {	background: rgba(195, 152, 184,1);
+#tray > .passive {	background: 	rgba(225, 40, 133,.25);
 			-gtk-icon-style: regular;
 			-gtk-icon-effect: dim;
 			-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
-#tray > .needs-attention {	background: rgba(208, 132, 204,1);
+#tray > .needs-attention {	background: 	rgba(225, 40, 133,.75);
 				-gtk-icon-style: regular;
 				-gtk-icon-effect: highlight;
 				-gtk-icon-shadow: 1px 2px 2px rgba(30,30,30,.75);}
@@ -246,10 +241,9 @@ label.module:hover {
 #network.disconnected:hover {background: #ffd700;}
 
 /* INHIBITOR  */
-#inhibitor {color: rgba(30,30,30,.55);}
-#inhibitor.activated {	background: rgba(208, 132, 204,.9);
-			color: rgba(30,30,30,.95);}
-#inhibitor.activated:hover {	background: rgba(208, 132, 204,1);}
+#inhibitor {}
+#inhibitor.activated {	background: 	rgba(225, 40, 133,.75);}
+#inhibitor.activated:hover {	background: 	rgba(225, 40, 133,.85);}
 
 /*  DISK */
 #disk {}
@@ -260,14 +254,10 @@ label.module:hover {
 /* SYSTEMD FAILED UNITS */
 
 #systemd-failed-units {
-	
-	background: rgba(208, 132, 204,0.8);
-	text-shadow: 2px 1px 2px  rgba(48,30,46,.15);
 			}
-#systemd-failed-units:hover {background: rgba(208, 132, 204,1);}
+#systemd-failed-units:hover {background: 	rgba(225, 40, 133,.85);}
 #systemd-failed-units.ok {}
-#systemd-failed-units.degraded {background: rgba(208, 132, 204,1);
-	text-shadow: 2px 1px 2px  rgba(48,30,46,.15);}
+#systemd-failed-units.degraded {background: 	rgba(225, 40, 133,.75);}
 
 /* WIREPLUMBER  */
 /*#wireplumber {background-color: transparent;} 

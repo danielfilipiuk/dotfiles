@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MPD⚡AMP
+Comment=a graphical interface for MPD/mpc and a tribute to the OG Winamp.
+GenericName=Music Player for MPD 
+Exec=/home/daniel/bin/mpdamp.py
+Icon=mpdamp
+Terminal=false
+Categories=AudioVideo;Music;Audio;Player; 
+Keywords=mpd;music;mp3;mpc;winamp;mpdamp;play;

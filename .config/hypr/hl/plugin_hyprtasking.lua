@@ -9,38 +9,38 @@
 
 ------------------------------- PLUGIN HYPRTASKING  -------------------------------
 --------------------------------------------------------------
-hl.bind(mainMod .. " + mouse:275", function() hl.plugin.hyprtasking.toggle("cursor") end)
-hl.bind(mainMod .. " + mouse:276", function() hl.plugin.hyprtasking.toggle("all") end)
+hl.bind(mainMod .. " + mouse:275", function() hl.plugin.hyprtasking.toggle("cursor") end,  {description = "HyprTasking active monitor workspaces"})
+hl.bind(mainMod .. " + mouse:276", function() hl.plugin.hyprtasking.toggle("all") end, {description = "HyprTasking all monitors workspaces"})
 --hl.bind(mainMod .. " + SHIFT + Tab", function() hl.plugin.hyprtasking.toggle("cursor") end)
-hl.bind(mainMod .. " + CTRL + Tab", function() hl.plugin.hyprtasking.toggle("all") end)
+hl.bind(mainMod .. " + CTRL + Tab", function() hl.plugin.hyprtasking.toggle("all") end, {description = "HyprTasking all monitors workspaces"})
 -- escape closes the overview if it's open
 hl.bind("escape", function()
   if hl.plugin.hyprtasking.is_active() then
     hl.plugin.hyprtasking.toggle('all')
   end
-end, { non_consuming = true })
+end, { non_consuming = true }, {description = "exit Hyprtasking view"})
 
 -------------  CERRAR VENTANAS  ---------------------
 --hl.bind(mainMod .. " + Q ", function() hl.plugin.hyprtasking.killhovered() end)
 
 -------------  MOVERSE ENTRE WORKSPACES   ---------------------
-hl.bind(mainMod .. " + CTRL + Left", function() hl.plugin.hyprtasking.move("left") end)
-hl.bind(mainMod .. " + CTRL + Right", function() hl.plugin.hyprtasking.move("right") end)
-hl.bind(mainMod .. " + CTRL + Up", function() hl.plugin.hyprtasking.move("up") end)
-hl.bind(mainMod .. " + CTRL + Down", function() hl.plugin.hyprtasking.move("down") end)
+hl.bind(mainMod .. " + CTRL + Left", function() hl.plugin.hyprtasking.move("left") end, {description = "HyprTasking left workspace"})
+hl.bind(mainMod .. " + CTRL + Right", function() hl.plugin.hyprtasking.move("right") end, {description = "HyprTasking right workspace"})
+hl.bind(mainMod .. " + CTRL + Up", function() hl.plugin.hyprtasking.move("up") end, {description = "HyprTasking upper workspace"})
+hl.bind(mainMod .. " + CTRL + Down", function() hl.plugin.hyprtasking.move("down") end, {description = "HyprTasking lower workspace"})
 
 -------------  MOVER VENTANAS ENTRE WORKSPACES   ---------------------
-hl.bind(mainMod .. " + ALT + Left", function() hl.plugin.hyprtasking.movewindow("left") end)
-hl.bind(mainMod .. " + ALT + Right", function() hl.plugin.hyprtasking.movewindow("right") end)
-hl.bind(mainMod .. " + ALT + Up", function() hl.plugin.hyprtasking.movewindow("up") end)
-hl.bind(mainMod .. " + ALT + Down", function() hl.plugin.hyprtasking.movewindow("down") end)
+hl.bind(mainMod .. " + ALT + Left", function() hl.plugin.hyprtasking.movewindow("left") end, {description = "HyprTasking move window to left workspace"})
+hl.bind(mainMod .. " + ALT + Right", function() hl.plugin.hyprtasking.movewindow("right") end, {description = "HyprTasking move window to right workspace"})
+hl.bind(mainMod .. " + ALT + Up", function() hl.plugin.hyprtasking.movewindow("up") end, {description = "HyprTasking move window to upper workspace"})
+hl.bind(mainMod .. " + ALT + Down", function() hl.plugin.hyprtasking.movewindow("down") end, {description = "HyprTasking move window to lower workspace"})
 
 --hl.bind("SUPER + D", function() hl.plugin.hyprtasking.move("out") end)
 --hl.bind("SUPER + SHIFT + A", function() hl.plugin.hyprtasking.movewindow("out") end)
 
 -------------  LAYERS ---------------------
-hl.bind(mainMod .. " + CTRL + 1", function() hl.plugin.hyprtasking.setlayer(1) end)
-hl.bind(mainMod .. " + CTRL + 2", function() hl.plugin.hyprtasking.setlayer(2) end)
+hl.bind(mainMod .. " + CTRL + 1", function() hl.plugin.hyprtasking.setlayer(1) end, {description = "HyprTasking layer 1"})
+hl.bind(mainMod .. " + CTRL + 2", function() hl.plugin.hyprtasking.setlayer(2) end, {description = "HyprTasking layer 2"})
 
 
 ------------- CONFIG  ---------------------

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>mpdamp 0.1-alpha-v11</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>mpdamp 0.1-alpha-v11</underline>
+
+#1 current song highlight only is reflected when changing tab and returning to playlist, not in "real time" while in playlist tab
+#1 accents looks fine on active buttons.
+#3 back to icons! looks good
+#4 tab colors ok
+#5 time ui is back! it's ok, for the space it actually occupies, (time box is size fixed?) it can be right of mpdamp icon, leaving below a "prrrecious" space for a future Cava placement?
+#6 pressing delete in queue tab removes the item, but arrows respond no more till I click on another song. behavior only occurs in playlist tab, as expected. other tabs dont respond to enter nor delete and that's ok, interaction must be by mouse clicks and shift/ctrl+mouse, as expected.
+#7 if it is possible in Browse tab to add selected folders with button or only works for single / multiple files, not folders?
+#8 kbps info broken again = 0 kbps
+#9 elapsed time is "clickable" but no action. -&gt; I guess the change to remaining is absent but the link to it remained? if it can be cleanly implemented , let's do it . BUT if only changes "elapsed" to "-remaining" -&gt; note the minus, like this format -03:16
+#10 external mpd volume changes and muted status are not recognized in the app's volume, whereas internal changes cleanly affects external statuses. (I can see them reflected in waybar's mpd module)
+</note-content></text>
+  <last-change-date>2026-08-26T01:35:12.0323397-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-26T01:35:12.0323397-03:00</last-metadata-change-date>
+  <create-date>2026-08-26T01:09:27.2854500-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -10,7 +10,7 @@
   "output": "DVI-D-1",
 
   "position": "top",
-  "height": 30,
+  "height": 26,
   "spacing": 5,
 
   "expand-left": false,
@@ -20,10 +20,10 @@
   "mode": "dock",
   "reload_style_on_change": true,
 
-  "margin-top": 5,
-  "margin-bottom": 7,
-  "margin-left": 5,
-  "margin-right": 5,
+  "margin-top": 3,
+  "margin-bottom": 5,
+  "margin-left": 3,
+  "margin-right": 3,
 
   "markup": true,
 ///////////////////////////////////////////////////////////////////////////////////////

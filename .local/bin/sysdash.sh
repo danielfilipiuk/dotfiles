@@ -6,7 +6,7 @@ tmux has-session -t $SESSION_NAME 2>/dev/null && tmux kill-session -t $SESSION_N
 
 tmux new-session -d -s $SESSION_NAME -n Monitor 'btop'
 tmux split-window -v 'amdgpu_top'
-tmux split-window -h 'journalctl --no-hostname -f'
+tmux split-window -h 'journalctl --no-hostname --no-tail -b -f'
 tmux split-window -v 'neo'
 
 # Reapply perfect layout

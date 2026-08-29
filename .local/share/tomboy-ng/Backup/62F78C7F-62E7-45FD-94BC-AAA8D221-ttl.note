@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>v14 "The Proper one"</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>v14 "The Proper one"</underline>
+
+<bold>#I'm on v12 now, and , despite the volume "not-refreshed-on-the-fly"... is a beast of 51K.</bold>
+#if logo cannot be fully integrated, remove it completely! let's change it with
+text "<bold>MPDAMP" in bold, noto sans black if available. &gt; not exceeding box width! (a little less in size than song title - comparing visually here-? if clicked, info dialog is shown as in the logo version.</bold>
+<bold>#time info centered on time box?</bold>
+<bold>#I've seen the code, time box can be reduced in size, reduce it! because:</bold>
+<bold>#no cava integration in near future: I want as much as possible the app to not have any (nor even a png) to depend on. -&gt; "it can be executed from any folder, only the mpdamp.py file is needed" philosophy.</bold>
+<bold>#At least, until UI is rock solid and cava integration or correct logo integration became new goals.</bold>
+<bold>#let's focus on volume situation. both v13 versions failed. v4 has the correct behavior coded. v12 has mute working. V14 must have auto refresh volume bar like v4 version, mute working as v12 IF the feature don't mess v4 code for volume bar. </bold>
+
+
+</note-content></text>
+  <last-change-date>2026-08-26T05:09:49.2854573-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-26T05:09:49.2854573-03:00</last-metadata-change-date>
+  <create-date>2026-08-26T05:09:49.2854573-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>

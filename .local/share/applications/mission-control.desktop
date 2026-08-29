@@ -4,6 +4,6 @@ Type=Application
 Name=Mission Control
 Comment=btop, journalctl, amdgpu_top, and matrix all in one place
 Icon=com.github.stsdc.monitor
-Exec=xterm -e /usr/local/bin/sysdash.sh
+Exec=app2unit -T /usr/local/bin/sysdash.sh
 Actions=
 Categories=System;X-XFCE;

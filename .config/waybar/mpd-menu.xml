@@ -22,11 +22,6 @@
 			</object>
 		</child>
 		<child>
-			<object class="GtkMenuItem" id="singleonce">
-				<property name="label">󰑎  Single Once</property>
-			</object>
-		</child>
-		<child>
 			<object class="GtkMenuItem" id="consume">
 				<property name="label">󰮯  Consume</property>
 			</object>
@@ -36,20 +31,25 @@
     		</child>
     		<child>
 			<object class="GtkMenuItem" id="update">
-				<property name="label">  Update MPD Database</property>
+				<property name="label">  Update MPD Database</property>
 			</object>
 		</child>
 		<child>
       		<object class="GtkSeparatorMenuItem" id="delimiter2"/>
     		</child>
     		<child>
+			<object class="GtkMenuItem" id="mpdamp">
+				<property name="label">MPD⚡AMP</property>
+			</object>
+		</child>
+    		<child>
 			<object class="GtkMenuItem" id="ncmpcpp">
-				<property name="label">  ncMPCpp</property>
+				<property name="label">  ncMPCpp</property>
 			</object>
 		</child>  
     		<child>
 			<object class="GtkMenuItem" id="rmpc">
-				<property name="label">  Rmpc</property>
+				<property name="label">  Rmpc</property>
 			</object>
 		</child>
 		<child>
@@ -62,11 +62,7 @@
 				<property name="label">  XFmpc</property>
 			</object>
 		</child>
-		<child>
-			<object class="GtkMenuItem" id="ymuse">
-				<property name="label">  Ymuse</property>
-			</object>
-		</child>
+		
 		
 		  		          
   </object>

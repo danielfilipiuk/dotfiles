@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>changes to make to v16:</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>changes to make to v16:</underline>
+
+# clickable column names to sort items, on PLAYLIST tab, DATABASE tab and SEARCH tab
+# DATABASE tab: remove "TYPE" column
+# DATABASE tab : ALBUM column shows nothing
+# DATABASE tab: ARTIST column is redundant with NAME column, tab defaults view to "Database: Artists" (as per title row), so NAME column must be renamed to ARTISTS, and ARTISTS column removed, or NAME removed and ARTISTS moved to 1st place (what's better for the code) so the columns must be : ARTISTS-ALBUM-SONG (as said in first point, clickables to sort them.)
+
+</note-content></text>
+  <last-change-date>2026-08-28T03:29:12.6332216-03:00</last-change-date>
+  <last-metadata-change-date>2026-08-28T03:29:12.6332216-03:00</last-metadata-change-date>
+  <create-date>2026-08-28T03:29:12.6332216-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>120</x>
+  <y>132</y>
+  <open-on-startup>False</open-on-startup>
+</note>
