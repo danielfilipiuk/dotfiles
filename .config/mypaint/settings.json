@@ -390,7 +390,7 @@
   "workspace.layout": {
     "fullscreen": false, 
     "left_sidebar": {
-      "h": 379, 
+      "h": 623, 
       "w": 8, 
       "groups": [
         {
@@ -404,11 +404,11 @@
     "position": {}, 
     "floating": [], 
     "right_sidebar": {
-      "h": 871, 
+      "h": 578, 
       "w": 228, 
       "groups": [
         {
-          "h": 864, 
+          "h": 571, 
           "tools": [
             [
               "MyPaintModeOptionsTool"

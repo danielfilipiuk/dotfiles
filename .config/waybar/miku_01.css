@@ -175,31 +175,6 @@ label.module:hover {
 				border-radius: 16px;}
 #pulseaudio-slider.muted highlight:hover {	background: rgba(208, 132, 204,.85);}
 
-/* CUSTOM KEYBOARD STATE  */
-
-#custom-capslock,
-#custom-numlock {border-top:    2px solid rgba(248,246,242,0.05);
-	border-left:   2px solid rgba(248,246,242,0.05);
-	border-right:  2px solid rgba(248,246,242,0.15);
-	border-bottom: 2px solid rgba(248,246,242,0.15);
-	padding: 3px 7px;
-	background: rgba(248,246,242,.50);
-	text-shadow: 2px 1px 2px  rgba(48,30,46,.25);
-    padding: 0 8px;
-    font-family: "Font Awesome 6 Free", "JetBrainsMono Nerd Font", sans-serif;
-}
- 
-#custom-capslock.active,
-#custom-numlock.active {
-    color: #a6e3a1; /* lit up when the lock is on */
-}
- 
-#custom-capslock.inactive,
-#custom-numlock.inactive {
-    color: #6c7086; /* dimmed when off */
-}
-
-
 /* KEYBOARD STATE  */
 #keyboard-state {background: rgba(248,246,242,.50);}
 #keyboard-state > label {background: rgba(248,246,242,.25);

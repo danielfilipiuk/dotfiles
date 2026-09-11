@@ -165,7 +165,8 @@
 	"tooltip-format": "{temperatureC}°C\n{temperatureF}°F\n{temperatureK}°K",
 	"warning-threshold": 60,
 	"critical-threshold": 80,
-		"format": " {temperatureC}°<span size=\"smaller\">C</span>",
+		//"format": " {temperatureC}°<span size=\"smaller\">C</span>",
+		"format": " {temperatureC}°<span size=\"smaller\">C</span>",
 	"format-warning": " {temperatureC}°<span size=\"smaller\">C</span>",
 	"format-critical": " {temperatureC}°<span size=\"smaller\">C</span>",
 	//"on-click": "app2unit -T -- btop",
@@ -347,9 +348,10 @@
         "format": "{icon}{volume}",
 //        "format-bluetooth": "{volume}% {icon} {format_source}",
 //        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {volume}",
-//        "format-source": "{volume}% ",
-//        "format-source-muted": "",
+        //"format-muted": " {volume}",
+        "format-muted": " MUTED",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
         "format-icons": {
        //     "headphone": "",
        //     "hands-free": "",
@@ -360,7 +362,7 @@
             "default": [" ", " ", " "]
         },
         "on-click": "pamixer --toggle-mute",
-        "on-click-backward": "pamixer --toggle-mute",
+   //     "on-click-backward": "pamixer --toggle-mute",
                 
         "menu": "on-click-right",
 	"menu-file": "~/.config/waybar/pulseaudio-menu.xml",
@@ -378,32 +380,12 @@
     "max": 100,
     "orientation": "horizontal",
     "tooltip": true,
+    "zero-on-mute": false,
+    "unmute-on-volume-change": true,
+    
 },
 ///////////////////////////////////////////////////////////////////////////////////////
-// Add these two modules to your Waybar config.jsonc, and reference
-// "custom/capslock" / "custom/numlock" in "modules-left"/"modules-right".
-//
-// They don't poll: "interval": "once" means they only run at Waybar
-// startup. After that, kbd-state.sh updates the cache file and sends
-// SIGRTMIN+8 to Waybar, which redraws that module instantly.
 
-
-  "custom/capslock": {
-    "exec": "cat ~/.cache/waybar-kbd-caps.json 2>/dev/null || echo '{\"text\":\"\",\"class\":\"inactive\"}'",
-    "return-type": "json",
-    "signal": 8,
-    "interval": "once",
-    "tooltip": true
-  },
-  "custom/numlock": {
-    "exec": "cat ~/.cache/waybar-kbd-num.json 2>/dev/null || echo '{\"text\":\"\",\"class\":\"inactive\"}'",
-    "return-type": "json",
-    "signal": 8,
-    "interval": "once",
-    "tooltip": true
-  },
-
-///////////////////////////////////////////////////////////////////////////////////////
 "keyboard-state": {
         "numlock": true,
         "capslock": true,

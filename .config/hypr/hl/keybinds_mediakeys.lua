@@ -29,9 +29,9 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("volumechange --toggle && \
 -- Requires playerctl MEDIA PLAY/PAUSE
 ---------------------------------------------------------------
 --hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true }, {description = "media play-pause"})
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause && pw-play /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga --volume 0.5"), { locked = true }, {description = "media play-pause"})
 -- Requires playerctl MEDIA PLAY/PAUSE
-hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true }, {description = "media play-pause toggle"})
+hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause && pw-play /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga --volume 0.5"), { locked = true }, {description = "media play-pause toggle"})
 --hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 

@@ -119,8 +119,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="229.571984959399"
-         height="332.78617318221"
+         width="334.28634042815"
+         height="381.203728623271"
          ry="0"
          rx="0"
          convertguides="1" />
@@ -326,7 +326,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="cm" />
+       unit="mm" />
     <eventcontext
        id="text"
        usecurrent="1"
@@ -659,7 +659,7 @@
     <group
        id="align"
        oncanvas="0"
-       objects-align-to="page" />
+       objects-align-to="selection" />
     <group
        id="xml"
        h="500"
@@ -722,7 +722,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/vectorized/argentina/" />
+       path="/home/daniel/profile/Boutique/personalizados/laundry al toque/" />
     <group
        id="import"
        enable_preview="1"
@@ -1254,9 +1254,9 @@
      org.inkscape.output.png.inkscape.png_bitdepth="99"
      org.inkscape.output.png.inkscape.png_compression="6"
      org.inkscape.output.png.inkscape.png_antialias="2"
-     org.inkscape.template.paper.max="42.0"
-     org.inkscape.template.paper.min="30.0"
-     org.inkscape.template.paper.unit="in"
+     org.inkscape.template.paper.max="297.0"
+     org.inkscape.template.paper.min="210.0"
+     org.inkscape.template.paper.unit="mm"
      org.inkscape.template.paper.orientation="land"
      org.inkscape.template.video.height="4320.0"
      org.inkscape.template.video.unit="px"
@@ -1365,10 +1365,10 @@
      org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'Arial, Heavy';font-family:Arial;font-size:45.00933333px;letter-spacing:-3.77px;word-spacing:0px;line-height:1.1;fill:#ffffff;text-anchor:middle;text-align:center;font-variant-ligatures:none;stroke-width:0.75590554;stroke-linecap:round;stroke-linejoin:round;font-weight:900;stroke:#ffffff">
+     style="text-orientation:upright;-inkscape-font-specification:'C059, Bold';font-family:C059;font-size:16.456px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;stroke-width:0.75590402;stroke-linecap:round;stroke-linejoin:round;stroke:#000000;font-weight:bold">
     <group
-       width="942"
-       height="211"
+       width="1030"
+       height="832"
        x="0"
        y="0"
        maximized="1"

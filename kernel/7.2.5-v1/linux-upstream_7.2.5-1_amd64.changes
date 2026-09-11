@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 11 Sep 2026 16:31:21 -0300
+Source: linux-upstream
+Binary: linux-headers-7.2.5-polaris-v1 linux-image-7.2.5-polaris-v1 linux-libc-dev
+Architecture: amd64
+Version: 7.2.5-1
+Distribution: forky
+Urgency: low
+Maintainer: daniel <daniel@POLARIS.PUROSELLO>
+Changed-By: daniel <daniel@POLARIS.PUROSELLO>
+Description:
+ linux-headers-7.2.5-polaris-v1 - Linux kernel headers for 7.2.5-polaris-v1 on amd64
+ linux-image-7.2.5-polaris-v1 - Linux kernel, version 7.2.5-polaris-v1
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-upstream (7.2.5-1) forky; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 64ecabaa955e489b86f2f1911b0b395163afb510 9783264 linux-headers-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 5e275c8d5d513aee59782f9b37f23d966d1f80c8 30488788 linux-image-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 577214cd1348867fa7fcb176f6cfe3c53b73f5a9 1506028 linux-libc-dev_7.2.5-1_amd64.deb
+ 6f82ab2c65f75cac1467b888ba9067c791ea1bf1 7265 linux-upstream_7.2.5-1_amd64.buildinfo
+Checksums-Sha256:
+ 6563bd233adca91506fe0deb096ad6db0cc20f1f594dffa72204f515d5042097 9783264 linux-headers-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 6980cc9c160ed4b5c118ba8da90c63628da76fbaa92c830e386722bde1134609 30488788 linux-image-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 72dd0a6e53775e403ed321c93821eb73a96b2509df750b814dff1be079441d3f 1506028 linux-libc-dev_7.2.5-1_amd64.deb
+ a21322beaba1e02265e9a030cbb928a89e9c7aa839fd474c961f1ddb999a88c7 7265 linux-upstream_7.2.5-1_amd64.buildinfo
+Files:
+ 20f225460485c9e69c87f3bbea9a6f02 9783264 kernel optional linux-headers-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 800006aa33f4e989595811a25843627c 30488788 kernel optional linux-image-7.2.5-polaris-v1_7.2.5-1_amd64.deb
+ 99ba5656f9365e09eaee07f5747b2f8b 1506028 devel optional linux-libc-dev_7.2.5-1_amd64.deb
+ ba6d7a59dd85940f6ca546bbe5191504 7265 kernel optional linux-upstream_7.2.5-1_amd64.buildinfo

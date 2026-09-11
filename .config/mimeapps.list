@@ -15,7 +15,7 @@ application/vnd.flatpak=xarchiver.desktop;
 application/vnd.iccprofile=org.xfce.mousepad.desktop;
 application/vnd.microsoft.portable-executable=com.dosbox_x.DOSBox-X.desktop;wine.desktop;xarchiver.desktop;dosbox.desktop;protontricks-launch.desktop;org.xfce.mousepad.desktop;
 application/vnd.sqlite3=sqlitebrowser.desktop;org.xfce.mousepad.desktop;
-application/x-7z-compressed=xarchiver.desktop;peazip.desktop;
+application/x-7z-compressed=peazip.desktop;xarchiver.desktop;
 application/x-amgp=org.xfce.mousepad.desktop;
 application/x-bat=org.xfce.mousepad.desktop;com.dosbox_x.DOSBox-X.desktop;dosbox.desktop;wine.desktop;
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;org.xfce.mousepad.desktop;
@@ -114,6 +114,7 @@ application/x-rpm=xarchiver.desktop;
 application/x-archive=xarchiver.desktop;
 application/x-python-bytecode=org.xfce.mousepad.desktop;
 text/markdown=org.xfce.mousepad.desktop;
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-15LGV3.desktop;
 
 [Default Applications]
 application/java-archive=userapp-java -jar %f-X2ZO72.desktop;
@@ -178,6 +179,7 @@ application/x-core=org.xfce.mousepad.desktop
 application/vnd.debian.binary-package=deb-gview.desktop
 application/pdf=qpdfview.desktop
 application/x-python-bytecode=org.xfce.mousepad.desktop
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-15LGV3.desktop
 
 [Removed Associations]
 application/ogg=easytag.desktop;

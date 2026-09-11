@@ -9,10 +9,10 @@ exec wlclock \
     --namespace wlclock \
     --layer overlay \
     --corner-radius 360 \
-    --background-colour "#b57daabf" \
-    --border-colour "#b57daaa6" \
-    --border-size 3 3 3 3 \
-    --clock-colour "#dddcd8cc" \
+    --background-colour "#137A7Fbf" \
+    --border-colour "#E12885aaj" \
+    --border-size 7 7 7 7 \
+    --clock-colour "#FDF6E3cc" \
     --hand-width 10 \
     --marking-width 5 \
     --margin 1 1 1 1 \

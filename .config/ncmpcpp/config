@@ -293,9 +293,9 @@ visualizer_spectrum_hz_max = 20000
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
-#now_playing_prefix = $b
+now_playing_prefix = $u
 #
-#now_playing_suffix = $/b
+now_playing_suffix = $/u$/b
 #
 #browser_playlist_prefix = "$2playlist$9 "
 #
