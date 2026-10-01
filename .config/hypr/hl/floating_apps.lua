@@ -512,5 +512,6 @@ hl.window_rule({
 	 match = {class = "org.cvusmo.Hyprclock"},
 	 float = true,
 	 move = "50% 50%",
-	opacity = 0.55,
+	 no_blur = false,
+	opacity = 0.75,
 })

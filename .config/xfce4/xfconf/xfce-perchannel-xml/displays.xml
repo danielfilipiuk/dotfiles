@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="18990fb1-5496-4cc9-8619-cb668a33c615"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
   <property name="Fallback" type="empty">
     <property name="DisplayPort-0" type="string" value="Samsung Electric Company 20&quot;">
       <property name="Active" type="bool" value="true"/>
@@ -116,7 +116,7 @@
       </property>
     </property>
   </property>
-  <property name="Default" type="empty">
+  <property name="18990fb1-5496-4cc9-8619-cb668a33c615" type="string" value="1024">
     <property name="DisplayPort-0" type="string" value="Samsung Electric Company 15&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="61bbf577952a4126090810c02496785ce3f0fd25"/>
@@ -150,38 +150,42 @@
       </property>
     </property>
   </property>
-  <property name="18990fb1-5496-4cc9-8619-cb668a33c615" type="string" value="1024">
-    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 15&quot;">
-      <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="61bbf577952a4126090810c02496785ce3f0fd25"/>
+  <property name="Schemes" type="empty">
+    <property name="Apply" type="string" value="Temp"/>
+  </property>
+  <property name="Default" type="empty">
+    <property name="DVI-D-1" type="string" value="Samsung Electric Company SyncMaster H9LL701201 (DVI-D-1)">
+      <property name="EDID" type="string" value="e4a436e68276e0578a02f85aa37afe2000ad212a"/>
       <property name="DuplicateEDID" type="bool" value="false"/>
-      <property name="Resolution" type="string" value="1280x1024"/>
-      <property name="RefreshRate" type="double" value="60.019739825542622"/>
-      <property name="ModeFlags" type="uint64" value="5"/>
-      <property name="Rotation" type="int" value="0"/>
-      <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="true"/>
-      <property name="Scale" type="double" value="1"/>
-      <property name="Position" type="empty">
-        <property name="X" type="int" value="1024"/>
-        <property name="Y" type="int" value="0"/>
-      </property>
-    </property>
-    <property name="DVI-D-0" type="string" value="Samsung Electric Company 13&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="1159887c5dc0baf3a92c98521672d7e8ae9c07bb"/>
-      <property name="DuplicateEDID" type="bool" value="false"/>
       <property name="Resolution" type="string" value="1024x768"/>
-      <property name="RefreshRate" type="double" value="60.003840245775727"/>
-      <property name="ModeFlags" type="uint64" value="10"/>
+      <property name="RefreshRate" type="double" value="60.003999999999998"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="double" value="1"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="146"/>
+        <property name="Y" type="int" value="0"/>
       </property>
+    </property>
+    <property name="DP-1" type="string" value="Samsung Electric Company SyncMaster H9LP625897 (DP-1)">
+      <property name="EDID" type="string" value="0790aeac3065556a458421ea3700387446752963"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.020000000000003"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="640"/>
+      </property>
+    </property>
+    <property name="HDMI-A-1" type="string" value="XXX AAA  (HDMI-A-1)">
+      <property name="EDID" type="string" value="da6fc5eb043925d780ceb9f03ad2150a04c3bb7a"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Active" type="bool" value="false"/>
     </property>
   </property>
 </channel>

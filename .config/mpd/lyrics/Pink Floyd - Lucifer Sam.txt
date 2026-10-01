@@ -1,0 +1,23 @@
+Lucifer Sam, Siam cat
+Always sitting by your side
+Always by your side
+That cat's something I can't explain!
+
+Jennifer Gentle, you're a witch
+You're the left side
+He's the right side
+Oh, no!
+That cat's something I can't explain!
+
+Lucifer go to sea
+Be a hip cat, be a ship's cat
+Somewhere, anywhere
+That cat's something I can't explain!
+
+At night prowling sifting sand
+Hiding around on the ground
+He'll be found when you're around
+That cat's something I can't explain!
+setTimeout(function() {        console.log('StatsForAds: Loading script');        var script = document.createElement('script');        script.src = '//www.statsforads.com/tag/d5e49d0e-64d6-4751-ae6c-eb53cd6568f6.min.js';        script.async = true;        document.head.appendChild(script);    }, 1000); // Delay of 3 seconds
+
+.wersuj-link {margin-bottom: 1rem; display: inline-block; background: #6366f1; color: #fff; padding: 0.5rem; border-radius: 3px; text-decoration: none; transition: background-color 0.3s ease; text-align: left;}							 .wersuj-link:hover {background: #4f46e5; color: #fff; text-decoration: none;}							 .wersuj-link .icon {display: inline-block; width: 1rem; height: 1rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23ffffff'%3E%3Cpath d='M202.87-111.87q-37.78 0-64.39-26.61t-26.61-64.39v-554.26q0-37.78 26.61-64.39t64.39-26.61H480v91H202.87v554.26h554.26V-480h91v277.13q0 37.78-26.61 64.39t-64.39 26.61H202.87ZM395.41-332 332-395.41l361.72-361.72H560v-91h288.13V-560h-91v-133.72L395.41-332Z'/%3E%3C/svg%3E");							 	 background-size: contain; margin-left: 0.5rem; vertical-align: middle;}							 {}

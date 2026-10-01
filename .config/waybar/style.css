@@ -6,7 +6,7 @@
 * {
 	font-family: JetBrainsMono Nerd Font Propo;/* FontAwesome;*/
 	font-size: 12px; 
-	font-weight: bold;
+	font-weight: normal;
 	/*font-variant: small-caps;*/
 	-gtk-dpi: 96;
 	letter-spacing: 0px;
@@ -16,8 +16,8 @@
 	-gtk-icon-theme: "Papirus";
 	color: rgba(55,59,62,1);
 	transition:
-    		background-color 500ms ease-out,
-    		color 500ms ease-out,
+    		background-color 250ms ease-out,
+    		color 250ms ease-out,
     		border-color 250ms ease-out;
 }
 /*The following classes are applied to the entire Waybar rather than just the window widget:*/

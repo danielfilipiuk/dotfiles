@@ -51,3 +51,11 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+	name = "blur",
+	match = { class = ".*" },
+	no_blur = false,
+	--opacity = .5,
+	})
+
+

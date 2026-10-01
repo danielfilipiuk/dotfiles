@@ -4,7 +4,7 @@
   <property name="window" type="empty">
     <property name="navigationbar" type="empty">
       <property name="position" type="string" value="left"/>
-      <property name="sort-type" type="uint" value="0"/>
+      <property name="sort-type" type="uint" value="2"/>
       <property name="sort-order" type="uint" value="1"/>
     </property>
     <property name="height" type="uint" value="761"/>

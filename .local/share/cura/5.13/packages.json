@@ -397,6 +397,28 @@
                 "website": "https://github.com/fieldOfView/Cura-SidebarGUIPlugin"
             }
         },
+        "Slicedog_1": {
+            "filename": "/home/daniel/.cache/cura/5.13/cura_packages/Slicedog_1.curapackage",
+            "package_info": {
+                "author": {
+                    "author_id": "dolphinprinter",
+                    "display_name": "Dolphin Printer",
+                    "email": "daniel.puchta@dolphinsimulation.com",
+                    "website": "https://www.dolphinsimulation.com"
+                },
+                "description": "Slicedog is a plugin that brings intelligent material optimization directly into Ultimaker Cura. It helps users reduce filament usage \u2014 often by 30\u201360% \u2014 without compromising strength. After defining where the forces act on the part and which areas are fixed in place, Slicedog analyzes the model and automatically creates a new internal structure using topology optimization. The result is a strong, lightweight print optimized for real-world performance. It also helps users understand whether their part is strong enough or if it could break under load \u2014 before printing even starts. Ideal for jigs, fixtures, and technical prints where saving material and maintaining strength matters.",
+                "display_name": "Slicedog",
+                "is_active": true,
+                "is_bundled": false,
+                "is_installed": true,
+                "package_id": "Slicedog_1",
+                "package_type": "plugin",
+                "package_version": "1.1.0",
+                "sdk_version": 8,
+                "sdk_version_semver": "8.7.0",
+                "website": "https://slicedog.com"
+            }
+        },
         "SpoonAntiWarpingReborn": {
             "filename": "/home/daniel/.cache/cura/5.10/cura_packages/SpoonAntiWarpingReborn.curapackage",
             "package_info": {

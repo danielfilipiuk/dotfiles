@@ -1,8 +1,8 @@
 # GIMP user context
 
-(tool "gimp-move-tool")
+(tool "gimp-rect-select-tool")
 (paint-info "gimp-paintbrush")
-(brush "2. Hardness 050")
+(brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (mybrush "Standard")
 (pattern "Pine")

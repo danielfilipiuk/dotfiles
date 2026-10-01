@@ -1,11 +1,10 @@
 # GIMP gimp-paintbrush-tool options
 
-(brush "2. Hardness 050")
+(brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (pattern "Pine")
 (gradient "FG to BG (RGB)")
 (palette "Color History")
-(brush-size 61)
-(brush-hardness 0.5)
+(brush-size 264)
 
 # end of gimp-paintbrush-tool options

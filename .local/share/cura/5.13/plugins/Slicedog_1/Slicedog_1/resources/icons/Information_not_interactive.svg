@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Slicedog GUI update info icon.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg863"
+   version="1.1"
+   viewBox="0 0 9.2604165 9.2604169"
+   height="35"
+   width="35">
+  <defs
+     id="defs857" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="234"
+     inkscape:window-height="1040"
+     inkscape:window-width="1397"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="-3.3185443"
+     inkscape:cx="-8.8289161"
+     inkscape:zoom="5.6"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata860">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Vrstva 1">
+    <circle
+       style="fill:#c0c1c2;stroke-width:3.17027;stroke-linecap:round;stroke-linejoin:round"
+       id="path2001"
+       cx="4.6183963"
+       cy="4.6183963"
+       r="4.6183963" />
+    <circle
+       ry="4.6302085"
+       rx="4.6420202"
+       cy="4.6302085"
+       cx="4.6420202"
+       id="path1426"
+       style="fill:#c0c1c2;stroke-width:3.25276;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
+    <text
+       id="text1430"
+       y="7.4027576"
+       x="3.6547253"
+       style="font-size:7.05556px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-weight:bold;stroke-width:0.264583"
+         y="7.4027576"
+         x="3.6547253"
+         id="tspan1428"
+         sodipodi:role="line">i</tspan></text>
+  </g>
+</svg>

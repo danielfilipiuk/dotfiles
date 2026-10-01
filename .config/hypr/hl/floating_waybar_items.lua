@@ -1,10 +1,11 @@
 hl.window_rule({
 	 name = "pavucontrol",
 	 match = {class = "org.pulseaudio.pavucontrol"},
-	 opacity = .85,
+	 opacity = .75,
 	 float = true,
 	 size = "500 500",
 	 move = "750 50",
+	 no_blur = false,
 })
 
 hl.window_rule({

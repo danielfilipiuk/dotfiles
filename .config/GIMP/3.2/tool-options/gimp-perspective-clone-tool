@@ -1,10 +1,9 @@
 # GIMP gimp-perspective-clone-tool options
 
-(brush "2. Hardness 050")
+(brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (pattern "Pine")
 (palette "Color History")
-(brush-size 61)
-(brush-hardness 0.5)
+(brush-size 264)
 
 # end of gimp-perspective-clone-tool options

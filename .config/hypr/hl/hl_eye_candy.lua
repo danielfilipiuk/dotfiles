@@ -57,15 +57,20 @@ hl.config({
 ---------------------------------------------------------------
         blur = {
             enabled   = true,
-            size      = 2, 	-- blur.size and blur.passes have to be at least 1.
+            size      = 1, 	-- blur.size and blur.passes have to be at least 1.
 	    passes    = 2,	-- Increasing blur.passes is necessary to prevent blur looking wrong on higher blur.
 				-- size values, but remember that higher blur.passes will require more strain on the GPU.
-            contrast = 0.8916,  -- contrast modulation for blur. [0.0 - 2.0]
-            vibrancy  = 0.1696, -- Increase saturation of blurred colors. [0.0 - 1.0]
-            brightness = 1, 	-- brightness modulation for blur. [0.0 - 2.0]
-            vibrancy_darkness = 0.1696, -- How strong the effect of vibrancy is on dark areas . [0.0 - 1.0]
+            --contrast = 0.8916,  -- contrast modulation for blur. [0.0 - 2.0]
+            --vibrancy  = 0.1696, -- Increase saturation of blurred colors. [0.0 - 1.0]
+            --brightness = 1, 	-- brightness modulation for blur. [0.0 - 2.0]
+            --vibrancy_darkness = 0.1696, -- How strong the effect of vibrancy is on dark areas . [0.0 - 1.0]
             popups = true, -- whether to blur popups (e.g. right-click menus)
             special = true, -- whether to blur behind the special workspace (note: expensive)
+            --popups_ignorealpha = 0,
+            variant = frost,
+            ignore_opacity = true,  
+            new_optimizations = true,
+
         },
 ---------------------------------------------------------------
         glow = {
@@ -82,7 +87,7 @@ hl.config({
 ---------------------------------------------------------------
         motion_blur = {
         	enabled = true,
-        	samples = 50,
+        	samples = 7,
        },
 ---------------------------------------------------------------
 	wobble = {

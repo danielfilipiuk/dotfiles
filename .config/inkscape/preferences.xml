@@ -119,8 +119,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="334.28634042815"
-         height="381.203728623271"
+         width="158.181988573452"
+         height="156.499999038819"
          ry="0"
          rx="0"
          convertguides="1" />
@@ -161,8 +161,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="72.5935039370079"
-         ry="72.5935039370079"
+         rx="79.6022117794968"
+         ry="75.736992302842"
          arc_type="0" />
       <eventcontext
          id="star"
@@ -307,7 +307,7 @@
     </eventcontext>
     <eventcontext
        id="eraser"
-       mode="2"
+       mode="1"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
        mass="4"
        drag="1"
@@ -659,7 +659,7 @@
     <group
        id="align"
        oncanvas="0"
-       objects-align-to="selection" />
+       objects-align-to="page" />
     <group
        id="xml"
        h="500"
@@ -710,7 +710,7 @@
        default="org.inkscape.output.svgz.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/daniel/downloads/mpdamp"
+       path="/home/daniel/profile/Boutique/personalizados/logo PUES yaku"
        use_current_dir="1"
        enable_svgexport="0" />
     <group
@@ -722,7 +722,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/personalizados/laundry al toque/" />
+       path="/home/daniel/profile/Boutique/personalizados/logo PUES yaku/" />
     <group
        id="import"
        enable_preview="1"
@@ -1362,13 +1362,14 @@
      org.inkscape.effect.filter.Greyscale.strength="0.18836273006135"
      org.inkscape.effect.filter.Greyscale.blue="0.266008435582823"
      org.inkscape.effect.filter.Greyscale.green="0.411474309815951"
-     org.inkscape.effect.filter.Greyscale.red="0.301955521472392" />
+     org.inkscape.effect.filter.Greyscale.red="0.301955521472392"
+     org.inkscape.input.pdf.approximationPrecision="1" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'C059, Bold';font-family:C059;font-size:16.456px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;stroke-width:0.75590402;stroke-linecap:round;stroke-linejoin:round;stroke:#000000;font-weight:bold">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Ultra-Bold';font-family:'JetBrainsMono Nerd Font';font-size:133.33333333px;letter-spacing:-24.86px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;stroke-width:0.18897638;stroke-linecap:round;stroke-linejoin:round;font-weight:800;paint-order:stroke fill markers;opacity:0.24827939;stroke:#000000">
     <group
-       width="1030"
-       height="832"
+       width="942"
+       height="211"
        x="0"
        y="0"
        maximized="1"

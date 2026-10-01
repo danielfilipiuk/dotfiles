@@ -1,6 +1,6 @@
 # GIMP gimp-path-tool options
 
-(brush "2. Hardness 050")
+(brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (pattern "Pine")
 (gradient "FG to BG (RGB)")

@@ -4,7 +4,7 @@ Terminal=false
 Type=Application
 Name=YouTube
 Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml
-Icon=brave-agimnkijcaahngcdmfeangaknmldooml-Default
+Icon=/home/daniel/.local/share/icons/hicolor/256x256/apps/brave-agimnkijcaahngcdmfeangaknmldooml-Default.png
 StartupWMClass=crx_agimnkijcaahngcdmfeangaknmldooml
 Actions=Search;Shorts;Subscriptions
 
