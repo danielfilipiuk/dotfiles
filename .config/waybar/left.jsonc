@@ -7,10 +7,10 @@
 {
   "name": "Waybar",
   "layer": "top",
-  "output": "DVI-D-1",
+  "output": "DP-1",
 
   "position": "top",
-  "height": 26,
+  "height": 24,
   "spacing": 5,
 
   "expand-left": false,
@@ -21,7 +21,7 @@
   "reload_style_on_change": true,
 
   "margin-top": 3,
-  "margin-bottom": 5,
+  "margin-bottom": 3,
   "margin-left": 3,
   "margin-right": 3,
 
@@ -30,6 +30,11 @@
   "modules-left": [
     "wlr/taskbar"
   ],
+
+"modules-right": [
+    "group/hardware"
+],
+
 
 ///////////////////////////////////////////////////////////////////////////////////////
 "wlr/taskbar": {
@@ -49,4 +54,90 @@
 	
 },
 ///////////////////////////////////////////////////////////////////////////////////////
+
+//  GROUPS ///
+///////////////////////////////////////////////////////////////////////////////////////
+"group/hardware": {
+	"orientation": "inherit",
+	//"drawer": {
+	//	"transition-duration": 750,
+	//	"children-class": "not-temperature",
+	//	"transition-left-to-right": true,
+	//	"click-to-reveal": false,
+	//	},
+	"modules": [
+		"temperature",
+		"cpu",
+		"memory",
+		"custom/gpu-usage"
+		]
+		},
+
+///////////////////////////////////////////////////////////////////////////////////////
+"temperature": {
+	// "thermal-zone": 2,
+	"cursor": "crosshair",
+	"hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+	"interval": 1,
+	"tooltip-format": "{temperatureC}°C\n{temperatureF}°F\n{temperatureK}°K",
+	"warning-threshold": 60,
+	"critical-threshold": 80,
+		//"format": " {temperatureC}°<span size=\"smaller\">C</span>",
+		"format": " {temperatureC}°<span size=\"smaller\">C</span>",
+	"format-warning": " {temperatureC}°<span size=\"smaller\">C</span>",
+	"format-critical": " {temperatureC}°<span size=\"smaller\">C</span>",
+	//"on-click": "app2unit -T -- btop",
+	"menu": "on-click-right",
+	"menu-file": "~/.config/waybar/temperature-menu.xml",
+	"menu-actions": {
+		"sens": "app2unit -- kitty --class sens-float -e sens",
+		},
+},
+///////////////////////////////////////////////////////////////////////////////////////    
+"cpu": {
+	"interval": 1,
+	"cursor": "crosshair",
+	"format": " {usage}<span size=\"smaller\">%</span>  {avg_frequency}<span size=\"smaller\">G</span>",
+	"states": {
+		"50": 50,
+		"90": 90,}, 
+	"menu": "on-click-right",
+	"menu-file": "~/.config/waybar/cpu-menu.xml",
+	"menu-actions": {
+		"btop": "app2unit -- kitty --class btop-float -e btop",
+		"htop": "app2unit -- kitty --class htop-float -e htop",
+		"cpux": "app2unit -- cpu-x",
+		"corectrl": "app2unit -- corectrl",
+		},
+},
+///////////////////////////////////////////////////////////////////////////////////////
+"memory": {
+	"interval": 1,
+	"cursor": "crosshair",
+	"format": " {used:0.1f}<span size=\"smaller\">G</span>",
+},	
+///////////////////////////////////////////////////////////////////////////////////////
+"custom/gpu-usage": {
+  "format": "{}", /* "{text} {icon}" for nightly users */
+  "exec": "gpu-usage-waybar",
+  "return-type": "json",
+  "format-icons": "",
+  "tooltip": true,
+  "interval": "1000",
+  "cursor": "crosshair",
+  //"on-click": "app2unit -T -- nvtop",
+  	"menu": "on-click-right",
+	"menu-file": "/home/daniel/.config/waybar/gpu-menu.xml",
+	"menu-actions": {
+		"gputopcli": "app2unit -- kitty --class amdgputoptui-float -e amdgpu_top",
+		"gputopgui": "app2unit -- amdgpu_top --gui",
+		"lact": "app2unit -- lact gui",
+		"radeontop": "app2unit -- kitty --class radeontop-float -e radeontop",
+		"nvtop": "app2unit -- kitty --class nvtop-float -e nvtop",
+		},
+},
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
 }

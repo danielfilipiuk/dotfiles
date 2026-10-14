@@ -119,9 +119,9 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="158.181988573452"
-         height="156.499999038819"
-         ry="0"
+         width="377.549722025716"
+         height="264.163895254056"
+         ry="7.8638752614418"
          rx="0"
          convertguides="1" />
       <eventcontext
@@ -326,7 +326,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm" />
+       unit="cm" />
     <eventcontext
        id="text"
        usecurrent="1"
@@ -679,7 +679,7 @@
     <group
        id="preferences"
        state="1"
-       page="52" />
+       page="23" />
     <group
        id="gradienteditor" />
     <group
@@ -722,7 +722,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/daniel/profile/Boutique/personalizados/logo PUES yaku/" />
+       path="/home/daniel/profile/Boutique/vectorized/fauna/" />
     <group
        id="import"
        enable_preview="1"
@@ -911,7 +911,7 @@
        value="1.414213562" />
     <group
        id="zoomcorrection"
-       value="1.028"
+       value="0.5183"
        unit="cm"
        shown="1" />
     <group
@@ -1366,10 +1366,10 @@
      org.inkscape.input.pdf.approximationPrecision="1" />
   <group
      id="desktop"
-     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Ultra-Bold';font-family:'JetBrainsMono Nerd Font';font-size:133.33333333px;letter-spacing:-24.86px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;stroke-width:0.18897638;stroke-linecap:round;stroke-linejoin:round;font-weight:800;paint-order:stroke fill markers;opacity:0.24827939;stroke:#000000">
+     style="text-orientation:upright;-inkscape-font-specification:'JetBrainsMono Nerd Font, Ultra-Bold';font-family:'JetBrainsMono Nerd Font';font-size:133.33333333px;letter-spacing:0px;word-spacing:0px;line-height:1.1;fill:#000000;text-anchor:middle;text-align:center;stroke-width:0.37795275;stroke-linecap:round;stroke-linejoin:round;font-weight:800;paint-order:stroke fill markers;stroke:#ffffff">
     <group
-       width="942"
-       height="211"
+       width="928"
+       height="212"
        x="0"
        y="0"
        maximized="1"
@@ -1519,7 +1519,7 @@
      symbolicDefaultBaseColors="1"
      symbolicDefaultHighColors="1"
      syntax-color-theme="inkscape-light"
-     fontscale="90"
+     fontscale="75"
      menuIcons="1"
      contrast="10"
      iconTheme="multicolor"

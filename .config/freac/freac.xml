@@ -2,13 +2,13 @@
 <ConfigFile>
  <configuration name="default">
   <section name="Settings">
-   <value name="LastOutputDirectory1">/</value>
+   <value name="LastOutputDirectory1">/mnt/500G/torrents/1985 - Live After Death/</value>
    <value name="Language">internal</value>
-   <value name="StartCount">30</value>
-   <value name="WindowPosX">0</value>
-   <value name="WindowPosY">34</value>
-   <value name="WindowSizeX">916</value>
-   <value name="WindowSizeY">676</value>
+   <value name="StartCount">31</value>
+   <value name="WindowPosX">1027</value>
+   <value name="WindowPosY">37</value>
+   <value name="WindowSizeX">568</value>
+   <value name="WindowSizeY">899</value>
    <value name="Encoder">opus-enc</value>
    <value name="WindowMaximized">0</value>
    <value name="ShowTips">0</value>
@@ -23,7 +23,7 @@
    <value name="KeepWaveFiles">0</value>
    <value name="RemoveTracks">1</value>
    <value name="AddEncodedTracks">0</value>
-   <value name="EncoderOutDir">/</value>
+   <value name="EncoderOutDir">/mnt/500G/torrents/1985 - Live After Death/</value>
    <value name="LastFilePattern5"/>
    <value name="LastFilePattern4"/>
    <value name="LastFilePattern3">&lt;albumartist&gt; - &lt;album&gt;/&lt;track&gt; - &lt;artist&gt; - &lt;title&gt;</value>
@@ -36,12 +36,12 @@
    <value name="FilenamesReplaceSpaces">0</value>
    <value name="FilenamesKeepTimeStamps">1</value>
    <value name="ShowJobsTab">0</value>
-   <value name="LastOutputDirectory5">/mnt/data/music/222/Megadeth/</value>
-   <value name="LastOutputDirectory4">/mnt/data/music/222/bs/</value>
-   <value name="LastOutputDirectory3">/mnt/data/music/pmc/</value>
+   <value name="LastOutputDirectory5">/mnt/data/music/222/bs/</value>
+   <value name="LastOutputDirectory4">/mnt/data/music/pmc/</value>
+   <value name="LastOutputDirectory3">/</value>
    <value name="LastOutputDirectory2">/home/daniel/music/</value>
    <value name="LastAddedDir">/mnt/500G/torrents/The Rolling Stones - Foreign Tongues [2026] [Hi-Res] [FLAC-24Bit]-Sc4r3cr0w (copy 1)/</value>
-   <value name="LastSelectedOpenDir">/mnt/500G/torrents/Gorillaz - The Mountain (2026 Alternativa e indie) [Flac 24-96]</value>
+   <value name="LastSelectedOpenDir">/mnt/500G/torrents/1985 - Live After Death</value>
   </section>
   <section name="Tags">
    <value name="DefaultComment">fre:ac - free audio converter &lt;https://www.freac.org/&gt;</value>
@@ -93,7 +93,7 @@
    <value name="ActiveDrive">0</value>
   </section>
   <section name="Donate">
-   <value name="StartCount">30</value>
+   <value name="StartCount">31</value>
    <value name="ShowAgain">1</value>
   </section>
   <section name="Playlist">
@@ -132,7 +132,7 @@
    <value name="SingleFileMode">1</value>
   </section>
   <section name="Joblist">
-   <value name="FieldSizes">267,470,50,80,1</value>
+   <value name="FieldSizes">267,123,50,80,1</value>
    <value name="Fields">&lt;artist&gt;,&lt;title&gt;,&lt;track&gt;,&lt;time&gt;,&lt;bytes&gt;</value>
   </section>
   <section name="LAME">

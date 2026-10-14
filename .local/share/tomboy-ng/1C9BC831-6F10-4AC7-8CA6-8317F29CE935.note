@@ -30,7 +30,6 @@ todo
 <list><list-item dir="ltr"><list><list-item dir="ltr">add a tab like ncmpcpp "Browse: /" that let's you navigate through local dir structure: I have mine foldered as genres - bands - albums , so I frequently go directly to genre folder to find what I was looking, as not tracks have the genre idtag set for a native search</list-item></list></list-item></list>
 <list><list-item dir="ltr">v6 interface is better than v5</list-item></list>
 <list><list-item dir="ltr">v5 light theme was ok! this v6 "warm dark" is good also! so v5 could be "light" theme and v6 could be "dark" theme in v7. they look fine as they are. themes be switched by a single button at status bar, rightmost corner maybe.</list-item></list>
-<list><list-item dir="ltr"></list-item></list>
 
 
 </note-content></text>

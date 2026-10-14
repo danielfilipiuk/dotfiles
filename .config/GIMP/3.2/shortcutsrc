@@ -1059,6 +1059,7 @@
 # (action "channels-lock-position")
 # (action "dialogs-sample-points")
 # (action "context-opacity-opaque")
+# (action "windows-display-0002")
 # (action "filters-noise-cell")
 # (action "filters-gegl-unpremultiply")
 # (action "script-fu-selection-rounded-rectangle")

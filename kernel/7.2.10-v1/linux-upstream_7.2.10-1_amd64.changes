@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Wed, 14 Oct 2026 01:32:01 -0300
+Source: linux-upstream
+Binary: linux-headers-7.2.10-polaris-v1 linux-image-7.2.10-polaris-v1 linux-libc-dev
+Architecture: amd64
+Version: 7.2.10-1
+Distribution: forky
+Urgency: low
+Maintainer: daniel <daniel@POLARIS.PUROSELLO>
+Changed-By: daniel <daniel@POLARIS.PUROSELLO>
+Description:
+ linux-headers-7.2.10-polaris-v1 - Linux kernel headers for 7.2.10-polaris-v1 on amd64
+ linux-image-7.2.10-polaris-v1 - Linux kernel, version 7.2.10-polaris-v1
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-upstream (7.2.10-1) forky; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 713566f874306775129c3fab20b62f3d82238991 9800728 linux-headers-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ 013cd38c482530a21edf6f061524e65df696664c 30510060 linux-image-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ b4269fc86fc5112c159b4d925d5fa99f2b43d12b 1506032 linux-libc-dev_7.2.10-1_amd64.deb
+ 78fc1cec7b20e85b392e028844809081e40d5837 7300 linux-upstream_7.2.10-1_amd64.buildinfo
+Checksums-Sha256:
+ e03a2379772344cf662f20fd7141fcf3614bb367059590e9b3f62acfe72d950c 9800728 linux-headers-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ 43db02c5e291dc1b07db62e7196e9cf7757e8a76f77af91d574a6d62c3a9ced3 30510060 linux-image-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ 4dc489bd5e1f1cfeb363f0973b37420c794d5c26da0c007848da8ec8975516ea 1506032 linux-libc-dev_7.2.10-1_amd64.deb
+ 8c52ca945bac36cac25ca74f274e82244a31b96b44f2a518b1d0cbc018823c38 7300 linux-upstream_7.2.10-1_amd64.buildinfo
+Files:
+ 21934cd7ffe7cc4004fc606580bde675 9800728 kernel optional linux-headers-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ d0bba0a9f068879a34024b13c2096fb6 30510060 kernel optional linux-image-7.2.10-polaris-v1_7.2.10-1_amd64.deb
+ 86551b2b0bd0de279e5ab254e1b9e49a 1506032 devel optional linux-libc-dev_7.2.10-1_amd64.deb
+ 4b594d0c66fe68608af970a3002acf41 7300 kernel optional linux-upstream_7.2.10-1_amd64.buildinfo

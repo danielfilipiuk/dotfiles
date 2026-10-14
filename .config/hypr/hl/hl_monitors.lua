@@ -6,19 +6,23 @@
 hl.monitor({
     output   = "DP-1",
     mode     = "1280x1024@60.020",
+    --mode     = "preferred",
     position = "0x0",
     scale    = "1",
 })
-hl.monitor({
-    output   = "DVI-D-1",
-    mode     = "1024x768@60.004",
-    position = "auto-center-left",
-    scale    = "1",
-})
+--hl.monitor({
+  --  output   = "DVI-D-1",
+    --mode     = "1024x768@60.004",
+    --position = "auto-center-left",
+    --scale    = "1",
+--})
 
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "preferred",
+    --mode     = "highres",
+    --mode = "1920x1080",
+    --mode = "1360x768",
     position = "auto-center-right",
     scale    = "1",
 })

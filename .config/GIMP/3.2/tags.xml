@@ -10,10 +10,10 @@
     <tag>round</tag>
   </resource>
 
-  <resource identifier="internal:gimp-brush-clipboard-image//Clipboard Image" checksum="79f20e3c6ff7bbbb1316133b4a672ae3">
+  <resource identifier="internal:gimp-brush-clipboard-image//Clipboard Image" checksum="7d2e77289feb9376f2cdeaabd38ba669">
   </resource>
 
-  <resource identifier="internal:gimp-brush-clipboard-mask//Clipboard Mask" checksum="74eefd218f00eb9fa99afd5b0c60f837">
+  <resource identifier="internal:gimp-brush-clipboard-mask//Clipboard Mask" checksum="c81b51a09b760cd1b1fdace7533a01a3">
   </resource>
 
   <resource identifier="external:${gimp_data_dir}/brushes/Basic/1-pixel.vbr//1. Pixel" checksum="c84494b4a904a7c1a3548e564b073ca3">
@@ -238,7 +238,7 @@
   <resource identifier="external:${gimp_data_dir}/dynamics/Velocity-Tapering.gdyn//Velocity Tapering" checksum="(null)">
   </resource>
 
-  <resource identifier="internal:gimp-pattern-clipboard-image//Clipboard Image" checksum="c252af3b3f6d12bde9f85b4c0453a5b6">
+  <resource identifier="internal:gimp-pattern-clipboard-image//Clipboard Image" checksum="61b500bbce045fdf537516cf2840bb57">
   </resource>
 
   <resource identifier="external:${gimp_data_dir}/patterns/Legacy/3dgreen.pat//3D Green" checksum="00052731f14a5bc614daece969b368bc">
