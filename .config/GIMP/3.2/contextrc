@@ -1,7 +1,7 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
-(paint-info "gimp-paintbrush")
+(tool "gimp-smudge-tool")
+(paint-info "gimp-smudge")
 (brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (mybrush "Standard")

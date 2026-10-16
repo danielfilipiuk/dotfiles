@@ -1,470 +1,7 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.11",
   "materials": {
-    "045c6f71-e679-4021-a074-3df5ce5d393e": {
-      "name": "Model Alabaster White",
-      "primary_color": "#d6d7d8ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
-        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "0af33df4-541d-4e0a-a00d-23d495c8095e": {
-      "name": "Impact65 Black",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 404,
-        "viscosity_25c": 234,
-        "viscosity_40c": 91,
-        "viscosity_60c": 35
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "27766855-6532-48fa-bb00-572e004d9eb0"
-      ],
-      "default_workflow": "27766855-6532-48fa-bb00-572e004d9eb0"
-    },
-    "0b20c86a-e0ec-4185-a94e-aa928c437dcb": {
-      "name": "Flex80 Transparent Clear",
-      "primary_color": "#f3f6f4ff",
-      "properties": {
-        "density": 1,
-        "viscosity_18c": 254,
-        "viscosity_25c": 154,
-        "viscosity_40c": 64,
-        "viscosity_60c": 27
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "ac2b164b-d8b8-4140-af79-67ca606d340b",
-        "efadf044-4d65-466d-9659-01ad0c64d31c"
-      ],
-      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
-    },
-    "14aa5838-c1e7-4306-ac2a-5ef1280c0a44": {
-      "name": "Model Transparent Clear",
-      "primary_color": "#f3f6f4ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
-        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "17676c70-5f3f-4dfc-946a-843c95914364": {
-      "name": "Basic Grey",
-      "primary_color": "#bac4c4ff",
-      "properties": {
-        "density": 1.03,
-        "viscosity_18c": 360,
-        "viscosity_25c": 207,
-        "viscosity_40c": 81,
-        "viscosity_60c": 32
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-      ],
-      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-    },
-    "218c5307-657e-4123-b03d-6867f57f18ab": {
-      "name": "Flex80 White",
-      "primary_color": "#d6d7d8ff",
-      "properties": {
-        "density": 1,
-        "viscosity_18c": 254,
-        "viscosity_25c": 154,
-        "viscosity_40c": 64,
-        "viscosity_60c": 27
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "ac2b164b-d8b8-4140-af79-67ca606d340b",
-        "efadf044-4d65-466d-9659-01ad0c64d31c"
-      ],
-      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
-    },
-    "25a3d87a-f71f-4690-a3eb-b00a2dec72da": {
-      "name": "Ultracur3D® RG 3280",
-      "primary_color": "#d6d7d8ff",
-      "properties": {
-        "density": 1.65,
-        "viscosity_18c": 531,
-        "viscosity_25c": 362,
-        "viscosity_40c": 336,
-        "viscosity_60c": 87
-      },
-      "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
-      },
-      "slx_workflows": [
-        "3a9f65d7-2734-41a9-8e92-6bffbc35a8c5"
-      ],
-      "default_workflow": "3a9f65d7-2734-41a9-8e92-6bffbc35a8c5"
-    },
-    "2d5c7d74-5801-49cb-8dad-b603e63e3f4d": {
-      "name": "Model Solid Grey",
-      "primary_color": "#9c9d9dff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
-        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "2d72a980-fb1e-4d28-8f2d-436a33d5c0b5": {
-      "name": "Model Classic Red",
-      "primary_color": "#ec0000ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "2fbaac55-3757-4ec8-bd57-944bdaf6baaf": {
-      "name": "Model Terra Brown",
-      "primary_color": "#7a5c45ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "3531b708-1cea-4443-8856-5678d08e347b": {
-      "name": "Model Rich Black",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
-        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "35ecc9b6-217d-4b0c-9eef-99c7f73fac08": {
-      "name": "Ultracur3D® ST 45",
-      "primary_color": "#f3f6f4ff",
-      "properties": {
-        "density": 1.12,
-        "viscosity_18c": 530,
-        "viscosity_25c": 312,
-        "viscosity_40c": 127,
-        "viscosity_60c": 51
-      },
-      "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
-      },
-      "slx_workflows": [
-        "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
-      ],
-      "default_workflow": "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
-    },
-    "3a3f0193-26f9-4975-b50b-7ac29c98fd3a": {
-      "name": "LOCTITE 3D IND6845",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.07,
-        "viscosity_18c": 1042,
-        "viscosity_25c": 609,
-        "viscosity_40c": 233,
-        "viscosity_60c": 89
-      },
-      "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
-        "name": "Henkel"
-      },
-      "slx_workflows": [
-        "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c"
-      ],
-      "default_workflow": "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c"
-    },
-    "411e3251-d683-43ec-a457-ae73a402e6be": {
-      "name": "LOCTITE 3D IND249",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.1,
-        "viscosity_18c": 836,
-        "viscosity_25c": 405,
-        "viscosity_40c": 120,
-        "viscosity_60c": 36
-      },
-      "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
-        "name": "Henkel"
-      },
-      "slx_workflows": [
-        "80649676-4409-468c-8109-63c02a1c587a"
-      ],
-      "default_workflow": "80649676-4409-468c-8109-63c02a1c587a"
-    },
-    "424ef39e-a5fa-42e9-8b7d-549d3c558f7a": {
-      "name": "Model Transparent Red",
-      "primary_color": "#d21b31ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "43a10999-0c92-417d-900d-ae38c52aaba6": {
-      "name": "Basic Orange",
-      "primary_color": "#ff8040ff",
-      "properties": {
-        "density": 1.03,
-        "viscosity_18c": 360,
-        "viscosity_25c": 207,
-        "viscosity_40c": 81,
-        "viscosity_60c": 32
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-      ],
-      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-    },
-    "4a5625fe-4d37-425e-90ca-d791b0fbe7d3": {
-      "name": "Model Transparent Green",
-      "primary_color": "#1daf5eff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "4dfa2d58-ac20-46c2-b101-0ad941931305": {
-      "name": "Model Neutral Beige",
-      "primary_color": "#bf9c87ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
-        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "4ef0f5cf-1118-438e-8440-d40a97b33f12": {
-      "name": "Model Bright Magenta",
-      "primary_color": "#ff0066ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "5058548e-dc68-49ed-953f-2a6da86e61fb": {
-      "name": "Ultracur3D® RG 35 B",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 1798,
-        "viscosity_25c": 925,
-        "viscosity_40c": 279,
-        "viscosity_60c": 87
-      },
-      "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
-      },
-      "slx_workflows": [
-        "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
-      ],
-      "default_workflow": "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
-    },
-    "7156f992-eb27-4f0d-a4d3-e86e17a9bf63": {
-      "name": "Ultracur3D® ST 7500 G",
-      "primary_color": "#9c9d9dff",
-      "properties": {
-        "density": 1.1,
-        "viscosity_18c": 279,
-        "viscosity_25c": 170,
-        "viscosity_40c": 72,
-        "viscosity_60c": 31
-      },
-      "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
-      },
-      "slx_workflows": [
-        "6ee49d93-cc94-4bea-8738-ee54d1f0054a"
-      ],
-      "default_workflow": "6ee49d93-cc94-4bea-8738-ee54d1f0054a"
-    },
-    "7bc0de12-e0ae-455f-a7be-74ba6e10f108": {
-      "name": "Model Bright Cyan",
-      "primary_color": "#0079a7ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "7f935126-2432-488c-94ac-8d4ef1406b00": {
-      "name": "Cubic Ink® Mold 2200 VP",
-      "primary_color": "#fffc6aff",
-      "properties": {
-        "density": 1.118,
-        "viscosity_18c": 68,
-        "viscosity_25c": 45,
-        "viscosity_40c": 23,
-        "viscosity_60c": 13
-      },
-      "brand": {
-        "uuid": "f9e0e423-61ea-4840-9b0b-3752c2f56a1f",
-        "name": "Altana"
-      },
-      "slx_workflows": [
-        "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27"
-      ],
-      "default_workflow": "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27"
-    },
-    "801db3fb-3ce9-4dbe-99cf-c7cc141b6a45": {
-      "name": "Ultracur3D® RG 35",
-      "primary_color": "#f3f6f4ff",
-      "properties": {
-        "density": 1.12,
-        "viscosity_18c": 1798,
-        "viscosity_25c": 925,
-        "viscosity_40c": 279,
-        "viscosity_60c": 87
-      },
-      "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
-      },
-      "slx_workflows": [
-        "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
-      ],
-      "default_workflow": "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
-    },
-    "80910458-6f80-4dad-8e45-d1928d0a0fe2": {
+    "9fc4931b-7ce3-5806-a3a1-9a2fa9855fd7": {
       "name": "Cubic Ink® High Performance 4-4800 VP",
       "primary_color": "#595959ff",
       "properties": {
@@ -475,13 +12,203 @@
         "viscosity_60c": 103
       },
       "brand": {
-        "uuid": "f9e0e423-61ea-4840-9b0b-3752c2f56a1f",
+        "uuid": "51991da0-3a46-5e0e-98b6-40c92110c272",
         "name": "Altana"
       },
       "slx_workflows": [
         "629aa988-db22-4b7d-80a7-43a5aba1399e"
       ],
       "default_workflow": "629aa988-db22-4b7d-80a7-43a5aba1399e"
+    },
+    "31864bc9-2bc3-5670-97e1-965ef27c308d": {
+      "name": "Cubic Ink® Mold 2200 VP",
+      "primary_color": "#fffc6aff",
+      "properties": {
+        "density": 1.118,
+        "viscosity_18c": 68,
+        "viscosity_25c": 45,
+        "viscosity_40c": 23,
+        "viscosity_60c": 13
+      },
+      "brand": {
+        "uuid": "51991da0-3a46-5e0e-98b6-40c92110c272",
+        "name": "Altana"
+      },
+      "slx_workflows": [
+        "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27"
+      ],
+      "default_workflow": "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27"
+    },
+    "04f765fe-8809-5b21-a0ed-ffd24883e7fd": {
+      "name": "Cubic Ink® Tough 2100 VP Black",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 291,
+        "viscosity_25c": 173,
+        "viscosity_40c": 70,
+        "viscosity_60c": 30
+      },
+      "brand": {
+        "uuid": "51991da0-3a46-5e0e-98b6-40c92110c272",
+        "name": "Altana"
+      },
+      "slx_workflows": [
+        "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e"
+      ],
+      "default_workflow": "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e"
+    },
+    "fdcf4f0a-a5d9-511c-8ac3-3c49298f39bb": {
+      "name": "Ultracur3D® RG 3280",
+      "primary_color": "#d6d7d8ff",
+      "properties": {
+        "density": 1.65,
+        "viscosity_18c": 531,
+        "viscosity_25c": 362,
+        "viscosity_40c": 336,
+        "viscosity_60c": 87
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "3a9f65d7-2734-41a9-8e92-6bffbc35a8c5"
+      ],
+      "default_workflow": "3a9f65d7-2734-41a9-8e92-6bffbc35a8c5"
+    },
+    "69435df3-e59f-5f2d-87c8-3c2518d21f61": {
+      "name": "Ultracur3D® RG 35 B",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.11,
+        "viscosity_18c": 1798,
+        "viscosity_25c": 925,
+        "viscosity_40c": 279,
+        "viscosity_60c": 87
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
+      ],
+      "default_workflow": "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
+    },
+    "7b7c4f3c-a297-5e3b-80db-0edf3e742d93": {
+      "name": "Ultracur3D® RG 35",
+      "primary_color": "#f3f6f4ff",
+      "properties": {
+        "density": 1.12,
+        "viscosity_18c": 1798,
+        "viscosity_25c": 925,
+        "viscosity_40c": 279,
+        "viscosity_60c": 87
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
+      ],
+      "default_workflow": "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b"
+    },
+    "c2db5dfb-c5ae-5477-9fe1-1b3d6fb150ad": {
+      "name": "Ultracur3D® ST 45 B",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.12,
+        "viscosity_18c": 530,
+        "viscosity_25c": 312,
+        "viscosity_40c": 127,
+        "viscosity_60c": 51
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+      ],
+      "default_workflow": "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+    },
+    "14ceca9e-1c18-53a0-ba87-7868418f1485": {
+      "name": "Ultracur3D® ST 45",
+      "primary_color": "#f3f6f4ff",
+      "properties": {
+        "density": 1.12,
+        "viscosity_18c": 530,
+        "viscosity_25c": 312,
+        "viscosity_40c": 127,
+        "viscosity_60c": 51
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+      ],
+      "default_workflow": "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+    },
+    "f3156247-b1da-5c3e-80bd-8638f3499f75": {
+      "name": "Ultracur3D® ST 7500 G",
+      "primary_color": "#9c9d9dff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 279,
+        "viscosity_25c": 170,
+        "viscosity_40c": 72,
+        "viscosity_60c": 31
+      },
+      "brand": {
+        "uuid": "0d5d4a94-c898-5b83-9be9-90037a821e23",
+        "name": "Forward AM"
+      },
+      "slx_workflows": [
+        "6ee49d93-cc94-4bea-8738-ee54d1f0054a"
+      ],
+      "default_workflow": "6ee49d93-cc94-4bea-8738-ee54d1f0054a"
+    },
+    "fc4c1a9a-07cd-5fc4-9b87-41fd26961b0e": {
+      "name": "LOCTITE 3D 3843",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.07,
+        "viscosity_18c": 863,
+        "viscosity_25c": 510,
+        "viscosity_40c": 204,
+        "viscosity_60c": 81
+      },
+      "brand": {
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
+        "name": "Henkel"
+      },
+      "slx_workflows": [
+        "797a278c-b78f-4ced-94d1-25faa33e2231"
+      ],
+      "default_workflow": "797a278c-b78f-4ced-94d1-25faa33e2231"
+    },
+    "5dec674b-b2fc-5a68-b3ce-4bb7ac589e73": {
+      "name": "LOCTITE 3D IND249",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 836,
+        "viscosity_25c": 405,
+        "viscosity_40c": 120,
+        "viscosity_60c": 36
+      },
+      "brand": {
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
+        "name": "Henkel"
+      },
+      "slx_workflows": [
+        "80649676-4409-468c-8109-63c02a1c587a"
+      ],
+      "default_workflow": "80649676-4409-468c-8109-63c02a1c587a"
     },
     "726a21e2-2b27-5e1b-b031-797a64d30337": {
       "name": "LOCTITE 3D IND475",
@@ -494,7 +221,7 @@
         "viscosity_60c": 276
       },
       "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
         "name": "Henkel"
       },
       "slx_workflows": [
@@ -502,26 +229,7 @@
       ],
       "default_workflow": "ef5124b8-3e77-40a7-9d8e-831fd9b823ab"
     },
-    "8f68f83b-a821-48e9-821e-cbf078ed902b": {
-      "name": "LOCTITE 3D PRO476",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.08,
-        "viscosity_18c": 1112,
-        "viscosity_25c": 657,
-        "viscosity_40c": 259,
-        "viscosity_60c": 101
-      },
-      "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
-        "name": "Henkel"
-      },
-      "slx_workflows": [
-        "adc10854-df4f-4737-b44f-e2edcd28315b"
-      ],
-      "default_workflow": "adc10854-df4f-4737-b44f-e2edcd28315b"
-    },
-    "994f1b44-d0e2-49f4-b1b7-473afe347878": {
+    "a2242095-d383-51c1-bcb6-2c0a57938e49": {
       "name": "LOCTITE 3D IND5714",
       "primary_color": "#808080ff",
       "properties": {
@@ -532,7 +240,7 @@
         "viscosity_60c": 467
       },
       "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
         "name": "Henkel"
       },
       "slx_workflows": [
@@ -540,102 +248,45 @@
       ],
       "default_workflow": "26c553d4-c422-484b-b06a-38495000cfbb"
     },
-    "997260af-a03f-4bae-a040-226f1d0a7870": {
-      "name": "Composite-X",
-      "primary_color": "#d6d7d8ff",
-      "properties": {
-        "density": 1.52,
-        "viscosity_18c": 1784,
-        "viscosity_25c": 1223,
-        "viscosity_40c": 580,
-        "viscosity_60c": 276
-      },
-      "brand": {
-        "uuid": "2a9dda1d-d445-4655-834a-df68be28c352",
-        "name": "Liqcreate"
-      },
-      "slx_workflows": [
-        "2cc9009b-2cb7-4670-ad39-91a6b2cf0780"
-      ],
-      "default_workflow": "2cc9009b-2cb7-4670-ad39-91a6b2cf0780"
-    },
-    "a119275f-65e5-4636-b4d5-76febde3dc6c": {
-      "name": "Model Grass Green",
-      "primary_color": "#37823fff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "a6d00480-9ad3-4b2b-98cd-9c67d1de33cd": {
-      "name": "Ultracur3D® ST 45 B",
+    "f4d4dedd-50d1-5f4a-b5cc-5a9c82819b0c": {
+      "name": "LOCTITE 3D IND6845",
       "primary_color": "#595959ff",
       "properties": {
-        "density": 1.12,
-        "viscosity_18c": 530,
-        "viscosity_25c": 312,
-        "viscosity_40c": 127,
-        "viscosity_60c": 51
+        "density": 1.07,
+        "viscosity_18c": 1042,
+        "viscosity_25c": 609,
+        "viscosity_40c": 233,
+        "viscosity_60c": 89
       },
       "brand": {
-        "uuid": "99b03308-ada3-4201-b491-14e9b9f5bf66",
-        "name": "Forward AM"
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
+        "name": "Henkel"
       },
       "slx_workflows": [
-        "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+        "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c"
       ],
-      "default_workflow": "c2716dfa-6171-4fde-a7c7-316dd5a810e1"
+      "default_workflow": "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c"
     },
-    "a7d7f267-58d0-4325-8e9e-f32c4c114e05": {
-      "name": "Clear Impact",
-      "primary_color": "#f3f6f4ff",
+    "a911b15e-8b5f-5a38-9df6-29aea9ba83eb": {
+      "name": "LOCTITE 3D PRO476",
+      "primary_color": "#595959ff",
       "properties": {
-        "density": 1.12,
-        "viscosity_18c": 1822,
-        "viscosity_25c": 912,
-        "viscosity_40c": 269,
-        "viscosity_60c": 83
+        "density": 1.08,
+        "viscosity_18c": 1112,
+        "viscosity_25c": 657,
+        "viscosity_40c": 259,
+        "viscosity_60c": 101
       },
       "brand": {
-        "uuid": "2a9dda1d-d445-4655-834a-df68be28c352",
-        "name": "Liqcreate"
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
+        "name": "Henkel"
       },
       "slx_workflows": [
-        "5da57e6c-a7fb-4418-aa6d-5067098a2c1a"
+        "adc10854-df4f-4737-b44f-e2edcd28315b"
       ],
-      "default_workflow": "5da57e6c-a7fb-4418-aa6d-5067098a2c1a"
+      "default_workflow": "adc10854-df4f-4737-b44f-e2edcd28315b"
     },
-    "a915c7a9-4bf7-4fc1-84b6-9336594ea537": {
-      "name": "Model Brick Red",
-      "primary_color": "#b46056ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "afd43a86-b64f-4961-998b-c1d304be1bdb": {
+    "05dbc8e1-f22b-5b0f-aeb1-0b21c797b11f": {
       "name": "Bio-Med",
       "primary_color": "#f8f8f8ff",
       "properties": {
@@ -646,7 +297,7 @@
         "viscosity_60c": 37
       },
       "brand": {
-        "uuid": "2a9dda1d-d445-4655-834a-df68be28c352",
+        "uuid": "b8c3b583-dbbc-5f2b-bd56-09e72c181b0c",
         "name": "Liqcreate"
       },
       "slx_workflows": [
@@ -654,198 +305,45 @@
       ],
       "default_workflow": "46eca103-3a3a-4a1e-b2f3-ba7ec70e94db"
     },
-    "b6f44c84-1c42-414e-833f-33e5325ef5b0": {
-      "name": "Model Transparent Amber",
-      "primary_color": "#ffc107ff",
+    "477ac9bf-9ab0-5f98-9dd3-b636e763b961": {
+      "name": "Clear Impact",
+      "primary_color": "#f3f6f4ff",
       "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
+        "density": 1.12,
+        "viscosity_18c": 1822,
+        "viscosity_25c": 912,
+        "viscosity_40c": 269,
+        "viscosity_60c": 83
       },
       "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
+        "uuid": "b8c3b583-dbbc-5f2b-bd56-09e72c181b0c",
+        "name": "Liqcreate"
       },
       "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+        "5da57e6c-a7fb-4418-aa6d-5067098a2c1a"
       ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      "default_workflow": "5da57e6c-a7fb-4418-aa6d-5067098a2c1a"
     },
-    "b8433914-7c21-4757-aa18-3cd3713e54aa": {
-      "name": "Model Prusa Orange",
-      "primary_color": "#ff8040ff",
+    "d568a7b4-7857-56d1-aaca-535048367948": {
+      "name": "Composite-X",
+      "primary_color": "#d6d7d8ff",
       "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
+        "density": 1.52,
+        "viscosity_18c": 1784,
+        "viscosity_25c": 1223,
+        "viscosity_40c": 580,
+        "viscosity_60c": 276
       },
       "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
+        "uuid": "b8c3b583-dbbc-5f2b-bd56-09e72c181b0c",
+        "name": "Liqcreate"
       },
       "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+        "2cc9009b-2cb7-4670-ad39-91a6b2cf0780"
       ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      "default_workflow": "2cc9009b-2cb7-4670-ad39-91a6b2cf0780"
     },
-    "cb55dd53-fd5a-4878-9c94-00034b418c84": {
-      "name": "Model Ultra Violet",
-      "primary_color": "#413a7aff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "cf80aa9d-f079-465e-8a3f-1b1040eb6af1": {
-      "name": "Cubic Ink® Tough 2100 VP Black",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.1,
-        "viscosity_18c": 291,
-        "viscosity_25c": 173,
-        "viscosity_40c": 70,
-        "viscosity_60c": 30
-      },
-      "brand": {
-        "uuid": "f9e0e423-61ea-4840-9b0b-3752c2f56a1f",
-        "name": "Altana"
-      },
-      "slx_workflows": [
-        "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e"
-      ],
-      "default_workflow": "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e"
-    },
-    "db704831-6aa5-469f-a235-1e0d62d63e5a": {
-      "name": "Model Anthracite Grey",
-      "primary_color": "#808080ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "dc80cc8c-5b4e-47c6-904b-39528ccae22d": {
-      "name": "Model Bright Yellow",
-      "primary_color": "#c7b91fff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "dd2671f1-e69c-42a5-9197-43538685f4ac": {
-      "name": "Flex80 Black",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1,
-        "viscosity_18c": 254,
-        "viscosity_25c": 154,
-        "viscosity_40c": 64,
-        "viscosity_60c": 27
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "ac2b164b-d8b8-4140-af79-67ca606d340b",
-        "efadf044-4d65-466d-9659-01ad0c64d31c"
-      ],
-      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
-    },
-    "e746dc19-892e-4d31-ae6b-35ce6e3609f9": {
-      "name": "LOCTITE 3D 3843",
-      "primary_color": "#595959ff",
-      "properties": {
-        "density": 1.07,
-        "viscosity_18c": 863,
-        "viscosity_25c": 510,
-        "viscosity_40c": 204,
-        "viscosity_60c": 81
-      },
-      "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
-        "name": "Henkel"
-      },
-      "slx_workflows": [
-        "797a278c-b78f-4ced-94d1-25faa33e2231"
-      ],
-      "default_workflow": "797a278c-b78f-4ced-94d1-25faa33e2231"
-    },
-    "f3ccb4f3-5b9a-4d25-aefb-8312545e373a": {
-      "name": "Model Sandstone",
-      "primary_color": "#eea061ff",
-      "properties": {
-        "density": 1.11,
-        "viscosity_18c": 287,
-        "viscosity_25c": 167,
-        "viscosity_40c": 66,
-        "viscosity_60c": 26
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-      ],
-      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
-    },
-    "f8501213-7dc1-40e5-9ebf-95d3edec6309": {
-      "name": "Basic Black",
-      "primary_color": "#000000ff",
-      "properties": {
-        "density": 1.03,
-        "viscosity_18c": 360,
-        "viscosity_25c": 207,
-        "viscosity_40c": 81,
-        "viscosity_60c": 32
-      },
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "slx_workflows": [
-        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-      ],
-      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
-    },
-    "fc0bb222-2dab-4703-8734-9455805765e2": {
+    "62f95eda-fb62-59ce-b457-1990ab459b65": {
       "name": "Strong-X",
       "primary_color": "#c8c8c8ff",
       "properties": {
@@ -856,144 +354,496 @@
         "viscosity_60c": 32
       },
       "brand": {
-        "uuid": "2a9dda1d-d445-4655-834a-df68be28c352",
+        "uuid": "b8c3b583-dbbc-5f2b-bd56-09e72c181b0c",
         "name": "Liqcreate"
       },
       "slx_workflows": [
         "b6feecc6-aeed-4c9c-a987-96ac9f5f1a3c"
       ],
       "default_workflow": "b6feecc6-aeed-4c9c-a987-96ac9f5f1a3c"
+    },
+    "abcd5d0d-148c-5b17-b445-d690b898f974": {
+      "name": "Basic Black",
+      "primary_color": "#000000ff",
+      "properties": {
+        "density": 1.03,
+        "viscosity_18c": 360,
+        "viscosity_25c": 207,
+        "viscosity_40c": 81,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+      ],
+      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+    },
+    "24d8f5df-2de8-5ee3-bb47-989e03d9882b": {
+      "name": "Basic Grey",
+      "primary_color": "#9c9d9eff",
+      "properties": {
+        "density": 1.03,
+        "viscosity_18c": 360,
+        "viscosity_25c": 207,
+        "viscosity_40c": 81,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+      ],
+      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+    },
+    "3b913b86-e6dd-56fc-9680-e82210349b9d": {
+      "name": "Basic Orange",
+      "primary_color": "#ff8040ff",
+      "properties": {
+        "density": 1.03,
+        "viscosity_18c": 360,
+        "viscosity_25c": 207,
+        "viscosity_40c": 81,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+      ],
+      "default_workflow": "baf392d4-bf7c-4240-945f-23c9e5737f3f"
+    },
+    "d004c268-1826-5f89-97d6-cbf5efaf7c95": {
+      "name": "Flex80 Black",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.0,
+        "viscosity_18c": 254,
+        "viscosity_25c": 154,
+        "viscosity_40c": 64,
+        "viscosity_60c": 27
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "ac2b164b-d8b8-4140-af79-67ca606d340b",
+        "efadf044-4d65-466d-9659-01ad0c64d31c"
+      ],
+      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
+    },
+    "93f76ed7-09a0-50d3-b823-13edc02f8537": {
+      "name": "Flex80 Transparent Clear",
+      "primary_color": "#f3f6f4ff",
+      "properties": {
+        "density": 1.0,
+        "viscosity_18c": 254,
+        "viscosity_25c": 154,
+        "viscosity_40c": 64,
+        "viscosity_60c": 27
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "ac2b164b-d8b8-4140-af79-67ca606d340b",
+        "efadf044-4d65-466d-9659-01ad0c64d31c"
+      ],
+      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
+    },
+    "d5a8fc16-0bbf-5462-a263-773c38d6ba7e": {
+      "name": "Flex80 White",
+      "primary_color": "#d6d7d8ff",
+      "properties": {
+        "density": 1.0,
+        "viscosity_18c": 254,
+        "viscosity_25c": 154,
+        "viscosity_40c": 64,
+        "viscosity_60c": 27
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "ac2b164b-d8b8-4140-af79-67ca606d340b",
+        "efadf044-4d65-466d-9659-01ad0c64d31c"
+      ],
+      "default_workflow": "ac2b164b-d8b8-4140-af79-67ca606d340b"
+    },
+    "ad835c8f-e33f-53f0-9d2e-eb2602a2fb6c": {
+      "name": "Impact65 Black",
+      "primary_color": "#595959ff",
+      "properties": {
+        "density": 1.11,
+        "viscosity_18c": 226,
+        "viscosity_25c": 133,
+        "viscosity_40c": 52,
+        "viscosity_60c": 21
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "27766855-6532-48fa-bb00-572e004d9eb0"
+      ],
+      "default_workflow": "27766855-6532-48fa-bb00-572e004d9eb0"
+    },
+    "ea38444b-ab5e-5d05-902f-9a3f00a3b6f8": {
+      "name": "Model+ Alabaster White",
+      "primary_color": "#f2f0eaff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 565,
+        "viscosity_25c": 297,
+        "viscosity_40c": 96
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
+        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "7e4b574f-c208-5bac-b643-f959a7460806": {
+      "name": "Model+ Anthracite Grey",
+      "primary_color": "#2f343aff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 618,
+        "viscosity_25c": 325,
+        "viscosity_40c": 104,
+        "viscosity_60c": 30
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "ab76b93e-2ca5-5901-ab9f-9e16abde609f": {
+      "name": "Model+ Brick Red",
+      "primary_color": "#7f403aff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 533,
+        "viscosity_25c": 282,
+        "viscosity_40c": 93,
+        "viscosity_60c": 31
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "777197b7-1138-5831-9a63-8e8f4e80e0cf": {
+      "name": "Model+ Bright Cyan",
+      "primary_color": "#007aa9ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 524,
+        "viscosity_25c": 277,
+        "viscosity_40c": 90,
+        "viscosity_60c": 30
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "e1607c0b-ae31-52d8-be92-14daa1f1c158": {
+      "name": "Model+ Bright Magenta",
+      "primary_color": "#ab2e69ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 601,
+        "viscosity_25c": 315,
+        "viscosity_40c": 100,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "84f43682-c69f-51b5-a464-652c79edad09": {
+      "name": "Model+ Bright Yellow",
+      "primary_color": "#ccb529ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 615,
+        "viscosity_25c": 318,
+        "viscosity_40c": 101,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "5b1fe36a-f394-5536-b1a7-876ee6b525bc": {
+      "name": "Model+ Classic Red",
+      "primary_color": "#a31c25ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 534,
+        "viscosity_25c": 289,
+        "viscosity_40c": 95,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "12ee4fd3-08b9-502f-b54a-fc779aec0264": {
+      "name": "Model+ Grass Green",
+      "primary_color": "#007f4aff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 609,
+        "viscosity_25c": 299,
+        "viscosity_40c": 92,
+        "viscosity_60c": 26
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "ec8311f5-9d99-5d10-90d0-603a86980cb8": {
+      "name": "Model+ Neutral Beige",
+      "primary_color": "#e7ceb4ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 494,
+        "viscosity_25c": 273,
+        "viscosity_40c": 91
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
+        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "fd277e84-fe7d-501a-95ec-c9c5da345cc5": {
+      "name": "Model+ Rich Black",
+      "primary_color": "#1a1c1eff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 618,
+        "viscosity_25c": 325,
+        "viscosity_40c": 104
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
+        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "f84f4db0-7f22-59e5-afbc-93e9a61b540f": {
+      "name": "Model+ Sand Stone",
+      "primary_color": "#ae894eff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 494,
+        "viscosity_25c": 273,
+        "viscosity_40c": 91,
+        "viscosity_60c": 34
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "6f9d01bf-aa4b-5e5d-a88d-16e436c3ab7b": {
+      "name": "Model+ Solid Grey",
+      "primary_color": "#808a93ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 572,
+        "viscosity_25c": 297,
+        "viscosity_40c": 95
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
+        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "fce7644b-8a19-5c72-b2d9-98b93d992881": {
+      "name": "Model+ Terra Brown",
+      "primary_color": "#584135ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 543,
+        "viscosity_25c": 290,
+        "viscosity_40c": 95,
+        "viscosity_60c": 31
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "2f2ed78c-6e53-53a4-8547-837c2ddcfda1": {
+      "name": "Model+ Transparent Amber",
+      "primary_color": "#f8ac00ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 566,
+        "viscosity_25c": 296,
+        "viscosity_40c": 97,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "b2b52aee-5c3a-5d48-b825-42b5ce190902": {
+      "name": "Model+ Transparent Clear",
+      "primary_color": "#ffffffff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 503,
+        "viscosity_25c": 270,
+        "viscosity_40c": 95
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e",
+        "4edb0e80-df3c-4ca9-b169-6a106ae40cb8"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "5c674c51-a746-560b-8fd3-ae75324fd426": {
+      "name": "Model+ Transparent Green",
+      "primary_color": "#00763cff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 581,
+        "viscosity_25c": 307,
+        "viscosity_40c": 100,
+        "viscosity_60c": 32
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "d64a9e3f-b74b-5eee-bf84-1f3cb9d22821": {
+      "name": "Model+ Transparent Red",
+      "primary_color": "#af1621ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 616,
+        "viscosity_25c": 322,
+        "viscosity_40c": 103,
+        "viscosity_60c": 33
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+    },
+    "0ffdec1a-8190-5d0b-88d5-dec4e585df32": {
+      "name": "Model+ Ultra Violet",
+      "primary_color": "#3c3878ff",
+      "properties": {
+        "density": 1.1,
+        "viscosity_18c": 524,
+        "viscosity_25c": 277,
+        "viscosity_40c": 90,
+        "viscosity_60c": 27
+      },
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "slx_workflows": [
+        "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
+      ],
+      "default_workflow": "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e"
     }
   },
   "workflows": {
-    "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e": {
-      "name": "Prusament Resin Model - Prusament Resin Cleaner DPM",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 300,
-          "drying_temperature": 30,
-          "uv_curing_duration": 120,
-          "uv_curing_temperature": 30,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c": {
-      "name": "LOCTITE 3D IND6845 - LOCTITE 3D Cleaner C",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "LOCTITE 3D Cleaner C",
-                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
-              },
-              "duration": 120,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": true
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 240,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": true
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 240,
-          "drying_temperature": 40,
-          "uv_curing_duration": 600,
-          "uv_curing_temperature": 40,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "26c553d4-c422-484b-b06a-38495000cfbb": {
-      "name": "LOCTITE 3D IND5714 - LOCTITE 3D Cleaner C",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "LOCTITE 3D Cleaner C",
-                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 900,
-          "drying_temperature": 40,
-          "uv_curing_duration": 1800,
-          "uv_curing_temperature": 40,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "27766855-6532-48fa-bb00-572e004d9eb0": {
-      "name": "Prusament Resin Impact65 - Prusament Resin Cleaner DPM",
+    "629aa988-db22-4b7d-80a7-43a5aba1399e": {
+      "name": "Cubic Ink® High Performance 4-4800 VP - Prusament Resin Cleaner DPM",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
@@ -1034,8 +884,8 @@
         }
       }
     },
-    "2cc9009b-2cb7-4670-ad39-91a6b2cf0780": {
-      "name": "Liqcreate Composite-X - Prusament Resin Cleaner DPM",
+    "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27": {
+      "name": "Cubic Ink® Mold 2200 VP - Prusament Resin Cleaner DPM",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
@@ -1064,10 +914,52 @@
       },
       "cure_profiles": {
         "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 600,
-          "drying_temperature": 70,
+          "drying_duration": 900,
+          "drying_temperature": 40,
           "uv_curing_duration": 1800,
-          "uv_curing_temperature": 70,
+          "uv_curing_temperature": 40,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e": {
+      "name": "Cubic Ink® Tough 2100 VP Black - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 30,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 900,
+          "drying_temperature": 50,
+          "uv_curing_duration": 1800,
+          "uv_curing_temperature": 50,
           "uv_curing_power": 100,
           "heat_curing_duration": 0,
           "heat_curing_temperature": 0,
@@ -1118,8 +1010,8 @@
         }
       }
     },
-    "46eca103-3a3a-4a1e-b2f3-ba7ec70e94db": {
-      "name": "Liqcreate Bio-Med - Prusament Resin Cleaner DPM",
+    "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b": {
+      "name": "Ultracur3D® RG 35 - Prusament Resin Cleaner DPM ",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
@@ -1160,50 +1052,8 @@
         }
       }
     },
-    "5da57e6c-a7fb-4418-aa6d-5067098a2c1a": {
-      "name": "Liqcreate Clear Impact - Prusament Resin Cleaner DPM",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 900,
-          "drying_temperature": 40,
-          "uv_curing_duration": 900,
-          "uv_curing_temperature": 40,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "629aa988-db22-4b7d-80a7-43a5aba1399e": {
-      "name": "Cubic Ink® High Performance 4-4800 VP - Prusament Resin Cleaner DPM",
+    "c2716dfa-6171-4fde-a7c7-316dd5a810e1": {
+      "name": "Ultracur3D® ST 45 - Prusament Resin Cleaner DPM ",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
@@ -1370,15 +1220,57 @@
         }
       }
     },
-    "9e5fe8ca-8ab4-436b-8236-35fd8fadfb27": {
-      "name": "Cubic Ink® Mold 2200 VP - Prusament Resin Cleaner DPM",
+    "ef5124b8-3e77-40a7-9d8e-831fd9b823ab": {
+      "name": "LOCTITE 3D IND475 - LOCTITE 3D Cleaner C",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
             {
               "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+                "name": "LOCTITE 3D Cleaner C",
+                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": true
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": true
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 300,
+          "drying_temperature": 35,
+          "uv_curing_duration": 60,
+          "uv_curing_temperature": 35,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "26c553d4-c422-484b-b06a-38495000cfbb": {
+      "name": "LOCTITE 3D IND5714 - LOCTITE 3D Cleaner C",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "LOCTITE 3D Cleaner C",
+                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
               },
               "duration": 600,
               "speed": 100,
@@ -1412,81 +1304,39 @@
         }
       }
     },
-    "ac2b164b-d8b8-4140-af79-67ca606d340b": {
-      "name": "Prusament Resin Flex80 - Prusament Resin Cleaner DPM ",
+    "0b2014eb-a6b4-4ad6-8eb7-c0da8dae3c6c": {
+      "name": "LOCTITE 3D IND6845 - LOCTITE 3D Cleaner C",
       "wash_profiles": {
         "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
           "wash_cycles": [
             {
               "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+                "name": "LOCTITE 3D Cleaner C",
+                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
               },
-              "duration": 600,
+              "duration": 120,
               "speed": 100,
               "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
+              "requires_manual_air_blasting": true
             },
             {
               "medium": {
                 "name": "Water",
                 "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
               },
-              "duration": 300,
+              "duration": 240,
               "speed": 100,
               "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
+              "requires_manual_air_blasting": true
             }
           ]
         }
       },
       "cure_profiles": {
         "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 300,
-          "drying_temperature": 30,
-          "uv_curing_duration": 120,
-          "uv_curing_temperature": 30,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "ad2e5bd9-1a93-4ba0-ac98-13818d56a92b": {
-      "name": "Ultracur3D® RG 35 - Prusament Resin Cleaner DPM ",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 900,
+          "drying_duration": 240,
           "drying_temperature": 40,
-          "uv_curing_duration": 1800,
+          "uv_curing_duration": 600,
           "uv_curing_temperature": 40,
           "uv_curing_power": 100,
           "heat_curing_duration": 0,
@@ -1530,6 +1380,132 @@
           "drying_temperature": 50,
           "uv_curing_duration": 1800,
           "uv_curing_temperature": 50,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "46eca103-3a3a-4a1e-b2f3-ba7ec70e94db": {
+      "name": "Liqcreate Bio-Med - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 900,
+          "drying_temperature": 40,
+          "uv_curing_duration": 1800,
+          "uv_curing_temperature": 40,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "5da57e6c-a7fb-4418-aa6d-5067098a2c1a": {
+      "name": "Liqcreate Clear Impact - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 900,
+          "drying_temperature": 40,
+          "uv_curing_duration": 900,
+          "uv_curing_temperature": 40,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "2cc9009b-2cb7-4670-ad39-91a6b2cf0780": {
+      "name": "Liqcreate Composite-X - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 600,
+          "drying_temperature": 70,
+          "uv_curing_duration": 1800,
+          "uv_curing_temperature": 70,
           "uv_curing_power": 100,
           "heat_curing_duration": 0,
           "heat_curing_temperature": 0,
@@ -1622,216 +1598,6 @@
         }
       }
     },
-    "c2716dfa-6171-4fde-a7c7-316dd5a810e1": {
-      "name": "Ultracur3D® ST 45 - Prusament Resin Cleaner DPM ",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 900,
-          "drying_temperature": 40,
-          "uv_curing_duration": 1800,
-          "uv_curing_temperature": 40,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "c488c479-b4ee-4621-8e64-604b70e90f02": {
-      "name": "Fake Resin Cleaner",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Fake Resin Cleaner",
-                "uuid": "e6962301-b20d-4e25-aea2-3be7d3328790"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Fake Resin Cleaner",
-                "uuid": "e6962301-b20d-4e25-aea2-3be7d3328790"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 300,
-          "drying_temperature": 100,
-          "uv_curing_duration": 120,
-          "uv_curing_temperature": 30,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "e71692ed-a0cb-466a-b32e-3b9b7aa4b88e": {
-      "name": "Cubic Ink® Tough 2100 VP Black - Prusament Resin Cleaner DPM",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "Prusament Resin Cleaner DPM",
-                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
-              },
-              "duration": 600,
-              "speed": 30,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 900,
-          "drying_temperature": 50,
-          "uv_curing_duration": 1800,
-          "uv_curing_temperature": 50,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "ef5124b8-3e77-40a7-9d8e-831fd9b823ab": {
-      "name": "LOCTITE 3D IND475 - LOCTITE 3D Cleaner C",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "LOCTITE 3D Cleaner C",
-                "uuid": "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": true
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": true
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 300,
-          "drying_temperature": 35,
-          "uv_curing_duration": 60,
-          "uv_curing_temperature": 35,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
-    "4edb0e80-df3c-4ca9-b169-6a106ae40cb8": {
-      "name": "Prusament Resin Model - 3D Basics DPM Wash Solvent",
-      "wash_profiles": {
-        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
-          "wash_cycles": [
-            {
-              "medium": {
-                "name": "3D Basics DPM Wash Solvent",
-                "uuid": "4c47e887-013c-4f4a-8857-88f06fe8183f"
-              },
-              "duration": 600,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            },
-            {
-              "medium": {
-                "name": "Water",
-                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
-              },
-              "duration": 300,
-              "speed": 100,
-              "requires_manual_wash": false,
-              "requires_manual_air_blasting": false
-            }
-          ]
-        }
-      },
-      "cure_profiles": {
-        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
-          "drying_duration": 300,
-          "drying_temperature": 30,
-          "uv_curing_duration": 120,
-          "uv_curing_temperature": 30,
-          "uv_curing_power": 100,
-          "heat_curing_duration": 0,
-          "heat_curing_temperature": 0,
-          "temperature_ramp": 0,
-          "max_idle_temperature": 0
-        }
-      }
-    },
     "efadf044-4d65-466d-9659-01ad0c64d31c": {
       "name": "Prusament Resin Flex80 - 3D Basics DPM Wash Solvent",
       "wash_profiles": {
@@ -1873,76 +1639,244 @@
           "max_idle_temperature": 0
         }
       }
+    },
+    "ac2b164b-d8b8-4140-af79-67ca606d340b": {
+      "name": "Prusament Resin Flex80 - Prusament Resin Cleaner DPM ",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 300,
+          "drying_temperature": 30,
+          "uv_curing_duration": 120,
+          "uv_curing_temperature": 30,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "27766855-6532-48fa-bb00-572e004d9eb0": {
+      "name": "Prusament Resin Impact65 - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 900,
+          "drying_temperature": 40,
+          "uv_curing_duration": 1800,
+          "uv_curing_temperature": 40,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "4edb0e80-df3c-4ca9-b169-6a106ae40cb8": {
+      "name": "Prusament Resin Model+ - 3D Basics DPM Wash Solvent",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "3D Basics DPM Wash Solvent",
+                "uuid": "4c47e887-013c-4f4a-8857-88f06fe8183f"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 300,
+          "drying_temperature": 30,
+          "uv_curing_duration": 120,
+          "uv_curing_temperature": 30,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
+    },
+    "02aa7fd1-1d9b-42af-bca4-18ec2ccce39e": {
+      "name": "Prusament Resin Model+ - Prusament Resin Cleaner DPM",
+      "wash_profiles": {
+        "8f548063-56b7-5bd2-a536-77c2bb8956a5": {
+          "wash_cycles": [
+            {
+              "medium": {
+                "name": "Prusament Resin Cleaner DPM",
+                "uuid": "44949b6e-875d-443c-89ce-8973f3a93af3"
+              },
+              "duration": 600,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            },
+            {
+              "medium": {
+                "name": "Water",
+                "uuid": "78c9e93b-94dc-4c63-af42-4bce6304142f"
+              },
+              "duration": 300,
+              "speed": 100,
+              "requires_manual_wash": false,
+              "requires_manual_air_blasting": false
+            }
+          ]
+        }
+      },
+      "cure_profiles": {
+        "6abef5ce-7339-4aa2-9858-9ce0db948acf": {
+          "drying_duration": 300,
+          "drying_temperature": 30,
+          "uv_curing_duration": 120,
+          "uv_curing_temperature": 30,
+          "uv_curing_power": 100,
+          "heat_curing_duration": 0,
+          "heat_curing_temperature": 0,
+          "temperature_ramp": 0,
+          "max_idle_temperature": 0
+        }
+      }
     }
   },
   "wash_media": {
-    "44949b6e-875d-443c-89ce-8973f3a93af3": {
-      "brand": {
-        "uuid": "cfc23beb-9ca8-431f-a406-47c727d3d0f7",
-        "name": "Prusament Resin"
-      },
-      "name": "Prusament Resin Cleaner DPM",
-      "density": 0,
-      "wash_capacity": 0
-    },
     "4c47e887-013c-4f4a-8857-88f06fe8183f": {
       "brand": {
-        "uuid": "421b0a29-03f3-48f1-954a-0054ecbd3080",
+        "uuid": "863c5f0c-04a5-50c9-b5a2-5a8e81d5821f",
         "name": "3D-basics"
       },
       "name": "3D Basics DPM Wash Solvent",
-      "density": 10,
+      "density": 0.95,
       "wash_capacity": 1000
     },
     "53d4a8a3-d2dd-4e0b-b69e-051fcc33845b": {
       "brand": {
-        "uuid": "5927d694-01b2-4262-b272-970764723090",
+        "uuid": "36dbbbf9-1ebb-5fd7-88ed-92688e2b8f9c",
         "name": "Henkel"
       },
       "name": "LOCTITE 3D Cleaner C",
-      "density": 960,
-      "wash_capacity": 0
+      "density": 0.96,
+      "wash_capacity": 1000
+    },
+    "44949b6e-875d-443c-89ce-8973f3a93af3": {
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "name": "Prusament Resin Cleaner DPM",
+      "density": 0.95,
+      "wash_capacity": 1000
     },
     "78c9e93b-94dc-4c63-af42-4bce6304142f": {
       "brand": {
-        "uuid": "5c93942b-3c9c-41e1-95cd-f38e2f57bc93",
+        "uuid": "164ec042-25fd-5af5-bd9f-db945ffa71c0",
         "name": "Generic"
       },
       "name": "Water",
-      "density": 1000,
-      "wash_capacity": 1000
-    },
-    "e6962301-b20d-4e25-aea2-3be7d3328790": {
-      "name": "Fake Resin Cleaner",
-      "density": 0,
-      "wash_capacity": 0
+      "density": 1,
+      "wash_capacity": 10000
     }
   },
   "sla_wash_medium_containers": {
-    "20457c12-f923-4d30-a904-7973356137dc": {
-      "capacity": 1000
+    "71196860-5889-57b3-ab73-95152198b5c2": {
+      "brand": {
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
+      },
+      "name": "Prusament Resin Wash Medium Canister",
+      "volumetric_capacity": 30000
     }
   },
   "sla_material_containers": {
-    "4cb76d11-4e01-400c-b6b3-9cc73fa1d570": {
+    "59a173dc-3f13-5fb6-ae33-4b64812c90de": {
       "brand": {
-        "uuid": "6da76d11-4e01-400c-b6b3-9cc73fa1d580",
-        "name": "Prusament"
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
       },
-      "name": "1 kg bottle",
-      "connector": "8f548063-56b7-5bd2-a536-77c2bb8956a5",
-      "volumetric_capacity": 950,
-      "empty_weight": 120
+      "name": "Prusament Resin 1kg Bottle",
+      "volumetric_capacity": 1000,
+      "empty_weight": 100,
+      "connector": "8f548063-56b7-5bd2-a536-77c2bb8956a5"
     },
-    "d5a76d11-4e01-400c-b6b3-9cc73fa1d580": {
+    "0a3d85df-2b01-5b92-977b-391aac662ee9": {
       "brand": {
-        "uuid": "6da76d11-4e01-400c-b6b3-9cc73fa1d580",
-        "name": "Prusament"
+        "uuid": "9dcdf548-b958-5072-99a0-cf894b324e3b",
+        "name": "Prusament Resin"
       },
-      "name": "5 kg canister",
-      "connector": "8f548063-56b7-5bd2-a536-77c2bb8956a5",
-      "volumetric_capacity": 4760,
-      "empty_weight": 300
+      "name": "Prusament Resin 5kg Canister",
+      "volumetric_capacity": 5000,
+      "empty_weight": 270,
+      "connector": "8f548063-56b7-5bd2-a536-77c2bb8956a5"
     }
   }
 }

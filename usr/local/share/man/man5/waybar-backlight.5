@@ -5,7 +5,7 @@
 .nh
 .ad l
 .\" Begin generated content:
-.TH "waybar\-backlight" "5" "2026\-08\-08"
+.TH "waybar\-backlight" "5" "2026\-10\-16"
 .PP
 .SH NAME
 .PP
@@ -144,15 +144,27 @@ typeof: float
 default: 1.\&0 
 .br
 The speed at which to change the brightness when scrolling.\&
+.RS 4
+Expressed in percentage points of the device'\&s maximum brightness.\& Positive
+steps are rounded to the nearest device unit (half units round up), with a
+minimum of one unit and a maximum of the full brightness range.\& Zero,
+negative, or non\-finite steps disable scroll adjustment.\&
 .PP
+.RE
 \fBmin\-brightness\fR: 
 .br
 typeof: double 
 .br
 default: 0.\&0 
 .br
-The minimum brightness of the backlight.\&
+The minimum brightness when scrolling down, as a percentage of the device'\&s
+.RS 4
+maximum brightness.\& Values are clamped to [0, 100].\& The lower limit is the
+smallest device value whose percentage is at least the configured minimum.\&
+Scrolling down leaves a brightness already below this limit unchanged.\&
+Non\-finite values disable scroll adjustment.\&
 .PP
+.RE
 \fBtooltip\fR: 
 .br
 typeof: bool 

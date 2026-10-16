@@ -50,8 +50,8 @@
     "network",
     "disk",
     "inhibitor",
-    "clock",
-    "systemd-failed-units"
+    "clock"
+ //   "systemd-failed-units"
 ],
 ///////////////////////////////////////////////////////////////////////////////////////
 //  GROUPS ///

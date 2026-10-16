@@ -5,7 +5,7 @@
 .nh
 .ad l
 .\" Begin generated content:
-.TH "waybar\-tray" "5" "2026\-08\-08"
+.TH "waybar\-tray" "5" "2026\-10\-16"
 .PP
 .SH NAME
 .PP
@@ -32,6 +32,14 @@ typeof: bool
 default: false 
 .br
 Defines visibility of the tray icons with \fBPassive\fR status.\&
+.PP
+\fBtooltip\fR: 
+.br
+typeof: bool 
+.br
+default: true 
+.br
+Option to disable tooltips on the tray icons.\&
 .PP
 \fBsmooth\-scrolling\-threshold\fR: 
 .br
@@ -110,7 +118,8 @@ List of strings used to hide matching tray items.\& An item is hidden when any s
 	},
 	"orders": {
 		"wechat": 99
-	}
+	},
+	"tooltip": false
 }
 
 .fi

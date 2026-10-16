@@ -5,7 +5,7 @@
 .nh
 .ad l
 .\" Begin generated content:
-.TH "waybar\-temperature" "5" "2026\-08\-08"
+.TH "waybar\-temperature" "5" "2026\-10\-16"
 .PP
 .SH NAME
 .PP
@@ -89,6 +89,17 @@ default: 10
 .br
 The interval in which the information gets polled.\&
 .PP
+\fBdisable\-on\-sleep\fR: 
+.br
+typeof: bool 
+.br
+default: false 
+.br
+Pause polling while the bar is unmapped from its output, e.\&g.\& when the output is disabled or disconnected, and resume once the bar is mapped again.\&
+.RS 4
+Turning an output off with DPMS does not necessarily unmap the bar: on Hyprland, for example, the bar stays mapped and polling continues while the display is powered off.\&
+.PP
+.RE
 \fBformat\-warning\fR: 
 .br
 typeof: string 

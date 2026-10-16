@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>smartctl</title>
+  
+<text xml:space="preserve"><note-content version="0.1"><underline>smartctl</underline>
+
+Immediate Action Plan
+
+1. Back Up Your Data Immediately
+	• Do this before running any repair or destructive tests. If the drive is failing, heavy read/write stress can push it over the edge.
+2. Check SMART Details
+	• Run a full SMART report to inspect the drive's health:bash
+smartctl -a /dev/sdd
+Use code with caution.
+	• Look at Current_Pending_Sector (ID 197) and Offline_Uncorrectable (ID 198).
+3. Identify the Affected Blocks (Optional / Advanced)
+	• You can run an extended SMART test to see if the controller logs specific Logical Block Addresses (LBAs):bash
+smartctl -t long /dev/sdd
+Use code with caution.
+	• Check the self-test log afterward:bash
+smartctl -l selftest /dev/sdd
+Use code with caution.
+4. Decide on Replacement
+	• If the drive holds important data or runs in a production/critical server: Plan to replace /dev/sdd as soon as possible.
+	• If you are testing/troubleshooting a non-critical drive: You can force the drive to clear the sectors by writing zeros to the affected blocks (via dd if LBA is known) or running a full write/badblocks test (badblocks -v -s -n /dev/sdd). If the drive successfully writes to those sectors, it will either clear them or officially reallocate them to spare blocks, which will change the pending count. However, if the pending count climbs or new unreadable sectors appear, retire the drive.
+</note-content></text>
+  <last-change-date>2026-10-16T15:36:28.4768401-03:00</last-change-date>
+  <last-metadata-change-date>2026-10-16T15:36:28.4768401-03:00</last-metadata-change-date>
+  <create-date>2026-10-16T15:36:28.4768401-03:00</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>784</width>
+  <height>505</height>
+  <x>248</x>
+  <y>260</y>
+  <open-on-startup>False</open-on-startup>
+</note>

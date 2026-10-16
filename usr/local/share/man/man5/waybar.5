@@ -5,7 +5,7 @@
 .nh
 .ad l
 .\" Begin generated content:
-.TH "waybar" "5" "2026\-08\-08"
+.TH "waybar" "5" "2026\-10\-16"
 .PP
 .SH NAME
 .PP
@@ -273,6 +273,18 @@ Possible values: \fBshow\fR, \fBhide\fR, \fBtoggle\fR, \fBreload\fR, \fBnoop\fR.
 .br
 Default value: \fBreload\fR.\&
 .PP
+\fBblur\fR 
+.br
+typeof: bool 
+.br
+default: false 
+.br
+Requests blur\-behind for the bar'\&s own background, via the standard
+.RS 4
+\fBext\-background\-effect\-v1\fR Wayland protocol.\& Has no effect if the
+compositor doesn'\&t support it.\&
+.PP
+.RE
 .SH MODULE FORMAT
 .PP
 You can use PangoMarkupFormat (See https://developer.\&gnome.\&org/pango/stable/PangoMarkupFormat.\&html#PangoMarkupFormat).\&
@@ -436,6 +448,23 @@ When positioning Waybar on the left or right side of the screen, sometimes it'\&
 .RE
 .PP
 Valid options for the "rotate" property are: 0, 90, 180, and 270.\&
+.PP
+.SS Fitting multi\-line labels
+.PP
+A "\en" in a module'\&s format shows the text on several lines.\& By default such a label makes the bar taller.\& With the "fit\-height" property set to true, the label asks for no more height than one line of its text, and scales its font down until all lines fit the height the bar gives it.\& Example:
+.PP
+.nf
+.RS 4
+{
+	"network": {
+		"format\-wifi": "{bandwidthDownBytes}n{bandwidthUpBytes}",
+		"fit\-height": true
+	}
+}
+.fi
+.RE
+.PP
+"max\-length" puts the label in single\-line mode, so do not use it together with a multi\-line format.\&
 .PP
 .SS Swapping icon and label
 .PP

@@ -5,7 +5,7 @@
 .nh
 .ad l
 .\" Begin generated content:
-.TH "waybar\-mpris" "5" "2026\-08\-08"
+.TH "waybar\-mpris" "5" "2026\-10\-16"
 .PP
 .SH NAME
 .PP
@@ -248,6 +248,14 @@ typeof: bool
 default: false 
 .br
 When true, use the album artist instead of the track artist for the \fI{artist}\fR and \fI{dynamic}\fR tags, falling back to the track artist when no album artist is available.\&
+.PP
+\fBhide\-on\-paused\fR: 
+.br
+typeof: bool 
+.br
+default: false 
+.br
+When true, hide the module entirely while the player is paused instead of rendering \fIformat\-paused\fR.\&
 .PP
 \fBplayer\-icons\fR: 
 .br
